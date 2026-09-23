@@ -1,0 +1,15 @@
+{
+  "lockfileVersion": 3,
+  "packages": 213,
+  "licenses": {
+    "MIT": 160,
+    "Apache-2.0": 20,
+    "ISC": 11,
+    "CC-BY-4.0": 1,
+    "BSD-2-Clause": 6,
+    "BSD-3-Clause": 2,
+    "MPL-2.0": 12,
+    "BlueOak-1.0.0": 1
+  },
+  "review": []
+}

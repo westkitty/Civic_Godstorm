@@ -1,0 +1,2005 @@
+{
+  "schemaVersion": 1,
+  "contract": "CG-V1.0.0",
+  "source": "CIVIC_GODSTORM_MASTER_PLAN.md",
+  "section17Sha256": "6b4bf9095a10b3c05c592d895afda0c8adefa9ec5e3a66312de078d351ef9c80",
+  "milestoneBlockSha256": "3cabfe7088b537d17793fe64d618a0ec445c5c05f8237bfe9378835f722f8a01",
+  "unresolvedCount": 285,
+  "unresolved": [
+    {
+      "id": "CG-S-GOD-TORSO-Q",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B01",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-GOD-TORSO-H",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B03",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-GOD-TORSO-S",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B04",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-GOD-TORSO-M",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B04",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-GOD-LOCO-PILLAR",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B01",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-GOD-LOCO-WEBBED",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B04",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-GOD-LOCO-DIGGER",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B03",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-GOD-LOCO-UNDULATOR",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B04",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-GOD-LOCO-FIN",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B04",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-GOD-LOCO-WING",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B05",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-GOD-FEED-BROWSE",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B01",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-GOD-FEED-FILTER",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B04",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-GOD-FEED-MINERAL",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B03",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-GOD-FEED-CARRION",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B05",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-GOD-SENSE-EYE-RING",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B01",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-GOD-SENSE-ANTENNA-CROWN",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B05",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-GOD-SENSE-VIBRATION-ROSETTE",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B03",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-GOD-TAIL-BALANCE",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B01",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-GOD-TAIL-PADDLE",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B04",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-GOD-TAIL-WEDGE",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B03",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-GOD-ARMOR-OSTEODERM",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B06",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-GOD-ARMOR-SHELL",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B03",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-GOD-ARMOR-COAT",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B06",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-GOD-ORGAN-GILLS",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B04",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-GOD-ORGAN-SOLAR-SAIL",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B06",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-GOD-ORGAN-THERMAL-VENT",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B03",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-GOD-ORGAN-SPORE-SAC",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B06",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-GOD-SYMB-FUNGAL-GROVE",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B06",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-GOD-SYMB-FOLLOWER-GALLERY",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B06",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-GOD-SYMB-ROOT-HOLDFAST",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B06",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-GOD-FORM-Q",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B01",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-GOD-FORM-H",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B03",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-GOD-FORM-S",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B04",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-GOD-FORM-M",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B05",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-GOD-LIFE-Q",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B01",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-GOD-LIFE-H",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B03",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-GOD-LIFE-S",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B04",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-GOD-LIFE-M",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B05",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-BLD-DWELLING",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B02",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-BLD-HALL",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B02",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-BLD-MARKET",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B07",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-BLD-ARCHIVE",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B07",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-BLD-WORKSHOP",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B07",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-BLD-GRANARY",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B07",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-BLD-INFIRMARY",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B07",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-BLD-SHRINE",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B07",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-BLD-OBSERVATORY",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B07",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-BLD-BARRACKS",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B07",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-BLD-TOWER",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B07",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-BLD-DOCK",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B07",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-BLD-DEPOT",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B07",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-BLD-CARAVAN-CANOPY",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B07",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-INF-ROAD",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B02",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-INF-BRIDGE",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B07",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-INF-FARM",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B02",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-INF-MINE",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B07",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-INF-CANAL",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B07",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-INF-WALL",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B07",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-UNT-CIVILIAN",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B02",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-UNT-SOLDIER",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B08",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-UNT-WAGON",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B08",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-UNT-SPEAR",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B08",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-UNT-BOW",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B08",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-UNT-SHIELD",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B08",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-UNT-BALLISTA",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B08",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-UNT-HULL-MERCHANT",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B08",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-UNT-HULL-WAR",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B08",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-ENV-DECIDUOUS",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B08",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-ENV-CONIFER",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B08",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-ENV-PALM",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B08",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-ENV-REEDS",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B08",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-ENV-KELP",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B08",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-ENV-ROCK",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B08",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-ENV-ORE",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B08",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-ENV-CRYSTAL",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B08",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-ENV-FUNGUS",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B08",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-ENV-RUBBLE",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B08",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-EMB-01",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B09",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-EMB-02",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B09",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-EMB-03",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B09",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-EMB-04",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B09",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-EMB-05",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B09",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-EMB-06",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B09",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-MOT-BASALT",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B02",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-MOT-REED",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B07",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-MOT-VAULT",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B07",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-MOT-CANOPY",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B07",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-ICO-FOOD",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B09",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-ICO-WOOD",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B09",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-ICO-STONE",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B09",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-ICO-ORE",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B09",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-ICO-TOOLS",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B09",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-ICO-MEDICINE",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B09",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-ICO-BIO",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B09",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-ICO-COIN",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B09",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-ICO-KNOWLEDGE",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B09",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-ICO-MOVE",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B10",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-ICO-FEED",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B10",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-ICO-REST",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B10",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-ICO-GUARD",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B10",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-ICO-ATTACK",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B10",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-ICO-EVOLVE",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B10",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-ICO-MIGRATE",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B10",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-ICO-BUILD",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B10",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-ICO-TRADE",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B10",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-ICO-RESEARCH",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B11",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-ICO-POLICY",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B11",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-ICO-TREATY",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B11",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-ICO-HISTORY",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B11",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-ICO-WARNING",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B11",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-ICO-HEALTH",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B11",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-ICO-FATIGUE",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B11",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-ICO-POPULATION",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B11",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-ICO-CITY",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B11",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-ICO-ARMY",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B11",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-ICO-GOD",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B11",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-ICO-ECOLOGY",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B11",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-ICO-VISIBILITY",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B11",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-ICO-CLAIM",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B11",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-S-ART-DIRECTION",
+      "class": "ARENA SOURCE ASSET",
+      "status": "SPECIFIED",
+      "batch": "B00",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-A-ART-TITLE",
+      "class": "DIRECT ARENA ASSET",
+      "status": "SPECIFIED",
+      "batch": "B12",
+      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
+    },
+    {
+      "id": "CG-D-GOD-TORSO-Q",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-GOD-TORSO-H",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-GOD-TORSO-S",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-GOD-TORSO-M",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-GOD-LOCO-PILLAR",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-GOD-LOCO-WEBBED",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-GOD-LOCO-DIGGER",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-GOD-LOCO-UNDULATOR",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-GOD-LOCO-FIN",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-GOD-LOCO-WING",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-GOD-FEED-BROWSE",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-GOD-FEED-FILTER",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-GOD-FEED-MINERAL",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-GOD-FEED-CARRION",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-GOD-SENSE-EYE-RING",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-GOD-SENSE-ANTENNA-CROWN",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-GOD-SENSE-VIBRATION-ROSETTE",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-GOD-TAIL-BALANCE",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-GOD-TAIL-PADDLE",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-GOD-TAIL-WEDGE",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-GOD-ARMOR-OSTEODERM",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-GOD-ARMOR-SHELL",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-GOD-ARMOR-COAT",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-GOD-ORGAN-GILLS",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-GOD-ORGAN-SOLAR-SAIL",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-GOD-ORGAN-THERMAL-VENT",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-GOD-ORGAN-SPORE-SAC",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-GOD-SYMB-FUNGAL-GROVE",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-GOD-SYMB-FOLLOWER-GALLERY",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-GOD-SYMB-ROOT-HOLDFAST",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-GOD-FORM-Q",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-GOD-FORM-H",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-GOD-FORM-S",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-GOD-FORM-M",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-BLD-DWELLING",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-BLD-HALL",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-BLD-MARKET",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-BLD-ARCHIVE",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-BLD-WORKSHOP",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-BLD-GRANARY",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-BLD-INFIRMARY",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-BLD-SHRINE",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-BLD-OBSERVATORY",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-BLD-BARRACKS",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-BLD-TOWER",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-BLD-DOCK",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-BLD-DEPOT",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-BLD-CARAVAN-CANOPY",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-INF-ROAD",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-INF-BRIDGE",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-INF-FARM",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-INF-MINE",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-INF-CANAL",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-INF-WALL",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-UNT-CIVILIAN",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-UNT-SOLDIER",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-UNT-WAGON",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-UNT-SPEAR",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-UNT-BOW",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-UNT-SHIELD",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-UNT-BALLISTA",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-UNT-HULL-MERCHANT",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-UNT-HULL-WAR",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-ENV-DECIDUOUS",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-ENV-CONIFER",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-ENV-PALM",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-ENV-REEDS",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-ENV-KELP",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-ENV-ROCK",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-ENV-ORE",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-ENV-CRYSTAL",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-ENV-FUNGUS",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-ENV-RUBBLE",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-EMB-01",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-EMB-02",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-EMB-03",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-EMB-04",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-EMB-05",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-EMB-06",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-ICO-FOOD",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-ICO-WOOD",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-ICO-STONE",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-ICO-ORE",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-ICO-TOOLS",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-ICO-MEDICINE",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-ICO-BIO",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-ICO-COIN",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-ICO-KNOWLEDGE",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-ICO-MOVE",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-ICO-FEED",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-ICO-REST",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-ICO-GUARD",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-ICO-ATTACK",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-ICO-EVOLVE",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-ICO-MIGRATE",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-ICO-BUILD",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-ICO-TRADE",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-ICO-RESEARCH",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-ICO-POLICY",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-ICO-TREATY",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-ICO-HISTORY",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-ICO-WARNING",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-ICO-HEALTH",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-ICO-FATIGUE",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-ICO-POPULATION",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-ICO-CITY",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-ICO-ARMY",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-ICO-GOD",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-ICO-ECOLOGY",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-ICO-VISIBILITY",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-ICO-CLAIM",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-D-UI-ATLAS",
+      "class": "DERIVED ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
+    },
+    {
+      "id": "CG-R-TERRAIN",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "CODE_TESTS_AND_BROWSER_EVIDENCE"
+    },
+    {
+      "id": "CG-R-WATER",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "CODE_TESTS_AND_BROWSER_EVIDENCE"
+    },
+    {
+      "id": "CG-R-BIOME-SCATTER",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "CODE_TESTS_AND_BROWSER_EVIDENCE"
+    },
+    {
+      "id": "CG-R-CITY-BLOCKS",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "CODE_TESTS_AND_BROWSER_EVIDENCE"
+    },
+    {
+      "id": "CG-R-DISTRICTS",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "CODE_TESTS_AND_BROWSER_EVIDENCE"
+    },
+    {
+      "id": "CG-R-INFRA-ROUTES",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "CODE_TESTS_AND_BROWSER_EVIDENCE"
+    },
+    {
+      "id": "CG-R-FARMS-EXTRACTION",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "CODE_TESTS_AND_BROWSER_EVIDENCE"
+    },
+    {
+      "id": "CG-R-UNITS-CIVILIAN",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "CODE_TESTS_AND_BROWSER_EVIDENCE"
+    },
+    {
+      "id": "CG-R-UNITS-MILITARY",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "CODE_TESTS_AND_BROWSER_EVIDENCE"
+    },
+    {
+      "id": "CG-R-CONVOYS",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "CODE_TESTS_AND_BROWSER_EVIDENCE"
+    },
+    {
+      "id": "CG-R-FLEETS",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "CODE_TESTS_AND_BROWSER_EVIDENCE"
+    },
+    {
+      "id": "CG-R-GOD-ASSEMBLY",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "CODE_TESTS_AND_BROWSER_EVIDENCE"
+    },
+    {
+      "id": "CG-R-GOD-LOCOMOTION",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "CODE_TESTS_AND_BROWSER_EVIDENCE"
+    },
+    {
+      "id": "CG-R-GOD-ACTIONS",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "CODE_TESTS_AND_BROWSER_EVIDENCE"
+    },
+    {
+      "id": "CG-R-GOD-AGE",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "CODE_TESTS_AND_BROWSER_EVIDENCE"
+    },
+    {
+      "id": "CG-R-GOD-DAMAGE",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "CODE_TESTS_AND_BROWSER_EVIDENCE"
+    },
+    {
+      "id": "CG-R-GOD-CORPSE",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "CODE_TESTS_AND_BROWSER_EVIDENCE"
+    },
+    {
+      "id": "CG-R-GOD-EMBLEM",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "CODE_TESTS_AND_BROWSER_EVIDENCE"
+    },
+    {
+      "id": "CG-R-CITY-RUINS",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "CODE_TESTS_AND_BROWSER_EVIDENCE"
+    },
+    {
+      "id": "CG-R-DIVINE-STRUCTURES",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "CODE_TESTS_AND_BROWSER_EVIDENCE"
+    },
+    {
+      "id": "CG-R-MEGAPROJECTS",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "CODE_TESTS_AND_BROWSER_EVIDENCE"
+    },
+    {
+      "id": "CG-R-BORDERS",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "CODE_TESTS_AND_BROWSER_EVIDENCE"
+    },
+    {
+      "id": "CG-R-FOG",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "CODE_TESTS_AND_BROWSER_EVIDENCE"
+    },
+    {
+      "id": "CG-R-PATHS",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "CODE_TESTS_AND_BROWSER_EVIDENCE"
+    },
+    {
+      "id": "CG-R-FOOTPRINTS",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "CODE_TESTS_AND_BROWSER_EVIDENCE"
+    },
+    {
+      "id": "CG-R-DEPENDENCY-OVERLAY",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "CODE_TESTS_AND_BROWSER_EVIDENCE"
+    },
+    {
+      "id": "CG-R-HISTORY-MARKERS",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "CODE_TESTS_AND_BROWSER_EVIDENCE"
+    },
+    {
+      "id": "CG-R-UI-CONTROLS",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "CODE_TESTS_AND_BROWSER_EVIDENCE"
+    },
+    {
+      "id": "CG-R-UI-DATA-VIEWS",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "CODE_TESTS_AND_BROWSER_EVIDENCE"
+    },
+    {
+      "id": "CG-R-TITLE-COMPOSITION",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "CODE_TESTS_AND_BROWSER_EVIDENCE"
+    },
+    {
+      "id": "CG-R-FX-DUST",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "CODE_TESTS_AND_BROWSER_EVIDENCE"
+    },
+    {
+      "id": "CG-R-FX-SPLASH",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "CODE_TESTS_AND_BROWSER_EVIDENCE"
+    },
+    {
+      "id": "CG-R-FX-SPORES",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "CODE_TESTS_AND_BROWSER_EVIDENCE"
+    },
+    {
+      "id": "CG-R-FX-HEAT",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "CODE_TESTS_AND_BROWSER_EVIDENCE"
+    },
+    {
+      "id": "CG-R-FX-STORM",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "CODE_TESTS_AND_BROWSER_EVIDENCE"
+    },
+    {
+      "id": "CG-R-FX-IMPACT",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "CODE_TESTS_AND_BROWSER_EVIDENCE"
+    },
+    {
+      "id": "CG-R-FX-FIRE",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "CODE_TESTS_AND_BROWSER_EVIDENCE"
+    },
+    {
+      "id": "CG-R-FX-SUBSIDENCE",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "CODE_TESTS_AND_BROWSER_EVIDENCE"
+    },
+    {
+      "id": "CG-R-DECALS",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "CODE_TESTS_AND_BROWSER_EVIDENCE"
+    },
+    {
+      "id": "CG-R-DEBUG",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "CODE_TESTS_AND_BROWSER_EVIDENCE"
+    },
+    {
+      "id": "CG-R-AUD-UI-TICK",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "CODE_TESTS_AND_BROWSER_EVIDENCE"
+    },
+    {
+      "id": "CG-R-AUD-UI-CONFIRM",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "CODE_TESTS_AND_BROWSER_EVIDENCE"
+    },
+    {
+      "id": "CG-R-AUD-UI-WARNING",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "CODE_TESTS_AND_BROWSER_EVIDENCE"
+    },
+    {
+      "id": "CG-R-AUD-WIND",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "CODE_TESTS_AND_BROWSER_EVIDENCE"
+    },
+    {
+      "id": "CG-R-AUD-WATER",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "CODE_TESTS_AND_BROWSER_EVIDENCE"
+    },
+    {
+      "id": "CG-R-AUD-GOD-STEP",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "CODE_TESTS_AND_BROWSER_EVIDENCE"
+    },
+    {
+      "id": "CG-R-AUD-GOD-BREATH",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "CODE_TESTS_AND_BROWSER_EVIDENCE"
+    },
+    {
+      "id": "CG-R-AUD-EARTH-RUMBLE",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "CODE_TESTS_AND_BROWSER_EVIDENCE"
+    },
+    {
+      "id": "CG-R-AUD-WOOD-STONE",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "CODE_TESTS_AND_BROWSER_EVIDENCE"
+    },
+    {
+      "id": "CG-R-AUD-ARMY-CLASH",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "CODE_TESTS_AND_BROWSER_EVIDENCE"
+    },
+    {
+      "id": "CG-R-AUD-AMBIENT-HARMONY",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "CODE_TESTS_AND_BROWSER_EVIDENCE"
+    },
+    {
+      "id": "CG-R-AUD-DEATH-SILENCE",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "status": "SPECIFIED",
+      "batch": null,
+      "needs": "CODE_TESTS_AND_BROWSER_EVIDENCE"
+    }
+  ]
+}

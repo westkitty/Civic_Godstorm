@@ -1,0 +1,1725 @@
+{
+  "contract": "CG-V1.0.0",
+  "section17Sha256": "6b4bf9095a10b3c05c592d895afda0c8adefa9ec5e3a66312de078d351ef9c80",
+  "counts": {
+    "total": 285,
+    "byClass": {
+      "ARENA SOURCE ASSET": 120,
+      "DIRECT ARENA ASSET": 1,
+      "DERIVED ASSET": 112,
+      "PROCEDURAL RUNTIME ASSET": 52
+    }
+  },
+  "assets": [
+    {
+      "id": "CG-S-GOD-TORSO-Q",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GOD",
+      "path": "assets/source/god/cg_s_god_torso_q.png"
+    },
+    {
+      "id": "CG-S-GOD-TORSO-H",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GOD",
+      "path": "assets/source/god/cg_s_god_torso_h.png"
+    },
+    {
+      "id": "CG-S-GOD-TORSO-S",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GOD",
+      "path": "assets/source/god/cg_s_god_torso_s.png"
+    },
+    {
+      "id": "CG-S-GOD-TORSO-M",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GOD",
+      "path": "assets/source/god/cg_s_god_torso_m.png"
+    },
+    {
+      "id": "CG-S-GOD-LOCO-PILLAR",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GOD",
+      "path": "assets/source/god/cg_s_god_loco_pillar.png"
+    },
+    {
+      "id": "CG-S-GOD-LOCO-WEBBED",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GOD",
+      "path": "assets/source/god/cg_s_god_loco_webbed.png"
+    },
+    {
+      "id": "CG-S-GOD-LOCO-DIGGER",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GOD",
+      "path": "assets/source/god/cg_s_god_loco_digger.png"
+    },
+    {
+      "id": "CG-S-GOD-LOCO-UNDULATOR",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GOD",
+      "path": "assets/source/god/cg_s_god_loco_undulator.png"
+    },
+    {
+      "id": "CG-S-GOD-LOCO-FIN",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GOD",
+      "path": "assets/source/god/cg_s_god_loco_fin.png"
+    },
+    {
+      "id": "CG-S-GOD-LOCO-WING",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GOD",
+      "path": "assets/source/god/cg_s_god_loco_wing.png"
+    },
+    {
+      "id": "CG-S-GOD-FEED-BROWSE",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GOD",
+      "path": "assets/source/god/cg_s_god_feed_browse.png"
+    },
+    {
+      "id": "CG-S-GOD-FEED-FILTER",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GOD",
+      "path": "assets/source/god/cg_s_god_feed_filter.png"
+    },
+    {
+      "id": "CG-S-GOD-FEED-MINERAL",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GOD",
+      "path": "assets/source/god/cg_s_god_feed_mineral.png"
+    },
+    {
+      "id": "CG-S-GOD-FEED-CARRION",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GOD",
+      "path": "assets/source/god/cg_s_god_feed_carrion.png"
+    },
+    {
+      "id": "CG-S-GOD-SENSE-EYE-RING",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GOD",
+      "path": "assets/source/god/cg_s_god_sense_eye_ring.png"
+    },
+    {
+      "id": "CG-S-GOD-SENSE-ANTENNA-CROWN",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GOD",
+      "path": "assets/source/god/cg_s_god_sense_antenna_crown.png"
+    },
+    {
+      "id": "CG-S-GOD-SENSE-VIBRATION-ROSETTE",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GOD",
+      "path": "assets/source/god/cg_s_god_sense_vibration_rosette.png"
+    },
+    {
+      "id": "CG-S-GOD-TAIL-BALANCE",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GOD",
+      "path": "assets/source/god/cg_s_god_tail_balance.png"
+    },
+    {
+      "id": "CG-S-GOD-TAIL-PADDLE",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GOD",
+      "path": "assets/source/god/cg_s_god_tail_paddle.png"
+    },
+    {
+      "id": "CG-S-GOD-TAIL-WEDGE",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GOD",
+      "path": "assets/source/god/cg_s_god_tail_wedge.png"
+    },
+    {
+      "id": "CG-S-GOD-ARMOR-OSTEODERM",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GOD",
+      "path": "assets/source/god/cg_s_god_armor_osteoderm.png"
+    },
+    {
+      "id": "CG-S-GOD-ARMOR-SHELL",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GOD",
+      "path": "assets/source/god/cg_s_god_armor_shell.png"
+    },
+    {
+      "id": "CG-S-GOD-ARMOR-COAT",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GOD",
+      "path": "assets/source/god/cg_s_god_armor_coat.png"
+    },
+    {
+      "id": "CG-S-GOD-ORGAN-GILLS",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GOD",
+      "path": "assets/source/god/cg_s_god_organ_gills.png"
+    },
+    {
+      "id": "CG-S-GOD-ORGAN-SOLAR-SAIL",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GOD",
+      "path": "assets/source/god/cg_s_god_organ_solar_sail.png"
+    },
+    {
+      "id": "CG-S-GOD-ORGAN-THERMAL-VENT",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GOD",
+      "path": "assets/source/god/cg_s_god_organ_thermal_vent.png"
+    },
+    {
+      "id": "CG-S-GOD-ORGAN-SPORE-SAC",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GOD",
+      "path": "assets/source/god/cg_s_god_organ_spore_sac.png"
+    },
+    {
+      "id": "CG-S-GOD-SYMB-FUNGAL-GROVE",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GOD",
+      "path": "assets/source/god/cg_s_god_symb_fungal_grove.png"
+    },
+    {
+      "id": "CG-S-GOD-SYMB-FOLLOWER-GALLERY",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GOD",
+      "path": "assets/source/god/cg_s_god_symb_follower_gallery.png"
+    },
+    {
+      "id": "CG-S-GOD-SYMB-ROOT-HOLDFAST",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GOD",
+      "path": "assets/source/god/cg_s_god_symb_root_holdfast.png"
+    },
+    {
+      "id": "CG-S-GOD-FORM-Q",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-FORM",
+      "path": "assets/source/god/cg_s_god_form_q.png"
+    },
+    {
+      "id": "CG-S-GOD-FORM-H",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-FORM",
+      "path": "assets/source/god/cg_s_god_form_h.png"
+    },
+    {
+      "id": "CG-S-GOD-FORM-S",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-FORM",
+      "path": "assets/source/god/cg_s_god_form_s.png"
+    },
+    {
+      "id": "CG-S-GOD-FORM-M",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-FORM",
+      "path": "assets/source/god/cg_s_god_form_m.png"
+    },
+    {
+      "id": "CG-S-GOD-LIFE-Q",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-LIFE",
+      "path": "assets/source/god/cg_s_god_life_q.png"
+    },
+    {
+      "id": "CG-S-GOD-LIFE-H",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-LIFE",
+      "path": "assets/source/god/cg_s_god_life_h.png"
+    },
+    {
+      "id": "CG-S-GOD-LIFE-S",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-LIFE",
+      "path": "assets/source/god/cg_s_god_life_s.png"
+    },
+    {
+      "id": "CG-S-GOD-LIFE-M",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-LIFE",
+      "path": "assets/source/god/cg_s_god_life_m.png"
+    },
+    {
+      "id": "CG-S-BLD-DWELLING",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-PROP",
+      "path": "assets/source/buildings/cg_s_bld_dwelling.png"
+    },
+    {
+      "id": "CG-S-BLD-HALL",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-PROP",
+      "path": "assets/source/buildings/cg_s_bld_hall.png"
+    },
+    {
+      "id": "CG-S-BLD-MARKET",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-PROP",
+      "path": "assets/source/buildings/cg_s_bld_market.png"
+    },
+    {
+      "id": "CG-S-BLD-ARCHIVE",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-PROP",
+      "path": "assets/source/buildings/cg_s_bld_archive.png"
+    },
+    {
+      "id": "CG-S-BLD-WORKSHOP",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-PROP",
+      "path": "assets/source/buildings/cg_s_bld_workshop.png"
+    },
+    {
+      "id": "CG-S-BLD-GRANARY",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-PROP",
+      "path": "assets/source/buildings/cg_s_bld_granary.png"
+    },
+    {
+      "id": "CG-S-BLD-INFIRMARY",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-PROP",
+      "path": "assets/source/buildings/cg_s_bld_infirmary.png"
+    },
+    {
+      "id": "CG-S-BLD-SHRINE",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-PROP",
+      "path": "assets/source/buildings/cg_s_bld_shrine.png"
+    },
+    {
+      "id": "CG-S-BLD-OBSERVATORY",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-PROP",
+      "path": "assets/source/buildings/cg_s_bld_observatory.png"
+    },
+    {
+      "id": "CG-S-BLD-BARRACKS",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-PROP",
+      "path": "assets/source/buildings/cg_s_bld_barracks.png"
+    },
+    {
+      "id": "CG-S-BLD-TOWER",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-PROP",
+      "path": "assets/source/buildings/cg_s_bld_tower.png"
+    },
+    {
+      "id": "CG-S-BLD-DOCK",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-PROP",
+      "path": "assets/source/buildings/cg_s_bld_dock.png"
+    },
+    {
+      "id": "CG-S-BLD-DEPOT",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-PROP",
+      "path": "assets/source/buildings/cg_s_bld_depot.png"
+    },
+    {
+      "id": "CG-S-BLD-CARAVAN-CANOPY",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-PROP",
+      "path": "assets/source/buildings/cg_s_bld_caravan_canopy.png"
+    },
+    {
+      "id": "CG-S-INF-ROAD",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-INF",
+      "path": "assets/source/infrastructure/cg_s_inf_road.png"
+    },
+    {
+      "id": "CG-S-INF-BRIDGE",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-INF",
+      "path": "assets/source/infrastructure/cg_s_inf_bridge.png"
+    },
+    {
+      "id": "CG-S-INF-FARM",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-INF",
+      "path": "assets/source/infrastructure/cg_s_inf_farm.png"
+    },
+    {
+      "id": "CG-S-INF-MINE",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-INF",
+      "path": "assets/source/infrastructure/cg_s_inf_mine.png"
+    },
+    {
+      "id": "CG-S-INF-CANAL",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-INF",
+      "path": "assets/source/infrastructure/cg_s_inf_canal.png"
+    },
+    {
+      "id": "CG-S-INF-WALL",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-INF",
+      "path": "assets/source/infrastructure/cg_s_inf_wall.png"
+    },
+    {
+      "id": "CG-S-UNT-CIVILIAN",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-PROP",
+      "path": "assets/source/units/cg_s_unt_civilian.png"
+    },
+    {
+      "id": "CG-S-UNT-SOLDIER",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-PROP",
+      "path": "assets/source/units/cg_s_unt_soldier.png"
+    },
+    {
+      "id": "CG-S-UNT-WAGON",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-PROP",
+      "path": "assets/source/units/cg_s_unt_wagon.png"
+    },
+    {
+      "id": "CG-S-UNT-SPEAR",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-PROP",
+      "path": "assets/source/units/cg_s_unt_spear.png"
+    },
+    {
+      "id": "CG-S-UNT-BOW",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-PROP",
+      "path": "assets/source/units/cg_s_unt_bow.png"
+    },
+    {
+      "id": "CG-S-UNT-SHIELD",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-PROP",
+      "path": "assets/source/units/cg_s_unt_shield.png"
+    },
+    {
+      "id": "CG-S-UNT-BALLISTA",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-PROP",
+      "path": "assets/source/units/cg_s_unt_ballista.png"
+    },
+    {
+      "id": "CG-S-UNT-HULL-MERCHANT",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-PROP",
+      "path": "assets/source/units/cg_s_unt_hull_merchant.png"
+    },
+    {
+      "id": "CG-S-UNT-HULL-WAR",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-PROP",
+      "path": "assets/source/units/cg_s_unt_hull_war.png"
+    },
+    {
+      "id": "CG-S-ENV-DECIDUOUS",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-PROP",
+      "path": "assets/source/environment/cg_s_env_deciduous.png"
+    },
+    {
+      "id": "CG-S-ENV-CONIFER",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-PROP",
+      "path": "assets/source/environment/cg_s_env_conifer.png"
+    },
+    {
+      "id": "CG-S-ENV-PALM",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-PROP",
+      "path": "assets/source/environment/cg_s_env_palm.png"
+    },
+    {
+      "id": "CG-S-ENV-REEDS",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-PROP",
+      "path": "assets/source/environment/cg_s_env_reeds.png"
+    },
+    {
+      "id": "CG-S-ENV-KELP",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-PROP",
+      "path": "assets/source/environment/cg_s_env_kelp.png"
+    },
+    {
+      "id": "CG-S-ENV-ROCK",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-PROP",
+      "path": "assets/source/environment/cg_s_env_rock.png"
+    },
+    {
+      "id": "CG-S-ENV-ORE",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-PROP",
+      "path": "assets/source/environment/cg_s_env_ore.png"
+    },
+    {
+      "id": "CG-S-ENV-CRYSTAL",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-PROP",
+      "path": "assets/source/environment/cg_s_env_crystal.png"
+    },
+    {
+      "id": "CG-S-ENV-FUNGUS",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-PROP",
+      "path": "assets/source/environment/cg_s_env_fungus.png"
+    },
+    {
+      "id": "CG-S-ENV-RUBBLE",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-PROP",
+      "path": "assets/source/environment/cg_s_env_rubble.png"
+    },
+    {
+      "id": "CG-S-EMB-01",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GLYPH",
+      "path": "assets/source/emblems/cg_s_emb_01.png"
+    },
+    {
+      "id": "CG-S-EMB-02",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GLYPH",
+      "path": "assets/source/emblems/cg_s_emb_02.png"
+    },
+    {
+      "id": "CG-S-EMB-03",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GLYPH",
+      "path": "assets/source/emblems/cg_s_emb_03.png"
+    },
+    {
+      "id": "CG-S-EMB-04",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GLYPH",
+      "path": "assets/source/emblems/cg_s_emb_04.png"
+    },
+    {
+      "id": "CG-S-EMB-05",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GLYPH",
+      "path": "assets/source/emblems/cg_s_emb_05.png"
+    },
+    {
+      "id": "CG-S-EMB-06",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GLYPH",
+      "path": "assets/source/emblems/cg_s_emb_06.png"
+    },
+    {
+      "id": "CG-S-MOT-BASALT",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-MOTIF",
+      "path": "assets/source/motifs/cg_s_mot_basalt.png"
+    },
+    {
+      "id": "CG-S-MOT-REED",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-MOTIF",
+      "path": "assets/source/motifs/cg_s_mot_reed.png"
+    },
+    {
+      "id": "CG-S-MOT-VAULT",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-MOTIF",
+      "path": "assets/source/motifs/cg_s_mot_vault.png"
+    },
+    {
+      "id": "CG-S-MOT-CANOPY",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-MOTIF",
+      "path": "assets/source/motifs/cg_s_mot_canopy.png"
+    },
+    {
+      "id": "CG-S-ICO-FOOD",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GLYPH",
+      "path": "assets/source/icons/cg_s_ico_food.png"
+    },
+    {
+      "id": "CG-S-ICO-WOOD",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GLYPH",
+      "path": "assets/source/icons/cg_s_ico_wood.png"
+    },
+    {
+      "id": "CG-S-ICO-STONE",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GLYPH",
+      "path": "assets/source/icons/cg_s_ico_stone.png"
+    },
+    {
+      "id": "CG-S-ICO-ORE",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GLYPH",
+      "path": "assets/source/icons/cg_s_ico_ore.png"
+    },
+    {
+      "id": "CG-S-ICO-TOOLS",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GLYPH",
+      "path": "assets/source/icons/cg_s_ico_tools.png"
+    },
+    {
+      "id": "CG-S-ICO-MEDICINE",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GLYPH",
+      "path": "assets/source/icons/cg_s_ico_medicine.png"
+    },
+    {
+      "id": "CG-S-ICO-BIO",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GLYPH",
+      "path": "assets/source/icons/cg_s_ico_bio.png"
+    },
+    {
+      "id": "CG-S-ICO-COIN",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GLYPH",
+      "path": "assets/source/icons/cg_s_ico_coin.png"
+    },
+    {
+      "id": "CG-S-ICO-KNOWLEDGE",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GLYPH",
+      "path": "assets/source/icons/cg_s_ico_knowledge.png"
+    },
+    {
+      "id": "CG-S-ICO-MOVE",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GLYPH",
+      "path": "assets/source/icons/cg_s_ico_move.png"
+    },
+    {
+      "id": "CG-S-ICO-FEED",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GLYPH",
+      "path": "assets/source/icons/cg_s_ico_feed.png"
+    },
+    {
+      "id": "CG-S-ICO-REST",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GLYPH",
+      "path": "assets/source/icons/cg_s_ico_rest.png"
+    },
+    {
+      "id": "CG-S-ICO-GUARD",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GLYPH",
+      "path": "assets/source/icons/cg_s_ico_guard.png"
+    },
+    {
+      "id": "CG-S-ICO-ATTACK",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GLYPH",
+      "path": "assets/source/icons/cg_s_ico_attack.png"
+    },
+    {
+      "id": "CG-S-ICO-EVOLVE",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GLYPH",
+      "path": "assets/source/icons/cg_s_ico_evolve.png"
+    },
+    {
+      "id": "CG-S-ICO-MIGRATE",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GLYPH",
+      "path": "assets/source/icons/cg_s_ico_migrate.png"
+    },
+    {
+      "id": "CG-S-ICO-BUILD",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GLYPH",
+      "path": "assets/source/icons/cg_s_ico_build.png"
+    },
+    {
+      "id": "CG-S-ICO-TRADE",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GLYPH",
+      "path": "assets/source/icons/cg_s_ico_trade.png"
+    },
+    {
+      "id": "CG-S-ICO-RESEARCH",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GLYPH",
+      "path": "assets/source/icons/cg_s_ico_research.png"
+    },
+    {
+      "id": "CG-S-ICO-POLICY",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GLYPH",
+      "path": "assets/source/icons/cg_s_ico_policy.png"
+    },
+    {
+      "id": "CG-S-ICO-TREATY",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GLYPH",
+      "path": "assets/source/icons/cg_s_ico_treaty.png"
+    },
+    {
+      "id": "CG-S-ICO-HISTORY",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GLYPH",
+      "path": "assets/source/icons/cg_s_ico_history.png"
+    },
+    {
+      "id": "CG-S-ICO-WARNING",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GLYPH",
+      "path": "assets/source/icons/cg_s_ico_warning.png"
+    },
+    {
+      "id": "CG-S-ICO-HEALTH",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GLYPH",
+      "path": "assets/source/icons/cg_s_ico_health.png"
+    },
+    {
+      "id": "CG-S-ICO-FATIGUE",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GLYPH",
+      "path": "assets/source/icons/cg_s_ico_fatigue.png"
+    },
+    {
+      "id": "CG-S-ICO-POPULATION",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GLYPH",
+      "path": "assets/source/icons/cg_s_ico_population.png"
+    },
+    {
+      "id": "CG-S-ICO-CITY",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GLYPH",
+      "path": "assets/source/icons/cg_s_ico_city.png"
+    },
+    {
+      "id": "CG-S-ICO-ARMY",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GLYPH",
+      "path": "assets/source/icons/cg_s_ico_army.png"
+    },
+    {
+      "id": "CG-S-ICO-GOD",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GLYPH",
+      "path": "assets/source/icons/cg_s_ico_god.png"
+    },
+    {
+      "id": "CG-S-ICO-ECOLOGY",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GLYPH",
+      "path": "assets/source/icons/cg_s_ico_ecology.png"
+    },
+    {
+      "id": "CG-S-ICO-VISIBILITY",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GLYPH",
+      "path": "assets/source/icons/cg_s_ico_visibility.png"
+    },
+    {
+      "id": "CG-S-ICO-CLAIM",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-GLYPH",
+      "path": "assets/source/icons/cg_s_ico_claim.png"
+    },
+    {
+      "id": "CG-S-ART-DIRECTION",
+      "class": "ARENA SOURCE ASSET",
+      "profile": "REF-DIRECTION",
+      "path": "assets/source/art/cg_s_art_direction.png"
+    },
+    {
+      "id": "CG-A-ART-TITLE",
+      "class": "DIRECT ARENA ASSET",
+      "profile": "DIRECT-TITLE",
+      "path": "assets/source/art/cg_a_art_title.png"
+    },
+    {
+      "id": "CG-D-GOD-TORSO-Q",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-GOD",
+      "path": "assets/runtime/models/cg_d_god_torso_q.glb"
+    },
+    {
+      "id": "CG-D-GOD-TORSO-H",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-GOD",
+      "path": "assets/runtime/models/cg_d_god_torso_h.glb"
+    },
+    {
+      "id": "CG-D-GOD-TORSO-S",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-GOD",
+      "path": "assets/runtime/models/cg_d_god_torso_s.glb"
+    },
+    {
+      "id": "CG-D-GOD-TORSO-M",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-GOD",
+      "path": "assets/runtime/models/cg_d_god_torso_m.glb"
+    },
+    {
+      "id": "CG-D-GOD-LOCO-PILLAR",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-GOD",
+      "path": "assets/runtime/models/cg_d_god_loco_pillar.glb"
+    },
+    {
+      "id": "CG-D-GOD-LOCO-WEBBED",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-GOD",
+      "path": "assets/runtime/models/cg_d_god_loco_webbed.glb"
+    },
+    {
+      "id": "CG-D-GOD-LOCO-DIGGER",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-GOD",
+      "path": "assets/runtime/models/cg_d_god_loco_digger.glb"
+    },
+    {
+      "id": "CG-D-GOD-LOCO-UNDULATOR",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-GOD",
+      "path": "assets/runtime/models/cg_d_god_loco_undulator.glb"
+    },
+    {
+      "id": "CG-D-GOD-LOCO-FIN",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-GOD",
+      "path": "assets/runtime/models/cg_d_god_loco_fin.glb"
+    },
+    {
+      "id": "CG-D-GOD-LOCO-WING",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-GOD",
+      "path": "assets/runtime/models/cg_d_god_loco_wing.glb"
+    },
+    {
+      "id": "CG-D-GOD-FEED-BROWSE",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-GOD",
+      "path": "assets/runtime/models/cg_d_god_feed_browse.glb"
+    },
+    {
+      "id": "CG-D-GOD-FEED-FILTER",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-GOD",
+      "path": "assets/runtime/models/cg_d_god_feed_filter.glb"
+    },
+    {
+      "id": "CG-D-GOD-FEED-MINERAL",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-GOD",
+      "path": "assets/runtime/models/cg_d_god_feed_mineral.glb"
+    },
+    {
+      "id": "CG-D-GOD-FEED-CARRION",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-GOD",
+      "path": "assets/runtime/models/cg_d_god_feed_carrion.glb"
+    },
+    {
+      "id": "CG-D-GOD-SENSE-EYE-RING",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-GOD",
+      "path": "assets/runtime/models/cg_d_god_sense_eye_ring.glb"
+    },
+    {
+      "id": "CG-D-GOD-SENSE-ANTENNA-CROWN",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-GOD",
+      "path": "assets/runtime/models/cg_d_god_sense_antenna_crown.glb"
+    },
+    {
+      "id": "CG-D-GOD-SENSE-VIBRATION-ROSETTE",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-GOD",
+      "path": "assets/runtime/models/cg_d_god_sense_vibration_rosette.glb"
+    },
+    {
+      "id": "CG-D-GOD-TAIL-BALANCE",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-GOD",
+      "path": "assets/runtime/models/cg_d_god_tail_balance.glb"
+    },
+    {
+      "id": "CG-D-GOD-TAIL-PADDLE",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-GOD",
+      "path": "assets/runtime/models/cg_d_god_tail_paddle.glb"
+    },
+    {
+      "id": "CG-D-GOD-TAIL-WEDGE",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-GOD",
+      "path": "assets/runtime/models/cg_d_god_tail_wedge.glb"
+    },
+    {
+      "id": "CG-D-GOD-ARMOR-OSTEODERM",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-GOD",
+      "path": "assets/runtime/models/cg_d_god_armor_osteoderm.glb"
+    },
+    {
+      "id": "CG-D-GOD-ARMOR-SHELL",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-GOD",
+      "path": "assets/runtime/models/cg_d_god_armor_shell.glb"
+    },
+    {
+      "id": "CG-D-GOD-ARMOR-COAT",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-GOD",
+      "path": "assets/runtime/models/cg_d_god_armor_coat.glb"
+    },
+    {
+      "id": "CG-D-GOD-ORGAN-GILLS",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-GOD",
+      "path": "assets/runtime/models/cg_d_god_organ_gills.glb"
+    },
+    {
+      "id": "CG-D-GOD-ORGAN-SOLAR-SAIL",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-GOD",
+      "path": "assets/runtime/models/cg_d_god_organ_solar_sail.glb"
+    },
+    {
+      "id": "CG-D-GOD-ORGAN-THERMAL-VENT",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-GOD",
+      "path": "assets/runtime/models/cg_d_god_organ_thermal_vent.glb"
+    },
+    {
+      "id": "CG-D-GOD-ORGAN-SPORE-SAC",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-GOD",
+      "path": "assets/runtime/models/cg_d_god_organ_spore_sac.glb"
+    },
+    {
+      "id": "CG-D-GOD-SYMB-FUNGAL-GROVE",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-GOD",
+      "path": "assets/runtime/models/cg_d_god_symb_fungal_grove.glb"
+    },
+    {
+      "id": "CG-D-GOD-SYMB-FOLLOWER-GALLERY",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-GOD",
+      "path": "assets/runtime/models/cg_d_god_symb_follower_gallery.glb"
+    },
+    {
+      "id": "CG-D-GOD-SYMB-ROOT-HOLDFAST",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-GOD",
+      "path": "assets/runtime/models/cg_d_god_symb_root_holdfast.glb"
+    },
+    {
+      "id": "CG-D-GOD-FORM-Q",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-FORM",
+      "path": "assets/runtime/models/cg_d_god_form_q.glb"
+    },
+    {
+      "id": "CG-D-GOD-FORM-H",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-FORM",
+      "path": "assets/runtime/models/cg_d_god_form_h.glb"
+    },
+    {
+      "id": "CG-D-GOD-FORM-S",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-FORM",
+      "path": "assets/runtime/models/cg_d_god_form_s.glb"
+    },
+    {
+      "id": "CG-D-GOD-FORM-M",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-FORM",
+      "path": "assets/runtime/models/cg_d_god_form_m.glb"
+    },
+    {
+      "id": "CG-D-BLD-DWELLING",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-PROP",
+      "path": "assets/runtime/models/cg_d_bld_dwelling.glb"
+    },
+    {
+      "id": "CG-D-BLD-HALL",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-PROP",
+      "path": "assets/runtime/models/cg_d_bld_hall.glb"
+    },
+    {
+      "id": "CG-D-BLD-MARKET",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-PROP",
+      "path": "assets/runtime/models/cg_d_bld_market.glb"
+    },
+    {
+      "id": "CG-D-BLD-ARCHIVE",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-PROP",
+      "path": "assets/runtime/models/cg_d_bld_archive.glb"
+    },
+    {
+      "id": "CG-D-BLD-WORKSHOP",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-PROP",
+      "path": "assets/runtime/models/cg_d_bld_workshop.glb"
+    },
+    {
+      "id": "CG-D-BLD-GRANARY",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-PROP",
+      "path": "assets/runtime/models/cg_d_bld_granary.glb"
+    },
+    {
+      "id": "CG-D-BLD-INFIRMARY",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-PROP",
+      "path": "assets/runtime/models/cg_d_bld_infirmary.glb"
+    },
+    {
+      "id": "CG-D-BLD-SHRINE",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-PROP",
+      "path": "assets/runtime/models/cg_d_bld_shrine.glb"
+    },
+    {
+      "id": "CG-D-BLD-OBSERVATORY",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-PROP",
+      "path": "assets/runtime/models/cg_d_bld_observatory.glb"
+    },
+    {
+      "id": "CG-D-BLD-BARRACKS",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-PROP",
+      "path": "assets/runtime/models/cg_d_bld_barracks.glb"
+    },
+    {
+      "id": "CG-D-BLD-TOWER",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-PROP",
+      "path": "assets/runtime/models/cg_d_bld_tower.glb"
+    },
+    {
+      "id": "CG-D-BLD-DOCK",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-PROP",
+      "path": "assets/runtime/models/cg_d_bld_dock.glb"
+    },
+    {
+      "id": "CG-D-BLD-DEPOT",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-PROP",
+      "path": "assets/runtime/models/cg_d_bld_depot.glb"
+    },
+    {
+      "id": "CG-D-BLD-CARAVAN-CANOPY",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-PROP",
+      "path": "assets/runtime/models/cg_d_bld_caravan_canopy.glb"
+    },
+    {
+      "id": "CG-D-INF-ROAD",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-PROP",
+      "path": "assets/runtime/models/cg_d_inf_road.glb"
+    },
+    {
+      "id": "CG-D-INF-BRIDGE",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-PROP",
+      "path": "assets/runtime/models/cg_d_inf_bridge.glb"
+    },
+    {
+      "id": "CG-D-INF-FARM",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-PROP",
+      "path": "assets/runtime/models/cg_d_inf_farm.glb"
+    },
+    {
+      "id": "CG-D-INF-MINE",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-PROP",
+      "path": "assets/runtime/models/cg_d_inf_mine.glb"
+    },
+    {
+      "id": "CG-D-INF-CANAL",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-PROP",
+      "path": "assets/runtime/models/cg_d_inf_canal.glb"
+    },
+    {
+      "id": "CG-D-INF-WALL",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-PROP",
+      "path": "assets/runtime/models/cg_d_inf_wall.glb"
+    },
+    {
+      "id": "CG-D-UNT-CIVILIAN",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-PROP",
+      "path": "assets/runtime/models/cg_d_unt_civilian.glb"
+    },
+    {
+      "id": "CG-D-UNT-SOLDIER",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-PROP",
+      "path": "assets/runtime/models/cg_d_unt_soldier.glb"
+    },
+    {
+      "id": "CG-D-UNT-WAGON",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-PROP",
+      "path": "assets/runtime/models/cg_d_unt_wagon.glb"
+    },
+    {
+      "id": "CG-D-UNT-SPEAR",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-PROP",
+      "path": "assets/runtime/models/cg_d_unt_spear.glb"
+    },
+    {
+      "id": "CG-D-UNT-BOW",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-PROP",
+      "path": "assets/runtime/models/cg_d_unt_bow.glb"
+    },
+    {
+      "id": "CG-D-UNT-SHIELD",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-PROP",
+      "path": "assets/runtime/models/cg_d_unt_shield.glb"
+    },
+    {
+      "id": "CG-D-UNT-BALLISTA",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-PROP",
+      "path": "assets/runtime/models/cg_d_unt_ballista.glb"
+    },
+    {
+      "id": "CG-D-UNT-HULL-MERCHANT",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-PROP",
+      "path": "assets/runtime/models/cg_d_unt_hull_merchant.glb"
+    },
+    {
+      "id": "CG-D-UNT-HULL-WAR",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-PROP",
+      "path": "assets/runtime/models/cg_d_unt_hull_war.glb"
+    },
+    {
+      "id": "CG-D-ENV-DECIDUOUS",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-PROP",
+      "path": "assets/runtime/models/cg_d_env_deciduous.glb"
+    },
+    {
+      "id": "CG-D-ENV-CONIFER",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-PROP",
+      "path": "assets/runtime/models/cg_d_env_conifer.glb"
+    },
+    {
+      "id": "CG-D-ENV-PALM",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-PROP",
+      "path": "assets/runtime/models/cg_d_env_palm.glb"
+    },
+    {
+      "id": "CG-D-ENV-REEDS",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-PROP",
+      "path": "assets/runtime/models/cg_d_env_reeds.glb"
+    },
+    {
+      "id": "CG-D-ENV-KELP",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-PROP",
+      "path": "assets/runtime/models/cg_d_env_kelp.glb"
+    },
+    {
+      "id": "CG-D-ENV-ROCK",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-PROP",
+      "path": "assets/runtime/models/cg_d_env_rock.glb"
+    },
+    {
+      "id": "CG-D-ENV-ORE",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-PROP",
+      "path": "assets/runtime/models/cg_d_env_ore.glb"
+    },
+    {
+      "id": "CG-D-ENV-CRYSTAL",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-PROP",
+      "path": "assets/runtime/models/cg_d_env_crystal.glb"
+    },
+    {
+      "id": "CG-D-ENV-FUNGUS",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-PROP",
+      "path": "assets/runtime/models/cg_d_env_fungus.glb"
+    },
+    {
+      "id": "CG-D-ENV-RUBBLE",
+      "class": "DERIVED ASSET",
+      "profile": "MODEL-PROP",
+      "path": "assets/runtime/models/cg_d_env_rubble.glb"
+    },
+    {
+      "id": "CG-D-EMB-01",
+      "class": "DERIVED ASSET",
+      "profile": "GLYPH",
+      "path": "assets/runtime/ui/cg_d_emb_01.png"
+    },
+    {
+      "id": "CG-D-EMB-02",
+      "class": "DERIVED ASSET",
+      "profile": "GLYPH",
+      "path": "assets/runtime/ui/cg_d_emb_02.png"
+    },
+    {
+      "id": "CG-D-EMB-03",
+      "class": "DERIVED ASSET",
+      "profile": "GLYPH",
+      "path": "assets/runtime/ui/cg_d_emb_03.png"
+    },
+    {
+      "id": "CG-D-EMB-04",
+      "class": "DERIVED ASSET",
+      "profile": "GLYPH",
+      "path": "assets/runtime/ui/cg_d_emb_04.png"
+    },
+    {
+      "id": "CG-D-EMB-05",
+      "class": "DERIVED ASSET",
+      "profile": "GLYPH",
+      "path": "assets/runtime/ui/cg_d_emb_05.png"
+    },
+    {
+      "id": "CG-D-EMB-06",
+      "class": "DERIVED ASSET",
+      "profile": "GLYPH",
+      "path": "assets/runtime/ui/cg_d_emb_06.png"
+    },
+    {
+      "id": "CG-D-ICO-FOOD",
+      "class": "DERIVED ASSET",
+      "profile": "GLYPH",
+      "path": "assets/runtime/ui/cg_d_ico_food.png"
+    },
+    {
+      "id": "CG-D-ICO-WOOD",
+      "class": "DERIVED ASSET",
+      "profile": "GLYPH",
+      "path": "assets/runtime/ui/cg_d_ico_wood.png"
+    },
+    {
+      "id": "CG-D-ICO-STONE",
+      "class": "DERIVED ASSET",
+      "profile": "GLYPH",
+      "path": "assets/runtime/ui/cg_d_ico_stone.png"
+    },
+    {
+      "id": "CG-D-ICO-ORE",
+      "class": "DERIVED ASSET",
+      "profile": "GLYPH",
+      "path": "assets/runtime/ui/cg_d_ico_ore.png"
+    },
+    {
+      "id": "CG-D-ICO-TOOLS",
+      "class": "DERIVED ASSET",
+      "profile": "GLYPH",
+      "path": "assets/runtime/ui/cg_d_ico_tools.png"
+    },
+    {
+      "id": "CG-D-ICO-MEDICINE",
+      "class": "DERIVED ASSET",
+      "profile": "GLYPH",
+      "path": "assets/runtime/ui/cg_d_ico_medicine.png"
+    },
+    {
+      "id": "CG-D-ICO-BIO",
+      "class": "DERIVED ASSET",
+      "profile": "GLYPH",
+      "path": "assets/runtime/ui/cg_d_ico_bio.png"
+    },
+    {
+      "id": "CG-D-ICO-COIN",
+      "class": "DERIVED ASSET",
+      "profile": "GLYPH",
+      "path": "assets/runtime/ui/cg_d_ico_coin.png"
+    },
+    {
+      "id": "CG-D-ICO-KNOWLEDGE",
+      "class": "DERIVED ASSET",
+      "profile": "GLYPH",
+      "path": "assets/runtime/ui/cg_d_ico_knowledge.png"
+    },
+    {
+      "id": "CG-D-ICO-MOVE",
+      "class": "DERIVED ASSET",
+      "profile": "GLYPH",
+      "path": "assets/runtime/ui/cg_d_ico_move.png"
+    },
+    {
+      "id": "CG-D-ICO-FEED",
+      "class": "DERIVED ASSET",
+      "profile": "GLYPH",
+      "path": "assets/runtime/ui/cg_d_ico_feed.png"
+    },
+    {
+      "id": "CG-D-ICO-REST",
+      "class": "DERIVED ASSET",
+      "profile": "GLYPH",
+      "path": "assets/runtime/ui/cg_d_ico_rest.png"
+    },
+    {
+      "id": "CG-D-ICO-GUARD",
+      "class": "DERIVED ASSET",
+      "profile": "GLYPH",
+      "path": "assets/runtime/ui/cg_d_ico_guard.png"
+    },
+    {
+      "id": "CG-D-ICO-ATTACK",
+      "class": "DERIVED ASSET",
+      "profile": "GLYPH",
+      "path": "assets/runtime/ui/cg_d_ico_attack.png"
+    },
+    {
+      "id": "CG-D-ICO-EVOLVE",
+      "class": "DERIVED ASSET",
+      "profile": "GLYPH",
+      "path": "assets/runtime/ui/cg_d_ico_evolve.png"
+    },
+    {
+      "id": "CG-D-ICO-MIGRATE",
+      "class": "DERIVED ASSET",
+      "profile": "GLYPH",
+      "path": "assets/runtime/ui/cg_d_ico_migrate.png"
+    },
+    {
+      "id": "CG-D-ICO-BUILD",
+      "class": "DERIVED ASSET",
+      "profile": "GLYPH",
+      "path": "assets/runtime/ui/cg_d_ico_build.png"
+    },
+    {
+      "id": "CG-D-ICO-TRADE",
+      "class": "DERIVED ASSET",
+      "profile": "GLYPH",
+      "path": "assets/runtime/ui/cg_d_ico_trade.png"
+    },
+    {
+      "id": "CG-D-ICO-RESEARCH",
+      "class": "DERIVED ASSET",
+      "profile": "GLYPH",
+      "path": "assets/runtime/ui/cg_d_ico_research.png"
+    },
+    {
+      "id": "CG-D-ICO-POLICY",
+      "class": "DERIVED ASSET",
+      "profile": "GLYPH",
+      "path": "assets/runtime/ui/cg_d_ico_policy.png"
+    },
+    {
+      "id": "CG-D-ICO-TREATY",
+      "class": "DERIVED ASSET",
+      "profile": "GLYPH",
+      "path": "assets/runtime/ui/cg_d_ico_treaty.png"
+    },
+    {
+      "id": "CG-D-ICO-HISTORY",
+      "class": "DERIVED ASSET",
+      "profile": "GLYPH",
+      "path": "assets/runtime/ui/cg_d_ico_history.png"
+    },
+    {
+      "id": "CG-D-ICO-WARNING",
+      "class": "DERIVED ASSET",
+      "profile": "GLYPH",
+      "path": "assets/runtime/ui/cg_d_ico_warning.png"
+    },
+    {
+      "id": "CG-D-ICO-HEALTH",
+      "class": "DERIVED ASSET",
+      "profile": "GLYPH",
+      "path": "assets/runtime/ui/cg_d_ico_health.png"
+    },
+    {
+      "id": "CG-D-ICO-FATIGUE",
+      "class": "DERIVED ASSET",
+      "profile": "GLYPH",
+      "path": "assets/runtime/ui/cg_d_ico_fatigue.png"
+    },
+    {
+      "id": "CG-D-ICO-POPULATION",
+      "class": "DERIVED ASSET",
+      "profile": "GLYPH",
+      "path": "assets/runtime/ui/cg_d_ico_population.png"
+    },
+    {
+      "id": "CG-D-ICO-CITY",
+      "class": "DERIVED ASSET",
+      "profile": "GLYPH",
+      "path": "assets/runtime/ui/cg_d_ico_city.png"
+    },
+    {
+      "id": "CG-D-ICO-ARMY",
+      "class": "DERIVED ASSET",
+      "profile": "GLYPH",
+      "path": "assets/runtime/ui/cg_d_ico_army.png"
+    },
+    {
+      "id": "CG-D-ICO-GOD",
+      "class": "DERIVED ASSET",
+      "profile": "GLYPH",
+      "path": "assets/runtime/ui/cg_d_ico_god.png"
+    },
+    {
+      "id": "CG-D-ICO-ECOLOGY",
+      "class": "DERIVED ASSET",
+      "profile": "GLYPH",
+      "path": "assets/runtime/ui/cg_d_ico_ecology.png"
+    },
+    {
+      "id": "CG-D-ICO-VISIBILITY",
+      "class": "DERIVED ASSET",
+      "profile": "GLYPH",
+      "path": "assets/runtime/ui/cg_d_ico_visibility.png"
+    },
+    {
+      "id": "CG-D-ICO-CLAIM",
+      "class": "DERIVED ASSET",
+      "profile": "GLYPH",
+      "path": "assets/runtime/ui/cg_d_ico_claim.png"
+    },
+    {
+      "id": "CG-D-UI-ATLAS",
+      "class": "DERIVED ASSET",
+      "profile": "ATLAS",
+      "path": "assets/runtime/ui/cg_d_ui_atlas.png"
+    },
+    {
+      "id": "CG-R-TERRAIN",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "profile": "RUNTIME",
+      "path": "src/render/recipes/cg_r_terrain.ts"
+    },
+    {
+      "id": "CG-R-WATER",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "profile": "RUNTIME",
+      "path": "src/render/recipes/cg_r_water.ts"
+    },
+    {
+      "id": "CG-R-BIOME-SCATTER",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "profile": "RUNTIME",
+      "path": "src/render/recipes/cg_r_biome_scatter.ts"
+    },
+    {
+      "id": "CG-R-CITY-BLOCKS",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "profile": "RUNTIME",
+      "path": "src/render/recipes/cg_r_city_blocks.ts"
+    },
+    {
+      "id": "CG-R-DISTRICTS",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "profile": "RUNTIME",
+      "path": "src/render/recipes/cg_r_districts.ts"
+    },
+    {
+      "id": "CG-R-INFRA-ROUTES",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "profile": "RUNTIME",
+      "path": "src/render/recipes/cg_r_infra_routes.ts"
+    },
+    {
+      "id": "CG-R-FARMS-EXTRACTION",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "profile": "RUNTIME",
+      "path": "src/render/recipes/cg_r_farms_extraction.ts"
+    },
+    {
+      "id": "CG-R-UNITS-CIVILIAN",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "profile": "RUNTIME",
+      "path": "src/render/recipes/cg_r_units_civilian.ts"
+    },
+    {
+      "id": "CG-R-UNITS-MILITARY",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "profile": "RUNTIME",
+      "path": "src/render/recipes/cg_r_units_military.ts"
+    },
+    {
+      "id": "CG-R-CONVOYS",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "profile": "RUNTIME",
+      "path": "src/render/recipes/cg_r_convoys.ts"
+    },
+    {
+      "id": "CG-R-FLEETS",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "profile": "RUNTIME",
+      "path": "src/render/recipes/cg_r_fleets.ts"
+    },
+    {
+      "id": "CG-R-GOD-ASSEMBLY",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "profile": "RUNTIME",
+      "path": "src/render/recipes/cg_r_god_assembly.ts"
+    },
+    {
+      "id": "CG-R-GOD-LOCOMOTION",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "profile": "RUNTIME",
+      "path": "src/render/recipes/cg_r_god_locomotion.ts"
+    },
+    {
+      "id": "CG-R-GOD-ACTIONS",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "profile": "RUNTIME",
+      "path": "src/render/recipes/cg_r_god_actions.ts"
+    },
+    {
+      "id": "CG-R-GOD-AGE",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "profile": "RUNTIME",
+      "path": "src/render/recipes/cg_r_god_age.ts"
+    },
+    {
+      "id": "CG-R-GOD-DAMAGE",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "profile": "RUNTIME",
+      "path": "src/render/recipes/cg_r_god_damage.ts"
+    },
+    {
+      "id": "CG-R-GOD-CORPSE",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "profile": "RUNTIME",
+      "path": "src/render/recipes/cg_r_god_corpse.ts"
+    },
+    {
+      "id": "CG-R-GOD-EMBLEM",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "profile": "RUNTIME",
+      "path": "src/render/recipes/cg_r_god_emblem.ts"
+    },
+    {
+      "id": "CG-R-CITY-RUINS",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "profile": "RUNTIME",
+      "path": "src/render/recipes/cg_r_city_ruins.ts"
+    },
+    {
+      "id": "CG-R-DIVINE-STRUCTURES",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "profile": "RUNTIME",
+      "path": "src/render/recipes/cg_r_divine_structures.ts"
+    },
+    {
+      "id": "CG-R-MEGAPROJECTS",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "profile": "RUNTIME",
+      "path": "src/render/recipes/cg_r_megaprojects.ts"
+    },
+    {
+      "id": "CG-R-BORDERS",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "profile": "RUNTIME",
+      "path": "src/render/recipes/cg_r_borders.ts"
+    },
+    {
+      "id": "CG-R-FOG",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "profile": "RUNTIME",
+      "path": "src/render/recipes/cg_r_fog.ts"
+    },
+    {
+      "id": "CG-R-PATHS",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "profile": "RUNTIME",
+      "path": "src/render/recipes/cg_r_paths.ts"
+    },
+    {
+      "id": "CG-R-FOOTPRINTS",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "profile": "RUNTIME",
+      "path": "src/render/recipes/cg_r_footprints.ts"
+    },
+    {
+      "id": "CG-R-DEPENDENCY-OVERLAY",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "profile": "RUNTIME",
+      "path": "src/render/recipes/cg_r_dependency_overlay.ts"
+    },
+    {
+      "id": "CG-R-HISTORY-MARKERS",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "profile": "RUNTIME",
+      "path": "src/render/recipes/cg_r_history_markers.ts"
+    },
+    {
+      "id": "CG-R-UI-CONTROLS",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "profile": "RUNTIME",
+      "path": "src/render/recipes/cg_r_ui_controls.ts"
+    },
+    {
+      "id": "CG-R-UI-DATA-VIEWS",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "profile": "RUNTIME",
+      "path": "src/render/recipes/cg_r_ui_data_views.ts"
+    },
+    {
+      "id": "CG-R-TITLE-COMPOSITION",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "profile": "RUNTIME",
+      "path": "src/render/recipes/cg_r_title_composition.ts"
+    },
+    {
+      "id": "CG-R-FX-DUST",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "profile": "RUNTIME",
+      "path": "src/render/recipes/cg_r_fx_dust.ts"
+    },
+    {
+      "id": "CG-R-FX-SPLASH",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "profile": "RUNTIME",
+      "path": "src/render/recipes/cg_r_fx_splash.ts"
+    },
+    {
+      "id": "CG-R-FX-SPORES",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "profile": "RUNTIME",
+      "path": "src/render/recipes/cg_r_fx_spores.ts"
+    },
+    {
+      "id": "CG-R-FX-HEAT",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "profile": "RUNTIME",
+      "path": "src/render/recipes/cg_r_fx_heat.ts"
+    },
+    {
+      "id": "CG-R-FX-STORM",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "profile": "RUNTIME",
+      "path": "src/render/recipes/cg_r_fx_storm.ts"
+    },
+    {
+      "id": "CG-R-FX-IMPACT",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "profile": "RUNTIME",
+      "path": "src/render/recipes/cg_r_fx_impact.ts"
+    },
+    {
+      "id": "CG-R-FX-FIRE",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "profile": "RUNTIME",
+      "path": "src/render/recipes/cg_r_fx_fire.ts"
+    },
+    {
+      "id": "CG-R-FX-SUBSIDENCE",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "profile": "RUNTIME",
+      "path": "src/render/recipes/cg_r_fx_subsidence.ts"
+    },
+    {
+      "id": "CG-R-DECALS",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "profile": "RUNTIME",
+      "path": "src/render/recipes/cg_r_decals.ts"
+    },
+    {
+      "id": "CG-R-DEBUG",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "profile": "RUNTIME",
+      "path": "src/render/recipes/cg_r_debug.ts"
+    },
+    {
+      "id": "CG-R-AUD-UI-TICK",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "profile": "AUDIO",
+      "path": "src/audio/recipes/cg_r_aud_ui_tick.ts"
+    },
+    {
+      "id": "CG-R-AUD-UI-CONFIRM",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "profile": "AUDIO",
+      "path": "src/audio/recipes/cg_r_aud_ui_confirm.ts"
+    },
+    {
+      "id": "CG-R-AUD-UI-WARNING",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "profile": "AUDIO",
+      "path": "src/audio/recipes/cg_r_aud_ui_warning.ts"
+    },
+    {
+      "id": "CG-R-AUD-WIND",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "profile": "AUDIO",
+      "path": "src/audio/recipes/cg_r_aud_wind.ts"
+    },
+    {
+      "id": "CG-R-AUD-WATER",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "profile": "AUDIO",
+      "path": "src/audio/recipes/cg_r_aud_water.ts"
+    },
+    {
+      "id": "CG-R-AUD-GOD-STEP",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "profile": "AUDIO",
+      "path": "src/audio/recipes/cg_r_aud_god_step.ts"
+    },
+    {
+      "id": "CG-R-AUD-GOD-BREATH",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "profile": "AUDIO",
+      "path": "src/audio/recipes/cg_r_aud_god_breath.ts"
+    },
+    {
+      "id": "CG-R-AUD-EARTH-RUMBLE",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "profile": "AUDIO",
+      "path": "src/audio/recipes/cg_r_aud_earth_rumble.ts"
+    },
+    {
+      "id": "CG-R-AUD-WOOD-STONE",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "profile": "AUDIO",
+      "path": "src/audio/recipes/cg_r_aud_wood_stone.ts"
+    },
+    {
+      "id": "CG-R-AUD-ARMY-CLASH",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "profile": "AUDIO",
+      "path": "src/audio/recipes/cg_r_aud_army_clash.ts"
+    },
+    {
+      "id": "CG-R-AUD-AMBIENT-HARMONY",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "profile": "AUDIO",
+      "path": "src/audio/recipes/cg_r_aud_ambient_harmony.ts"
+    },
+    {
+      "id": "CG-R-AUD-DEATH-SILENCE",
+      "class": "PROCEDURAL RUNTIME ASSET",
+      "profile": "AUDIO",
+      "path": "src/audio/recipes/cg_r_aud_death_silence.ts"
+    }
+  ]
+}

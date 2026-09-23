@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 1,
+  "contract": "CG-V1.0.0",
+  "note": "Only verified shipping file facts and registered recipe IDs. Empty means nothing is verified.",
+  "verifiedFiles": [],
+  "registeredRecipes": []
+}

@@ -1,0 +1,6 @@
+{
+  "schemaVersion": 1,
+  "contract": "CG-V1.0.0",
+  "note": "Actual candidate, approval, native-dimension and rights records only. Empty means none exist.",
+  "records": []
+}
