@@ -2,6 +2,55 @@
   "schemaVersion": 1,
   "contract": "CG-V1.0.0",
   "note": "Only verified shipping file facts and registered recipe IDs. Empty means nothing is verified.",
-  "verifiedFiles": [],
+  "verifiedFiles": [
+    {
+      "id": "CG-S-ART-DIRECTION",
+      "path": "assets/source/art/cg_s_art_direction.png",
+      "sha256": "84ed582098fbc5c3f6565e3a98464752fcc27eb4bf60bf67559b201324b551bb",
+      "bytes": 1324093
+    },
+    {
+      "id": "CG-S-GOD-FEED-BROWSE",
+      "path": "assets/source/god/cg_s_god_feed_browse.png",
+      "sha256": "d652c8d8fe2d2d8453e693701d87542826d19b48097742c7e6ac86cb334df87a",
+      "bytes": 1200075
+    },
+    {
+      "id": "CG-S-GOD-FORM-Q",
+      "path": "assets/source/god/cg_s_god_form_q.png",
+      "sha256": "f8d645a7ed78d1d610c172522c8721e03b2a2dbb228804c6abccf3f5ec72cc32",
+      "bytes": 1116572
+    },
+    {
+      "id": "CG-S-GOD-LIFE-Q",
+      "path": "assets/source/god/cg_s_god_life_q.png",
+      "sha256": "965034006d87bc494ed094fd7731a30636f23a5a329f75b1304ae288850f5280",
+      "bytes": 1293973
+    },
+    {
+      "id": "CG-S-GOD-LOCO-PILLAR",
+      "path": "assets/source/god/cg_s_god_loco_pillar.png",
+      "sha256": "07e0e6eccf41f30df92c857ace98d2001cccc545b89e28801e89479d5d5cfa5e",
+      "bytes": 954235
+    },
+    {
+      "id": "CG-S-GOD-SENSE-EYE-RING",
+      "path": "assets/source/god/cg_s_god_sense_eye_ring.png",
+      "sha256": "3276c59ae8040b0ff80645aa1ef511409bca3c33929f254ffb5cfbfb44b8d317",
+      "bytes": 906469
+    },
+    {
+      "id": "CG-S-GOD-TAIL-BALANCE",
+      "path": "assets/source/god/cg_s_god_tail_balance.png",
+      "sha256": "2f1c06a980e138c14d0f8768090bd3744d98220fcc5781afb12c72e3e4d32bfe",
+      "bytes": 1215961
+    },
+    {
+      "id": "CG-S-GOD-TORSO-Q",
+      "path": "assets/source/god/cg_s_god_torso_q.png",
+      "sha256": "353753aa7126bb2a88700525526ab86871f771a703e9d792736d3b24b0454c67",
+      "bytes": 1166235
+    }
+  ],
   "registeredRecipes": []
 }

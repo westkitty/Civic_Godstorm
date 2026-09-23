@@ -1,11 +1,17 @@
 import { describe, expect, it } from 'vitest';
+import manifest from '../../assets/manifest.json';
 import { assetRegistry, createAssetRegistry, UnknownAssetIdError } from '../../src/assets/registry.ts';
 
 describe('asset registry', () => {
-  it('knows all 285 specified IDs and resolves none of them at M00', () => {
+  it('knows all 285 specified IDs and resolves exactly the verified manifest entries', () => {
     expect(assetRegistry.totalSpecified).toBe(285);
-    expect(assetRegistry.unresolvedIds()).toHaveLength(285);
-    expect(assetRegistry.resolve('CG-S-GOD-TORSO-Q')).toEqual({ id: 'CG-S-GOD-TORSO-Q', status: 'MISSING' });
+    const resolved = manifest.verifiedFiles.length + manifest.registeredRecipes.length;
+    expect(assetRegistry.unresolvedIds()).toHaveLength(285 - resolved);
+    for (const file of manifest.verifiedFiles) {
+      expect(assetRegistry.resolve(file.id)).toEqual({ id: file.id, status: 'VERIFIED', path: file.path });
+    }
+    // An ID without verified evidence (B03, not produced) stays an explicit MISSING reference.
+    expect(assetRegistry.resolve('CG-S-GOD-TORSO-H')).toEqual({ id: 'CG-S-GOD-TORSO-H', status: 'MISSING' });
   });
 
   it('rejects guessed IDs instead of inventing a path', () => {

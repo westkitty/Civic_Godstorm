@@ -5,7 +5,8 @@ import { createHash } from 'node:crypto';
 import { existsSync, readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import type { CheckResult, ParsedContract } from '../spec/contract.ts';
-import { buildOutputs, loadContract, MANIFEST_PATH, PROVENANCE_PATH } from '../spec/outputs.ts';
+import { buildOutputs, loadContract, loadEvidence, MANIFEST_PATH, PROVENANCE_PATH } from '../spec/outputs.ts';
+import { pngFacts } from './intake.ts';
 
 export interface VerifiedFileRecord {
   readonly id: string;
@@ -19,8 +20,21 @@ export interface ManifestFile {
   readonly registeredRecipes: readonly string[];
 }
 
+export interface ProvenanceRecord {
+  readonly id: string;
+  readonly status: string;
+  readonly path?: string;
+  readonly sha256?: string;
+  readonly nativeWidth?: number;
+  readonly nativeHeight?: number;
+  readonly profileDimensions?: readonly [number, number];
+  readonly dimensionWaiver?: string;
+  readonly approval?: { readonly approver?: string; readonly ruling?: string };
+}
+
 export interface ProvenanceFile {
-  readonly records: readonly { readonly id: string; readonly status: string }[];
+  readonly humanRulings?: readonly { readonly id: string }[];
+  readonly records: readonly ProvenanceRecord[];
 }
 
 export interface AuditReport {
@@ -38,6 +52,30 @@ export interface AuditReport {
   readonly recipeFilesPresentUnverified: readonly string[];
 }
 
+/** Problems with one APPROVED_SOURCE record against its specified row and the file bytes (empty = verified). */
+export function approvedSourceProblems(
+  record: ProvenanceRecord,
+  row: { readonly assetClass: string; readonly path: string } | undefined,
+  bytes: Buffer | null,
+  rulingIds: ReadonlySet<string>,
+): string[] {
+  if (!row || (row.assetClass !== 'ARENA SOURCE ASSET' && row.assetClass !== 'DIRECT ARENA ASSET')) return [`${record.id}: not an authored source`];
+  if (record.path !== row.path) return [`${record.id}: path ${record.path ?? '?'} != ${row.path}`];
+  const problems: string[] = [];
+  if (!record.approval?.approver?.startsWith('human')) problems.push(`${record.id}: approval is not a human decision`);
+  if (!bytes) return [...problems, `${record.id}: file absent`];
+  if (createHash('sha256').update(bytes).digest('hex') !== record.sha256) problems.push(`${record.id}: sha256 mismatch`);
+  let facts: { width: number; height: number };
+  try { facts = pngFacts(bytes); } catch (error) { return [...problems, `${record.id}: ${(error as Error).message}`]; }
+  if (facts.width !== record.nativeWidth || facts.height !== record.nativeHeight) problems.push(`${record.id}: recorded dimensions differ from file`);
+  const [pw, ph] = record.profileDimensions ?? [0, 0];
+  const exact = facts.width === pw && facts.height === ph;
+  if (!exact && !(record.dimensionWaiver !== undefined && rulingIds.has(record.dimensionWaiver))) {
+    problems.push(`${record.id}: ${facts.width}x${facts.height} is not the ${pw}x${ph} profile and has no recorded human waiver`);
+  }
+  return problems;
+}
+
 function readJson<T>(root: string, path: string): T {
   return JSON.parse(readFileSync(resolve(root, path), 'utf8')) as T;
 }
@@ -50,7 +88,7 @@ export function auditAssets(root: string): AuditReport {
   };
   const byId = new Map(contract.assets.map((row) => [row.id, row]));
 
-  const stale = buildOutputs(contract).generated.filter((file) => {
+  const stale = buildOutputs(contract, loadEvidence(root)).generated.filter((file) => {
     const target = resolve(root, file.path);
     return !existsSync(target) || readFileSync(target, 'utf8') !== file.content;
   });
@@ -93,7 +131,28 @@ export function auditAssets(root: string): AuditReport {
     .map((row) => row.path);
   check('canonicalPaths.registered', unregistered.length === 0, unregistered.join(', ') || 'no unregistered files at canonical paths');
 
-  const approved = new Set(provenance.records.filter((record) => record.status === 'APPROVED_SOURCE').map((record) => record.id));
+  // Section 17.2/18.2: an approved source is a human-approved file at its canonical path whose
+  // hash and native dimensions match the record. Dimensions differ from the profile only under a
+  // recorded human ruling.
+  const rulingIds = new Set((provenance.humanRulings ?? []).map((ruling) => ruling.id));
+  const sourceProblems: string[] = [];
+  const approvedRecords = provenance.records.filter((record) => record.status === 'APPROVED_SOURCE');
+  for (const record of approvedRecords) {
+    const row = byId.get(record.id);
+    const target = row ? resolve(root, row.path) : null;
+    const bytes = target && existsSync(target) ? readFileSync(target) : null;
+    sourceProblems.push(...approvedSourceProblems(record, row, bytes, rulingIds));
+  }
+  const approvedIds = new Set(approvedRecords.map((record) => record.id));
+  for (const file of manifest.verifiedFiles) {
+    const row = byId.get(file.id);
+    const authoredFile = row?.assetClass === 'ARENA SOURCE ASSET' || row?.assetClass === 'DIRECT ARENA ASSET';
+    if (authoredFile && !approvedIds.has(file.id)) sourceProblems.push(`${file.id}: in manifest without an APPROVED_SOURCE record`);
+  }
+  check('provenance.approvedSources', sourceProblems.length === 0,
+    sourceProblems.join('; ') || `${approvedRecords.length} approved sources verified (hash, path, native dimensions, waiver)`);
+
+  const approved = approvedIds;
   const authored = contract.assets.filter((row) => row.assetClass === 'ARENA SOURCE ASSET' || row.assetClass === 'DIRECT ARENA ASSET');
   const derived = contract.assets.filter((row) => row.assetClass === 'DERIVED ASSET');
   const recipes = contract.assets.filter((row) => row.assetClass === 'PROCEDURAL RUNTIME ASSET');

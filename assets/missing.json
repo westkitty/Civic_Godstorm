@@ -4,15 +4,8 @@
   "source": "CIVIC_GODSTORM_MASTER_PLAN.md",
   "section17Sha256": "6b4bf9095a10b3c05c592d895afda0c8adefa9ec5e3a66312de078d351ef9c80",
   "milestoneBlockSha256": "3cabfe7088b537d17793fe64d618a0ec445c5c05f8237bfe9378835f722f8a01",
-  "unresolvedCount": 285,
+  "unresolvedCount": 277,
   "unresolved": [
-    {
-      "id": "CG-S-GOD-TORSO-Q",
-      "class": "ARENA SOURCE ASSET",
-      "status": "SPECIFIED",
-      "batch": "B01",
-      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
-    },
     {
       "id": "CG-S-GOD-TORSO-H",
       "class": "ARENA SOURCE ASSET",
@@ -32,13 +25,6 @@
       "class": "ARENA SOURCE ASSET",
       "status": "SPECIFIED",
       "batch": "B04",
-      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
-    },
-    {
-      "id": "CG-S-GOD-LOCO-PILLAR",
-      "class": "ARENA SOURCE ASSET",
-      "status": "SPECIFIED",
-      "batch": "B01",
       "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
     },
     {
@@ -77,13 +63,6 @@
       "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
     },
     {
-      "id": "CG-S-GOD-FEED-BROWSE",
-      "class": "ARENA SOURCE ASSET",
-      "status": "SPECIFIED",
-      "batch": "B01",
-      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
-    },
-    {
       "id": "CG-S-GOD-FEED-FILTER",
       "class": "ARENA SOURCE ASSET",
       "status": "SPECIFIED",
@@ -105,13 +84,6 @@
       "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
     },
     {
-      "id": "CG-S-GOD-SENSE-EYE-RING",
-      "class": "ARENA SOURCE ASSET",
-      "status": "SPECIFIED",
-      "batch": "B01",
-      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
-    },
-    {
       "id": "CG-S-GOD-SENSE-ANTENNA-CROWN",
       "class": "ARENA SOURCE ASSET",
       "status": "SPECIFIED",
@@ -123,13 +95,6 @@
       "class": "ARENA SOURCE ASSET",
       "status": "SPECIFIED",
       "batch": "B03",
-      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
-    },
-    {
-      "id": "CG-S-GOD-TAIL-BALANCE",
-      "class": "ARENA SOURCE ASSET",
-      "status": "SPECIFIED",
-      "batch": "B01",
       "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
     },
     {
@@ -217,13 +182,6 @@
       "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
     },
     {
-      "id": "CG-S-GOD-FORM-Q",
-      "class": "ARENA SOURCE ASSET",
-      "status": "SPECIFIED",
-      "batch": "B01",
-      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
-    },
-    {
       "id": "CG-S-GOD-FORM-H",
       "class": "ARENA SOURCE ASSET",
       "status": "SPECIFIED",
@@ -242,13 +200,6 @@
       "class": "ARENA SOURCE ASSET",
       "status": "SPECIFIED",
       "batch": "B05",
-      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
-    },
-    {
-      "id": "CG-S-GOD-LIFE-Q",
-      "class": "ARENA SOURCE ASSET",
-      "status": "SPECIFIED",
-      "batch": "B01",
       "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
     },
     {
@@ -837,13 +788,6 @@
       "class": "ARENA SOURCE ASSET",
       "status": "SPECIFIED",
       "batch": "B11",
-      "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
-    },
-    {
-      "id": "CG-S-ART-DIRECTION",
-      "class": "ARENA SOURCE ASSET",
-      "status": "SPECIFIED",
-      "batch": "B00",
       "needs": "ARENA_CANDIDATE_THEN_HUMAN_APPROVAL"
     },
     {

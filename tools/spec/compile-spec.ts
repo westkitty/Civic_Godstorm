@@ -6,7 +6,7 @@
 
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
-import { buildOutputs, loadContract, type GeneratedFile } from './outputs.ts';
+import { buildOutputs, loadContract, loadEvidence, type GeneratedFile } from './outputs.ts';
 
 const root = resolve(import.meta.dirname, '../..');
 const checkOnly = process.argv.includes('--check');
@@ -22,7 +22,7 @@ if (failed) {
   process.exit(1);
 }
 
-const { generated, seeds } = buildOutputs(contract);
+const { generated, seeds } = buildOutputs(contract, loadEvidence(root));
 const stale: string[] = [];
 const write = (file: GeneratedFile): void => {
   const target = resolve(root, file.path);

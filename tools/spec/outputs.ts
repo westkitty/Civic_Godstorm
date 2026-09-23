@@ -53,7 +53,28 @@ function resolutionPath(assetClass: AssetClass): string {
 
 const json = (value: unknown): string => `${JSON.stringify(value, null, 2)}\n`;
 
-export function buildOutputs(contract: ParsedContract): { generated: GeneratedFile[]; seeds: GeneratedFile[] } {
+/** Actual evidence state that decides which IDs are resolved and what status unresolved IDs carry. */
+export interface EvidenceState {
+  readonly resolved: ReadonlySet<string>;
+  readonly statusById: ReadonlyMap<string, string>;
+}
+
+const NO_EVIDENCE: EvidenceState = { resolved: new Set(), statusById: new Map() };
+
+/** Reads provenance/manifest. Absent files mean no evidence (the M00 seed state). */
+export function loadEvidence(root: string): EvidenceState {
+  const read = <T>(path: string): T | null => {
+    try { return JSON.parse(readFileSync(resolve(root, path), 'utf8')) as T; } catch { return null; }
+  };
+  const provenance = read<{ records: { id: string; status: string }[] }>(PROVENANCE_PATH);
+  const manifest = read<{ verifiedFiles: { id: string }[]; registeredRecipes: string[] }>(MANIFEST_PATH);
+  return {
+    resolved: new Set([...(manifest?.verifiedFiles ?? []).map((file) => file.id), ...(manifest?.registeredRecipes ?? [])]),
+    statusById: new Map((provenance?.records ?? []).map((record) => [record.id, record.status])),
+  };
+}
+
+export function buildOutputs(contract: ParsedContract, evidence: EvidenceState = NO_EVIDENCE): { generated: GeneratedFile[]; seeds: GeneratedFile[] } {
   const batchOf = new Map<string, string>();
   for (const batch of contract.batches) for (const id of batch.assetIds) batchOf.set(id, batch.id);
   // Section 17.10: traceability rows name recipes whose dependencies recursively name sources.
@@ -120,16 +141,16 @@ export function buildOutputs(contract: ParsedContract): { generated: GeneratedFi
     })),
   };
 
-  // At M00 nothing has been produced, approved, derived or verified: every ID is unresolved.
-  // Later milestones regenerate this from provenance/manifest evidence, never by hand.
+  // Unresolved IDs with their actual status from provenance evidence (SPECIFIED when none exists).
+  const unresolvedRows = contract.assets.filter((row) => !evidence.resolved.has(row.id));
   const missing = {
     schemaVersion: 1,
     ...provenanceHeader,
-    unresolvedCount: contract.assets.length,
-    unresolved: contract.assets.map((row) => ({
+    unresolvedCount: unresolvedRows.length,
+    unresolved: unresolvedRows.map((row) => ({
       id: row.id,
       class: row.assetClass,
-      status: 'SPECIFIED',
+      status: evidence.statusById.get(row.id) ?? 'SPECIFIED',
       batch: batchOf.get(row.id) ?? null,
       needs: resolutionPath(row.assetClass),
     })),

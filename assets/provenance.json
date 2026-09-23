@@ -2,5 +2,302 @@
   "schemaVersion": 1,
   "contract": "CG-V1.0.0",
   "note": "Actual candidate, approval, native-dimension and rights records only. Empty means none exist.",
-  "records": []
+  "records": [
+    {
+      "id": "CG-S-ART-DIRECTION",
+      "status": "APPROVED_SOURCE",
+      "path": "assets/source/art/cg_s_art_direction.png",
+      "sha256": "84ed582098fbc5c3f6565e3a98464752fcc27eb4bf60bf67559b201324b551bb",
+      "bytes": 1324093,
+      "nativeWidth": 1264,
+      "nativeHeight": 848,
+      "profile": "REF-DIRECTION",
+      "profileDimensions": [
+        3072,
+        2048
+      ],
+      "normalization": "none",
+      "dimensionWaiver": "HR-2026-09-23-01",
+      "candidate": {
+        "branch": "arena/01a0d03e-civic-godstorm",
+        "commit": "6f07fd47264e8783332ea0b1e6cc315fcf839a71",
+        "path": "assets/candidates/CG-S-ART-DIRECTION/r001/cg_s_art_direction.png",
+        "revision": "r001"
+      },
+      "generator": "Arena Agent Mode generate_image (model UNKNOWN, per Arena receipt)",
+      "approval": {
+        "decision": "APPROVED_SOURCE",
+        "approver": "human (repository owner)",
+        "date": "2026-09-23",
+        "ruling": "HR-2026-09-23-01"
+      },
+      "rights": "Arena-generated for this project; commercial clearance not established (master Section 17.2, audited at M14)."
+    },
+    {
+      "id": "CG-S-GOD-FEED-BROWSE",
+      "status": "APPROVED_SOURCE",
+      "path": "assets/source/god/cg_s_god_feed_browse.png",
+      "sha256": "d652c8d8fe2d2d8453e693701d87542826d19b48097742c7e6ac86cb334df87a",
+      "bytes": 1200075,
+      "nativeWidth": 1024,
+      "nativeHeight": 1024,
+      "profile": "REF-GOD",
+      "profileDimensions": [
+        2048,
+        2048
+      ],
+      "normalization": "none",
+      "dimensionWaiver": "HR-2026-09-23-01",
+      "candidate": {
+        "branch": "arena/01a0d03e-civic-godstorm",
+        "commit": "6f07fd47264e8783332ea0b1e6cc315fcf839a71",
+        "path": "assets/candidates/CG-S-GOD-FEED-BROWSE/r001/cg_s_god_feed_browse.png",
+        "revision": "r001"
+      },
+      "generator": "Arena Agent Mode generate_image (model UNKNOWN, per Arena receipt)",
+      "approval": {
+        "decision": "APPROVED_SOURCE",
+        "approver": "human (repository owner)",
+        "date": "2026-09-23",
+        "ruling": "HR-2026-09-23-01"
+      },
+      "rights": "Arena-generated for this project; commercial clearance not established (master Section 17.2, audited at M14)."
+    },
+    {
+      "id": "CG-S-GOD-FORM-Q",
+      "status": "APPROVED_SOURCE",
+      "path": "assets/source/god/cg_s_god_form_q.png",
+      "sha256": "f8d645a7ed78d1d610c172522c8721e03b2a2dbb228804c6abccf3f5ec72cc32",
+      "bytes": 1116572,
+      "nativeWidth": 1024,
+      "nativeHeight": 1024,
+      "profile": "REF-FORM",
+      "profileDimensions": [
+        2048,
+        2048
+      ],
+      "normalization": "none",
+      "dimensionWaiver": "HR-2026-09-23-01",
+      "candidate": {
+        "branch": "arena/01a0d03e-civic-godstorm",
+        "commit": "6f07fd47264e8783332ea0b1e6cc315fcf839a71",
+        "path": "assets/candidates/CG-S-GOD-FORM-Q/r004/cg_s_god_form_q.png",
+        "revision": "r004"
+      },
+      "generator": "Arena Agent Mode generate_image (model UNKNOWN, per Arena receipt)",
+      "approval": {
+        "decision": "APPROVED_SOURCE",
+        "approver": "human (repository owner)",
+        "date": "2026-09-23",
+        "ruling": "HR-2026-09-23-01"
+      },
+      "rights": "Arena-generated for this project; commercial clearance not established (master Section 17.2, audited at M14)."
+    },
+    {
+      "id": "CG-S-GOD-LIFE-Q",
+      "status": "APPROVED_SOURCE",
+      "path": "assets/source/god/cg_s_god_life_q.png",
+      "sha256": "965034006d87bc494ed094fd7731a30636f23a5a329f75b1304ae288850f5280",
+      "bytes": 1293973,
+      "nativeWidth": 1264,
+      "nativeHeight": 848,
+      "profile": "REF-LIFE",
+      "profileDimensions": [
+        3072,
+        2048
+      ],
+      "normalization": "none",
+      "dimensionWaiver": "HR-2026-09-23-01",
+      "candidate": {
+        "branch": "arena/01a0d03e-civic-godstorm",
+        "commit": "6f07fd47264e8783332ea0b1e6cc315fcf839a71",
+        "path": "assets/candidates/CG-S-GOD-LIFE-Q/r002/cg_s_god_life_q.png",
+        "revision": "r002"
+      },
+      "generator": "Arena Agent Mode generate_image (model UNKNOWN, per Arena receipt)",
+      "approval": {
+        "decision": "APPROVED_SOURCE",
+        "approver": "human (repository owner)",
+        "date": "2026-09-23",
+        "ruling": "HR-2026-09-23-01"
+      },
+      "rights": "Arena-generated for this project; commercial clearance not established (master Section 17.2, audited at M14).",
+      "panelGrid": {
+        "rows": 3,
+        "cols": 3,
+        "panels": [
+          {
+            "state": "juvenile",
+            "row": 0,
+            "col": 0
+          },
+          {
+            "state": "prime",
+            "row": 0,
+            "col": 1
+          },
+          {
+            "state": "ancient",
+            "row": 0,
+            "col": 2
+          },
+          {
+            "state": "injured-prime",
+            "row": 1,
+            "col": 0
+          },
+          {
+            "state": "recent-corpse",
+            "row": 1,
+            "col": 1
+          },
+          {
+            "state": "ossuary",
+            "row": 2,
+            "col": 2
+          }
+        ],
+        "excluded": [
+          "row1col2 empty",
+          "row2col0 duplicate injured-prime",
+          "row2col1 duplicate recent-corpse (mirrored)"
+        ]
+      }
+    },
+    {
+      "id": "CG-S-GOD-LOCO-PILLAR",
+      "status": "APPROVED_SOURCE",
+      "path": "assets/source/god/cg_s_god_loco_pillar.png",
+      "sha256": "07e0e6eccf41f30df92c857ace98d2001cccc545b89e28801e89479d5d5cfa5e",
+      "bytes": 954235,
+      "nativeWidth": 1024,
+      "nativeHeight": 1024,
+      "profile": "REF-GOD",
+      "profileDimensions": [
+        2048,
+        2048
+      ],
+      "normalization": "none",
+      "dimensionWaiver": "HR-2026-09-23-01",
+      "candidate": {
+        "branch": "arena/01a0d03e-civic-godstorm",
+        "commit": "6f07fd47264e8783332ea0b1e6cc315fcf839a71",
+        "path": "assets/candidates/CG-S-GOD-LOCO-PILLAR/r002/cg_s_god_loco_pillar.png",
+        "revision": "r002"
+      },
+      "generator": "Arena Agent Mode generate_image (model UNKNOWN, per Arena receipt)",
+      "approval": {
+        "decision": "APPROVED_SOURCE",
+        "approver": "human (repository owner)",
+        "date": "2026-09-23",
+        "ruling": "HR-2026-09-23-01"
+      },
+      "rights": "Arena-generated for this project; commercial clearance not established (master Section 17.2, audited at M14)."
+    },
+    {
+      "id": "CG-S-GOD-SENSE-EYE-RING",
+      "status": "APPROVED_SOURCE",
+      "path": "assets/source/god/cg_s_god_sense_eye_ring.png",
+      "sha256": "3276c59ae8040b0ff80645aa1ef511409bca3c33929f254ffb5cfbfb44b8d317",
+      "bytes": 906469,
+      "nativeWidth": 1024,
+      "nativeHeight": 1024,
+      "profile": "REF-GOD",
+      "profileDimensions": [
+        2048,
+        2048
+      ],
+      "normalization": "none",
+      "dimensionWaiver": "HR-2026-09-23-01",
+      "candidate": {
+        "branch": "arena/01a0d03e-civic-godstorm",
+        "commit": "6f07fd47264e8783332ea0b1e6cc315fcf839a71",
+        "path": "assets/candidates/CG-S-GOD-SENSE-EYE-RING/r002/cg_s_god_sense_eye_ring.png",
+        "revision": "r002"
+      },
+      "generator": "Arena Agent Mode generate_image (model UNKNOWN, per Arena receipt)",
+      "approval": {
+        "decision": "APPROVED_SOURCE",
+        "approver": "human (repository owner)",
+        "date": "2026-09-23",
+        "ruling": "HR-2026-09-23-01"
+      },
+      "rights": "Arena-generated for this project; commercial clearance not established (master Section 17.2, audited at M14)."
+    },
+    {
+      "id": "CG-S-GOD-TAIL-BALANCE",
+      "status": "APPROVED_SOURCE",
+      "path": "assets/source/god/cg_s_god_tail_balance.png",
+      "sha256": "2f1c06a980e138c14d0f8768090bd3744d98220fcc5781afb12c72e3e4d32bfe",
+      "bytes": 1215961,
+      "nativeWidth": 1024,
+      "nativeHeight": 1024,
+      "profile": "REF-GOD",
+      "profileDimensions": [
+        2048,
+        2048
+      ],
+      "normalization": "none",
+      "dimensionWaiver": "HR-2026-09-23-01",
+      "candidate": {
+        "branch": "arena/01a0d03e-civic-godstorm",
+        "commit": "6f07fd47264e8783332ea0b1e6cc315fcf839a71",
+        "path": "assets/candidates/CG-S-GOD-TAIL-BALANCE/r002/cg_s_god_tail_balance.png",
+        "revision": "r002"
+      },
+      "generator": "Arena Agent Mode generate_image (model UNKNOWN, per Arena receipt)",
+      "approval": {
+        "decision": "APPROVED_SOURCE",
+        "approver": "human (repository owner)",
+        "date": "2026-09-23",
+        "ruling": "HR-2026-09-23-01"
+      },
+      "rights": "Arena-generated for this project; commercial clearance not established (master Section 17.2, audited at M14)."
+    },
+    {
+      "id": "CG-S-GOD-TORSO-Q",
+      "status": "APPROVED_SOURCE",
+      "path": "assets/source/god/cg_s_god_torso_q.png",
+      "sha256": "353753aa7126bb2a88700525526ab86871f771a703e9d792736d3b24b0454c67",
+      "bytes": 1166235,
+      "nativeWidth": 1024,
+      "nativeHeight": 1024,
+      "profile": "REF-GOD",
+      "profileDimensions": [
+        2048,
+        2048
+      ],
+      "normalization": "none",
+      "dimensionWaiver": "HR-2026-09-23-01",
+      "candidate": {
+        "branch": "arena/01a0d03e-civic-godstorm",
+        "commit": "6f07fd47264e8783332ea0b1e6cc315fcf839a71",
+        "path": "assets/candidates/CG-S-GOD-TORSO-Q/r003/cg_s_god_torso_q.png",
+        "revision": "r003"
+      },
+      "generator": "Arena Agent Mode generate_image (model UNKNOWN, per Arena receipt)",
+      "approval": {
+        "decision": "APPROVED_SOURCE",
+        "approver": "human (repository owner)",
+        "date": "2026-09-23",
+        "ruling": "HR-2026-09-23-01"
+      },
+      "rights": "Arena-generated for this project; commercial clearance not established (master Section 17.2, audited at M14)."
+    }
+  ],
+  "humanRulings": [
+    {
+      "id": "HR-2026-09-23-01",
+      "date": "2026-09-23",
+      "approver": "human (repository owner)",
+      "channel": "Claude Code session_013yLbaqKAEB35rbG7aTdFjV, direct message",
+      "statement": "I approve of the life stages sheet as well as I accept the um we can do the ten twenty-four sheets and um regarding the art style we're gonna do what it makes and we'll adjust from that. Um I am approving the identity option.",
+      "interpretation": [
+        "RESOLUTION: native Arena sheets (1024x1024 REF-GOD/REF-FORM, 1264x848 REF-LIFE/REF-DIRECTION) are accepted as canonical sources without resampling. This waives the Section 17.2 exact-dimension and normalization-floor rules for the IDs recorded here only. Profile dimensions in the master are not edited.",
+        "B00 STYLE: CG-S-ART-DIRECTION is accepted as the tool produced it (\"do what it makes and adjust from that\"). r001 is taken because it is 3:2 (0.63% aspect error). r002 is 16:9 (19.44% aspect error) and would violate the unwaived aspect rule.",
+        "B01 IDENTITY: the first-God identity gate is approved. The provisionally accepted Q sheets are promoted: TORSO-Q r003, LOCO-PILLAR r002, FEED-BROWSE r001, SENSE-EYE-RING r002, TAIL-BALANCE r002, FORM-Q r004.",
+        "B01 LIFE: CG-S-GOD-LIFE-Q is approved as an existing sheet. r002 is taken because its ancient panel is the restrained repair of the r001 over-accented cracks. Its 3x3 layout is used through a declared six-panel map. The duplicate panels and the empty cell are excluded, not cropped out of the file. The Arena QA note on open-eye artifacts stands. Runtime eyes follow the closed-lid SENSE-EYE-RING source."
+      ]
+    }
+  ]
 }

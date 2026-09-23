@@ -2,6 +2,11 @@ import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { expect, test, type Page } from '@playwright/test';
 
+const manifest = JSON.parse(readFileSync(resolve(import.meta.dirname, '../../assets/manifest.json'), 'utf8')) as {
+  verifiedFiles: unknown[];
+  registeredRecipes: unknown[];
+};
+
 function collectErrors(page: Page): string[] {
   const errors: string[] = [];
   page.on('pageerror', (error) => errors.push(error.message));
@@ -19,7 +24,8 @@ test('boots the shell with a rendering WebGL2 world view and honest asset status
   await expect(page.getByRole('img', { name: /Strategic map/ })).toBeVisible();
   await page.getByText('Development diagnostics').click();
   await expect(page.getByTestId('renderer-status')).toContainText('draw calls');
-  await expect(page.getByTestId('asset-summary')).toHaveText('285 IDs specified; 285 unresolved');
+  const resolved = manifest.verifiedFiles.length + manifest.registeredRecipes.length;
+  await expect(page.getByTestId('asset-summary')).toHaveText(`285 IDs specified; ${285 - resolved} unresolved`);
   await expect(page.getByText('MISSING CG-A-ART-TITLE')).toBeVisible();
 
   // The canvas must contain actual rendered pixels, not only the clear colour.
