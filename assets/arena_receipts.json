@@ -2,7 +2,7 @@
   "ledger_type": "arena_source_receipts",
   "specification_version": "CG-V1.0.0",
   "created_utc": "2026-09-23T21:51:28+00:00",
-  "last_updated_utc": "2026-09-23T23:48:18+00:00",
+  "last_updated_utc": "2026-09-23T23:50:33+00:00",
   "authority": {
     "master_plan": "CIVIC_GODSTORM_MASTER_PLAN.md",
     "master_plan_head_commit": "5bd357e14d9b68776d50b1dee0829b7bd5ab939f",
@@ -2236,7 +2236,7 @@
       "specification_version": "CG-V1.0.0",
       "canonical_path": "assets/source/god/cg_s_god_torso_q.png",
       "canonical_state": "ABSENT (correct - no approved source; provisional candidates only)",
-      "id_status": "ACCEPTED_PROVISIONAL_PASS2",
+      "id_status": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
       "mode": "PROVISIONAL - awaiting human first-God identity gate (B01); not an approved source",
       "candidates": [
         {
@@ -2307,7 +2307,7 @@
       ],
       "parent_dependency_revisions": "none (independent grammar module, registry dependency: code-defined primitive)",
       "approval": {
-        "decision": "ACCEPTED (pass 2, r003) - provisional; B01 first-God identity gate still governs FORM-Q/LIFE-Q",
+        "decision": "ACCEPTED (pass 2, r003) - provisional; B01 first-God identity gate still governs FORM-Q/LIFE-Q; B01 identity gate PASSED 2026-09-23",
         "approver": "human (repository owner)",
         "date": "2026-09-23"
       },
@@ -2336,7 +2336,7 @@
       "specification_version": "CG-V1.0.0",
       "canonical_path": "assets/source/god/cg_s_god_loco_pillar.png",
       "canonical_state": "ABSENT (correct - no approved source; provisional candidates only)",
-      "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+      "id_status": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
       "mode": "PROVISIONAL - awaiting human first-God identity gate (B01); not an approved source",
       "candidates": [
         {
@@ -2384,7 +2384,7 @@
       ],
       "parent_dependency_revisions": "none (independent grammar module, registry dependency: code-defined primitive)",
       "approval": {
-        "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+        "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE; B01 identity gate PASSED 2026-09-23",
         "approver": "human (repository owner)",
         "date": "2026-09-23",
         "scope": "B01 evidence only - establishes shared Q visual/anatomical language among siblings",
@@ -2410,7 +2410,7 @@
       "specification_version": "CG-V1.0.0",
       "canonical_path": "assets/source/god/cg_s_god_feed_browse.png",
       "canonical_state": "ABSENT (correct - no approved source; provisional candidates only)",
-      "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+      "id_status": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
       "mode": "PROVISIONAL - awaiting human first-God identity gate (B01); not an approved source",
       "candidates": [
         {
@@ -2438,7 +2438,7 @@
       ],
       "parent_dependency_revisions": "none (independent grammar module, registry dependency: code-defined primitive)",
       "approval": {
-        "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+        "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE; B01 identity gate PASSED 2026-09-23",
         "approver": "human (repository owner)",
         "date": "2026-09-23",
         "scope": "B01 evidence only - establishes shared Q visual/anatomical language among siblings",
@@ -2464,7 +2464,7 @@
       "specification_version": "CG-V1.0.0",
       "canonical_path": "assets/source/god/cg_s_god_sense_eye_ring.png",
       "canonical_state": "ABSENT (correct - no approved source; provisional candidates only)",
-      "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+      "id_status": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
       "mode": "PROVISIONAL - awaiting human first-God identity gate (B01); not an approved source",
       "candidates": [
         {
@@ -2512,7 +2512,7 @@
       ],
       "parent_dependency_revisions": "none (independent grammar module, registry dependency: code-defined primitive)",
       "approval": {
-        "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+        "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE; B01 identity gate PASSED 2026-09-23",
         "approver": "human (repository owner)",
         "date": "2026-09-23",
         "scope": "B01 evidence only - establishes shared Q visual/anatomical language among siblings",
@@ -2538,7 +2538,7 @@
       "specification_version": "CG-V1.0.0",
       "canonical_path": "assets/source/god/cg_s_god_tail_balance.png",
       "canonical_state": "ABSENT (correct - no approved source; provisional candidates only)",
-      "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+      "id_status": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
       "mode": "PROVISIONAL - awaiting human first-God identity gate (B01); not an approved source",
       "candidates": [
         {
@@ -2585,7 +2585,7 @@
       ],
       "parent_dependency_revisions": "none (independent grammar module, registry dependency: code-defined primitive)",
       "approval": {
-        "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+        "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE; B01 identity gate PASSED 2026-09-23",
         "approver": "human (repository owner)",
         "date": "2026-09-23",
         "scope": "B01 evidence only - establishes shared Q visual/anatomical language among siblings",
@@ -2612,7 +2612,7 @@
       "specification_version": "CG-V1.0.0",
       "canonical_path": "assets/source/god/cg_s_god_form_q.png",
       "canonical_state": "ABSENT (correct - no approved source)",
-      "id_status": "ACCEPTED_PROVISIONAL_PASS2",
+      "id_status": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
       "parent_dependency_revisions": {
         "CG-S-GOD-TORSO-Q": "r003 (accepted provisional, pass 2)",
         "CG-S-GOD-LOCO-PILLAR": "r002 (provisional batch-local reference)",
@@ -2704,7 +2704,7 @@
       ],
       "reason": null,
       "approval": {
-        "decision": "ACCEPTED (pass 2, r004) - provisional; LIFE-Q unblocked",
+        "decision": "ACCEPTED (pass 2, r004) - provisional; LIFE-Q unblocked; B01 identity gate PASSED 2026-09-23",
         "approver": "human (repository owner)",
         "date": "2026-09-23"
       },
@@ -2728,7 +2728,7 @@
       "specification_version": "CG-V1.0.0",
       "canonical_path": "assets/source/god/cg_s_god_life_q.png",
       "canonical_state": "ABSENT (correct - no approved source)",
-      "id_status": "CANDIDATE_AWAITING_APPROVAL_PASS2",
+      "id_status": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
       "parent_dependency_revisions": {
         "CG-S-GOD-FORM-Q": "r004 (accepted provisional, pass 2)"
       },
@@ -2820,7 +2820,7 @@
       "tool_error_note": "One generate_image call failed with an internal MAX_TOKENS error (no image produced, no file written, no candidate slot consumed); the repair request was retried once successfully.",
       "reason": null,
       "approval": {
-        "decision": "AWAITING_APPROVAL (pass 2, r004)",
+        "decision": "AWAITING_APPROVAL (pass 2, r004); B01 identity gate PASSED 2026-09-23",
         "approver": "human (pending)",
         "date": null
       },
@@ -2881,13 +2881,13 @@
         ]
       },
       "id_states": {
-        "CG-S-GOD-TORSO-Q": "ACCEPTED (r003, pass 2, provisional) - FORM-Q unblocked",
-        "CG-S-GOD-LOCO-PILLAR": "PROVISIONAL_BATCH_LOCAL_REFERENCE (r002; human ruling 2026-09-23)",
-        "CG-S-GOD-FEED-BROWSE": "PROVISIONAL_BATCH_LOCAL_REFERENCE (r001; human ruling 2026-09-23)",
-        "CG-S-GOD-SENSE-EYE-RING": "PROVISIONAL_BATCH_LOCAL_REFERENCE (r002; human ruling 2026-09-23)",
-        "CG-S-GOD-TAIL-BALANCE": "PROVISIONAL_BATCH_LOCAL_REFERENCE (r002; human ruling 2026-09-23)",
-        "CG-S-GOD-FORM-Q": "ACCEPTED (r004, pass 2, provisional) - LIFE-Q unblocked",
-        "CG-S-GOD-LIFE-Q": "pass-2 candidate r004 conforming (template-scaffold strategy); AWAITING human acceptance"
+        "CG-S-GOD-TORSO-Q": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
+        "CG-S-GOD-LOCO-PILLAR": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
+        "CG-S-GOD-FEED-BROWSE": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
+        "CG-S-GOD-SENSE-EYE-RING": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
+        "CG-S-GOD-TAIL-BALANCE": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
+        "CG-S-GOD-FORM-Q": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
+        "CG-S-GOD-LIFE-Q": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING"
       },
       "generation_budget": {
         "clips_used_this_turn": 9,
@@ -2895,7 +2895,20 @@
         "per_id_budget": "1 initial + 1 repair per ID per pass - respected for every ID"
       },
       "dependency_note": "The four conforming modules are registry-independent grammar siblings (dependency: code-defined primitive), so producing them provisionally while the torso is rejected is compliant; parent-first promotion still applies - none may be promoted before the torso identity is resolved and the gate passes.",
-      "gate_ruling": "Human ruling 2026-09-23 recorded in human_rulings[B01_GATE_RULING_1]"
+      "gate_ruling": "Human ruling 2026-09-23 recorded in human_rulings[B01_GATE_RULING_1]",
+      "resolution": "CLOSED - identity gate PASSED 2026-09-23; complete provisional evidence set (7/7 IDs)"
+    },
+    "B02": {
+      "opened_utc": "2026-09-23T23:50:33+00:00",
+      "gate": "Human civic/scale gate before broad architecture production",
+      "mode": "PROVISIONAL - candidates for gate review; no canonical promotion",
+      "counts": {
+        "requested": 6,
+        "candidates_generated": 0,
+        "rejected_candidates": 0,
+        "awaiting_approval_ids": 0,
+        "approved_source": 0
+      }
     }
   },
   "capability_probe": {
@@ -3004,6 +3017,19 @@
         "decision": "Authorize LIFE-Q pass 2 (fresh 1+1 budget). Strategy per recorded tool finding: fresh request anchored on FORM-Q r004 (not the failed sheet), demanding exactly 3x2 six panels and closed-lid eyes."
       },
       "recorded_utc": "2026-09-23T23:45:30+00:00"
+    },
+    {
+      "id": "LIFEQ_R004_ACCEPT_AND_B01_GATE_PASS",
+      "ruling": {
+        "date": "2026-09-23",
+        "authority": "human (repository owner) via Arena gate answer",
+        "decision": "LIFE-Q r004 accepted (provisional) AND the B01 first-God identity gate PASSES for the full Q set: TORSO-Q r003, FORM-Q r004, LOCO-PILLAR r002, FEED-BROWSE r001, SENSE-EYE-RING r002, TAIL-BALANCE r002, LIFE-Q r004. B01 closes as the complete provisional evidence set; B02 unlocked.",
+        "scope_limits": [
+          "All seven remain provisional evidence at native resolutions - the 2048/3072 canonical resolution ruling is still outstanding; no canonical promotion",
+          "Provisional references may anchor B02+ requests per Section 4 batch-local rules"
+        ]
+      },
+      "recorded_utc": "2026-09-23T23:50:33+00:00"
     }
   ],
   "resolution_ruling_standing": {

@@ -61,3 +61,7 @@ r003 (fresh FORM-Q anchor): states fine, but the 3×3 layout persisted — findi
 ## B01 evidence set (complete if r004 is accepted)
 
 TORSO-Q r003 · LOCO-PILLAR r002 · FEED-BROWSE r001 · SENSE-EYE-RING r002 · TAIL-BALANCE r002 · FORM-Q r004 · LIFE-Q r004 — all provisional pending the B01 first-God identity gate and the standing 2048/3072 resolution ruling.
+
+## FINAL: B01 CLOSED — identity gate PASSED (2026-09-23)
+
+Human ruling: LIFE-Q r004 accepted; the **first-God identity gate passes** for the full Q set — TORSO-Q r003, LOCO-PILLAR r002, FEED-BROWSE r001, SENSE-EYE-RING r002, TAIL-BALANCE r002, FORM-Q r004, LIFE-Q r004. B01 closes as the **complete provisional evidence set (7/7 IDs)**: identity-approved, native-resolution, canonical promotion still pending the outstanding 2048/3072 resolution ruling. **B02 unlocked.**
