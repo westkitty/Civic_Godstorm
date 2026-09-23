@@ -4,6 +4,7 @@
 // goods change only by named production, consumption, spoilage and construction debits.
 
 import { forestrySite, housingCapacityMilli, laborMilli, quarrySite } from '../core/commands.ts';
+import { occupiedCells } from '../gods/body.ts';
 import { checked, units } from '../core/quantity.ts';
 import type { CampaignState, SettlementState, SettlementTurnSummary } from '../core/state.ts';
 import { ECONOMY_RULES, PHYSICAL_RESOURCES, type BuildKind, type PhysicalResource } from '../data/rules.ts';
@@ -57,10 +58,16 @@ export function runSettlementTurn(state: CampaignState, settlement: SettlementSt
 
   trimLabor(settlement, warnings);
 
-  // Farms: 4 FOOD x fertility/1000 per worker, filling sites four workers at a time.
+  // Farms: 4 FOOD x fertility/1000 per worker, filling sites four workers at a time. A parcel under a
+  // God body cannot be farmed that turn (Section 6.3).
+  const underBodies = new Set(state.gods.filter((g) => g.lifecycle === 'ALIVE').flatMap((g) => occupiedCells(state.map, g.maskName, g) ?? []));
   let farmNumerator = 0;
   let farmWorkers = settlement.jobs.farm;
   for (const site of settlement.farmSites) {
+    if (underBodies.has(site.cell)) {
+      warnings.push('FARM_UNDER_GOD');
+      continue;
+    }
     const workers = Math.min(farmWorkers, ECONOMY_RULES.maxWorkersPerSite * 1000);
     farmWorkers -= workers;
     farmNumerator += ECONOMY_RULES.farmFoodPerWorker * 100 * (map.fertility[site.cell] as number) * workers;

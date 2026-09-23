@@ -108,6 +108,7 @@ export function generateMap(size: MapSizeName, seed: string): MapState {
     biomass: [...biomassCapacity],
     biomassCapacity,
     stoneReserve,
+    soilDisturbance: new Array<number>(cellCount).fill(0),
   };
 }
 

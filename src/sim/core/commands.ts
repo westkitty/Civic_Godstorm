@@ -6,6 +6,8 @@ import { cellsWithin, neighbors } from '../world/hex.ts';
 import { isWater, isWoodland } from '../world/generate.ts';
 import { units } from './quantity.ts';
 import type { CampaignState, JobAllocation, SettlementState } from './state.ts';
+import type { FollowUp, RouteMode, Stance } from '../gods/god.ts';
+import { applyGodCommand, isGodCommand, validateGodCommand } from '../gods/commands.ts';
 
 export const REJECTION_CODES = [
   'NOT_OWNER',
@@ -42,7 +44,15 @@ interface CommandBase {
 export type Command =
   | (CommandBase & { readonly kind: 'SET_JOBS'; readonly options: JobAllocation })
   | (CommandBase & { readonly kind: 'QUEUE_BUILD'; readonly options: { readonly build: BuildKind } })
-  | (CommandBase & { readonly kind: 'CANCEL_BUILD'; readonly options: { readonly itemId: number } });
+  | (CommandBase & { readonly kind: 'CANCEL_BUILD'; readonly options: { readonly itemId: number } })
+  | (CommandBase & {
+      readonly kind: 'GOD_MOVE';
+      readonly options: { readonly waypoints: readonly number[]; readonly routeMode: RouteMode; readonly then: FollowUp };
+    })
+  | (CommandBase & { readonly kind: 'GOD_FEED'; readonly options: Record<string, never> })
+  | (CommandBase & { readonly kind: 'GOD_REST'; readonly options: Record<string, never> })
+  | (CommandBase & { readonly kind: 'GOD_HOLD'; readonly options: Record<string, never> })
+  | (CommandBase & { readonly kind: 'GOD_STANCE'; readonly options: { readonly stance: Stance } });
 
 export interface Rejection {
   readonly commandId: string;
@@ -130,6 +140,7 @@ export function validateCommand(state: CampaignState, command: Command): Validat
     return fail('STALE_STATE', `command names state ${command.expectedStateVersion}/turn ${command.issuedForTurn}; current state ${state.turn}`);
   }
   if (!state.civs.some((civ) => civ.id === command.civId)) return fail('NOT_OWNER', 'unknown civilization');
+  if (isGodCommand(command)) return validateGodCommand(state, command);
   const settlement = state.settlements.find((s) => s.id === command.actorId);
   if (!settlement || settlement.ownerId !== command.civId) return fail('NOT_OWNER', 'actor is not owned by this civilization');
   switch (command.kind) {
@@ -146,6 +157,10 @@ export function validateCommand(state: CampaignState, command: Command): Validat
 
 /** Applies an already validated command to mutable (cloned) state. */
 export function applyCommand(state: CampaignState, command: Command): void {
+  if (isGodCommand(command)) {
+    applyGodCommand(state, command);
+    return;
+  }
   const settlement = state.settlements.find((s) => s.id === command.actorId) as SettlementState;
   switch (command.kind) {
     case 'SET_JOBS':

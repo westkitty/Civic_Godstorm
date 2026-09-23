@@ -5,10 +5,10 @@
     "civCount": 2,
     "turns": 30
   },
-  "simulationVersion": "cg-sim-m01.1",
-  "rulesHash": "62e62a95530c3c92a6116bea95146f4b8b479891fe4567b84e9bd58222ce8abe",
+  "simulationVersion": "cg-sim-m02.1",
+  "rulesHash": "7e3258b3145d39956a3c8b286044a37d509c593f1b5521a435d446d7a3b4e041",
   "goldenVectorsPass": true,
-  "initialHash": "33055957705b49867ae0b87b433cf8a2533d71bfa8059fdc889210ba39222e84",
-  "finalHash": "cbcadf2933e193bedfa433e627a782c3ae4322aa5718b24372edb572c2f1272c",
+  "initialHash": "88e421a557e7f6e1ca8e5fb61c32283ffe5dda8c3f0d5fd8dfc05dc2426ad886",
+  "finalHash": "249947aadc2de4f91aeb9af6ed0b5bbc94be25ee5e6a87e23a0c9587a845aad5",
   "turns": 30
 }

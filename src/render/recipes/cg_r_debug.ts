@@ -78,7 +78,8 @@ export function createMissingPlaceholder(
   const { texture: label, aspect } = labelTexture(`MISSING ${assetId}`);
   const labelMaterial = new SpriteMaterial({ map: label, depthTest: false });
   const sprite = new Sprite(labelMaterial);
-  const labelWidth = Math.max(size.width, size.depth) * 1.4;
+  // Labels stay legible at strategic zoom even on small bodies.
+  const labelWidth = Math.max(size.width, size.depth, 36) * 1.4;
   sprite.scale.set(labelWidth, labelWidth / aspect, 1);
   sprite.position.y = size.height + labelWidth / aspect;
   sprite.renderOrder = 1;

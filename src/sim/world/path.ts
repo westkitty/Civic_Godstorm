@@ -20,8 +20,8 @@ export interface PathQuery {
   readonly maxExpansions: number;
 }
 
-/** Binary min-heap keyed by (f, g-desc, cell) for a stable, deterministic expansion order. */
-class OpenSet {
+/** Binary min-heap keyed by (f, h, key) for a stable, deterministic expansion order. */
+export class OpenSet {
   private readonly items: { f: number; h: number; cell: number }[] = [];
 
   get size(): number {

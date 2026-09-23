@@ -1,7 +1,12 @@
 // New-campaign construction (master Sections 2.1, 3.3, 6.2). Bounded, diagnosed world search:
-// at most 32 world candidates, each with at most 64 start attempts per civilization.
+// at most 32 world candidates, each with at most 64 start attempts (Section 3.3).
 
-import { initStreams, assertSeed } from './core/rng.ts';
+import { fnv1a32, initStreams, assertSeed } from './core/rng.ts';
+import { occupiedCells } from './gods/body.ts';
+import { createGod, type GodState } from './gods/god.ts';
+import { STARTING_GENOME_Q, FAMILY_MASKS } from './gods/grammar.ts';
+import { placeStartingGod } from './gods/placement.ts';
+import { emptyObservation, updateAllObservations } from './observation/observation.ts';
 import { units } from './core/quantity.ts';
 import type { CampaignState, CivState, HistoryEvent, SettlementState } from './core/state.ts';
 import { ECONOMY_RULES, PHYSICAL_RESOURCES, RULES_HASH, SIMULATION_VERSION, WORLD_RULES } from './data/rules.ts';
@@ -99,7 +104,26 @@ export function createCampaign(options: NewCampaignOptions): CampaignState {
       });
     });
 
-    return {
+    // One persistent God per starting civilization (Section 1.1). M02 starts every civilization with
+    // the baseline Q body; genome choice and start previews arrive with M06.
+    const gods: GodState[] = [];
+    const godCells = new Set<number>();
+    const maskName = FAMILY_MASKS.Q[STARTING_GENOME_Q.size];
+    for (const civ of civs) {
+      const capital = settlements.find((s) => s.id === civ.capitalSettlementId) as SettlementState;
+      const pose = placeStartingGod(map, settlements, godCells, capital, maskName, STARTING_GENOME_Q);
+      if (!pose) break;
+      const god = createGod({ id: nextEntityId++, ownerId: civ.id, lineageSeed: fnv1a32(`${options.seed}:god:${civ.id}`), genome: STARTING_GENOME_Q, ...pose });
+      gods.push(god);
+      for (const cell of occupiedCells(map, maskName, pose) ?? []) godCells.add(cell);
+    }
+    if (gods.length !== civs.length) {
+      rejections.noGodStart = (rejections.noGodStart ?? 0) + 1;
+      rejections.worldCandidateRejected = (rejections.worldCandidateRejected ?? 0) + 1;
+      continue;
+    }
+
+    const state: CampaignState = {
       schemaVersion: 1,
       simulationVersion: SIMULATION_VERSION,
       rulesHash: RULES_HASH,
@@ -112,10 +136,14 @@ export function createCampaign(options: NewCampaignOptions): CampaignState {
       map,
       civs,
       settlements,
+      gods,
+      observations: civs.map((civ) => emptyObservation(civ.id, map.width * map.height)),
       history,
       lastTurn: null,
-      generation: { candidateIndex: index, candidateSeed: worldSeed, startAttempts: placement.attempts, rejections },
+      generation: { candidateIndex: index, candidateSeed: worldSeed, startAttempts: placement.attempts, rejections: { ...rejections } },
     };
+    updateAllObservations(state);
+    return state;
   }
   throw new WorldGenerationError(options.seed, rejections);
 }

@@ -14,10 +14,13 @@ test('boots the shell with a rendering WebGL2 world view and honest asset status
 
   await expect(page.getByRole('heading', { level: 1, name: 'CIVIC GODSTORM' })).toBeVisible();
   await expect(page.getByTestId('renderer-status')).toHaveAttribute('data-renderer-kind', 'running');
+  await expect(page.getByTestId('god-dock')).toBeVisible();
+  await expect(page.getByText('MISSING CG-R-GOD-EMBLEM')).toBeVisible();
+  await expect(page.getByRole('img', { name: /Strategic map/ })).toBeVisible();
+  await page.getByText('Development diagnostics').click();
   await expect(page.getByTestId('renderer-status')).toContainText('draw calls');
   await expect(page.getByTestId('asset-summary')).toHaveText('285 IDs specified; 285 unresolved');
   await expect(page.getByText('MISSING CG-A-ART-TITLE')).toBeVisible();
-  await expect(page.getByRole('img', { name: /CG-R-TERRAIN/ })).toBeVisible();
 
   // The canvas must contain actual rendered pixels, not only the clear colour.
   const canvas = page.getByTestId('world-canvas');
@@ -45,7 +48,8 @@ test('boots the shell with a rendering WebGL2 world view and honest asset status
 test('exposes labelled sections without horizontal overflow', async ({ page }) => {
   await page.goto('./');
   await expect(page.getByTestId('renderer-status')).toHaveAttribute('data-renderer-kind', 'running');
-  for (const name of ['Title art', 'World view', 'Build status']) {
+  await page.getByText('Development diagnostics').click();
+  for (const name of ['Your God', 'Turn report', 'Build status', 'Simulation kernel', 'Title art']) {
     await expect(page.getByRole('heading', { level: 2, name })).toBeVisible();
   }
   const overflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
@@ -93,6 +97,7 @@ test('reports a renderer start failure with a recovery action', async ({ page })
 test('runs the kernel self-check in the browser and matches the Node reference hash', async ({ page }) => {
   const fixture = JSON.parse(readFileSync(resolve(import.meta.dirname, '../fixtures/selfcheck.json'), 'utf8')) as { finalHash: string };
   await page.goto('./');
+  await page.getByText('Development diagnostics').click();
   await page.getByRole('button', { name: 'Run determinism self-check' }).click();
   await expect(page.getByTestId('selfcheck-result')).toHaveAttribute('data-selfcheck-kind', 'done', { timeout: 30_000 });
   await expect(page.getByTestId('selfcheck-golden')).toHaveText('pass');

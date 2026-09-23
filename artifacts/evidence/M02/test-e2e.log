@@ -1,0 +1,61 @@
+
+> civic-godstorm@0.2.0-m02 test:e2e
+> npm run build && playwright test
+
+
+> civic-godstorm@0.2.0-m02 build
+> vite build
+
+vite v8.3.0 building client environment for production...
+transforming...
+✓ 59 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.60 kB │ gzip:   0.36 kB
+dist/assets/index-BFx2oHPA.css    3.81 kB │ gzip:   1.40 kB
+dist/assets/index-B8hDzxcR.js   874.33 kB │ gzip: 235.51 kB │ map: 4,088.77 kB
+
+✓ built in 398ms
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+
+Running 32 tests using 4 workers
+
+  ✓   2 [chrome-narrow] › tests/e2e/boot.spec.ts:11:1 › boots the shell with a rendering WebGL2 world view and honest asset status (4.2s)
+  ✓   1 [chrome-desktop] › tests/e2e/boot.spec.ts:11:1 › boots the shell with a rendering WebGL2 world view and honest asset status (4.7s)
+  ✓   5 [chrome-narrow] › tests/e2e/boot.spec.ts:48:1 › exposes labelled sections without horizontal overflow (3.4s)
+  ✓   6 [chrome-desktop] › tests/e2e/boot.spec.ts:48:1 › exposes labelled sections without horizontal overflow (3.0s)
+  ✓   8 [chrome-desktop] › tests/e2e/boot.spec.ts:59:1 › shows an accessible requirement screen when WebGL2 is unavailable (2.3s)
+  ✓   7 [chrome-narrow] › tests/e2e/boot.spec.ts:59:1 › shows an accessible requirement screen when WebGL2 is unavailable (2.4s)
+  ✓  10 [chrome-narrow] › tests/e2e/boot.spec.ts:79:1 › reports a renderer start failure with a recovery action (2.2s)
+  ✓   9 [chrome-desktop] › tests/e2e/boot.spec.ts:79:1 › reports a renderer start failure with a recovery action (2.3s)
+  ✓   3 [chrome-narrow] › tests/e2e/god-control.spec.ts:63:1 › pointer journey: select, route around the city, feed, rest, cancel, override a warning; replay matches (12.6s)
+  ✓   4 [chrome-desktop] › tests/e2e/god-control.spec.ts:63:1 › pointer journey: select, route around the city, feed, rest, cancel, override a warning; replay matches (12.8s)
+  ✓  11 [chrome-narrow] › tests/e2e/boot.spec.ts:97:1 › runs the kernel self-check in the browser and matches the Node reference hash (3.3s)
+  ✓  12 [chrome-desktop] › tests/e2e/boot.spec.ts:97:1 › runs the kernel self-check in the browser and matches the Node reference hash (3.2s)
+  ✓  13 [chrome-narrow] › tests/e2e/god-control.spec.ts:124:1 › keyboard journey: G, M, arrows and Enter order a move and end the turn (4.1s)
+  ✓  14 [chrome-desktop] › tests/e2e/god-control.spec.ts:124:1 › keyboard journey: G, M, arrows and Enter order a move and end the turn (4.3s)
+  ✓  16 [chrome-desktop] › tests/e2e/god-control.spec.ts:148:3 › touch › touch journey: tap select, tap destination, confirm button, end turn (2.5s)
+  ✓  15 [chrome-narrow] › tests/e2e/god-control.spec.ts:148:3 › touch › touch journey: tap select, tap destination, confirm button, end turn (3.6s)
+  ✓  19 [webkit-desktop] › tests/e2e/boot.spec.ts:11:1 › boots the shell with a rendering WebGL2 world view and honest asset status (7.4s)
+  ✓  21 [webkit-desktop] › tests/e2e/boot.spec.ts:48:1 › exposes labelled sections without horizontal overflow (2.5s)
+  ✓  22 [webkit-desktop] › tests/e2e/boot.spec.ts:59:1 › shows an accessible requirement screen when WebGL2 is unavailable (1.7s)
+  ✓  17 [firefox-desktop] › tests/e2e/boot.spec.ts:11:1 › boots the shell with a rendering WebGL2 world view and honest asset status (11.3s)
+  ✓  23 [webkit-desktop] › tests/e2e/boot.spec.ts:79:1 › reports a renderer start failure with a recovery action (1.4s)
+  ✓  20 [webkit-desktop] › tests/e2e/god-control.spec.ts:63:1 › pointer journey: select, route around the city, feed, rest, cancel, override a warning; replay matches (13.3s)
+  ✓  25 [webkit-desktop] › tests/e2e/boot.spec.ts:97:1 › runs the kernel self-check in the browser and matches the Node reference hash (1.8s)
+  ✓  26 [webkit-desktop] › tests/e2e/god-control.spec.ts:124:1 › keyboard journey: G, M, arrows and Enter order a move and end the turn (2.6s)
+  ✓  24 [firefox-desktop] › tests/e2e/boot.spec.ts:48:1 › exposes labelled sections without horizontal overflow (4.0s)
+  ✓  28 [firefox-desktop] › tests/e2e/boot.spec.ts:59:1 › shows an accessible requirement screen when WebGL2 is unavailable (1.7s)
+  ✓  27 [webkit-desktop] › tests/e2e/god-control.spec.ts:148:3 › touch › touch journey: tap select, tap destination, confirm button, end turn (2.9s)
+  ✓  29 [firefox-desktop] › tests/e2e/boot.spec.ts:79:1 › reports a renderer start failure with a recovery action (1.2s)
+  ✓  18 [firefox-desktop] › tests/e2e/god-control.spec.ts:63:1 › pointer journey: select, route around the city, feed, rest, cancel, override a warning; replay matches (20.7s)
+  ✓  30 [firefox-desktop] › tests/e2e/boot.spec.ts:97:1 › runs the kernel self-check in the browser and matches the Node reference hash (1.9s)
+  ✓  31 [firefox-desktop] › tests/e2e/god-control.spec.ts:124:1 › keyboard journey: G, M, arrows and Enter order a move and end the turn (2.1s)
+  -  32 [firefox-desktop] › tests/e2e/god-control.spec.ts:148:3 › touch › touch journey: tap select, tap destination, confirm button, end turn
+
+  1 skipped
+  31 passed (50.8s)

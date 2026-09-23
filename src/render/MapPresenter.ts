@@ -1,0 +1,231 @@
+// Schematic development map presentation (CG-R-DEBUG family). The production terrain recipe
+// CG-R-TERRAIN depends on the unapproved CG-S-ART-DIRECTION, so this draws flat, clearly
+// schematic hex prisms from observed knowledge plus the code-defined CG-R-FOG and CG-R-FOOTPRINTS
+// overlays. Three horizontal copies present the east-west wrap; state is never duplicated.
+
+import {
+  BufferGeometry,
+  Color,
+  CylinderGeometry,
+  Float32BufferAttribute,
+  Group,
+  InstancedMesh,
+  LineBasicMaterial,
+  LineSegments,
+  Matrix4,
+  MeshBasicMaterial,
+  Raycaster,
+  type Camera,
+  type Vector2,
+} from 'three';
+import { createMissingPlaceholder, type MissingPlaceholder } from './recipes/cg_r_debug.ts';
+import { cellCenter, HEX_RADIUS, type WorldSnapshot } from './worldSnapshot.ts';
+
+/** Schematic biome colours derived from the Section 17.2 palette tokens. */
+const BIOME_COLORS = ['#244a61', '#3f7390', '#7f9a6a', '#55745c', '#3f5a4a', '#5e7f7c', '#b98549', '#c9c3b3', '#6b5a55'];
+const UNKNOWN = new Color('#0b0f14');
+const FARM = new Color('#d8b25a');
+const COLORS = {
+  selected: '#7ffff0',
+  route: '#e4c86e',
+  swept: '#f4ecde',
+  warning: '#e7675d',
+  waypoint: '#ffffff',
+  cursor: '#6fb7ff',
+  foreignGod: '#c85b50',
+};
+
+const COPIES = [-1, 0, 1];
+
+function prismHeight(biome: number, elevation: number): number {
+  if (biome <= 1) return 0.6;
+  return 2 + Math.max(0, Math.floor((elevation - 90) / 25)) * 1.5;
+}
+
+export class MapPresenter {
+  readonly root = new Group();
+  private terrain: InstancedMesh | null = null;
+  private readonly terrainGeometry = new CylinderGeometry(HEX_RADIUS * 0.97, HEX_RADIUS * 0.97, 1, 6);
+  private readonly terrainMaterial = new MeshBasicMaterial({ color: 0xffffff });
+  private readonly overlayGroup = new Group();
+  private readonly placeholderGroup = new Group();
+  private placeholders: MissingPlaceholder[] = [];
+  private overlayResources: { geometry: BufferGeometry; material: LineBasicMaterial }[] = [];
+  private snapshot: WorldSnapshot | null = null;
+  private readonly raycaster = new Raycaster();
+
+  constructor() {
+    this.terrainGeometry.translate(0, 0.5, 0);
+    this.root.add(this.overlayGroup, this.placeholderGroup);
+  }
+
+  get mapWidthU(): number {
+    return (this.snapshot?.width ?? 0) * 32;
+  }
+
+  setSnapshot(snapshot: WorldSnapshot): void {
+    const previous = this.snapshot;
+    this.snapshot = snapshot;
+    if (!this.terrain || previous?.width !== snapshot.width || previous.height !== snapshot.height) this.buildTerrain(snapshot);
+    this.paintTerrain(snapshot);
+    this.buildPlaceholders(snapshot);
+    this.buildOverlays(snapshot);
+  }
+
+  /** Cell under a normalised device coordinate, or null. */
+  pick(ndc: Vector2, camera: Camera): number | null {
+    if (!this.terrain || !this.snapshot) return null;
+    this.raycaster.setFromCamera(ndc, camera);
+    const hit = this.raycaster.intersectObject(this.terrain, false)[0];
+    if (hit?.instanceId === undefined) return null;
+    return hit.instanceId % (this.snapshot.width * this.snapshot.height);
+  }
+
+  dispose(): void {
+    this.clearPlaceholders();
+    this.clearOverlays();
+    this.terrain?.dispose();
+    this.terrainGeometry.dispose();
+    this.terrainMaterial.dispose();
+    this.root.removeFromParent();
+  }
+
+  private buildTerrain(snapshot: WorldSnapshot): void {
+    this.terrain?.removeFromParent();
+    this.terrain?.dispose();
+    const cells = snapshot.width * snapshot.height;
+    this.terrain = new InstancedMesh(this.terrainGeometry, this.terrainMaterial, cells * COPIES.length);
+    this.terrain.name = 'schematic-terrain';
+    this.root.add(this.terrain);
+  }
+
+  private paintTerrain(snapshot: WorldSnapshot): void {
+    const terrain = this.terrain;
+    if (!terrain) return;
+    const cells = snapshot.width * snapshot.height;
+    const matrix = new Matrix4();
+    const color = new Color();
+    const farmCells = new Set<number>();
+    snapshot.farmOwner.forEach((owner, cell) => {
+      if (owner >= 0) farmCells.add(cell);
+    });
+    for (let cell = 0; cell < cells; cell += 1) {
+      const visibility = snapshot.visibility[cell] ?? 0;
+      const biome = snapshot.biome[cell] ?? -1;
+      const known = visibility > 0 && biome >= 0;
+      const height = known ? prismHeight(biome, snapshot.elevation[cell] ?? 0) : 0.4;
+      if (!known) color.copy(UNKNOWN);
+      else {
+        color.set(farmCells.has(cell) ? FARM : (BIOME_COLORS[biome] ?? '#ff00ff'));
+        if (visibility === 1) color.lerp(UNKNOWN, 0.55);
+      }
+      const { x, z } = cellCenter(snapshot.width, cell);
+      COPIES.forEach((copy, copyIndex) => {
+        matrix.makeScale(1, height, 1).setPosition(x + copy * snapshot.width * 32, 0, z);
+        terrain.setMatrixAt(copyIndex * cells + cell, matrix);
+        terrain.setColorAt(copyIndex * cells + cell, color);
+      });
+    }
+    terrain.instanceMatrix.needsUpdate = true;
+    if (terrain.instanceColor) terrain.instanceColor.needsUpdate = true;
+    terrain.computeBoundingSphere();
+  }
+
+  private topOf(cell: number): number {
+    const snapshot = this.snapshot;
+    if (!snapshot) return 0;
+    const biome = snapshot.biome[cell] ?? -1;
+    return snapshot.visibility[cell] && biome >= 0 ? prismHeight(biome, snapshot.elevation[cell] ?? 0) : 0.4;
+  }
+
+  private clearPlaceholders(): void {
+    // Wrap-copy clones share the original's geometry/materials, which each placeholder disposes once.
+    for (const child of [...this.placeholderGroup.children]) child.removeFromParent();
+    for (const placeholder of this.placeholders) placeholder.dispose();
+    this.placeholders = [];
+  }
+
+  private buildPlaceholders(snapshot: WorldSnapshot): void {
+    this.clearPlaceholders();
+    for (const settlement of snapshot.settlements) {
+      const placeholder = createMissingPlaceholder('CG-D-BLD-HALL', { width: 10, height: 7, depth: 10 });
+      const { x, z } = cellCenter(snapshot.width, settlement.cell);
+      this.placeCopies(placeholder, x, this.topOf(settlement.cell), z, 0);
+    }
+    for (const god of snapshot.gods) {
+      const centers = god.cells.map((cell) => cellCenter(snapshot.width, cell));
+      const first = centers[0];
+      const last = centers[centers.length - 1];
+      if (!first || !last) continue;
+      // Unwrap the far cell toward the first so a body straddling the seam stays contiguous.
+      const span = snapshot.width * 32;
+      const lastX = last.x - first.x > span / 2 ? last.x - span : first.x - last.x > span / 2 ? last.x + span : last.x;
+      const length = Math.hypot(lastX - first.x, last.z - first.z) + 24;
+      const placeholder = createMissingPlaceholder('CG-R-GOD-ASSEMBLY', { width: 18, height: 12, depth: length });
+      const angle = Math.atan2(lastX - first.x, last.z - first.z);
+      const top = Math.max(...god.cells.map((cell) => this.topOf(cell)));
+      this.placeCopies(placeholder, (first.x + lastX) / 2, top, (first.z + last.z) / 2, angle);
+    }
+  }
+
+  private placeCopies(placeholder: MissingPlaceholder, x: number, y: number, z: number, angle: number): void {
+    const width = (this.snapshot?.width ?? 0) * 32;
+    placeholder.object.position.set(x, y, z);
+    placeholder.object.rotation.y = angle;
+    this.placeholderGroup.add(placeholder.object);
+    this.placeholders.push(placeholder);
+    for (const copy of [-1, 1]) {
+      const clone = placeholder.object.clone(true);
+      clone.position.x += copy * width;
+      this.placeholderGroup.add(clone);
+    }
+  }
+
+  private clearOverlays(): void {
+    for (const child of [...this.overlayGroup.children]) child.removeFromParent();
+    for (const resource of this.overlayResources) {
+      resource.geometry.dispose();
+      resource.material.dispose();
+    }
+    this.overlayResources = [];
+  }
+
+  /** Hex outlines for a set of cells, raised slightly above the terrain. */
+  private outline(cells: readonly number[], colorHex: string, lift: number, inset: number): void {
+    const snapshot = this.snapshot;
+    if (!snapshot || cells.length === 0) return;
+    const positions: number[] = [];
+    const radius = HEX_RADIUS * inset;
+    for (const cell of cells) {
+      const { x, z } = cellCenter(snapshot.width, cell);
+      const y = this.topOf(cell) + lift;
+      for (let k = 0; k < 6; k += 1) {
+        const a0 = (Math.PI / 3) * k;
+        const a1 = (Math.PI / 3) * (k + 1);
+        positions.push(x + radius * Math.sin(a0), y, z + radius * Math.cos(a0), x + radius * Math.sin(a1), y, z + radius * Math.cos(a1));
+      }
+    }
+    const geometry = new BufferGeometry();
+    geometry.setAttribute('position', new Float32BufferAttribute(positions, 3));
+    const material = new LineBasicMaterial({ color: colorHex, depthTest: false });
+    this.overlayResources.push({ geometry, material });
+    for (const copy of COPIES) {
+      const lines = new LineSegments(geometry, material);
+      lines.position.x = copy * snapshot.width * 32;
+      lines.renderOrder = 2;
+      this.overlayGroup.add(lines);
+    }
+  }
+
+  private buildOverlays(snapshot: WorldSnapshot): void {
+    this.clearOverlays();
+    const { overlay } = snapshot;
+    this.outline(overlay.routeSwept, COLORS.swept, 0.3, 0.8);
+    this.outline(overlay.routeAnchors, COLORS.route, 0.5, 0.55);
+    this.outline(overlay.warningCells, COLORS.warning, 0.7, 0.9);
+    this.outline(overlay.selectedGodCells, COLORS.selected, 0.9, 0.95);
+    this.outline(overlay.waypoints, COLORS.waypoint, 1.1, 0.35);
+    this.outline(snapshot.gods.filter((g) => !g.own).flatMap((g) => g.cells), COLORS.foreignGod, 0.9, 0.95);
+    if (overlay.cursor !== null) this.outline([overlay.cursor], COLORS.cursor, 1.3, 1);
+  }
+}

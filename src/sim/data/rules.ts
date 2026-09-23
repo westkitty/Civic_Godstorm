@@ -4,7 +4,7 @@
 
 import { canonicalHash } from '../core/canonical.ts';
 
-export const SIMULATION_VERSION = 'cg-sim-m01.1';
+export const SIMULATION_VERSION = 'cg-sim-m02.1';
 
 export const PHYSICAL_RESOURCES = ['FOOD', 'TIMBER', 'STONE', 'ORE', 'TOOLS', 'MEDICINE', 'BIO'] as const;
 export type PhysicalResource = (typeof PHYSICAL_RESOURCES)[number];
@@ -137,6 +137,41 @@ export const BUILD_RULES: Readonly<Record<BuildKind, { readonly materials: Parti
   FARM: { materials: { TIMBER: 4 }, work: 4 },
 };
 
+/** God rules (master Sections 2.3, 4.5, 4.6, 16.1, 16.3, 16.4). */
+export const GOD_RULES = {
+  apPerTurn: 4,
+  maxApPerImpulse: 2,
+  maxCrossingsPerImpulse: 2,
+  impulses: 4,
+  maxWaypoints: 12,
+  /** Section 4.6 fatigue thresholds: 60+ -> 3 AP, 85+ -> 2 AP, 100 -> REST/FEED/HOLD only. */
+  fatigueAp: [{ atLeast: 100, ap: 0 }, { atLeast: 85, ap: 2 }, { atLeast: 60, ap: 3 }],
+  feedAp: 2,
+  /** FEED takes up to two turns of base upkeep. */
+  feedTurnsOfUpkeep: 2,
+  /** Ten biomass pool units equal one nutrition. */
+  biomassPerNutrition: 10,
+  restFatigueRecovery: 30,
+  restVitalHeal: 10,
+  restRegionHeal: 20,
+  shortageFatigue: 15,
+  shortageVitalDamagePerMass: 20,
+  forcefulFatigue: 15,
+  /** Heavy passage disturbance 10 x mass; careful x1/2, forceful x3/2 (Section 16.4). */
+  passageDisturbancePerMass: 10,
+  /** Section 2.1: the God starts with three base-upkeep turns of reserves. */
+  startingReserveTurns: 3,
+  regionHealth: 400,
+  /** M02 default: ecological support check for the start (Section 3.3's twenty turns, no regrowth credit). */
+  startSupportTurns: 20,
+  /** M02 defaults: hills (elevation >= 160) and forest cost 2; shallow fords cost 2; deep water is illegal for PILLAR. */
+  hillElevation: 160,
+  /** Planner cost units: AP x 16 plus 1 per turn step, so turning never beats moving. */
+  plannerApWeight: 16,
+  plannerMaxExpansions: 20000,
+  startingTrust: 500,
+} as const;
+
 export const JOBS = ['farm', 'forestry', 'quarry', 'builder'] as const;
 export type Job = (typeof JOBS)[number];
 
@@ -148,6 +183,7 @@ export const RULES = {
   economy: ECONOMY_RULES,
   build: BUILD_RULES,
   jobs: JOBS,
+  god: GOD_RULES,
 };
 
 /** Hash of the active rules data; saves and replays record it (Section 13.2 rulesHash). */

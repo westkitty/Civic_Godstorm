@@ -5,6 +5,7 @@ import type { BuildKind, Job, PhysicalResource } from '../data/rules.ts';
 import type { RngStreams } from './rng.ts';
 import type { Quantity } from './quantity.ts';
 import type { MapSizeName } from '../world/hex.ts';
+import type { GodState } from '../gods/god.ts';
 
 export interface MapState {
   readonly size: MapSizeName;
@@ -20,6 +21,25 @@ export interface MapState {
   biomassCapacity: number[];
   /** Quarryable stone, whole units. */
   stoneReserve: number[];
+  /** Section 3.2 soil disturbance 0..1000. */
+  soilDisturbance: number[];
+}
+
+/** Per-civilization map knowledge (master Sections 9, 11). Never a pointer into true state. */
+export interface ObservationState {
+  readonly civId: number;
+  /** 0 unknown, 1 remembered, 2 currently observed. */
+  visibility: number[];
+  /** Last observed biome index, -1 unknown. */
+  knownBiome: number[];
+  knownElevation: number[];
+  /** Owner civ ID of an observed settlement core, -1 none. */
+  knownSettlement: number[];
+  /** Owner civ ID of an observed farm parcel, -1 none. */
+  knownFarm: number[];
+  /** God ID observed occupying the cell when last seen, -1 none. Valid only while visible. */
+  knownGod: number[];
+  lastSeenTurn: number[];
 }
 
 export interface CivState {
@@ -99,9 +119,24 @@ export interface SettlementTurnSummary {
   readonly warnings: string[];
 }
 
+export interface GodTurnSummary {
+  readonly godId: number;
+  readonly apSpent: number;
+  readonly movementAp: number;
+  readonly steps: number;
+  readonly nutritionGained: number;
+  readonly nutritionConsumed: number;
+  readonly shortfall: number;
+  readonly fed: boolean;
+  readonly rested: boolean;
+  readonly disturbedCells: number[];
+  readonly halted: string | null;
+}
+
 export interface TurnSummary {
   readonly turn: number;
   readonly settlements: SettlementTurnSummary[];
+  readonly gods: GodTurnSummary[];
 }
 
 export interface GenerationRecord {
@@ -125,6 +160,8 @@ export interface CampaignState {
   map: MapState;
   civs: CivState[];
   settlements: SettlementState[];
+  gods: GodState[];
+  observations: ObservationState[];
   history: HistoryEvent[];
   lastTurn: TurnSummary | null;
   readonly generation: GenerationRecord;

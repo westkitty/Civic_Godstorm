@@ -1,0 +1,67 @@
+
+> civic-godstorm@0.2.0-m02 test:assets
+> node tools/assets/check-assets.ts
+
+PASS  signature.section17  computed 6b4bf9095a10b3c05c592d895afda0c8adefa9ec5e3a66312de078d351ef9c80
+PASS  signature.milestones  computed 3cabfe7088b537d17793fe64d618a0ec445c5c05f8237bfe9378835f722f8a01
+PASS  companion.arena.section17  arena copy 6b4bf9095a10b3c05c592d895afda0c8adefa9ec5e3a66312de078d351ef9c80
+PASS  companion.buildPrompt.milestones  build prompt copy 3cabfe7088b537d17793fe64d618a0ec445c5c05f8237bfe9378835f722f8a01
+PASS  ids.total  285 rows, expected 285
+PASS  ids.unique  all unique
+PASS  paths.unique  all unique
+PASS  count.class.ARENA SOURCE ASSET  120/120
+PASS  count.class.DIRECT ARENA ASSET  1/1
+PASS  count.class.DERIVED ASSET  112/112
+PASS  count.class.PROCEDURAL RUNTIME ASSET  52/52
+PASS  count.profile.REF-GOD  30/30
+PASS  count.profile.REF-FORM  4/4
+PASS  count.profile.REF-LIFE  4/4
+PASS  count.profile.REF-PROP  33/33
+PASS  count.profile.REF-INF  6/6
+PASS  count.profile.REF-MOTIF  4/4
+PASS  count.profile.REF-GLYPH  38/38
+PASS  count.profile.REF-DIRECTION  1/1
+PASS  count.profile.DIRECT-TITLE  1/1
+PASS  count.profile.MODEL-GOD  30/30
+PASS  count.profile.MODEL-PROP  39/39
+PASS  count.profile.MODEL-FORM  4/4
+PASS  count.profile.GLYPH  38/38
+PASS  count.profile.ATLAS  1/1
+PASS  count.profile.RUNTIME  40/40
+PASS  count.profile.AUDIO  12/12
+PASS  count.sourceDir.assets/source/god/  38/38
+PASS  count.sourceDir.assets/source/buildings/  14/14
+PASS  count.sourceDir.assets/source/infrastructure/  6/6
+PASS  count.sourceDir.assets/source/units/  9/9
+PASS  count.sourceDir.assets/source/environment/  10/10
+PASS  count.sourceDir.assets/source/emblems/  6/6
+PASS  count.sourceDir.assets/source/motifs/  4/4
+PASS  count.sourceDir.assets/source/icons/  32/32
+PASS  count.sourceDir.assets/source/art/  2/2
+PASS  profiles.declared  17.3 declares REF-GOD, REF-FORM, REF-LIFE, REF-PROP, REF-INF, REF-MOTIF, REF-GLYPH, REF-DIRECTION, DIRECT-TITLE, MODEL-GOD, MODEL-PROP, MODEL-FORM, GLYPH, ATLAS, RUNTIME, AUDIO
+PASS  rows.wellFormed  285 rows valid
+PASS  dependencies.acyclic  no cycles
+PASS  consumers.matrixRows  24/24 SYS rows in 6.4
+PASS  consumers.registerSize  28/28
+PASS  consumers.known  all consumers registered
+PASS  traceability.rows  28 mapped systems
+PASS  traceability.closure  every system maps to declared IDs
+PASS  traceability.audio  12 audio recipes mapped
+PASS  atlas.contents  38 glyphs packed, 26 empty cells
+PASS  batches.allocation  13 batches, 121 outputs
+PASS  godform.mapping  16 recipes mapped to visible modules
+PASS  registries.current  generated registries match master
+PASS  manifest.shape  assets/manifest.json
+PASS  provenance.shape  assets/provenance.json
+PASS  manifest.verified  0 verified files
+PASS  provenance.ids  0 IDs with records
+PASS  canonicalPaths.registered  no unregistered files at canonical paths
+
+Completion (counted separately, Section 20.1):
+  authored sources approved   0/121
+  derived assets verified     0/112
+  recipes registered verified 0/52
+  recipe code present, not yet verified: CG-R-DEBUG
+  unresolved IDs              285
+
+test:assets PASSED (development gate; missing assets permitted before M09)

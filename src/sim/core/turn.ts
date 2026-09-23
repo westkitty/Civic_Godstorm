@@ -3,6 +3,8 @@
 // The input state is never mutated.
 
 import { runSettlementTurn } from '../civ/economy.ts';
+import { resolveGods } from '../gods/resolve.ts';
+import { updateAllObservations } from '../observation/observation.ts';
 import { BIOME_RULES, BIOMES, JOBS, PHYSICAL_RESOURCES, type Biome } from '../data/rules.ts';
 import { canonicalHash } from './canonical.ts';
 import { applyCommand, compareCommands, laborMilli, validateCommand, type Command, type Rejection } from './commands.ts';
@@ -57,6 +59,11 @@ export function assertInvariants(state: CampaignState): void {
       if (item.workDone < 0 || item.workDone > item.workRequired) problems.push(`queue item ${item.id} work ${item.workDone}`);
     }
   }
+  for (const god of state.gods) {
+    if (god.reserve < 0 || !Number.isSafeInteger(god.reserve)) problems.push(`god ${god.id} reserve ${god.reserve}`);
+    if (god.fatigue < 0 || god.fatigue > 100) problems.push(`god ${god.id} fatigue ${god.fatigue}`);
+    if (god.vitalHealth < 0) problems.push(`god ${god.id} vital ${god.vitalHealth}`);
+  }
   const { map } = state;
   for (let cell = 0; cell < map.biomass.length; cell += 1) {
     const biomass = map.biomass[cell] as number;
@@ -88,17 +95,21 @@ export function resolveTurn(committed: CampaignState, commands: readonly Command
     accepted.push(command.commandId);
   }
 
-  // Step 3: ecology. Step 4 (movement impulses) has no actors until M02.
+  // Step 3: ecology.
   regenerateEcology(state);
+
+  // Step 4 and God upkeep of step 5: four impulses of God movement/actions, then needs.
+  const gods = resolveGods(state);
 
   // Step 5: production, consumption, population and construction, in settlement ID order.
   const summaries = [...state.settlements]
     .sort((a, b) => a.id - b.id)
     .map((settlement) => runSettlementTurn(state, settlement));
 
-  // Step 6: commit.
+  // Step 6: observations, then commit.
+  updateAllObservations(state);
   state.turn += 1;
-  state.lastTurn = { turn: state.turn, settlements: summaries };
+  state.lastTurn = { turn: state.turn, settlements: summaries, gods };
   assertInvariants(state);
   return { state, accepted, rejections, stateHash: hashState(state) };
 }

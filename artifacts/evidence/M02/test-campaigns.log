@@ -1,0 +1,57 @@
+
+> civic-godstorm@0.2.0-m02 test:campaigns
+> node tools/runners/campaigns.ts --out artifacts/evidence/M02/campaigns
+
+PASS  cg-campaign-0  6d16a5ddbbbb16a4801b396124c5c0489d69ea97b47d83a843dc1360dc1609bc  rejections=0
+PASS  cg-campaign-1  de2d205498674dd6f8edd446761ac9cbc0d7359402edd0436f14885383d98355  rejections=0
+PASS  cg-campaign-2  b7536f8e2db62315d11225cb9e8d2f4f9efbd3f4764056559754bf5f7a2cefe8  rejections=0
+PASS  cg-campaign-3  7ffe668365c3021960aab71c8d689d4a21889d2fea742371e287e4f02b03cedf  rejections=0
+PASS  cg-campaign-4  c0949925411e74e3bbfb54c77f9b92e98cbc4d6918c0dc9015f076c9ba7e82eb  rejections=0
+PASS  cg-campaign-5  428d2fa4645e6f1619937d1417685881b4ea81933791ca8929e95950d0e26b81  rejections=0
+PASS  cg-campaign-6  2e9d3be4ff6887d88520d30994f56b0ba1eeafd59a675863511bbeac04334824  rejections=0
+PASS  cg-campaign-7  cdaf657f0c90eca53a9ff14d0e863a3dfee0bf08f0e3ae9e59aa02a1aef1977e  rejections=0
+PASS  cg-campaign-8  17a824b28d528f20955e881572d8b08533d0355abbc5b699dc8e4875890060b0  rejections=0
+PASS  cg-campaign-9  05b65abea41b20513cf98c88824b80b23aff09131b95d28fc60af0653129d75f  rejections=0
+PASS  cg-campaign-10  c84582ffab0ef17a677f308f1c5493411e08d1cce35d89c0b782b236d7136d6d  rejections=0
+PASS  cg-campaign-11  8ab3ab74535734906ddfd47794f01bcbf13a24e678df93528d3b717d9d72dc15  rejections=0
+PASS  cg-campaign-12  1b64fd56a593bb7e08cc7c191b1d2ca5046f4ecec9d2496ca4cd418a64cb9a30  rejections=0
+PASS  cg-campaign-13  8b5baa504545dd37fe0d050a07f13cdd481c3664af25bb94a084ae65c188b750  rejections=0
+PASS  cg-campaign-14  b479b1a3c79c3467c7204ffcc9bcb530ff51c3686fae6813aa83397c277820e7  rejections=0
+PASS  cg-campaign-15  4e10bf86f37087136fb7b8a7fac1c6b687b912fb778feb734de831845805710c  rejections=0
+PASS  cg-campaign-16  ddb79715005137a88e4176ddf83dffd39fa6fb54e47de68d71693404b31b5a15  rejections=0
+PASS  cg-campaign-17  8e326c79c9c5f2385bc3cef226d88041a499f18106129766075b0359559972b8  rejections=0
+PASS  cg-campaign-18  3d1cb59cc79fb383fd0d56c73bc83ca577c22b455c4c77b87995a30d7da9708b  rejections=0
+PASS  cg-campaign-19  88d7053f9ad7077b9ea407cb3738a7f62be0c180aa65389f62bd36506da4f47f  rejections=0
+PASS  cg-campaign-20  72deb6d9bd9c97b818e460026362e28c6be5f2b5bf0a2165eb8d92d13e117c54  rejections=0
+PASS  cg-campaign-21  8b4582aa5a42b6426d8bc8f793eea36de7bac12418ef1ed284b85afbd9eaea26  rejections=0
+PASS  cg-campaign-22  3e5c7fc8230d22db90a9ebebb2841b5ceb528ca39d21939051a0f960bd3f4d62  rejections=0
+PASS  cg-campaign-23  0c50581c963a4c1ce61e1d3ea1224176826ef1cf1e0bbdc7cbc945b639f517f3  rejections=0
+PASS  cg-campaign-24  830ceb5860919d76c213bc3cdbebc787dfef25ebfd6d0109c7a6cc6d086d351e  rejections=0
+PASS  cg-campaign-25  7d885f1c10e9eb975296c4f928bfeee2990a93bd1c945d66945c67b7b076d7a3  rejections=0
+PASS  cg-campaign-26  199e5cdbc671b0f6b9a534c09f0f916be0467cf45813cb5e382e54a53de25e44  rejections=0
+PASS  cg-campaign-27  e365fd55695346a810c578a6bc456502c4d1a2d2bf766215990421242e65b7af  rejections=0
+PASS  cg-campaign-28  86f6635206218972e7201a85acc667e93bc376f9ff782fcc12aa254ce35f8a0c  rejections=0
+PASS  cg-campaign-29  31155fc0c5dfa32751eec117f1d483548e009ebc08cd2ab30bd98bfc951f3387  rejections=0
+PASS  cg-campaign-30  f3674c3ea52e3b6f0939915c6c42d7c630a22756897378654b88456a39972f01  rejections=0
+PASS  cg-campaign-31  f11eec2b00812c3e9c201a9cb7c8fb10c88211fadaecf19d347fc43accec93cd  rejections=0
+PASS  cg-campaign-32  feba54c972e204da51f6dc1abe4d7f28e0a7fa2bc295514f0c4b22fdcbe86468  rejections=0
+PASS  cg-campaign-33  89c73c200ec69b0f8616194a66947c39fd77f08cacf5d26a0086ab3a9ad8d22b  rejections=0
+PASS  cg-campaign-34  8599238eb9fd6fb806697cf9bff49be570c09be62094522f9d0ecb86060e5305  rejections=0
+PASS  cg-campaign-35  41357fb6e64fa19cbdc1c96121c0f629497e0b084321107067db7faf5f2ab563  rejections=0
+PASS  cg-campaign-36  10b4e17aff16b05747f37c9b2ef31a8f6fea728235875a0473b6d3c9c2b180b0  rejections=0
+PASS  cg-campaign-37  db313e49502f27f04f962c52ef9feff4efc0597de042b17fbe81a1d6745d126d  rejections=0
+PASS  cg-campaign-38  8c7ef128712c14d4e9787ca1cfea6c88e378c4f3170d7bcc55b74e0c3d35b5aa  rejections=0
+PASS  cg-campaign-39  30b93dd19ba8d42f8ff7ee458efc9ac95feb1469eb7979eead2805c5cbebfb6b  rejections=0
+PASS  cg-campaign-40  16d07bbe103ea53c2c19558a07049d9e741ddf4967fc5dbe5044b502bbdabe8c  rejections=0
+PASS  cg-campaign-41  fce0d5e856cd562bffdff8cf7a05ae407e2da3fa0078ebf7a627406996f2a5c0  rejections=0
+PASS  cg-campaign-42  199bbe53fb835579d0a1d6dd03618d92353a112a0f6c36d1719f1f51f047fdc2  rejections=0
+PASS  cg-campaign-43  48816a7c0ce105e0c1714881717bcb39836e13edc6961cacdcdcfc1f8aef80a4  rejections=0
+PASS  cg-campaign-44  9b1c0aa810351c7fd58c47d01797d605a7f839870969e32cdbb7d96a1a4e9469  rejections=0
+PASS  cg-campaign-45  4eda0f88cbbe43a5a21b7885a2215a34175679c3407f72ccabb8496190442f10  rejections=0
+PASS  cg-campaign-46  00c398d0ac4db3d428b13eda32babecd9b30e7425a08e6eff43a4b4fa0a05372  rejections=0
+PASS  cg-campaign-47  1ee96e145de3e5f80e4c1ee56bce024da00dd94f7f71e5a11a1378139005dc44  rejections=0
+PASS  cg-campaign-48  6daad229f706547e5c2f04f88deca31cbf8043462a6dea75bfcdda1f8660fabb  rejections=0
+PASS  cg-campaign-49  a92562ba6d98f9ba98aa9494c2709bcca276565fc07dce764a03938fd13599b2  rejections=0
+
+50 runs x 30 turns (standard, 6 civs), each run twice, in 64.1s; report /Users/andrew/Civic_Godstorm/artifacts/evidence/M02/campaigns/campaigns.json
+test:campaigns PASSED

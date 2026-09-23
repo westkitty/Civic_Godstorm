@@ -14,7 +14,7 @@ export function SelfCheckPanel() {
     }
   };
   return (
-    <section className="cg-panel cg-selfcheck" aria-labelledby="cg-selfcheck-heading">
+    <section className="cg-selfcheck" aria-labelledby="cg-selfcheck-heading">
       <h2 id="cg-selfcheck-heading">Simulation kernel</h2>
       <p className="cg-note">
         Runs the CG-XOR32-v1 golden vectors and a {SELF_CHECK_OPTIONS.turns}-turn {SELF_CHECK_OPTIONS.size} campaign (seed{' '}

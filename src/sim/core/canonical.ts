@@ -26,6 +26,11 @@ function encode(value: unknown, path: string, out: string[]): void {
       return;
     case 'object': {
       if (Array.isArray(value)) {
+        // Fast path for integer arrays (map fields); String(-0) is "0", matching the scalar case.
+        if (value.every((item) => typeof item === 'number' && Number.isSafeInteger(item))) {
+          out.push('[', value.join(','), ']');
+          return;
+        }
         out.push('[');
         value.forEach((item, index) => {
           if (index > 0) out.push(',');

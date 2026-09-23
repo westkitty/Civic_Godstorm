@@ -1,6 +1,6 @@
 # CIVIC GODSTORM - Implementation Architecture Contract
 
-**Status:** implementation record (M00-M01). **Subordinate to:** `CIVIC_GODSTORM_MASTER_PLAN.md` (contract CG-V1.0.0).
+**Status:** implementation record (M00-M02). **Subordinate to:** `CIVIC_GODSTORM_MASTER_PLAN.md` (contract CG-V1.0.0).
 
 This file records how the code base realises the master's architecture. It is not a fourth planning document. It adds no scope, mechanics or assets. Where it and the master disagree, the master governs and the disagreement is a defect in this file.
 
@@ -16,6 +16,9 @@ This file records how the code base realises the master's architecture. It is no
 | ADR-M01-01 | The simulation hashes with its own synchronous pure-TypeScript SHA-256 (checked against `node:crypto` over 300 lengths). WebCrypto is asynchronous and differs by runtime, so it stays out of the determinism path. | §13.2 | `tests/sim/hashing.test.ts` |
 | ADR-M01-02 | State is plain integer JSON data (arrays, not typed arrays) resolved by `structuredClone` and mutation of the clone. The committed input is never mutated. Canonical serialisation rejects floats, NaN, undefined and non-plain objects. | §13.2, §16.1 | `tests/sim/commands.test.ts` (no-mutation), `hashing.test.ts` |
 | ADR-M01-03 | Start placement follows the master's cap of 64 attempts per candidate world: a STARTS-stream shuffle of stably enumerated candidates, examined in order, over at most 32 candidate worlds, reporting named rejection counters. | §3.3 | `tests/sim/world.test.ts` |
+| ADR-M02-01 | God legality is one pure function over a `Knowledge` interface. Resolution passes true-state knowledge (physics); planning, previews and command validation pass observed knowledge, so a rejection or preview cannot reveal hidden truth. Execution follows the stored plan and halts rather than re-planning with hidden knowledge. | §4.4, §11 | `tests/sim/gods.test.ts` observation boundary |
+| ADR-M02-02 | Impulse simultaneity uses micro-slots: each moving God proposes one step against the same positions, and intersecting proposals halt both. Multi-AP steps accumulate payment across impulses. | §2.3, §16.1 | `tests/sim/gods.test.ts` |
+| ADR-M02-03 | The renderer consumes a `WorldSnapshot` built by the UI from the player's ObservationView and drafts, never from true state. The terrain is a schematic development presentation until CG-R-TERRAIN's art-direction dependency is approved. | §12.3, §17.8 | `src/ui/godView.ts` |
 | ADR-M00-06 | Lint encodes module boundaries and determinism. `src/sim/**` cannot import Three/React/render/ui/app/audio/persistence and cannot use `Math.random`, `Date.now`, `performance.now`, `new Date`, `window`, `document` or timers. `src/render/**` cannot import UI. | §13.2, §14.3 | Probe run in `docs/evidence/M00.md` |
 
 ## Module ownership (master §14.3)
@@ -33,15 +36,17 @@ Directories are created only when a milestone first needs them. The rows marked 
 | `src/sim/civ/` | Settlement economy step | present (M01) |
 | `src/sim/data/` | Rules data with section citations and `RULES_HASH` | present (M01) |
 | `src/sim/scripted/` | Deterministic scripted command driver for tests (not AI) | present (M01) |
-| `src/runtime/` | Browser-runnable determinism self-check | present (M01) |
+| `src/runtime/` | Determinism self-check; GameSession (drafts, automated AI-civ commands, command log, replay) | present (M01-M02) |
 | `src/persistence/` | Save envelope encode/decode (no IndexedDB yet) | present (M01) |
-| `src/sim/gods/`, `src/sim/navigation/`, `src/sim/ai/`, `src/audio/` | See master §14.3 | from M02 onwards |
+| `src/sim/gods/` | Grammar, God record, sweep geometry, body legality, footprint planner, God commands and resolution, start placement | present (M02) |
+| `src/sim/observation/` | Per-civilization knowledge and the ObservationView boundary | present (M02) |
+| `src/sim/ai/`, `src/audio/` | See master §14.3 | later milestones |
 | `tools/` | Spec compiler, asset gates, runners, environment probe | present |
 | `tests/` | `unit` + `tools` (vitest project `unit`), `sim` (project `sim`), `e2e` (Playwright) | present |
 
 ## Runtime shell invariants
 
-- **One frame-loop owner.** `RendererHost` renders on demand through one coalesced `requestAnimationFrame`. No continuous loop exists yet. No simulation or game state lives in the renderer.
+- **One frame-loop owner.** `RendererHost` renders on demand through one coalesced `requestAnimationFrame`. No continuous loop exists yet. No simulation or game state lives in the renderer. Pointer gestures (drag-pan with a 6 px threshold, pinch, wheel, click/tap picking) are normalised there; the UI decides what a picked cell means.
 - **Rendering settings.** `WebGLRenderer` only, WebGL2 required. DPR is capped at 1.5 (medium tier, §15). The camera uses the §12.1 default of 45° azimuth and 55° elevation, orthographic.
 - **Capability gate.** A missing WebGL2 context produces the `WEBGL2_UNAVAILABLE` requirement screen, never a degraded fake-3D build (AD-03). A renderer construction failure produces `RENDERER_START_FAILED` with a retry. An unexpected React error produces `UI_FATAL`. All three use `role="alert"`, a focused heading and a keyboard-reachable action.
 - **Context loss.** `webglcontextlost` is prevented and reported through a polite live region. On restore, presentation is rebuilt from code. There is no game state to lose at M00.

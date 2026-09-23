@@ -2,22 +2,29 @@
 
 | Field | Value |
 |---|---|
-| Current milestone | **M02 - Direct God-control prototype** (not started) |
-| Last accepted milestone | M01 - Playable simulation kernel ([evidence](evidence/M01.md)); M00 ([evidence](evidence/M00.md)) |
-| Branches | `m00-architecture-foundation` (pushed), `m01-simulation-kernel` (stacked on M00). Neither is merged to `main` |
-| Toolchain | Node 24.21.0 LTS / npm 11.19.0; Playwright Chrome channel plus Playwright Firefox 155.0 and WebKit 26.6 builds |
-| Known-good journeys | Boot shell; WebGL2-missing and renderer-failure paths; browser determinism self-check matching Node in Chrome, Firefox and WebKit |
-| Asset status | 285/285 IDs unresolved. The Arena branch `arena/01a0d03e-civic-godstorm` reports B00 BLOCKED (tool below the 1536 px floor) and four provisional B01 candidates, none approved. It has not been integrated |
-| Blocking decisions | M03 needs B00 + B01 human approval. B00 is blocked on Arena tool capability, and resolving that is the user's decision |
+| Current milestone | **M03 - First complete God: BLOCKED** on missing human approval of Arena batches B00 (art direction) and B01 (first Q body) |
+| Last accepted milestones | M02 ([evidence](evidence/M02.md)), M01 ([evidence](evidence/M01.md)), M00 ([evidence](evidence/M00.md)) |
+| Branches | `m00-architecture-foundation` → `m01-simulation-kernel` → `m02-god-control` (stacked, all pushed). None is merged to `main` |
+| Toolchain | Node 24.21.0 LTS / npm 11.19.0; Chrome 153 channel plus Playwright Firefox 155.0 and WebKit 26.6 |
+| Known-good journeys | Boot and error paths; browser determinism self-check; God control by pointer, keyboard and touch emulation (select, route around a city, feed, rest, cancel, consent override) with headless replay equality |
+| Asset status | 285/285 IDs unresolved. Arena branch `arena/01a0d03e-civic-godstorm` at `580610d` (fetched 2026-09-23): all 121 receipts are still `SPECIFIED`; nothing is approved and no file sits at a canonical source path. B00 `CG-S-ART-DIRECTION` BLOCKED (tool below the 1536 px floor). B01 provisional candidates awaiting the human gate: LOCO-PILLAR r002, FEED-BROWSE r001, SENSE-EYE-RING r002, TAIL-BALANCE r002, TORSO-Q r003. FORM-Q rejected this pass (rear-view tail droop); LIFE-Q not generated. Nothing is integrated here |
 
-## Next bounded action (M02)
+## Why work stops here
 
-Build a first-class God record from the §4 grammar for one legal Q/PILLAR starting genome:
+The build prompt's milestone order is binding: "do not skip an earlier gate because a later task looks easier".
 
-- the §16.2 footprint and swept-region validation, and footprint A* over `(anchor, heading)`;
-- MOVE/FEED/REST/HOLD with AP, stance and fatigue;
-- consent previews, the persistent itinerary and overrides;
-- an observation boundary for fog;
-- the God dock and command strip in the browser (pointer, keyboard and touch-emulated), with explicit `MISSING <ID>` placeholders for all God art.
+- **M03 needs sources.** The master (§19, M03) requires "B00+B01 approval" and forbids any primitive-stack or static-hierarchy substitute.
+- **M04 comes after M03.** It also needs B02 for the first civic appearance.
+- **Placeholders ended at M02.** The Arena production boundary allows development placeholders only through M02.
 
-Exit evidence is a real browser journey: select, route around a city, feed, rest, cancel the itinerary and override a legal safety warning. It must produce the same headless command outcomes, and a hidden obstacle must not leak.
+## Decisions required from you or the Arena workflow
+
+1. **B00.** The Arena agent reports its image tool cannot produce `CG-S-ART-DIRECTION` at the 1536 px native floor for REF-DIRECTION. Options are to supply a capable image tool, approve a specific amendment to the §17.2 normalisation rule, or have the art produced another approved way. Changing the contract requires a master-plan amendment.
+2. **B01.** Human review of the five provisional Q-module candidates (including TORSO-Q r003), a conforming `CG-S-GOD-FORM-Q` (rejected so far: rear-view tail droop), then `CG-S-GOD-LIFE-Q`, then the first-God identity approval.
+3. **Integration of branches.** Whether to open PRs or merge `m00` → `m01` → `m02` into `main`.
+
+## Next bounded action once unblocked (M03)
+
+1. Intake the approved B00/B01 sources into `assets/source/god/` with provenance records.
+2. Run the §18.1 feasibility probe with the local Blender 5.2.2 LTS.
+3. Build the continuous Q mesh: identity anchors, real skin, seven poses, LODs, the glTF validator and reimport, and the offline inspector with a 144-frame turntable.
