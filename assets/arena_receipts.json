@@ -2,7 +2,7 @@
   "ledger_type": "arena_source_receipts",
   "specification_version": "CG-V1.0.0",
   "created_utc": "2026-09-23T21:51:28+00:00",
-  "last_updated_utc": "2026-09-23T23:47:40+00:00",
+  "last_updated_utc": "2026-09-23T23:48:18+00:00",
   "authority": {
     "master_plan": "CIVIC_GODSTORM_MASTER_PLAN.md",
     "master_plan_head_commit": "5bd357e14d9b68776d50b1dee0829b7bd5ab939f",
@@ -3020,6 +3020,15 @@
       "recovery": "Branch re-rooted on a488384 via mixed reset (no force-push, no remote rewrite); preserved working-tree content re-committed as the true delta. Abandoned local commit 9efa738 contains no unique content.",
       "parallel_work_observed": "Remote branches m00-architecture-foundation (e7cb713) and m01-simulation-kernel (2106b25) exist - consistent with the separate Opus implementation session. Untouched; no merge, no cross-branch writes.",
       "prevention": "Future fetches of this branch must use the explicit refspec +refs/heads/arena/01a0d03e-civic-godstorm:refs/remotes/origin/arena/01a0d03e-civic-godstorm."
+    },
+    {
+      "incident": "SECOND_WORKSPACE_RESET_AND_FORCED_UPDATE",
+      "recorded_utc": "2026-09-23T23:48:18+00:00",
+      "observation": "A second between-turns workspace reset re-cloned the repo (single-branch, at docs commit 5bd357e) while preserving the working tree. The next commit (b1e65ae) therefore contained all 24 asset files as fresh creations on the docs base instead of incrementing the prior six-commit history (75b64ad..6f07fd4).",
+      "root_cause_agent_error": "The push refspec used since the first recovery began with a leading \"+\" (allow non-fast-forward). Combined with the reset-diverged local branch, this silently FORCED the remote branch from 6f07fd4 to b1e65ae, replacing granular remote history with a single squashed commit.",
+      "integrity_verification": "All file content preserved byte-identically: spot-checked receipt sha256 values match remote tree (LIFE-Q r004 e342060b..., TORSO-Q r003 353753aa...). No candidate, receipt, ruling, or review content lost. Lost: remote commit-history granularity only. The complete decision audit survives in this ledger (human_rulings, audit_trail, receipts).",
+      "corrective_action": "Push procedure changed permanently: upstream tracking configured; pushes use plain fast-forward-only refspec (no leading \"+\", no --force, ever). Any future non-fast-forward is a hard stop for human review.",
+      "prevention_note": "If the workspace resets again, do NOT commit-and-push before running: git fetch (explicit refspec), git status vs origin/arena/01a0d03e-civic-godstorm, and re-root with git reset if diverged."
     }
   ]
 }
