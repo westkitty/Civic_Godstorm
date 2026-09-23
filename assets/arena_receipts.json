@@ -2,7 +2,7 @@
   "ledger_type": "arena_source_receipts",
   "specification_version": "CG-V1.0.0",
   "created_utc": "2026-09-23T21:51:28+00:00",
-  "last_updated_utc": "2026-09-23T23:50:33+00:00",
+  "last_updated_utc": "2026-09-23T23:54:35+00:00",
   "authority": {
     "master_plan": "CIVIC_GODSTORM_MASTER_PLAN.md",
     "master_plan_head_commit": "5bd357e14d9b68776d50b1dee0829b7bd5ab939f",
@@ -2842,6 +2842,333 @@
         "repair_candidates_used": 1,
         "strategy": "fresh anchor on FORM-Q r004"
       }
+    },
+    "CG-S-MOT-BASALT": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/motifs/cg_s_mot_basalt.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "parent_dependency_revisions": "CG-S-ART-DIRECTION r001 (B00 style board; BLOCKED dimensional - used only as permitted provisional style anchor for batch-local requests)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-MOT-BASALT/r001/cg_s_mot_basalt.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "62ee8d1249b6c1f0816e8b59eb676f1f187d0ae891b8b296150133f3a6261708",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "B00 board r001 style anchor",
+          "content_qa": {
+            "four_panels": "all conform - stepped roof with ochre inlay line, tapering supports+lintel, broad squared portal, double horizontal inlay over coursed masonry",
+            "palette": "adherent (pale stone/ochre/charcoal)",
+            "style": "flat clean elevations - the projection standard the building sheets should match",
+            "text": "none"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "AWAITING_APPROVAL",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-BLD-*",
+        "CG-R-CITY-BLOCKS",
+        "CG-R-INFRA-ROUTES",
+        "CG-R-UNITS-CIVILIAN",
+        "CG-D-UI-ATLAS"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 0
+      }
+    },
+    "CG-S-BLD-DWELLING": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/buildings/cg_s_bld_dwelling.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "REJECTED_THIS_PASS",
+      "parent_dependency_revisions": "CG-S-ART-DIRECTION r001 (B00 style board; BLOCKED dimensional - used only as permitted provisional style anchor for batch-local requests)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-BLD-DWELLING/r001/cg_s_bld_dwelling.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "9fca25b11ac93ce374489943960f7a8309bdffa849ab36bf86cbf777e82758fd",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "B00 board r001 style anchor",
+          "content_qa": {
+            "content": "conforming design (clustered masses, eaves, door, court)",
+            "projection_violation": "front/side/rear panels rendered as 3/4 perspective views; only plan conforms"
+          },
+          "status": "REJECTED"
+        },
+        {
+          "revision": "r002",
+          "path": "assets/candidates/CG-S-BLD-DWELLING/r002/cg_s_bld_dwelling.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "a89fb72ee7f598744f7cf49176ed086afb3190dfa28f5662aebc842d8873c189",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "r001 + blank 2x2 template scaffold (ImageMagick, recorded)",
+          "content_qa": {
+            "grid": "template scaffold produced clean 2x2",
+            "projection_violation": "PERSISTS - 3/4 drift copied from r001 despite flat-elevation instructions"
+          },
+          "status": "REJECTED"
+        }
+      ],
+      "approval": {
+        "decision": "REJECTED_THIS_PASS - new pass requires authorization",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-BLD-*",
+        "CG-R-CITY-BLOCKS",
+        "CG-R-INFRA-ROUTES",
+        "CG-R-UNITS-CIVILIAN",
+        "CG-D-UI-ATLAS"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 1,
+        "remaining": 0
+      },
+      "reason": "Orthographic elevation requirement violated in all elevation cells in both candidates; budget exhausted this pass."
+    },
+    "CG-S-BLD-HALL": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/buildings/cg_s_bld_hall.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "REJECTED_THIS_PASS",
+      "parent_dependency_revisions": "CG-S-ART-DIRECTION r001 (B00 style board; BLOCKED dimensional - used only as permitted provisional style anchor for batch-local requests)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-BLD-HALL/r001/cg_s_bld_hall.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "cea1a18805a94abdb338ae70a170277fed5a3172fc1d4ace711492be90772e59",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "B00 board r001 style anchor",
+          "content_qa": {
+            "content": "conforming design (terraces, court, ridge, pilasters, door)",
+            "projection_violation": "3/4 drift in three panels; only plan conforms"
+          },
+          "status": "REJECTED"
+        },
+        {
+          "revision": "r002",
+          "path": "assets/candidates/CG-S-BLD-HALL/r002/cg_s_bld_hall.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "76d5a52af452c96757ad61571464cc4cc33674904ce5eafc5d51e0dc033822ad",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "r001 + blank 2x2 template scaffold",
+          "content_qa": {
+            "grid": "template scaffold clean 2x2",
+            "projection_violation": "PERSISTS - 3/4 drift copied from r001"
+          },
+          "status": "REJECTED"
+        }
+      ],
+      "approval": {
+        "decision": "REJECTED_THIS_PASS - new pass requires authorization",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-BLD-*",
+        "CG-R-CITY-BLOCKS",
+        "CG-R-INFRA-ROUTES",
+        "CG-R-UNITS-CIVILIAN",
+        "CG-D-UI-ATLAS"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 1,
+        "remaining": 0
+      },
+      "reason": "Same orthographic violation; budget exhausted this pass."
+    },
+    "CG-S-UNT-CIVILIAN": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/units/cg_s_unt_civilian.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "REJECTED_THIS_PASS",
+      "parent_dependency_revisions": "CG-S-ART-DIRECTION r001 (B00 style board; BLOCKED dimensional - used only as permitted provisional style anchor for batch-local requests)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-UNT-CIVILIAN/r001/cg_s_unt_civilian.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "33c2a4e06b71db52af6ada7e44bdf7765397f66478c3aa1b21a06d0e0e82d058",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "B00 board r001 style anchor",
+          "content_qa": {
+            "layout_violation": "six figures in four cells (duplicated rear/side views)",
+            "identity_violation": "portrait face with eyes/nose/mouth detail vs featureless figurine lock"
+          },
+          "status": "REJECTED"
+        },
+        {
+          "revision": "r002",
+          "path": "assets/candidates/CG-S-UNT-CIVILIAN/r002/cg_s_unt_civilian.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "6c38dbb5ae0245e0c9c16ea8138ae8f784d0a462946d004d805eae58f3404341",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "r001 + blank 2x2 template scaffold",
+          "content_qa": {
+            "layout_violation": "PERSISTS - duplicated figures copied from r001 despite one-figure-per-cell instructions",
+            "identity_violation": "PERSISTS - eyes/nose detail on face"
+          },
+          "status": "REJECTED"
+        }
+      ],
+      "approval": {
+        "decision": "REJECTED_THIS_PASS - new pass requires authorization",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-BLD-*",
+        "CG-R-CITY-BLOCKS",
+        "CG-R-INFRA-ROUTES",
+        "CG-R-UNITS-CIVILIAN",
+        "CG-D-UI-ATLAS"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 1,
+        "remaining": 0
+      },
+      "reason": "Layout duplication and portrait-face violations persist; budget exhausted this pass."
+    },
+    "CG-S-INF-FARM": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/infrastructure/cg_s_inf_farm.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "parent_dependency_revisions": "CG-S-ART-DIRECTION r001 (B00 style board; BLOCKED dimensional - used only as permitted provisional style anchor for batch-local requests)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-INF-FARM/r001/cg_s_inf_farm.png",
+          "native_dimensions": "1264x848",
+          "native_aspect_error_pct": 0.63,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "849eb8afa093a08f743e116d79ab951c57d70460b1c367a50e15707b3e9e67fb",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "B00 board r001 style anchor",
+          "content_qa": {
+            "layout": "exactly 3x2 six panels, columns=modes, rows=cameras",
+            "modes": "FIELD furrows / WOODLOT planted trees / FISHERY racks+punt+bank",
+            "notes": "minor: canopy style slightly outlined vs sculpted matte; structure correct"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "AWAITING_APPROVAL",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-BLD-*",
+        "CG-R-CITY-BLOCKS",
+        "CG-R-INFRA-ROUTES",
+        "CG-R-UNITS-CIVILIAN",
+        "CG-D-UI-ATLAS"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 0
+      },
+      "tool_note": "3:2 landscape emitted at 1264x848 without template scaffold - layout held when described as columns/rows explicitly"
+    },
+    "CG-S-INF-ROAD": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/infrastructure/cg_s_inf_road.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "parent_dependency_revisions": "CG-S-ART-DIRECTION r001 (B00 style board; BLOCKED dimensional - used only as permitted provisional style anchor for batch-local requests)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-INF-ROAD/r001/cg_s_inf_road.png",
+          "native_dimensions": "1264x848",
+          "native_aspect_error_pct": 0.63,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "2cfb91f36094a38ebbe05b59d8e00226f44a3089ea53f890f9677fc4ffa4626b",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "B00 board r001 style anchor",
+          "content_qa": {
+            "layout": "exactly 3x2 six panels, columns=modes, rows=cameras",
+            "modes": "TRACK narrow winding / PAVED setts+kerb / GODWAY broad slabs with double edge inlay + kerbs",
+            "width_reading": "relative widths clearly increasing track->paved->godway",
+            "notes": "clean flat orthographic rows - conforms"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "AWAITING_APPROVAL",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-BLD-*",
+        "CG-R-CITY-BLOCKS",
+        "CG-R-INFRA-ROUTES",
+        "CG-R-UNITS-CIVILIAN",
+        "CG-D-UI-ATLAS"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 0
+      }
     }
   },
   "batch_checkpoints": {
@@ -2904,10 +3231,19 @@
       "mode": "PROVISIONAL - candidates for gate review; no canonical promotion",
       "counts": {
         "requested": 6,
-        "candidates_generated": 0,
-        "rejected_candidates": 0,
-        "awaiting_approval_ids": 0,
+        "candidates_generated": 9,
+        "rejected_candidates": 6,
+        "rejected_ids_this_pass": 3,
+        "awaiting_approval_ids": 3,
         "approved_source": 0
+      },
+      "id_states": {
+        "CG-S-MOT-BASALT": "CANDIDATE_AWAITING_APPROVAL (r001)",
+        "CG-S-BLD-DWELLING": "REJECTED this pass (projection; strategy for retry recorded)",
+        "CG-S-BLD-HALL": "REJECTED this pass (projection; strategy recorded)",
+        "CG-S-INF-FARM": "CANDIDATE_AWAITING_APPROVAL (r001)",
+        "CG-S-INF-ROAD": "CANDIDATE_AWAITING_APPROVAL (r001)",
+        "CG-S-UNT-CIVILIAN": "REJECTED this pass (layout+face; strategy recorded)"
       }
     }
   },
@@ -3055,6 +3391,14 @@
       "integrity_verification": "All file content preserved byte-identically: spot-checked receipt sha256 values match remote tree (LIFE-Q r004 e342060b..., TORSO-Q r003 353753aa...). No candidate, receipt, ruling, or review content lost. Lost: remote commit-history granularity only. The complete decision audit survives in this ledger (human_rulings, audit_trail, receipts).",
       "corrective_action": "Push procedure changed permanently: upstream tracking configured; pushes use plain fast-forward-only refspec (no leading \"+\", no --force, ever). Any future non-fast-forward is a hard stop for human review.",
       "prevention_note": "If the workspace resets again, do NOT commit-and-push before running: git fetch (explicit refspec), git status vs origin/arena/01a0d03e-civic-godstorm, and re-root with git reset if diverged."
+    }
+  ],
+  "tool_behavior_findings": [
+    {
+      "finding_id": "TB-03_ANCHOR_CONTENT_DOMINANCE",
+      "date": "2026-09-23",
+      "rule": "Template scaffolds fix LAYOUT but reference anchors dominate CONTENT: anchoring on a defective reference reproduces its defects (projection drift, duplicated views, portrait faces) even under explicit contrary instructions. Repairs must anchor only on conforming references (LIFE-Q precedent) or drop the anchor entirely (fresh generation + scaffold + text).",
+      "evidence": "B02: DWELLING/HALL r002 kept 3/4 drift; CIVILIAN r002 kept six-figure layout + portrait face; contrast LIFE-Q r004 success where anchor (FORM-Q r004) was conforming."
     }
   ]
 }
