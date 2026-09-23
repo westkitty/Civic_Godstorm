@@ -1,0 +1,16 @@
+
+> civic-godstorm@0.0.0-m00 test:sim
+> vitest run --project sim
+
+
+ RUN  v5.0.1 /Users/andrew/Civic_Godstorm
+
+No test files found, exiting with code 1
+
+projects: sim
+
+|sim| 
+
+include: tests/sim/**/*.test.ts
+exclude:  **/node_modules/**, **/.git/**
+

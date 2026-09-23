@@ -1,0 +1,6 @@
+
+> civic-godstorm@0.0.0-m00 bench
+> node tools/runners/bench.ts
+
+bench: NOT AVAILABLE. No measurable workload exists yet; Section 15 benchmarks are implemented and measured in M12.
+bench: arguments accepted: {"seed":"cg-default","map":"standard","scenario":"stress","turns":240,"out":"artifacts/local/bench"}

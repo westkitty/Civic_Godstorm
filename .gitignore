@@ -12,3 +12,6 @@ artifacts/local/
 # OS/editor noise
 .DS_Store
 *.log
+
+# committed milestone evidence logs
+!artifacts/evidence/**/*.log
