@@ -1,0 +1,3025 @@
+{
+  "ledger_type": "arena_source_receipts",
+  "specification_version": "CG-V1.0.0",
+  "created_utc": "2026-09-23T21:51:28+00:00",
+  "last_updated_utc": "2026-09-23T23:47:40+00:00",
+  "authority": {
+    "master_plan": "CIVIC_GODSTORM_MASTER_PLAN.md",
+    "master_plan_head_commit": "5bd357e14d9b68776d50b1dee0829b7bd5ab939f",
+    "arena_prompt": "LM_ARENA_ASSET_PRODUCTION_PROMPT.md",
+    "note": "Registry rows parsed mechanically from master Sections 17.4-17.6; batch allocation from Section 18.6 (verified identical to Arena prompt Section 5); counts and dependency closure machine-verified at creation."
+  },
+  "reconciliation": {
+    "contract_sha256_target": "6b4bf9095a10b3c05c592d895afda0c8adefa9ec5e3a66312de078d351ef9c80",
+    "byte_hash_result": "NO_MATCH on 5 boundary conventions of master Section 17 text (inner stripped/raw, with markers +/- trailing newline, whole section). Inconclusive rather than failing: the target identifies the planning-prompt serialization, whose exact bytes cannot be reconstructed from the chat transcript. Non-blocking.",
+    "substantive_result": "PASS - REF-DIRECTION profile, REF-GOD/REF-PROP/REF-INF/REF-GLYPH profiles, palette tokens, camera/lighting locks, normalization allowance, CG-S-ART-DIRECTION and CG-A-ART-TITLE rows, and the B00-B12 allocation table verified identical between master Section 17/18 and the Arena prompt copy.",
+    "counts_verified": {
+      "total": 121,
+      "source_CG_S": 120,
+      "direct_CG_A": 1,
+      "profile_counts": {
+        "REF-GOD": 30,
+        "REF-FORM": 4,
+        "REF-LIFE": 4,
+        "REF-PROP": 33,
+        "REF-INF": 6,
+        "REF-GLYPH": 38,
+        "REF-MOTIF": 4,
+        "REF-DIRECTION": 1,
+        "DIRECT-TITLE": 1
+      },
+      "profile_note": "REF-GLYPH 38 = 32 interface glyphs + 6 civilization emblems sharing the REF-GLYPH profile; Section 17.1 counts them as separate classes.",
+      "batch_counts": {
+        "B00": 1,
+        "B01": 7,
+        "B02": 6,
+        "B03": 9,
+        "B04": 10,
+        "B05": 5,
+        "B06": 7,
+        "B07": 19,
+        "B08": 18,
+        "B09": 15,
+        "B10": 9,
+        "B11": 14,
+        "B12": 1
+      }
+    }
+  },
+  "registry": [
+    {
+      "id": "CG-S-GOD-TORSO-Q",
+      "canonical_path": "assets/source/god/cg_s_god_torso_q.png",
+      "profile": "REF-GOD",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Low continuous shoulder-to-haunch body; four leg junctions; high load-bearing shoulder arch, low rear saddle, no face baked into torso",
+      "source_dimensions": "18 x 12 x 30 U; medium body",
+      "consumers": [
+        "SYS-GOD",
+        "SYS-GODFORM",
+        "SYS-MILITARY",
+        "SYS-ENV",
+        "SYS-POSTGOD"
+      ],
+      "variants_composition": "One normalized module; mirrored/continuous repeats only as Section 16 allows",
+      "dependencies": [],
+      "batch": "B01",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-GOD-TORSO-H",
+      "canonical_path": "assets/source/god/cg_s_god_torso_h.png",
+      "profile": "REF-GOD",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Long six-socket thoracic body; three paired segment bulges, flattened armored belly, continuous organic junctions",
+      "source_dimensions": "20 x 10 x 38 U; medium body",
+      "consumers": [
+        "SYS-GOD",
+        "SYS-GODFORM",
+        "SYS-MILITARY",
+        "SYS-ENV",
+        "SYS-POSTGOD"
+      ],
+      "variants_composition": "One normalized module; mirrored/continuous repeats only as Section 16 allows",
+      "dependencies": [],
+      "batch": "B03",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-GOD-TORSO-S",
+      "canonical_path": "assets/source/god/cg_s_god_torso_s.png",
+      "profile": "REF-GOD",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Ribbon body with broad flattened ventral keel and tapering axial cross-sections; no leg sockets; five-cell prime body reference",
+      "source_dimensions": "14 x 10 x 130 U; medium trail",
+      "consumers": [
+        "SYS-GOD",
+        "SYS-GODFORM",
+        "SYS-MILITARY",
+        "SYS-ENV",
+        "SYS-POSTGOD"
+      ],
+      "variants_composition": "One normalized module; mirrored/continuous repeats only as Section 16 allows",
+      "dependencies": [],
+      "batch": "B04",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-GOD-TORSO-M",
+      "canonical_path": "assets/source/god/cg_s_god_torso_m.png",
+      "profile": "REF-GOD",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Broad mantle with raised central dorsal ridge and two lateral fin/wing root junctions; no humanoid chest or legs",
+      "source_dimensions": "26 x 8 x 42 U; medium body",
+      "consumers": [
+        "SYS-GOD",
+        "SYS-GODFORM",
+        "SYS-MILITARY",
+        "SYS-ENV",
+        "SYS-POSTGOD"
+      ],
+      "variants_composition": "One normalized module; mirrored/continuous repeats only as Section 16 allows",
+      "dependencies": [],
+      "batch": "B04",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-GOD-LOCO-PILLAR",
+      "canonical_path": "assets/source/god/cg_s_god_loco_pillar.png",
+      "profile": "REF-GOD",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "One load-bearing limb with two articulated bends and three broad terminal pads; four/six anatomical copies follow family",
+      "source_dimensions": "5 x 12 x 6 U per limb",
+      "consumers": [
+        "SYS-GOD",
+        "SYS-GODFORM",
+        "SYS-MILITARY",
+        "SYS-ENV",
+        "SYS-POSTGOD"
+      ],
+      "variants_composition": "One normalized module; mirrored/continuous repeats only as Section 16 allows",
+      "dependencies": [],
+      "batch": "B01",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-GOD-LOCO-WEBBED",
+      "canonical_path": "assets/source/god/cg_s_god_loco_webbed.png",
+      "profile": "REF-GOD",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "One jointed weight-bearing limb; three separated blunt digits joined by an unbroken web; web folds, never extra fingers",
+      "source_dimensions": "5 x 11 x 8 U per limb",
+      "consumers": [
+        "SYS-GOD",
+        "SYS-GODFORM",
+        "SYS-MILITARY",
+        "SYS-ENV",
+        "SYS-POSTGOD"
+      ],
+      "variants_composition": "One normalized module; mirrored/continuous repeats only as Section 16 allows",
+      "dependencies": [],
+      "batch": "B04",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-GOD-LOCO-DIGGER",
+      "canonical_path": "assets/source/god/cg_s_god_loco_digger.png",
+      "profile": "REF-GOD",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "One two-joint digging limb with three broad shovel claws and thick elbow armor, not a drill machine",
+      "source_dimensions": "7 x 10 x 10 U per limb",
+      "consumers": [
+        "SYS-GOD",
+        "SYS-GODFORM",
+        "SYS-MILITARY",
+        "SYS-ENV",
+        "SYS-POSTGOD"
+      ],
+      "variants_composition": "One normalized module; mirrored/continuous repeats only as Section 16 allows",
+      "dependencies": [],
+      "batch": "B03",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-GOD-LOCO-UNDULATOR",
+      "canonical_path": "assets/source/god/cg_s_god_loco_undulator.png",
+      "profile": "REF-GOD",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Continuous flexible ventral keel and alternating lateral muscle folds; longitudinal attachment strip, not a disconnected wheel",
+      "source_dimensions": "12 x 3 x 24 U repeat section",
+      "consumers": [
+        "SYS-GOD",
+        "SYS-GODFORM",
+        "SYS-MILITARY",
+        "SYS-ENV",
+        "SYS-POSTGOD"
+      ],
+      "variants_composition": "One normalized module; mirrored/continuous repeats only as Section 16 allows",
+      "dependencies": [],
+      "batch": "B04",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-GOD-LOCO-FIN",
+      "canonical_path": "assets/source/god/cg_s_god_loco_fin.png",
+      "profile": "REF-GOD",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "One broad tapered pectoral fin with three internal structural rays, skin continuous at root; mirror for opposite side",
+      "source_dimensions": "16 x 2 x 20 U per fin",
+      "consumers": [
+        "SYS-GOD",
+        "SYS-GODFORM",
+        "SYS-MILITARY",
+        "SYS-ENV",
+        "SYS-POSTGOD"
+      ],
+      "variants_composition": "One normalized module; mirrored/continuous repeats only as Section 16 allows",
+      "dependencies": [],
+      "batch": "B04",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-GOD-LOCO-WING",
+      "canonical_path": "assets/source/god/cg_s_god_loco_wing.png",
+      "profile": "REF-GOD",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "One foldable membrane wing with three structural spars and a continuous root cuff; no feathers or extra forelimb",
+      "source_dimensions": "25 x 3 x 24 U extended per wing",
+      "consumers": [
+        "SYS-GOD",
+        "SYS-GODFORM",
+        "SYS-MILITARY",
+        "SYS-ENV",
+        "SYS-POSTGOD"
+      ],
+      "variants_composition": "One normalized module; mirrored/continuous repeats only as Section 16 allows",
+      "dependencies": [],
+      "batch": "B05",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-GOD-FEED-BROWSE",
+      "canonical_path": "assets/source/god/cg_s_god_feed_browse.png",
+      "profile": "REF-GOD",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Wedge head/mouth apparatus with paired flat grinding plates and a soft broad browsing lip; eyes supplied separately",
+      "source_dimensions": "9 x 7 x 13 U",
+      "consumers": [
+        "SYS-GOD",
+        "SYS-GODFORM",
+        "SYS-MILITARY",
+        "SYS-ENV",
+        "SYS-POSTGOD"
+      ],
+      "variants_composition": "One normalized module; mirrored/continuous repeats only as Section 16 allows",
+      "dependencies": [],
+      "batch": "B01",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-GOD-FEED-FILTER",
+      "canonical_path": "assets/source/god/cg_s_god_feed_filter.png",
+      "profile": "REF-GOD",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Ventral funnel mouth, bilateral comb folds, closable rim; no teeth or decorative independent faces",
+      "source_dimensions": "12 x 6 x 12 U",
+      "consumers": [
+        "SYS-GOD",
+        "SYS-GODFORM",
+        "SYS-MILITARY",
+        "SYS-ENV",
+        "SYS-POSTGOD"
+      ],
+      "variants_composition": "One normalized module; mirrored/continuous repeats only as Section 16 allows",
+      "dependencies": [],
+      "batch": "B04",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-GOD-FEED-MINERAL",
+      "canonical_path": "assets/source/god/cg_s_god_feed_mineral.png",
+      "profile": "REF-GOD",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Blunt four-tooth crushing rostrum with two paired opposing plates; chipped stone-like keratin",
+      "source_dimensions": "9 x 8 x 12 U",
+      "consumers": [
+        "SYS-GOD",
+        "SYS-GODFORM",
+        "SYS-MILITARY",
+        "SYS-ENV",
+        "SYS-POSTGOD"
+      ],
+      "variants_composition": "One normalized module; mirrored/continuous repeats only as Section 16 allows",
+      "dependencies": [],
+      "batch": "B03",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-GOD-FEED-CARRION",
+      "canonical_path": "assets/source/god/cg_s_god_feed_carrion.png",
+      "profile": "REF-GOD",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Hooked scoop jaw, four blunt gripping teeth, deep throat pouch; scavenger rather than generic dragon skull",
+      "source_dimensions": "9 x 7 x 14 U",
+      "consumers": [
+        "SYS-GOD",
+        "SYS-GODFORM",
+        "SYS-MILITARY",
+        "SYS-ENV",
+        "SYS-POSTGOD"
+      ],
+      "variants_composition": "One normalized module; mirrored/continuous repeats only as Section 16 allows",
+      "dependencies": [],
+      "batch": "B05",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-GOD-SENSE-EYE-RING",
+      "canonical_path": "assets/source/god/cg_s_god_sense_eye_ring.png",
+      "profile": "REF-GOD",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Four recessed eyes in one continuous brow band; two per side, no pupils added elsewhere",
+      "source_dimensions": "8 x 2 x 5 U",
+      "consumers": [
+        "SYS-GOD",
+        "SYS-GODFORM",
+        "SYS-MILITARY",
+        "SYS-ENV",
+        "SYS-POSTGOD"
+      ],
+      "variants_composition": "One normalized module; mirrored/continuous repeats only as Section 16 allows",
+      "dependencies": [],
+      "batch": "B01",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-GOD-SENSE-ANTENNA-CROWN",
+      "canonical_path": "assets/source/god/cg_s_god_sense_antenna_crown.png",
+      "profile": "REF-GOD",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Six tapered sensory fronds in three mirrored pairs; open central negative space; no antlers",
+      "source_dimensions": "10 x 8 x 8 U",
+      "consumers": [
+        "SYS-GOD",
+        "SYS-GODFORM",
+        "SYS-MILITARY",
+        "SYS-ENV",
+        "SYS-POSTGOD"
+      ],
+      "variants_composition": "One normalized module; mirrored/continuous repeats only as Section 16 allows",
+      "dependencies": [],
+      "batch": "B05",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-GOD-SENSE-VIBRATION-ROSETTE",
+      "canonical_path": "assets/source/god/cg_s_god_sense_vibration_rosette.png",
+      "profile": "REF-GOD",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Six low tactile vanes around one central pressure membrane; mounted near substrate-facing head",
+      "source_dimensions": "8 x 2 x 8 U",
+      "consumers": [
+        "SYS-GOD",
+        "SYS-GODFORM",
+        "SYS-MILITARY",
+        "SYS-ENV",
+        "SYS-POSTGOD"
+      ],
+      "variants_composition": "One normalized module; mirrored/continuous repeats only as Section 16 allows",
+      "dependencies": [],
+      "batch": "B03",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-GOD-TAIL-BALANCE",
+      "canonical_path": "assets/source/god/cg_s_god_tail_balance.png",
+      "profile": "REF-GOD",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Single tapered muscular tail with changing elliptical cross-section; no constant-radius tube",
+      "source_dimensions": "5 x 5 x 24 U",
+      "consumers": [
+        "SYS-GOD",
+        "SYS-GODFORM",
+        "SYS-MILITARY",
+        "SYS-ENV",
+        "SYS-POSTGOD"
+      ],
+      "variants_composition": "One normalized module; mirrored/continuous repeats only as Section 16 allows",
+      "dependencies": [],
+      "batch": "B01",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-GOD-TAIL-PADDLE",
+      "canonical_path": "assets/source/god/cg_s_god_tail_paddle.png",
+      "profile": "REF-GOD",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Single flattened tail with broad final third and a split-free rounded terminal paddle",
+      "source_dimensions": "12 x 3 x 22 U",
+      "consumers": [
+        "SYS-GOD",
+        "SYS-GODFORM",
+        "SYS-MILITARY",
+        "SYS-ENV",
+        "SYS-POSTGOD"
+      ],
+      "variants_composition": "One normalized module; mirrored/continuous repeats only as Section 16 allows",
+      "dependencies": [],
+      "batch": "B04",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-GOD-TAIL-WEDGE",
+      "canonical_path": "assets/source/god/cg_s_god_tail_wedge.png",
+      "profile": "REF-GOD",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Short reinforced taper ending in one broad chisel edge; axial continuation rather than separate weapon",
+      "source_dimensions": "8 x 5 x 18 U",
+      "consumers": [
+        "SYS-GOD",
+        "SYS-GODFORM",
+        "SYS-MILITARY",
+        "SYS-ENV",
+        "SYS-POSTGOD"
+      ],
+      "variants_composition": "One normalized module; mirrored/continuous repeats only as Section 16 allows",
+      "dependencies": [],
+      "batch": "B03",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-GOD-ARMOR-OSTEODERM",
+      "canonical_path": "assets/source/god/cg_s_god_armor_osteoderm.png",
+      "profile": "REF-GOD",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "One dorsal ridge strip of five overlapping bony scutes, irregular natural suture, no metallic bolts",
+      "source_dimensions": "12 x 4 x 24 U",
+      "consumers": [
+        "SYS-GOD",
+        "SYS-GODFORM",
+        "SYS-MILITARY",
+        "SYS-ENV",
+        "SYS-POSTGOD"
+      ],
+      "variants_composition": "One normalized module; mirrored/continuous repeats only as Section 16 allows",
+      "dependencies": [],
+      "batch": "B06",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-GOD-ARMOR-SHELL",
+      "canonical_path": "assets/source/god/cg_s_god_armor_shell.png",
+      "profile": "REF-GOD",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Three overlapping vaulted shell plates with flexible marginal sutures; continuous dorsal cover",
+      "source_dimensions": "22 x 7 x 32 U",
+      "consumers": [
+        "SYS-GOD",
+        "SYS-GODFORM",
+        "SYS-MILITARY",
+        "SYS-ENV",
+        "SYS-POSTGOD"
+      ],
+      "variants_composition": "One normalized module; mirrored/continuous repeats only as Section 16 allows",
+      "dependencies": [],
+      "batch": "B03",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-GOD-ARMOR-COAT",
+      "canonical_path": "assets/source/god/cg_s_god_armor_coat.png",
+      "profile": "REF-GOD",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "A continuous thick fibrous mantle; large directional locks preserving body silhouette, not particle fur",
+      "source_dimensions": "20 x 4 x 30 U cover",
+      "consumers": [
+        "SYS-GOD",
+        "SYS-GODFORM",
+        "SYS-MILITARY",
+        "SYS-ENV",
+        "SYS-POSTGOD"
+      ],
+      "variants_composition": "One normalized module; mirrored/continuous repeats only as Section 16 allows",
+      "dependencies": [],
+      "batch": "B06",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-GOD-ORGAN-GILLS",
+      "canonical_path": "assets/source/god/cg_s_god_organ_gills.png",
+      "profile": "REF-GOD",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Three folded gill curtains on one flank with covered slit roots; mirror across body",
+      "source_dimensions": "9 x 5 x 10 U per flank",
+      "consumers": [
+        "SYS-GOD",
+        "SYS-GODFORM",
+        "SYS-MILITARY",
+        "SYS-ENV",
+        "SYS-POSTGOD"
+      ],
+      "variants_composition": "One normalized module; mirrored/continuous repeats only as Section 16 allows",
+      "dependencies": [],
+      "batch": "B04",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-GOD-ORGAN-SOLAR-SAIL",
+      "canonical_path": "assets/source/god/cg_s_god_organ_solar_sail.png",
+      "profile": "REF-GOD",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "One pleated dorsal photosynthetic sail with five ribs; translucent appearance achieved with opaque tonal bands",
+      "source_dimensions": "18 x 12 x 25 U",
+      "consumers": [
+        "SYS-GOD",
+        "SYS-GODFORM",
+        "SYS-MILITARY",
+        "SYS-ENV",
+        "SYS-POSTGOD"
+      ],
+      "variants_composition": "One normalized module; mirrored/continuous repeats only as Section 16 allows",
+      "dependencies": [],
+      "batch": "B06",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-GOD-ORGAN-THERMAL-VENT",
+      "canonical_path": "assets/source/god/cg_s_god_organ_thermal_vent.png",
+      "profile": "REF-GOD",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Three thick-walled dorsal chimneys, center tallest, no smoke painted into geometry reference",
+      "source_dimensions": "12 x 10 x 20 U",
+      "consumers": [
+        "SYS-GOD",
+        "SYS-GODFORM",
+        "SYS-MILITARY",
+        "SYS-ENV",
+        "SYS-POSTGOD"
+      ],
+      "variants_composition": "One normalized module; mirrored/continuous repeats only as Section 16 allows",
+      "dependencies": [],
+      "batch": "B03",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-GOD-ORGAN-SPORE-SAC",
+      "canonical_path": "assets/source/god/cg_s_god_organ_spore_sac.png",
+      "profile": "REF-GOD",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Two rounded porous sacs connected by a broad root saddle; six large visible pores total",
+      "source_dimensions": "12 x 7 x 16 U",
+      "consumers": [
+        "SYS-GOD",
+        "SYS-GODFORM",
+        "SYS-MILITARY",
+        "SYS-ENV",
+        "SYS-POSTGOD"
+      ],
+      "variants_composition": "One normalized module; mirrored/continuous repeats only as Section 16 allows",
+      "dependencies": [],
+      "batch": "B06",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-GOD-SYMB-FUNGAL-GROVE",
+      "canonical_path": "assets/source/god/cg_s_god_symb_fungal_grove.png",
+      "profile": "REF-GOD",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Three joined fungal crowns on a living root saddle; broad caps and one clear passage below",
+      "source_dimensions": "18 x 9 x 22 U",
+      "consumers": [
+        "SYS-GOD",
+        "SYS-GODFORM",
+        "SYS-MILITARY",
+        "SYS-ENV",
+        "SYS-POSTGOD"
+      ],
+      "variants_composition": "One normalized module; mirrored/continuous repeats only as Section 16 allows",
+      "dependencies": [],
+      "batch": "B06",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-GOD-SYMB-FOLLOWER-GALLERY",
+      "canonical_path": "assets/source/god/cg_s_god_symb_follower_gallery.png",
+      "profile": "REF-GOD",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Two timber-and-textile galleries sharing a flexible dorsal saddle, rails and one central walkway; no unseen city castle",
+      "source_dimensions": "22 x 7 x 28 U",
+      "consumers": [
+        "SYS-GOD",
+        "SYS-GODFORM",
+        "SYS-MILITARY",
+        "SYS-ENV",
+        "SYS-POSTGOD"
+      ],
+      "variants_composition": "One normalized module; mirrored/continuous repeats only as Section 16 allows",
+      "dependencies": [],
+      "batch": "B06",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-GOD-SYMB-ROOT-HOLDFAST",
+      "canonical_path": "assets/source/god/cg_s_god_symb_root_holdfast.png",
+      "profile": "REF-GOD",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Four broad branching root bundles from one belly collar; each bundle forks once; retractable clearances",
+      "source_dimensions": "28 x 6 x 30 U extended",
+      "consumers": [
+        "SYS-GOD",
+        "SYS-GODFORM",
+        "SYS-MILITARY",
+        "SYS-ENV",
+        "SYS-POSTGOD"
+      ],
+      "variants_composition": "One normalized module; mirrored/continuous repeats only as Section 16 allows",
+      "dependencies": [],
+      "batch": "B06",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-GOD-FORM-Q",
+      "canonical_path": "assets/source/god/cg_s_god_form_q.png",
+      "profile": "REF-FORM",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Approved whole-body assembly demonstrating continuous anatomy, silhouette, material placement and legal module junctions for family Q",
+      "source_dimensions": "Size II; exact mask fit in Section 16",
+      "consumers": [
+        "SYS-GOD",
+        "SYS-GODFORM",
+        "SYS-MILITARY",
+        "SYS-ENV",
+        "SYS-POSTGOD"
+      ],
+      "variants_composition": "One exemplar; no additional anatomy or mechanical species",
+      "dependencies": [
+        "CG-S-GOD-TORSO-Q",
+        "CG-S-GOD-LOCO-PILLAR",
+        "CG-S-GOD-FEED-BROWSE",
+        "CG-S-GOD-SENSE-EYE-RING",
+        "CG-S-GOD-TAIL-BALANCE"
+      ],
+      "batch": "B01",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-GOD-FORM-H",
+      "canonical_path": "assets/source/god/cg_s_god_form_h.png",
+      "profile": "REF-FORM",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Approved whole-body assembly demonstrating continuous anatomy, silhouette, material placement and legal module junctions for family H",
+      "source_dimensions": "Size II; exact mask fit in Section 16",
+      "consumers": [
+        "SYS-GOD",
+        "SYS-GODFORM",
+        "SYS-MILITARY",
+        "SYS-ENV",
+        "SYS-POSTGOD"
+      ],
+      "variants_composition": "One exemplar; no additional anatomy or mechanical species",
+      "dependencies": [
+        "CG-S-GOD-TORSO-H",
+        "CG-S-GOD-LOCO-DIGGER",
+        "CG-S-GOD-FEED-MINERAL",
+        "CG-S-GOD-SENSE-VIBRATION-ROSETTE",
+        "CG-S-GOD-TAIL-WEDGE",
+        "CG-S-GOD-ARMOR-SHELL",
+        "CG-S-GOD-ORGAN-THERMAL-VENT"
+      ],
+      "batch": "B03",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-GOD-FORM-S",
+      "canonical_path": "assets/source/god/cg_s_god_form_s.png",
+      "profile": "REF-FORM",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Approved whole-body assembly demonstrating continuous anatomy, silhouette, material placement and legal module junctions for family S",
+      "source_dimensions": "Size II; exact mask fit in Section 16",
+      "consumers": [
+        "SYS-GOD",
+        "SYS-GODFORM",
+        "SYS-MILITARY",
+        "SYS-ENV",
+        "SYS-POSTGOD"
+      ],
+      "variants_composition": "One exemplar; no additional anatomy or mechanical species",
+      "dependencies": [
+        "CG-S-GOD-TORSO-S",
+        "CG-S-GOD-LOCO-FIN",
+        "CG-S-GOD-FEED-FILTER",
+        "CG-S-GOD-SENSE-EYE-RING",
+        "CG-S-GOD-TAIL-PADDLE",
+        "CG-S-GOD-ORGAN-GILLS"
+      ],
+      "batch": "B04",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-GOD-FORM-M",
+      "canonical_path": "assets/source/god/cg_s_god_form_m.png",
+      "profile": "REF-FORM",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Approved whole-body assembly demonstrating continuous anatomy, silhouette, material placement and legal module junctions for family M",
+      "source_dimensions": "Size II; exact mask fit in Section 16",
+      "consumers": [
+        "SYS-GOD",
+        "SYS-GODFORM",
+        "SYS-MILITARY",
+        "SYS-ENV",
+        "SYS-POSTGOD"
+      ],
+      "variants_composition": "One exemplar; no additional anatomy or mechanical species",
+      "dependencies": [
+        "CG-S-GOD-TORSO-M",
+        "CG-S-GOD-LOCO-WING",
+        "CG-S-GOD-FEED-CARRION",
+        "CG-S-GOD-SENSE-ANTENNA-CROWN",
+        "CG-S-GOD-TAIL-BALANCE"
+      ],
+      "batch": "B05",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-GOD-LIFE-Q",
+      "canonical_path": "assets/source/god/cg_s_god_life_q.png",
+      "profile": "REF-LIFE",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Family Q life/death source: juvenile, prime, ancient, injured prime, recent corpse, ossuary; the same recognizable individual",
+      "source_dimensions": "Stage-dependent I/II/III; M maximum II",
+      "consumers": [
+        "SYS-GOD",
+        "SYS-GODFORM",
+        "SYS-MILITARY",
+        "SYS-ENV",
+        "SYS-POSTGOD"
+      ],
+      "variants_composition": "One intentional six-panel sheet; six states, not animation frames",
+      "dependencies": [
+        "CG-S-GOD-FORM-Q"
+      ],
+      "batch": "B01",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-GOD-LIFE-H",
+      "canonical_path": "assets/source/god/cg_s_god_life_h.png",
+      "profile": "REF-LIFE",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Family H life/death source: juvenile, prime, ancient, injured prime, recent corpse, ossuary; the same recognizable individual",
+      "source_dimensions": "Stage-dependent I/II/III; M maximum II",
+      "consumers": [
+        "SYS-GOD",
+        "SYS-GODFORM",
+        "SYS-MILITARY",
+        "SYS-ENV",
+        "SYS-POSTGOD"
+      ],
+      "variants_composition": "One intentional six-panel sheet; six states, not animation frames",
+      "dependencies": [
+        "CG-S-GOD-FORM-H"
+      ],
+      "batch": "B03",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-GOD-LIFE-S",
+      "canonical_path": "assets/source/god/cg_s_god_life_s.png",
+      "profile": "REF-LIFE",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Family S life/death source: juvenile, prime, ancient, injured prime, recent corpse, ossuary; the same recognizable individual",
+      "source_dimensions": "Stage-dependent I/II/III; M maximum II",
+      "consumers": [
+        "SYS-GOD",
+        "SYS-GODFORM",
+        "SYS-MILITARY",
+        "SYS-ENV",
+        "SYS-POSTGOD"
+      ],
+      "variants_composition": "One intentional six-panel sheet; six states, not animation frames",
+      "dependencies": [
+        "CG-S-GOD-FORM-S"
+      ],
+      "batch": "B04",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-GOD-LIFE-M",
+      "canonical_path": "assets/source/god/cg_s_god_life_m.png",
+      "profile": "REF-LIFE",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Family M life/death source: juvenile, prime, ancient, injured prime, recent corpse, ossuary; the same recognizable individual",
+      "source_dimensions": "Stage-dependent I/II/III; M maximum II",
+      "consumers": [
+        "SYS-GOD",
+        "SYS-GODFORM",
+        "SYS-MILITARY",
+        "SYS-ENV",
+        "SYS-POSTGOD"
+      ],
+      "variants_composition": "One intentional six-panel sheet; six states, not animation frames",
+      "dependencies": [
+        "CG-S-GOD-FORM-M"
+      ],
+      "batch": "B05",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-BLD-DWELLING",
+      "canonical_path": "assets/source/buildings/cg_s_bld_dwelling.png",
+      "profile": "REF-PROP",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Low clustered house, broad eaves, readable door, attached small court",
+      "source_dimensions": "6 x 4 x 6 U",
+      "consumers": [
+        "SYS-POP",
+        "SYS-URBAN",
+        "SYS-RENDER"
+      ],
+      "variants_composition": "One base design; four approved motif transforms; canopy alone also has a packed configuration",
+      "dependencies": [],
+      "batch": "B02",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-BLD-HALL",
+      "canonical_path": "assets/source/buildings/cg_s_bld_hall.png",
+      "profile": "REF-PROP",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Terraced civic hall with open entry court and roof ridge for emblem banner",
+      "source_dimensions": "10 x 7 x 10 U",
+      "consumers": [
+        "SYS-GOVERN",
+        "SYS-URBAN",
+        "SYS-RENDER"
+      ],
+      "variants_composition": "One base design; four approved motif transforms; canopy alone also has a packed configuration",
+      "dependencies": [],
+      "batch": "B02",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-BLD-MARKET",
+      "canonical_path": "assets/source/buildings/cg_s_bld_market.png",
+      "profile": "REF-PROP",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Open-sided market canopy around a central cargo court; no painted people",
+      "source_dimensions": "10 x 5 x 10 U",
+      "consumers": [
+        "SYS-TRADE",
+        "SYS-URBAN",
+        "SYS-RENDER"
+      ],
+      "variants_composition": "One base design; four approved motif transforms; canopy alone also has a packed configuration",
+      "dependencies": [],
+      "batch": "B07",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-BLD-ARCHIVE",
+      "canonical_path": "assets/source/buildings/cg_s_bld_archive.png",
+      "profile": "REF-PROP",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Long low archive with thick storage walls and one clerestory strip",
+      "source_dimensions": "10 x 6 x 8 U",
+      "consumers": [
+        "SYS-RESEARCH",
+        "SYS-URBAN",
+        "SYS-RENDER"
+      ],
+      "variants_composition": "One base design; four approved motif transforms; canopy alone also has a packed configuration",
+      "dependencies": [],
+      "batch": "B07",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-BLD-WORKSHOP",
+      "canonical_path": "assets/source/buildings/cg_s_bld_workshop.png",
+      "profile": "REF-PROP",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Two connected work bays, one roof vent and a covered input yard",
+      "source_dimensions": "10 x 5 x 8 U",
+      "consumers": [
+        "SYS-PRODUCTION",
+        "SYS-URBAN",
+        "SYS-RENDER"
+      ],
+      "variants_composition": "One base design; four approved motif transforms; canopy alone also has a packed configuration",
+      "dependencies": [],
+      "batch": "B07",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-BLD-GRANARY",
+      "canonical_path": "assets/source/buildings/cg_s_bld_granary.png",
+      "profile": "REF-PROP",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Three joined raised storage bins on a shared access deck",
+      "source_dimensions": "8 x 6 x 8 U",
+      "consumers": [
+        "SYS-FOOD",
+        "SYS-URBAN",
+        "SYS-RENDER"
+      ],
+      "variants_composition": "One base design; four approved motif transforms; canopy alone also has a packed configuration",
+      "dependencies": [],
+      "batch": "B07",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-BLD-INFIRMARY",
+      "canonical_path": "assets/source/buildings/cg_s_bld_infirmary.png",
+      "profile": "REF-PROP",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Low courtyard treatment building with shaded porches; no real religious emblems",
+      "source_dimensions": "10 x 5 x 8 U",
+      "consumers": [
+        "SYS-POP",
+        "SYS-URBAN",
+        "SYS-RENDER"
+      ],
+      "variants_composition": "One base design; four approved motif transforms; canopy alone also has a packed configuration",
+      "dependencies": [],
+      "batch": "B07",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-BLD-SHRINE",
+      "canonical_path": "assets/source/buildings/cg_s_bld_shrine.png",
+      "profile": "REF-PROP",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Open sanctuary platform with a single empty central aperture framing the landscape",
+      "source_dimensions": "9 x 7 x 9 U",
+      "consumers": [
+        "SYS-RELIGION",
+        "SYS-URBAN",
+        "SYS-RENDER"
+      ],
+      "variants_composition": "One base design; four approved motif transforms; canopy alone also has a packed configuration",
+      "dependencies": [],
+      "batch": "B07",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-BLD-OBSERVATORY",
+      "canonical_path": "assets/source/buildings/cg_s_bld_observatory.png",
+      "profile": "REF-PROP",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Stepped viewing platform with one open observation ring; no telescope machine beyond specified tier",
+      "source_dimensions": "9 x 9 x 9 U",
+      "consumers": [
+        "SYS-RESEARCH",
+        "SYS-URBAN",
+        "SYS-RENDER"
+      ],
+      "variants_composition": "One base design; four approved motif transforms; canopy alone also has a packed configuration",
+      "dependencies": [],
+      "batch": "B07",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-BLD-BARRACKS",
+      "canonical_path": "assets/source/buildings/cg_s_bld_barracks.png",
+      "profile": "REF-PROP",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Long lodging block and small enclosed drill court, readable gate",
+      "source_dimensions": "10 x 6 x 10 U",
+      "consumers": [
+        "SYS-MILITARY",
+        "SYS-URBAN",
+        "SYS-RENDER"
+      ],
+      "variants_composition": "One base design; four approved motif transforms; canopy alone also has a packed configuration",
+      "dependencies": [],
+      "batch": "B07",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-BLD-TOWER",
+      "canonical_path": "assets/source/buildings/cg_s_bld_tower.png",
+      "profile": "REF-PROP",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Square tapering watchtower, open top and four readable supports",
+      "source_dimensions": "5 x 10 x 5 U",
+      "consumers": [
+        "SYS-MILITARY",
+        "SYS-URBAN",
+        "SYS-RENDER"
+      ],
+      "variants_composition": "One base design; four approved motif transforms; canopy alone also has a packed configuration",
+      "dependencies": [],
+      "batch": "B07",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-BLD-DOCK",
+      "canonical_path": "assets/source/buildings/cg_s_bld_dock.png",
+      "profile": "REF-PROP",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Stone quay, three timber piers and low cargo shelter; geometry meets local waterline",
+      "source_dimensions": "18 x 5 x 12 U",
+      "consumers": [
+        "SYS-TRANSPORT",
+        "SYS-URBAN",
+        "SYS-RENDER"
+      ],
+      "variants_composition": "One base design; four approved motif transforms; canopy alone also has a packed configuration",
+      "dependencies": [],
+      "batch": "B07",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-BLD-DEPOT",
+      "canonical_path": "assets/source/buildings/cg_s_bld_depot.png",
+      "profile": "REF-PROP",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Raised cargo platform and covered store, road-facing loading apron",
+      "source_dimensions": "10 x 5 x 8 U",
+      "consumers": [
+        "SYS-LOGISTICS",
+        "SYS-URBAN",
+        "SYS-RENDER"
+      ],
+      "variants_composition": "One base design; four approved motif transforms; canopy alone also has a packed configuration",
+      "dependencies": [],
+      "batch": "B07",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-BLD-CARAVAN-CANOPY",
+      "canonical_path": "assets/source/buildings/cg_s_bld_caravan_canopy.png",
+      "profile": "REF-PROP",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Collapsible three-rib textile canopy with removable poles and compact packed bundle",
+      "source_dimensions": "9 x 5 x 8 U deployed",
+      "consumers": [
+        "SYS-SETTLE",
+        "SYS-URBAN",
+        "SYS-RENDER"
+      ],
+      "variants_composition": "One base design; four approved motif transforms; canopy alone also has a packed configuration",
+      "dependencies": [],
+      "batch": "B07",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-INF-ROAD",
+      "canonical_path": "assets/source/infrastructure/cg_s_inf_road.png",
+      "profile": "REF-INF",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "TRACK / PAVED / GODWAY: graded path, stone strip, reinforced wide corridor",
+      "source_dimensions": "Edge span 32 U; widths 2 / 3 / 12 U",
+      "consumers": [
+        "SYS-INFRA",
+        "SYS-TRANSPORT",
+        "SYS-GOD"
+      ],
+      "variants_composition": "Exactly the three named modes in one intentional six-panel model sheet; rotations/length-fitting share source",
+      "dependencies": [],
+      "batch": "B02",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-INF-BRIDGE",
+      "canonical_path": "assets/source/infrastructure/cg_s_inf_bridge.png",
+      "profile": "REF-INF",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "LIGHT / HEAVY / GODWAY: timber beam, braced masonry, broad reinforced span",
+      "source_dimensions": "Span 32 U; widths 3 / 6 / 14 U; height follows banks",
+      "consumers": [
+        "SYS-INFRA",
+        "SYS-TRANSPORT",
+        "SYS-GOD"
+      ],
+      "variants_composition": "Exactly the three named modes in one intentional six-panel model sheet; rotations/length-fitting share source",
+      "dependencies": [],
+      "batch": "B07",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-INF-FARM",
+      "canonical_path": "assets/source/infrastructure/cg_s_inf_farm.png",
+      "profile": "REF-INF",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "FIELD / WOODLOT / FISHERY: furrow parcel, managed timber plot, bank-side fish racks",
+      "source_dimensions": "Parcel 12 x 1 x 12 U; woodlot uses approved tree instances",
+      "consumers": [
+        "SYS-FOOD",
+        "SYS-EXTRACT",
+        "SYS-URBAN"
+      ],
+      "variants_composition": "Exactly the three named modes in one intentional six-panel model sheet; rotations/length-fitting share source",
+      "dependencies": [],
+      "batch": "B02",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-INF-MINE",
+      "canonical_path": "assets/source/infrastructure/cg_s_inf_mine.png",
+      "profile": "REF-INF",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "SHAFT / QUARRY / ADIT: supported shafthead, stepped stone cut, braced hillside mouth",
+      "source_dimensions": "Parcel 12 x 5 x 12 U",
+      "consumers": [
+        "SYS-EXTRACT",
+        "SYS-INFRA",
+        "SYS-GOD"
+      ],
+      "variants_composition": "Exactly the three named modes in one intentional six-panel model sheet; rotations/length-fitting share source",
+      "dependencies": [],
+      "batch": "B07",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-INF-CANAL",
+      "canonical_path": "assets/source/infrastructure/cg_s_inf_canal.png",
+      "profile": "REF-INF",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "DITCH / LOCK / WEIR: lined water cut, two-gate chamber, stepped overflow",
+      "source_dimensions": "Edge span 32 U; widths 3 / 6 / 12 U",
+      "consumers": [
+        "SYS-INFRA",
+        "SYS-ENV",
+        "SYS-TRANSPORT"
+      ],
+      "variants_composition": "Exactly the three named modes in one intentional six-panel model sheet; rotations/length-fitting share source",
+      "dependencies": [],
+      "batch": "B07",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-INF-WALL",
+      "canonical_path": "assets/source/infrastructure/cg_s_inf_wall.png",
+      "profile": "REF-INF",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "SEGMENT / GATE / BUTTRESS: continuous wall, arched crossing, external brace",
+      "source_dimensions": "Span 16 U; width 2 U, height 6 U",
+      "consumers": [
+        "SYS-INFRA",
+        "SYS-MILITARY"
+      ],
+      "variants_composition": "Exactly the three named modes in one intentional six-panel model sheet; rotations/length-fitting share source",
+      "dependencies": [],
+      "batch": "B07",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-UNT-CIVILIAN",
+      "canonical_path": "assets/source/units/cg_s_unt_civilian.png",
+      "profile": "REF-PROP",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "One stylized adult clothed person with short plain tunic, covered feet, two arms and two legs; neutral proportions, no portrait face",
+      "source_dimensions": "0.45 U tall",
+      "consumers": [
+        "SYS-POP",
+        "SYS-TRANSPORT",
+        "SYS-RELIGION"
+      ],
+      "variants_composition": "One source; role/loadout/tint/grouping derives from approved modules only",
+      "dependencies": [],
+      "batch": "B02",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-UNT-SOLDIER",
+      "canonical_path": "assets/source/units/cg_s_unt_soldier.png",
+      "profile": "REF-PROP",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "One stylized armored adult with closed simple helmet, two arms and two legs; empty hands for approved equipment",
+      "source_dimensions": "0.50 U tall",
+      "consumers": [
+        "SYS-MILITARY"
+      ],
+      "variants_composition": "One source; role/loadout/tint/grouping derives from approved modules only",
+      "dependencies": [],
+      "batch": "B08",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-UNT-WAGON",
+      "canonical_path": "assets/source/units/cg_s_unt_wagon.png",
+      "profile": "REF-PROP",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Two-axle four-wheel hand-pushed cargo wagon with rectangular boxes and rolled canopy bundle; no draft animal",
+      "source_dimensions": "2.4 x 1.6 x 4 U",
+      "consumers": [
+        "SYS-TRANSPORT",
+        "SYS-TRADE",
+        "SYS-POP"
+      ],
+      "variants_composition": "One source; role/loadout/tint/grouping derives from approved modules only",
+      "dependencies": [],
+      "batch": "B08",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-UNT-SPEAR",
+      "canonical_path": "assets/source/units/cg_s_unt_spear.png",
+      "profile": "REF-PROP",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Straight shaft, one leaf blade, grip wrap; one object, no bearer",
+      "source_dimensions": "0.12 x 0.9 x 0.12 U",
+      "consumers": [
+        "SYS-MILITARY"
+      ],
+      "variants_composition": "One source; role/loadout/tint/grouping derives from approved modules only",
+      "dependencies": [],
+      "batch": "B08",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-UNT-BOW",
+      "canonical_path": "assets/source/units/cg_s_unt_bow.png",
+      "profile": "REF-PROP",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "One recurved wooden bow with string, grip and separate single arrow inside the same model sheet",
+      "source_dimensions": "0.45 x 0.75 x 0.15 U",
+      "consumers": [
+        "SYS-MILITARY"
+      ],
+      "variants_composition": "One source; role/loadout/tint/grouping derives from approved modules only",
+      "dependencies": [],
+      "batch": "B08",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-UNT-SHIELD",
+      "canonical_path": "assets/source/units/cg_s_unt_shield.png",
+      "profile": "REF-PROP",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "One broad oval shield with central reinforced ridge and reverse handgrip",
+      "source_dimensions": "0.4 x 0.6 x 0.1 U",
+      "consumers": [
+        "SYS-MILITARY"
+      ],
+      "variants_composition": "One source; role/loadout/tint/grouping derives from approved modules only",
+      "dependencies": [],
+      "batch": "B08",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-UNT-BALLISTA",
+      "canonical_path": "assets/source/units/cg_s_unt_ballista.png",
+      "profile": "REF-PROP",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Wheeled tension engine with one horizontal bow and visible loading bed; not a cannon",
+      "source_dimensions": "2.6 x 2 x 4 U",
+      "consumers": [
+        "SYS-MILITARY"
+      ],
+      "variants_composition": "One source; role/loadout/tint/grouping derives from approved modules only",
+      "dependencies": [],
+      "batch": "B08",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-UNT-HULL-MERCHANT",
+      "canonical_path": "assets/source/units/cg_s_unt_hull_merchant.png",
+      "profile": "REF-PROP",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Single low cargo hull, one square sail and open cargo deck; crates use WAGON cargo forms",
+      "source_dimensions": "5 x 6 x 12 U",
+      "consumers": [
+        "SYS-TRADE",
+        "SYS-TRANSPORT"
+      ],
+      "variants_composition": "One source; role/loadout/tint/grouping derives from approved modules only",
+      "dependencies": [],
+      "batch": "B08",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-UNT-HULL-WAR",
+      "canonical_path": "assets/source/units/cg_s_unt_hull_war.png",
+      "profile": "REF-PROP",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Long narrow oared hull, single square sail, reinforced bow and shield rail",
+      "source_dimensions": "4 x 6 x 13 U",
+      "consumers": [
+        "SYS-MILITARY",
+        "SYS-TRANSPORT"
+      ],
+      "variants_composition": "One source; role/loadout/tint/grouping derives from approved modules only",
+      "dependencies": [],
+      "batch": "B08",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-ENV-DECIDUOUS",
+      "canonical_path": "assets/source/environment/cg_s_env_deciduous.png",
+      "profile": "REF-PROP",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "One broad-canopy tree, three major branching masses, distinct trunk",
+      "source_dimensions": "4 x 7 x 4 U",
+      "consumers": [
+        "SYS-ENV",
+        "SYS-EXTRACT",
+        "SYS-POSTGOD",
+        "SYS-RENDER"
+      ],
+      "variants_composition": "One source; seed rotation and uniform scale 0.75-1.25; no new species",
+      "dependencies": [],
+      "batch": "B08",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-ENV-CONIFER",
+      "canonical_path": "assets/source/environment/cg_s_env_conifer.png",
+      "profile": "REF-PROP",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "One tall conifer with four stepped branch whorls and narrow top",
+      "source_dimensions": "3 x 9 x 3 U",
+      "consumers": [
+        "SYS-ENV",
+        "SYS-EXTRACT",
+        "SYS-POSTGOD",
+        "SYS-RENDER"
+      ],
+      "variants_composition": "One source; seed rotation and uniform scale 0.75-1.25; no new species",
+      "dependencies": [],
+      "batch": "B08",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-ENV-PALM",
+      "canonical_path": "assets/source/environment/cg_s_env_palm.png",
+      "profile": "REF-PROP",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "One bent-trunk desert/coastal palm, six broad fronds",
+      "source_dimensions": "4 x 7 x 4 U",
+      "consumers": [
+        "SYS-ENV",
+        "SYS-EXTRACT",
+        "SYS-POSTGOD",
+        "SYS-RENDER"
+      ],
+      "variants_composition": "One source; seed rotation and uniform scale 0.75-1.25; no new species",
+      "dependencies": [],
+      "batch": "B08",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-ENV-REEDS",
+      "canonical_path": "assets/source/environment/cg_s_env_reeds.png",
+      "profile": "REF-PROP",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "One cluster of five reeds with broad bent tips",
+      "source_dimensions": "2 x 2 x 2 U",
+      "consumers": [
+        "SYS-ENV",
+        "SYS-EXTRACT",
+        "SYS-POSTGOD",
+        "SYS-RENDER"
+      ],
+      "variants_composition": "One source; seed rotation and uniform scale 0.75-1.25; no new species",
+      "dependencies": [],
+      "batch": "B08",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-ENV-KELP",
+      "canonical_path": "assets/source/environment/cg_s_env_kelp.png",
+      "profile": "REF-PROP",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "One anchored three-frond kelp clump; continuous ribbons, no separate fish",
+      "source_dimensions": "2 x 4 x 2 U",
+      "consumers": [
+        "SYS-ENV",
+        "SYS-EXTRACT",
+        "SYS-POSTGOD",
+        "SYS-RENDER"
+      ],
+      "variants_composition": "One source; seed rotation and uniform scale 0.75-1.25; no new species",
+      "dependencies": [],
+      "batch": "B08",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-ENV-ROCK",
+      "canonical_path": "assets/source/environment/cg_s_env_rock.png",
+      "profile": "REF-PROP",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "One three-mass angular weathered stone outcrop",
+      "source_dimensions": "4 x 3 x 4 U",
+      "consumers": [
+        "SYS-ENV",
+        "SYS-EXTRACT",
+        "SYS-POSTGOD",
+        "SYS-RENDER"
+      ],
+      "variants_composition": "One source; seed rotation and uniform scale 0.75-1.25; no new species",
+      "dependencies": [],
+      "batch": "B08",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-ENV-ORE",
+      "canonical_path": "assets/source/environment/cg_s_env_ore.png",
+      "profile": "REF-PROP",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "One exposed banded mineral seam in rock, two strong contrasting strata",
+      "source_dimensions": "4 x 3 x 4 U",
+      "consumers": [
+        "SYS-ENV",
+        "SYS-EXTRACT",
+        "SYS-POSTGOD",
+        "SYS-RENDER"
+      ],
+      "variants_composition": "One source; seed rotation and uniform scale 0.75-1.25; no new species",
+      "dependencies": [],
+      "batch": "B08",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-ENV-CRYSTAL",
+      "canonical_path": "assets/source/environment/cg_s_env_crystal.png",
+      "profile": "REF-PROP",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Three unequal blunt mineral columns, no floating glow effects",
+      "source_dimensions": "3 x 4 x 3 U",
+      "consumers": [
+        "SYS-ENV",
+        "SYS-EXTRACT",
+        "SYS-POSTGOD",
+        "SYS-RENDER"
+      ],
+      "variants_composition": "One source; seed rotation and uniform scale 0.75-1.25; no new species",
+      "dependencies": [],
+      "batch": "B08",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-ENV-FUNGUS",
+      "canonical_path": "assets/source/environment/cg_s_env_fungus.png",
+      "profile": "REF-PROP",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "One cluster of three broad caps growing from one base",
+      "source_dimensions": "3 x 2 x 3 U",
+      "consumers": [
+        "SYS-ENV",
+        "SYS-EXTRACT",
+        "SYS-POSTGOD",
+        "SYS-RENDER"
+      ],
+      "variants_composition": "One source; seed rotation and uniform scale 0.75-1.25; no new species",
+      "dependencies": [],
+      "batch": "B08",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-ENV-RUBBLE",
+      "canonical_path": "assets/source/environment/cg_s_env_rubble.png",
+      "profile": "REF-PROP",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "One pile of five broken masonry blocks with two timber fragments",
+      "source_dimensions": "4 x 2 x 4 U",
+      "consumers": [
+        "SYS-ENV",
+        "SYS-EXTRACT",
+        "SYS-POSTGOD",
+        "SYS-RENDER"
+      ],
+      "variants_composition": "One source; seed rotation and uniform scale 0.75-1.25; no new species",
+      "dependencies": [],
+      "batch": "B08",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-EMB-01",
+      "canonical_path": "assets/source/emblems/cg_s_emb_01.png",
+      "profile": "REF-GLYPH",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Three stepped bars around an open square; faction tint #C85B50",
+      "source_dimensions": "512 x 512 px source; 256 px normalized glyph",
+      "consumers": [
+        "SYS-CULTURE",
+        "SYS-DIPLOMACY",
+        "SYS-UI"
+      ],
+      "variants_composition": "Monochrome source; deterministic faction tint; no text/nation/real-world insignia",
+      "dependencies": [],
+      "batch": "B09",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-EMB-02",
+      "canonical_path": "assets/source/emblems/cg_s_emb_02.png",
+      "profile": "REF-GLYPH",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "A split rising disc above two parallel waves; faction tint #DAAC55",
+      "source_dimensions": "512 x 512 px source; 256 px normalized glyph",
+      "consumers": [
+        "SYS-CULTURE",
+        "SYS-DIPLOMACY",
+        "SYS-UI"
+      ],
+      "variants_composition": "Monochrome source; deterministic faction tint; no text/nation/real-world insignia",
+      "dependencies": [],
+      "batch": "B09",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-EMB-03",
+      "canonical_path": "assets/source/emblems/cg_s_emb_03.png",
+      "profile": "REF-GLYPH",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "An open diamond surrounding one horizontal bridge; faction tint #55A59B",
+      "source_dimensions": "512 x 512 px source; 256 px normalized glyph",
+      "consumers": [
+        "SYS-CULTURE",
+        "SYS-DIPLOMACY",
+        "SYS-UI"
+      ],
+      "variants_composition": "Monochrome source; deterministic faction tint; no text/nation/real-world insignia",
+      "dependencies": [],
+      "batch": "B09",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-EMB-04",
+      "canonical_path": "assets/source/emblems/cg_s_emb_04.png",
+      "profile": "REF-GLYPH",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "A three-spoke wheel with a deliberate lower gap; faction tint #6F86C7",
+      "source_dimensions": "512 x 512 px source; 256 px normalized glyph",
+      "consumers": [
+        "SYS-CULTURE",
+        "SYS-DIPLOMACY",
+        "SYS-UI"
+      ],
+      "variants_composition": "Monochrome source; deterministic faction tint; no text/nation/real-world insignia",
+      "dependencies": [],
+      "batch": "B09",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-EMB-05",
+      "canonical_path": "assets/source/emblems/cg_s_emb_05.png",
+      "profile": "REF-GLYPH",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Two opposed hooked brackets enclosing a dot; faction tint #A979B1",
+      "source_dimensions": "512 x 512 px source; 256 px normalized glyph",
+      "consumers": [
+        "SYS-CULTURE",
+        "SYS-DIPLOMACY",
+        "SYS-UI"
+      ],
+      "variants_composition": "Monochrome source; deterministic faction tint; no text/nation/real-world insignia",
+      "dependencies": [],
+      "batch": "B09",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-EMB-06",
+      "canonical_path": "assets/source/emblems/cg_s_emb_06.png",
+      "profile": "REF-GLYPH",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "A vertical stem bearing three offset block leaves; faction tint #C9C9B4",
+      "source_dimensions": "512 x 512 px source; 256 px normalized glyph",
+      "consumers": [
+        "SYS-CULTURE",
+        "SYS-DIPLOMACY",
+        "SYS-UI"
+      ],
+      "variants_composition": "Monochrome source; deterministic faction tint; no text/nation/real-world insignia",
+      "dependencies": [],
+      "batch": "B09",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-MOT-BASALT",
+      "canonical_path": "assets/source/motifs/cg_s_mot_basalt.png",
+      "profile": "REF-MOTIF",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Flat stepped roof, tapering rectangular supports, broad squared portal, double horizontal stone inlay",
+      "source_dimensions": "Roof/support/opening/trim normalized to a 10 U hall",
+      "consumers": [
+        "SYS-CULTURE",
+        "SYS-URBAN",
+        "SYS-RENDER"
+      ],
+      "variants_composition": "One intentional four-panel motif board; applied to all compatible buildings, never a civilization-specific extra building set",
+      "dependencies": [],
+      "batch": "B02",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-MOT-REED",
+      "canonical_path": "assets/source/motifs/cg_s_mot_reed.png",
+      "profile": "REF-MOTIF",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Shallow pitched thatch roof, bundled cylindrical supports, round-corner opening, diagonal woven trim",
+      "source_dimensions": "Roof/support/opening/trim normalized to a 10 U hall",
+      "consumers": [
+        "SYS-CULTURE",
+        "SYS-URBAN",
+        "SYS-RENDER"
+      ],
+      "variants_composition": "One intentional four-panel motif board; applied to all compatible buildings, never a civilization-specific extra building set",
+      "dependencies": [],
+      "batch": "B07",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-MOT-VAULT",
+      "canonical_path": "assets/source/motifs/cg_s_mot_vault.png",
+      "profile": "REF-MOTIF",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Low barrel-vault roof, paired arch supports, pointed opening, three inset stone bands",
+      "source_dimensions": "Roof/support/opening/trim normalized to a 10 U hall",
+      "consumers": [
+        "SYS-CULTURE",
+        "SYS-URBAN",
+        "SYS-RENDER"
+      ],
+      "variants_composition": "One intentional four-panel motif board; applied to all compatible buildings, never a civilization-specific extra building set",
+      "dependencies": [],
+      "batch": "B07",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-MOT-CANOPY",
+      "canonical_path": "assets/source/motifs/cg_s_mot_canopy.png",
+      "profile": "REF-MOTIF",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Tensioned cloth roof with three ribs, forked timber supports, open entry, one broad edge stripe",
+      "source_dimensions": "Roof/support/opening/trim normalized to a 10 U hall",
+      "consumers": [
+        "SYS-CULTURE",
+        "SYS-URBAN",
+        "SYS-RENDER"
+      ],
+      "variants_composition": "One intentional four-panel motif board; applied to all compatible buildings, never a civilization-specific extra building set",
+      "dependencies": [],
+      "batch": "B07",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-ICO-FOOD",
+      "canonical_path": "assets/source/icons/cg_s_ico_food.png",
+      "profile": "REF-GLYPH",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Three grain kernels",
+      "source_dimensions": "512 x 512 px source; 256 px normalized glyph",
+      "consumers": [
+        "SYS-UI"
+      ],
+      "variants_composition": "One monochrome source; tint/disabled/hover/high-contrast states derived, no new artwork",
+      "dependencies": [],
+      "batch": "B09",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-ICO-WOOD",
+      "canonical_path": "assets/source/icons/cg_s_ico_wood.png",
+      "profile": "REF-GLYPH",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "One split log",
+      "source_dimensions": "512 x 512 px source; 256 px normalized glyph",
+      "consumers": [
+        "SYS-UI"
+      ],
+      "variants_composition": "One monochrome source; tint/disabled/hover/high-contrast states derived, no new artwork",
+      "dependencies": [],
+      "batch": "B09",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-ICO-STONE",
+      "canonical_path": "assets/source/icons/cg_s_ico_stone.png",
+      "profile": "REF-GLYPH",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Three squared stone blocks",
+      "source_dimensions": "512 x 512 px source; 256 px normalized glyph",
+      "consumers": [
+        "SYS-UI"
+      ],
+      "variants_composition": "One monochrome source; tint/disabled/hover/high-contrast states derived, no new artwork",
+      "dependencies": [],
+      "batch": "B09",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-ICO-ORE",
+      "canonical_path": "assets/source/icons/cg_s_ico_ore.png",
+      "profile": "REF-GLYPH",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "One banded ore wedge",
+      "source_dimensions": "512 x 512 px source; 256 px normalized glyph",
+      "consumers": [
+        "SYS-UI"
+      ],
+      "variants_composition": "One monochrome source; tint/disabled/hover/high-contrast states derived, no new artwork",
+      "dependencies": [],
+      "batch": "B09",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-ICO-TOOLS",
+      "canonical_path": "assets/source/icons/cg_s_ico_tools.png",
+      "profile": "REF-GLYPH",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Crossed mallet and tongs",
+      "source_dimensions": "512 x 512 px source; 256 px normalized glyph",
+      "consumers": [
+        "SYS-UI"
+      ],
+      "variants_composition": "One monochrome source; tint/disabled/hover/high-contrast states derived, no new artwork",
+      "dependencies": [],
+      "batch": "B09",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-ICO-MEDICINE",
+      "canonical_path": "assets/source/icons/cg_s_ico_medicine.png",
+      "profile": "REF-GLYPH",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "One stoppered medicine flask",
+      "source_dimensions": "512 x 512 px source; 256 px normalized glyph",
+      "consumers": [
+        "SYS-UI"
+      ],
+      "variants_composition": "One monochrome source; tint/disabled/hover/high-contrast states derived, no new artwork",
+      "dependencies": [],
+      "batch": "B09",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-ICO-BIO",
+      "canonical_path": "assets/source/icons/cg_s_ico_bio.png",
+      "profile": "REF-GLYPH",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "One branching living sac",
+      "source_dimensions": "512 x 512 px source; 256 px normalized glyph",
+      "consumers": [
+        "SYS-UI"
+      ],
+      "variants_composition": "One monochrome source; tint/disabled/hover/high-contrast states derived, no new artwork",
+      "dependencies": [],
+      "batch": "B09",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-ICO-COIN",
+      "canonical_path": "assets/source/icons/cg_s_ico_coin.png",
+      "profile": "REF-GLYPH",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "One pierced coin",
+      "source_dimensions": "512 x 512 px source; 256 px normalized glyph",
+      "consumers": [
+        "SYS-UI"
+      ],
+      "variants_composition": "One monochrome source; tint/disabled/hover/high-contrast states derived, no new artwork",
+      "dependencies": [],
+      "batch": "B09",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-ICO-KNOWLEDGE",
+      "canonical_path": "assets/source/icons/cg_s_ico_knowledge.png",
+      "profile": "REF-GLYPH",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "One open codex",
+      "source_dimensions": "512 x 512 px source; 256 px normalized glyph",
+      "consumers": [
+        "SYS-UI"
+      ],
+      "variants_composition": "One monochrome source; tint/disabled/hover/high-contrast states derived, no new artwork",
+      "dependencies": [],
+      "batch": "B09",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-ICO-MOVE",
+      "canonical_path": "assets/source/icons/cg_s_ico_move.png",
+      "profile": "REF-GLYPH",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Bent directional arrow",
+      "source_dimensions": "512 x 512 px source; 256 px normalized glyph",
+      "consumers": [
+        "SYS-UI"
+      ],
+      "variants_composition": "One monochrome source; tint/disabled/hover/high-contrast states derived, no new artwork",
+      "dependencies": [],
+      "batch": "B10",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-ICO-FEED",
+      "canonical_path": "assets/source/icons/cg_s_ico_feed.png",
+      "profile": "REF-GLYPH",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Open mouth over a grain",
+      "source_dimensions": "512 x 512 px source; 256 px normalized glyph",
+      "consumers": [
+        "SYS-UI"
+      ],
+      "variants_composition": "One monochrome source; tint/disabled/hover/high-contrast states derived, no new artwork",
+      "dependencies": [],
+      "batch": "B10",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-ICO-REST",
+      "canonical_path": "assets/source/icons/cg_s_ico_rest.png",
+      "profile": "REF-GLYPH",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Closed eye over a resting line",
+      "source_dimensions": "512 x 512 px source; 256 px normalized glyph",
+      "consumers": [
+        "SYS-UI"
+      ],
+      "variants_composition": "One monochrome source; tint/disabled/hover/high-contrast states derived, no new artwork",
+      "dependencies": [],
+      "batch": "B10",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-ICO-GUARD",
+      "canonical_path": "assets/source/icons/cg_s_ico_guard.png",
+      "profile": "REF-GLYPH",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Shield over a ground line",
+      "source_dimensions": "512 x 512 px source; 256 px normalized glyph",
+      "consumers": [
+        "SYS-UI"
+      ],
+      "variants_composition": "One monochrome source; tint/disabled/hover/high-contrast states derived, no new artwork",
+      "dependencies": [],
+      "batch": "B10",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-ICO-ATTACK",
+      "canonical_path": "assets/source/icons/cg_s_ico_attack.png",
+      "profile": "REF-GLYPH",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "One downward spear point",
+      "source_dimensions": "512 x 512 px source; 256 px normalized glyph",
+      "consumers": [
+        "SYS-UI"
+      ],
+      "variants_composition": "One monochrome source; tint/disabled/hover/high-contrast states derived, no new artwork",
+      "dependencies": [],
+      "batch": "B10",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-ICO-EVOLVE",
+      "canonical_path": "assets/source/icons/cg_s_ico_evolve.png",
+      "profile": "REF-GLYPH",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Two nested growing body outlines",
+      "source_dimensions": "512 x 512 px source; 256 px normalized glyph",
+      "consumers": [
+        "SYS-UI"
+      ],
+      "variants_composition": "One monochrome source; tint/disabled/hover/high-contrast states derived, no new artwork",
+      "dependencies": [],
+      "batch": "B10",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-ICO-MIGRATE",
+      "canonical_path": "assets/source/icons/cg_s_ico_migrate.png",
+      "profile": "REF-GLYPH",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Three linked waypoints",
+      "source_dimensions": "512 x 512 px source; 256 px normalized glyph",
+      "consumers": [
+        "SYS-UI"
+      ],
+      "variants_composition": "One monochrome source; tint/disabled/hover/high-contrast states derived, no new artwork",
+      "dependencies": [],
+      "batch": "B10",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-ICO-BUILD",
+      "canonical_path": "assets/source/icons/cg_s_ico_build.png",
+      "profile": "REF-GLYPH",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Mallet over a block",
+      "source_dimensions": "512 x 512 px source; 256 px normalized glyph",
+      "consumers": [
+        "SYS-UI"
+      ],
+      "variants_composition": "One monochrome source; tint/disabled/hover/high-contrast states derived, no new artwork",
+      "dependencies": [],
+      "batch": "B10",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-ICO-TRADE",
+      "canonical_path": "assets/source/icons/cg_s_ico_trade.png",
+      "profile": "REF-GLYPH",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Two opposed cargo arrows",
+      "source_dimensions": "512 x 512 px source; 256 px normalized glyph",
+      "consumers": [
+        "SYS-UI"
+      ],
+      "variants_composition": "One monochrome source; tint/disabled/hover/high-contrast states derived, no new artwork",
+      "dependencies": [],
+      "batch": "B10",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-ICO-RESEARCH",
+      "canonical_path": "assets/source/icons/cg_s_ico_research.png",
+      "profile": "REF-GLYPH",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Lens above a codex",
+      "source_dimensions": "512 x 512 px source; 256 px normalized glyph",
+      "consumers": [
+        "SYS-UI"
+      ],
+      "variants_composition": "One monochrome source; tint/disabled/hover/high-contrast states derived, no new artwork",
+      "dependencies": [],
+      "batch": "B11",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-ICO-POLICY",
+      "canonical_path": "assets/source/icons/cg_s_ico_policy.png",
+      "profile": "REF-GLYPH",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Three sliders on a tablet",
+      "source_dimensions": "512 x 512 px source; 256 px normalized glyph",
+      "consumers": [
+        "SYS-UI"
+      ],
+      "variants_composition": "One monochrome source; tint/disabled/hover/high-contrast states derived, no new artwork",
+      "dependencies": [],
+      "batch": "B11",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-ICO-TREATY",
+      "canonical_path": "assets/source/icons/cg_s_ico_treaty.png",
+      "profile": "REF-GLYPH",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Two interlocking open rings",
+      "source_dimensions": "512 x 512 px source; 256 px normalized glyph",
+      "consumers": [
+        "SYS-UI"
+      ],
+      "variants_composition": "One monochrome source; tint/disabled/hover/high-contrast states derived, no new artwork",
+      "dependencies": [],
+      "batch": "B11",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-ICO-HISTORY",
+      "canonical_path": "assets/source/icons/cg_s_ico_history.png",
+      "profile": "REF-GLYPH",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Three offset dated layers without text",
+      "source_dimensions": "512 x 512 px source; 256 px normalized glyph",
+      "consumers": [
+        "SYS-UI"
+      ],
+      "variants_composition": "One monochrome source; tint/disabled/hover/high-contrast states derived, no new artwork",
+      "dependencies": [],
+      "batch": "B11",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-ICO-WARNING",
+      "canonical_path": "assets/source/icons/cg_s_ico_warning.png",
+      "profile": "REF-GLYPH",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Broad triangle with central dot",
+      "source_dimensions": "512 x 512 px source; 256 px normalized glyph",
+      "consumers": [
+        "SYS-UI"
+      ],
+      "variants_composition": "One monochrome source; tint/disabled/hover/high-contrast states derived, no new artwork",
+      "dependencies": [],
+      "batch": "B11",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-ICO-HEALTH",
+      "canonical_path": "assets/source/icons/cg_s_ico_health.png",
+      "profile": "REF-GLYPH",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Heart-shaped organ with a central seam",
+      "source_dimensions": "512 x 512 px source; 256 px normalized glyph",
+      "consumers": [
+        "SYS-UI"
+      ],
+      "variants_composition": "One monochrome source; tint/disabled/hover/high-contrast states derived, no new artwork",
+      "dependencies": [],
+      "batch": "B11",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-ICO-FATIGUE",
+      "canonical_path": "assets/source/icons/cg_s_ico_fatigue.png",
+      "profile": "REF-GLYPH",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Three descending bars",
+      "source_dimensions": "512 x 512 px source; 256 px normalized glyph",
+      "consumers": [
+        "SYS-UI"
+      ],
+      "variants_composition": "One monochrome source; tint/disabled/hover/high-contrast states derived, no new artwork",
+      "dependencies": [],
+      "batch": "B11",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-ICO-POPULATION",
+      "canonical_path": "assets/source/icons/cg_s_ico_population.png",
+      "profile": "REF-GLYPH",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Three simple person silhouettes",
+      "source_dimensions": "512 x 512 px source; 256 px normalized glyph",
+      "consumers": [
+        "SYS-UI"
+      ],
+      "variants_composition": "One monochrome source; tint/disabled/hover/high-contrast states derived, no new artwork",
+      "dependencies": [],
+      "batch": "B11",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-ICO-CITY",
+      "canonical_path": "assets/source/icons/cg_s_ico_city.png",
+      "profile": "REF-GLYPH",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Three roof blocks",
+      "source_dimensions": "512 x 512 px source; 256 px normalized glyph",
+      "consumers": [
+        "SYS-UI"
+      ],
+      "variants_composition": "One monochrome source; tint/disabled/hover/high-contrast states derived, no new artwork",
+      "dependencies": [],
+      "batch": "B11",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-ICO-ARMY",
+      "canonical_path": "assets/source/icons/cg_s_ico_army.png",
+      "profile": "REF-GLYPH",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Three spear shafts over a base",
+      "source_dimensions": "512 x 512 px source; 256 px normalized glyph",
+      "consumers": [
+        "SYS-UI"
+      ],
+      "variants_composition": "One monochrome source; tint/disabled/hover/high-contrast states derived, no new artwork",
+      "dependencies": [],
+      "batch": "B11",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-ICO-GOD",
+      "canonical_path": "assets/source/icons/cg_s_ico_god.png",
+      "profile": "REF-GLYPH",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "One enormous nonhumanoid back over two tiny roofs",
+      "source_dimensions": "512 x 512 px source; 256 px normalized glyph",
+      "consumers": [
+        "SYS-UI"
+      ],
+      "variants_composition": "One monochrome source; tint/disabled/hover/high-contrast states derived, no new artwork",
+      "dependencies": [],
+      "batch": "B11",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-ICO-ECOLOGY",
+      "canonical_path": "assets/source/icons/cg_s_ico_ecology.png",
+      "profile": "REF-GLYPH",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Leaf and water drop",
+      "source_dimensions": "512 x 512 px source; 256 px normalized glyph",
+      "consumers": [
+        "SYS-UI"
+      ],
+      "variants_composition": "One monochrome source; tint/disabled/hover/high-contrast states derived, no new artwork",
+      "dependencies": [],
+      "batch": "B11",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-ICO-VISIBILITY",
+      "canonical_path": "assets/source/icons/cg_s_ico_visibility.png",
+      "profile": "REF-GLYPH",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Open eye",
+      "source_dimensions": "512 x 512 px source; 256 px normalized glyph",
+      "consumers": [
+        "SYS-UI"
+      ],
+      "variants_composition": "One monochrome source; tint/disabled/hover/high-contrast states derived, no new artwork",
+      "dependencies": [],
+      "batch": "B11",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-ICO-CLAIM",
+      "canonical_path": "assets/source/icons/cg_s_ico_claim.png",
+      "profile": "REF-GLYPH",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Hex boundary enclosing a flag",
+      "source_dimensions": "512 x 512 px source; 256 px normalized glyph",
+      "consumers": [
+        "SYS-UI"
+      ],
+      "variants_composition": "One monochrome source; tint/disabled/hover/high-contrast states derived, no new artwork",
+      "dependencies": [],
+      "batch": "B11",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-S-ART-DIRECTION",
+      "canonical_path": "assets/source/art/cg_s_art_direction.png",
+      "profile": "REF-DIRECTION",
+      "asset_class": "ARENA SOURCE ASSET",
+      "purpose": "Six-panel unified authority board: world diorama; Q beside a city for scale; organic surface; civic material swatches; ecological palette; interface hierarchy",
+      "source_dimensions": "3072 x 2048 px",
+      "consumers": [
+        "SYS-RENDER",
+        "SYS-UI"
+      ],
+      "variants_composition": "One board, no gameplay-only anatomy or unlisted prop; board sets style but specific approved model sheets govern geometry",
+      "dependencies": [],
+      "batch": "B00",
+      "status": "SPECIFIED"
+    },
+    {
+      "id": "CG-A-ART-TITLE",
+      "canonical_path": "assets/source/art/cg_a_art_title.png",
+      "profile": "DIRECT-TITLE",
+      "asset_class": "DIRECT ARENA ASSET",
+      "purpose": "One coherent panoramic living landscape: Q passing a growing city, distant coast and roads, old S-shaped remains partially reclaimed by vegetation; no text",
+      "source_dimensions": "2048 x 1024 px",
+      "consumers": [
+        "SYS-UI"
+      ],
+      "variants_composition": "One independent image; center-safe composition; typography and responsive crops implemented by code",
+      "dependencies": [
+        "CG-S-ART-DIRECTION",
+        "CG-S-GOD-FORM-Q",
+        "CG-S-GOD-LIFE-S"
+      ],
+      "batch": "B12",
+      "status": "SPECIFIED"
+    }
+  ],
+  "receipts": {
+    "CG-S-ART-DIRECTION": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/art/cg_s_art_direction.png",
+      "canonical_state": "ABSENT (correct - no approved source exists; BLOCKED ID must not occupy canonical path)",
+      "id_status": "BLOCKED",
+      "blocked_reason": "Native generation below the 1536x1024 normalization floor for the 3072x2048 REF-DIRECTION profile; best same-aspect native output 1264x848 would require a 2.43x upscale, exceeding the master-plan 2x normalization allowance. One initial candidate + one targeted repair candidate used; repair budget exhausted.",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-ART-DIRECTION/r001/cg_s_art_direction.png",
+          "native_dimensions": "1264x848",
+          "native_aspect_error_pct": 0.63,
+          "format": "PNG 8-bit sRGB TrueColor (color-type 2)",
+          "alpha": "none (opaque)",
+          "sha256": "84ed582098fbc5c3f6565e3a98464752fcc27eb4bf60bf67559b201324b551bb",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "content_qa": {
+            "six_panels_present": true,
+            "panel1_world_diorama": "conforming",
+            "panel2_q_scale_city": "conforming (brow band of four recessed eyes, arched torso, four pillar limbs, tapering tail)",
+            "panel3_organic_surface": "conforming",
+            "panel4_civic_swatches": "conforming",
+            "panel5_ecological_palette": "conforming",
+            "panel6_interface_hierarchy": "conforming, one danger accent, no text",
+            "typography": "none detected",
+            "forbidden_anatomy": "none detected",
+            "palette_adherence": "good",
+            "verdict": "content viable, dimensions failing"
+          },
+          "status": "REJECTED",
+          "rejection_reason": "native width 1264 < 1536 normalization floor (2.43x required > 2x allowance)"
+        },
+        {
+          "revision": "r002",
+          "path": "assets/candidates/CG-S-ART-DIRECTION/r002/cg_s_art_direction.png",
+          "native_dimensions": "1376x768",
+          "native_aspect_error_pct": 19.44,
+          "format": "PNG 8-bit sRGB TrueColor (color-type 2)",
+          "alpha": "none (opaque)",
+          "sha256": "93210d530eb0fa9fd2d62c4bdab79189397cdd235bfa21729818509b21ba9ecf",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "content_qa": {
+            "consistency_with_r001": "high (reference-anchored repair)",
+            "verdict": "content viable, dimensions/aspect failing"
+          },
+          "status": "REJECTED",
+          "rejection_reason": "native 1376x768 is 16:9 (aspect error 19.44% > 1% limit) and below the 1536px floor"
+        }
+      ],
+      "parent_dependency_revisions": "none (B00 root asset)",
+      "approval": {
+        "decision": "NO_AMENDMENT_RUN_STOPPED",
+        "approver": "human (repository owner) via Arena session ruling",
+        "date": "2026-09-23",
+        "detail": "Human declined any specification amendment. B00 remains BLOCKED in this environment by design: the available generation tool cannot meet the 1536x1024 normalization floor for the 3072x2048 REF-DIRECTION profile. Candidates r001/r002 preserved strictly as capability evidence; they are not approved sources and must never be promoted by a later agent merely because they are newer (Section 18.4)."
+      },
+      "downstream_targets": [
+        "CG-R-TERRAIN",
+        "CG-R-WATER",
+        "CG-R-FX-DUST",
+        "CG-R-FX-SPLASH",
+        "CG-R-FX-SPORES",
+        "CG-R-FX-HEAT",
+        "CG-R-FX-STORM",
+        "CG-R-FX-FIRE",
+        "CG-R-DECALS",
+        "CG-A-ART-TITLE",
+        "CG-R-TITLE-COMPOSITION",
+        "CG-R-GOD-EMBLEM",
+        "CG-R-DEBUG"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 1,
+        "remaining": 0
+      }
+    },
+    "CG-S-GOD-TORSO-Q": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/god/cg_s_god_torso_q.png",
+      "canonical_state": "ABSENT (correct - no approved source; provisional candidates only)",
+      "id_status": "ACCEPTED_PROVISIONAL_PASS2",
+      "mode": "PROVISIONAL - awaiting human first-God identity gate (B01); not an approved source",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-GOD-TORSO-Q/r001/cg_s_god_torso_q.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none (opaque)",
+          "sha256": "832fa5a830743292512155536fadbe0456f1f3ff0683d720af0ed62bea9dbc18",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "meets_512_floor": true,
+          "meets_exact_profile_dims": false,
+          "note": "REF-GOD requires 2048x2048 canonical; native 1024x1024 is below the 2x normalization input floor for non-aspect-matched sources - resolution ruling deferred to the human gate alongside the B00 precedent.",
+          "content_qa": {
+            "views": "2x2 sheet correct",
+            "arch_saddle": "conforming",
+            "violation": "model baked FOUR COMPLETE LEGS into the torso - module-ownership violation; limbs belong to CG-S-GOD-LOCO-PILLAR; row requires four flush junction rings on a legless shell",
+            "style": "glossier than matte lock"
+          },
+          "status": "REJECTED"
+        },
+        {
+          "revision": "r002",
+          "path": "assets/candidates/CG-S-GOD-TORSO-Q/r002/cg_s_god_torso_q.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none (opaque)",
+          "sha256": "15d44860f8ae74fb64a774d1dd9faa596f21f50adf4287a3a46cf8fc69452ea5",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "meets_512_floor": true,
+          "meets_exact_profile_dims": false,
+          "note": "REF-GOD requires 2048x2048 canonical; native 1024x1024 is below the 2x normalization input floor for non-aspect-matched sources - resolution ruling deferred to the human gate alongside the B00 precedent.",
+          "content_qa": {
+            "front": "conforming legless shell, 2 shoulder + 2 hip flush rings",
+            "side": "conforming arch/saddle, rings on underside line",
+            "top": "conforming elongated outline with 4 port rings",
+            "rear": "FAILED - two limb stumps with rounded foot-like caps contradict other views (cross-view morphology disagreement)"
+          },
+          "status": "REJECTED"
+        },
+        {
+          "revision": "r003",
+          "pass": 2,
+          "path": "assets/candidates/CG-S-GOD-TORSO-Q/r003/cg_s_god_torso_q.png",
+          "native_dimensions": "1024x1024",
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "353753aa7126bb2a88700525526ab86871f771a703e9d792736d3b24b0454c67",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "content_qa": {
+            "rear_view": "FIXED - legless haunch shell with two flush hip rings, geometry agrees with front view",
+            "front/side/top": "conforming (unchanged from r002 direction)",
+            "all_views_same_object": true,
+            "limb_stumps": "none in any view",
+            "identity": "shoulder arch + rear saddle + 4 flush junction rings, headless/faceless/tailless",
+            "style": "sculpted matte maquette, batch-consistent"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "parent_dependency_revisions": "none (independent grammar module, registry dependency: code-defined primitive)",
+      "approval": {
+        "decision": "ACCEPTED (pass 2, r003) - provisional; B01 first-God identity gate still governs FORM-Q/LIFE-Q",
+        "approver": "human (repository owner)",
+        "date": "2026-09-23"
+      },
+      "downstream_targets": [
+        "CG-S-GOD-FORM-Q",
+        "CG-S-GOD-LIFE-Q",
+        "CG-D-GOD-TORSO-Q",
+        "CG-D-GOD-FORM-Q",
+        "CG-D-GOD-LIFE-Q"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 1,
+        "remaining": 0
+      },
+      "reason": "Repair still fails: rear view shows limb stumps; mechanical and visible morphology must agree (Section 3). Budget exhausted; ID BLOCKED for this pass. Children CG-S-GOD-FORM-Q and CG-S-GOD-LIFE-Q correctly NOT generated (no quota spent on children of rejected anatomy).",
+      "authorized_pass_2": {
+        "opened_utc": "2026-09-23T22:37:14+00:00",
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "failure_to_repair": "rear-view limb stumps (cross-view morphology disagreement) - r003 must show the same legless closed shell in ALL FOUR views"
+      },
+      "provisional_reference_revision": "r003"
+    },
+    "CG-S-GOD-LOCO-PILLAR": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/god/cg_s_god_loco_pillar.png",
+      "canonical_state": "ABSENT (correct - no approved source; provisional candidates only)",
+      "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+      "mode": "PROVISIONAL - awaiting human first-God identity gate (B01); not an approved source",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-GOD-LOCO-PILLAR/r001/cg_s_god_loco_pillar.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none (opaque)",
+          "sha256": "3f5f26f07dd52fb6e14ba3ae27951ebba94c579c162e2f1a82cc816a08ce0853",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "meets_512_floor": true,
+          "meets_exact_profile_dims": false,
+          "note": "REF-GOD requires 2048x2048 canonical; native 1024x1024 is below the 2x normalization input floor for non-aspect-matched sources - resolution ruling deferred to the human gate alongside the B00 precedent.",
+          "content_qa": {
+            "anatomy": "conforming (one limb, two bends, three blunt pads, collar)",
+            "style_violation": "hard-outlined cel-shaded cartoon; collar read as open pipe"
+          },
+          "status": "REJECTED"
+        },
+        {
+          "revision": "r002",
+          "path": "assets/candidates/CG-S-GOD-LOCO-PILLAR/r002/cg_s_god_loco_pillar.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none (opaque)",
+          "sha256": "07e0e6eccf41f30df92c857ace98d2001cccc545b89e28801e89479d5d5cfa5e",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "meets_512_floor": true,
+          "meets_exact_profile_dims": false,
+          "note": "REF-GOD requires 2048x2048 canonical; native 1024x1024 is below the 2x normalization input floor for non-aspect-matched sources - resolution ruling deferred to the human gate alongside the B00 precedent.",
+          "content_qa": {
+            "anatomy": "conforming - one limb, two articulated bends, three broad blunt terminal pads",
+            "collar": "flush dock seam",
+            "style": "sculpted matte maquette, matches FEED-BROWSE r001 baseline",
+            "views": "all four conform"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "parent_dependency_revisions": "none (independent grammar module, registry dependency: code-defined primitive)",
+      "approval": {
+        "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+        "approver": "human (repository owner)",
+        "date": "2026-09-23",
+        "scope": "B01 evidence only - establishes shared Q visual/anatomical language among siblings",
+        "explicit_limits": [
+          "NOT an approved source; does NOT canonize Q identity",
+          "promotion requires full dependency-chain acceptance incl. CG-S-GOD-TORSO-Q plus the human first-God identity gate",
+          "no derived/runtime integration may rely on it before full approval",
+          "canonical path stays empty; native 1024x1024 is provisional-review-only per resolution ruling"
+        ]
+      },
+      "downstream_targets": [
+        "CG-S-GOD-FORM-Q",
+        "CG-D-GOD-LOCO-PILLAR"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 1,
+        "remaining": 0
+      },
+      "provisional_reference_revision": "r002"
+    },
+    "CG-S-GOD-FEED-BROWSE": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/god/cg_s_god_feed_browse.png",
+      "canonical_state": "ABSENT (correct - no approved source; provisional candidates only)",
+      "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+      "mode": "PROVISIONAL - awaiting human first-God identity gate (B01); not an approved source",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-GOD-FEED-BROWSE/r001/cg_s_god_feed_browse.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none (opaque)",
+          "sha256": "d652c8d8fe2d2d8453e693701d87542826d19b48097742c7e6ac86cb334df87a",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "meets_512_floor": true,
+          "meets_exact_profile_dims": false,
+          "note": "REF-GOD requires 2048x2048 canonical; native 1024x1024 is below the 2x normalization input floor for non-aspect-matched sources - resolution ruling deferred to the human gate alongside the B00 precedent.",
+          "content_qa": {
+            "anatomy": "conforming - eyeless wedge, paired flat grinding plates, soft broad browsing lip, flush rear junction collar",
+            "eyes": "none (correct - sensory modules own eyes)",
+            "style": "sculpted matte baseline for the batch",
+            "views": "all four conform"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "parent_dependency_revisions": "none (independent grammar module, registry dependency: code-defined primitive)",
+      "approval": {
+        "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+        "approver": "human (repository owner)",
+        "date": "2026-09-23",
+        "scope": "B01 evidence only - establishes shared Q visual/anatomical language among siblings",
+        "explicit_limits": [
+          "NOT an approved source; does NOT canonize Q identity",
+          "promotion requires full dependency-chain acceptance incl. CG-S-GOD-TORSO-Q plus the human first-God identity gate",
+          "no derived/runtime integration may rely on it before full approval",
+          "canonical path stays empty; native 1024x1024 is provisional-review-only per resolution ruling"
+        ]
+      },
+      "downstream_targets": [
+        "CG-S-GOD-FORM-Q",
+        "CG-D-GOD-FEED-BROWSE"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 1,
+        "remaining": 0
+      },
+      "provisional_reference_revision": "r001"
+    },
+    "CG-S-GOD-SENSE-EYE-RING": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/god/cg_s_god_sense_eye_ring.png",
+      "canonical_state": "ABSENT (correct - no approved source; provisional candidates only)",
+      "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+      "mode": "PROVISIONAL - awaiting human first-God identity gate (B01); not an approved source",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-GOD-SENSE-EYE-RING/r001/cg_s_god_sense_eye_ring.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none (opaque)",
+          "sha256": "58e3c2574757b4e8acab4d788bc1c9b3a9f05be94a8fad66abcd1e175e6adfed",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "meets_512_floor": true,
+          "meets_exact_profile_dims": false,
+          "note": "REF-GOD requires 2048x2048 canonical; native 1024x1024 is below the 2x normalization input floor for non-aspect-matched sources - resolution ruling deferred to the human gate alongside the B00 precedent.",
+          "content_qa": {
+            "anatomy": "conforming (one band, exactly four closed-lid recessed eyes)",
+            "style_violation": "hard-outlined cartoon line art"
+          },
+          "status": "REJECTED"
+        },
+        {
+          "revision": "r002",
+          "path": "assets/candidates/CG-S-GOD-SENSE-EYE-RING/r002/cg_s_god_sense_eye_ring.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none (opaque)",
+          "sha256": "3276c59ae8040b0ff80645aa1ef511409bca3c33929f254ffb5cfbfb44b8d317",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "meets_512_floor": true,
+          "meets_exact_profile_dims": false,
+          "note": "REF-GOD requires 2048x2048 canonical; native 1024x1024 is below the 2x normalization input floor for non-aspect-matched sources - resolution ruling deferred to the human gate alongside the B00 precedent.",
+          "content_qa": {
+            "anatomy": "conforming - exactly four calm closed-lid recessed eye pockets, two per side",
+            "collars": "flush dock-seam ends",
+            "style": "sculpted matte, batch-consistent",
+            "views": "all four conform"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "parent_dependency_revisions": "none (independent grammar module, registry dependency: code-defined primitive)",
+      "approval": {
+        "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+        "approver": "human (repository owner)",
+        "date": "2026-09-23",
+        "scope": "B01 evidence only - establishes shared Q visual/anatomical language among siblings",
+        "explicit_limits": [
+          "NOT an approved source; does NOT canonize Q identity",
+          "promotion requires full dependency-chain acceptance incl. CG-S-GOD-TORSO-Q plus the human first-God identity gate",
+          "no derived/runtime integration may rely on it before full approval",
+          "canonical path stays empty; native 1024x1024 is provisional-review-only per resolution ruling"
+        ]
+      },
+      "downstream_targets": [
+        "CG-S-GOD-FORM-Q",
+        "CG-D-GOD-SENSE-EYE-RING"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 1,
+        "remaining": 0
+      },
+      "provisional_reference_revision": "r002"
+    },
+    "CG-S-GOD-TAIL-BALANCE": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/god/cg_s_god_tail_balance.png",
+      "canonical_state": "ABSENT (correct - no approved source; provisional candidates only)",
+      "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+      "mode": "PROVISIONAL - awaiting human first-God identity gate (B01); not an approved source",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-GOD-TAIL-BALANCE/r001/cg_s_god_tail_balance.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none (opaque)",
+          "sha256": "4c7f24ec2cfbeca7887404a203f9c0334d73cf67d60193d41ca824ddd08a8bc2",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "meets_512_floor": true,
+          "meets_exact_profile_dims": false,
+          "note": "REF-GOD requires 2048x2048 canonical; native 1024x1024 is below the 2x normalization input floor for non-aspect-matched sources - resolution ruling deferred to the human gate alongside the B00 precedent.",
+          "content_qa": {
+            "style": "conforming",
+            "violation": "needle-sharp tip; cross-section change not demonstrated"
+          },
+          "status": "REJECTED"
+        },
+        {
+          "revision": "r002",
+          "path": "assets/candidates/CG-S-GOD-TAIL-BALANCE/r002/cg_s_god_tail_balance.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none (opaque)",
+          "sha256": "2f1c06a980e138c14d0f8768090bd3744d98220fcc5781afb12c72e3e4d32bfe",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "meets_512_floor": true,
+          "meets_exact_profile_dims": false,
+          "note": "REF-GOD requires 2048x2048 canonical; native 1024x1024 is below the 2x normalization input floor for non-aspect-matched sources - resolution ruling deferred to the human gate alongside the B00 precedent.",
+          "content_qa": {
+            "registry_check": "single tapered muscular tail: yes; changing elliptical cross-section: demonstrated (tall root ellipse in front/rear views, swollen flat middle in top view, small round tip); no constant-radius tube: confirmed",
+            "style": "sculpted matte, batch-consistent",
+            "views": "all four conform"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "parent_dependency_revisions": "none (independent grammar module, registry dependency: code-defined primitive)",
+      "approval": {
+        "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+        "approver": "human (repository owner)",
+        "date": "2026-09-23",
+        "scope": "B01 evidence only - establishes shared Q visual/anatomical language among siblings",
+        "explicit_limits": [
+          "NOT an approved source; does NOT canonize Q identity",
+          "promotion requires full dependency-chain acceptance incl. CG-S-GOD-TORSO-Q plus the human first-God identity gate",
+          "no derived/runtime integration may rely on it before full approval",
+          "canonical path stays empty; native 1024x1024 is provisional-review-only per resolution ruling"
+        ]
+      },
+      "downstream_targets": [
+        "CG-S-GOD-FORM-Q",
+        "CG-S-GOD-FORM-M",
+        "CG-D-GOD-TAIL-BALANCE"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 1,
+        "remaining": 0
+      },
+      "provisional_reference_revision": "r002"
+    },
+    "CG-S-GOD-FORM-Q": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/god/cg_s_god_form_q.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "ACCEPTED_PROVISIONAL_PASS2",
+      "parent_dependency_revisions": {
+        "CG-S-GOD-TORSO-Q": "r003 (accepted provisional, pass 2)",
+        "CG-S-GOD-LOCO-PILLAR": "r002 (provisional batch-local reference)",
+        "CG-S-GOD-FEED-BROWSE": "r001 (provisional batch-local reference)",
+        "CG-S-GOD-SENSE-EYE-RING": "r002 (provisional batch-local reference)",
+        "CG-S-GOD-TAIL-BALANCE": "r002 (provisional batch-local reference)"
+      },
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-GOD-FORM-Q/r001/cg_s_god_form_q.png",
+          "native_dimensions": "1024x1024",
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "86e92b9402c45fe9e3cea65835a6d305132a9431b5e8f4f74ddefde9ae6eb192",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "assembled from the five accepted/provisional references in one request",
+          "content_qa": {
+            "assembly_legality": "all five modules present exactly once; seamless junctions; no invented anatomy",
+            "defect_1": "stance too tall/horse-like vs low-slung Q lock",
+            "defect_2": "tail carriage disagrees across views (droops in front/rear, horizontal in side)"
+          },
+          "status": "REJECTED"
+        },
+        {
+          "revision": "r002",
+          "path": "assets/candidates/CG-S-GOD-FORM-Q/r002/cg_s_god_form_q.png",
+          "native_dimensions": "1024x1024",
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "e07256c3188b51e1a70c5b2edab38bf0b8dab21a3ebf902e891368452b0e8a05",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "r001",
+          "content_qa": {
+            "stance": "FIXED - low-slung hauler, deep belly, short massive legs",
+            "tail_side/top/front": "FIXED - horizontal carriage",
+            "tail_rear_view": "STILL FAILING - downward cone between haunches contradicts side view",
+            "minor_deviation": "flank accent squiggles larger/more numerous than the restrained-accent lock"
+          },
+          "status": "REJECTED"
+        },
+        {
+          "revision": "r003",
+          "pass": 2,
+          "path": "assets/candidates/CG-S-GOD-FORM-Q/r003/cg_s_god_form_q.png",
+          "native_dimensions": "1376x768",
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "19b4b67f9eb45d4bfffd7fb308a16f1a997ac7e73a317a5a6e914e717b016e61",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "r002 + TAIL-BALANCE r002 reference re-anchor",
+          "content_qa": {
+            "rear_tail": "FIXED - small blunt horizontal tip, no cone",
+            "accents": "FIXED - three restrained patches",
+            "eyes_violation": "brow-band eyes OMITTED entirely (identity veto - sensory count is an anchor)",
+            "canvas": "16:9 1376x768 (square required; no aspect-matched normalization path)"
+          },
+          "status": "REJECTED"
+        },
+        {
+          "revision": "r004",
+          "pass": 2,
+          "path": "assets/candidates/CG-S-GOD-FORM-Q/r004/cg_s_god_form_q.png",
+          "native_dimensions": "1024x1024",
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "f8d645a7ed78d1d610c172522c8721e03b2a2dbb228804c6abccf3f5ec72cc32",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "r003 + SENSE-EYE-RING r002 reference re-anchor",
+          "content_qa": {
+            "canvas": "square 1024x1024 restored",
+            "eyes": "four closed-lid recessed pockets in brow band (front + side views agree)",
+            "rear_tail": "small blunt horizontal tip; agrees with side/top carriage",
+            "stance": "low-slung, deep belly, short massive legs",
+            "modules": "exactly five; no invented anatomy",
+            "accents": "restrained (~3 patches)",
+            "style": "sculpted matte, batch-consistent"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "reason": null,
+      "approval": {
+        "decision": "ACCEPTED (pass 2, r004) - provisional; LIFE-Q unblocked",
+        "approver": "human (repository owner)",
+        "date": "2026-09-23"
+      },
+      "downstream_targets": [
+        "CG-S-GOD-LIFE-Q",
+        "CG-D-GOD-FORM-Q"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 2,
+        "repair_candidates_used": 2,
+        "remaining": 0
+      },
+      "pass_2": {
+        "opened_utc": "2026-09-23T22:54:43+00:00",
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 1
+      },
+      "provisional_reference_revision": "r004"
+    },
+    "CG-S-GOD-LIFE-Q": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/god/cg_s_god_life_q.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL_PASS2",
+      "parent_dependency_revisions": {
+        "CG-S-GOD-FORM-Q": "r004 (accepted provisional, pass 2)"
+      },
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-GOD-LIFE-Q/r001/cg_s_god_life_q.png",
+          "native_dimensions": "1264x848",
+          "native_aspect_error_pct": 0.63,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "3653535f8919e0e4f2b6684db275abc6db4fce4ee42f3cc98e027c484265f706",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "assembled from FORM-Q r004 as the same individual",
+          "content_qa": {
+            "six_states_content": "individually largely correct (same individual; dignified corpse; proportional ossuary; injury = one wounded foreleg + one flank scar)",
+            "layout_violation": "3-row 9-cell arrangement with duplicated injured-prime and corpse panels and one empty cell; profile requires exactly 3x2 = 6 panels in declared order",
+            "identity_deviation": "open dark eyes in some panels despite closed-lid lock",
+            "ancient_treatment": "cracks rendered as dark scratch marks; accents exceed restraint"
+          },
+          "status": "REJECTED"
+        },
+        {
+          "revision": "r002",
+          "path": "assets/candidates/CG-S-GOD-LIFE-Q/r002/cg_s_god_life_q.png",
+          "native_dimensions": "1264x848",
+          "native_aspect_error_pct": 0.63,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "965034006d87bc494ed094fd7731a30636f23a5a329f75b1304ae288850f5280",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "r001 (edit-anchored repair)",
+          "content_qa": {
+            "layout_violation": "PERSISTS - same 9-cell grid with duplicates and empty cell; edit-anchoring copied the reference arrangement despite explicit 6-panel instructions",
+            "identity_deviation": "open-eye artifacts persist"
+          },
+          "status": "REJECTED"
+        },
+        {
+          "revision": "r003",
+          "pass": 2,
+          "path": "assets/candidates/CG-S-GOD-LIFE-Q/r003/cg_s_god_life_q.png",
+          "native_dimensions": "1264x848",
+          "native_aspect_error_pct": 0.63,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "73b1e90eb95d50812b08b51c49aa253fcc804a16e11c1fc317f9096e34801047",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "fresh anchor on FORM-Q r004 (per recorded tool finding)",
+          "content_qa": {
+            "states": "individually conforming",
+            "layout_violation": "PERSISTS - 3x3 with duplicated injured/corpse and two differing skeleton variants despite fresh single-subject anchor",
+            "finding_upgraded": "model fills a 3-column grid to three rows for multi-state sheets regardless of instructions"
+          },
+          "status": "REJECTED"
+        },
+        {
+          "revision": "r004",
+          "pass": 2,
+          "path": "assets/candidates/CG-S-GOD-LIFE-Q/r004/cg_s_god_life_q.png",
+          "native_dimensions": "1264x848",
+          "native_aspect_error_pct": 0.63,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "e342060b2f23f3d723887623b845e2bf3c14c596bf2a3c60b97313eb94d050e3",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "deterministic blank 3x2 divider template (ImageMagick convert canvas + rectangles, 3067B, recorded in r004/template_3x2.png) supplied as layout scaffold - procedural aid, not authored content",
+          "content_qa": {
+            "layout": "exactly 3x2 six cells, declared order, no duplicates/empty cells - template strategy SUCCESSFUL",
+            "continuity": "same individual across all six states; stage scaling correct (juvenile ~1/2, prime, ancient larger/heavier)",
+            "injury_frame": "exactly one locomotor injury (front-left leg bent, off ground, roughened knee) + one pale flank scar; no gore",
+            "corpse": "dignified side collapse, eyes closed, fresh",
+            "ossuary": "proportional clean pale skeleton with brow-band ridge and tapering tail",
+            "eyes": "closed-lid recessed pockets held; no open-eye artifacts",
+            "style": "batch-consistent sculpted matte; accents restrained",
+            "canvas": "1264x848 3:2-class (same as B00 board; 3072x2048 canonical question standing)"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "tool_behavior_finding": "Layout-count defects are not repairable by reference-anchored edits: the model reproduces the reference grid. A successful retry requires anchoring on the single-subject FORM-Q sheet and requesting the 3x2 lifecycle grid fresh.",
+      "tool_error_note": "One generate_image call failed with an internal MAX_TOKENS error (no image produced, no file written, no candidate slot consumed); the repair request was retried once successfully.",
+      "reason": null,
+      "approval": {
+        "decision": "AWAITING_APPROVAL (pass 2, r004)",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-GOD-LIFE-Q",
+        "CG-R-GOD-AGE",
+        "CG-R-GOD-DAMAGE",
+        "CG-R-GOD-CORPSE",
+        "CG-R-DECALS"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 1,
+        "remaining": 0
+      },
+      "pass_2": {
+        "opened_utc": "2026-09-23T23:45:30+00:00",
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 1,
+        "strategy": "fresh anchor on FORM-Q r004"
+      }
+    }
+  },
+  "batch_checkpoints": {
+    "B00": {
+      "checkpoint_date_utc": "2026-09-23T21:53:49+00:00",
+      "gate": "Human style approval before dependent production",
+      "counts": {
+        "requested": 1,
+        "candidates_generated": 2,
+        "rejected": 2,
+        "awaiting_approval": 0,
+        "approved_source": 0,
+        "blocked": 1
+      },
+      "id_states": {
+        "CG-S-ART-DIRECTION": "BLOCKED"
+      },
+      "capacity_note": "B01 dependency CG-S-ART-DIRECTION is not satisfied; per Section 4, production does not proceed to B01 without resolution.",
+      "resolution": "TERMINAL - run stopped by human ruling (no amendment)",
+      "resolution_date_utc": "2026-09-23T22:02:21+00:00",
+      "production_run": "ENDED at B00 gate; B01-B12 not started; 0 of 121 canonical sources produced in this environment"
+    },
+    "B01": {
+      "checkpoint_date_utc": "2026-09-23T22:09:52+00:00",
+      "gate": "Human first-God identity gate (mandatory, Section 4)",
+      "mode": "PROVISIONAL - produced under explicit user direction after B00 stop; awaiting gate; no canonical promotion",
+      "counts": {
+        "requested": 7,
+        "candidates_generated": 18,
+        "rejected_candidates": 10,
+        "rejected_ids_this_pass": 2,
+        "awaiting_approval_ids": 0,
+        "not_started_children": 2,
+        "approved_source": 0,
+        "blocked_standing": [
+          "CG-S-ART-DIRECTION (B00, dimensional)"
+        ]
+      },
+      "id_states": {
+        "CG-S-GOD-TORSO-Q": "ACCEPTED (r003, pass 2, provisional) - FORM-Q unblocked",
+        "CG-S-GOD-LOCO-PILLAR": "PROVISIONAL_BATCH_LOCAL_REFERENCE (r002; human ruling 2026-09-23)",
+        "CG-S-GOD-FEED-BROWSE": "PROVISIONAL_BATCH_LOCAL_REFERENCE (r001; human ruling 2026-09-23)",
+        "CG-S-GOD-SENSE-EYE-RING": "PROVISIONAL_BATCH_LOCAL_REFERENCE (r002; human ruling 2026-09-23)",
+        "CG-S-GOD-TAIL-BALANCE": "PROVISIONAL_BATCH_LOCAL_REFERENCE (r002; human ruling 2026-09-23)",
+        "CG-S-GOD-FORM-Q": "ACCEPTED (r004, pass 2, provisional) - LIFE-Q unblocked",
+        "CG-S-GOD-LIFE-Q": "pass-2 candidate r004 conforming (template-scaffold strategy); AWAITING human acceptance"
+      },
+      "generation_budget": {
+        "clips_used_this_turn": 9,
+        "clips_remaining_this_turn": 1,
+        "per_id_budget": "1 initial + 1 repair per ID per pass - respected for every ID"
+      },
+      "dependency_note": "The four conforming modules are registry-independent grammar siblings (dependency: code-defined primitive), so producing them provisionally while the torso is rejected is compliant; parent-first promotion still applies - none may be promoted before the torso identity is resolved and the gate passes.",
+      "gate_ruling": "Human ruling 2026-09-23 recorded in human_rulings[B01_GATE_RULING_1]"
+    }
+  },
+  "capability_probe": {
+    "probe_date_utc": "2026-09-23T21:53:49+00:00",
+    "probed_with": "CG-S-ART-DIRECTION B00 candidate requests (contract-compliant probe subject; no out-of-manifest image generated)",
+    "image_generation": {
+      "tool_reported": "Arena Agent Mode generate_image (model identity not exposed by tool)",
+      "model_identity": "UNKNOWN",
+      "native_outputs_observed": [
+        "1264x848 PNG (r001)",
+        "1376x768 PNG (r002)"
+      ],
+      "format_actual": "PNG 8-bit sRGB TrueColor, color-type 2, NO alpha channel",
+      "alpha_native": false,
+      "user_selectable_dimensions": "NONE observed - model selects output size per request; two requests produced two different fixed sizes",
+      "reference_input_support": true,
+      "conclusion": "Content/style capability PROVEN; exact large-format native output NOT a capability of this tool."
+    },
+    "inspection": {
+      "tool": "ImageMagick identify (verbose, format-specific IHDR fields)",
+      "dimensions_verified": true,
+      "format_verified": true,
+      "alpha_verified": true,
+      "hash_verified": true
+    },
+    "normalization": {
+      "tool_available": "ImageMagick convert (deterministic resampling available and recordable)",
+      "resampler": "ImageMagick -filter Lanczos (would be recorded per-use)"
+    },
+    "threshold_analysis": {
+      "profile": "REF-DIRECTION",
+      "target": "3072x2048 (3:2)",
+      "normalization_floor": "1536x1024 native same-aspect (2x allowance)",
+      "best_native_same_aspect": "1264x848 (r001, aspect error 0.63%)",
+      "required_upscale_from_best": 2.43,
+      "verdict": "BLOCKED: tool cannot meet the permitted input threshold for REF-DIRECTION; no alternate provider permitted."
+    }
+  },
+  "run_summary": {
+    "final_state_utc": "2026-09-23T22:09:52+00:00",
+    "mode": "REOPENED as provisional-only by explicit user direction (\"go on\", 2026-09-23). Section 0: current explicit user direction supersedes the earlier stop ruling. B00 dimensional BLOCK stands unchanged (no amendment). B01 produced as explicitly UNAPPROVED provisional candidates; nothing promoted to canonical; no CG-D-*/CG-R-* content.",
+    "canonical_sources_approved": 0,
+    "canonical_sources_blocked": 1,
+    "canonical_sources_awaiting_approval": 0,
+    "provisional_candidates_awaiting_human_gate": 4,
+    "provisional_ids_rejected_this_pass": 2,
+    "candidates_preserved_as_evidence": [
+      "CG-S-ART-DIRECTION r001",
+      "CG-S-ART-DIRECTION r002"
+    ]
+  },
+  "human_rulings": [
+    {
+      "id": "B01_GATE_RULING_1",
+      "ruling": {
+        "date": "2026-09-23",
+        "authority": "human (repository owner), explicit ruling via Arena session",
+        "points": {
+          "1": "Four conforming sibling modules APPROVED AS PROVISIONAL B01 EVIDENCE ONLY - they establish the shared Q visual/anatomical language but do NOT complete or canonize Q identity; the torso remains the anchor module and it failed.",
+          "2": "CG-S-GOD-TORSO-Q: REJECTED THIS PASS stands; not dead forever; ONE FRESH TORSO REVISION PASS authorized as the next action. Until the torso passes, CG-S-GOD-FORM-Q and CG-S-GOD-LIFE-Q stay BLOCKED.",
+          "3": "Resolution ruling: 2048x2048 remains the canonical REF-GOD target. 1024x1024 sheets are provisional review artifacts only, not canonical; the dimensional block is real; no silent spec downgrade absent a formal amendment."
+        }
+      },
+      "recorded_utc": "2026-09-23T22:37:14+00:00"
+    },
+    {
+      "id": "TORSO_PASS2_ACCEPT",
+      "ruling": {
+        "date": "2026-09-23",
+        "authority": "human (repository owner) via Arena gate answer",
+        "decision": "ACCEPT r003 as the Q torso (pass 2). Unblocks FORM-Q (parent-first from torso + provisional siblings), then LIFE-Q after FORM-Q.",
+        "scope_limits": [
+          "Both children remain provisional pending the human first-God identity gate",
+          "2048 canonical target unchanged; 1024 = provisional review artifacts only"
+        ]
+      },
+      "recorded_utc": "2026-09-23T22:48:00+00:00"
+    },
+    {
+      "id": "FORMQ_PASS2_AUTHORIZED",
+      "ruling": {
+        "date": "2026-09-23",
+        "authority": "human (repository owner) via Arena gate answer",
+        "decision": "Authorize FORM-Q pass 2 (1 candidate + 1 repair) targeting rear-view horizontal tail carriage and restrained accents. Worst-view rule remains enforced."
+      },
+      "recorded_utc": "2026-09-23T22:54:43+00:00"
+    },
+    {
+      "id": "FORMQ_R004_ACCEPT",
+      "ruling": {
+        "date": "2026-09-23",
+        "authority": "human (repository owner) via Arena gate answer",
+        "decision": "Accept FORM-Q r004 (provisional, like the torso). Unblocks LIFE-Q: one six-panel lifecycle sheet generated parent-first from FORM-Q r004, then returned to the same gate.",
+        "scope_limits": [
+          "LIFE-Q result remains provisional pending this same gate",
+          "2048/3072 canonical targets unchanged; native outputs provisional-review-only"
+        ]
+      },
+      "recorded_utc": "2026-09-23T23:04:16+00:00"
+    },
+    {
+      "id": "LIFEQ_PASS2_AUTHORIZED",
+      "ruling": {
+        "date": "2026-09-23",
+        "authority": "human (repository owner) via Arena gate answer",
+        "decision": "Authorize LIFE-Q pass 2 (fresh 1+1 budget). Strategy per recorded tool finding: fresh request anchored on FORM-Q r004 (not the failed sheet), demanding exactly 3x2 six panels and closed-lid eyes."
+      },
+      "recorded_utc": "2026-09-23T23:45:30+00:00"
+    }
+  ],
+  "resolution_ruling_standing": {
+    "canonical_sheet_targets": "UNCHANGED (e.g. REF-GOD 2048x2048, REF-DIRECTION 3072x2048)",
+    "native_1024_status": "provisional review artifacts only; never canonical without a formal spec amendment",
+    "dimensional_block": "remains real for B00 and any profile the tool cannot natively meet"
+  },
+  "audit_trail": [
+    {
+      "incident": "WORKSPACE_RESET_RECOVERY",
+      "recorded_utc": "2026-09-23T22:51:43+00:00",
+      "observation": "Between turns the sandbox workspace was reset and re-cloned single-branch (fetch refspec +refs/heads/main only). Local commits 75b64ad/9ece6e4/692e4a1/a488384 disappeared from the local object database; a divergent local commit 9efa738 (FORM-Q receipt + PNGs only) was accidentally created on the docs commit 5bd357e. First push of 9efa738 was correctly rejected by GitHub (non-fast-forward).",
+      "remote_state_verified": "origin/arena/01a0d03e-civic-godstorm = a488384 (prior authorized tip) intact; remote r003 PNG byte-identical to preserved working copy (sha256 353753aa...). No remote content lost or altered.",
+      "recovery": "Branch re-rooted on a488384 via mixed reset (no force-push, no remote rewrite); preserved working-tree content re-committed as the true delta. Abandoned local commit 9efa738 contains no unique content.",
+      "parallel_work_observed": "Remote branches m00-architecture-foundation (e7cb713) and m01-simulation-kernel (2106b25) exist - consistent with the separate Opus implementation session. Untouched; no merge, no cross-branch writes.",
+      "prevention": "Future fetches of this branch must use the explicit refspec +refs/heads/arena/01a0d03e-civic-godstorm:refs/remotes/origin/arena/01a0d03e-civic-godstorm."
+    }
+  ]
+}
