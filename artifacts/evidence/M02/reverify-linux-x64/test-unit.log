@@ -1,0 +1,13 @@
+
+> civic-godstorm@0.2.0-m02 test:unit
+> vitest run --project unit
+
+
+ RUN  v5.0.1 /home/user/Civic_Godstorm
+
+
+ Test Files  4 passed (4)
+      Tests  32 passed (32)
+   Start at  23:21:05
+   Duration  374ms (transform 53%, tests 21%, import 21%, worker 5%)
+

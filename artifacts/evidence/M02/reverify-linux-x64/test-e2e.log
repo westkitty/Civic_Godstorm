@@ -1,0 +1,21 @@
+
+Running 16 tests using 2 workers
+
+  ✓   1 [chromium-desktop] › tests/e2e/boot.spec.ts:11:1 › boots the shell with a rendering WebGL2 world view and honest asset status (1.8s)
+  ✓   3 [chromium-desktop] › tests/e2e/boot.spec.ts:48:1 › exposes labelled sections without horizontal overflow (1.0s)
+  ✓   4 [chromium-desktop] › tests/e2e/boot.spec.ts:59:1 › shows an accessible requirement screen when WebGL2 is unavailable (436ms)
+  ✓   5 [chromium-desktop] › tests/e2e/boot.spec.ts:79:1 › reports a renderer start failure with a recovery action (430ms)
+  ✓   6 [chromium-desktop] › tests/e2e/boot.spec.ts:97:1 › runs the kernel self-check in the browser and matches the Node reference hash (1.2s)
+  ✓   7 [chromium-narrow] › tests/e2e/boot.spec.ts:11:1 › boots the shell with a rendering WebGL2 world view and honest asset status (1.1s)
+  ✓   8 [chromium-narrow] › tests/e2e/boot.spec.ts:48:1 › exposes labelled sections without horizontal overflow (936ms)
+  ✓   9 [chromium-narrow] › tests/e2e/boot.spec.ts:59:1 › shows an accessible requirement screen when WebGL2 is unavailable (372ms)
+  ✓   2 [chromium-desktop] › tests/e2e/god-control.spec.ts:63:1 › pointer journey: select, route around the city, feed, rest, cancel, override a warning; replay matches (8.4s)
+  ✓  10 [chromium-narrow] › tests/e2e/boot.spec.ts:79:1 › reports a renderer start failure with a recovery action (426ms)
+  ✓  12 [chromium-narrow] › tests/e2e/boot.spec.ts:97:1 › runs the kernel self-check in the browser and matches the Node reference hash (1.1s)
+  ✓  11 [chromium-desktop] › tests/e2e/god-control.spec.ts:124:1 › keyboard journey: G, M, arrows and Enter order a move and end the turn (2.8s)
+  ✓  14 [chromium-desktop] › tests/e2e/god-control.spec.ts:148:3 › touch › touch journey: tap select, tap destination, confirm button, end turn (2.4s)
+  ✓  13 [chromium-narrow] › tests/e2e/god-control.spec.ts:63:1 › pointer journey: select, route around the city, feed, rest, cancel, override a warning; replay matches (6.8s)
+  ✓  15 [chromium-narrow] › tests/e2e/god-control.spec.ts:124:1 › keyboard journey: G, M, arrows and Enter order a move and end the turn (2.1s)
+  ✓  16 [chromium-narrow] › tests/e2e/god-control.spec.ts:148:3 › touch › touch journey: tap select, tap destination, confirm button, end turn (2.0s)
+
+  16 passed (23.5s)
