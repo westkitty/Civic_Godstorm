@@ -1,0 +1,48 @@
+
+> civic-godstorm@0.1.0-m01 test:e2e
+> npm run build && playwright test
+
+
+> civic-godstorm@0.1.0-m01 build
+> vite build
+
+vite v8.3.0 building client environment for production...
+transforming...
+✓ 44 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.57 kB │ gzip:   0.35 kB
+dist/assets/index-NnzGUP3c.css    2.93 kB │ gzip:   1.16 kB
+dist/assets/index-DW_G4Lin.js   818.87 kB │ gzip: 218.10 kB │ map: 3,902.58 kB
+
+✓ built in 320ms
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+
+Running 20 tests using 4 workers
+
+  ✓   3 [webkit-desktop] › tests/e2e/boot.spec.ts:11:1 › boots the shell with a rendering WebGL2 world view and honest asset status (4.2s)
+  ✓   5 [webkit-desktop] › tests/e2e/boot.spec.ts:45:1 › exposes labelled sections without horizontal overflow (4.0s)
+  ✓   4 [chrome-narrow] › tests/e2e/boot.spec.ts:11:1 › boots the shell with a rendering WebGL2 world view and honest asset status (5.8s)
+  ✓   1 [chrome-desktop] › tests/e2e/boot.spec.ts:11:1 › boots the shell with a rendering WebGL2 world view and honest asset status (5.8s)
+  ✓   6 [webkit-desktop] › tests/e2e/boot.spec.ts:55:1 › shows an accessible requirement screen when WebGL2 is unavailable (2.2s)
+  ✓   8 [chrome-desktop] › tests/e2e/boot.spec.ts:45:1 › exposes labelled sections without horizontal overflow (2.8s)
+  ✓   7 [chrome-narrow] › tests/e2e/boot.spec.ts:45:1 › exposes labelled sections without horizontal overflow (2.8s)
+  ✓   9 [webkit-desktop] › tests/e2e/boot.spec.ts:75:1 › reports a renderer start failure with a recovery action (1.6s)
+  ✓  12 [webkit-desktop] › tests/e2e/boot.spec.ts:93:1 › runs the kernel self-check in the browser and matches the Node reference hash (2.1s)
+  ✓  10 [chrome-desktop] › tests/e2e/boot.spec.ts:55:1 › shows an accessible requirement screen when WebGL2 is unavailable (2.5s)
+  ✓  11 [chrome-narrow] › tests/e2e/boot.spec.ts:55:1 › shows an accessible requirement screen when WebGL2 is unavailable (2.5s)
+  ✓  13 [chrome-desktop] › tests/e2e/boot.spec.ts:75:1 › reports a renderer start failure with a recovery action (1.6s)
+  ✓  14 [chrome-narrow] › tests/e2e/boot.spec.ts:75:1 › reports a renderer start failure with a recovery action (1.6s)
+  ✓  16 [chrome-narrow] › tests/e2e/boot.spec.ts:93:1 › runs the kernel self-check in the browser and matches the Node reference hash (1.9s)
+  ✓  15 [chrome-desktop] › tests/e2e/boot.spec.ts:93:1 › runs the kernel self-check in the browser and matches the Node reference hash (1.9s)
+  ✓   2 [firefox-desktop] › tests/e2e/boot.spec.ts:11:1 › boots the shell with a rendering WebGL2 world view and honest asset status (10.2s)
+  ✓  17 [firefox-desktop] › tests/e2e/boot.spec.ts:45:1 › exposes labelled sections without horizontal overflow (801ms)
+  ✓  18 [firefox-desktop] › tests/e2e/boot.spec.ts:55:1 › shows an accessible requirement screen when WebGL2 is unavailable (447ms)
+  ✓  19 [firefox-desktop] › tests/e2e/boot.spec.ts:75:1 › reports a renderer start failure with a recovery action (911ms)
+  ✓  20 [firefox-desktop] › tests/e2e/boot.spec.ts:93:1 › runs the kernel self-check in the browser and matches the Node reference hash (1.0s)
+
+  20 passed (27.6s)

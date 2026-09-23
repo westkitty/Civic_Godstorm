@@ -2,34 +2,22 @@
 
 | Field | Value |
 |---|---|
-| Current milestone | **M01 - Playable simulation kernel** (not started) |
-| Last accepted milestone | M00 - Architecture foundation ([evidence](evidence/M00.md)) |
-| Accepted commit | The M00 commit on branch `m00-architecture-foundation`. It has not been merged to `main` and not pushed |
-| Active candidate | none |
-| Toolchain | Node 24.21.0 LTS / npm 11.19.0 (see [TOOLCHAIN.md](TOOLCHAIN.md)). Global Node 26.9.0 is untouched |
-| Known-good journeys | Browser boot shell. `WEBGL2_UNAVAILABLE` and `RENDERER_START_FAILED` error paths (Chrome 153, desktop and narrow) |
-| Asset status | 285/285 IDs unresolved. Authored 0/121 approved, derived 0/112 verified, recipes 0/52 registered |
-| Pending source requests | B00 `CG-S-ART-DIRECTION`, then B01 (seven Q IDs) and B02 (six civic IDs) through the Arena workflow. They are not needed for M01/M02, where placeholders are allowed. M03 is blocked on B00+B01 human approval |
-| Pending human decisions | Whether to push `m00-architecture-foundation` and how to integrate it (PR or merge). Review of the eight IDs outside the traceability closure (informational) |
+| Current milestone | **M02 - Direct God-control prototype** (not started) |
+| Last accepted milestone | M01 - Playable simulation kernel ([evidence](evidence/M01.md)); M00 ([evidence](evidence/M00.md)) |
+| Branches | `m00-architecture-foundation` (pushed), `m01-simulation-kernel` (stacked on M00). Neither is merged to `main` |
+| Toolchain | Node 24.21.0 LTS / npm 11.19.0; Playwright Chrome channel plus Playwright Firefox 155.0 and WebKit 26.6 builds |
+| Known-good journeys | Boot shell; WebGL2-missing and renderer-failure paths; browser determinism self-check matching Node in Chrome, Firefox and WebKit |
+| Asset status | 285/285 IDs unresolved. The Arena branch `arena/01a0d03e-civic-godstorm` reports B00 BLOCKED (tool below the 1536 px floor) and four provisional B01 candidates, none approved. It has not been integrated |
+| Blocking decisions | M03 needs B00 + B01 human approval. B00 is blocked on Arena tool capability, and resolving that is the user's decision |
 
-## Next bounded action (M01)
+## Next bounded action (M02)
 
-Implement `src/sim/core` and `src/sim/world` as pure TypeScript:
+Build a first-class God record from the §4 grammar for one legal Q/PILLAR starting genome:
 
-- the CG-XOR32-v1 stream with FNV-1a stream seeding and the §16.7 golden vectors;
-- integer Quantity arithmetic;
-- a canonical sorted serialisation with SHA-256 state hash;
-- offset/axial wrapped hex topology and §16.2 masks;
-- a command/turn reducer with the stable rejection codes;
-- basic population/food/construction;
-- a save envelope.
+- the §16.2 footprint and swept-region validation, and footprint A* over `(anchor, heading)`;
+- MOVE/FEED/REST/HOLD with AP, stance and fatigue;
+- consent previews, the persistent itinerary and overrides;
+- an observation boundary for fog;
+- the God dock and command strip in the browser (pointer, keyboard and touch-emulated), with explicit `MISSING <ID>` placeholders for all God art.
 
-Register the `sim` vitest suites. Exit evidence:
-
-- golden RNG vectors;
-- 50 seeded 30-turn headless runs with identical rerun hashes;
-- no negative stock or population;
-- the five-population opening food arithmetic;
-- wrapped coordinate and path fixtures.
-
-`test:campaigns` gains its seeded headless runner at M01.
+Exit evidence is a real browser journey: select, route around a city, feed, rest, cancel the itinerary and override a legal safety warning. It must produce the same headless command outcomes, and a hidden obstacle must not leak.

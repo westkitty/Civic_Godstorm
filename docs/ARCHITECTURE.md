@@ -1,6 +1,6 @@
 # CIVIC GODSTORM - Implementation Architecture Contract
 
-**Status:** M00 implementation record. **Subordinate to:** `CIVIC_GODSTORM_MASTER_PLAN.md` (contract CG-V1.0.0).
+**Status:** implementation record (M00-M01). **Subordinate to:** `CIVIC_GODSTORM_MASTER_PLAN.md` (contract CG-V1.0.0).
 
 This file records how the code base realises the master's architecture. It is not a fourth planning document. It adds no scope, mechanics or assets. Where it and the master disagree, the master governs and the disagreement is a defect in this file.
 
@@ -13,6 +13,9 @@ This file records how the code base realises the master's architecture. It is no
 | ADR-M00-03 | TypeScript is pinned to 6.0.3, not 7.0.2 (latest), because `typescript-eslint@8.70.1` supports only `typescript >=4.8.4 <6.1.0`. This is a compatibility choice within the frozen stack, not a change of stack. | §14.1 | `npm view typescript-eslint@8.70.1 peerDependencies` |
 | ADR-M00-04 | Node tools (`tools/**`) run as `.ts` under Node's built-in type stripping. `erasableSyntaxOnly` enforces a compatible subset, so no extra TS runner dependency is added. | §14.1 (no unrequired frameworks) | `process.features.typescript === 'strip'` |
 | ADR-M00-05 | M00 browser journeys use the installed Google Chrome channel (153.0.8010.53). The Chromium/Firefox/WebKit release matrix belongs to M13 and is not claimed here. | §19 M13, §20.1 | `playwright.config.ts` |
+| ADR-M01-01 | The simulation hashes with its own synchronous pure-TypeScript SHA-256 (checked against `node:crypto` over 300 lengths). WebCrypto is asynchronous and differs by runtime, so it stays out of the determinism path. | §13.2 | `tests/sim/hashing.test.ts` |
+| ADR-M01-02 | State is plain integer JSON data (arrays, not typed arrays) resolved by `structuredClone` and mutation of the clone. The committed input is never mutated. Canonical serialisation rejects floats, NaN, undefined and non-plain objects. | §13.2, §16.1 | `tests/sim/commands.test.ts` (no-mutation), `hashing.test.ts` |
+| ADR-M01-03 | Start placement follows the master's cap of 64 attempts per candidate world: a STARTS-stream shuffle of stably enumerated candidates, examined in order, over at most 32 candidate worlds, reporting named rejection counters. | §3.3 | `tests/sim/world.test.ts` |
 | ADR-M00-06 | Lint encodes module boundaries and determinism. `src/sim/**` cannot import Three/React/render/ui/app/audio/persistence and cannot use `Math.random`, `Date.now`, `performance.now`, `new Date`, `window`, `document` or timers. `src/render/**` cannot import UI. | §13.2, §14.3 | Probe run in `docs/evidence/M00.md` |
 
 ## Module ownership (master §14.3)
@@ -25,9 +28,16 @@ Directories are created only when a milestone first needs them. The rows marked 
 | `src/render/` | `RendererHost` (sole owner of `WebGLRenderer`, scene, camera and frame scheduling), recipes | present (`CG-R-DEBUG` only) |
 | `src/ui/` | React surfaces, semantic controls, placeholder presentation | present |
 | `src/assets/` | Spec index lookup, `AssetRef {id, status:'MISSING'}` resolution, verified-manifest paths | present |
-| `src/sim/**`, `src/runtime/`, `src/persistence/`, `src/audio/` | See master §14.3 | from M01 onwards |
+| `src/sim/core/` | State types, command validation, turn reducer, integer math, RNG, canonical hash | present (M01) |
+| `src/sim/world/` | Hex topology/masks, generation, ordinary A* | present (M01) |
+| `src/sim/civ/` | Settlement economy step | present (M01) |
+| `src/sim/data/` | Rules data with section citations and `RULES_HASH` | present (M01) |
+| `src/sim/scripted/` | Deterministic scripted command driver for tests (not AI) | present (M01) |
+| `src/runtime/` | Browser-runnable determinism self-check | present (M01) |
+| `src/persistence/` | Save envelope encode/decode (no IndexedDB yet) | present (M01) |
+| `src/sim/gods/`, `src/sim/navigation/`, `src/sim/ai/`, `src/audio/` | See master §14.3 | from M02 onwards |
 | `tools/` | Spec compiler, asset gates, runners, environment probe | present |
-| `tests/` | `unit` + `tools` (vitest project `unit`), `sim` (project `sim`, empty until M01), `e2e` (Playwright) | present |
+| `tests/` | `unit` + `tools` (vitest project `unit`), `sim` (project `sim`), `e2e` (Playwright) | present |
 
 ## Runtime shell invariants
 

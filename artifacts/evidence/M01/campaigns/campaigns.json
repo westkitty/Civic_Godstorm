@@ -1,0 +1,3865 @@
+{
+  "args": {
+    "seed": "cg-campaign",
+    "map": "standard",
+    "scenario": "baseline",
+    "turns": 30,
+    "out": "artifacts/evidence/M01/campaigns",
+    "runs": 50,
+    "civs": 6
+  },
+  "runtime": "node v24.21.0",
+  "mismatches": 0,
+  "runs": [
+    {
+      "seed": "cg-campaign-0",
+      "identicalRerun": true,
+      "finalHash": "26958f6ef767ebcb631d76e1993b16660ff5d7ac8f12da0a53c86f8949cdb12b",
+      "rejections": 0,
+      "settlements": [
+        {
+          "id": 7,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 8,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 9,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 10,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 11,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 12,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        }
+      ],
+      "hashes": [
+        "6944237da41ee069cb7aa0ad34e4068cdf484aea38ff9121b242e5e61e5ce3ed",
+        "02ae7eda6134cc0c80d34dc3f5fe2d34689ea7e28c0d84a03f07bd40cb08ab29",
+        "880ec8b86b9511958fabb60c6c2e565bbaa20cd159ef92c66ee9a04b95b02109",
+        "13c128f7a0918f9a8458ffcdc7bd7afd0b87fbec1006eff336ece6f9ba4d790d",
+        "f25d3de3234ab6338952f185eb7424cbf7815575cc0259a79a846198f80e58ae",
+        "3a14621a6c88d4e8e22766140ca11945a0d8354a801f049489664d5207ed2f43",
+        "257d1724cf0969c8ca589c30e49832cec393d42e8a6a76491d72fa0f4e36ab1f",
+        "a7a62fc79ec9c1ca009b334b409936493e7a1abb12132a7d67cfa072c1a49870",
+        "779a3dcd14fb67b54efc7e7b0547e3d0e050ab478b357a8d34918a5af87ccdb1",
+        "28135d6c90bf8ab93b1f8ef0201bed017a95b4ea77d7836628504897497bd857",
+        "7c4193d16afbea39177394093d416e027d14a88e06e1dd7d6c8def00c4326ad0",
+        "05d69b77e1fb61dd8ef2c517b7ee96dee128563082f429f4aa79c5f3698a915d",
+        "a0d9065acba6ae3f78005fc2944ff16b17dde9a2198b520840e1496920e28fa2",
+        "434d837d6d612a878803c5b95c02c145d65d3b2c1c100d8d6526938c41709041",
+        "34985c105ff46062bcda13ad6075572bcee7e41516487bc793490a3672257036",
+        "75fd86291a2968f99bc00b7a804be08998b0ddc2cd09f1b082faea0e44ad4ffb",
+        "e57aadb64e265903cadd3dfb5ac9107397cbd12dcc7982a4c04483fdc4786115",
+        "f04784ce19b11f5978ac7bbcde53a6630830e99afa11f8f7a3560ad5229fe2f6",
+        "d4ccb100c6994534255b9cacea808bd84cfa3e3266dd54906f1366fceafcd074",
+        "38168b44d1ff4bd3c3439f2d9ee7ae4ce17da9b328b311789ea3505039d57b71",
+        "5406319628e61c56762885a441fe3cf613f689e96d1d29053b545b37ee3b5da1",
+        "5f28cd24af722843883e08122526681dcbfe6386aa559381dcc354560f5c676e",
+        "59f4cf4f046b6d5ffac09e5720b2c2ff1e50b232152f39eb7c60157b56d6dec1",
+        "962851ab0591931865c754f870f8e249b4b05d66042cca455f227326066fba36",
+        "ced272e7647357b2af94429d79631faec045d15d6d9286f19123a35cb451f28b",
+        "e51b6d0af9ea026ac884124a732890b32a3dc56d2344ecb23d983e4f29452ace",
+        "00d4f9202a965a12592982b5e70810506e3bf12bfd2e257125d758c1c7323593",
+        "193c80777069fb6db7d33962f98295a7f23c3ca694f2069448744145fe4d91c9",
+        "e7b8de60f568c8b891b1098503fe18d712bd2d13db2483439748bee90d036eb3",
+        "d2e1aff130fd7d807e8441a4421790e059d20ec97632fc7ab1fde672789465d3",
+        "26958f6ef767ebcb631d76e1993b16660ff5d7ac8f12da0a53c86f8949cdb12b"
+      ]
+    },
+    {
+      "seed": "cg-campaign-1",
+      "identicalRerun": true,
+      "finalHash": "822b6d9786d8254ee3f050b6687972362fb79dd4c5818bba1faa9af4eae05146",
+      "rejections": 0,
+      "settlements": [
+        {
+          "id": 7,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 8,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 9,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 10,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 11,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 12,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        }
+      ],
+      "hashes": [
+        "a6e6e127c4cc2e4defa0ee58a591b15112f412e682e45165ae6764ad1ff273e6",
+        "8d0e58bb97114a70ab316be2900f697ff478536302e8611b5c5dee3d6f945840",
+        "28d131fd4b9ef71ab51df328619b0d7f610d0bedf3ed005b58c4cff9013b5da0",
+        "5f4818ad8d4cd2e0f08548e3e211db7433f14f833062f9fdfdacb99452144356",
+        "e0ba96c3b57ac04bd5adf4bcbbe9609b5999a0cdf934f74044666aa1762e527a",
+        "30678f3271cbf1996386393c6733848c9678b539b36d2ef4e175694305aa1c92",
+        "b4dcbe9b7207fe273af0b156b0fbf40274c112e328405a5ceccdaf508a1611a0",
+        "b621d5d34d049485632663e030f0af86213316027e8dba30551ab6fd67a516cc",
+        "9cabd68f784c7f8ca3310ca806a745936187095159242165bcc2e4523b1ad946",
+        "22ac1066c407d589dfd05da02318cc6b2a4aa40d909abe142d3827080f173c5a",
+        "fd497805386268dd77814e0cb20c32626c480ed6e1fe4af5a0fb214ba5d7c7c7",
+        "9634e7d70af61dc564e4cd1d6ad4f2f369f7bb43c744bedbe556af51e95004b2",
+        "c8475bb6d92c98463624d6ea4fd46a3e29f8f7623ed3abcdc7d51dea8550d326",
+        "b524dcc1827660f484fd59ae1696c4fc6316c17f1cae3ba42fd70f88cf280ffc",
+        "6e742f34d28251da5cb326369c62e4fd8406251fb1d34031939c56ed10ed4b35",
+        "95c49f73297f9d12815bc1c7a198d5ff17a80258f8c1bee0c9970bc6b5c3ddb1",
+        "82927f8e7f2599f3ad3c785c2121bb230d644bf0da801985168d39201bc8ba68",
+        "0ef7f665b90585dc8e59bb01735ac49b1e2b2c5b2b5625ef2352bf9ebe014005",
+        "504877ef2ffc3d6f1de9dd017468873e8f17c9c005615fb89aa6000e766e3c9b",
+        "06987d2ff4ddde836650b9466edea47f56a4cf7372ddfbf277a27a3a89e681ff",
+        "21be1e9ed910cc0875244c5eddd11a2d7b7f1be550cf4cf410cb0c38e86ec024",
+        "2f7fc42e41964b5a021a527a33fc880f98469cb0cf6efdd3e41f3a485179691e",
+        "6e951eab8c366348a437572cf37c8dc2ced2226023e181a2215327c42459ec42",
+        "cc8661a43cb9b20351e22e64cdd57be8405fa9f029d6477fd085655208fd7cec",
+        "1d232bc121ebaaaa38ca6b6c432f583b4b131d94b65b2f0b9979e905b1236786",
+        "dca95b3dc188fe27c991168bac9b1642d721d867066a490a7633398a9d120e80",
+        "f1390606520ddf99496e2c24626c3e2797e70a1d5c6020f7ab16361d2d52344c",
+        "be3cc3e31782a51d0c7528acb66e004ba5e93b055dcdba0fe540e085e92d5f25",
+        "373693a9cb16b5445eb1f5c989867cbb633d839eea9cba22dddc6f7e4f7caab6",
+        "b6871eaaf66d176f343d993e21de58d441acc2136db956daa9aee78d95c6d584",
+        "822b6d9786d8254ee3f050b6687972362fb79dd4c5818bba1faa9af4eae05146"
+      ]
+    },
+    {
+      "seed": "cg-campaign-2",
+      "identicalRerun": true,
+      "finalHash": "6fb174207dd5f9d1b93a7629ef206107c9888b9f57c7df6ed6e81f7e4adb89ba",
+      "rejections": 0,
+      "settlements": [
+        {
+          "id": 7,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 8,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 9,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 10,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 11,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 12,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        }
+      ],
+      "hashes": [
+        "8261e20bf42e54426610ab2d4c7771ab9d4f8ebe9b8448ba1a23f9edceee6f72",
+        "2bd113f94304822d32fde93c1556329cd69cd073dbd196a4cecd452b891cd706",
+        "68d04a26f55e15e7a495130c32542bb4f8ead92c2cab0b33aab93484fc160b54",
+        "31b1cfd2e987a58903d4b9582f70e1e5fac6f8226e84eb4749e4fd144c70bc89",
+        "e20ed8f49d1bc5048e84f69fe928d5805c69d4569768537dada1589596d74cab",
+        "e8f2b5a53959c10727247aa16c578941f1ecd9bd5d8838775602380723f3623e",
+        "c811658c25201bbf573bf3311e1982dcc1c107addd4765ec5c8b496d33eaa17a",
+        "14f2bda4a1fc88161ed551d6f04475322f85eaa26e0c16868f075407f7e5fa88",
+        "120b113b151dde985b001f9945c555fcb6f132d019173a321b0f54eca7d52cd6",
+        "d60a96997f9e0e2f23a83300c1569dd8ce530526eb8f7752ede15f7cebf45e3a",
+        "8203cd621912e998000b4a2ab6ab780923e656d889fc3c0110a3bfc6420ae8bf",
+        "4e1371532e22b76fafe1f76264110da5d7becec72abcb97d24514be640a53d96",
+        "5e2a8653ad821e160e245da13dece6a691e9911a47e9e6c67902e1dae09a6571",
+        "637a4219dabf37696a5de292b2c2602cb6cc91cb93a25167810d088247fb858a",
+        "9aa38495f6dee9397a8e1c718b3884c0f92f629e182612a406c1a82a70b88ace",
+        "2087b19775349a6701e32e05d10ea49dcae27d3301aae6531fcf87a8bdfaaf8a",
+        "b99807dbb4ca06ff643dd8a41a7a6f01e5f0b29f2a46fdd819683283e227c88c",
+        "8ddbe8b50cda5819cda4169a1866ba10508cd1d5cdad71fdd23f6da68f9ddd65",
+        "b34d2b997eea5c09da1f1be79bc63220e305f4d6981a246e329e066be22452ca",
+        "26c3449136c2f73e02e1bc0380115f548863edbc485c3c2135294311c80b1a20",
+        "13b4831fee9c558698e1e3ef541226c4213e0ea2cff69c5627bdfb36585c2961",
+        "1a5d1a009136ff7f538b11e5a3005b97432e184ad1ed84b0e6e6625e730300cc",
+        "4a5643158b5e3629b6123cdd362e8951af8e3df223548e442a8524283bbb8c26",
+        "eb5d2607553c0637955dad5a26961c57f2d4a5aaeceddaf910ea29ca258439b8",
+        "698dd47882b9cb45b790e501ddb4040af7a793ea073c0bfe86a7572aa233f705",
+        "1cf0d83533576ae6d09a30aec40a39a0d24f58c29dd5e0aeda4d4d0992bd0311",
+        "bdfa0090e742505ba2a7ab42f403020a75e429876c986840cef87c2e86f09b89",
+        "5590e58f13a77e5ecfee266191356c7b0fb131c7ee3d36c20916a22cd15016df",
+        "49c667e6eca55afba4aa3b7f1746e3495005e683fec51d3d8202402adc68cb5b",
+        "bc446256fca82c6976ef879554c055f92aea6e947b49f20bf252922bdc511899",
+        "6fb174207dd5f9d1b93a7629ef206107c9888b9f57c7df6ed6e81f7e4adb89ba"
+      ]
+    },
+    {
+      "seed": "cg-campaign-3",
+      "identicalRerun": true,
+      "finalHash": "eed3a0b6cf80a76b93ae6d19a8e74e9dc795c8dc7b002c061726f6d9dcf3a07a",
+      "rejections": 0,
+      "settlements": [
+        {
+          "id": 7,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 8,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 9,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 10,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 11,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 12,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        }
+      ],
+      "hashes": [
+        "4e6698646ab0a633d395e330efcdb73740bf7cd38c3c3422b7386f05f5e9b89a",
+        "ed762e20b4c9e54ca8c99a383edd5de1ff6e7977e4de46d1e5171709d0b06074",
+        "94f05c99a392689305213c40c82e174c3188bab9e20e08426ddd81d4e377002f",
+        "5455f4677845818fcbb5c0edca8f978119b92eafbcd7db60c296a8003d6f2abc",
+        "b35b6444f9e058622eb61306dcedeabb30bfee7c892d3bf46b6078f87d5a36e2",
+        "3b8c45f43de3e5d494d02db9d4a13b2f3b67d9d90e73827eede23dd081ab8784",
+        "49247301fefd6f43705fffe0733fd671f0f34d4213173eee7c01b3cd2d9cadc0",
+        "03688084a51ba558d9229a09cbf2658b3cc53eec3dcfa15fb7ac34ba9e0430c1",
+        "f049784c34f0adc574373e65d50c1d2ec660a57753833da4df8190f9943669ae",
+        "437a23bd772108d6adb47face28f585d85e2f07e71be0fe333b1b08e1fd4f5d6",
+        "98aca28e6c39db4460928ddeaf583199302de354557b69860fda54b9aadf55e1",
+        "8d5bd53786d4d8f3f3a5b09c3257f2fa37b37b0e2d34829ba681aaf537b68ca0",
+        "a9ea6c7dbcab6c64814167ed9e99b7c7166d4e2b3fbf7fdd0780e58f66d02b1b",
+        "145c617ee27b9716aefee2f2eab7b7c44e80f989dfcfe1dd92623159a3f535ec",
+        "2005d25d6eca0f145041ad208fc51ad6196a61ee593871b8f2719cb7bbbd1dc4",
+        "c184401286f444e491c195de3f523fa85efb9296161fe2c0b1ee6dd955c27b7a",
+        "163a1c09522a8540c348bbdd4c6d8a0713856ed95f498113d6b640303b9f8b99",
+        "936798ca6c0f59ac0459c93bf97ea3084effd598c8b9e578386514c9863b316d",
+        "6043721b57501fffaadee5c919eeda8e7f15e1628629a6cd2fb3c2e5e20d554f",
+        "fc502cd3cb6af63c960d26e18ff9cbe341762de6e0a411da222d58c2180197fd",
+        "6a6d4e22ee0786a034486eb3d724b3e73f9b83284341567d67f10775cbe1a684",
+        "cd1f126cfb17bfbe0d5f7593590cbcff6f8480c3bf9c1b4bc54d934dc158c45d",
+        "09bc74cc9f3a40695da160f7674d1d79afb457a29b64c4d08c05e9590ce60cf9",
+        "977df58d99fd8eb217bdd84ae257d7ceb53491dbfb71c9602b98fec68a0998ef",
+        "ba8b2d00b7587fead3900b5c28abc62a2a292f4109cfce0c12684dcc43737db3",
+        "ffb4c3f4e2cf4d4a7fc3656b650cce1ddbb8762120eb96e6523c8eb2f7181e65",
+        "0a507278acedc0f7c37956abb1e0b7df3d5fe18fcf42bde7f53e2ed8c3497754",
+        "76b01466a13a6307da36103d138e56308baf1a0b54f4c438684abe5b58f196f6",
+        "60dd8b0de278049e27687403e9eacfe49dfa0cee37e444334714727eb3238386",
+        "affa3208f6f9aac4c7b8040bcad674b0c4ca3b8d5560e3ec3e6a5d2395c8a648",
+        "eed3a0b6cf80a76b93ae6d19a8e74e9dc795c8dc7b002c061726f6d9dcf3a07a"
+      ]
+    },
+    {
+      "seed": "cg-campaign-4",
+      "identicalRerun": true,
+      "finalHash": "8971fcc166e3420d736cedb8264c05bdb1af75abfcf603f104b38da8f9d9114f",
+      "rejections": 0,
+      "settlements": [
+        {
+          "id": 7,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 8,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 9,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 10,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 11,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 12,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        }
+      ],
+      "hashes": [
+        "03121be37cd49cc175a9c53fb18ac60f75084143cf4c9659e18e1805f6663bfb",
+        "0b412edf4ba304f73b2cc295ebfd506ef8ac102aab24a49958dcd642056f531f",
+        "a71e4c3b1147ea394029ee8570503feebcaae0dcd36e5519152b7eb369c56957",
+        "b2ad88d53c785a0f29743e9bf9f65ba424c568daf171de626ef996a14e809254",
+        "2c73901f5fd13a499c89830fb2b0389869d31520a997720bcdd090952cf9cf32",
+        "7bd3bfb3537fdd4093e5349cf9412f66b149b64e800a7fd3c49e73ff1e82d582",
+        "0f9c0a841d4ad069fc3471bbf7411a90e89b37a2a894ee3b6df22d137d8c8970",
+        "fea9a19418aae5828d3526a2788ac05598a6f711c6a4748659be3c2421dfb6bd",
+        "fad390a96e07282592c1b03f9b458af82a8639ab30f2477c8c9f4962bfdeac46",
+        "f4acf7b005164983b26e1c606c100dafc9c88181d9a7f680b4cd93db4ca5c166",
+        "a1ea331e9d969c3d838e7010c3ee5864117f8406ae2e1a3149663591f516ddc6",
+        "85fba5a01479473f8f1a424d56a689f78b182496974eafdfaff542148068e3c2",
+        "0a0e6ab470ff4805df346200bda6747be76203520e01b3a661720fdeaf95105f",
+        "7a243cf313aaf2c9eb44ee30620ad2a602442e0435d8d2cd688fcb8cf2103aef",
+        "07a652ed5da1e139fe110392bed26267019b5eb5d2cb1de9ddd3e62273994eae",
+        "662d439791b39ed784697ecd634d56c8c64c2d707748b586c740bada3d4e2efb",
+        "16ec06b6da0af4f9df70f3f4f413b52ee029267b96e550a99bc86bb83a3f1dba",
+        "4fec78e3b4508de67f760dbbea6e315f4b84252060a5d996967df004a99d2d04",
+        "d94d255226aa7f2da11630d0cfb49c683241b3edcf0dee17aeff42606d49c524",
+        "0c1952fa04b4693cbfa130ce7d8b65d0773a4658d12a9a55723a27cf414f59c0",
+        "e9fc136355426ce4e43d5be45ce15cdf71e835add6834ef8cc8b52a1830f5aaa",
+        "23847cd4b322b51ea1786ef16e1e2fc0c24be53aae6768c62df51c2921a0be6a",
+        "b07030aceb3889a9934fcf810d1ac7e9d8ccc504dfaa74f2cdeba03abed6bba1",
+        "d4ef03c41ed9587478cbd05fd01ab518479cefbceefc04d3adeb252b9a1a6a2a",
+        "0e6ef45c7fe62c45d11a448ba68c02a767c10dd458f84e61a67352a034bb1aa5",
+        "ddb2413b6d293c41e5b9bd3113cf4c68884a2d148aed9b852cb78727333a89fe",
+        "479c8bd9123b7eff26176acc10dc179a29fcc5c0e9294a03daff7c0a75ee4001",
+        "007491cb234e424978285e249fea06c4828f0d0ccb7bb5bc8a192f1861939081",
+        "39a45c3b4abc774b1a14ade1234c0461f1ab7e37d0e31c05212589480f1ee791",
+        "866c9d82b87750441d01bb0ddff3299b3da18f5e72fde4f168d8b54a08c64795",
+        "8971fcc166e3420d736cedb8264c05bdb1af75abfcf603f104b38da8f9d9114f"
+      ]
+    },
+    {
+      "seed": "cg-campaign-5",
+      "identicalRerun": true,
+      "finalHash": "449b6a024b4a7648e7544b656b6003a824be1c7cb45fbafab928f13d16d2033e",
+      "rejections": 0,
+      "settlements": [
+        {
+          "id": 7,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 8,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 9,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 10,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 11,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 12,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        }
+      ],
+      "hashes": [
+        "740d431b83a3590290930c5976968c61538298ae66fb6b057b6dc724d575a744",
+        "c7c56dde75e768b6612b287514e06ca21f88e6e6be34f9514eb10d155a320768",
+        "39884405059313e48b77dbaefc53f98de5e54e70da82c625b2ca49b4c1259b17",
+        "7f704fb8c1416c36241857cccc60cd8065937f283edc0821d4e5ad5106b9c25a",
+        "fbc71e41e1eeb014dcf441db97fb0f08e389b4965ff348e9505b6c1443abb640",
+        "26db6d858b60f7598f673794c00b39afd6b5c9b6ac261deb15758aad3e788908",
+        "b32b8ceb4f5bec1f2da67dd8ef7f1e50a61f96785b8232cd3fd1f81fc74d7cd5",
+        "d0144e4f579008cbc036fa1110142d317d817f3a4348852c34c087ed3bef8a95",
+        "a7d1330b8919a2a989bfc859d0a79467d73ccd444fbafcab90d8b80b4ca3767c",
+        "3b0c810643a24480c044fb0aafbbeeb37a3dec8c62b4506b6e5a3ffd4dbf70cc",
+        "5d388ab48acac1349008a5269f1d1f556f2a45ed0ff5b1e3e803469e9002330d",
+        "4859577a009fe5e9325094865feddf20e11aaae3d100d5b1e57d2f8fe60ba7f7",
+        "244f7b548b42a5b57ecaa272c280edd14ff4e9e859e077f72170c63bd86264d7",
+        "dbe9987bcbbdff0e03e91dba9fb8261773b0301987efa55955832d9d44eae0a7",
+        "3200c19ca777fd2d723b5070a0b9ae699c5978152e68d88636e7eed32c4e0eb5",
+        "b642fe4a753fad73062e62aa3465d746cf9360802131a7440b2235e77957002c",
+        "5af11be030734a261eff28b7317a06f659b6b083dc83889c27cd731f54c526b4",
+        "095d322cdf036c4680aa26c6325c4d964adaf5cfc3f11b855787ae9bf1c04a41",
+        "ed78841aea0bbff8dfe6e4a8105801f46acee27276e882b059ce51813bc1ac53",
+        "b005c90bea3cd9b42ceb63e949c0d93ec177b128bce49059e918be05dd1f25f1",
+        "ae1c9f80505f472315f717139b398cd3a714c727eed666a97577b1cb4bc9552b",
+        "b04d1102ae8ea9f26a8a0d20cdf1ac2a6f060be701b10f9b3475a2497e55d681",
+        "2c90e32f0190ed4d3275bcedf51f5d7123bf2338027ca6bf713e38dee9149cde",
+        "d3b62f067349e03064f6a517d4134cf13a9dd6d15504bd0a16340db46ec286ae",
+        "2af03c4fafcda8d38cf73a222dedef04326fa633e157bbfdf6b0c3785a4cc542",
+        "ee0611976584be52194f637f51d5af63b22d63160564d1868bfedad93a3072b0",
+        "844d94c611f860eb0b5f8635d92a14d465394863389c907ebb274fe4cab31741",
+        "9641a479ebf354bf2298a163de2c5f2bd909c82448e2661917300359a3dd0b03",
+        "e513185dae85b3e8484ec2971d1860beb7debb194db234c29d887224013e8b25",
+        "59bf1dab99c362642d5d403c61ecfec21365dd14fa0a353e14e8fd69d04bdb51",
+        "449b6a024b4a7648e7544b656b6003a824be1c7cb45fbafab928f13d16d2033e"
+      ]
+    },
+    {
+      "seed": "cg-campaign-6",
+      "identicalRerun": true,
+      "finalHash": "ecea1ce34c7d24934d1f1c26a72101a5ce67eb0106950fb68b19ba5b244ac7a0",
+      "rejections": 0,
+      "settlements": [
+        {
+          "id": 7,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 8,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 9,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 10,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 11,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 12,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        }
+      ],
+      "hashes": [
+        "a1ae46f354e143e6638cea40073da4399dd5bbf612fedf80cc688e895fbd3d6e",
+        "9a8772e246fb59754e5cd9bf5cba5032b5c15f8367bd50fce7c2425ab6ff9743",
+        "086f4971e3a0c7c0890d3ecda9e78fef8d8ff1984677997c4a90e01a219eff5c",
+        "9fc836cc0297dd68ad6c7a05466d5727693ecbc8b5f4a7c0c292b2df0ecdc359",
+        "d78577e1dc835c97751597d8db2516668d85531491b4b676fc42469893430a27",
+        "d329428edba523d1168d5f8894c123b1b9ef92a26a29ec3a309172405b9532d7",
+        "dff4a5f06305bf71e537479d3a0399b1f63024a13a5768e3851558a0dee52706",
+        "143b6caa65cf33a94de3bcc74ac2591f941c9abb58b831742b239f7acfef3f4c",
+        "e4f4f25f6d1c30d0294ec7bd754577de03cbbca5092c8ccf2d238d3196e5d077",
+        "aacfc993d8bcc2213bdb0e8ab070668334ed3df1ea45bc55871845b8629f13eb",
+        "7216b5dbfaaaddf1b7452d981aacea684d1c8ef36a29c004668815950beb196f",
+        "719ac5ebbafcd817355469eacb4c7628a4647767d3ac503585d9dfdd12089fbe",
+        "85de956dadee96a774d6b9459c753df0e01e3b4e2b0f767a86c4bf346fd85fc9",
+        "a833c1274d7303b9e89021989980dfefd98e35c4343d5a8321ae6388f75985ac",
+        "0a11d6bc7dd0b5af4fd514f926f54ee30740e65c0d890c3e2874f6bc85bfafb2",
+        "a9f6cbd294e56170147f91954306f0e9dab6ddc47df5690a2daa63ae1f01ec6a",
+        "81652051a3579da40bab46f756bd66a3f60a30dc4e9bf646dae68c592892e415",
+        "59451340a6b976eaeae31e3f095e71d2ea7e14344b270deaba08681270da2ba2",
+        "d95cbe7b0f4c6a51367d3d942933955727b63f358c4b984f0fcc855b3577ca65",
+        "304dd61052f6050172ae90ffa557724e4692c48cf696e98d07c5b221a5ef1172",
+        "922ca2a9d2eb40bca4c8f3a43c19438108be60fecd1a0e7cd9751597fbc25f3f",
+        "b5f6a2c9b37272fb6104419d6b1864dd1de314e8596580837a6df879ba98feff",
+        "2ad77ab67f7d1b13f7313a655a0bab8a1fc90b40755ce11cb9db21552a760175",
+        "d2501263f88f166dcb344095bd07b33f5b1341334ffe1b9fff6ab46863aa6656",
+        "ffe1b68ae1cc30d91d2a9ae5b15bd58e0bcca43091235aa89efd33f72cbc022a",
+        "409d68bee1ac6e5a17105382ddb7598967b9081870e8d997c506da6d805b9fd4",
+        "fc0e1c09f09a2fc9660dff0eb88a698407197bfc4f65476ca5b0549e5c9ccb52",
+        "72b28853f5f8ccdc0ea15e6952b43ad7df7ed30a590c6bba14f6172ceb78fa3a",
+        "b1197c78bfb89b8cb8eeec60695ab05dd2ab1f6790288009ff26d9c0c29ad28f",
+        "901d2e8a319db0097a496141e38ca3d1874f43ef72c7880c064ab762f3f0144e",
+        "ecea1ce34c7d24934d1f1c26a72101a5ce67eb0106950fb68b19ba5b244ac7a0"
+      ]
+    },
+    {
+      "seed": "cg-campaign-7",
+      "identicalRerun": true,
+      "finalHash": "a0a0b23c06d2b0c5cf4401dda48045f5049cd73f63311f792913cb6e17cf27a2",
+      "rejections": 0,
+      "settlements": [
+        {
+          "id": 7,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 8,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 9,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 10,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 11,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 12,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 3
+        }
+      ],
+      "hashes": [
+        "9d8f840c6247e5e0af0cf86acaa261cee5bcaaff0ae921393bef87dc98926726",
+        "7dd8f0080882b40064b33cc051d6cd8888e16186ba1310c1545b63b2c21e9e17",
+        "3aa81cd37133556561e855557ec90427e7250962d12b148bf9f199bddcb08148",
+        "d98ef420dbf3fe29bb6a04029df9d5788990b61e7d56d67eeb2131ede19e6a2f",
+        "ec9cd91ee99affaf756bfc5c8923997e519fe5c5c83de654c86378e4c6c8a420",
+        "b95d7a79fdc978252a222f257c6903a9cafcaa803aec276c9962e433594ea3a4",
+        "40a689ac634eeedac91bc689f829b3bd8000643eda86f840f80ec163de947a0d",
+        "d021982476acedc36cc57eb59295a97d66bd85740bf3529b56f216026fed9b57",
+        "6c9fe0f72945f24aed645d5b513bc4791b68c722fe7be1310933a9a6d5afde70",
+        "1d4eed320a902eb387939f177ec8db1ac0caeace1973f86f67b542e3e06bcb54",
+        "aa2068a32155902ad258e788e9eb4db7148c5f23dba21562117cf7b99b95f2cd",
+        "1eff815961a5a756058ed8ac5431c1308a0cf322acf5bfc3926882540748bf20",
+        "00325a009f3322de7b32fb1a285364a39613e485c92d58909c7708ceeb588c4d",
+        "70608071f5d41aca651651a5cd44d0f504e0d2e8d22c50a8d990efca0c994c86",
+        "74d8ae235d19963151b085b9d62729b81b83660970a8fdf08deb7b0a8d7da164",
+        "f910a93085e610d7025d987fa66d5214297107dca14c4c665ae171c48864dd60",
+        "c7c3c47ad06255f3ec52e4c5604d5e26209253e39ed35e2668d853eba92653ef",
+        "7af140810e6b579c5c8b68322847517d6949795453457523bdbb00cdd1fd11d1",
+        "d98d519b3bb2584e92cca3452fcb3a5320a8c9f7af7783278a9e10a99efbf94d",
+        "5c180c4aadcb2afc455093b2db4c51bf238a70403ee3fde33e715801aaa85469",
+        "05fdda4c58615db45e9449cf441e79ebd1deed3fd0669b804d557c966957366c",
+        "ab70b81d80180d7986987b59ccffb62810eff1bfd7948521568182491638fa9a",
+        "e37165ca7d529fff0074b94abcb09096879cc7f944e45d03187650d212164c18",
+        "d581341f8a45a3524f382ea45a74ab34f5c936897f659f93ae53acd772063c58",
+        "50ecf91177e1e55000e21e3945b0eaf0bdcd7724a2a5c5a49469a1b22879e842",
+        "90d8cb67f292e53b100c60185585b454388e27064fc5bb72f535deaeaa663a6e",
+        "ed15828c747aa42ced11383dc9986f8de8fd1443a5a8e6309cd89f4ac5c11980",
+        "b77d3bdd6a7c8dda0e3de3ab921a70c42be4783a3ce697bbe732d4fc28406650",
+        "e0e5dd78e5d51e7baf780da44f4c779a5f28518e9df564d23c275924dca873de",
+        "85e2ac41317faf9f0ce2204e2682dc11791d6dfd76975f415f6bc18afde8f021",
+        "a0a0b23c06d2b0c5cf4401dda48045f5049cd73f63311f792913cb6e17cf27a2"
+      ]
+    },
+    {
+      "seed": "cg-campaign-8",
+      "identicalRerun": true,
+      "finalHash": "ae6703c3e3a34bb987bcd533fae1beb573e96b6c18ebc44276f274fc3ffe977b",
+      "rejections": 0,
+      "settlements": [
+        {
+          "id": 7,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 8,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 9,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 10,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 11,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 12,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        }
+      ],
+      "hashes": [
+        "b4db7e5720347a1ccf88e43daa53359e0ca56060e6a4a06f6d67cd3e9a0ee2ca",
+        "011d674c0da893a1435e7c7e89d9bb6c6ef137f21f2625bfbd07fb2f8ab3f3ae",
+        "367a6288a0b5338529b5a35954512b170ba190fa07d167611836b092c66a8747",
+        "66adc7eb4d710752622ca497304780e44ec7274288809468b314072b2a550886",
+        "cd9977d66635769e17f78a884cfb7716451791c984fb5bbd189a70f662bbd4a8",
+        "b41384c1a3c45983bc0c8830ccf3268363d98b62b92dc2f9374b5955db21c811",
+        "6ef60836db803cec83cfcb70df4407c689c7b6ee60bd6c15307d32428c9365c5",
+        "2b647914f22132c5ce8dc1c09c313a3f04c3bd50ddb559685d1b01e12c362ea2",
+        "9b421d9757a637a478db9c8b9229bc661ce9e8c556e3c845f988609b3888aced",
+        "daa70046da18aa871fdf535afe94d51d6669a9554b16c166e80aa72ce04b1849",
+        "b18274db1fd556548636b7fa228b15e69cecac88b95232618ff3427776aaa23f",
+        "f4c3c1450ba4227507778908e4fbeb6f87c4f3a42f4ea062479c04b7b01e6f9d",
+        "a9a44011394873a7d5e08c3519d8cf775d07405f4fd2d99e9a1f182689f32369",
+        "62bbc7fb3e7eabb3eed5b65486f00a5ade26b96979ad9473f27f94d17baad3c4",
+        "cef8e4e4b81d454e3a5a581128db447e47435eb0bebe4d5599795735e3048074",
+        "cfc58d681b0cd21163f27f7e0ed46687b86328ef7622143d49205a9aa66e4eaf",
+        "b02f76fa3fea09af8e8de03af6947a6e3d6da62fc66bb1f36d9481c25fe2c42f",
+        "09f2709ac0dee6f15bf746b5e6622f7bd05f6df72bb55bcce201d5a676b0b265",
+        "1069d5579f9f5b1ab2eddf8fdcc905946e7492180b83682e3fae27fabde208a2",
+        "1b53a9af75972f225357fbe85242221e7938619e11613fd24114dfb6f49ee244",
+        "0d1d442bcf0a075db7b047ea70e6105503682bebc9eb59d18a7d43dc84a3c909",
+        "df8cf2d49a15c6780bec029e780f7c9682579552cc1a7a35c10978a1a4d739fe",
+        "80f29b44e591b20bf9457418ea0776a3f24930040752ba89faa7679671126a2e",
+        "9d7bdbf9c763a5c491a893566ffb98a4e67ec41246a12ae8b1c3ae3764b999b7",
+        "74a24b44a1484898f934ead00daa442f65bf8582f1552bf047d8ef721ae6f20e",
+        "2853ae7dbe2295940bb33ec11c863051db41aed91b532398d48803088c31484c",
+        "6053c2d811bdba5aed8dfa021a3a03e8fbc8cb40fea55a3902e4b7c7a3bc9ff6",
+        "48a943080fe810917609d8a7bb3b31af13e847f8356c69afb2ea2e53dcd3b0be",
+        "167929dbd38ef63e2bb3076145a746a96ceeb2a06b620be9b5887a2d14d68663",
+        "811a6ba57d3d357d3504e7e0a74fd416702e47040916a7325a5cef3b642a63d0",
+        "ae6703c3e3a34bb987bcd533fae1beb573e96b6c18ebc44276f274fc3ffe977b"
+      ]
+    },
+    {
+      "seed": "cg-campaign-9",
+      "identicalRerun": true,
+      "finalHash": "4df7114975419b4eecc12d7e139272e6f1e2a07b7712c507641eb8f796cb89ab",
+      "rejections": 0,
+      "settlements": [
+        {
+          "id": 7,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 8,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 9,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 10,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 11,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 12,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        }
+      ],
+      "hashes": [
+        "686d10d2c8f6afaae7ed6018cb8569eb3cfd53901252e50d06c7e778666faed4",
+        "8466cf6208ce83c94d8b383de7ffb261fd19981bccc981d9866de0c186175ee0",
+        "e0136edd2671ddf8f792ee56a3b58d8bdc20717f9867e3ec83cffb73fdd93a33",
+        "4a24162078732293bcb50e45101b97d94d46c71e97ac9b1b40b9271b6329b9c3",
+        "e2f9009166f6218b77a52e02a795c793fb4431f98d112d696f35944ec7b717ac",
+        "9cdc92dad57c55f9d7f09f45a6004c3c8dd5dd39d9811746e1286daf8d05847e",
+        "daec6f8c8e08fdd2cc8240485f86beefaab3a60cbc29d69727b942f8e30e8b7c",
+        "8bbcf2128d22fbde31f0c6f2067a95bf61943a0910df10308336cb56f021c3cc",
+        "e10a30cfc7d9b980e05227b0298d1a7b9e493f8554d61719ed993249f27c1cce",
+        "c270d2505b0a3ea868c25e8256d39575b35a2ada7ea14760e1537ea76f6af26a",
+        "b85868bab1c5197fc2c190bece43d628b42feaaedc675f62f82016c45cc540b8",
+        "991b33247f00ea1c7cc4442ff7589565903f78ed873430718cd489999a0a8209",
+        "39c6288a5e09a2a1c5edba2f6b889f7a92dda90ffe419c620b028b743eb2851a",
+        "bef10cfd613938bf150bb53ecd87ec944d742670614fa77f8d06b221bbc4fe3a",
+        "edf4d39c86601cb5f0af183b07dfe118fabc85d10ace0a9c9e05a4ca61ccfcce",
+        "57d8af94d55599012431b3c7614a2ff85a7b91dd1e90a8520667aff192b72f05",
+        "dcf45c38a0784db9e2b6a55f72adb77a449cdc6672e5e38d00c4acb9d4eddfe1",
+        "fc1fff1ca6c7a8c013e6626656e32d880929765b705ea0ae1ac395af06d8afc2",
+        "f199f3345076843009c0567334d8195f1747eca9e4e17f210a38e7b19d2cff55",
+        "1d11a00ecaa29451b3e7f9b415ea64b7d844196ac4234da1a0aff486a6a21835",
+        "4513b36726b62ec24d2e553c91efe6de33d37ba3776ee05309375253a33f158c",
+        "22fc73729ca524dcca4194269953514ebb0cdb69519dbd80579f4aadab6744d9",
+        "705c99eb9b110fdc9570a38389b024c8ed3b88275d655be2bcd7aeee9f2b3669",
+        "c8ec2bdc8b76be4c09c9c8e9784723cb5b9e861c181253c5529fbc23773d663c",
+        "83c4d15865c30afcbdf2eeffd449d6ad5afe1fe34fb6f1f1ef383e82066dad18",
+        "a400020e2a05f4c77d2fefb4470292878ce4fef512261bdea50d4e8cad661bfa",
+        "dff13c6c614f21acb009efd2471ac30b6b1d25f2e314894e8441e4b3d35796f8",
+        "9db12da1b828084408f96f67770c71e0dbfc8b2c5dc9f9b8272d250c46f952ca",
+        "bab9fc51efcb2fe30c571256f312879177a601e71033d6739205270eae78cb5e",
+        "e6507dce514cd84264e8e4d59f7b24b7c8c61956798b6ea41f7d71e180f1931e",
+        "4df7114975419b4eecc12d7e139272e6f1e2a07b7712c507641eb8f796cb89ab"
+      ]
+    },
+    {
+      "seed": "cg-campaign-10",
+      "identicalRerun": true,
+      "finalHash": "9a326e352a170f3ef96f1e74482df04f7db8f871fd9d3f59319058ff5004a7ea",
+      "rejections": 0,
+      "settlements": [
+        {
+          "id": 7,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 8,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 9,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 10,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 11,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 12,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        }
+      ],
+      "hashes": [
+        "4e1d4d61a5dbe407bbc20981a7c3fcfcce18758c137b4544444ddf1103c3d9ca",
+        "2e38597c251545f979945a3269bfe67454074d08289c61bd5c81b2cff5cdf3a9",
+        "3e18ac660df45baf96cf4215817d41f8cee2f6df63038278bc6b0a73fa9e31b2",
+        "cef67222443b9924bc7c8d5fc70aee2c5f8333830444151ad7a200281c679eff",
+        "09190ff0c745bcd859879a5145b8746e8f66effbc8f6844d6e040bb142b52c8b",
+        "15fecf1f252083dcbcee4259989010c26ffad00afff59ead13ad822ff92060c9",
+        "29361f64359d0a34df2ca03697cfa942cb5b3cf2965377d9298cbe0f527dea2d",
+        "bf9b0b523383784c862f80afcbcaf14dc9234de26fdd35eef48222b04ebd6bb1",
+        "283052c9188bca63da1fda02a076f827a2348a4780ee2c192222dbb8e25741c4",
+        "5c657b24c047ea87d058cf75846435fd2eb4040e26efdc527483056972e422e7",
+        "edd8715c2b12455ceb3e49b2d1cda8287b975936573710513689f299c4f8daa8",
+        "97d4d4dd3668aa0bd078facad99ad805ed37efb3267a30a218d0a1b985a6cab8",
+        "8cfdae580918c8a9edf096251fb093d9a32ab0953b4acdb6240f9e917fd80b03",
+        "0a54664b9d7b59f7a533ad6fd351187736efd820508b8b4123040c5420ebfcff",
+        "683c0209525846dd07ec84171d0d9e642ea8adf37374321f3e1e1eff1ad7eb7f",
+        "3894f16c26f9aa821f44f40e9daad37eebf47a08747a5660f9f40ff124706d59",
+        "92f226a48e25a900f46e50ee77b7c9ee9cf2f1887167a61a9daf8201de9748d4",
+        "358cb32ea686d1f9cb23ff626e96df330e3478638232f4002f10507cbd98fadf",
+        "0d19f23b054e294288f8afd16a43cf4ea6edfba9ca70af01936ae0d663105310",
+        "4c09ed4eb893f9c001d971f245b1fb8803c5309bd1caaf39296597357751c492",
+        "e8b612a5068fbb41b0135f159310eebe3597bd1be6e14c309e280468261960e7",
+        "080df3ffcd816fcc98c75ffe852f6e64c33c34b234017519f7c25a6c7f64f255",
+        "b99b364b2de09d244b42ebd472d21ef4bb503a4c22632d61103a48f0fd17a5b3",
+        "5d1063376686613ddf496d370ca7b7a6d74c35c29f14df98d45f3bc9b616516a",
+        "aaa82e7399437fdc2a4c7d11b1bfb9128c5305b40bb0970e43e96786eaf9d498",
+        "e4174fe99d1a4c539c9b9c77abe2539e1321199f1ec666f3812fd091c7a6c2d7",
+        "44e7c9b13ef293e911086f8342353c8dd11c77c454b1f02296e075b619924485",
+        "10364e7c1dd6399c80ab96c83c8fa1370402a1388da7b1510c05bc87279e684b",
+        "1be18855fb11d8e71840c7e0b5faf5f8841c0590d5ed16cb74b3f832a396907b",
+        "bba1dec67e7b396e80a1529f3995f9c970cd1aa979a5a322e23824c659a1d6fb",
+        "9a326e352a170f3ef96f1e74482df04f7db8f871fd9d3f59319058ff5004a7ea"
+      ]
+    },
+    {
+      "seed": "cg-campaign-11",
+      "identicalRerun": true,
+      "finalHash": "eafcab8b4257901aaec97c4edbee3087eeafe2cea9b3c11926232ea1381bfc92",
+      "rejections": 0,
+      "settlements": [
+        {
+          "id": 7,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 8,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 9,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 10,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 11,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 12,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        }
+      ],
+      "hashes": [
+        "7343186c192f901d634d95b570e6df77ee1ca79e558d87485c0e14bd35330823",
+        "36cd4c26094bd9d93cfe78a7241c121b07eb9ae591ef5779cf9762dcbd8040df",
+        "6631f80a34409beb288e35bbfe1c1710a12a7af6b83268e392aef18ac815d864",
+        "ecbb7b4f237474d685d3267f5e4f99035f59ee29b1b6b1f9054c6466641855bc",
+        "bbd4706e7141e48a3f7022e70c12fcdaa8b388cbd8fd866128810a275cc7a04e",
+        "7ec051cdf8e4fdff0353d1e0a84f211c0c4035daeb1b80881b7f09e4c547a599",
+        "e5480de607876d382a139ce6eea08b9bc3e3aa47876550a813a941d5bc8a1779",
+        "69257b931a7a5862fe5cfa43f47ba17d9832daff2b301109179bbf867c494cde",
+        "ec604c4b3d1319825d060ccb8140d699b9b2df82f3563cec4a2dbbf70aea5d2a",
+        "5b860615dad9f7661ca45766e4adcf7f18c82efc665a6aef861de6bef71642ae",
+        "9ff27c6e5f828c7eba9a2a6ca72a34403bd97820043d6b6865d3606dba4fb755",
+        "666cdfafb9123f17f272b2fa76ab958c29cb3bbc168c79a3ee8332a528483b3b",
+        "c4aab690abf8ee18fc1ea9728c9de8eb0d5e83111456cbc924fb6d27a5096b19",
+        "0cc44aa2eba8db4debefefe581be5cb2d9cfd60d611c9de9fe7b6a4139bf4d95",
+        "e28baf4d6e7896a1e5b0de941dc00c8a8a125a7793da3cf2fa098728c2fc65a8",
+        "f48645e722b8067f6d15b2e19b8b64091652479a7206480e35e446903bb5b64e",
+        "bb7ca8b59e90a842b636b35e467e3431de4b6598607b62d4721119a197ec23a5",
+        "2e2ad1f8a7a6b716bb2642acfd4d16d102b831cdd52cddf4612c5c8d9aef84de",
+        "1b5e4138a18c6c1347ab74ae7208ae61309b9ca648c44a466f4cce3aba9bdbc0",
+        "28327545247f4383342951ebf4a59abf4df0c98f13b1ccedecafaecbdf88d676",
+        "a3875a6052b0f0de34ae0d62b76745327c174492e7ba09d0de78957fca8742a1",
+        "5825107855ac98b46199db9191ce5fd252eefa3e7ed9762e13a121a2c5c3a20d",
+        "2291bcf49929985c8235b7198b6a963796a36e641f6034e04e1ac0f9599802b5",
+        "220aeaceab148161ff04f5bf2463c77fa4cc4bb0e13bbf56ef6595eb2aeb38be",
+        "7c37ec7ec82ad6dde6b2c87d0653664ca125e13650aee6fed65711acebe34fa4",
+        "8ebc75aa0ba1014c20cf84f1de8d872b97afd3066a8ba909e70b27c757856c0a",
+        "9aa106022f3a2fbae778b7eba95e33a32c5353b29faeb4ec19b73c5d879ec842",
+        "0b359f2a67d2991c7e6639a24107ef354b0679156244eba7188039727cb762a9",
+        "ca4faddbc2b495577a2a59bd349a2f531b1f944829b381bbb01a63eef2fe5ddd",
+        "6de7ce3a6adc4241c2d30a18a5b692c4fe628ef0de1b53b10ad1e5e506aaa58a",
+        "eafcab8b4257901aaec97c4edbee3087eeafe2cea9b3c11926232ea1381bfc92"
+      ]
+    },
+    {
+      "seed": "cg-campaign-12",
+      "identicalRerun": true,
+      "finalHash": "c254ea92fa1315505b299fcfaa62f796b6e4585ae8b32490bf6196c44a0ef7a3",
+      "rejections": 0,
+      "settlements": [
+        {
+          "id": 7,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 8,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 9,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 10,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 11,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 12,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        }
+      ],
+      "hashes": [
+        "bf66c4f284d81b5cc68164ebb2c02d6b18a783a53a9107e032ed1814069cae04",
+        "0a74a2a7c60723f08778b7d15264ec086a0ece90147b3f0b40c26dfa24afe7a6",
+        "ee92cc78474b29da60c58a5c541aef6db38c61c2078fd12602167809502a3e41",
+        "b043e3a8ed5274ea4e64adb773b1e795f19a9ba62d8bc0e0ddd05c407a0e22db",
+        "91ff42f912802d99716fca22f7573ecd0b123c631370d7d34eddb70f76845e48",
+        "9475efd786653cd18df770725315d8e1f949e9a72319629cd744207488fd4dbe",
+        "09b135521bce548c4395ee6013f02f7f4623ce70bb3e98f0d2847c81bd0180a7",
+        "2a33af047f7e3b170e1b8e8bf30c1dfde71f11c76a649772b153645fd0d3f4e7",
+        "b7fdd468e1c7cd0d8ade51fc126b5a9ab4564640c827e6a496d4e89814d71dfb",
+        "ecfc402cc20331157d97c91b544abfa2d1e0134b1d44f7fa000a6bbea82a062d",
+        "70c70f3a54d69dcefa8f435b10c8433c445284aaf16621069b6ae2e1ec8e02af",
+        "160fff40888e181015eb329512d7da0e96f949fab8c48e0032498b71953ead53",
+        "6f5110af84f0150af110cff01c3ca94451ea01d97eb7affaf1a1b07e79698724",
+        "a9263299722d78fc744f35d9753947bd17375e6f48be29d142f7ff7c9b3454d9",
+        "a683e0b1d0dfeb9a71be30b705816917987b0f1d3ef381af6f69cb4c8686b432",
+        "0fa911eef4844ab4ce25337a0b977bc92e4b628dfd207e350062f5dad3c4000b",
+        "a8dfb9d569f61a1df1975a0fc261e92f4c58647ffe7929fec4de38504e69ba6b",
+        "d70411ebe966247655f396729f722a0466bf57474a193e9ec2fa89566c213ae6",
+        "7ed2582f1ee7e40f2c99f60dbc6d360ad860af2898b826a09c2e8911ed184f87",
+        "be0c67db08fa07d3275b085642493b812e6afb1365750ceaf3b07bd50ef88b95",
+        "ea9b23a818eb956faa23553d1a3455e2c23e38f72cf9c78e26f5838dc0783b90",
+        "72cdfe867b816205a44a73115a6d8471418109103d2e42e950e8d76449a455b0",
+        "d1dc24514dea75a4029e8f2f397bbb9655e272e2d36cad7106cc625250dbb014",
+        "b8b02c368cf8c9f7c6ba16e596ae2f44f64ddd1c7baf54bd659eb119f0c45a8b",
+        "7459ce2817a9895607d2193eabdce0d51785ba2c25450f56275a4fff73819e8d",
+        "e9bd16626bb96fd3af384e0614745eec2f117f15d6490523807cd0ff1a6a891a",
+        "385ceedf1c93207e1ffaf2b7abc83ab1dba2b106aaa468f56d48fbf59fbe5368",
+        "e6e6ce70277a556b3b991517a8fe04d97910314e97029aa27b37ee25df6d61e2",
+        "e3f092935467354cce7065fd6f8775948809361d6f9cf4bc92950527e317fdb4",
+        "6eb18a7ff897b73525bb85b6a9bbfbdd8850ffeb63781cf375d22a50a147e0bd",
+        "c254ea92fa1315505b299fcfaa62f796b6e4585ae8b32490bf6196c44a0ef7a3"
+      ]
+    },
+    {
+      "seed": "cg-campaign-13",
+      "identicalRerun": true,
+      "finalHash": "93af8443d954277ddf2997d0fa23f66ef22351b054ce04d95a0f2e5dc11267f8",
+      "rejections": 0,
+      "settlements": [
+        {
+          "id": 7,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 8,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 9,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 10,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 11,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 12,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        }
+      ],
+      "hashes": [
+        "92dd5f7ee45a6efd5a67448881aeec079d30420399a18fc044f01bf18d6beb0a",
+        "c03422ce0ce0595a6e0f98d988b51b7f5d52f2f58b515422f40ff3dd031ed420",
+        "13acdfce0f48cf3f36a27bf6810806903fba1ca7cbde90e3daccde92469c9a5b",
+        "26e143e92ce485f22b6a80a58a48c80e23e95339b27b0b348eed9f4141dc1b24",
+        "5005a23a9afe90e95f595064a01e0ccbdd5ed73996c92aac02dbbe6b78049823",
+        "1c96928d0d98c90350966da1b146ff7d5ffd175adddd81ae86f73c480950ed04",
+        "ff8a7ebf4f7e104a5cf73efb9487d4326937a3739f4e9ad9e322e770373b6d50",
+        "76a3ad0bbce398073acdc904a8ddb950e21256fb95a48e11252c40cd00ddd0dd",
+        "ce0a3f62beb5d627160589db366d9ebe6d43132d05284f09a29e27f6ff79986d",
+        "fcda1b1b7619fdedb28668535d9ddfa2279c90a1b24c0d59e93f4f10e880fd8b",
+        "ba3ab834ff00176884adda4d97a1ed104d548c580e71d2c9cfe97a11bfcbd065",
+        "15731eb9833f337e206b7e5bc6bacf7730c8c3353a88ee4d008ec900be7b6bd3",
+        "b824c9632fd2252ff9f87e81312c70336a0b59a1adafc12ff6585f9c99f243f0",
+        "3fc18bd64d6b1e94bc2d40db9120f9f9a1bf48dc651fd626103d57869fea8e6d",
+        "46705bce3db856e486042395c44d3e4d840a35532958ba8c67b70e04b9f65b0d",
+        "6d45079a7df1da2a90d1343b33862cd727521cc2354ba4618bf6b07db4e42027",
+        "cecfc71dbae039cd66d3368701fc50327c9652e152f1ac042adc736b63eed02f",
+        "cbeee7211d5705fbbb592b5d6cf016d282f5a141f36f27d96bd49cb1d77828dc",
+        "8c8c1571abe81de87d773142e23b4c99189df1bf0493deed8ed294106a0603b6",
+        "2c4eff28d6842356d5c106dbb9685ce6ba5d84df18feb766b5ccf2c28242c89a",
+        "baba2e8c10f767cb676a4bae49154e04aa40448079a64b3b2ca7e3c28b72dc97",
+        "d762ee46116e0e9a502127d3a11354855c54220fe59a77162896e1946aacca50",
+        "7426a05a69a25581acf99e819dc8e12c503cf1037fc399dab94b0219206770c9",
+        "41d468876e7347ae48aed73eca7126816da66714db570b859b79e88c3452f07b",
+        "6f55809804ec0995ae8c7faea0c32cbe747e3dc0124b033095c39638c39999c3",
+        "1ed10a61a1cce663bd801b329c338dd5cd54819bbf01a3fdf2b47a15c0b692d7",
+        "01909377b488836e3e55a008242731627396dd6536c17fffda53c5ad7105ce01",
+        "e91ddc0816f1d594de55846d1dfc6143747ed11dd6e8a88640d1c0d42fb16008",
+        "59a598bc0e3ed0554b22bc00af9859c86dcda4cf7fe65b82dce72d1e86ca4493",
+        "7f0af408673f6c185b844beedad12895020f3c385cd96314ce7e3c52108b3866",
+        "93af8443d954277ddf2997d0fa23f66ef22351b054ce04d95a0f2e5dc11267f8"
+      ]
+    },
+    {
+      "seed": "cg-campaign-14",
+      "identicalRerun": true,
+      "finalHash": "45912b1756fa3b932781ead26d8aa783d93721b40aec1702373f4da6ab955633",
+      "rejections": 0,
+      "settlements": [
+        {
+          "id": 7,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 8,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 9,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 10,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 11,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 12,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        }
+      ],
+      "hashes": [
+        "db77fdd5ed74e7f9ea0f1b2d14210d49e52d8f561e8ee5007d37977e75266c76",
+        "e84ce33964d2d3910dec9fd6ae070cea55e99ed86ccc470080ead233ad486918",
+        "962d7213e902bcb2a0ca20499854dd6244a033c5d440b5af6e949682433a8fca",
+        "ff741da2205ae50c42f094e07b7d8f3756b79c5064a611a0013756eefc093ea5",
+        "3951e55970c529b1b8d62a90f25375249948d566b2babe06532cd06e0d91b02c",
+        "1d91b8070a248f1734e7b0c24651435c695b56aa5921f9712491080c0734091f",
+        "1f112fdf15a1a63b764af63ef636657140a4b26189a22bccc2dd2f8c54468369",
+        "802a435082936374359fd4f45eb00c8c5056e57709af06c7c15b25b5481cf726",
+        "84268f839a29d5f7119567cb5d91629ddf29f0ac08abe8595231f4da307ff703",
+        "ef3b1a8113b2de2c597dc69837d76fc6b51151b1434f5be23b4fc6ed736c2297",
+        "bcf602f1f06786ca960ec85162674d449fab892264ed01337c60ada98c666dd9",
+        "24c0dbbf00ef5b564b77d9495bf94209be8178528aea213eff86a01ff5b9cf3d",
+        "53057db3e6b1196e6bc00f03a5bd051330fa51cb6d42b08b603ee4f605242f68",
+        "5c3a9c70040ec59a346a7457aca41c16295361b931cab78c664d92c9d7957a2a",
+        "468bc97ca1a6d03d214cdebdcacabcf8b662807232026e77d134fafcfe9b9d05",
+        "ffac9eec7491eef43315554037aa24e661e2ec5be740b7ff198fa2b5ff5b1f8b",
+        "927cfa64f7ee559cf0c9686dbbdcbad5ffed9bfae0ffca4cfe03a4d37e8f47d3",
+        "e7f9b88598e837cc88d49910352b3516418b14489c874d2e7587ee3539d85934",
+        "b917406206bf21b650118676f6f79a2e9e06a3e26179d0b65225b26216cb00a7",
+        "8b72c860b1de7e368a9429c3aa52d5c4f29594f6d74f461e411e9f671e17aa43",
+        "4c65232122fb4d6d1b82af9f5a93c3823e0b11f7a0bfcea6e5e2888930440b53",
+        "14e77f796b01ee1eea72a24fe921892d29c4c6c1918af9f3aad1ac2dd4fc3282",
+        "b7fd9d9a38563394620160d599f2e03f93c00033a3d92e3cc79b58809eea8365",
+        "c523fe4319455a9c9611a5a5868ae63836df5e78e1dd795bd75f3a5854d23103",
+        "de509207720865ab5490dd4a5051bd7a656dc158906d23f1d69ffa318390b649",
+        "c214dbffbde8c070ba671b5d356daf79819f2ee8c63347c9aeabab5128461a9c",
+        "52a42853b8d51da8d6f3620c551647549fb5b3116d64f7e0c7f75454b065d05a",
+        "f216e8762c01f22753f624afa5b544fe89cd3736d557078cb7279d5e2d73bf60",
+        "e6de9432924cc010d0993c3be22b5bffdae8eea5a0dd76734c2be8e3a6076bb6",
+        "a23a5061041ebd89675d5d049617b945bdb90eacc7b963b5e5b911e8aad69916",
+        "45912b1756fa3b932781ead26d8aa783d93721b40aec1702373f4da6ab955633"
+      ]
+    },
+    {
+      "seed": "cg-campaign-15",
+      "identicalRerun": true,
+      "finalHash": "484b07fc254b5b314369aad8fb4ae2bcbc3ef06b7afc9429f07d57cfba468b5e",
+      "rejections": 0,
+      "settlements": [
+        {
+          "id": 7,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 8,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 9,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 10,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 11,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 12,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        }
+      ],
+      "hashes": [
+        "503eda6f9b518fb20aec1b2b5c3b2f1791d6da321456430f6d76c7215147ba9c",
+        "e4dcc83fb4d7eae54d3dd21e267493c2b4adc6ed5111acefedc4d6512dad17b7",
+        "87cafa3a275afb341effee6c0cfe0bf12c1a73ea8de807398c51eff4fc96f938",
+        "ae60d0cf1574ba32d44c1936f9065fc577ff7d011584b7d5e448532bae0668d5",
+        "368c97f12cb3145ae14536ed773005faf3b26d6e762eac8e5bb06a213b64d169",
+        "614c0cad90a466e36e9bc4c1dc3a83a3bafd027d8e7488d850dca4a2226531d9",
+        "9648d322ea4d860278926af7a9efff1d69d00cdd49086c91b44fb355cae8de2e",
+        "1eca54267bab0720d8b5ddc44cc78f3eac998903e7f708202958de3caa218844",
+        "0ca30adc24eaa7300c3d4e66fe8194badd00fcf274e984b101bea9b0ec582553",
+        "dc89a68de6122da9318f15cd00cf8327429984c385d6361a37d4d38748a45e50",
+        "d8b87cd41de8b8c857396f19f2f38ec0321b2f11531068b4e3dc8edeb20d5a50",
+        "fc0d7df0e1340c1c61d353f172cd68e4aaaec25f8ce8f86c2092ad4c9081f82f",
+        "ddfda5e1252a972f99a769fb8df6d891e5841e21ceb87d070657c369fa204d99",
+        "d068e2c572045f467c58d5945c0369091af453738df726c97c3effa84a5e6bb0",
+        "80471cdeaa69780b4cf298c0fd6a0de60ef39d750e371fa7890ced897dfe1c9b",
+        "9380a85abd024d73bda27d2d05712337f809afc4710e3cc9e391612b7418d172",
+        "25218740ff527795406cde3462947d24d73f1be677adc42f43a882dc47d32266",
+        "592858f966c239d761fbff019b4104dd12811646838d1ec2de9c6e0ff436efc3",
+        "b7e9f1524c79846bdb445461f6c3ee0713c584392b109de83dc2fa39a02bad40",
+        "1c70ad9faa3edf7562b61a2740598c2f0172d4185ab583cc549e4c3c7ee12e9f",
+        "fa6d869cac04c4c715343e7368907e1bdc8d80a0e60f5708e533ced8aeaadd1e",
+        "ba5ac6db7fe3723e15709d1369645c92cc00853d056c1c2dd54151055f43d6e0",
+        "eb071365d82625bc4e5f5c014b16cc4dc7f7008c1a341b2bbed95f1172d55ccb",
+        "617adcd2f1d882ff532c3612367d680f28745570aeba5570fe5a8238bc6f555b",
+        "390d19272ef40e185d5e2181e0c7b2463076637f39dc5b7622b95867898170e3",
+        "fc24e899baa3d42f987b632c3aafacb43a6c86c1f964b75144a2b2f3b1ae6a96",
+        "d8d928745c992e7e91a48045503d97ab19c6a61e676d20e9775df913f0a58482",
+        "f3a38da76519b15600fe571ec5c359adaa2863ab449c1b499e1d45fc9417f072",
+        "2c35485eed3ed2a241b8807c7f68141224259d3ca6e53e2ee1e5740478b20a42",
+        "dc6530bd024f23eb6da3876d6d84caeed7ddc9b2a29c274be029b05ae0a70838",
+        "484b07fc254b5b314369aad8fb4ae2bcbc3ef06b7afc9429f07d57cfba468b5e"
+      ]
+    },
+    {
+      "seed": "cg-campaign-16",
+      "identicalRerun": true,
+      "finalHash": "8aef8dd6718d58051f582a7853d62b2b29b2389e4cb7019378ab47362f68260e",
+      "rejections": 0,
+      "settlements": [
+        {
+          "id": 7,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 8,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 9,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 10,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 11,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 12,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        }
+      ],
+      "hashes": [
+        "f60ed2113e94c031f20e51e1849a212186589ff898643939cfb61b07646b314c",
+        "9bbe96728106cfbbaeff15be8f42fc2e90346702c1f11e902297d1fadff502d3",
+        "7b2379e3fa637f35979228ba62cfa86bc40f6b6864aaac4dbc172be970f00d7a",
+        "bf83b7aa25913953b81e302cd5f677b747458be7dd4b2379cbfcfd8fb8d3b4a4",
+        "1b7f5f493bfa4a1f63f3001fe2d8c2d9aff708b743808c88100f81ef7771d2ce",
+        "142d8fc93380fcc5eb2c3b27152cda607c5fa3167295b97620efcb6c3afc5e30",
+        "74c80baab1bc920ea6a8cb63fcbc144fa97fe6569b539eca24df29c2c90cf39a",
+        "9911002e943080f3d2a1e60d1f5b74fb4802b790fe3d1adcc00720ab723c735a",
+        "ebcbc44a5f1c7a59a40b5c440b74dd40d68392559f0c39271241945bc7d9ba1c",
+        "3d88aa63cd6083a42e856b2b130d3fa2db57bd8db5d3d0a2532cb83a9dfbaf1d",
+        "cdc65442914d9e4ff4bde42dab48ac28e50f666508f383337589173d149c1c13",
+        "cce2ff663faefb89696bdf6a28eef28aa55b0da69669680848171410d33fdebd",
+        "5bac75948d68133bd4cd1594b7dc3bc8e04eadf463ae503d1467d360cb6ae052",
+        "a96daa8f575702cedf616198f40b80a8c8b894a9fc6888071d420ebe3cc2539d",
+        "94fc7422499972ce3c987dfdb768757c3c440a222a40b6d63aae9435d53baf00",
+        "161dbc833076540dea42020e02c66b1205c8bde4d6e94ab55e01a2fbc142f718",
+        "1eefb764e3507261f1215874cbb95790d53cfa9fd5dcd06c036c0a849b9600b6",
+        "4759ee22c90d43cd3950d444de663d14ba395480ecdc3f967dbab16af45aa71c",
+        "742aae54bada057971ef6477809152aeadcfa513b2bf7142d5512e78eb10f78b",
+        "315733ae43aa04c001b81300b4fcab533d9833bbb4641b3baed4e3c21b0425bf",
+        "c2d7266de8f9c4112feefb7f35f33c088054642fe06168147ca86f070db66ae5",
+        "778e33bb9521f49105d6306d18f23ab3b14d5a1196fd52393038ca4e41f722de",
+        "3a360079cee8f06239dcf5d1f14231aaeb395a0233070eee682172f6aae11910",
+        "6f1abd586adc39c288a7998b15ae3211d9a8985da80be5c98606a596ca90631b",
+        "7fc0a1465fe224116693dab0e2a2054c63f31024d582fecd965ad2fa1a520882",
+        "8da8503f5ffafdef57353171066056286e707235f8c0a6a1a6cf929b2cdd6e96",
+        "b70d704fb357269476b9a1f24143d5839e12106b5803e92f789a8f2d1382763a",
+        "f90fdefceaeda5f28b4dc132357a254af990a738ee1858b577ead3babcdac56f",
+        "8d95dfeae3b5394cf84c302bd12bb1377dca6fc0718eed5387f426ef5ec686bb",
+        "885295353d7ebdbdbd22bc3a3ad30f4710b9bc881a137f08a3a73318b60f7ddd",
+        "8aef8dd6718d58051f582a7853d62b2b29b2389e4cb7019378ab47362f68260e"
+      ]
+    },
+    {
+      "seed": "cg-campaign-17",
+      "identicalRerun": true,
+      "finalHash": "d67004fb3548a6d42af15e2e9ce6dbf746b6fba66621e30f6fb41deef59cc4d5",
+      "rejections": 0,
+      "settlements": [
+        {
+          "id": 7,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 8,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 9,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 10,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 11,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 12,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        }
+      ],
+      "hashes": [
+        "09c3f0e96d6edd2a6914cad47709c8375504ef9ca56be1bedb20b9ff9d5059db",
+        "0ed1144721544356d885310a5effdf751ea93e320eaed91f18750effa83ab573",
+        "4108ed02b1b6ffe8f6837a6e5db3065e6ab0371622aea36d0eb8989413f489a9",
+        "5696f811fe59c18fe84f229e01323cd31475b41c73c44722d32e7bb14513ffcd",
+        "f8b128abb5f06aa465790e63c3bc7b1295b556abab50104375b3cb58cd48bf29",
+        "9ef7f3ca58bbe20bdef88bae0cc8b3d8ef634f3680dc2c91d2ef3fb049d8d84e",
+        "a2d1bf5d9d7a89a60c660a993b2abe4b22623b94e73cae2ea966dbf3707d0b02",
+        "0352f071dc80322ef0da29dca406a4afa2270a20927004deda116a2042f8bbd2",
+        "2bbd34c7f45f0c616db2603dba9a795d443864169caa047c92e8fc99bc88970d",
+        "2276a101c313f96f12f72abbc6588a2cfa7160b1d8543962c2392907af212ead",
+        "1d4768b2c8c3c890cb8206c1f2123f80b00b5c803159d52a2142e4c595cd3b55",
+        "25343385aaec32bd68b4b140f34529d6bc50a65cdfe1cef8ef779ab53bf226dd",
+        "84915f1b659d5e0b688fe8df9e433631d4ddfd8cd413bd8e75d1714dfbfd51ef",
+        "f74757341b467f64dca35f633b70424701985dfd552f8e989435049f9e2e7584",
+        "8eb9290e026a7730f8cf2692620165a3500b83c05bddadfdae81721791ca6419",
+        "24f6200edaaadf272ffd0ca9b4bfcba0fd985b88591c39831b9ba31afe410f5a",
+        "f84a047ecf13608dded3066b9231ee7595dae6621e125fce7cd1fd262b541586",
+        "3b7a0b63ba13c97cbed879c181236656aea81e41c919d8819a96ee13f40de423",
+        "d37e64c4e9bd9f86d05668a677cc2a2f5e06c2fd2f75ebe24bf83d634fe436ab",
+        "dcbb6a78c463056c1192885aa859c6754e0163838f465df4fded9bff7e38c22d",
+        "72f0a65bd1e0abdc63e82e4a9c5dfdaf212d822aed961e68131dae72d4289df4",
+        "aa4b6f305b882a3198e08024f53768603f1ccb9c06c3a76561f3308601bb311b",
+        "a8c68dd0d0ee9a42d7eacbf4cd2ead8d7aa21135163cc2abd9f1cf087032617b",
+        "d7e53c85f972d969fb0590006bf58cbdb4b2440cd97bb9f7b3b220dceab55262",
+        "0b9a5e04345eac83a24a1e8a27488c506d98d90f97d0cbcc16f528878e9f7975",
+        "c0c57d4df628b95377b3d2f92313582a7102ff4383648df0a48b5ea5bf1d7bb4",
+        "d3a499616b6bc45d800e7172e3109301b2425287a8ec3a3342f84705ca19a4e4",
+        "321df206b1f1b347efaf8f768fe66b46b425e3f2662c37b539cfc55a8670abde",
+        "e2d32e4021a7cac135a202bd2e62977d66d4a89b356ef61b36b8ec79d6c3da29",
+        "51de96f607e2c54cbffd24c699a6cf97a711e45eedd261fe5dfb14dd26a21434",
+        "d67004fb3548a6d42af15e2e9ce6dbf746b6fba66621e30f6fb41deef59cc4d5"
+      ]
+    },
+    {
+      "seed": "cg-campaign-18",
+      "identicalRerun": true,
+      "finalHash": "8d582b3ef46d689c5db7300fd020367f939f65bd0041413e8af4ea90ca8c0054",
+      "rejections": 0,
+      "settlements": [
+        {
+          "id": 7,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 8,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 9,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 10,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 11,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 12,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        }
+      ],
+      "hashes": [
+        "160cc0c4c8111aab0acfc9b543ccb49ce364f8272c086648f87a3369f2b3b6eb",
+        "d5c3ec50b3b542c3fc433e175c862c69da6095928cacbf94579de99e29508bf5",
+        "0143146e5a994af4d20cf277a80a8c856bbf83746a52e8ad909b14e8a8138f28",
+        "d5e2d03cca0fb80972b08719214fa95496f5b79bc7969db897e1e7b228e30cf7",
+        "03c342573f915fea25d607d07d6d6e594aaa14735cd32c0494a382efd4980ad9",
+        "f6a172679be6b7e7bad27821592947004f8b16131704afbd00c39b517649d9ef",
+        "874c224110a46802ddd7cd91f6a78cddb35a024cdacf34c3e9c68b14267dd841",
+        "58816a748c919626c40d93350356fcc388b8c28410bf5fef72c3735eb4b7585f",
+        "60f95a374dc6e345bac490a6a0194a799605a9f823226c958b78b632226ee475",
+        "4f81735e44f183f7d828677b000d81505ae750dc4116b7235f4b10748c1f3f64",
+        "263cdeb4535506d6e7464f257564632c03a6f6c29723187331ecdf5aff31df07",
+        "85267b035cbb1b8c44a15c558db3456ba65147a6e5a2158328cf50d1e8b01e3e",
+        "5dd71c1fe56a1650ba82a1b560d4d61a076d80d834739c55a4a904c9a0f6a05a",
+        "9f19a4fb7beeed5087eb4260ee2c4b7b6387686494192afcc8866bcf08af33b6",
+        "0fdd8b816f1ca7d6e70db80ae7760aa5be7975b29305dedbeb0ba67021632fb4",
+        "32651f6669ec96dd8cbb4956fc0a6bd11c9ef4720e78408bc273e63cce5653eb",
+        "0314d099ef3741e07c53df9b92fafab510adef6a1b0a6b5af5496c4adfd65503",
+        "d3d8c0e17861562f5371a349311fd952184d572a29f6eebeb326438415ba15d7",
+        "3b87db5366fcf2e1a7aa38100203b5241ce9139959920bbf42315407160da1eb",
+        "ab8cb0a299e0d96a9a2daa68c1f7636211a80b6df97910ef55d1da241c55598b",
+        "c9238ee375ffd0280e5daed390c389c9fed381ba1ba0509992e33d9817f4e3d2",
+        "3ec0dfe6f8b5076cf40674ee513525d183aa1a0112d4c0d95573d670dc7d59fe",
+        "08124d46aac1cdd9edee6f6e34bf094708f0131a296f67d36145231494863f71",
+        "016e328229411757b8cab72c33b843715c58bac27dd69aeca0f16c526cb69c3b",
+        "d3466dc193220ec00105ec0693699f48b6b9029274e00841e1e6185bb8cdf9d3",
+        "cd7440887a89b6de0d2ab9803f9ae952b89c6460c6b162f052d47b7150d71394",
+        "ee24f8e06a51d9239132e7a30b1a2c808d0ebb0f788399b1826a74944803926c",
+        "49a527ea9fef5dbe31d018d4e2350f9214026f457c6854c307e2c184a9d9ed67",
+        "5b0048e505c0e41b45d6be765909adeacdb789039cda48a2686cc4464c0c1822",
+        "94b26f1f88bd72096fa55757e6afc340e5fc6e7803abdcfa919d59c1e4408021",
+        "8d582b3ef46d689c5db7300fd020367f939f65bd0041413e8af4ea90ca8c0054"
+      ]
+    },
+    {
+      "seed": "cg-campaign-19",
+      "identicalRerun": true,
+      "finalHash": "c681522af31786f9345f7fe69a0d841b02f447a94285c4c7cee84be1199ed522",
+      "rejections": 0,
+      "settlements": [
+        {
+          "id": 7,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 8,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 9,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 10,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 11,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 12,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        }
+      ],
+      "hashes": [
+        "97785385dda35fee10b3ac240804623d43e873eef05e7b46a660c63d198c51d5",
+        "33e8bf624750e46c11a82bb49e8ae36e9f8c252338914060c0da536b016d8d6d",
+        "2a7673be7d3bafff601ec571b48362e050772f70cd769d5f319d4a331c48cbd0",
+        "5d3fe99aa8483e7bf86a367ed7388c6ff926f7e7c7477d849c5dfc64027aec3f",
+        "55f1f1869cbc18edff73d644d666871ed2fb03518c459950cc431abddf4d1e0a",
+        "03a92859420a96bc581a1dd326c83c098620368f063c1d80b6f9c544c1a396ee",
+        "1793d617ed2c47651c7e544c1c320503c882f8c70bfe29cea3ef4cc990c5279e",
+        "2607f1139236503d5dd7eddb97d09a036e86f907289dafb8f279b87c7db08825",
+        "5bba4019de2faf099d8b62d6461acd2e53d55dfb0e9885009de7c13c721b8b1f",
+        "65b0bfe6b616e291db3c59998fd4d1e7743c58d6b71adf74ac7b0ce61e63367d",
+        "eb2a95cc2c0bbd138a0b0314edb79e620fc34f1bc7a04eb522f550d5c65621cb",
+        "0af5449e1ecf712f51119a993db66fff10585fee4a5c04193c13d3bfafe61b83",
+        "1fa3b498b8698f90cc8c5df7fb070aa752b839ca0f119177e387df47c7b853ca",
+        "0ff895df0b4cbbfb9600fff620af7372f990909a3f359345c385695c44ab3bed",
+        "0d81713274b8ffb31a9b4200b54177f77adf093188910994dc88dbc6a839e11e",
+        "a43c4c42e8b4b16833ccb8125f13cb794730efd300f425b2698924fc386f02d5",
+        "e7d404a29c1e9c794a329a14ae9b1b567b20337a5ee4e945528559f726697b2c",
+        "f3c9633cbf3e2be09e86881942e00ef68233e90dd227ac20dab00fe884f1636e",
+        "7a4dbd50eae433cbfa35c82eb381a312c9abedcbed34d84f4118d1bf4be244d7",
+        "79aa2e335fd7859807892e3dcdf7efd5bef92d065796c865855b753a30fbef60",
+        "063ee2981c28c05c452fe834159d37a65b6941e41ef6187a625f3e7b404bfb45",
+        "dcdef1aaa847a54139a38092082b6aa1da00050d866850520815ebc45af1855e",
+        "962b22306a8fbe087811aec8ebb20dd6cb11248dbce449b5c95f0e44e53f652c",
+        "8dd6517f481246adf8d29a3e6b961483cdfa6ff51f52e1a07ace944c06f1040a",
+        "e445593bae002059c4bcdbc9358513c1b87aa3bc568c72836e31a6c7ca0d17ba",
+        "9baacd94373d3bf9108d9ee061afde326da90000cd5187c90a25e571214a9fc5",
+        "54e60ea334c394d8abfccaa3f3fc97940c524491ba0e01725d5cd52b6865229f",
+        "698015df78afb2b30fc55ce3d7bb83e61c032c55cb62f15c06254238549be3b3",
+        "28b3ec6ae52c83504790ff0c6cf430e57220a63d92b323283c9a422363bcd902",
+        "6b9ec868612da844fb14a714cf36eaa602eaf43cdf97c3091e23928f8ade4026",
+        "c681522af31786f9345f7fe69a0d841b02f447a94285c4c7cee84be1199ed522"
+      ]
+    },
+    {
+      "seed": "cg-campaign-20",
+      "identicalRerun": true,
+      "finalHash": "22640555e3c278cb0042947c9ecab73a9ad1f00774922253b0569dcb312b9ecb",
+      "rejections": 0,
+      "settlements": [
+        {
+          "id": 7,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 8,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 9,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 10,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 11,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 12,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        }
+      ],
+      "hashes": [
+        "e06467cbc82bc99272c7691a56cb592cca918627e53d5acf7dd43ce7d62689ae",
+        "af28f59478713081ab597775874bcdeb695dc979d57d5a5cc356c3fb90933767",
+        "ee3c6387420dd9d6e345106f5ddff826aaf213b726464a72ec76d82673987707",
+        "298dfc4b00ba3c5985333d5675a7e33a2f5084a81cb3510a49544f81e13e21be",
+        "a6a9c4630118528b145aaba62b869044d4ef7bbf43bb29f2d4d7e96a162f736f",
+        "4a89d65271772925c13d862c1ed67a945f86a269ecad1a38ef465cfcb5d30089",
+        "ccf7ed7c2c1e0065883c86e8f3defff450ea9e8b2199fd058291684335af1506",
+        "aa5bb4b455a042735a5f337a53413359220d536b54e20ececd4535afb56e6a71",
+        "47b0a915616dfd3b5ea8422b578380aa55e5cdc6c5f1e56dad4c093de49bae98",
+        "494715a9430e62eea8dc908d1e41dec6c2cadc43f60e8d607e55c051fd2e4c51",
+        "1fe3b0ee2ce1f37b00179138d82e8a49991db79ad99ac72029779e3fcab48815",
+        "aa4f6498924bef5eb51ca66081162620d7e11918fc4d6aa2578aac54ed0275cd",
+        "e6365a8ac78995024495ed84a5d305a9416b1e53fdfcb82fc6076415272e64ee",
+        "ebed04a5f1ed7aca98db92a6571e04fdbbae56759d0e178a2156832bfc58990d",
+        "eb4682a74ca5f76aea16123e407910dc270ebbb3c36e70804ea8100c440056a2",
+        "206e1a07ad8ddc7e440dd7d74e55f4548f36ea2e61aea87bb21f83c041ee9918",
+        "bc216e940195bfe594873f09d13a1e67d4eb1d7aafd0b004c626003d6ca13eed",
+        "346b2a0c179393f790b47425e30e36766623b6d3c92350d4fae9efc4e0f85824",
+        "77eb1c43fe40b42c8d1f2371dcd6fc4f227ac751931beac72123dd64369eb0a3",
+        "7bf50790f301f01db9335c59d5e3359ff6be7a3f4cf8177d695cf7c1d9a31cb1",
+        "9feb5542b0734484a1a359ac00b76d6122b768fdf6fc47180190ec17d7c23b63",
+        "6a6b590c0f69e0b9e18d4ac474c0aac06bfab6557e8bedbb4c20a1c94ef2aaec",
+        "64600a09745fb8b62f9f67bde8183c24bbded031cfb83a5259ce244eb8b03a75",
+        "968d0b0001d5ecb77c73c552c60a9ec09b1c6ca86b6f86b5a3a0f24881ebe420",
+        "85d4ebf4783099845f355b726c7c541b312aa7f9e7392b679fb7e321f71586a3",
+        "e698b60628abfe8bb6c8e0e290ec682bd441d49ab6c909d4ed6a7c959b45fa25",
+        "8fc5fafcca5eed2dd2923f9808bc0c790ed64a433b4350a84ac106b0f61aadf8",
+        "4d545fc057e3719d34f3f4b11695f8e7982378600d427c62fd309cc101f953aa",
+        "f3e78e6547c9ef8e69a7cc4ce0165b7d8946b52e5bdd591329dbf17f6fb80f4f",
+        "d05e38a1d6c8a592987a79bfdc35a43faaf484c38b3a109d290119d3f928b757",
+        "22640555e3c278cb0042947c9ecab73a9ad1f00774922253b0569dcb312b9ecb"
+      ]
+    },
+    {
+      "seed": "cg-campaign-21",
+      "identicalRerun": true,
+      "finalHash": "0aa1f3693e7f3429a8e3963fa5bc033c96bb082acba02bf09e1222f19aeae804",
+      "rejections": 0,
+      "settlements": [
+        {
+          "id": 7,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 8,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 9,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 10,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 11,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 12,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        }
+      ],
+      "hashes": [
+        "b2775daf27d48153b089620d98e2b2964be112021092096e08b674dd1ddeb91a",
+        "4420144f556c85e4afa3e50c4221074b59a47612b1b6edcaa982f330565f0045",
+        "d45b7a7c2e0124a020393dd2b519d9aa6080fdc01bd39c87a9644b3c504712ab",
+        "0f4133e184696cbb35ee07c4152af16ad49791b7ad98fc57cce444329263ed56",
+        "363cba52355111f72fc105dde15014fb62c7a9dd180af708a1e1c57a3b6485c4",
+        "7779e00f9af2817eb9f626c7e9a8b11145f3ca89dbbf2151bcc8dd97101aee8c",
+        "fe8bc7c9068ae3992df758096784218419b1a11413b03ef42d7694054817ce6e",
+        "bd775c2ca471a6964189f8e12907986bcd7511114e0d9b5bc58735a9e1435ec4",
+        "2ef7dcd8d42388384d37a30c51c034e444cf0236e3e4f220cde63b5efc94219c",
+        "6b4871677133da5235c79d7480148255878dfbbba6d2c247fa4df9aea75fa4d0",
+        "4141628c3765c19996437e35b29ca086ec2e8866d7fe6170ba66940e92dab491",
+        "a903f3cdcc6880b228277906dcd19b8cabdd5b74539a3ec9e0ea3053e3f03fe7",
+        "bebd62ea6a5397f81e0fe56778180a23f5d9a301519a78b2a06ff1a8d64437cc",
+        "89bdd9aacabf95c59a2f48341cdaefcdc6a6889024925844f2405f8b891a185f",
+        "8595b2aab73e832eced35b01250d0bbad75f45ae592406418562a1b439d09cfc",
+        "8eb5d3f660e29d0fcb18f5680aca57b9933c7f3d26926ae0015e9ef03069a8e8",
+        "cdedc07b9b1cc12960642d64e647a604931ee3fd04758a5aadd6bf0ec809dd9b",
+        "64f38bb0dda8178c14886b6bb019ad7121e113d802a0bba1623ad3ec338584e5",
+        "a12b50a7a67950032624f884bad2e3c64177d53ef4cb802aae0b1eb99059673b",
+        "f137d720e422b687cb85c5be7cc0bef0b6f84324f35f3cf672cea61af1190a8d",
+        "5842995632fc359a7718afca778bb5c2d4e9076aeb5dc62af6e8a40c61fabb64",
+        "13c1c216ebecebebaaca69f4c78d52ad6d495057e4799d09ab70f5fd156d8eab",
+        "d1d646ffae3afee7a47ace89c6792668a6ed2a15924156dd0c6809f10c6a77b6",
+        "7d5e4eed4b95cccd0aeacc6012a89eb0607ac84498be36c853a2e5cc1a481fcb",
+        "d9ac0f6d2bc82ee22d200a2c4e16fab964b5c97966e46388753e3c610c1fd94e",
+        "2090ecc5a9590cbfc7b17eeee0b787acaee4ea1e18bc82498d925b2444408874",
+        "3ba82aac5b4441e89522dabe88dd66e5be811de1b0fb7af6b1297ac724477d97",
+        "056a5610486419f04397020c07ba936fe54e82929af29da3bb585c3cbd45c7f7",
+        "6d8fb9f063ca4e4a9caad33fa588cf240e0f451229e59211ac91fbb6fe100fd4",
+        "46d8a6a80baa97f96db8b7b53ae26a78422e8758e7ac3c69b27388b6bb2d9699",
+        "0aa1f3693e7f3429a8e3963fa5bc033c96bb082acba02bf09e1222f19aeae804"
+      ]
+    },
+    {
+      "seed": "cg-campaign-22",
+      "identicalRerun": true,
+      "finalHash": "5320a91a879a6b6ef35c8a6bbe0828977b95cbd8f214f94c10082bdba142137f",
+      "rejections": 0,
+      "settlements": [
+        {
+          "id": 7,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 8,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 9,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 10,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 11,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 12,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        }
+      ],
+      "hashes": [
+        "c2744903c7e68f6d83c1dbd1e4bc812eb668ec8defabfaff23e626df1a32e5eb",
+        "e4f145940df357d9e17fb7a6a8f3a083c0c0754003c3aad8e4c45fb63afc6b68",
+        "586820330fffca746e965077708c8b4b2f95d83573531bf7a2134e2ebde2629e",
+        "6142f7dc6605fed67e72d85b780685a8739a6d6a7d6d3d572a5e7b441e158dc6",
+        "35832c95d6840f6a4a5fd54668df3c5755be4139aaafd84a60a4fed6b53da723",
+        "769e7f96496b15888143935dec34fac6f45bdbd22ee3d49dfcb5e5f409a82ae7",
+        "f68ac1056575dfdb66c59e81ee57e8ff0433284da0ffa8f74ccd1c9884aafc8d",
+        "e5eb88ccdc34d4e8e3ca19e96e0361ba9b203c1ad478638771f2a51804408a3f",
+        "8d617c255a98a2c65e5e4613a9bd069d7f90d66e0b63ccac8f0ddcad6427ba49",
+        "a5c3c8c9119fc082ef2ee24eec53e5fd3a518499ebdabedd1bee032464fbe912",
+        "f0bbbb54b6c79f4da162cfe4c765bf8d02e7b2dc9dc2a16d92908ed866b8dc95",
+        "fb6d40b7b06a3906ff67bd4ef23f7ac6b3c5d6007d2f4834db3b125f667d916b",
+        "58635c3bad5d199d7e1ebb5cf3c533c872397f59c53f31501f5672449c54e485",
+        "a2061e74f4c7d82c3bdad5db2b585731e1b467a3172456d74ee3c4ae2c1695d6",
+        "bf6ccc8e7d62767f05ff477102f553b520f899dcdcf4111d48727bd22e541d9b",
+        "0c0e783b282dafd0fe9eee76780b2c5d6f199f23688b3c61880d3ddab2cfac79",
+        "5eb741e22df95c4476cd3c4bcab0191e546430886aa67cf2ce2d1fd216c9f60a",
+        "ca282a6e7be005dc9441c49ec6638eb30cbadff9343c1592df308cb326dec87e",
+        "303552013f9c02dacc659ee600fbbf42fb515929bf9d5420d14f21a2b2ecb955",
+        "f7bd4225f639d14b1b6fd9bfe43407b8777562289a2e424aaacdf5fdb92d0632",
+        "0321d61a0ebec36f20e19b383cfa483b72c2ce017756614f8cc57697b63d1726",
+        "8bc17aa68c86b3cc5c053c0afc74a12ce6f6c928a5dbc92527bf00cbcb195f65",
+        "4d6cbb9883838ef521bcbe807244cbf01960c2e3f9e573b4a236021d2456a2a9",
+        "d859b1c50db48f136a2a9bdeb6bab0c969e08507c31cfb5b0c8035f478daa64c",
+        "1b4247573ab13a70faa50f663099f3f10a246c02b1ca7ebf6fbd8e226063dac9",
+        "a5f20423b29671e036ff1400b52954e7d17254faeb1827c695ff596ffb4def5d",
+        "c78745d1ebf027a85d717776e6cb9d35240c903a49250c84b6dce36e34cb0273",
+        "3196c59d5afd73c40fd1c943f17ecf2d364d8f65f8abd2eac437dcc0a448e67d",
+        "a09d209136d9db3bca943808588faa1bad42661634da9e0f52bb127e63dde00d",
+        "d7569151bdfbd0b677f2fe596a3760aa8316fecb5e30de75ec5bfef7e3c30a4f",
+        "5320a91a879a6b6ef35c8a6bbe0828977b95cbd8f214f94c10082bdba142137f"
+      ]
+    },
+    {
+      "seed": "cg-campaign-23",
+      "identicalRerun": true,
+      "finalHash": "c186bf96efbdb6301e4db258f640cd35e4bfa0922ba8e9f68703c5bf80b96278",
+      "rejections": 0,
+      "settlements": [
+        {
+          "id": 7,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 8,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 9,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 10,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 11,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 12,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        }
+      ],
+      "hashes": [
+        "979bde45d81b66db9b2e8e89682bc98fa9723bb82fc12865eceb788edbaf5a04",
+        "fc6483acab35dd45eba976c0ccd2bd45d0d2d17ec9f027f0e80bd9cb4bd07c6d",
+        "e4ce67d7056de5a46fcb4964d89e723c8182b097a466ed300e9d30c41fe07875",
+        "ad2e590443b906329114caa73df020bd4cf19cf3a83e8b7099d07ab5e1ea776b",
+        "dcc05807cfd2e79ab8caa26c2269cd2430e29fb8802bb7640cde9ce60426442e",
+        "c10d67331b7688e981280fdf3745082e02e287fb51a57cee563202980f2275fb",
+        "80036675346d78153bf020cd8f4735fa7d391715db0de9421b56df2a91bcf2a2",
+        "abd59e032a15fcf874c0c49be5cb803486a0275a70fa35a4ca614d705351bdb1",
+        "4a56091c529dc6950ba689b10bb47b0cee41b9774732b3e7390e7500048eb883",
+        "056248d74026ba5e5eab1a54a51a684c8198b3e4a3fe4073950a752c3c663cd0",
+        "5ec48122dd43771b88ddd51bdcf01ac979374e52119f2da03b0cc59e91d5e187",
+        "7a9154c01cefac8fdd06d7cb69f04a1f66410fb6a74011a25a968f9c08bee53a",
+        "38a59c14c66dd28e5b96fb67d72359c37218e246fcb57cfad9ed557964e2c57d",
+        "2591ae54f71128c8579cfe5769984a31d493823df33eb808723828c5aaad200e",
+        "8261e47b30acdf518abe47a7cb11905150dabd330281d62df111884d53be34ce",
+        "804cd0e5c4ed0ca8a0b2bda454c2405fd55a79e109820a48677f7a59482b5af8",
+        "8a7cf6b4dc0515bd6025d764f03e82c356dfc9333f80ebd379360c46d2e760d3",
+        "ad82fe9df01f31ddcb9912ec23b76f4d42d44cd1de9e589ad3046f89f5ccba1c",
+        "2c70aa3b4fb788547b0ee272a231cb607aa99baaa66d5e2a26dde2d7507eeb2a",
+        "d94bd7aa881b05f7e93dd668cce497ac522d889a9be77511f08b4cedf2b7a17e",
+        "15e3b435dfb13ee9b91d69eff5a8399b45d72598f58be4346dc2ad5f4dcd17e0",
+        "654f18f1d0daf14cee83a8be7b91289773934d4b9ada3f57fbb2b37fcb563492",
+        "6d6dc1763bbae4355c59ddd7535c050891f46df104d442f218fc5963923b96d6",
+        "8aab89401cf2e46993741985b32d09dd3d2919eb011fa652807352f519d8ecc5",
+        "3604890ab748ddd272ef52f184301a410c6045fd807b477b8d89b8e1dc7d45a4",
+        "1064c96f76e270b7f0593605345d1a33b09cadbb2ae8878276bcab476e0f3cf5",
+        "b150f71771d18286900bb389deb960a27377cb094f83b40c6ee81d329bb27de7",
+        "99535214f08c58a2c1faccf16b72360f92eeb55a8ad02975c1e0d7b4bf20eed2",
+        "00a6032c8f47896a164812fe2d3e4f5fb244096f52b3a3a2fb23c6484a725030",
+        "588c61e8088fa83c195058d194ffca08c66c73faf7be81bc655633a9e3e3561b",
+        "c186bf96efbdb6301e4db258f640cd35e4bfa0922ba8e9f68703c5bf80b96278"
+      ]
+    },
+    {
+      "seed": "cg-campaign-24",
+      "identicalRerun": true,
+      "finalHash": "7a4b2c7f7603784149afdd16ff51298125bdf8974c7b4bb679562265b2bd483b",
+      "rejections": 0,
+      "settlements": [
+        {
+          "id": 7,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 8,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 9,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 10,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 11,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 12,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        }
+      ],
+      "hashes": [
+        "6c4060e4dd759030788f8a81bc1103df9ab926b35967d503bf72489d2d53cae1",
+        "fb5461bd2e6ffecb1c6735ab0f3067c99dba5818b23b681a6eb65bc69550daf4",
+        "96768087545ecd3853e83e3ab8566f53071d7b8fa071792b050ee60198276051",
+        "b0542bd8e12e3d6896021b092321a1dfcadd8b3c3222ee4a8ea878f5b5e8216e",
+        "e98ecd8579d9986f8b21532826893fe3e6bc50b069cb0d7c65ec922d4e7963e5",
+        "ee924f033696c14ece6d02184f1c63db149c5a7d3e8f92d902d7d5be8bd9886a",
+        "059182bc94394a5d86df9803888cf77aac7abead7681722e650312d68e3dc08e",
+        "3de5063ee01dbc94a93639d5a3364db5f4ef1eb2118f3d76bbc7a2c627d871c8",
+        "6f4c563723c55e559e179c5952cfbc1e08848f90de514d30d6bba7720106325a",
+        "45c2e156857966140952e2958f1c4a7334753d889df52877206283efe902a8a9",
+        "89a46c0889ee55a7367645c936a4ef5c08992405adc44529e7d5f8abbb49ce9d",
+        "3d11514b9680a95f632d7882aea1355f936789825dc8655611249be0dedfd1bb",
+        "29ec47c88ebadc6add910a5982d59ff43fd5f29138d778671a6b4b75cdccafcd",
+        "f5101d1fca50e9b1b4ed853682a22a4bc8190f6183fb8a60a176a457b19feb51",
+        "b40bbe18934511f22c2ea62ce12fbc9a3c35ea3ec2ba8c9b0180e41b3cb2b694",
+        "cdc731cc3c4c6afc00527739fedb970207236a9ff0fd9eee0d6e665002a654f4",
+        "754e26a7c1527988725a5530b2d1ab677bf1cd13b5808cb0d0495a2b03a85e9a",
+        "97fa1eb80bcd84b3df57dba6889108b669c5204168f5fd6e73766a36d4b58a7b",
+        "936f97683fd815f0f3c0a87b3d32710e662f557f84d5d9ecfd52cd9de19663e5",
+        "a4b25f7a4f8b4c08e91bc667cbf7768d69719ea6127029edfdfc72ffdae87d7d",
+        "bff8749f0afae970dfd267077cdbc80e4a9cb7d3ea6b30185363324689a74399",
+        "9e615ab227fdb0b59915d18209f0048434b140335af2ce2f6b391db8f7a82be7",
+        "740773718805930af553060b6e63030b4a12d080d9c896e0dad165e4b11d5f82",
+        "9e0517a3f558062c551218d133eb7010615e103722589136433d13265160ee45",
+        "cfc46d9bcab7069de468166694c17319780b29a9a2f7565ba50e0eda1015962a",
+        "babbce68fed1050d48a3a3730c06da2f1f44daa8a29d65966802386a4b7b9a25",
+        "3df42d0a2e2231450836d70a4af32179bc4f9f65a9744f7498d9451df578844a",
+        "558874d2e0f2477db8ab23f7043dda753ce6e5152fc4d61a5331b25f3dfffaa6",
+        "6de71e9405670cc14d06707cb62fdf6211eba67c2ec988c7513cffb40fa5864a",
+        "22f1468890e86c72cf5d4c42a70a5e03cf515ad564e3c6f30e88ba59b1a73b28",
+        "7a4b2c7f7603784149afdd16ff51298125bdf8974c7b4bb679562265b2bd483b"
+      ]
+    },
+    {
+      "seed": "cg-campaign-25",
+      "identicalRerun": true,
+      "finalHash": "42451dbd298b129bb086bbf828526caf95e9f5ea5a076d0bfa3593cde324a5b3",
+      "rejections": 0,
+      "settlements": [
+        {
+          "id": 7,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 8,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 3
+        },
+        {
+          "id": 9,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 10,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 11,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 12,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        }
+      ],
+      "hashes": [
+        "d4408e21e82d0b93cf9f80a9fa66a0eb8e4bc5b246a5148b95eff064fc7dc3ad",
+        "ebd858d83911c12a08ab337798b3fe7c5845e20a92cc8b2885f9ec00a2dc475a",
+        "01e18021d3542bfa9d7735ae24bd1c04fbcf7c535c5628d9f599dd2d38de7493",
+        "a055f3fb5ccd757d0031ad2546a11801df6c02dc06712280f88302f7e3241185",
+        "a3a3ee25f329599516860e7771915e4f162662df8a25f728325fa3fc31772baf",
+        "786e5f9ccc6fedf045070eab4db67bad9511c91b15a056f83c437fe0cefd5e4a",
+        "959651e61e48d84163fe1c22216c1415119482e104d5d38adbbe3f8faad9514b",
+        "8d287887482f18006ba08ab4e52d946986e978e48304344f5e1ad9bb30fbfbb6",
+        "59e548a83cbd8d74c93a4d370989323909f4965ad670997e6341e3391e83bb79",
+        "89bd5f2c002548a5a0f71a1034ff21fd110501e1849de5fe531015c645abea7b",
+        "1f5202392845e0c1ce1d5c0f091418674f17759ee3bfb9ef62f1def736d8d614",
+        "0053b702a78e44320722108222b3a0525dd4af96ccd63963a70f76e03b02bc38",
+        "120ddbd29dd5095ff487edc8f93f5d4d8a50b59c80f1f708901ba5a0780eb15b",
+        "91ef8cab68b9e24d1460072c4dc6f6f698eb11efc160bc4c50f5f8c1b20ce89e",
+        "bbee299d185f158908012d6ba08fb1ce626a707bf78d20f29562be5630b96741",
+        "8a96b95091572148b81adb2dfcb02413944ce47b2f023fc4c1a5e849b28a5b85",
+        "ca7d982d361870479bc6be16bf7ae345b92da051503839464296466f08cc9c3e",
+        "f8d56b96715ea882ed1f4b8678e244a17ff93ae78fa649b00ada34a16beae4c6",
+        "dae6d6733b7f51b8c8bcc17df63d683de1795ebbb34c0db0a5d4bd87d27b0414",
+        "9f3cc9ca0a7366db046434301764b9b3d65b0ff22ba11d96763e8077c3ddb297",
+        "11800055e1ff54c0db402039ea9b2ad61882a604401a369a77469bbceec8c10c",
+        "6d35776cee019d75ca3cd666fd99597429d565a0c7b9c58cbd2386b3e859d3c8",
+        "86972a449af88dddb4c4fbc3da551cff836fda38f6004c315d2938cf312c8998",
+        "8a841983f0e30ec3705faf2e3549b93f29ed6f6f4718f1aba11974bc6f00580c",
+        "49f73a10b068f76d700c1bd560f7eb5fe49e612ae86584e5f3a6bfe224ca09f3",
+        "b50c0fa9639e73639db394753b7dc5bd1d274202f1943ea5be685709d743d87a",
+        "f57ba6be4b51712ee0d4fe7698cbbab89f61790dc182350ffc60c1984a796781",
+        "e704a8ac7b76f0d3af198cb405648f42521fa8f4860c5d141b8e17373768cec5",
+        "3abc2624dc8e392cd7d3f64458a8bbf788c84a9a4393c06e4bcea76f965c884d",
+        "ea279f1a984c9275917df73c1789ba0eb94d819e87cf1eb8c498f789d5a8dd4b",
+        "42451dbd298b129bb086bbf828526caf95e9f5ea5a076d0bfa3593cde324a5b3"
+      ]
+    },
+    {
+      "seed": "cg-campaign-26",
+      "identicalRerun": true,
+      "finalHash": "bd62ca9ff9e7e88e277682772c26417a8761944b9b9dfab6d27390e2eecde0e6",
+      "rejections": 0,
+      "settlements": [
+        {
+          "id": 7,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 8,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 9,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 10,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 11,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 12,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        }
+      ],
+      "hashes": [
+        "259ff42c53b00b5fa39514350ecb6abf0597961705a4e2918b40880bf48e0b3c",
+        "84e1c7eff642f0ae126f9ccf4d033621f4a140eb496ece65bbd528ef5d9cc542",
+        "456b38301bc34449c34e82797471ff615bac67f44408267586d911d127afd957",
+        "8c913f9614d712bd546b7c08f980cc927643444ba8c1d180a875107916ddc858",
+        "034c6abb09125e5bddd875d8e13dc687419fc85bb357e4f30c1257e0cce9eb94",
+        "c1edcf3d9b1a6ae8d9afd43e53d3d2a98bbe719602c442f057b0280103c7a684",
+        "6edd86ed5092a83723d3d453f195eb9eaf4bb95534dc5d8592ae537110cd1da7",
+        "89ee83af7e21ab36e2376979c91f738247ab6f1ce358fb7ecd0855109feebb24",
+        "b0576aec7c2b21816ffeb8752a3af3dd37974b009faceaf35f6ceaac24a93a46",
+        "6e2a688df1c56959d1a45004e1bc63754f43576b212410b841287e0fc7f8b78c",
+        "e8cab3a905f0bf04448be2acddf6a0e0b7673aea0b3e4790aa1d0f1527fdf7da",
+        "0fac9231d02c29dd411a0149cc8f33fe5f6499a44b488e75188a154212ed2bcd",
+        "3ba5ff686bd0948fba3adc5c46946149f5393eb5afb49c9a5426d5cfe0e8f6eb",
+        "6fa14f6e7ebef4be09457c5b7233fcd09c1aca16ff2d50029c775ee14f88505f",
+        "6ec6f9e5c4c94aa6b55a505f720c5f924763a3d6ab249f104d338b27dfb828d0",
+        "376b1b003ff186eabee63979d574a30842776a49413aa797fa4cc8280c16a528",
+        "f8100402e85439555b289480afae63958f6fa8b82ca9b841ffb9919d4a4a84d6",
+        "d1ef9186faf3102701b461590edbf6bc7d92ab67de21a1fff4f1866b8baad3b6",
+        "9d070454d5268aa5dd52600cafe31aa15100b1100a4e523019f2c9f7268037f4",
+        "25e06c8263a6d30040969a94b1b0e56c18e72c45a06ee502a127f1ad2851ace9",
+        "7be745bf1141a3f37483a44cc53c914cebe00eab6dcf66ea840b59a68016ece7",
+        "1f1a29b2e1dece941b12b74998d71146d151d24028cf7661c7391cb1d9df743f",
+        "58d26aeea18b467a44b84f5b165ff9f0cf4f906d46e64cbf80aea54cc68644de",
+        "689261b5bc5e03ff63ed3deb73474a8516adfd8da928926a91247ba532b36e24",
+        "50ffa01409fc403b9dad2c20611766c027a4c71e4d6819bf8d2c98e3339689b5",
+        "60c7225c08c4af3fa23d566f558c5eb33c20690a5a44346d3c9a03486f939642",
+        "2578da31c6f96e71decbd609268e9b6483338b4216ccad2b25e06226f054a61f",
+        "c2b3d3c46d604346df7844de9c4e4d404a83f2e7f6480a3845bedb51e89a613c",
+        "b2638baf761b755ccccb7ba8e7eab2f404bb98cd46dee7271da4afe6db650791",
+        "81a0af52ddf7854196f70b2a7f3311f00be6c37dd1f295d3c99b386f84928451",
+        "bd62ca9ff9e7e88e277682772c26417a8761944b9b9dfab6d27390e2eecde0e6"
+      ]
+    },
+    {
+      "seed": "cg-campaign-27",
+      "identicalRerun": true,
+      "finalHash": "500ff019a604b524b6dc72d4e0674c034e0abf659479f2a237f123eebcdf7100",
+      "rejections": 0,
+      "settlements": [
+        {
+          "id": 7,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 8,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 9,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 10,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 11,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 12,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        }
+      ],
+      "hashes": [
+        "4f303bb2303fed327c110d3d81fa58cdbfc3c3fd2761cf7a16ff70411bd3eaa5",
+        "fcdd5b99a24d445fc4ef1c327fa4eeeae1f16a027c6f783952b177bb9fc4e364",
+        "4c1c0997374ae0f441231101c192b96ead440c1a0813953fc6d088de51285c73",
+        "5a185911b3b3d8d9bb1befb8625ab5c114a02ff77618503e2ad77f49f590e576",
+        "8ecd8695c91fb029c7117c7585cbefbbaf7fc7fce424fd340db5a601cdc9b2e6",
+        "857c24aadb9cc0ac3407d89687f779444c495d01551a8243be2572f2ead880d1",
+        "d89910ecdd66fba790ba115ef9981960dcae190aec540d835adcad7e8390096f",
+        "f68ce815027b52e13727e36c0935005777e8ce5953725b6cbf10e06330d97160",
+        "13cf755d1de61ed77e642defc0f46ed2bce56a9fcc7c7ddeac9865303e7f9951",
+        "2c53e36b85216fb53ebe6e925400497d5de9195b04cb8512154f13b0e072d509",
+        "76b1c257d6e25d27a79038946c6d4ae4ac71f638b6f552fa0bf3ae2f336977fd",
+        "4cedb0c8332a58870d1f6997a864d885d7d7400a9089abc313b520afd8335944",
+        "363c9934901c4802afcbdf33df4f9f451ff763e090b4bdeb91102b644613b7ec",
+        "98246ba7ec84486090d2c6977990ffd8e70033647f067d7722a6b750da8699dc",
+        "82b2f5ae4ddd9470b3aa453eb4a758279a149822b0093c4731bf3af45731c163",
+        "8036880849dd47fa6b8bcb87ff1d97a9fc3da9c0a1416a31c6dc39714e01a38e",
+        "e276fe4d743ca496afb6620dd82a0c275cedc190e07ae86dc758e6586a70d890",
+        "9ef29c90ff3c2c7857d1c60a8e1a2e0042a0943d8b6c9d27f261df0cb840d0a2",
+        "8a142f85e23c3a55b6f3341a7cd777bac456f49ddc045671c7a12338ae146c11",
+        "c28a7c101b6a0100eb2bc99c4439ec4877b144506bcb5400d659f79a5472e5fc",
+        "51fba36c6a1784f96beaacf4e87d90d622575442f4ea8264dc2a3b05b92e6305",
+        "4f1f688f3472c0d7ee0dcb158380ac8ecbb84953fd91b8cd1e8f12af261c1d43",
+        "7d459dddd3f10bd7c821716949b6737ff0606f50da632c7409e289be649b8e6d",
+        "0e2f3bff0b00ddba873ca4b2b050cf842f38c1bd89d7652acf10b9cb083a6518",
+        "1ea2b0e0ddb3ae169f8cf70de9668b791d216f21ba651cce604331cd85cbefd8",
+        "02351d409c5742c461e314a158e39f873afff16875f86e58dbd53930e5352a79",
+        "f59b7450fc275f02672ae2d2a36c1495872bf9b3f50310bbbd8a558ef287896a",
+        "77d2e1d610fa6a517a9985124718a19e14ecd71c34977d74c362014f77afb0bd",
+        "228aee9d0891b88e02a425ddc497688eea268fd8180445dbffe22f08ee8e754d",
+        "4ef9ec0b78521999a96c1c84850d01bf34364cba103c42983fbe88cebf2590a7",
+        "500ff019a604b524b6dc72d4e0674c034e0abf659479f2a237f123eebcdf7100"
+      ]
+    },
+    {
+      "seed": "cg-campaign-28",
+      "identicalRerun": true,
+      "finalHash": "5cb874607114ea01af324d0e7b26b4869f9a93cc2413cfb49dd94e98eb6f6147",
+      "rejections": 0,
+      "settlements": [
+        {
+          "id": 7,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 8,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 9,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 10,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 11,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 12,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        }
+      ],
+      "hashes": [
+        "2d70ce85ec09c1f5d9d0b5283efb094107feaba3650f3cccdf83a1161a9e4ae5",
+        "3a7a460512c6883660fd3c2539bfc1881c40e6718dbb20ffa90c4a436f7db1f6",
+        "970651170f6343857db1988151ad5a96c912d50dfeea3c9e3501a57d1a204860",
+        "fee56476ec68aa0681393175f734ba63c582e4965b3cfd8161b0dc7a5e36b8c0",
+        "097d6923f135812efce96fcda18e30a66cca46e4203d9a6f017fbf4be754fd94",
+        "4333e7b63df381cf6f67184771c10cb17dc1fd7fc27ba159c042032fa6f9e65f",
+        "91a1835fa99a468f067a1c4d278416ffd1909b80e1eb54aa8740662740aef5e2",
+        "3b8fca5288a9bda84734154f22936c5890b4589947b5bdb178594e1b96cff077",
+        "07b0b7a5762adb21aecac62fee129ff71ab2e67e617d88748254975c2c085f76",
+        "0582ebdfe263fa653c14ae5ca916f2d4e495a67e7e9027493176f53ddcd9c74b",
+        "06b13f85883825d30f6eb228c079181bf2501dacd618cc0d52e9768ef21adac6",
+        "7d17b8a048935e2a167c57a225a954fd07a029c66508b95f7086cc72a04cb8f5",
+        "05dd9d6d4d66c8003db54c230145c87567224d26a4d8ce4d2b712908d486bf6a",
+        "56158ba1a077287b5652a21bec941710c3c54eb8ef5b741099a6b211fb9bfeb4",
+        "87db8a346c71a4f77004deab6ff069d41c12341212259dca50b8d15c5eb466ed",
+        "2e56125556fac0f5cf3a194802c4584c7fd5a7b3e4fe8e6f5f41ce84a1560882",
+        "fb04dd9cf72c9aecba81aed1c631f128b2e87a1a649d46245ea477b6bafe7e69",
+        "25fcd266aaa7de6c541ea2aca7f853b7ad1ded0e4f76edd3db9208d308c0e349",
+        "f7eaa32ca3571aa8fd5b4e6a6249fa59e3a80f9a72adb3cfca9337ac553190e1",
+        "8bb9cc63cf8c277becceb98df1df0707003d2d37b8c55351bbf468f5ce2a8763",
+        "14f1316e7848b5d80ebaf59fad1252e67c3194a457afbfa5fb32f9c1087777d0",
+        "86b453f58425911407b284fcc8e262349b6476cc03d7e2b87a6356a4637c76ba",
+        "c0b6e67b486ae75bb913b5c6be89991ebcc7e39e84ff8abd8656f81d1f0e2761",
+        "89a3ca28601eda5d31b7e55dfba0ab143d32881e9a4273a913e467764f3232f3",
+        "18c4b53e1f65db2af9924bf90fcac087ad6d1a0b444e3465c56eebd56f69e5c1",
+        "c689cbf462573ace851e59db032e9ea52a038657952035f4776a5215fa3555ec",
+        "2c5cdb48b7cdb0eb9a3ec726b4bc7c6f2490177bceb6070157cd3c9829fa3057",
+        "8db77def67e6d6cd5c19597f5b1cbdb09d77808b1c66d9067c91c9fa9400cb6e",
+        "b4a88eb950fecf0bc3652723d7056eb668dcd3e2c79e6508d215d95bfbea1321",
+        "93b41cd37b8d7b9ed77bfe4009d3e4eb6cb5e1de736ea8342510083d4b12ae7a",
+        "5cb874607114ea01af324d0e7b26b4869f9a93cc2413cfb49dd94e98eb6f6147"
+      ]
+    },
+    {
+      "seed": "cg-campaign-29",
+      "identicalRerun": true,
+      "finalHash": "beb43ace759e36a149b850d52d7218840b56ebf27c1581924e7b144bd7654ef1",
+      "rejections": 0,
+      "settlements": [
+        {
+          "id": 7,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 8,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 9,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 10,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 11,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 12,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        }
+      ],
+      "hashes": [
+        "e076f1e2e8fd7cc2b47ce865a5c68d52119cc340d4adb80d946a06f85045fb27",
+        "0b610e0957975040de05aacb20d719f952a8116c460be7eff99a9e0ee5134d05",
+        "915ba1711aae0fa6ef0aa96bb49eae389ac8d33d98092bcdd1d090ee3e4f23c7",
+        "da2f7a1a16c3ca1978d1f4743694924a52f5699d7e9ecc5fdaddf0e510351c0a",
+        "1ca136c2db1186d4f2dadff11bc956bb10914a6e9e393713c8e96fa3b8f709dc",
+        "7c667cf91d16e549dbe956ba1a1528e4f387cf49f494f795da66fe0f63a5c807",
+        "ff3068c8ddb5e90a6df45294c6d22dee78c99dc10c0718a42f190a3362cec745",
+        "d9fa7bcc511770a104a3905bcd1de032a887ef347084e149dd8d8134e161405e",
+        "713cec90c3c952d852f7ad57f674d5cf0dc9a0322c32bd67eaf91e2648d29a77",
+        "8eab89ffec057ae31659f5d7c8783a1fd62767a667cd95559084187c03c84a80",
+        "998b383783cc8e62d4db6d9df8250c636a9d36ff6c2b1c452dcc3ddc55395414",
+        "4bd26ac902854be31870f1dc6760204c7b1d74b2621959e3782e364dc4e2f2be",
+        "6054ca82dea3b077a7dc70e3206ea07f1171a41287e9bc2336aae630374dbcb8",
+        "700acfcb4e9c78585b3e288d731db38ed9e68edd0d229119c084c20a59e09acc",
+        "409128503998a938208e1fe4527df09bc45b8e5154bdcd353cb70723af71acab",
+        "1fe918b4e86d73ac4a9f72fd82c531dc4e4efb6663ce6989aa21938fdd2f21f4",
+        "da5ae768a9f8e6013551563c7190a46f1d28bc4d3b31312b5fbb05a224485d34",
+        "9c7ac62796c8c4914d52d18ba2f391c56ef37caf57f6319c41afa9a4f49df62a",
+        "715ddfe493d089eb627965b7b77e653a0bdacfa57bd6cdc1d15e9b2746479cf0",
+        "e7dda758a6d76faa79d83a146ba7dff2cb81639ec105f257dd0ddfd08b475882",
+        "86e3405274156d435c20e6d68bd6bae655ed2687fbc37a8ea146605471b43833",
+        "4c9f32e3458ef34f587ca0045df6e735343723a61899a14161e3eca519da9dfc",
+        "0ae693a217083700b322bd39244750a03715463b7322107a07939fb26c99ad2d",
+        "96a0e128e5770bea94979576cac16e416fa4f62adb311747504a856673d939b3",
+        "89a48ec4cb0c238dcfa7d5f1ef5ce1b8be7909b475edbc0e83d0b2a83c809c0e",
+        "0e8737692ec041dda9940d6e43ef61ae8fbb39bb74831ecb8803a7cbfa89ea64",
+        "a4a32c0a3b9966153e17634df18894b1643f2452a1af29eb81fb61a58bd10555",
+        "5b45e66b7638b235a87d8d1871939b01f757ada38d1ede891f01add51d560ad6",
+        "35ced81407b0c3297f85978d1226f59b529e008b144e8d41d2d6a6eb12613c0f",
+        "ed8fabfca9adff9e3896870b7a30e10ccf1b7bb4dbd4048ed2f7265b4897dd64",
+        "beb43ace759e36a149b850d52d7218840b56ebf27c1581924e7b144bd7654ef1"
+      ]
+    },
+    {
+      "seed": "cg-campaign-30",
+      "identicalRerun": true,
+      "finalHash": "337ff18472b6471007b0da20ec145a64dc7f34f6ffafcaf54fa4993dd8a65620",
+      "rejections": 0,
+      "settlements": [
+        {
+          "id": 7,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 8,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 9,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 10,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 11,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 12,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        }
+      ],
+      "hashes": [
+        "f0c2b323509376ea2cd595008a6cafe697c66d74b6a441d8e8986f5910813f33",
+        "73581505b7a927923dc569c5791fb72bb46c4a04aaf541f7ccf1843ecefab49c",
+        "e1e6f45ffaed35c668f386a877d5460eb51425364aa9e2ca0c764b2955a74c92",
+        "4dcae45948cc2856b27e7b5c8838c1dfe802bd85e6df88369b4649f1c7c7f31f",
+        "08222daa0e85f852cde35d25f1f9ac26c2e613de93c6f70b9ad866fd8c3e6372",
+        "0cf8d88cca17670319501d7494b5c7be2d12056ef27bcb898464eb84b442bbc0",
+        "ece9bb2a747de61739c5a0a1f6f34770b9abe201f9d9fdc03fa9020d3558aacc",
+        "f6eaff86405b34f8604827f3918fc96f8f1c803975c6b3950e5ac3f389b35972",
+        "efc436f5a225828ba00ee2972c4acaac3a48298c431553ad2036854dc9f77537",
+        "edc26c08ae67ddba8e823937aead6bc0c3becdac97a8b5d3bd01e8196e989fc8",
+        "6b81fe7ccd5674e2e8f515159471c88f8b49ab9320d5edb1f4dae0a8f4d046f7",
+        "09ce949bc214638cf543a4ec034c116e0ed41af696c7d28e1b14e9b761b18590",
+        "8b2c22f6fe473ed896c4af18c4d203f666c6b93d92ac9933b0f17883bf09e781",
+        "ac20d9a9ef68c1cbfff8f3664342ec65864852f5ba3a99ff861c048c467a270c",
+        "dd4aa36a24066599f550c01f3543e1c4bdd48b0bed8cea1fe631c559b56c83ca",
+        "f1c9bc395c2e3ddccefcffc55b24052b93a39ef06ad78daf2b35c0ac806383a8",
+        "c31481ed4ba941a7869e46d2ba1476d3e33be967d2c6740d49aa43f1a328886d",
+        "6f16dba0c91fe165f2dd400acb409adb2c6da4ca2c84adcbc3d6224b356da476",
+        "e38a354c724526eeeed4fbbe11553578f60728473a2fdb6d0231dfc1e775e65e",
+        "278eb69c142cdcbf331a1933d930163f4bf677e93f55e28ab113ecf9ae6bf871",
+        "1163cb30dedf20e41b4ea96dbad8d1482ff1a88d82e36d6feaa3d1c89c116d61",
+        "8dfa8f6b517fcdc317e85a92eaae99fd671a5cb680223b0c4459cf655576a9f7",
+        "1836758a2cd5e2b6312f86734aa7f5c468f2f1f69f01d7555fe0de2c9777ba86",
+        "894c7abe736c15d1a2779a01b01ee7db2fc33fd8f0a537da257f6c08326a810a",
+        "7a51887b0b3f2c80b5350da0066e2299b3c583042643a72cc3643293b831eb3a",
+        "8259e9872202b94cebf36fec4ed2bdb46cb5488b218b5cfb253fa3e3623c7122",
+        "488db3751b68f0dfb940b71d17c319a59bab225ef419700397a0d86c2d01e778",
+        "85879c50e8787e0b41cc8a496b231f0a1a6f73e2184873e39d89d8c8d918177b",
+        "6fa351ff60f692e65b0a258fbb1dd01fc0432a514782e36261fed74c2d388a8d",
+        "ba5b07d5d5403fa5c293c1d4013eb162da464b7aaf2902df8ffa6cc1a01e824b",
+        "337ff18472b6471007b0da20ec145a64dc7f34f6ffafcaf54fa4993dd8a65620"
+      ]
+    },
+    {
+      "seed": "cg-campaign-31",
+      "identicalRerun": true,
+      "finalHash": "3a47b1a9245efa619630dc4d0dc552dc1597b1d64d26863669e4648e67f63f95",
+      "rejections": 0,
+      "settlements": [
+        {
+          "id": 7,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 8,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 9,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 3
+        },
+        {
+          "id": 10,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 11,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 12,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        }
+      ],
+      "hashes": [
+        "e06569178c5eea3adf26b5074fab1fd39cdbe396b6dff9c804bc34e10945de15",
+        "0fb27db9449c9fab2f57f4cc1609b29e968b9d0b2fead557768108c742347658",
+        "5452c3b280a73cecc7488a5f374b20663ebf1636bf2527f85d246dbf45c58ec1",
+        "9db87c5cc1928ff85bab37b0d0c774112b226519be18445aa941fa2596dd217c",
+        "5c66c8c11a23e84374074f6a9b89f3f62c3e6b585983bf8c02ceb2a9ecda659b",
+        "eeddeea0ec478a58f9b0f2be80f192d88819ac81a88c1d77df25e35ab2c76dd2",
+        "7aa49562c93e4cb3c121c0bd1080aa7a1bb3fdd2cec29682a0dfab40ed9227e0",
+        "100f9d2b6d7678960a81642f765918159c71f6fd74fbd7c9818b186bbf04266f",
+        "76afe18c7ab7016e2e283b1b162415d10a040575ac8282d90c67a8e47b6608c6",
+        "44e89a66f8c44265a6b7eb1e17d77b71aa42c3cd47dfc00ad86ec16f7b0cca06",
+        "e78f057ab31c310f6958ecc891a013a3c26eb466eb66573f821bacd820bb8dbc",
+        "ef13e9699d538f5956cee1b10c07f10d5dbd1866187662389e6871b2b110a1ff",
+        "8538154964df6479df5bbe52f2482bd3eeef7c65ee391699354c1895ffc68398",
+        "b6ba6cb7d1e1b1770e6aafbb82f771360c958d4d013c1a2d1a7c35d509bc7068",
+        "9a6cac0bc57e076c2575e5c58b2c94dbc8cb0cea3e389e2b262c7524772f9be9",
+        "fc483e206ab0e655b049280e4d7cef82b1ab50c3c575f41a37275e52b7c1102e",
+        "6eb047d5be38c79b4661d2dfa2943be22214c7129e7d7972fb48538be68b9ab5",
+        "dd34f37fb04de9cfca1e7967991802b64b14f07282311f6ba049ff7b8afe88ec",
+        "9fbd871b4d3a1879573fd305c95be508036a5f722a30f243158b9c792b533e2d",
+        "efe293ed671d42e3147f0c7615466135aff2f222a8a8710dcfbf617467fb6192",
+        "4a6a2efbee56860517f7e0941bf54c1de5bc0684997c60ceff6ad63776c7aaee",
+        "159cfacefd006443b58ca9ec4db2aadc7ddbe24d59e64d5848527924342bd36f",
+        "7d1dd997ccbb91bd8f6d0e4820ad022185c69629f855ac7f6e3654d2bf094ebc",
+        "68a871d9635bdbcfd272b4ab85be39851b8ac5d50c7b0ecf50900779a19b7fe7",
+        "9fe43d8e509cd23efe09903a919323f8f5f55afb7c24978823e871735a8d96f8",
+        "ad6b33c5ecb673fea9254f1dbe7e9ffb3a0986e026af5460210e585901069ea4",
+        "39cb116388bcb2c28b6d8dbc80ef53faba8dc9c2cc8c558c039bb20c477a7c23",
+        "b7033b6f63841311abb0589bbbb440dc76d60a7d91648366b48cf96ea697cc90",
+        "274919377518c7ce145d2e0694f846496c3dce527f0fba31b85378fd28806667",
+        "295533663c64e49da80aa60738b0cbcdfeb5fec48c644cb48f006d265474d358",
+        "3a47b1a9245efa619630dc4d0dc552dc1597b1d64d26863669e4648e67f63f95"
+      ]
+    },
+    {
+      "seed": "cg-campaign-32",
+      "identicalRerun": true,
+      "finalHash": "2e7379f34537e2955c5732dd5deda780060dc2268f028e0de7293399bc602e76",
+      "rejections": 0,
+      "settlements": [
+        {
+          "id": 7,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 8,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 9,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 10,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 11,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 12,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        }
+      ],
+      "hashes": [
+        "1165ae7052ad5a6d5dcd23bc441e71569c1f999fd606a406fc1fe57411914cc7",
+        "34178a9495b8af17357d8d9769016f9efad0f738c01a469e65d45018bc6badfb",
+        "568051507214de1d0156d662cafd5a6471251facd89c189e4f1b213f11ae16fc",
+        "8d5eff0e74a70b7b5485643ef0762e0a2baac21d39073fd3cdf21fd590c682cd",
+        "d4989ef4b846cf021e359b418e7c4c98c7e2dfa2ac82ba9ba0a82560318b5ffb",
+        "69021a711f62f467e870125137357478c54f0bc5b40a3e44b70b6a8deabacb48",
+        "0088f6939e62e43edc2e42cd76b70c7acba8dfdbbac2c3534c8dc4d8e86ca9f2",
+        "2252113378821901e8fd949a14b7a316493d9d6f831e7608cdcbfb83cd86a90a",
+        "e078ba3b686dbd7e108b4632ceb38b8ee158d420b348d58a735bd8be15fdee86",
+        "5e762f33825954a000fcfb50270eefdf169c1dad9f87cc93bac91fcbdf7583fe",
+        "4cf238fe6cad342d9e28ede8a478189dd08dfa3d319e4f56d3f7801c8bcac3b6",
+        "b1b87c37d612a26d24b176c9ea117a1a10058af084347f3b0a1409d2ff907f59",
+        "a06154ea362d619911e2c36947904f13efcf7e1046929812292967d5a041f0a9",
+        "56e066f0ea3000d9986c0b257821c0df2fdf65e874c6e2f5e18d5c6834acd8a3",
+        "6c56566852b301fe0c91b5f81a04100723f5edf0759bb53a4bac91ce4995312a",
+        "161db413340ed71c4106524a5740719f0b5cffbdf077bfa3df01d6a2549c5f22",
+        "cb5f76c0c6b2ee4174e290409c9a56f17eee0dbe0deb593849a96bb32728b76f",
+        "9c9c162f5271fe17ef4cbdb1f8d70e7558a590ccd174e5b44d91a0eb0224ea85",
+        "9d6aaba12249235d20476cc2c75dd11673991d1b2910918112def39bea35edb6",
+        "ce8ff75a378f356a6651b5040c9acfd74f49b1b5f73e718460c309132ed108ff",
+        "cef9113ceee8b2767d560a8314c4176f71e33dee4e0f16e207018f8f9b643753",
+        "3c0f9c5d5a209c76e67d8b3ef176ced9ab1317ab0c6f6888435b925afb73cc1c",
+        "b07362b1b21db79ab538e7652648d17fa5356b2ad295798b975a19f4587145b8",
+        "9adf76dd400116253220e57cd43216b7b4e4b2529995ecad1c098c2d74e85a21",
+        "aac7078fb0a5d1e31451542c5393a9a5ae2003d744f39d135f38cd2b1688c914",
+        "350b7100f629b51ffd5f970df0d20eb217810fb418cc1a3f025f0cbff56dd134",
+        "216fa9aae3bf0640c7ca2ed8778be839ff536142f8935850ca2c8999def3c356",
+        "e49eda0eaee30eff921d97a04c035a68195e5b10a3064ac59d33f1310ce959d3",
+        "fa2ff0078140f36be0c79811b78a832bd4dcdb40209e8539dc8c4f1e48b47a97",
+        "5fcc7424064abb692b7e1d08316a39013c6ca9ada14bc0401146827a3120584e",
+        "2e7379f34537e2955c5732dd5deda780060dc2268f028e0de7293399bc602e76"
+      ]
+    },
+    {
+      "seed": "cg-campaign-33",
+      "identicalRerun": true,
+      "finalHash": "4e1784bb26b427fecb60b872843426369d3e91fa4d75ae147c12c58314c59d41",
+      "rejections": 0,
+      "settlements": [
+        {
+          "id": 7,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 8,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 9,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 10,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 11,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 12,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        }
+      ],
+      "hashes": [
+        "f37d070a8c4b1cc2cd9c3f8996226e94183a9db8e99a44f4fe8509b9aa87521f",
+        "acbd77d9b963bc21ada1c8d188c9d64181448caf11ebc4c5a038f4dba3a6c89f",
+        "8a84fa45138c35053b9ecc40741318319f15661060eb5cbaaa599fd2c6ddb9ea",
+        "b098c787f3c8a2100d1041d41c1498a44e087030efd88ec622da2fe30d165d3b",
+        "34e63c7d695b053b53a2dd33d8dcbda5faddc1abd8d05357fa015d045db79525",
+        "6dbf99a64d3025caa6ead72b5a3190c0213bc1cad9742f022d7dc0c7844c528e",
+        "433a6317a240c699b5f4ccb1938b633c1b359e6c65ad49807c36ba1e2a2a865a",
+        "ee7ede77349ff230af79a7f5f5935018250ca103f976ba73aed4c5a368c4f1d1",
+        "09a4b3d34b25a485d4feb5565d8ae58879b5defa5e5a6f26c63e86f33a7a9bb8",
+        "b4a71abf78a97ddc9ea86325d4f44060fb980c1b476c4f615e90ac0353dd7b39",
+        "c7274b8e4d000e1dd2e47a76a064e66dd4618da2c49e37be53419bda9ff8b62d",
+        "13a089cd94422943829fddc56a4ca876c26f3075025dec68edd281a605ad662f",
+        "49f4743ca9377f206de4c6deb8921c3f36b6703b03417a33699a7e17051061b4",
+        "62362bcc6f694692d66eb5905b16ad40c5ce5d8c960a7dcee8f239b04920bfde",
+        "800160f9acb9000aa85c2d18682732c1c9123064804005ffd4b84e0b28392abd",
+        "705a36a1444500c06b04ff76dc68915e5d5744abd8e81b763a35fc7140069c2c",
+        "2f020a0fb9cb185993819f8bf09303d1b313c5425dbcbf30cbc16226f90e8184",
+        "29132383abefd6ba75516d7b8544fb487246cb663fc511d2946ab5a2bfa544af",
+        "ff3e7e884a3649fca8fc1d4d9bf7ea4506ee411e238fd0bfe159310411f28506",
+        "ac164ebd324a014c9d972e743446230ce6bfc8f04f013c322cf963626ebca539",
+        "7595e92bb87375a1cfa6284698add33a7dd6d794c966203535d7b8d8706a210b",
+        "fd35464dba97b3f60f155b3164fc85af585a6335dc3751ac9000e168d4b860ce",
+        "6180f7f964dcd321ac60c840dc2308891b036f639ff932154904324f058ac5f7",
+        "dd583da2b48e11a1dbdc8acf29d09324073d7901164b700b589c6ef7ce6b5ca4",
+        "8910740122eb155f240e008eec508f352ad8995d66a94e91676659f19b2f884c",
+        "8003a62d3d617fbcace3d8aa498f043352db8f42a74028801da8e92e038b0858",
+        "873a3114b047d55dee23fb521b4ce611bcf596ee1260801bed2e2e35b9310794",
+        "9eb79bd7e206799e6ae307ecc4f4d000f9dfd0807a3469a9fc6afc56c6a32aee",
+        "a9ae23a5c821d6df0397b8032be9b8ab68a0b2122987d95d3fbc69bc3040fdd6",
+        "7d83105ab77884a9bd177de14c2be731ef7a63edd61f998f8f87048cf2de1b46",
+        "4e1784bb26b427fecb60b872843426369d3e91fa4d75ae147c12c58314c59d41"
+      ]
+    },
+    {
+      "seed": "cg-campaign-34",
+      "identicalRerun": true,
+      "finalHash": "766af3a84d415e0b40b2a6f47260b047daffe1242477eaa66e167af94746a6ce",
+      "rejections": 0,
+      "settlements": [
+        {
+          "id": 7,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 8,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 9,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 10,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 11,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 12,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        }
+      ],
+      "hashes": [
+        "3dd765307a06d0d3e986d1c39d21374aac50e9bbd97e754f2bad6e2cc5ceabd8",
+        "4330b253ba905b13a63301249e2169ef60bc6acbb2f096c3a9ab8125aa2973ed",
+        "df1e4be852c48248b30eb46f68f35191371345d6396c92683dfd745f25277b9f",
+        "8256940015826971dbe54703248249ccd93af80bdff1e249e1e84f60f1cba9f3",
+        "a549ed1e9831b79269b239cad3a89e9ce54343562156f2562f22296e8c471995",
+        "7fc5291e9f4ccd57045fb0c804322cb7adc7a0ce2b48067f6d87e3c0200ac012",
+        "2a74f2eaedc1ef6a0432a300993162c996034862bb094a86fbbec32c4b28a8eb",
+        "767505be834a1f743b47246a5eb619d387ecd709f926601b2b73835434fd8fa0",
+        "19753d9a16647bfc3323e9691ef3819c286840244a569da641acbbdb184903fb",
+        "c7b92f6ff5f2ef001a19c532a447a2b30a1fb59dcd2deabf54c27f3ec3f65fd0",
+        "7ed3f8b13ccf71724c32632af096ba4ae763c780ac0a93a4c14186027b2b7332",
+        "ac83859892d1b7f429130b6941b291ffb55e6532c504f89cbacc3e6e60b8e7fc",
+        "962c5b0d45640be5a496614f73f132e7778bd16d9805f233f22d4e1a375e0055",
+        "abf89ea7b071e3837fe12a625a052cb94c44f6e43dd55f923fa1473c568dee74",
+        "ff691e4af9a78003f5ef002ffdb8971727a9c116c71f4f94feb848a47d77c1fd",
+        "255a1c569ead7fb18ea44462c347457eee44e29ce5d146aaccafb4e8f8e47eda",
+        "52beb06aaf7927d2ba90ed49cfa718dc6019d724dd0fd89fea973b52831cd015",
+        "4b752c592a622126fb4d6a63237179095970a7298fce8b7515ab70bdda6de0e3",
+        "1981d916e4528004d68048df6494bfcc89a4f6a8c62db6984b9642868e4e7ef1",
+        "8aaf11a13152edefe9aa0a8116ec4ab788a0655536a4c5544279655683f46ef4",
+        "8ca2ff07e4a23d0a3fad59497687bfe5a31dbcfaa1e94383e02f3870238010bb",
+        "7db119321745c882e7ebe92875af932312441493c7a925b77397b824c91b4e87",
+        "47ad5890f83bffbb0761d212a9b720e3a8906ad3272b4b17a30b3a67563f8499",
+        "d87f13768251dda73f75d303b04f5d7a571dba4c996c9c490c134f3b4a79fab4",
+        "f7aef732356d1a1409076b0e734354bfa96f8dd6f72203eaeff60909d6271363",
+        "4d912d0897f24aa5ac8187b463e6bf7f72ae9c26cf01d13089827fade9bf8b07",
+        "7a976eb50203feb50f8f913fc5831149edd15e99b089a5271030f0e7e3ad9e76",
+        "a359908334c01d4da9e842a9c6e31f9160959d009827e717deb2de47d4fcb62f",
+        "bab5b1e48ae900d026f82384cfede9044f05fe23f11f445ad8e85113d1113daa",
+        "dd780abedc7eeae66de0149bc3ffabc6cd805f520ddcc402e7ebe76ff0c866fa",
+        "766af3a84d415e0b40b2a6f47260b047daffe1242477eaa66e167af94746a6ce"
+      ]
+    },
+    {
+      "seed": "cg-campaign-35",
+      "identicalRerun": true,
+      "finalHash": "47a3054bb319ff60500a5c3469d0a8db4a694a4b8da6902693c60b878e1de565",
+      "rejections": 0,
+      "settlements": [
+        {
+          "id": 7,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 8,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 9,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 10,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 11,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 12,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        }
+      ],
+      "hashes": [
+        "47b77c79978735c2f5440eae344563078dcbc8dc979f5b0666530015754d1ba8",
+        "358ff0737e8b86c3bd9adeedde88b10368cc9925fe97a3b2a2debb12962923ee",
+        "54f15640b2e7b08b53e90e9e0ee2670fa912823af810dfcbf028b37031114f26",
+        "5351c892e4845ae39bd33a28e2c1810af6815c2ca8483562402d5abe9d41e527",
+        "be67e44575f7419fa9e27300935a0b465a164e4ceb815cd732e6d5fe5176e6bc",
+        "6c12dce3a96b2b24b9229a81b7880efc0c94033c5a69309dd9dc69d84b15f36e",
+        "b86e41e5b99258b3f177fadde51403f91950749b91e12686b18c0f7a98afa31e",
+        "d8478595a70d91e85c927ec6adb92bd5b15bdbbbb84a85732be2a0f65ccfb76c",
+        "e45a8454522bd9ab6363b1c7dad53440a0241fff5eeba493f36ef82e09673966",
+        "d90fbe487cad9ff877e105a5125f27baa200fcd6f77155f5010ceb625bc368c5",
+        "b5902150dc4c109828c5f12b49e98287eb1946e1b75490aaba95e2efe46d569a",
+        "63a65b0bd50f21ea518ed78139ce94cb866c5f819a2b56985ab6c96da1fabea5",
+        "57d6129130e88b87beef2f0f4212bfe43f7a35895e129da38f5fe0ddf921121b",
+        "93fb60998319cc17b0cd4e84b95567337a305432d7a863efa7bff2d89afb1097",
+        "3b27597ef2c224d652ab85dfe67f3fd54d0210181bb6b4a07b2369905289237a",
+        "74562cc93aaa3d32a15a30e30218665d7232c57375a73d1bd561a98e2903faa2",
+        "580c1e3f8ee3c88335642ad65e5407f9881a1596a26f2041cc9f1dd59966b760",
+        "556bc04bb5d913996ff8f2719cd4415a8fa7459f5101a45500c0fc5a72e3c87c",
+        "4617e84eb2287b2bcffd29020da0f3537f195e12bb105cfb87e7ec143a2114df",
+        "131dbdaa3bc01f1172868043974b09a59d48e7347a8da72b0501fe491a33513d",
+        "8acc129e63ca425007a259aa2fbfcdb0a5addcfcd8da6e5b7604cab41685ee10",
+        "e511f39a303a9131d5de6c2da091eb1db1ec3b4eda63eefbc049a1f2e8eace24",
+        "98cb9802c93107b183989287d4e461a9056373b17d719130ee342d12fd52387c",
+        "eaec76a154daa5432e422a493738cff42e2bb8925cb628f4a849a6e68ae6557d",
+        "84f9bf8913c3ba3c674015054263319225e3444a8ffa8e97e5603f2a5d26b8fc",
+        "3a755d65e0df7af69eaa0f5af747c0f20c12c2a53ec7a31c058ae1f50d4f1c12",
+        "d7e7d492d406350f34f67fff029e574bbbf8379fbb0ea12a1bbb89aceb71f412",
+        "3ed4e0b04f45c518dcee1404daa70ce230a787346ece831dbc72a7676ad528e7",
+        "e4e0ff2df28b1479c50ca9a8ebb2f1d54c3828dc0af233df8aa6cc54c6935eed",
+        "08b388a04c1d8023072a3bee2852bf08a0ae79534d2b527cfeab2737cb4d3f16",
+        "47a3054bb319ff60500a5c3469d0a8db4a694a4b8da6902693c60b878e1de565"
+      ]
+    },
+    {
+      "seed": "cg-campaign-36",
+      "identicalRerun": true,
+      "finalHash": "5a96f39a889eb25e3c0c20de0ff72e4b43b986045c2934bb75aad9e109f5cf84",
+      "rejections": 0,
+      "settlements": [
+        {
+          "id": 7,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 8,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 9,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 10,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 11,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 12,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        }
+      ],
+      "hashes": [
+        "4a8eb496c3b6409b20290b114ac64816bc7a0de26edcd763fab1de3966fbe73c",
+        "4a54b11e25bdc45ecfffc780e675dad93a9f041d4dcc2d3ba3e19e6cdf9fd47f",
+        "3db40430a33a67ae57ec0febc4c416ad5506084787bb79a44dc4f738825d4a90",
+        "6b92bc3977dad9a40444173c417225e91d4e78eed993a9248cde0ac48c99a395",
+        "939314db4050a469ed01017ef018ce71f0960b7beea85fd71c8164a907da11b7",
+        "b569534758e3de6755868e737040754a9acfe8b896d6bea0a855a453d9c28443",
+        "9e316f5287dfed080af6340a1c58f3d88abd4cda72675a60807302bddadc22b5",
+        "633721025a8af37f0bcf0b7e6468519278705cfba381813a8c647023c33479ab",
+        "f084727c72eb74e348d93c5b319f8dc5fbde436878b20ca6d590abab21a04d19",
+        "1cf6ef2c4daf3fa2eab2e903ded02e4feebc9de98df66ba6e81cdbbae34ff884",
+        "191339792faf45fa78294145b1fa2f2219ec42262983a2e9720d260eb1c81463",
+        "bb7282318869f64755abb2f76b7e1d5a69eb9f4b951af913ede3c159e3d9e9ca",
+        "771c6729dbab8b2c9eabb67a4b1fdd48f16fb67b902a5808f948d4dd0a0f4c95",
+        "aaf38ca25485b9b91845a9fde67b7161d0f4a14446c1b988a9c8eb27963787b8",
+        "2742acae8824117b5a1fc66ea39cd45a55744da33cc5b5fd150a1af6f58cf6c5",
+        "e9c38cd0e1f410bfb25d2ec3776a91b254bb1cbaec26a205dea3389d2a6e7baf",
+        "32706f0cc4c74f598836cc5d684a9eb74c13f1cae924c0c1916e5de086340fee",
+        "9e191ace82ad5e38a434545fd2004b51e00b6a70893d171d91e0cc33ac3fc223",
+        "37e0b0af3875dd56d88b77e35bb955c70b9e26f00077f29a281469e392f2a732",
+        "84eac0d7a5c8de8ac907800749b5c71dfd2e612f316993125221bef3cd7b483c",
+        "081155c0146308e60874c52c706d38966e8d95a4353f0b204e48b0721003a382",
+        "a5491ecf3d93b3f2415ab973918ca58ce656dcb830b8d3d531252e40bef53e91",
+        "48de61071ea4efa55d7f19d4feb349fcd1db374b6341344a19a307dadd669a4a",
+        "15699a3256b53545e73ec9bc5e0b4cb7fe46b835709dea3fad21ec045987803a",
+        "257b1e504eb1af9fd504ec850c6d593e923a9e45a284912c957ea5a40aa6f0d3",
+        "93255df5be04f52c1adb73921f24df0fc6737a2b93643cbadec2a98c15b1f173",
+        "4ca4d5961975a38f4523ccb3242461833ad5e549d19a13a2b472852f60ea81bf",
+        "376be34d37c6413a45dee081bf7167555d3f43b38ec9a439a3b568a50133473c",
+        "18237ce4b0ef656bb9930bfdb6ef760332297673ce17a8792a36f85e9dbeb7a0",
+        "0535c26139695f5f58a0fd59b004ea98b2330db7efbab42de785c9fe012c0371",
+        "5a96f39a889eb25e3c0c20de0ff72e4b43b986045c2934bb75aad9e109f5cf84"
+      ]
+    },
+    {
+      "seed": "cg-campaign-37",
+      "identicalRerun": true,
+      "finalHash": "918b3297f0c0454e2248d0144098b81281976e5bd30b1c22ec4feadbee293738",
+      "rejections": 0,
+      "settlements": [
+        {
+          "id": 7,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 3
+        },
+        {
+          "id": 8,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 9,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 10,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 11,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 12,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        }
+      ],
+      "hashes": [
+        "fe90c32ff32b601aa91afe009d4de153cbb1372e752c1a12e63dd42c6337bc55",
+        "49a0e54158970191e6e6c813fad03f774c60a7520044fdea1dadc256a17cffdc",
+        "1e11f4f8504a18e9986336e1ba5db482f8c282575ceb70310574f3e55a4acd1e",
+        "95f7e8eb9db7898264d27b0a31a321d0ad1357f8038d6eb9f916d5e45f23ad7d",
+        "96a43d58855a32142de74c90c1c2edba18acfdd8b5d20b9b287f81f813c27a56",
+        "22b892e25c809a105438d0a4676ccc34d9d8e858765194196047f428cd10e8dd",
+        "98e6ee43695ca5589dc0a2cbf625c886bb7bba8e4096fa3d75b1759b6f6d13ad",
+        "f1b15765cf226b6ab591d5b979065174e22b54a9525012618904aa92ff938ddb",
+        "dcb080cd3df6205938196242fb4e39e37339c6883dc890a21bfe9edac56efd5d",
+        "d13dd4bf63797c3785893605ecf0197e4caeb8d42d83c4cdd0c4c6f9176bc6b1",
+        "5d45bb65e6b003e6f77249e8bb7ebc475af5fc41cf3fddf65c4744d9f7a7ff59",
+        "6a1113580986e82dc2e3380eb024cc3da1084b31fc6a436344bf573e74e24e60",
+        "686fbdeb050361e81543f9d90e9e6668d472ee00c9b3727d4b5ae3359b1a5909",
+        "245e9db05ed5fe3077d448b8dbcb1adde650556d3dce80ab5c9f11a3fba99c07",
+        "a51ffd7c49d4f749dcce8784e151a0cd2daae9f173df5432a311dcb7d30d7771",
+        "a0f041bb712470f7ff8068f57b2bb084ee5b618b6b875bfca43a2165973dd96e",
+        "03c39dcf054e6942d51667b6dae2ec2087650a04575495ce16053d530d59b102",
+        "9c7263f1e5f4238fac59b0c3f085481360a7240be142522cedfdb7604b413ae7",
+        "3e815f4d24e279da012e2305fd9ddf77d3d5236ccd09e0a6861c648b2b7fb745",
+        "b02881aacf9837919f480e37e74bab172e37128287b245e6317d476114b4c6b5",
+        "c00bd70cf7cd2e81fea8af5c413d1824d2088a422c42d5b76ea7d79c6c535905",
+        "e94272c3f62e2e99fdf8bc5a2b42759b2e010df7f7fad86b081d7cd62cd661a7",
+        "51b68c7ffcd7eadd553706c33d2948aa273687bad85ee0b5f1642143b31315bb",
+        "909639e7e2c2894beb96ce554344bcee49891f81206977f6f782d95d3a0aa147",
+        "ba678c274fc2301b945089e59a36ac3dae300dbf40bc35577ad2b3d1ece119c1",
+        "5a5bdf0d9cdb35746f722b6724d2c7d8df161b2dfa3b29ebfa13b8777e58032a",
+        "a14adab6c468b0166f9f278a613921730adaa414c962099887c1f51f2fa17edc",
+        "682bd5dc1056dafe24348269dd75341923554d71b866f6b5a89762da264b2877",
+        "68a9b370c520d7e34da89c8530332c1ed8aaba90c32e7ecfc6f549af1a0a535b",
+        "c12716e39b322fc1e8ace5f3a0bb822b86c9ad3b397ba0dba88589aaf80bb4fa",
+        "918b3297f0c0454e2248d0144098b81281976e5bd30b1c22ec4feadbee293738"
+      ]
+    },
+    {
+      "seed": "cg-campaign-38",
+      "identicalRerun": true,
+      "finalHash": "0a63c1ebde96854c75d79a74396e6fc9af18a18700627c6d1e042f522ae36ce2",
+      "rejections": 0,
+      "settlements": [
+        {
+          "id": 7,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 8,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 9,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 10,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 11,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 12,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        }
+      ],
+      "hashes": [
+        "fd04fb2dc08bc4b96c06b44cea82649db6ab7ebf43fefb4e55219324d17ebeb7",
+        "37fe16bc4971aaf076e442a4a075f3c5b20ba5645f3096b97a6f1efac312dfb3",
+        "e96f9e0e0983e81e5bd6c1cdbaaec59dad19c5eb2ee575f0fce9090d9aa4052b",
+        "6b6e6a6565fe0d2170faf536d5a682db5fab06829f25b35918a26d5a98cb957c",
+        "69a3849510fbef7438d68202bbd0996102b6582576d0ce1ee396ba6a4f1bd0f4",
+        "16d449a94286085df6c092a4a4136c96e047f6b74a3c09ba6eb70d933f0ee905",
+        "f07ca51ecebfc1fcfc128925af46bdbc6dd849007e1b71083a871015ac76d7f8",
+        "5b02d736a948b6aaa6496a4a45698f925740beb6ecc7f371472dc7776039772d",
+        "2b8ccc1b86072cd6f0c87bfd68ec0e19c453509f25ec8af417a43b252e873494",
+        "17adf5edf8f0e109efb6af98365a8247b313e771d2d5af6fcee7fc17ae1df3ed",
+        "9143ca8fa39e1820021e65e7ce393a09eafc81c717e208c754bb4607705ec3a6",
+        "9f1cde794d529e380c1611dd668c2d57fa202d8135b2a028f00b0ba9162fd819",
+        "09f9180fba46b3fb82b3a9ae22841a34b53bda31fc10080362c5f1153d6361bf",
+        "ab70decbb2e1aa694bbb84f4040aa61c572cf9e37a744c9b5086513bbd0a641e",
+        "6817cfa6b619ee57ab9c78b6bcdcc6e96464f2fd3ca58041e9fc03051c0e1a54",
+        "ae44424e6b61546895a2b39271139a80c09ee3e19a8067d8ec54f1fe55d8f330",
+        "e4c872f888a58be2a9eeaf5a998873e4b7400839fa5b43de979f6fa808e8bb0f",
+        "1ce41ebfa6b262eb025a3e1ef4fcb6b61bcdd6f74f142a11a0f9b47215fb590a",
+        "75b926fe40123d6ad64dbd6d9530a574b9e314ed945377fe49d2bd7617c70149",
+        "8793c14475abc67ab9c243c0d0d192fc05e4b6f6471a37fb9a3b27cdc96d90f9",
+        "2ca4d96975c9a8463451644878b8cacf82abdbb1cef8bb41c4eae4432c8cf887",
+        "68744ac782dd5d35eb6573b4c24d35f6e688346b8aff41a8f6c02a815ea98268",
+        "f1aeefed9a8c483f83dc4dcfbddd481d0e9c40199f63f1654ecf6ea40205b9d7",
+        "3c6ef0308485d3164b6da485ea83eaf10094d1ff8f3522eacb48779d38b628ee",
+        "700283988efdb471e7e715e3be63a0b1a814e86e542e613f5e60b4d0d86bb06a",
+        "4160c5fcc0c9dea2b590cc3c0baff611724616e6f19d822af167102f64d4516c",
+        "08066dcbbfc9bbc04665821086f978cf3497c160227782fdb44fd897efd99e33",
+        "e6d5fa14e96e9f488221b3c03cd7cbcb9b5a66adc694d4ea6edadba4189ca347",
+        "f6d69b559f626e0f8d842f420afb01d1441b40b8c787b3576d0bfce488b106c4",
+        "3bae987925313e88237c9d96f222b5d206422f328cfb3b73b7fec00e083561db",
+        "0a63c1ebde96854c75d79a74396e6fc9af18a18700627c6d1e042f522ae36ce2"
+      ]
+    },
+    {
+      "seed": "cg-campaign-39",
+      "identicalRerun": true,
+      "finalHash": "16d6c4703177e66d3bb5e793f15496253e2d1918c8c3bd0a5903f860adfb1f2a",
+      "rejections": 0,
+      "settlements": [
+        {
+          "id": 7,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 8,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 9,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 10,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 11,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 12,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        }
+      ],
+      "hashes": [
+        "14681375397188dc346bda8b18cd8dff65868fe9e62fa6ce12fa6cd11c274b12",
+        "66c7a777a822aa3f509e656c83cec68488a97b4da160c8d0333a942fddf713af",
+        "fac568d88099a23fe427598e64759383a4786ed7d9ad15f4503f92cf9f81205f",
+        "c3b84a1031db0495ae07577e861532812d8909bc748460ec735bf9e5ca016081",
+        "8754ea8d9b4f2c2a5c2e471c047816b70c055432711e37b57fb1bd0b6b818bf5",
+        "e65a2909ad019a274bc726b42e8c59de542343e323527c4c4dcea7328d0aa3bb",
+        "98d42445ebd82f405bf9e259cf26cd55bde1b422252ec993ce24e4b1b1199f42",
+        "d6ad818a0b6f3bf29074800799d13d005d077c3beba89901a8da11032bc33812",
+        "ba190cd4178e72b3e8cfa2d0607ae5974d7b7961ea164396aa5c0e71961ca9e1",
+        "2f05a631b6f73afdf1ef1c27bedc1fca61573f3f1e0f80e856212bcd5820a62d",
+        "6c09f9f267bdc8917802e650a54f17ffb6dff15ea17d9162777f84fb6f651cfc",
+        "15b7defe8f8573a5d5be76564437cb30fe398da8a88bb0b710fb373fc0457fd9",
+        "bf6c8979b6be20a68a25270a9ed3c8220469d7af9ed0cd83f7294f35fede6d2c",
+        "ee02017646a74438c604ea009b365b899bcb59a812254113257ce5fe9cbb4571",
+        "6c578e8fec936b0b199d4ad163a2f5a4aa330d6477eacd08a4bbb1a3373f35e2",
+        "06d44f1cbd1712d6e6323d7f09c059e1af9cb0e93e1a74ce9f1535eb667dc2ea",
+        "c1aac59bb8bd1a278896d164ef01629ec4eb9b1d5a6cf1bf52bd718e6126006e",
+        "a222cff82760adcf4314421ad8e5cdb86a57669ca8ad830d03c77d542c3c3ffe",
+        "c8a3a1499ad7541d3a8c54047a6ac9b43db488f2cb310da9d6b918b34f6c6719",
+        "0e8335e2f5db4b40d3c900b0cdc4d56afa9c9fe7fcc054ea04a949ef6f162798",
+        "1e53d1872095d7ca96571842299dcd247807b1412bf73448e13128248583eb76",
+        "e7febbbb7475d035cc863a26278d5a13fffcb3084e25374517a713d4a7e578dc",
+        "6fc185128a56164b9c6dcaada560a4da78727cf63e042be3f607b47128e2d737",
+        "636f5284b8334ff94e79b008b13d9a009a03764ad4f5383707283f1183d3096a",
+        "8ac9a1ee70483e1d373717cf640ea430d2cf9d8f13c91ae85d8c7d89e25abb9b",
+        "6f9ae48eba32f42ed23e35f4cd26ca419357cbf3ea5773bab36e4b18437df054",
+        "580d00cec9d278543239af3066cdb38cecbfcf74585708d6c90609674c064a5c",
+        "bd9d97d0c73193ff3707979829c5371c243c0cd89292f6f8cb908bb1466d2073",
+        "6030bc6660d3eb3f04eb9df97636752996e8ed8e33de2055556528163971e9d2",
+        "e7b05f5a3619e6c6389982ff3c03d80091ef238787099d2036498f73d2c6bfcc",
+        "16d6c4703177e66d3bb5e793f15496253e2d1918c8c3bd0a5903f860adfb1f2a"
+      ]
+    },
+    {
+      "seed": "cg-campaign-40",
+      "identicalRerun": true,
+      "finalHash": "d7eb4dbea8aa0529a5cfe90ab6f2d3ad999de83fb269454755dd9a3ca3e95cb5",
+      "rejections": 0,
+      "settlements": [
+        {
+          "id": 7,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 8,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 9,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 10,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 11,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 12,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        }
+      ],
+      "hashes": [
+        "695ef4a248d5c45805bba1a045983825935d10d3a9368ca4b71327a4c8c4b560",
+        "2b1992f486c19d301a798cd3020b02641075d6997e4fc6bcc30e25cf96b9e20c",
+        "a5cac3697a76fccca520ff2e1e26cc5d36b7bf4a71992265df339cb027372f43",
+        "a9cd67e5aef839b0d81ca44ceeedfd7cd533f47ef8ec0aa1d8fde498a201490e",
+        "558b1cbfee284cef2e08f3a86dc87394a159aa3a05fcea85b0ffca786e6be350",
+        "9f466e3c72ed500cc0b4fa83dc46563bbee38b67b422eb6e00bce18e866db4dc",
+        "888f742682490a53534a644e73cec0cd66c7f7bf0e4e6d9a528aa7b0c7d5108c",
+        "4ebfde618b12730673a057fe877486822bebd9bef87e71e7080e3e841c405f31",
+        "0727a785a822ea4c8f31d8a34441719c1abcf0d2b563eb4f59a5962862e41596",
+        "d645b771d59646e9aa1b7a7e948ef1e6e7616887babbada05bea5204e906b2fe",
+        "b0cb8bffd7c14eb05e6ce0361d08cefe7d669ef4838c183d36d468dad3d322c9",
+        "823fc75d680c855e551e37797fe166cda2c567439ccd1605ae544cc085fecc7a",
+        "b9c914e04736b129eb3826cff3cb2962294ea8304b4a94c09909f0ea500fc554",
+        "4ce4df8d8ff29ec4cb579d914fb703b598d2ee6525f7f7a170e8162f56f80291",
+        "875b8477c6a3424809e99f6339d81894bd24ea930ca93a6c8c2442d563c4b938",
+        "5dc778a83fd3e9ac9c6c85037c6e30372c2a0af7e98d86d465403e6dd19985d9",
+        "5d190121fb11e9f14e1b8a647d6b481d4a11e3ab181646e68db67db0d520630d",
+        "a2161b3ab8a9a8220a631fa7840ecfda05aa3a72b6593a002f603fb8cf2ec66c",
+        "d9000951d65d8541d9e657f45bc366d8b7cd7043ac9e92f80722922960fcd18a",
+        "7068e98c2a1c9d32bbcea0b22a0f57fc3cfc343be675e3f70311215ab318662e",
+        "633e1db57d6de0ddcd30e987d06af291289285bd4213045a0bb83c9de54b751c",
+        "0f7a7b0f0e85439a806ed60f37caa78779ef4aa8935fcc7159db584b38944950",
+        "a681af8ecbf766af093143b92f6a9e74d502d80d7d5137eea4514384166c6b47",
+        "ddb265aa13f413fa28ecd2c33fa8cd3e8d280d2ce70b1ee0723421aa16b33db3",
+        "92fb6fd3e6fa0be1efa3ba5161ca0db773a7b84dab01e70c177b4ddc1d5f2411",
+        "def0ee7a50e703345efe4bd5127c74d6a12207ce6788227374783cc0d51427c0",
+        "03cce0a8588a8591827236e42d1f886ea75552aa47726662c621c1369d5072eb",
+        "91f134d083fc89be3a4c5bc1654835fab0ca109a4521982fcfa5258c8d63116b",
+        "d415b98f97b2b2933a71547a9e7c016b082fa666f0e11af18fac343abf89d2bf",
+        "6a4d9efa6eb436f65488578979cd4de8cec2aa5e34484fd4209ddefdc080735e",
+        "d7eb4dbea8aa0529a5cfe90ab6f2d3ad999de83fb269454755dd9a3ca3e95cb5"
+      ]
+    },
+    {
+      "seed": "cg-campaign-41",
+      "identicalRerun": true,
+      "finalHash": "cdb26c2eec942e094f290bdf0d60823086cca06ad5a36158cc854cd01b347e5a",
+      "rejections": 0,
+      "settlements": [
+        {
+          "id": 7,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 8,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 9,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 10,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 11,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 12,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        }
+      ],
+      "hashes": [
+        "5bf4ebce9f8c9eef57372c9f09b24d365e651e8f1521d743db0757832553a5f6",
+        "439d66a1edfb0ef649952cfb2135044a388520b9dfe6374edc0558d3a901b545",
+        "126627fa137862fa1e94020bf9b7f6a571ecf9fcc158da204e8f3b7d6134a3e3",
+        "f9300bd262d9d228003ee4b40bec801d5a139b89dd7760c4a010bbc93dbe1dd8",
+        "182f9aee962bbccd3ec238742c6799237b463133f2a910748ed10c04ca96a940",
+        "87d043ac288c6042514016a2601b6018d3a0983395f52f8ce0a43c5005a3721a",
+        "6aa2a65c67af2afc6223cf5618d6f01099d0c3bff07848a361714c2950133070",
+        "548c5131f0a8b1a37f3fb33dec6eebff6c32221f7f8de936fe39aa680322b99c",
+        "6958e8ecd5d07f71509bd696075f3fc6691c6bde173bbd24fa21388d2e0f0733",
+        "ae920c50ada519458593dfe0a699d8d343d7545a93c20e80849ccd8043c36b5e",
+        "bbac0d46048123a7380b75b23f88a1938174f22acb4cf38aceb9d10c6f45bfae",
+        "4538069f492d57e421f5e9adc9809fd8d54da19bf98b93d7d9ed7c36119c58f3",
+        "12438092e13d64935c0a4cf859898d88931043f118c4305716a035c52a3df56b",
+        "0e739b3694ca584ddb89e4a81aed9bc3830b034252397e657e53c99b61892946",
+        "bf6359e9df2921399b60d587c4cee29a3f7943a9a9d6164e49b86e8e4de4861a",
+        "b411275bcf0b7570f3edc43dcf24f4364c434b0d7e0ed4bcf3f35095a62e7574",
+        "a536995b70667768ccfa0750830f917c313262af00ce576697d10e19c817db35",
+        "d3f8219a9481439649a7dc67850e17ddd831dc07a4a4523b4001669845791242",
+        "1884acb1c931df111e214312cd42231206d0b4fa642e8813f92e074987404cea",
+        "94b3a8211d03247fe53e012c2442d6fbb8e27d192629c84a4c4f0b2086b7f1fd",
+        "926f421f646365cd98293f1c9257ab04d9032f87a963035e2a2d40e323fcca11",
+        "c2164129ae3f812428894d4fe63137ee439f94499467478a3298f664809cbd3f",
+        "8d40391a39260c338ed09115f1e43baee1bc9f98a764efbdca8e6167c0bd6d84",
+        "7ba57585864ab975778e69ffe258d4fccaab79ed2fdef2a29dd7d9d04a58c87c",
+        "2ce167cb4992434c81afa4a5e68e609a9fcce0dde669970209e9312bf812456a",
+        "599abf38304f8a22b42f3a540a59b3a2fefe5299e0de5cb2638e98db0a921c8e",
+        "aa6fc9ff1d39a583511570cd7989fa8c58de149990c277389f4715ebbca553e5",
+        "eccd8b8e38922eddf966331c1ecf892602a3a766a07f6e6dbbfaf351adbd3969",
+        "d78bc0011d127da05dea7dff4a8eecb6dc913c1c02efa9e3458e062f8910012b",
+        "2732dfb4825376d1865dd7f887fe8213a598c8789c30c6c75207ec1e84d120ef",
+        "cdb26c2eec942e094f290bdf0d60823086cca06ad5a36158cc854cd01b347e5a"
+      ]
+    },
+    {
+      "seed": "cg-campaign-42",
+      "identicalRerun": true,
+      "finalHash": "1f1e6a3ac412ee41b490c0f8f690a61d07ee9f6a431e7764c40940626498638e",
+      "rejections": 0,
+      "settlements": [
+        {
+          "id": 7,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 8,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 9,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 10,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 11,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 12,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        }
+      ],
+      "hashes": [
+        "90c72e97f192602d0705701846f0c08b114479c5fa83cda86b3db54d23e7e343",
+        "2a5989a35e6b3349a5fbeb195f28329229d35e126d230924da728ea966d041d5",
+        "e16b24dcd6420015a0032398d1968596f7be85d513d44ce52ae15c583c280603",
+        "ce816711e0631078280d4ec7845b96f7c78ea8e8aff598588d8251cf5a67ca68",
+        "dd0523869ad4ad42edf32bd4f91a2ba53fe8b454abc5afe661c4d722234853d5",
+        "b0bf8ca87e27d46aef6f26067dc2e8dd88a777de39f4360c22de42c6b7e6ab1b",
+        "b6a487c9defee185d12022908e2f3490d81375f1df016ef89911e587d6a4ab2d",
+        "acc946837eb795225e656ea85e14b4f1254503bf4f90ff912ef58606fb3838c4",
+        "9f4e27f9175be931dfe645302b3b6db4bf14de92cfa127ba920cfac179048f45",
+        "7f3333d0283d2324e1560831ae2745e8e62af444d4351859fb1e4aa3a87ea1b9",
+        "c37749657c8038bd2632436f974815aefd487720a0d922ad549bcaf8ebf008a6",
+        "a0178d7561147b32378a2432845ec3b872fb9ad07f14540ce76138a64b6f1e22",
+        "2b991e8dc59819777ea994be818a35a3199132879e92151afd75281d82b0a91b",
+        "7657ceeda1a2ddcbf15a66f3fefa732ea9f5e382771a4b1c4cc1ab0cb33c081a",
+        "3cc60fbc3fd7a35cad40a5e9dca1552134ead668e73b84af0f3d41ea73d7dc61",
+        "4d3c7e03f568d11755f0559c6bc2ffd6e82913a71c0e1a0446f9364d528f28aa",
+        "34994fffd53b974ade8228cc7f045873c77921e57ddc4133e5606a6eb7e2b252",
+        "a39c1c03506d90754e6b915b232b5eeb20cb5e520440b21a75a3227c5d4c6180",
+        "6f625f63b25da2b2e8bc83d2cf0e71bbe034ad5238a47597f5ec43ac9fabb496",
+        "d298448db4a3b21521f591cee0cd2dac26f99ecbaec82bcefd6076947ba8bf88",
+        "074e2789685a05f9365f18d1d7e1e3803085d9839ffc7c58557aa707e26c4527",
+        "1257b6aace8768eb5bbcea5cb32d9ff9a6f61f0fbae47751fe8d8719a7ea262e",
+        "4e5794f090940360726c7f05d91911ed172935180663ba8a1849208897c56120",
+        "8b8478fb8e6ab2b07fd8485501416362b574810ecc32034cc4fcf4d5d4845c98",
+        "27292a685cacd7d11d5f24994f217dd287558300eae57f6b995cf8e8f1447515",
+        "cf691ca07fdc8b5ee922ab0334275f218cd522563a36b72acbda00667b843cef",
+        "c2f8752d8f04cb232678b5750213f7878d0224db572d5019f5fb6032ac865b10",
+        "bf21aca3f97a6fd56b98504c1ea3d5965bbbb04eda71b374c904e1f8d3eea901",
+        "52f369ac62092d4b216bdc1af8bd3b47bb19d21d41a54cf9b0f151dbeb04475f",
+        "c697edeba81471abb32eeba65afb6709269c21bc937d30102d15c3f2665aec66",
+        "1f1e6a3ac412ee41b490c0f8f690a61d07ee9f6a431e7764c40940626498638e"
+      ]
+    },
+    {
+      "seed": "cg-campaign-43",
+      "identicalRerun": true,
+      "finalHash": "c96b587c2474390841ec5bb151229856fc05c61550f6445d7bad651207a168c9",
+      "rejections": 0,
+      "settlements": [
+        {
+          "id": 7,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 8,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 9,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 10,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 11,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 12,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        }
+      ],
+      "hashes": [
+        "081fd46ff4eae4427ba0b71a3753ce48220e1d7c213517d7ded9ebe4f90a68c1",
+        "ba3e9ee9a765ea05411447c812a81c0709dac64855d7309a7767885ed562cbeb",
+        "d7eabacf4ea7897a738f93e4861f743c9cc2829d4238f535651235518775d166",
+        "02cb3297cd2d9d42ba8abaf611ff67082e48e6a429755ac7aa3fa3539da3dc72",
+        "68b3d175d474695eda4f219c8cf7091fbdf87691330e2b057e758ee005f101b9",
+        "a06d636239c1b9612ff749ea7892b5267c678ef8b5a61cfe0fd9e650a7aae609",
+        "57ce8cb39a5a514678dd9b580333a3e3533c5f8d71f8b6a299722d4c91cacb0e",
+        "ddf268f0d419c32f057db831d9636bb694160819b80a8b65c02a8d0dc722dc9f",
+        "167b71fb3e2ec62b73c9ba8182818e8abffa084093c412d5d6129c01dffa5ba0",
+        "b94ba5b59a2fb7a320729e7b954d2ec4cfc948bf21d44dcea79d6110a016ad80",
+        "b9f225a46b0be8294f0cae61dce36ba47f56c3ee4a295598b4a07246a16ad015",
+        "31a01060930ee57f824caf0343dd793c822cebda683e7046df985e41a3286685",
+        "24bc45a46008044317e3b523f07fbb492a963c4f84ebad8410a06aab99cec5f6",
+        "5a748295def535fa15f6751d2fb85acabb8465bd29abe8b685c0eb48c36b7946",
+        "cfd38a313782cccd9bbd9ce201b943ab1addb5576f086d99b809e0e6a3630528",
+        "ff99a0b3c2d8c6c6fee85ac5eb360eb3b0596e683d8f0264703f747d2a25856c",
+        "6dd8d3e60695c7684e0c9ab27fb16d391f4e4d72e43ab374473f1bd54b59ef94",
+        "46bc5cdc47330a2b80b468ffece52bfd7cc3cb4f4ced337859a0d23e06ee5f2b",
+        "8693aec73d6449e9449f384375eb324ee9684a23bc884d7b491aa278336c7da4",
+        "ca415607e3ffd95666574011bc623e7310cd84ef730425f26bcf4def617e3952",
+        "f8d7a64009aed4b5db2a0bee88286c6aa1aadf4116f696b5e6360a2515bab31d",
+        "0d0add9ff0c0a654be4e2d00fde97fd8c832b4bd0929d1815b7971e32e957d86",
+        "0e9dec4e7afe8cbe8fdb6bde226c7a79544b352e1555004ceabeb23c11d03f3b",
+        "a1c7208429570b01a75c35d70f6892cbf4d99df94c223f7b133033c70ee84b08",
+        "b927080d8e7942125144ae6146e644b71d575723dd93b1f790ce161a71704259",
+        "dc0f2e734644009983b34c5db762501a90ab97359dfc3039940eab4f9f3c587c",
+        "ab34e85e94a861a6b6c6332d4ee3016168455758b798b3fc4546e89ce2483b97",
+        "0764be0712d94cddaeb60ef574339feb6ca4e15dcf9cbf4d8d1c30033d23997c",
+        "12f1b532441f366a031cab4e03c9895fb9ca6b11520febbc437c96bb182a3d02",
+        "9764091625283117c58485d727a9c5e3475fd55621b993331a842de98246b7c6",
+        "c96b587c2474390841ec5bb151229856fc05c61550f6445d7bad651207a168c9"
+      ]
+    },
+    {
+      "seed": "cg-campaign-44",
+      "identicalRerun": true,
+      "finalHash": "9c436300bcb180a94a6c28bbb0fc7b3d3a83413d2a6678007a0c8222e817252e",
+      "rejections": 0,
+      "settlements": [
+        {
+          "id": 7,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 8,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 9,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 10,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 11,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 12,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        }
+      ],
+      "hashes": [
+        "8f7518121ee986ad952360f9e8e32d5e2b04bb7cb1ac3d55434abdaa36352a4e",
+        "ef805eb3fad683aa58ce444a3d6e5f9eb658836ce4673c4442ae47336e84a4fd",
+        "77b68146ef61ede0467c65f59b64833038ba9e9dea63780ab67578bb1b6c4977",
+        "88842518248869c064989943fe07aa83cc5825c5ec545c2777cc1cafb2b68ad6",
+        "cf4d3e7edafc9e5588e06bc7dfeaf8b82d281782c6c2b7532715a251e116c4cd",
+        "e4437176fa347191465ae34b39c0b4251f832b45e4ccc6fd25659eb86be0bbb8",
+        "e7dbd07aca538ab4dc3e8c0372dd31468877cbcdd2d615ef2d810cfa31a41579",
+        "148709b524812c8737e9a7035643a30b9c2a613057bcb728608122ec6238b01e",
+        "50c7d0f71dd851d63898bab2c1da7ec380dbe16898d1142c5d27c6586eed4b71",
+        "1b5b7a0b1b265dd76578640f0f5501c9486af48ee8cb0ce6539cf444a45f3f35",
+        "bb5c84a91964e7702e1f11a6c7aabde369bfd4aeedd72f1b44ef18f975c15e98",
+        "6ccae5810863ecf2b20e4acdc200a8ef7850b8d39a7003e0b5192887c97aa009",
+        "a50aa95ee2fa36ffced1ef09a5fe5de578f5d2303b27760dd14f0c8e391c73fa",
+        "e9d904fe12608f629c6ad42e4ae431f24a0b639925212e94d02a5b41cb4b7cc4",
+        "75867aae80313aee3c8e849493f025f8496094c5aea45040d0fa8c36486f6ef9",
+        "6eb0b3efaad5cf41d8dbfa576cc9b5c4d2fe794350fdd36b84d697b3b92f33a6",
+        "dfecefc67de6de9805b7694ff1110a942915f551dd3a4740558dab5522d8612c",
+        "30465d54c4cffc0cb66aec2de77ea5f153b8b377b7674f6b58f9574afd275e2c",
+        "1fecd8c40446576915a7678c9047eac8266d419a245f995e1e5b5d9b8f99fa21",
+        "1d8d1c0f7ad0c8d1ef93cc8de6bb9e70ac728b7261eeb4a8353dfdaa2f0c091d",
+        "c63aeeb24ff0af71a98dab78239d0459e02beade409a7facda6e7e4a1c700efc",
+        "df733099d0d3b246d71fe561f18438069bc84ab434fb93034293b280a3aeedb3",
+        "cad6d33c058c5dbf9b60e236d9393c2446d859fa1e0b4f6a06d605d283d1d3f0",
+        "a6a557d442ad3e711f5b921fb4034227ba7e5ac14ed50b6b62000278686ce112",
+        "5c1ea555d6ca5bc060aeb5fc3249b260496cea5f44c603e1f5496a3b3a0588c5",
+        "6a7bd8458d435c119a8fc35f0a80c2bd1beac724dec2b8f7caad84fd7d051c80",
+        "0d2c7a988b38ce24e48872b4e66457ecd5fed990f0f9a75cfadb6054929f231e",
+        "4e9e5351e5cbb795bdc257615f3e81b091151477147806c148dabb16eea1c445",
+        "47ab0152e500d5c6664fc27bf41a7dba67123d0eb7f72c792eafff4c02893332",
+        "134f23b96b84d8812dee2de3e86c98b7366de7eb28c6a78744a992de82c1a73a",
+        "9c436300bcb180a94a6c28bbb0fc7b3d3a83413d2a6678007a0c8222e817252e"
+      ]
+    },
+    {
+      "seed": "cg-campaign-45",
+      "identicalRerun": true,
+      "finalHash": "2eeea7415794769795cad4d9db5f65fec9b77480054c41aecedcad3cc73afe7e",
+      "rejections": 0,
+      "settlements": [
+        {
+          "id": 7,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 8,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 9,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 10,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 11,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 12,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        }
+      ],
+      "hashes": [
+        "bbb9fa370b9e4f28bb9d59add0084111c259e462423993988395c9f4d0353c3b",
+        "8b9806deb7ad84a4742697bd511b0b03ce5ae10756944fa67bbe15a155bfcad5",
+        "3fc42e329981c918926c71d571790a09dd94c81bb3b10da213155be3cbef3a5a",
+        "e0e2e8e6d8f0b7a5d2922c59bd5ce35b3ed46a041b64d732952e4ac9b318092a",
+        "bf1f783efa9a23b8af52f65f56c152b3ebda3ef38231f37b915b699bd0216316",
+        "df048433982403d90ebfae8343de3791cd5ac4aaca70a7f3197218be9efbd408",
+        "f4dc74a2029e136ffaf3b2b931ff0f13b10042205c87c72078e245029b24bb44",
+        "1ff4e6ccfcfb5a82824348a0f5b745592ee4a2f965eabf5aa4655e9a5ef49e65",
+        "d6dc8b80e1306b8886ce8c1280688b6e51d2d5c60e44637234c2566262449dc6",
+        "0b238c11bd5524b163b23686b7b18cde10df1f90dcb7ef448344f3335d5be7df",
+        "ed8c3d5038c64417cda95df6924ee93fb8ea2eef49d2efc1ea9a86783e3ee0a0",
+        "4de314d22001d9ca5e5bc30c07a000aaeafd55fc7599f2999cb0a90d4f96426d",
+        "dde5db2cb2dca5704aafa2d447abe77ed642c5eae070cf9bca56f59d971ded00",
+        "b6aaa27530609f989626ecfdc07a4aa5102bab8a555e0100a86abee7a684d34c",
+        "62b2139b90a4b57c57d8fbc2a75818a9de858b9b6564b42cdc2fe92f12b22b50",
+        "3f20f43c7b8145b86db4dc7f169a76bf1015ab7e843bd52931da52a942d74732",
+        "c29b23fac4978bbcd83d77b03799d0c9fc1e253febcc7f589d6a1753920d5680",
+        "e860c281192356f0d7f632579978e258f3152b44c4e802dabcf32b82b8234cf9",
+        "573c700f21a93b745d26d196660b18e72a6593435490dbb669978f541b33d45e",
+        "696182d57b7dd968eaf5da2abff7736298bbaa535b5fa5a827bcd9512aecbd22",
+        "7c14fc83e325e63bbe1fbc8cdac8d7cb8ce51b00391157457ecdadfa59370604",
+        "fc2f2fa81e685e0a1e5856fd03d23fc99f06094346bf84f50cf0774482587c06",
+        "70e599b4545f51d59f78fc314911134a1c77a00c53b9798fb3f4e460bf5310e6",
+        "f89c2fbd3a97c9f2622e38c7e0cec5313331feef3aaf6565770999f796e90e3b",
+        "1631c1ae1cfb755274e4ce522d7ba16f559b724e8f2b5674e45749ca991d3389",
+        "a93650035b02306bd1bd22322fb502448773fad30709345d73215216e086730e",
+        "30a402e5e3762c74f6164506583b0078e925eb19ce9a1132123046a5b5b8dcd9",
+        "fceb7c984efbfdd55f3486c53a56d3f72283719cf5465d48ca006f198a239626",
+        "778f6c551ee9af38370ce23b24862934e4e37e8b6cbf2bea993580b9f89e28f3",
+        "3c754d9b4a3b719449142e0295bc5c548df63d5bcac9c4033b51bb0f12e789fc",
+        "2eeea7415794769795cad4d9db5f65fec9b77480054c41aecedcad3cc73afe7e"
+      ]
+    },
+    {
+      "seed": "cg-campaign-46",
+      "identicalRerun": true,
+      "finalHash": "eb8014a8d4d0cd8b4106e4620e2db9d824fc39f3a1acd614b9e8d0865899af26",
+      "rejections": 0,
+      "settlements": [
+        {
+          "id": 7,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 8,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 9,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 10,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 11,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 12,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        }
+      ],
+      "hashes": [
+        "7918b7dc0b3041d113fd4c1f78d76eeb88d8b6e710db6aa36e64cc6744d32142",
+        "3b39f6957075f07c5586c07a095516aba6b8af45520f3723fff70968ee679eb6",
+        "8c4c514cb5a7dfda0dd7303f8de981b7b6637ae39d6309d4e31648043f4e2a91",
+        "e305293338a64bcf4c3d9356f20e0b475cd6af44100532db01c1e505f6b44789",
+        "abb972ce1ebc50b808f092aff73d8b66c4ea3f32201a24527754dad831af1274",
+        "0a65d291fb772476176d8dce5830947d7a6322adad9fe123c1e4349e60ee072e",
+        "845f55d335004d6d6cc0a74821a855b2d46e9cc1245fd49f66edec59ac78baef",
+        "040df739ab703bbb049e5eb38b8cbe68da8c738f3793f749d8710135215a2858",
+        "080258d92f50aa40b652e3239d935184c88384b329c734afcd2b3d1c296876fe",
+        "683658c407b9df2e423ec0cc52ec33468b11d0dd6257721ca431b269caefbe98",
+        "d095f8baed7df85fed303dbc4220283851c1e7299920431811044fef696da9ae",
+        "3e254ddc582b155bc116dfb001ec389cdf579870ab6bbcf29bc0f450f612e579",
+        "25424c2110bf1401af4e99b76af2567e0a2d762bcdc451d5b9ad299b800821fc",
+        "4bd6930e7faefdac4b5c6d2308f14ba680d4a9617d846c31c5bdb618489991c4",
+        "f7c6214c352c040e340488d8e6c9a343417aaeaa588592548bcb624e10028660",
+        "50d255edbcf010708260ac6d9d748e16e195e56b9ab5233aa01fa39c929798b2",
+        "d48f3c9c03351585d42a11067a16d75ced014bea1ae493b0f7f5c233dc1f4d7c",
+        "cf2eadd39607bc2940389bcb65ca428270edc6a5429f134251d6e800cb3150ae",
+        "d9463e278665f1845a597470aaa0a3157cd5fb928f546ced5d6f373dce999f40",
+        "1ea969e6cd0ef0ee669569bf99c0733ea6914dbd98351e900d8a6e3b7ea21266",
+        "db1fb142fa8f20c3c6a35fb48917b84799a3f0014d2d38bae36dc70606161c71",
+        "e654753db51617420b882ced8f94f6815de51faf025f6df85d7e583330f74173",
+        "4937595f3f386dc6112f4d65284cf38d3b61fc6bf51ede0871260d14ad21ff0c",
+        "5bca324c9e9b672304a893ac1b9261e88fe40f68791344f63615f52bfeadea72",
+        "3e72911adb582e06318c4f10c5510712935f0010683e21af7dfcb23473916ee0",
+        "b0147508f3b447d6b7577ed115bd5f59fedbd13a3fa556a33b050f8af96c5abb",
+        "301a38183f1b70da73ce5fbeb506eae526c689aea3d9659c9cc454b079112554",
+        "6fdce021434e607c95d071e17d01aa43d4bf51c2fd22491d6f04e97db8078961",
+        "db1a8b56ca057d6cf2dd5b29a820533a8ee1fc485431846f23ad2d6fef338fef",
+        "76265fb7a772958bb34910c051ef8d103196bd2bd055c114649a0cf2504b7b44",
+        "eb8014a8d4d0cd8b4106e4620e2db9d824fc39f3a1acd614b9e8d0865899af26"
+      ]
+    },
+    {
+      "seed": "cg-campaign-47",
+      "identicalRerun": true,
+      "finalHash": "aa7f7056c70589e6775ae5ad9517d531457b6160428fb6d96ec1d4fe41877288",
+      "rejections": 0,
+      "settlements": [
+        {
+          "id": 7,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 8,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 9,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 10,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 11,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 12,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        }
+      ],
+      "hashes": [
+        "10fe6c7f6965be5d9149c8e4779287f3a1456c3b18c60e972eb73f5da972e40c",
+        "97b922603a9aca09bd186b25052e411ab288eea2c6becc58c845b5cdd65de15b",
+        "39f5a6838d59b7efcae24d76563296ca6a61576ba0815fe776251fbaa6f2d06b",
+        "9598e0702df3ea7a06c3c99c7814299ae1beb9b38eaae3a6d8e35c931fa45a6e",
+        "33a50f7a5aa55ef915790c17231e759e04a63284d50915c0edb0c877b06810e7",
+        "8c9115b2d942ec5d2ac64861906ed352557d0be8abe1c4cade540972ce17a87e",
+        "cd58c33f5ca921ee31ab131e0306ada896f101ad81a114ca87fbfd37dcc777b7",
+        "55a191bd8cf1d3cae46093dec4fa2a7975def310bea3fbcb25b30f501a90f13e",
+        "e82471ba5ba7f608a1402ea8dd361c3328eebd3d8d9407168f016b5673087d8c",
+        "afb178236012b291cc48d6a9f29fab7f628059ca363577bd5ef28e100fd6c4fa",
+        "cfc11f7b3f1b873bee842d24a6daa7674e0d0f7c3c2618e1d0a312009925f53c",
+        "10dd494975a75d68eaad49bb5d6be415a9921d84bff284e49ce4c4f50bf6c898",
+        "cda4b17bc27519d419175123294b5a1bcc919b44e53956bfbbab018962650fc6",
+        "3004e73cc73d99417cfadd7d6835012ae66d411c1b131cc42657ad086bde219e",
+        "ffe613c8612fd2688e436eecf364b8d0a01b8fac4459593a6697d6583af48a23",
+        "67f16c5b0d77a431334665c6866d2f166df41a4eb7cfc85588dfc2d14aef7f00",
+        "137ba29d4c4626643e59d95ec78d4dee2918bfe154da5f7c0a375d9f7fa59ae3",
+        "8b359a5515681788d8800b6e2eca54238302ffa3188ee477c0b93aa4a9a084a7",
+        "9898267a9ab513bd0b3b1b4cb5bbbd55453ec7ee1441aad9f8324a2018e9c873",
+        "7274b9c61e7ce0d84fca9627c535d140bc231bdaa565a650ff871b564925ba93",
+        "09491bad9e6f08bce8aa8a64d87b73ef8474359bce2a09acba59fd7ad152a01b",
+        "30ce95427cd99fe610f1428564c8cf9340bfd9f608ae593df4e449ea15560844",
+        "10d113aad574ca881254447e47bc0aa549280d5edb1d54935fa88b3a51aad526",
+        "b44af51146b9648893427c08ebc1b6054407136c81758d193109e6d37506f5f4",
+        "c2e62fe914704a5a14bab23319d7d2945fd780bf954443045037058e522d0988",
+        "e2fff8659c878998b62e96acd109676bdda9ca7e6081889bb0efc4bc16400390",
+        "bda45f29b601154a19cab9092e240c00e1bad10ec4a8f985c011a0cbcfdad505",
+        "f7ee6087405a0fc7e2d24e99d9a2aaac55221fbd9497e013adcd80b35fbdaf26",
+        "072a36cc6ecb73083ba4a07e6576b4002cbaf85af684e41e10dd0908e63f731d",
+        "c9054bf134532e02b6ca476feda797629f1264b5952d188b3608879a84c10bf7",
+        "aa7f7056c70589e6775ae5ad9517d531457b6160428fb6d96ec1d4fe41877288"
+      ]
+    },
+    {
+      "seed": "cg-campaign-48",
+      "identicalRerun": true,
+      "finalHash": "9f76764ed6466e0bb216d8af1eb717a5d2a670638729f31f47429a7c3c7afd57",
+      "rejections": 0,
+      "settlements": [
+        {
+          "id": 7,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 8,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 9,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 10,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 11,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 12,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        }
+      ],
+      "hashes": [
+        "46cd98d5a5598c4fcffc214b21735c774bcbe0e7d497a224c6002644407ca52d",
+        "771f88f322b6c2a05e398789bdd2771c639e2e7ed7276ab17163160238afb1bd",
+        "d59d9e285a30c8e16140c6a77cfd3b6c9affe111d64a2dec1776f1bb7d3deae2",
+        "0b246fa2906bdf39e4a5faea22eb7a8556fc4ad1f8736c93a97a7edf6934c486",
+        "8b037da41de534815c5ef3956b09c35e208c2ad073887dd57ca4a6147633d41b",
+        "97fd0173f510c3ffb3c928cef246d73049a8d9322893c25003998182adb63269",
+        "53c673440177ce5554fad15a38746fb7fdf15d1dc204b427283ef7c9e7658581",
+        "3c37a8220a43a26ace9f02ae139804e4cdbd3695c4a48017fbe666a7d81fb7eb",
+        "4450d08c3a3aa374fb5472a7232bb590ccacf3d857b442f6d9f3a8c9456e733e",
+        "16dc55798613b4a3b4635d884f29de12518cb68a92a491ba9add8cf8ac76e7e7",
+        "1f5b8ed292d85b2bb9c8ed83aa4581a54e040827d8c65bceb5f6f5d36ee4c383",
+        "9234b278d4543a16b5d79e99adc7804bb2e3b736611d2470897bb5c9340f6a4c",
+        "2cbc9fbbafa1c56819de1f85d06c167f9df75ece17cf668b16059f91b01aabf2",
+        "9318c2e5078aecdb0b8c9f2a9698cfcb956a121e9956e44738d21405c9c7ca7c",
+        "8406becc439587ce99f084f05bc64a4146447890e14dbe636ae239f53c6700d4",
+        "fa0da72a213a50e9253bbf4698d0a14d40ee4d4b0ff859b590a81d69614c91dd",
+        "1a14b792431b2916b0a532177e7b95aa1906880499885bd6c777a70b89a05bad",
+        "1cc6ac4821f4d8babe85eb0c1d7cb437c91112deed836751edc505fcb5d3f669",
+        "73df9d60f1451beb94d7b76eb57284bddbf89d3a032d96087ebcc5ce9cd72cd5",
+        "c09cd7dd96d93834d01d3fa96bf2f5849d0e832659b00fea2265642a9ea72dc1",
+        "7545b317b3eae60cc41ceee16463e0933c1ddc29699d61ff5e989c69df75e7b4",
+        "1948bd1807d5a5aaece5d2fe12b4edfb2c35b5d88824da2ad67b814b4d297525",
+        "32e96b1591dbcad6f9715257a4aa3f84536a15e3d7c52c47a7581904dd49ce12",
+        "b79e2498db008f528ab7d9753ad2e3f7917470b6d85188ca4c55916038e2e8a4",
+        "28f5ddb4b855e35e193412f224fee98f8376c3f1054e7dfc958377ab5acd5fa1",
+        "a1d347652539cd0e704c333cfbaaff644a54eae0d477bcc5572051a71c60859a",
+        "8953b6eb07468e74f3f03ee4d183d42addd99e13b7b8629d833e299ee5db60f4",
+        "670aad348e5cbf93b52656efa5403b77061d186ae5fb256e7fb485ea384c97f2",
+        "fc3bba05552a5c0d5a3be8158d6b0a3ef2d69b7445b70260b14af396e86239fc",
+        "40cb559e3903f4dbc22ede20c4fe059709e0d541b9c51f79c0ec053efe07d3bd",
+        "9f76764ed6466e0bb216d8af1eb717a5d2a670638729f31f47429a7c3c7afd57"
+      ]
+    },
+    {
+      "seed": "cg-campaign-49",
+      "identicalRerun": true,
+      "finalHash": "1fd3665e1b370e88eac041b2c20af179bfa0c117bbf4b750f94c22c4c540583a",
+      "rejections": 0,
+      "settlements": [
+        {
+          "id": 7,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 8,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 9,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 10,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 11,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        },
+        {
+          "id": 12,
+          "populationMilli": 6724,
+          "dwellings": 1,
+          "farms": 4
+        }
+      ],
+      "hashes": [
+        "1b90346e8fba9f8724a0b1606b350e062dccde1cc2b091e07789ce77ce8c4b63",
+        "4d145f51c8ec75023d24344682afbaac82b204d528a48eb18e4daf7b83088604",
+        "0bc32a1c6cb24485a230c4102663e9ccdbeaa74010ca0faaee640866d8129392",
+        "c29153799beee925a5b9169ba4994d0816a66fd4942527aa59e7305fd7968ca5",
+        "9928b9d957f0e686591d29c92950b93b6343481506e133d4ef6b4ec72097b95c",
+        "dec231ac595d83a238f8367a608c7d305b0a7f48fa1fd1e10b3725eb5463747e",
+        "8e5cb6a7da8d7ed9973915c7dc04200b6340bb91b3aa1c862a3ab7af4625fbde",
+        "76a30b9ac855b74f07d0ea734d78a0ece641c701b582bcd3fbb301aeaa464e96",
+        "355a531b79895486c4de9df93b5b4a31c332308beec9a904e41d2e6414d74125",
+        "ecc77acef21a2d6f590642fec923fdc3acc703a5585113d8e57a675408c0b440",
+        "1c6c90e2b4a396e8be3a7199d2a1fce29f9f882dfbd2dd9587930187e055e9d5",
+        "02df4e95cb40ac1422e7c50f478f442d06b1d5d5dc233362dec97791634b6b11",
+        "9587fdc06272e3479694c8c824953fc847877ad0dc1a3406c924039fdab08d74",
+        "fe0f0e731952c92a7d461174455fb07797bc7d297b1fe065da50de7f4a2fd1a2",
+        "2c96ed66dc5d9e46d080dfbf4fbc795ab4899f33f78738ea7821cf765b2bf737",
+        "2d4bc5d01ab4bae70ae076d9670493458d2ffdaa4fc7fc4667066cd75adae873",
+        "8a3e853e6b63f590e2e83bb36ea1c6283b438b4d38fa80b079eb4c445c8fdb6b",
+        "046e2954ebf8c0eebe70f827786edfa8cb08b750adbbc76f4a6f2f9b780173bc",
+        "299a8519ae69f08bfc098585f7395cf23ca793c5d3b5f93c14b312d3894000ab",
+        "d20226d78dc01eb76feba2b3ee07efd0e9d0e09c2016529441fe87ce5b3ebe25",
+        "eacebd927dd7389b99c35be3632e71158a9fa82944338757ef32f80b2fa0d3a4",
+        "4a8d6c736329beccd2391998427ae0fccec1d7764efc9a0a98c86bc259eccd10",
+        "e9770908ce9b2ee6db32d1d85a94bd81e8fe1452239ea7de516513ce38814635",
+        "5b0da054f477e6deae6452f07c7138023c72163c32d5cb6c979af9c53d25afde",
+        "ab4fc7e83f0c2157d4bcd0ea54c40b6aaf81843c6331e08d8df832f09be3c4fe",
+        "720e29174e451b3cb7641c2c33beb99f1d568f73468248f243d4e96341d5c371",
+        "70ee36be08dffe8b8dbff79c242eb573b1fbe123b1e805303522a264ffdfb23b",
+        "96b83fb1fb60be6d60123f377bc5833bba7858027b850b5066419414f1295e4a",
+        "1af85ab9d5d0d30a600f401bfd3577b3fd3bd632c00717bb4d5a82c908aa91af",
+        "3094e787ff2be4c1537834e5e95d9fb35edf532d093cf1e4e6938a1c620d931a",
+        "1fd3665e1b370e88eac041b2c20af179bfa0c117bbf4b750f94c22c4c540583a"
+      ]
+    }
+  ]
+}

@@ -1,3 +1,5 @@
+import { readFileSync } from 'node:fs';
+import { resolve } from 'node:path';
 import { expect, test, type Page } from '@playwright/test';
 
 function collectErrors(page: Page): string[] {
@@ -50,7 +52,7 @@ test('exposes labelled sections without horizontal overflow', async ({ page }) =
   expect(overflow).toBeLessThanOrEqual(0);
 });
 
-test('shows an accessible requirement screen when WebGL2 is unavailable', async ({ page }) => {
+test('shows an accessible requirement screen when WebGL2 is unavailable', async ({ page, browserName }) => {
   await page.addInitScript(() => {
     const original = Object.getOwnPropertyDescriptor(HTMLCanvasElement.prototype, 'getContext')?.value as
       (this: HTMLCanvasElement, ...args: unknown[]) => unknown;
@@ -64,7 +66,8 @@ test('shows an accessible requirement screen when WebGL2 is unavailable', async 
   await expect(alert).toContainText('This browser cannot run CIVIC GODSTORM');
   await expect(alert).toContainText('WEBGL2_UNAVAILABLE');
   await expect(page.getByRole('heading', { level: 1 })).toBeFocused();
-  await page.keyboard.press('Tab');
+  // macOS WebKit (like Safari by default) moves focus to buttons with Option-Tab, not Tab.
+  await page.keyboard.press(browserName === 'webkit' ? 'Alt+Tab' : 'Tab');
   await expect(page.getByRole('button', { name: 'Check again' })).toBeFocused();
   await expect(page.getByTestId('world-canvas')).toHaveCount(0);
 });
@@ -85,4 +88,13 @@ test('reports a renderer start failure with a recovery action', async ({ page })
   await expect(alert).toContainText('Injected GPU failure');
   await expect(page.getByRole('button', { name: 'Try again' })).toBeVisible();
   expect(errors).toEqual([]);
+});
+
+test('runs the kernel self-check in the browser and matches the Node reference hash', async ({ page }) => {
+  const fixture = JSON.parse(readFileSync(resolve(import.meta.dirname, '../fixtures/selfcheck.json'), 'utf8')) as { finalHash: string };
+  await page.goto('./');
+  await page.getByRole('button', { name: 'Run determinism self-check' }).click();
+  await expect(page.getByTestId('selfcheck-result')).toHaveAttribute('data-selfcheck-kind', 'done', { timeout: 30_000 });
+  await expect(page.getByTestId('selfcheck-golden')).toHaveText('pass');
+  await expect(page.getByTestId('selfcheck-final-hash')).toHaveText(fixture.finalHash);
 });

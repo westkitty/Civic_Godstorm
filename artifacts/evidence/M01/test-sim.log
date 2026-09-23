@@ -1,0 +1,13 @@
+
+> civic-godstorm@0.1.0-m01 test:sim
+> vitest run --project sim
+
+
+ RUN  v5.0.1 /Users/andrew/Civic_Godstorm
+
+
+ Test Files  9 passed (9)
+      Tests  40 passed (40)
+   Start at  18:24:45
+   Duration  20.03s (tests 92%, transform 6%, import 2%)
+

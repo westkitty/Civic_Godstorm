@@ -84,6 +84,7 @@ h2 {
   grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
   grid-template-areas:
     'world status'
+    'selfcheck status'
     'title status';
   flex: 1;
 }
@@ -91,7 +92,7 @@ h2 {
 @media (max-width: 900px) {
   .cg-shell__main {
     grid-template-columns: minmax(0, 1fr);
-    grid-template-areas: 'world' 'status' 'title';
+    grid-template-areas: 'world' 'status' 'selfcheck' 'title';
   }
 }
 
@@ -123,6 +124,14 @@ h2 {
 
 .cg-title-surface {
   grid-area: title;
+}
+
+.cg-selfcheck {
+  grid-area: selfcheck;
+}
+
+.cg-selfcheck code {
+  overflow-wrap: anywhere;
 }
 
 .cg-facts {

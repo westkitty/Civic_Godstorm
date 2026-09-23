@@ -1,0 +1,4 @@
+
+> civic-godstorm@0.1.0-m01 lint
+> eslint --max-warnings=0 .
+

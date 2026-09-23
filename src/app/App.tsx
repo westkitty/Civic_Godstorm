@@ -3,6 +3,7 @@ import { assetRegistry } from '../assets/registry.ts';
 import type { RendererStatus } from '../render/RendererHost.ts';
 import { FatalScreen } from '../ui/FatalScreen.tsx';
 import { MissingAsset } from '../ui/MissingAsset.tsx';
+import { SelfCheckPanel } from '../ui/SelfCheckPanel.tsx';
 import { WorldView } from '../ui/WorldView.tsx';
 import { buildIdentity } from './buildIdentity.ts';
 import { browserProbeEnvironment, probeCapabilities, type BootVerdict } from './capabilities.ts';
@@ -71,7 +72,7 @@ export function App() {
     <div className="cg-shell">
       <header className="cg-shell__header">
         <h1 className="cg-title">CIVIC GODSTORM</h1>
-        <p className="cg-subtitle">Architecture foundation build. Not yet a playable campaign.</p>
+        <p className="cg-subtitle">Development build: simulation kernel only. Not yet a playable campaign.</p>
       </header>
       <main className="cg-shell__main">
         <section className="cg-panel cg-title-surface" aria-labelledby="cg-title-surface-heading">
@@ -82,6 +83,7 @@ export function App() {
           <h2 id="cg-world-heading">World view</h2>
           <WorldView key={rendererAttempt} onStatus={handleStatus} onFailure={handleFailure} />
         </section>
+        <SelfCheckPanel />
         <section className="cg-panel cg-status" aria-labelledby="cg-status-heading">
           <h2 id="cg-status-heading">Build status</h2>
           <dl className="cg-facts">
