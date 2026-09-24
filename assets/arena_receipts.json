@@ -2,7 +2,7 @@
   "ledger_type": "arena_source_receipts",
   "specification_version": "CG-V1.0.0",
   "created_utc": "2026-09-23T21:51:28+00:00",
-  "last_updated_utc": "2026-09-24T08:05:00+00:00",
+  "last_updated_utc": "2026-09-24T08:25:00+00:00",
   "authority": {
     "master_plan": "CIVIC_GODSTORM_MASTER_PLAN.md",
     "master_plan_head_commit": "5bd357e14d9b68776d50b1dee0829b7bd5ab939f",
@@ -6290,6 +6290,20 @@
         ]
       },
       "recorded_utc": "2026-09-24T08:05:00+00:00"
+    },
+    {
+      "id": "STANDING_CONTINUATION_ORDER_B08_TO_B12",
+      "ruling": {
+        "date": "2026-09-24",
+        "authority": "human (repository owner), direct instruction",
+        "decision": "Continue through every remaining batch (B08, B09, B10, B11, B12) without stopping at consolidated gates: gates are answered en bloc under the owner's standing approval - conforming candidates are approved provisional batch-local with flags recorded; rejections stand rejected as evidence with recorded repair strategies. Per-ID 1+1 budgets still apply. Two items remain RESERVED to the owner (not delegated): (1) the B00 ART-DIRECTION dimensional block (no_amendment standing), (2) the 2048/3072 canonical-promotion resolution ruling - both surfaced at B12 completion.",
+        "scope_limits": [
+          "No canonical promotions under this order",
+          "B00 block untouched",
+          "No CG-D-*/CG-R-* content"
+        ]
+      },
+      "recorded_utc": "2026-09-24T08:25:00+00:00"
     }
   ],
   "resolution_ruling_standing": {
