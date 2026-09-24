@@ -18,6 +18,20 @@ All seven are independent modules — no FORM/LIFE children in this batch. One p
 
 **Pre-staged scaffolds (verified with identify):** all seven `r001/template_2x2.png` at 1024².
 
+## Status after initial pass (2026-09-24) — 7/7 conforming, gate pending
+
+| ID | Verdict | Notes |
+|---|---|---|
+| `CG-S-GOD-ARMOR-OSTEODERM` | **r001 CONFORMING** | Exactly 5 scutes (zoom-verified plan+side), irregular wavy sutures, zero metallic hardware, ridge-arching cross-section |
+| `CG-S-GOD-ARMOR-COAT` | **r001 CONFORMING** | Continuous broad directional fiber locks, layered cross-section, silhouette preserved; **disclosed observation:** overlapping-lock rendering is feather-adjacent — registry prohibits particle fur only, which is satisfied |
+| `CG-S-GOD-ORGAN-SOLAR-SAIL` | **r001 CONFORMING** | Exactly 5 ribs (zoom-verified), pleated membrane, opaque tonal banding translucency; minor: front face slightly squared, plan partially occluded |
+| `CG-S-GOD-ORGAN-SPORE-SAC` | **r001 REJECTED → r002 CONFORMS** | r001: top-down panel leaked 4+4=8 pores vs six (TB-06 echo). r002: oblique-view + outer-face-placement + bare-top mitigation held — 3 per sac, six total, zero top/saddle pores; scaffold honored |
+| `CG-S-GOD-SYMB-FUNGAL-GROVE` | **r001 CONFORMING** | Exactly 3 crowns (tall center + 2 flanking), living root saddle with gripping tendrils, clear walk-through passage beneath |
+| `CG-S-GOD-SYMB-FOLLOWER-GALLERY` | **r001 CONFORMING** | Exactly 2 timber cabins + ochre awnings + rails, central walkway, segmented flexible saddle; **TB-07 canvas flag:** 1376×768, quadrant logic intact — disclosed (CROWN r003 precedent available) |
+| `CG-S-GOD-SYMB-ROOT-HOLDFAST` | **r001 CONFORMING** | One belly collar, exactly 4 bundles each forking exactly once (8 tips, zoom-verified); clean retractable read |
+
+Generation attempts: 9 of 10 (one consumed by a missing-r002-scaffold tool error; template created procedurally). Applied: TB-03 (fresh generations), TB-06 (per-panel counts — held for OSTEODERM/SAIL/ROOT-HOLDFAST; leaked once on SPORE-SAC plan panel, fixed by the recorded mitigation), TB-07 (identify() on every output — caught 2 canvas swaps).
+
 ## Applied lessons
 
 - TB-03: fresh generation, corrective geometry first; never anchor on defective references.

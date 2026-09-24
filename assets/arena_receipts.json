@@ -2,7 +2,7 @@
   "ledger_type": "arena_source_receipts",
   "specification_version": "CG-V1.0.0",
   "created_utc": "2026-09-23T21:51:28+00:00",
-  "last_updated_utc": "2026-09-24T04:20:00+00:00",
+  "last_updated_utc": "2026-09-24T04:55:00+00:00",
   "authority": {
     "master_plan": "CIVIC_GODSTORM_MASTER_PLAN.md",
     "master_plan_head_commit": "5bd357e14d9b68776d50b1dee0829b7bd5ab939f",
@@ -4590,6 +4590,338 @@
       "reason": "r001: two disclosed flags (ossuary socket; injured under-mark). r002 targeted repair: injury flag FIXED, ossuary socket flag NOT fixed (2 fresh attempts leaked the same defect - TB-06 pattern echo), corpse tattering ambiguity, TB-07 canvas recurrence. 1+1 pass budget exhausted.",
       "retry_strategy_if_repair_required": "Targeted r002 (turn cap permitting): keep the exact 3x2 six-state structure; ossuary instruction becomes 'skull surface sealed and smooth with only small shallow pits - NO large openings of any size'; injured instruction adds 'draw the pale scar clearly on the flank behind the wing root'.",
       "retry_strategy_if_authorized": "Pass-3 options recorded: (a) accept r001 as technical-with-flag (cleanest corpse; single socket read as fenestra; species anchors hold); (b) fresh pass r003: drop the side-profile-only constraint for the ossuary panel to a 3/4 view (skull openings may be a profile-reading artifact) + 'dented smooth bowl' skull phrasing; (c) reject standing like LIFE-S. User ruling required either way."
+    },
+    "CG-S-GOD-ARMOR-OSTEODERM": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/god/cg_s_god_armor_osteoderm.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-GOD-ARMOR-OSTEODERM/r001/cg_s_god_armor_osteoderm.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "8c0405fc8b9b946d4268ef94e359e2c34d7af5c1be04206d13480a2359001441",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "scaffold + TORSO-M r002 style anchor (M-family charcoal/pale-stone/ochre, subject ignored)",
+          "content_qa": {
+            "scutes": "EXACTLY FIVE overlapping bony scutes - zoom-verified in plan and side views",
+            "suture": "irregular organic wavy suture seams (dedicated two-scute close-up)",
+            "no_hardware": "no metallic bolts/rivets/screws anywhere - grown bone read",
+            "overlap": "one-directional shingle overlap consistent in plan and side",
+            "cross_section": "arches over a back ridge as required",
+            "minor": "small surface pits and ochre wear flecks (non-blocking)"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "AWAITING_APPROVAL",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-GOD-ARMOR-OSTEODERM",
+        "CG-R-GOD-ASSEMBLY"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      },
+      "reason": "All three registry anchors present (five scutes, natural suture, no metallic bolts); count verified at zoom per TB-06 discipline."
+    },
+    "CG-S-GOD-ARMOR-COAT": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/god/cg_s_god_armor_coat.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-GOD-ARMOR-COAT/r001/cg_s_god_armor_coat.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "63f4d6fcfd94cc1c3ccf7aae32f44185c03a97a19e50ea6e15fee8b5836f2ff3",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "scaffold + TORSO-M r002 style anchor (M-family charcoal/pale-stone/ochre, subject ignored)",
+          "content_qa": {
+            "continuity": "one unbroken covering, no gaps",
+            "locks": "large broad directional fiber locks in flowing rows; layered depth in cross-section over a body line",
+            "not_particle_fur": "zero particle fur/hair/fuzz/bristle - registry line satisfied",
+            "silhouette": "draped form preserves the smooth mound silhouette beneath",
+            "disclosed_observation": "overlapping-lock rendering is feather-ADJACENT in visual flavor; registry prohibition is particle fur only - recorded as non-blocking gate observation",
+            "minor": "ochre wear flecks on lock faces"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "AWAITING_APPROVAL",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-GOD-ARMOR-COAT",
+        "CG-R-GOD-ASSEMBLY"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      },
+      "reason": "Continuous fibrous mantle with large directional locks; particle-fur prohibition satisfied. Feather-adjacent visual note disclosed for gate."
+    },
+    "CG-S-GOD-ORGAN-SOLAR-SAIL": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/god/cg_s_god_organ_solar_sail.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-GOD-ORGAN-SOLAR-SAIL/r001/cg_s_god_organ_solar_sail.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "0def0623c6c7cba8f7731753111cdc27694ca961d655bb1a3dda31292cfb332b",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "scaffold + TORSO-M r002 style anchor (M-family charcoal/pale-stone/ochre, subject ignored)",
+          "content_qa": {
+            "ribs": "EXACTLY FIVE structural ribs - zoom-verified on the front face (center + two per side)",
+            "pleats": "soft pleated membrane between ribs",
+            "translucency_technique": "opaque layered tonal banding reads as glow - NO holes, NO see-through gaps",
+            "minor_nonblocking": "front face slightly squared vs smooth arc; plan panel partially self-occluded",
+            "no_text": "none"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "AWAITING_APPROVAL",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-GOD-ORGAN-SOLAR-SAIL",
+        "CG-R-GOD-ASSEMBLY"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      },
+      "reason": "Five-rib pleated dorsal sail with opaque tonal translucency technique; count verified at zoom."
+    },
+    "CG-S-GOD-ORGAN-SPORE-SAC": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/god/cg_s_god_organ_spore_sac.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-GOD-ORGAN-SPORE-SAC/r001/cg_s_god_organ_spore_sac.png",
+          "native_dimensions": "1376x768",
+          "native_aspect_error_pct": 19.5,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "a06cf1f5515505468510b9e4a77374f8404c5e1a2ad02a5b570b0439c49870ea",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "scaffold + TORSO-M r002 style anchor (M-family charcoal/pale-stone/ochre, subject ignored)",
+          "content_qa": {
+            "violations": "plan (top-down) panel shows EIGHT pore rims (4+4) vs exactly six total; lateral/front/close-up panels correct at 3+3 - TB-06 recurrence despite per-panel counts",
+            "canvas": "TB-07: 1376x768 instead of square scaffold (aspect dev note)"
+          },
+          "status": "REJECTED"
+        },
+        {
+          "revision": "r002",
+          "path": "assets/candidates/CG-S-GOD-ORGAN-SPORE-SAC/r002/cg_s_god_organ_spore_sac.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "72ae029dbb6664a3a7de35efc336765d20591bfb40a47437e0d9e8caf63f994a",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "FRESH targeted repair r002 (TB-06 mitigation: top-down panel REPLACED with elevated 3/4 view; pores anchored to OUTER faces with explicitly bare tops and pore-free saddle; per-panel three-max rule)",
+          "content_qa": {
+            "pores": "EXACTLY SIX total as 3 per outer face - lateral and close-up panels show exactly three rims per sac; no panel exceeds three per sac; tops and saddle carry zero pores",
+            "sacs_saddle": "exactly two rounded sacs joined by one broad smooth root saddle",
+            "canvas": "scaffold honored (1024x1024)",
+            "minor_nonblocking": "elevated/front views naturally show only a subset of outer-face pores (occlusion)"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "AWAITING_APPROVAL",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-GOD-ORGAN-SPORE-SAC",
+        "CG-R-GOD-ASSEMBLY"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 1,
+        "remaining": 0
+      },
+      "reason": "r001 REJECTED (plan-panel pore multiplication, TB-06 echo). r002 targeted repair CONFORMS via recorded mitigation (oblique view + outer-face placement + bare-top rule); awaiting consolidated B06 gate. r001 preserved as evidence."
+    },
+    "CG-S-GOD-SYMB-FUNGAL-GROVE": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/god/cg_s_god_symb_fungal_grove.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-GOD-SYMB-FUNGAL-GROVE/r001/cg_s_god_symb_fungal_grove.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "bff269d92c8f012f6815b6b24c628569c58065d596ba0d750dceb62e456819a3",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "scaffold + TORSO-M r002 style anchor (M-family charcoal/pale-stone/ochre, subject ignored)",
+          "content_qa": {
+            "crowns": "EXACTLY THREE fungal crowns - tall center, two shorter flanking; counted in all views",
+            "saddle": "one living root saddle with thick short gripping tendrils (dedicated close-up)",
+            "passage": "ONE clear walk-through passage arch beneath the crowns - unmistakable in lateral and front views",
+            "caps": "broad smooth gently drooping discs, warm pale-stone/ochre"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "AWAITING_APPROVAL",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-GOD-SYMB-FUNGAL-GROVE",
+        "CG-R-GOD-ASSEMBLY"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      },
+      "reason": "Three joined crowns on a living root saddle with the clear below-passage; installed-slot mounting read is explicit."
+    },
+    "CG-S-GOD-SYMB-FOLLOWER-GALLERY": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/god/cg_s_god_symb_follower_gallery.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-GOD-SYMB-FOLLOWER-GALLERY/r001/cg_s_god_symb_follower_gallery.png",
+          "native_dimensions": "1376x768",
+          "native_aspect_error_pct": 19.5,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "8486a3798d13304475fcc5f53d976de7c935b425d4063b843fe356af76abc39f",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "scaffold + TORSO-M r002 style anchor (M-family charcoal/pale-stone/ochre, subject ignored)",
+          "content_qa": {
+            "cabins": "EXACTLY TWO timber gallery cabins with low edge rails and sloped ochre textile awnings",
+            "saddle": "broad segmented flexible saddle between them (bending joint close-up)",
+            "walkway": "central timber plank walkway connecting the cabins",
+            "materials": "warm timber + woven textile + charcoal fixings; NO metal machinery, NO wheels, NO people/animals",
+            "canvas_flag": "TB-07 RECURRENCE: 1376x768 instead of square scaffold; quadrant logic intact (19.5% aspect dev) - disclosed for gate, CROWN-r003 precedent available"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "AWAITING_APPROVAL",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-GOD-SYMB-FOLLOWER-GALLERY",
+        "CG-R-GOD-ASSEMBLY"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      },
+      "reason": "Two-cabin timber/textile gallery on a shared flexible saddle with central walkway; carries disclosed TB-07 canvas flag."
+    },
+    "CG-S-GOD-SYMB-ROOT-HOLDFAST": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/god/cg_s_god_symb_root_holdfast.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-GOD-SYMB-ROOT-HOLDFAST/r001/cg_s_god_symb_root_holdfast.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "0f49c9bb606275a35c10724c9f6ea6548b138b570264e3983616c928e71ca38a",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "scaffold + TORSO-M r002 style anchor (M-family charcoal/pale-stone/ochre, subject ignored)",
+          "content_qa": {
+            "collar": "one smooth curved belly collar as mounting base",
+            "bundles": "EXACTLY FOUR broad root bundles - plan view zoom-verified: each bundle forks EXACTLY ONCE (eight tips total)",
+            "tips": "clean rounded tips pressing flat; NO dirt, tangles, suckers or thorns",
+            "retractable_read": "tidy smooth cable-like roots consistent with retraction"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "AWAITING_APPROVAL",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-GOD-SYMB-ROOT-HOLDFAST",
+        "CG-R-GOD-ASSEMBLY"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      },
+      "reason": "Four once-forking bundles from one belly collar; radial count HELD this time (TB-06 per-panel discipline effective)."
     }
   },
   "batch_checkpoints": {
@@ -4753,22 +5085,24 @@
     "B06": {
       "opened_utc": "2026-09-24T04:20:00+00:00",
       "gate": "Check installed-slot compatibility and preserved base silhouettes",
-      "mode": "PROVISIONAL - not yet started; 7 independent modules, no whole-form children in this batch",
+      "mode": "PROVISIONAL - pass complete (7/7 IDs conforming); consolidated human gate pending",
       "counts": {
         "requested": 7,
-        "candidates_generated": 0,
-        "awaiting_approval_ids": 0,
+        "candidates_generated": 8,
+        "generation_attempts": "9 of 10 (1 missing-scaffold tool error, no image)",
+        "rejected_candidates": 1,
+        "awaiting_approval_ids": 7,
         "approved_source": 0
       },
       "plan": "One pass: 7 parallel 2x2 module sheets (fits the 10-attempt turn budget with 3 spare slots); TB-03 fresh generations, per-panel counts for any radial anatomy (TB-06), verify identify() on every output (TB-07); consolidated human gate at pass end",
       "id_states": {
-        "CG-S-GOD-ARMOR-OSTEODERM": "NOT_STARTED",
-        "CG-S-GOD-ARMOR-COAT": "NOT_STARTED",
-        "CG-S-GOD-ORGAN-SOLAR-SAIL": "NOT_STARTED",
-        "CG-S-GOD-ORGAN-SPORE-SAC": "NOT_STARTED",
-        "CG-S-GOD-SYMB-FUNGAL-GROVE": "NOT_STARTED",
-        "CG-S-GOD-SYMB-FOLLOWER-GALLERY": "NOT_STARTED",
-        "CG-S-GOD-SYMB-ROOT-HOLDFAST": "NOT_STARTED"
+        "CG-S-GOD-ARMOR-OSTEODERM": "CANDIDATE_AWAITING_APPROVAL (r001; 5 scutes zoom-verified)",
+        "CG-S-GOD-ARMOR-COAT": "CANDIDATE_AWAITING_APPROVAL (r001; feather-adjacent observation disclosed)",
+        "CG-S-GOD-ORGAN-SOLAR-SAIL": "CANDIDATE_AWAITING_APPROVAL (r001; 5 ribs zoom-verified)",
+        "CG-S-GOD-ORGAN-SPORE-SAC": "r001 REJECTED (TB-06 echo) -> r002 targeted repair CONFORMS; AWAITING_APPROVAL",
+        "CG-S-GOD-SYMB-FUNGAL-GROVE": "CANDIDATE_AWAITING_APPROVAL (r001)",
+        "CG-S-GOD-SYMB-FOLLOWER-GALLERY": "CANDIDATE_AWAITING_APPROVAL (r001; TB-07 canvas flag disclosed)",
+        "CG-S-GOD-SYMB-ROOT-HOLDFAST": "CANDIDATE_AWAITING_APPROVAL (r001; 4x1-fork verified)"
       }
     }
   },
@@ -5073,6 +5407,12 @@
       "incident": "B05_LIFE_M_R002_REPAIR_RECORDED",
       "recorded_utc": "2026-09-24T03:55:00+00:00",
       "observation": "LIFE-M r002 (recorded-path repair under least-irreversible handling of the skipped gate): injury flag fixed, ossuary socket flag persisted across phrasing strategies (2 attempts), corpse ambiguity, TB-07 canvas recurrence. Budget exhausted. r001 preserved; both versions await the re-presented consolidated B05 gate. No approvals recorded (skip handling).",
+      "content_loss": "none"
+    },
+    {
+      "incident": "B06_PASS_COMPLETE_RECORDED",
+      "recorded_utc": "2026-09-24T04:55:00+00:00",
+      "observation": "B06 initial pass: 7/7 IDs carry conforming candidates - OSTEODERM r001 (5 scutes zoom-verified), ARMOR-COAT r001 (feather-adjacent note disclosed), SOLAR-SAIL r001 (5 ribs zoom-verified), SPORE-SAC r002 after r001 REJECTED (TB-06 plan-panel pore multiplication 4+4; repaired via oblique-view + outer-face-placement mitigation - now validated), FUNGAL-GROVE r001, FOLLOWER-GALLERY r001 (TB-07 canvas recurrence 1376x768), ROOT-HOLDFAST r001 (4x1-fork verified). 9 of 10 generation attempts used (one consumed by missing-r002-scaffold error; scaffold created procedurally). Consolidated B06 gate next.",
       "content_loss": "none"
     }
   ],
