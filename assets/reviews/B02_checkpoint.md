@@ -24,3 +24,7 @@ Counts: 9 candidates (6 initial + 3 repairs), 6 rejected, 3 awaiting approval, 0
 | `CG-S-UNT-CIVILIAN` | r003 (fresh, scaffold only) | **Conforming with flag** — one figure per cell; face now only softly suggested (not strictly featureless) — gate to rule |
 
 TB-03 confirmed: defective anchors were the sole cause of the earlier failures; fresh generation with conforming anchors + scaffold fixes both layout and projection. Six of six B02 IDs now have candidates awaiting the civic/scale gate. The face-suggestion question is a human call recorded in the ledger.
+
+## FINAL: B02 CLOSED — civic/scale gate PASSED (2026-09-23)
+
+Human ruling: DWELLING r003, HALL r003, CIVILIAN r003 approved (face suggestion accepted for the no-portrait-face lock). B02 closes as the complete provisional civic/scale evidence set: MOT-BASALT r001 · BLD-DWELLING r003 · BLD-HALL r003 · INF-FARM r001 · INF-ROAD r001 · UNT-CIVILIAN r003. **B03 unlocked.** Canonical promotion remains pending the standing 2048/3072 resolution ruling.

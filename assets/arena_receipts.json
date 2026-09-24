@@ -2,7 +2,7 @@
   "ledger_type": "arena_source_receipts",
   "specification_version": "CG-V1.0.0",
   "created_utc": "2026-09-23T21:51:28+00:00",
-  "last_updated_utc": "2026-09-24T00:06:10+00:00",
+  "last_updated_utc": "2026-09-24T00:08:02+00:00",
   "authority": {
     "master_plan": "CIVIC_GODSTORM_MASTER_PLAN.md",
     "master_plan_head_commit": "5bd357e14d9b68776d50b1dee0829b7bd5ab939f",
@@ -2894,7 +2894,7 @@
       "specification_version": "CG-V1.0.0",
       "canonical_path": "assets/source/buildings/cg_s_bld_dwelling.png",
       "canonical_state": "ABSENT (correct - no approved source)",
-      "id_status": "CANDIDATE_AWAITING_APPROVAL_RETRY",
+      "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
       "parent_dependency_revisions": "CG-S-ART-DIRECTION r001 (B00 style board; BLOCKED dimensional - used only as permitted provisional style anchor for batch-local requests)",
       "candidates": [
         {
@@ -2956,9 +2956,10 @@
         }
       ],
       "approval": {
-        "decision": "AWAITING_APPROVAL (retry r003)",
-        "approver": "human (pending)",
-        "date": null
+        "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (retry r003)",
+        "approver": "human (repository owner)",
+        "date": "2026-09-23",
+        "scope": "B02 civic/scale language evidence"
       },
       "downstream_targets": [
         "CG-D-BLD-*",
@@ -2984,7 +2985,7 @@
       "specification_version": "CG-V1.0.0",
       "canonical_path": "assets/source/buildings/cg_s_bld_hall.png",
       "canonical_state": "ABSENT (correct - no approved source)",
-      "id_status": "CANDIDATE_AWAITING_APPROVAL_RETRY",
+      "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
       "parent_dependency_revisions": "CG-S-ART-DIRECTION r001 (B00 style board; BLOCKED dimensional - used only as permitted provisional style anchor for batch-local requests)",
       "candidates": [
         {
@@ -3046,9 +3047,10 @@
         }
       ],
       "approval": {
-        "decision": "AWAITING_APPROVAL (retry r003)",
-        "approver": "human (pending)",
-        "date": null
+        "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (retry r003)",
+        "approver": "human (repository owner)",
+        "date": "2026-09-23",
+        "scope": "B02 civic/scale language evidence"
       },
       "downstream_targets": [
         "CG-D-BLD-*",
@@ -3074,7 +3076,7 @@
       "specification_version": "CG-V1.0.0",
       "canonical_path": "assets/source/units/cg_s_unt_civilian.png",
       "canonical_state": "ABSENT (correct - no approved source)",
-      "id_status": "CANDIDATE_AWAITING_APPROVAL_RETRY",
+      "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
       "parent_dependency_revisions": "CG-S-ART-DIRECTION r001 (B00 style board; BLOCKED dimensional - used only as permitted provisional style anchor for batch-local requests)",
       "candidates": [
         {
@@ -3135,9 +3137,10 @@
         }
       ],
       "approval": {
-        "decision": "AWAITING_APPROVAL (retry r003)",
-        "approver": "human (pending)",
-        "date": null
+        "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (retry r003)",
+        "approver": "human (repository owner)",
+        "date": "2026-09-23",
+        "scope": "B02 civic/scale language evidence"
       },
       "downstream_targets": [
         "CG-D-BLD-*",
@@ -3322,13 +3325,27 @@
         "rejected_ids_standing": 0
       },
       "id_states": {
-        "CG-S-MOT-BASALT": "PROVISIONAL_BATCH_LOCAL_REFERENCE (r001)",
-        "CG-S-BLD-DWELLING": "retry r003 conforming (flat elevations fixed); AWAITING gate",
-        "CG-S-BLD-HALL": "retry r003 conforming; AWAITING gate",
-        "CG-S-INF-FARM": "PROVISIONAL_BATCH_LOCAL_REFERENCE (r001)",
-        "CG-S-INF-ROAD": "PROVISIONAL_BATCH_LOCAL_REFERENCE (r001)",
-        "CG-S-UNT-CIVILIAN": "retry r003 conforming with face-suggestion flag; AWAITING gate"
-      }
+        "CG-S-MOT-BASALT": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+        "CG-S-BLD-DWELLING": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+        "CG-S-BLD-HALL": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+        "CG-S-INF-FARM": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+        "CG-S-INF-ROAD": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+        "CG-S-UNT-CIVILIAN": "PROVISIONAL_BATCH_LOCAL_REFERENCE"
+      },
+      "resolution": "CLOSED - civic/scale gate PASSED 2026-09-23; complete provisional evidence set (6/6 IDs)"
+    },
+    "B03": {
+      "opened_utc": "2026-09-24T00:08:02+00:00",
+      "gate": "Compare H against accepted Q; reject generic quadruped substitution",
+      "mode": "PROVISIONAL - candidates for gate review; no canonical promotion",
+      "counts": {
+        "requested": 9,
+        "candidates_generated": 0,
+        "rejected_candidates": 0,
+        "awaiting_approval_ids": 0,
+        "approved_source": 0
+      },
+      "plan": "6 independent H modules this turn (TORSO-H, LOCO-DIGGER, FEED-MINERAL, SENSE-VIBRATION-ROSETTE, TAIL-WEDGE, ARMOR-SHELL); ORGAN-THERMAL-VENT + FORM-H + LIFE-H next turn parent-first (turn generation budget)"
     }
   },
   "capability_probe": {
@@ -3463,6 +3480,19 @@
         ]
       },
       "recorded_utc": "2026-09-23T23:55:31+00:00"
+    },
+    {
+      "id": "B02_RETRIES_APPROVED_B02_CLOSED",
+      "ruling": {
+        "date": "2026-09-23",
+        "authority": "human (repository owner) via Arena gate answer",
+        "decision": "DWELLING r003, HALL r003, CIVILIAN r003 approved as provisional batch-local references; civilian face suggestion accepted as satisfying the no-portrait-face lock. B02 CLOSED with all six IDs as the civic/scale provisional evidence set (MOT-BASALT r001, BLD-DWELLING r003, BLD-HALL r003, INF-FARM r001, INF-ROAD r001, UNT-CIVILIAN r003). B03 unlocked.",
+        "scope_limits": [
+          "All provisional batch-local; canonical promotion pending standing resolution ruling",
+          "References anchor B07 building/motif production per Section 4"
+        ]
+      },
+      "recorded_utc": "2026-09-24T00:08:02+00:00"
     }
   ],
   "resolution_ruling_standing": {
