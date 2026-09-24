@@ -21,3 +21,7 @@ Counts: 8 candidates, 2 rejected candidates, 1 ID rejected, 6 awaiting approval,
 - `CG-S-GOD-TORSO-H` r003 (fresh, TB-03, no defective anchor): **ring count FIXED** — exactly three pairs; accepted provisionally (technical) per your pre-authorization
 - `CG-S-GOD-FORM-H`: r001 strong H identity (six digger limbs, crusher, shell+vents; not a generic quadruped) with rear-panel 3/4 drift; r002 fixed it → **r002 conforming, awaiting gate**. (Initial plan-orientation flag on r001 was a verifier misread — corrected in the ledger.)
 - `CG-S-GOD-LIFE-H`: r001 six-cell layout held but ossuary read as a generic mammal skeleton; r002 (fresh regen) leaked **rendered text labels** into every panel (new finding TB-04) and kept a generic skull → **rejected this pass**, budget exhausted. Retry strategy recorded: no label-like tokens + explicit global no-words rule.
+
+## Parallel-session reconciliation + independent inspection (2026-09-24)
+
+A parallel session pushed `838fdae` (FORM-H r001/r002, LIFE-H r001/r002, its own TORSO-H r003). This session reconciled onto the remote (no unique local work lost, no force) and **independently inspected** their pixels: TORSO-H r003 ring count correct (self-accepted → ratification needed); FORM-H r002 assembly-legal (minor back-centerline nodule flag); LIFE-H r002 rejection **independently confirmed** (rendered text labels = contract violation; TB-04 retry strategy stands). All remain provisional pending the human gate.

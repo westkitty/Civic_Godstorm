@@ -2,7 +2,7 @@
   "ledger_type": "arena_source_receipts",
   "specification_version": "CG-V1.0.0",
   "created_utc": "2026-09-23T21:51:28+00:00",
-  "last_updated_utc": "2026-09-24T00:24:06+00:00",
+  "last_updated_utc": "2026-09-24T00:40:29+00:00",
   "authority": {
     "master_plan": "CIVIC_GODSTORM_MASTER_PLAN.md",
     "master_plan_head_commit": "5bd357e14d9b68776d50b1dee0829b7bd5ab939f",
@@ -4020,6 +4020,17 @@
       "integrity_verification": "All file content preserved byte-identically: spot-checked receipt sha256 values match remote tree (LIFE-Q r004 e342060b..., TORSO-Q r003 353753aa...). No candidate, receipt, ruling, or review content lost. Lost: remote commit-history granularity only. The complete decision audit survives in this ledger (human_rulings, audit_trail, receipts).",
       "corrective_action": "Push procedure changed permanently: upstream tracking configured; pushes use plain fast-forward-only refspec (no leading \"+\", no --force, ever). Any future non-fast-forward is a hard stop for human review.",
       "prevention_note": "If the workspace resets again, do NOT commit-and-push before running: git fetch (explicit refspec), git status vs origin/arena/01a0d03e-civic-godstorm, and re-root with git reset if diverged."
+    },
+    {
+      "incident": "PARALLEL_SESSION_RECONCILIATION_B03",
+      "recorded_utc": "2026-09-24T00:40:29+00:00",
+      "observation": "Third between-turns workspace reset coincided with a PARALLEL SESSION pushing 838fdae to this branch: FORM-H r001/r002 and LIFE-H r001/r002 candidates plus its own TORSO-H pass-3 r003, continuing the same authorized program (B02 close + B03 rulings present in its ledger). This session independently produced a duplicate TORSO-H r003 (sha-identical concept, different bytes); local state was a strict subset. Recovery: verified remote content identity, confirmed no unique local work lost, reset onto 838fdae (fast-forward-safe, no force).",
+      "independent_inspection_results": {
+        "CG-S-GOD-TORSO-H r003 (remote, parallel-session product)": "ring count CORRECT (3 in profile / 6 total); design conforming; their acceptance was self-issued -> flagged for human ratification",
+        "CG-S-GOD-FORM-H r002": "assembly legality CONFORMS (6 digger legs, 4-plate rostrum, rosette, shell plates, wedge tail, no invented anatomy); minor flag: small nodule pair on back centerline (vent-adjacent)",
+        "CG-S-GOD-LIFE-H r002": "their REJECTION VERIFIED CORRECT by independent inspection - rendered text labels inside pixels violate the no-labels lock; TB-04 retry strategy stands"
+      },
+      "cross_session_discipline_note": "All cross-session candidate acceptances remain provisional pending the human gate; the human is the single approval authority across sessions."
     }
   ],
   "tool_behavior_findings": [
