@@ -2,7 +2,7 @@
   "ledger_type": "arena_source_receipts",
   "specification_version": "CG-V1.0.0",
   "created_utc": "2026-09-23T21:51:28+00:00",
-  "last_updated_utc": "2026-09-24T09:05:00+00:00",
+  "last_updated_utc": "2026-09-24T09:35:00+00:00",
   "authority": {
     "master_plan": "CIVIC_GODSTORM_MASTER_PLAN.md",
     "master_plan_head_commit": "5bd357e14d9b68776d50b1dee0829b7bd5ab939f",
@@ -6401,7 +6401,7 @@
     "B08": {
       "opened_utc": "2026-09-24T08:05:00+00:00",
       "gate": "Shared scale/material gate; no extra people/animals/equipment",
-      "mode": "PROVISIONAL - chunk 1 done (9 conforming + 1 queued repair); chunk 2 (8 UNT) next",
+      "mode": "PROVISIONAL - chunk 1 done (9 conforming + CRYSTAL r002 pending); chunk 2 (8 UNT) next turn",
       "counts": {
         "requested": 18,
         "candidates_generated": 10,
@@ -6412,7 +6412,7 @@
       "plan": "Chunk 1: 10 ENV material sheets. Chunk 2: 8 UNT sheets (soldier is the ONLY human-bearing unit allowed; no extra people/animals/equipment anywhere). Consolidated human gate at pass end.",
       "id_states": {
         "CG-S-ENV-CONIFER": "CANDIDATE_AWAITING_APPROVAL (r001)",
-        "CG-S-ENV-CRYSTAL": "r001 REJECTED (4 columns vs 3) -> repair r002 queued (standing order)",
+        "CG-S-ENV-CRYSTAL": "r001 REJECTED (4 columns vs 3) -> repair r002 PENDING (turn generation cap reached after 10 ENV generations + 1 failed attempt; scaffold pre-staged, per-panel count strategy ready)",
         "CG-S-ENV-DECIDUOUS": "CANDIDATE_AWAITING_APPROVAL (r001)",
         "CG-S-ENV-FUNGUS": "CANDIDATE_AWAITING_APPROVAL (r001)",
         "CG-S-ENV-KELP": "CANDIDATE_AWAITING_APPROVAL (r001)",
@@ -6835,6 +6835,12 @@
       "incident": "B08_CHUNK1_RECORDED",
       "recorded_utc": "2026-09-24T09:05:00+00:00",
       "observation": "B08 chunk 1 (10 ENV sheets, one parallel burst to the turn cap): 9/10 CONFORM on countable identity anchors (3 masses / 4 whorls / 6 fronds / 5 reeds / 3 ribbons / 2 strata / 3 caps / 5+2 rubble). CRYSTAL r001 REJECTED - four columns rendered vs exactly three (count anchor). Repair r002 queued next turn under the standing continuation order. 10 of 10 attempts used, zero tool errors, all sheets 1024x1024 on-scaffold.",
+      "content_loss": "none"
+    },
+    {
+      "incident": "B08_TURN_CAP_CRYSTAL_R002_PENDING",
+      "recorded_utc": "2026-09-24T09:35:00+00:00",
+      "observation": "CRYSTAL r002 repair attempt blocked by the hard 10-attempt turn cap (10 ENV generations + 1 missing-scaffold error consumed it). r002 template pre-staged; recorded per-panel count strategy ready ('three columns total: tall+medium+short, three footprints in plan'). Chunk 2 (8 UNT) also queued for next turn. No generation errors other than the cap itself.",
       "content_loss": "none"
     }
   ],
