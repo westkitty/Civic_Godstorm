@@ -2,7 +2,7 @@
   "ledger_type": "arena_source_receipts",
   "specification_version": "CG-V1.0.0",
   "created_utc": "2026-09-23T21:51:28+00:00",
-  "last_updated_utc": "2026-09-23T23:54:35+00:00",
+  "last_updated_utc": "2026-09-24T00:06:10+00:00",
   "authority": {
     "master_plan": "CIVIC_GODSTORM_MASTER_PLAN.md",
     "master_plan_head_commit": "5bd357e14d9b68776d50b1dee0829b7bd5ab939f",
@@ -2847,7 +2847,7 @@
       "specification_version": "CG-V1.0.0",
       "canonical_path": "assets/source/motifs/cg_s_mot_basalt.png",
       "canonical_state": "ABSENT (correct - no approved source)",
-      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
       "parent_dependency_revisions": "CG-S-ART-DIRECTION r001 (B00 style board; BLOCKED dimensional - used only as permitted provisional style anchor for batch-local requests)",
       "candidates": [
         {
@@ -2872,9 +2872,10 @@
         }
       ],
       "approval": {
-        "decision": "AWAITING_APPROVAL",
-        "approver": "human (pending)",
-        "date": null
+        "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+        "approver": "human (repository owner)",
+        "date": "2026-09-23",
+        "scope": "B02 civic/scale language evidence; anchors B07 building/motif production; never an approved canonical source"
       },
       "downstream_targets": [
         "CG-D-BLD-*",
@@ -2893,7 +2894,7 @@
       "specification_version": "CG-V1.0.0",
       "canonical_path": "assets/source/buildings/cg_s_bld_dwelling.png",
       "canonical_state": "ABSENT (correct - no approved source)",
-      "id_status": "REJECTED_THIS_PASS",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL_RETRY",
       "parent_dependency_revisions": "CG-S-ART-DIRECTION r001 (B00 style board; BLOCKED dimensional - used only as permitted provisional style anchor for batch-local requests)",
       "candidates": [
         {
@@ -2931,10 +2932,31 @@
             "projection_violation": "PERSISTS - 3/4 drift copied from r001 despite flat-elevation instructions"
           },
           "status": "REJECTED"
+        },
+        {
+          "revision": "r003",
+          "retry_pass": true,
+          "path": "assets/candidates/CG-S-BLD-DWELLING/r003/cg_s_bld_dwelling.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "0ac398255a5df3923e795a0562b748e97992b4f73bf9057ccb3ea7982c694d67",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "FRESH GENERATION (TB-03 strategy: no defective anchor; blank 2x2 template scaffold + MOT-BASALT r001 flat-elevation exemplar [CIVILIAN: scaffold only])",
+          "content_qa": {
+            "projection": "FIXED - front/side/rear perfectly flat straight-on elevations; plan view conforms; TB-03 strategy SUCCESSFUL",
+            "grid": "clean 2x2",
+            "content": "clustered masses, eave bands, one readable plank door, window, court wall; palette adherent",
+            "flag": "cluster reads slightly more vertical than the low 6x4x6 ideal - noted for gate review"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
         }
       ],
       "approval": {
-        "decision": "REJECTED_THIS_PASS - new pass requires authorization",
+        "decision": "AWAITING_APPROVAL (retry r003)",
         "approver": "human (pending)",
         "date": null
       },
@@ -2950,13 +2972,19 @@
         "repair_candidates_used": 1,
         "remaining": 0
       },
-      "reason": "Orthographic elevation requirement violated in all elevation cells in both candidates; budget exhausted this pass."
+      "reason": "Orthographic elevation requirement violated in all elevation cells in both candidates; budget exhausted this pass.",
+      "retry_pass": {
+        "opened_utc": "2026-09-23T23:55:31+00:00",
+        "strategy": "fresh generation: no r001/r002 anchor; blank 2x2 scaffold + MOT-BASALT r001 projection exemplar; design via text",
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0
+      }
     },
     "CG-S-BLD-HALL": {
       "specification_version": "CG-V1.0.0",
       "canonical_path": "assets/source/buildings/cg_s_bld_hall.png",
       "canonical_state": "ABSENT (correct - no approved source)",
-      "id_status": "REJECTED_THIS_PASS",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL_RETRY",
       "parent_dependency_revisions": "CG-S-ART-DIRECTION r001 (B00 style board; BLOCKED dimensional - used only as permitted provisional style anchor for batch-local requests)",
       "candidates": [
         {
@@ -2994,10 +3022,31 @@
             "projection_violation": "PERSISTS - 3/4 drift copied from r001"
           },
           "status": "REJECTED"
+        },
+        {
+          "revision": "r003",
+          "retry_pass": true,
+          "path": "assets/candidates/CG-S-BLD-HALL/r003/cg_s_bld_hall.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "1c03de1e26ed73d8e023e4435fb0a756474049d3dd9b714f9f751aef1df1e22f",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "FRESH GENERATION (TB-03 strategy: no defective anchor; blank 2x2 template scaffold + MOT-BASALT r001 flat-elevation exemplar [CIVILIAN: scaffold only])",
+          "content_qa": {
+            "projection": "FIXED - all elevation cells flat straight-on; TB-03 strategy SUCCESSFUL",
+            "grid": "clean 2x2",
+            "content": "terraces, entry court+step, pilasters, central doorway, ridge cap readable in front/side/rear and as strong line in plan",
+            "palette": "adherent; matte; no banners/emblems"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
         }
       ],
       "approval": {
-        "decision": "REJECTED_THIS_PASS - new pass requires authorization",
+        "decision": "AWAITING_APPROVAL (retry r003)",
         "approver": "human (pending)",
         "date": null
       },
@@ -3013,13 +3062,19 @@
         "repair_candidates_used": 1,
         "remaining": 0
       },
-      "reason": "Same orthographic violation; budget exhausted this pass."
+      "reason": "Same orthographic violation; budget exhausted this pass.",
+      "retry_pass": {
+        "opened_utc": "2026-09-23T23:55:31+00:00",
+        "strategy": "fresh generation: no r001/r002 anchor; blank 2x2 scaffold + MOT-BASALT r001 projection exemplar; design via text",
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0
+      }
     },
     "CG-S-UNT-CIVILIAN": {
       "specification_version": "CG-V1.0.0",
       "canonical_path": "assets/source/units/cg_s_unt_civilian.png",
       "canonical_state": "ABSENT (correct - no approved source)",
-      "id_status": "REJECTED_THIS_PASS",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL_RETRY",
       "parent_dependency_revisions": "CG-S-ART-DIRECTION r001 (B00 style board; BLOCKED dimensional - used only as permitted provisional style anchor for batch-local requests)",
       "candidates": [
         {
@@ -3057,10 +3112,30 @@
             "identity_violation": "PERSISTS - eyes/nose detail on face"
           },
           "status": "REJECTED"
+        },
+        {
+          "revision": "r003",
+          "retry_pass": true,
+          "path": "assets/candidates/CG-S-UNT-CIVILIAN/r003/cg_s_unt_civilian.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "e9688b67bef6e69ebb19e58d58da5e7fa8f500fe0abbd60cab43d01a70e03d14",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "FRESH GENERATION (TB-03 strategy: no defective anchor; blank 2x2 template scaffold + MOT-BASALT r001 flat-elevation exemplar [CIVILIAN: scaffold only])",
+          "content_qa": {
+            "layout": "FIXED - exactly one figure per cell, four views (front/left-profile/rear/top-plan); duplication gone",
+            "anatomy": "tunic+belt, bare forearms, covered feet, two arms/two legs, calm stance, consistent scale",
+            "face_flag": "MARGINAL - soft eye/mouth suggestion still faintly visible on front view at close zoom; far softer than r001/r002 but not strictly featureless - flagged for human gate ruling on the no-portrait-face lock"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
         }
       ],
       "approval": {
-        "decision": "REJECTED_THIS_PASS - new pass requires authorization",
+        "decision": "AWAITING_APPROVAL (retry r003)",
         "approver": "human (pending)",
         "date": null
       },
@@ -3076,13 +3151,19 @@
         "repair_candidates_used": 1,
         "remaining": 0
       },
-      "reason": "Layout duplication and portrait-face violations persist; budget exhausted this pass."
+      "reason": "Layout duplication and portrait-face violations persist; budget exhausted this pass.",
+      "retry_pass": {
+        "opened_utc": "2026-09-23T23:55:31+00:00",
+        "strategy": "fresh generation: no r001/r002 anchor; blank 2x2 scaffold + MOT-BASALT r001 projection exemplar; design via text",
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0
+      }
     },
     "CG-S-INF-FARM": {
       "specification_version": "CG-V1.0.0",
       "canonical_path": "assets/source/infrastructure/cg_s_inf_farm.png",
       "canonical_state": "ABSENT (correct - no approved source)",
-      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
       "parent_dependency_revisions": "CG-S-ART-DIRECTION r001 (B00 style board; BLOCKED dimensional - used only as permitted provisional style anchor for batch-local requests)",
       "candidates": [
         {
@@ -3106,9 +3187,10 @@
         }
       ],
       "approval": {
-        "decision": "AWAITING_APPROVAL",
-        "approver": "human (pending)",
-        "date": null
+        "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+        "approver": "human (repository owner)",
+        "date": "2026-09-23",
+        "scope": "B02 civic/scale language evidence; anchors B07 building/motif production; never an approved canonical source"
       },
       "downstream_targets": [
         "CG-D-BLD-*",
@@ -3128,7 +3210,7 @@
       "specification_version": "CG-V1.0.0",
       "canonical_path": "assets/source/infrastructure/cg_s_inf_road.png",
       "canonical_state": "ABSENT (correct - no approved source)",
-      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
       "parent_dependency_revisions": "CG-S-ART-DIRECTION r001 (B00 style board; BLOCKED dimensional - used only as permitted provisional style anchor for batch-local requests)",
       "candidates": [
         {
@@ -3153,9 +3235,10 @@
         }
       ],
       "approval": {
-        "decision": "AWAITING_APPROVAL",
-        "approver": "human (pending)",
-        "date": null
+        "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+        "approver": "human (repository owner)",
+        "date": "2026-09-23",
+        "scope": "B02 civic/scale language evidence; anchors B07 building/motif production; never an approved canonical source"
       },
       "downstream_targets": [
         "CG-D-BLD-*",
@@ -3231,19 +3314,20 @@
       "mode": "PROVISIONAL - candidates for gate review; no canonical promotion",
       "counts": {
         "requested": 6,
-        "candidates_generated": 9,
+        "candidates_generated": 12,
         "rejected_candidates": 6,
         "rejected_ids_this_pass": 3,
-        "awaiting_approval_ids": 3,
-        "approved_source": 0
+        "awaiting_approval_ids": 6,
+        "approved_source": 0,
+        "rejected_ids_standing": 0
       },
       "id_states": {
-        "CG-S-MOT-BASALT": "CANDIDATE_AWAITING_APPROVAL (r001)",
-        "CG-S-BLD-DWELLING": "REJECTED this pass (projection; strategy for retry recorded)",
-        "CG-S-BLD-HALL": "REJECTED this pass (projection; strategy recorded)",
-        "CG-S-INF-FARM": "CANDIDATE_AWAITING_APPROVAL (r001)",
-        "CG-S-INF-ROAD": "CANDIDATE_AWAITING_APPROVAL (r001)",
-        "CG-S-UNT-CIVILIAN": "REJECTED this pass (layout+face; strategy recorded)"
+        "CG-S-MOT-BASALT": "PROVISIONAL_BATCH_LOCAL_REFERENCE (r001)",
+        "CG-S-BLD-DWELLING": "retry r003 conforming (flat elevations fixed); AWAITING gate",
+        "CG-S-BLD-HALL": "retry r003 conforming; AWAITING gate",
+        "CG-S-INF-FARM": "PROVISIONAL_BATCH_LOCAL_REFERENCE (r001)",
+        "CG-S-INF-ROAD": "PROVISIONAL_BATCH_LOCAL_REFERENCE (r001)",
+        "CG-S-UNT-CIVILIAN": "retry r003 conforming with face-suggestion flag; AWAITING gate"
       }
     }
   },
@@ -3366,6 +3450,19 @@
         ]
       },
       "recorded_utc": "2026-09-23T23:50:33+00:00"
+    },
+    {
+      "id": "B02_GATE_RULING",
+      "ruling": {
+        "date": "2026-09-23",
+        "authority": "human (repository owner) via Arena gate answer",
+        "decision": "FULL PASS: MOT-BASALT r001, INF-FARM r001, INF-ROAD r001 approved as B02 batch-local provisional references (civic/scale language); one fresh retry pass (1+1 each) authorized for DWELLING, HALL, CIVILIAN using TB-03 strategy (no defective anchors; blank scaffold + BASALT exemplar).",
+        "scope_limits": [
+          "Provisional batch-local only; canonical promotion pending the standing resolution ruling",
+          "Retry pass may span multiple turns due to per-turn generation caps"
+        ]
+      },
+      "recorded_utc": "2026-09-23T23:55:31+00:00"
     }
   ],
   "resolution_ruling_standing": {
