@@ -2,7 +2,7 @@
   "ledger_type": "arena_source_receipts",
   "specification_version": "CG-V1.0.0",
   "created_utc": "2026-09-23T21:51:28+00:00",
-  "last_updated_utc": "2026-09-24T06:45:00+00:00",
+  "last_updated_utc": "2026-09-24T07:05:00+00:00",
   "authority": {
     "master_plan": "CIVIC_GODSTORM_MASTER_PLAN.md",
     "master_plan_head_commit": "5bd357e14d9b68776d50b1dee0829b7bd5ab939f",
@@ -4644,7 +4644,7 @@
       "specification_version": "CG-V1.0.0",
       "canonical_path": "assets/source/god/cg_s_god_armor_coat.png",
       "canonical_state": "ABSENT (correct - no approved source)",
-      "id_status": "REPAIR_AWAITING_USER_VERDICT",
+      "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
       "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
       "candidates": [
         {
@@ -4691,10 +4691,12 @@
         }
       ],
       "approval": {
-        "decision": "HELD_FOR_TARGETED_REPAIR (user ruling B06_CONSOLIDATED_GATE_APPROVE6_HOLD_COAT)",
+        "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
         "approver": "human (repository owner)",
         "date": "2026-09-24",
-        "scope": "r001 withheld: lock rendering reads too feather-like; targeted r002 authorized (flatter, wider interlocking locks); B06 stays OPEN until COAT resolves"
+        "scope": "B06 armor module; approved as r002 (broad flat nested directional locks, feather-adjacency eliminated); r001 preserved as held evidence",
+        "approved_revision": "r002",
+        "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
       },
       "downstream_targets": [
         "CG-D-GOD-ARMOR-COAT",
@@ -5768,7 +5770,7 @@
     "B06": {
       "opened_utc": "2026-09-24T04:20:00+00:00",
       "gate": "Check installed-slot compatibility and preserved base silhouettes",
-      "mode": "PROVISIONAL - 6/7 approved; COAT r002 repair CONFORMS awaiting user verdict; B06 ready to close",
+      "mode": "PROVISIONAL - CLOSED",
       "counts": {
         "requested": 7,
         "candidates_generated": 8,
@@ -5776,8 +5778,8 @@
         "rejected_candidates": 1,
         "awaiting_approval_ids": 7,
         "approved_source": 0,
-        "provisionally_approved_ids": 6,
-        "held_for_repair": 1
+        "provisionally_approved_ids": 7,
+        "held_for_repair": 0
       },
       "plan": "One pass: 7 parallel 2x2 module sheets (fits the 10-attempt turn budget with 3 spare slots); TB-03 fresh generations, per-panel counts for any radial anatomy (TB-06), verify identify() on every output (TB-07); consolidated human gate at pass end",
       "id_states": {
@@ -5788,7 +5790,8 @@
         "CG-S-GOD-SYMB-FUNGAL-GROVE": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
         "CG-S-GOD-SYMB-FOLLOWER-GALLERY": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
         "CG-S-GOD-SYMB-ROOT-HOLDFAST": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING"
-      }
+      },
+      "resolution": "CLOSED - COAT r002 accepted 2026-09-24 (ruling B06_COAT_R002_ACCEPT_CLOSE); complete provisional evidence set 7/7 IDs (COAT as r002)"
     },
     "B07": {
       "opened_utc": "2026-09-24T05:15:00+00:00",
@@ -6049,6 +6052,19 @@
         ]
       },
       "recorded_utc": "2026-09-24T06:05:00+00:00"
+    },
+    {
+      "id": "B06_COAT_R002_ACCEPT_CLOSE",
+      "ruling": {
+        "date": "2026-09-24",
+        "authority": "human (repository owner) via Arena gate answer (option accept_coat_r002_close_b06)",
+        "decision": "Accept ARMOR-COAT r002 as provisional batch-local. B06 CLOSED as the complete adaptation/symbiosis provisional evidence set (7/7 IDs). B07 continues (chunks 1-2 done, 16/19 conforming; MOT chunk 3 remains).",
+        "scope_limits": [
+          "All provisional batch-local; canonical promotion pending the standing 2048/3072 resolution ruling",
+          "COAT approved as r002; r001 held evidence preserved"
+        ]
+      },
+      "recorded_utc": "2026-09-24T07:05:00+00:00"
     }
   ],
   "resolution_ruling_standing": {
@@ -6169,6 +6185,12 @@
       "incident": "B06_COAT_R002_AND_B07_CHUNK2_RECORDED",
       "recorded_utc": "2026-09-24T06:45:00+00:00",
       "observation": "COAT r002 targeted repair (authorized by ruling B06_CONSOLIDATED_GATE_APPROVE6_HOLD_COAT) CONFORMS: wide flat nested directional bands, feather-adjacency eliminated - verdict returns to user for B06 closure. B07 chunk 2 (OBSERVATORY, SHRINE, TOWER, WORKSHOP + INF-BRIDGE, INF-CANAL, INF-MINE, INF-WALL): ALL 8 CONFORM incl. all named-mode INF sheets (3 modes + detail panel each). SHRINE carries 4th TB-07 canvas occurrence. B07 at 16/19 conforming, zero rejections; chunk 3 (3 MOT) remains. 9 of 10 turn attempts used.",
+      "content_loss": "none"
+    },
+    {
+      "incident": "EIGHTH_WORKSPACE_RESET_RECOVERED",
+      "recorded_utc": "2026-09-24T07:05:00+00:00",
+      "observation": "Local branch found re-rooted at docs commit WITHOUT the usual untracked-assets preservation (working tree clean, assets/ absent) mid-closure. Recovery: explicit-refspec fetch + reset --hard onto origin tip 41c0494; 151 PNGs and ledger (61 receipts, 14 rulings) restored from remote - zero loss, all B06/B07 work had been committed+pushed before the reset. B06 closure (ruling #15) re-executed post-reset.",
       "content_loss": "none"
     }
   ],

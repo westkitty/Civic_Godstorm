@@ -47,3 +47,8 @@ Pass complete (7/7 conforming claims above were **independently re-verified by t
 ## RULING 2026-09-24 (`B06_CONSOLIDATED_GATE_APPROVE6_HOLD_COAT`) + COAT r002
 
 Six IDs APPROVED as provisional batch-local (OSTEODERM r001, SOLAR-SAIL r001, SPORE-SAC r002, FUNGAL-GROVE r001, FOLLOWER-GALLERY r001 — canvas swap accepted as technical pass, ROOT-HOLDFAST r001). ARMOR-COAT r001 was HELD and its authorized targeted r002 produced the same turn: **r002 CONFORMS** — wide flat nested directional bands, one overlap direction, zero feather anatomy (no shafts/barbs/tip rows); feather-adjacency reading eliminated. Fresh-generation repair with corrective geometry first, no defective anchor (TB-03). **B06 awaits only the user's COAT r002 verdict to close** (accept r002 → 7/7 closed; reject → 6/7 with COAT rejected-final).
+
+
+## CLOSED 2026-09-24 — `B06_COAT_R002_ACCEPT_CLOSE`
+
+ARMOR-COAT r002 accepted as provisional batch-local. **B06 CLOSED 7/7**: OSTEODERM r001 · ARMOR-COAT r002 · SOLAR-SAIL r001 · SPORE-SAC r002 · FUNGAL-GROVE r001 · FOLLOWER-GALLERY r001 · ROOT-HOLDFAST r001. Canonical promotion pending the standing 2048/3072 resolution ruling.
