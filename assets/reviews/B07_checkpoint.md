@@ -18,8 +18,21 @@
 
 All style-anchored on B02 BLD-DWELLING r003 (approved-provisional, subject ignored). Batch palette/presentation consistent. Process note: first ledger write for chunk 1 failed (filename bug) and was pushed without receipts (`50b3f7a`); corrected + completed in `1dc32a6`.
 
+## Chunk 2 — DONE (8/8 conforming, same turn)
+
+| ID | Verdict | Key anchors verified |
+|---|---|---|
+| `CG-S-BLD-OBSERVATORY` | r001 CONFORMING | stepped terraces; one open colonnade ring; no instruments; plan confirms ring-on-square |
+| `CG-S-BLD-SHRINE` | r001 CONFORMING | single empty aperture genuinely framing the landscape; no idol/altar/symbol; **TB-07 canvas flag** |
+| `CG-S-BLD-TOWER` | r001 CONFORMING | square taper; open look-out top; four buttress feet (plan-confirmed); one slit |
+| `CG-S-BLD-WORKSHOP` | r001 CONFORMING | two bays; exactly one roof vent; covered input yard |
+| `CG-S-INF-BRIDGE` | r001 CONFORMING | LIGHT beam / HEAVY masonry arch / GODWAY reinforced span at shared scale + junction detail |
+| `CG-S-INF-CANAL` | r001 CONFORMING | DITCH / LOCK (two gate frames) / WEIR stepped overflow + lining detail |
+| `CG-S-INF-MINE` | r001 CONFORMING | SHAFT headframe / QUARRY stepped cut / ADIT braced mouth + joinery detail |
+| `CG-S-INF-WALL` | r001 CONFORMING | SEGMENT / GATE arch / BUTTRESS + cap detail |
+
 ## Remaining
 
-- **Chunk 2:** OBSERVATORY, SHRINE, TOWER, WORKSHOP + INF-BRIDGE, INF-CANAL, INF-MINE, INF-WALL
 - **Chunk 3:** MOT-CANOPY, MOT-REED, MOT-VAULT (motif transforms compared against B02) + repair slack
+- **B06 handoff:** COAT r002 conforms — B06 closes on the user's verdict
 - Consolidated B07 human gate at pass end; canonical paths absent (correct)

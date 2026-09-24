@@ -42,3 +42,8 @@ Generation attempts: 9 of 10 (one consumed by a missing-r002-scaffold tool error
 ## Gate status
 
 Pass complete (7/7 conforming claims above were **independently re-verified by the primary session**: all 8 candidate sha256 hashes byte-identical to receipts, dimensions as declared, every content anchor confirmed by pixel inspection — audit entry `PARALLEL_SESSION_B06_INDEPENDENT_AUDIT`, commit `3324b84`). Consolidated gate ask_user SKIPPED TWICE (2026-09-24) — both skips recorded in `audit_trail`, no ruling assumed. B06 remains OPEN pending the user's ruling; canonical paths absent (correct).
+
+
+## RULING 2026-09-24 (`B06_CONSOLIDATED_GATE_APPROVE6_HOLD_COAT`) + COAT r002
+
+Six IDs APPROVED as provisional batch-local (OSTEODERM r001, SOLAR-SAIL r001, SPORE-SAC r002, FUNGAL-GROVE r001, FOLLOWER-GALLERY r001 — canvas swap accepted as technical pass, ROOT-HOLDFAST r001). ARMOR-COAT r001 was HELD and its authorized targeted r002 produced the same turn: **r002 CONFORMS** — wide flat nested directional bands, one overlap direction, zero feather anatomy (no shafts/barbs/tip rows); feather-adjacency reading eliminated. Fresh-generation repair with corrective geometry first, no defective anchor (TB-03). **B06 awaits only the user's COAT r002 verdict to close** (accept r002 → 7/7 closed; reject → 6/7 with COAT rejected-final).

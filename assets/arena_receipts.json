@@ -2,7 +2,7 @@
   "ledger_type": "arena_source_receipts",
   "specification_version": "CG-V1.0.0",
   "created_utc": "2026-09-23T21:51:28+00:00",
-  "last_updated_utc": "2026-09-24T05:45:00+00:00",
+  "last_updated_utc": "2026-09-24T06:45:00+00:00",
   "authority": {
     "master_plan": "CIVIC_GODSTORM_MASTER_PLAN.md",
     "master_plan_head_commit": "5bd357e14d9b68776d50b1dee0829b7bd5ab939f",
@@ -4595,7 +4595,7 @@
       "specification_version": "CG-V1.0.0",
       "canonical_path": "assets/source/god/cg_s_god_armor_osteoderm.png",
       "canonical_state": "ABSENT (correct - no approved source)",
-      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
       "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
       "candidates": [
         {
@@ -4622,9 +4622,12 @@
         }
       ],
       "approval": {
-        "decision": "AWAITING_APPROVAL",
-        "approver": "human (pending)",
-        "date": null
+        "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+        "approver": "human (repository owner)",
+        "date": "2026-09-24",
+        "scope": "B06 armor module; exactly 5 scutes, natural suture, no bolts",
+        "approved_revision": "r001",
+        "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
       },
       "downstream_targets": [
         "CG-D-GOD-ARMOR-OSTEODERM",
@@ -4641,7 +4644,7 @@
       "specification_version": "CG-V1.0.0",
       "canonical_path": "assets/source/god/cg_s_god_armor_coat.png",
       "canonical_state": "ABSENT (correct - no approved source)",
-      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "id_status": "REPAIR_AWAITING_USER_VERDICT",
       "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
       "candidates": [
         {
@@ -4665,12 +4668,33 @@
             "minor": "ochre wear flecks on lock faces"
           },
           "status": "CANDIDATE_AWAITING_APPROVAL"
+        },
+        {
+          "revision": "r002",
+          "path": "assets/candidates/CG-S-GOD-ARMOR-COAT/r002/cg_s_god_armor_coat.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "812061423b879f5bcdb0bac2cfaf76d2bdc24dcf4100e56e0b27327600401905",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "FRESH targeted repair per ruling B06_CONSOLIDATED_GATE_APPROVE6_HOLD_COAT (NO defective r001 anchor; corrective geometry first: broad flat bands, straight nested edges, explicit anti-feather rule; TORSO-M r002 style anchor, subject ignored)",
+          "content_qa": {
+            "locks": "wide flat stiff fiber bands, many-times-wider-than-thick, one consistent overlap direction, flush nesting - reads as layered bark sheath / reptile belly plates",
+            "anti_feather": "zero central shafts, zero barbs, zero rounded tip rows, zero fuzz; feather-adjacency reading from r001 ELIMINATED",
+            "silhouette": "coat drapes smoothly over body curve, no stand-off volume",
+            "layout": "2x2: draped 3/4, flat pattern, edge cross-section, macro close-up; scaffold held"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
         }
       ],
       "approval": {
-        "decision": "AWAITING_APPROVAL",
-        "approver": "human (pending)",
-        "date": null
+        "decision": "HELD_FOR_TARGETED_REPAIR (user ruling B06_CONSOLIDATED_GATE_APPROVE6_HOLD_COAT)",
+        "approver": "human (repository owner)",
+        "date": "2026-09-24",
+        "scope": "r001 withheld: lock rendering reads too feather-like; targeted r002 authorized (flatter, wider interlocking locks); B06 stays OPEN until COAT resolves"
       },
       "downstream_targets": [
         "CG-D-GOD-ARMOR-COAT",
@@ -4678,16 +4702,16 @@
       ],
       "repair_budget": {
         "initial_candidates_used": 1,
-        "repair_candidates_used": 0,
-        "remaining": 1
+        "repair_candidates_used": 1,
+        "remaining": 0
       },
-      "reason": "Continuous fibrous mantle with large directional locks; particle-fur prohibition satisfied. Feather-adjacent visual note disclosed for gate."
+      "reason": "r001 held (feather-adjacency). r002 targeted repair conforms on the corrected lock geometry; verdict returns to the user."
     },
     "CG-S-GOD-ORGAN-SOLAR-SAIL": {
       "specification_version": "CG-V1.0.0",
       "canonical_path": "assets/source/god/cg_s_god_organ_solar_sail.png",
       "canonical_state": "ABSENT (correct - no approved source)",
-      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
       "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
       "candidates": [
         {
@@ -4713,9 +4737,12 @@
         }
       ],
       "approval": {
-        "decision": "AWAITING_APPROVAL",
-        "approver": "human (pending)",
-        "date": null
+        "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+        "approver": "human (repository owner)",
+        "date": "2026-09-24",
+        "scope": "B06 photosynthetic organ; 5 ribs, opaque tonal-band translucency",
+        "approved_revision": "r001",
+        "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
       },
       "downstream_targets": [
         "CG-D-GOD-ORGAN-SOLAR-SAIL",
@@ -4732,7 +4759,7 @@
       "specification_version": "CG-V1.0.0",
       "canonical_path": "assets/source/god/cg_s_god_organ_spore_sac.png",
       "canonical_state": "ABSENT (correct - no approved source)",
-      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
       "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
       "candidates": [
         {
@@ -4775,9 +4802,12 @@
         }
       ],
       "approval": {
-        "decision": "AWAITING_APPROVAL",
-        "approver": "human (pending)",
-        "date": null
+        "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+        "approver": "human (repository owner)",
+        "date": "2026-09-24",
+        "scope": "B06 spore organ; approved as r002 (6 pore-rims as 3+3); r001 remains REJECTED standing (TB-06 echo)",
+        "approved_revision": "r002",
+        "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
       },
       "downstream_targets": [
         "CG-D-GOD-ORGAN-SPORE-SAC",
@@ -4794,7 +4824,7 @@
       "specification_version": "CG-V1.0.0",
       "canonical_path": "assets/source/god/cg_s_god_symb_fungal_grove.png",
       "canonical_state": "ABSENT (correct - no approved source)",
-      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
       "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
       "candidates": [
         {
@@ -4819,9 +4849,12 @@
         }
       ],
       "approval": {
-        "decision": "AWAITING_APPROVAL",
-        "approver": "human (pending)",
-        "date": null
+        "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+        "approver": "human (repository owner)",
+        "date": "2026-09-24",
+        "scope": "B06 symbiont; 3 joined crowns, clear passage",
+        "approved_revision": "r001",
+        "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
       },
       "downstream_targets": [
         "CG-D-GOD-SYMB-FUNGAL-GROVE",
@@ -4838,7 +4871,7 @@
       "specification_version": "CG-V1.0.0",
       "canonical_path": "assets/source/god/cg_s_god_symb_follower_gallery.png",
       "canonical_state": "ABSENT (correct - no approved source)",
-      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
       "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
       "candidates": [
         {
@@ -4864,9 +4897,12 @@
         }
       ],
       "approval": {
-        "decision": "AWAITING_APPROVAL",
-        "approver": "human (pending)",
-        "date": null
+        "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+        "approver": "human (repository owner)",
+        "date": "2026-09-24",
+        "scope": "B06 follower structure; canvas swap (TB-07) accepted as technical pass (CROWN r003 precedent)",
+        "approved_revision": "r001",
+        "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
       },
       "downstream_targets": [
         "CG-D-GOD-SYMB-FOLLOWER-GALLERY",
@@ -4883,7 +4919,7 @@
       "specification_version": "CG-V1.0.0",
       "canonical_path": "assets/source/god/cg_s_god_symb_root_holdfast.png",
       "canonical_state": "ABSENT (correct - no approved source)",
-      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
       "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
       "candidates": [
         {
@@ -4908,9 +4944,12 @@
         }
       ],
       "approval": {
-        "decision": "AWAITING_APPROVAL",
-        "approver": "human (pending)",
-        "date": null
+        "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+        "approver": "human (repository owner)",
+        "date": "2026-09-24",
+        "scope": "B06 symbiont; 4 once-forking bundles from belly collar",
+        "approved_revision": "r001",
+        "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
       },
       "downstream_targets": [
         "CG-D-GOD-SYMB-ROOT-HOLDFAST",
@@ -5245,6 +5284,327 @@
         "repair_candidates_used": 0,
         "remaining": 1
       }
+    },
+    "CG-S-BLD-OBSERVATORY": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/buildings/cg_s_bld_observatory.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "parent_dependency_revisions": "independent civic module; style anchor B02 BLD-DWELLING r003 (approved-provisional, subject ignored)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-BLD-OBSERVATORY/r001/cg_s_bld_observatory.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "5722226607b92a64c3e7d156ca52260dc71f303d6736e75bede2a7a2a640cf48",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "scaffold + B02 BLD-DWELLING r003 style anchor (subject ignored)",
+          "content_qa": {
+            "identity": "stepped viewing terraces (3 broad stone steps) + ONE open colonnade observation ring on top; NO telescope/dome/instruments; plan panel confirms ring-on-square; no flags/people"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "AWAITING_APPROVAL",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-BLD-OBSERVATORY",
+        "CG-R-CITY-RUINS"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      }
+    },
+    "CG-S-BLD-SHRINE": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/buildings/cg_s_bld_shrine.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "parent_dependency_revisions": "independent civic module; style anchor B02 BLD-DWELLING r003 (approved-provisional, subject ignored)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-BLD-SHRINE/r001/cg_s_bld_shrine.png",
+          "native_dimensions": "1376x768",
+          "native_aspect_error_pct": 19.5,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "68b1ecee839b4a91608c4ba17e401dcf94cd901f5e51dab6ec6b3fbc83467c0c",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "scaffold + B02 BLD-DWELLING r003 style anchor (subject ignored)",
+          "content_qa": {
+            "identity": "open sanctuary platform on posts; ONE single empty central aperture genuinely framing the landscape (hero panel shows mountains through it); NO idol/altar/symbol/flame; rear view shows framed void",
+            "flag": "TB-07 canvas swap 1376x768, quadrant logic intact (4th observed)"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "AWAITING_APPROVAL",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-BLD-SHRINE",
+        "CG-R-CITY-RUINS"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      }
+    },
+    "CG-S-BLD-TOWER": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/buildings/cg_s_bld_tower.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "parent_dependency_revisions": "independent civic module; style anchor B02 BLD-DWELLING r003 (approved-provisional, subject ignored)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-BLD-TOWER/r001/cg_s_bld_tower.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "d9517af437cf4ce720341ac5a99e3867b892eb99d4af1c2bf0a761a0b0e98b35",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "scaffold + B02 BLD-DWELLING r003 style anchor (subject ignored)",
+          "content_qa": {
+            "identity": "square tapering watchtower; open look-out top with pyramidal cap on posts; FOUR buttress feet (plan view confirms one per face); one slim slit; no flag/bell"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "AWAITING_APPROVAL",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-BLD-TOWER",
+        "CG-R-CITY-RUINS"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      }
+    },
+    "CG-S-BLD-WORKSHOP": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/buildings/cg_s_bld_workshop.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "parent_dependency_revisions": "independent civic module; style anchor B02 BLD-DWELLING r003 (approved-provisional, subject ignored)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-BLD-WORKSHOP/r001/cg_s_bld_workshop.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "2db39f37099f742cd331272c6c697934be923e57a790b8562cfa0815ec0637bb",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "scaffold + B02 BLD-DWELLING r003 style anchor (subject ignored)",
+          "content_qa": {
+            "identity": "two connected open work bays sharing a wall; EXACTLY ONE roof vent turret; covered open-sided input yard attached; no tools/machines/people"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "AWAITING_APPROVAL",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-BLD-WORKSHOP",
+        "CG-R-CITY-RUINS"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      }
+    },
+    "CG-S-INF-BRIDGE": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/infrastructure/cg_s_inf_bridge.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "parent_dependency_revisions": "independent civic module; style anchor B02 BLD-DWELLING r003 (approved-provisional, subject ignored)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-INF-BRIDGE/r001/cg_s_inf_bridge.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "5cb487729751962eae3705d3d6ac9860feeff9ca72112108f6aab4b6d5d9bf65",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "scaffold + B02 BLD-DWELLING r003 style anchor (subject ignored)",
+          "content_qa": {
+            "identity": "three named modes at shared scale: LIGHT timber beam on abutments; HEAVY braced masonry arch with parapet; GODWAY broad reinforced composite span with rails; + GODWAY deck-abutment junction detail; no people/carts"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "AWAITING_APPROVAL",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-INF-BRIDGE",
+        "CG-R-CITY-RUINS"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      }
+    },
+    "CG-S-INF-CANAL": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/infrastructure/cg_s_inf_canal.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "parent_dependency_revisions": "independent civic module; style anchor B02 BLD-DWELLING r003 (approved-provisional, subject ignored)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-INF-CANAL/r001/cg_s_inf_canal.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "caaf61df8f584d34e7342a8e5fd4aea37ab48c521f7f549552ec2059b0e269be",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "scaffold + B02 BLD-DWELLING r003 style anchor (subject ignored)",
+          "content_qa": {
+            "identity": "three named modes at shared channel width: DITCH lined cut between low banks; LOCK chamber with two gate frames; WEIR stepped overflow; + lining detail; no boats/people"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "AWAITING_APPROVAL",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-INF-CANAL",
+        "CG-R-CITY-RUINS"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      }
+    },
+    "CG-S-INF-MINE": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/infrastructure/cg_s_inf_mine.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "parent_dependency_revisions": "independent civic module; style anchor B02 BLD-DWELLING r003 (approved-provisional, subject ignored)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-INF-MINE/r001/cg_s_inf_mine.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "93cdf4968a4249f5159ef47d14f7186129a419b98730a2b4bb4ba047da3cc5b0",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "scaffold + B02 BLD-DWELLING r003 style anchor (subject ignored)",
+          "content_qa": {
+            "identity": "three named modes: SHAFT supported shafthead with windlass frame; QUARRY broad stepped stone cut; ADIT braced hillside mouth; + timber bracing joinery detail; no carts/ore/tools/people"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "AWAITING_APPROVAL",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-INF-MINE",
+        "CG-R-CITY-RUINS"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      }
+    },
+    "CG-S-INF-WALL": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/infrastructure/cg_s_inf_wall.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "parent_dependency_revisions": "independent civic module; style anchor B02 BLD-DWELLING r003 (approved-provisional, subject ignored)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-INF-WALL/r001/cg_s_inf_wall.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "085ea46fa3fdb490fab70199517b9d9bed1c6565a943e864c547896b73c0e28e",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "scaffold + B02 BLD-DWELLING r003 style anchor (subject ignored)",
+          "content_qa": {
+            "identity": "three named modes at shared height: SEGMENT continuous capped run; GATE arched crossing with timber door ajar; BUTTRESS external sloping brace; + cap/coursing detail; no banners/merlons"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "AWAITING_APPROVAL",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-INF-WALL",
+        "CG-R-CITY-RUINS"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      }
     }
   },
   "batch_checkpoints": {
@@ -5408,24 +5768,26 @@
     "B06": {
       "opened_utc": "2026-09-24T04:20:00+00:00",
       "gate": "Check installed-slot compatibility and preserved base silhouettes",
-      "mode": "PROVISIONAL - pass complete (7/7 IDs conforming); consolidated human gate pending",
+      "mode": "PROVISIONAL - 6/7 approved; COAT r002 repair CONFORMS awaiting user verdict; B06 ready to close",
       "counts": {
         "requested": 7,
         "candidates_generated": 8,
         "generation_attempts": "9 of 10 (1 missing-scaffold tool error, no image)",
         "rejected_candidates": 1,
         "awaiting_approval_ids": 7,
-        "approved_source": 0
+        "approved_source": 0,
+        "provisionally_approved_ids": 6,
+        "held_for_repair": 1
       },
       "plan": "One pass: 7 parallel 2x2 module sheets (fits the 10-attempt turn budget with 3 spare slots); TB-03 fresh generations, per-panel counts for any radial anatomy (TB-06), verify identify() on every output (TB-07); consolidated human gate at pass end",
       "id_states": {
-        "CG-S-GOD-ARMOR-OSTEODERM": "CANDIDATE_AWAITING_APPROVAL (r001; 5 scutes zoom-verified)",
-        "CG-S-GOD-ARMOR-COAT": "CANDIDATE_AWAITING_APPROVAL (r001; feather-adjacent observation disclosed)",
-        "CG-S-GOD-ORGAN-SOLAR-SAIL": "CANDIDATE_AWAITING_APPROVAL (r001; 5 ribs zoom-verified)",
-        "CG-S-GOD-ORGAN-SPORE-SAC": "r001 REJECTED (TB-06 echo) -> r002 targeted repair CONFORMS; AWAITING_APPROVAL",
-        "CG-S-GOD-SYMB-FUNGAL-GROVE": "CANDIDATE_AWAITING_APPROVAL (r001)",
-        "CG-S-GOD-SYMB-FOLLOWER-GALLERY": "CANDIDATE_AWAITING_APPROVAL (r001; TB-07 canvas flag disclosed)",
-        "CG-S-GOD-SYMB-ROOT-HOLDFAST": "CANDIDATE_AWAITING_APPROVAL (r001; 4x1-fork verified)"
+        "CG-S-GOD-ARMOR-OSTEODERM": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
+        "CG-S-GOD-ARMOR-COAT": "r001 HELD for targeted r002 (ruling B06_CONSOLIDATED_GATE_APPROVE6_HOLD_COAT); B06 open until resolved",
+        "CG-S-GOD-ORGAN-SOLAR-SAIL": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
+        "CG-S-GOD-ORGAN-SPORE-SAC": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
+        "CG-S-GOD-SYMB-FUNGAL-GROVE": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
+        "CG-S-GOD-SYMB-FOLLOWER-GALLERY": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
+        "CG-S-GOD-SYMB-ROOT-HOLDFAST": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING"
       }
     },
     "B07": {
@@ -5434,11 +5796,11 @@
       "mode": "PROVISIONAL - opened while B06 gate pends (B07 depends only on closed B02); module chunks within the 10-attempt turn budget",
       "counts": {
         "requested": 19,
-        "candidates_generated": 8,
-        "awaiting_approval_ids": 8,
+        "candidates_generated": 16,
+        "awaiting_approval_ids": 16,
         "approved_source": 0
       },
-      "plan": "Chunk 1 DONE (8 BLD conforming). Chunk 2 next turn: OBSERVATORY, SHRINE, TOWER, WORKSHOP, INF-BRIDGE, INF-CANAL, INF-MINE, INF-WALL. Chunk 3: MOT-CANOPY, MOT-REED, MOT-VAULT + repair slack. Consolidated gate at pass end.",
+      "plan": "Chunks 1+2 DONE (16/19 conforming). Chunk 3 next: MOT-CANOPY, MOT-REED, MOT-VAULT (motif transforms vs B02) + repair slack. COAT r002 verdict + B06 closure + consolidated B07 gate at pass end.",
       "id_states": {
         "CG-S-BLD-ARCHIVE": "CANDIDATE_AWAITING_APPROVAL (r001)",
         "CG-S-BLD-BARRACKS": "CANDIDATE_AWAITING_APPROVAL (r001)",
@@ -5448,14 +5810,14 @@
         "CG-S-BLD-GRANARY": "CANDIDATE_AWAITING_APPROVAL (r001)",
         "CG-S-BLD-INFIRMARY": "CANDIDATE_AWAITING_APPROVAL (r001)",
         "CG-S-BLD-MARKET": "CANDIDATE_AWAITING_APPROVAL (r001; TB-07 canvas flag)",
-        "CG-S-BLD-OBSERVATORY": "NOT_STARTED",
-        "CG-S-BLD-SHRINE": "NOT_STARTED",
-        "CG-S-BLD-TOWER": "NOT_STARTED",
-        "CG-S-BLD-WORKSHOP": "NOT_STARTED",
-        "CG-S-INF-BRIDGE": "NOT_STARTED",
-        "CG-S-INF-CANAL": "NOT_STARTED",
-        "CG-S-INF-MINE": "NOT_STARTED",
-        "CG-S-INF-WALL": "NOT_STARTED",
+        "CG-S-BLD-OBSERVATORY": "CANDIDATE_AWAITING_APPROVAL (r001)",
+        "CG-S-BLD-SHRINE": "CANDIDATE_AWAITING_APPROVAL (r001; TB-07 canvas flag)",
+        "CG-S-BLD-TOWER": "CANDIDATE_AWAITING_APPROVAL (r001)",
+        "CG-S-BLD-WORKSHOP": "CANDIDATE_AWAITING_APPROVAL (r001)",
+        "CG-S-INF-BRIDGE": "CANDIDATE_AWAITING_APPROVAL (r001; 3 named modes)",
+        "CG-S-INF-CANAL": "CANDIDATE_AWAITING_APPROVAL (r001; 3 named modes)",
+        "CG-S-INF-MINE": "CANDIDATE_AWAITING_APPROVAL (r001; 3 named modes)",
+        "CG-S-INF-WALL": "CANDIDATE_AWAITING_APPROVAL (r001; 3 named modes)",
         "CG-S-MOT-CANOPY": "NOT_STARTED",
         "CG-S-MOT-REED": "NOT_STARTED",
         "CG-S-MOT-VAULT": "NOT_STARTED"
@@ -5673,6 +6035,20 @@
         ]
       },
       "recorded_utc": "2026-09-24T04:20:00+00:00"
+    },
+    {
+      "id": "B06_CONSOLIDATED_GATE_APPROVE6_HOLD_COAT",
+      "ruling": {
+        "date": "2026-09-24",
+        "authority": "human (repository owner) via Arena gate answer (option approve6_hold_coat; third presentation after two recorded skips)",
+        "decision": "Approve 6 B06 candidates (OSTEODERM r001, SOLAR-SAIL r001, SPORE-SAC r002, FUNGAL-GROVE r001, FOLLOWER-GALLERY r001, ROOT-HOLDFAST r001) as provisional batch-local. WITHHOLD ARMOR-COAT r001 for a targeted r002 repair (flatter, wider interlocking locks) before B06 closes. Parallel-session work ratified via the independent audit (3324b84).",
+        "scope_limits": [
+          "All provisional batch-local; canonical promotion pending the standing 2048/3072 resolution ruling",
+          "Flags recorded: COAT feather-adjacency (held); FOLLOWER-GALLERY + SPORE-SAC-r001 canvas swaps (disclosed)",
+          "COAT r002 verdict returns to the user at the next gate touch; B06 remains OPEN until then"
+        ]
+      },
+      "recorded_utc": "2026-09-24T06:05:00+00:00"
     }
   ],
   "resolution_ruling_standing": {
@@ -5787,6 +6163,12 @@
       "incident": "B07_CHUNK1_RECORDED",
       "recorded_utc": "2026-09-24T05:45:00+00:00",
       "observation": "B07 opened (B06 gate skipped - no ruling; B07 depends only on closed B02; B00-blocked precedent). Chunk 1 = 8 of 19 IDs generated in one parallel burst: ARCHIVE, BARRACKS, CARAVAN-CANOPY, DEPOT, DOCK, GRANARY, INFIRMARY, MARKET - ALL 8 CONFORM on registry identity anchors (countable anchors verified: 3 canopy ribs, 3 dock piers, 3 granary bins, single clerestory strip). MARKET carries TB-07 canvas recurrence (3rd observed). PROCESS NOTE: first ledger-write attempt failed on a filename derivation bug (hyphens not mapped to underscores) and was committed without receipts (50b3f7a); this commit supplies the complete receipts, corrected against the plan's canonical paths (assets/source/buildings/*). 8 of 10 turn attempts used; chunk 2 (4 BLD + 4 INF) and chunk 3 (3 MOT) next turns. B06 gate + B07 interim report go to the user together.",
+      "content_loss": "none"
+    },
+    {
+      "incident": "B06_COAT_R002_AND_B07_CHUNK2_RECORDED",
+      "recorded_utc": "2026-09-24T06:45:00+00:00",
+      "observation": "COAT r002 targeted repair (authorized by ruling B06_CONSOLIDATED_GATE_APPROVE6_HOLD_COAT) CONFORMS: wide flat nested directional bands, feather-adjacency eliminated - verdict returns to user for B06 closure. B07 chunk 2 (OBSERVATORY, SHRINE, TOWER, WORKSHOP + INF-BRIDGE, INF-CANAL, INF-MINE, INF-WALL): ALL 8 CONFORM incl. all named-mode INF sheets (3 modes + detail panel each). SHRINE carries 4th TB-07 canvas occurrence. B07 at 16/19 conforming, zero rejections; chunk 3 (3 MOT) remains. 9 of 10 turn attempts used.",
       "content_loss": "none"
     }
   ],
