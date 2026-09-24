@@ -2,7 +2,7 @@
   "ledger_type": "arena_source_receipts",
   "specification_version": "CG-V1.0.0",
   "created_utc": "2026-09-23T21:51:28+00:00",
-  "last_updated_utc": "2026-09-24T02:55:00+00:00",
+  "last_updated_utc": "2026-09-24T03:25:00+00:00",
   "authority": {
     "master_plan": "CIVIC_GODSTORM_MASTER_PLAN.md",
     "master_plan_head_commit": "5bd357e14d9b68776d50b1dee0829b7bd5ab939f",
@@ -4380,7 +4380,7 @@
       "specification_version": "CG-V1.0.0",
       "canonical_path": "assets/source/god/cg_s_god_sense_antenna_crown.png",
       "canonical_state": "ABSENT (correct - no approved source)",
-      "id_status": "REJECTED_THIS_PASS",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
       "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
       "candidates": [
         {
@@ -4417,10 +4417,31 @@
             "fixed_from_r001": "frond blade quality improved (smooth unbranched tapered blades, clear open central gap, closed dome mount); count defect persists in the same plan panel"
           },
           "status": "REJECTED"
+        },
+        {
+          "revision": "r003",
+          "path": "assets/candidates/CG-S-GOD-SENSE-ANTENNA-CROWN/r003/cg_s_god_sense_antenna_crown.png",
+          "native_dimensions": "1376x768",
+          "native_aspect_error_pct": null,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "9562c96fb815e16c076b3c8348d43e29d3946e26a7162ed443ff116abbb9019b",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "FRESH GENERATION r003 (AUTHORIZED PASS-2 per ruling B05_CROWN_PASS2_THEN_CHILDREN; TB-06 strategy: per-panel EXACTLY-SIX counts covering every view, plan panel phrased as three-per-side with bare mount front/rear edges; no defective anchor; TORSO-M r002 style anchor, subject ignored)",
+          "content_qa": {
+            "count_plan": "plan panel EXACTLY SIX blades - three per side (up-diagonal, horizontal, down-diagonal), mount front/rear edges smooth and bare (zoom-verified)",
+            "count_other": "lateral three-per-side profile; front and rear EXACTLY SIX in mirrored pairs with open central gap",
+            "blade_quality": "smooth tapered unbranched blades, rounded tips, no antlers/tines/feathers",
+            "technical_flag": "model abandoned the 1024x1024 square scaffold canvas and rendered native 1376x768 landscape (first observed scaffold-canvas abandonment; 2x2 quadrant logic intact; no hard module aspect contract beyond scaffold convention - recorded, gate to accept as technical pass)",
+            "minor": "small ochre flecks at frond bases (restraint note)"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
         }
       ],
       "approval": {
-        "decision": "REJECTED_THIS_PASS",
+        "decision": "AWAITING_APPROVAL",
         "approver": "human (pending)",
         "date": null
       },
@@ -4431,10 +4452,107 @@
       "repair_budget": {
         "initial_candidates_used": 1,
         "repair_candidates_used": 1,
+        "retry_pass_candidates_used": 1,
         "remaining": 0
       },
-      "reason": "Plan-view frond multiplication persisted across fresh generation (2/2) - new tool behavior pattern: radial top-down panels invite count multiplication even when orthogonal panels conform and counts are front-loaded. Pass budget exhausted; retry requires explicit fresh-pass authorization.",
+      "reason": "r001/r002 REJECTED (TB-06 plan-panel multiplication). r003 authorized pass-2 CONFORMS on the six-frond anchor in all four panels (per-panel-count strategy validated); carries a technical flag: native 1376x768 landscape canvas instead of the square scaffold (quadrant logic intact). Awaiting consolidated B05 gate.",
       "retry_strategy_if_authorized": "Pass-2 r003: pure fresh generation, count stated PER PANEL ('lateral: exactly three fronds visible stepping down; front: exactly six, three per side, open center gap; plan: exactly six blades TOTAL, three per side, NOTHING growing from the mount's front or rear edge; rear: exactly six'); consider omitting the plan panel in favor of two three-quarter views if multiplication persists."
+    },
+    "CG-S-GOD-FORM-M": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/god/cg_s_god_form_m.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "parent_dependency_revisions": "assembles registered M modules: TORSO-M r002 (approved-provisional), LOCO-WING r001, FEED-CARRION r001, SENSE-ANTENNA-CROWN r003 (all awaiting this same gate), TAIL-BALANCE r002 (B01 approved-provisional) - declared assembly sources per FORM-H/FORM-S precedent",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-GOD-FORM-M/r001/cg_s_god_form_m.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "1407ec1e3f9cd87c10f36d64ff04064d621e228cd68d5d90062b698152cea9be",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "scaffold (template_2x2.png) + five M-module candidate sheets as declared assembly sources",
+          "content_qa": {
+            "modules": "exactly the five registered modules, nothing invented: broad ridge mantle, two membrane wings (three spars each, folded along spars per instruction) seated at the flush lateral seam rings, hooked scoop jaw with four blunt teeth and throat pouch, six-frond crown with open center (legible in front/rear views), single tapered elliptical balance tail; NO legs (rests on mantle underside), no eyes, no extra anatomy",
+            "views": "2x2: 3/4 hero / left lateral / front elevation / rear elevation",
+            "flags_nonblocking": "wing spars not individually resolvable at assembly scale (wings folded per instruction); crown fronds overlap in lateral profile (legal pairing reading)"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "AWAITING_APPROVAL",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-GOD-FORM-M",
+        "CG-R-GOD-ASSEMBLY",
+        "CG-R-GOD-LOCOMOTION"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      },
+      "reason": "Inventory-complete assembly of the five registered M modules with legal junction treatment (wings at seam rings, crown on centerline, jaw at front, tail at rear). Generated after CROWN r003 conformed, per the conditional authorization in ruling B05_CROWN_PASS2_THEN_CHILDREN."
+    },
+    "CG-S-GOD-LIFE-M": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/god/cg_s_god_life_m.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "parent_dependency_revisions": "CG-S-GOD-FORM-M r001 (conforming-awaiting-gate) via SINGLE LATERAL-VIEW CROP anchor (recorded anti-row-multiplication strategy from LIFE-S)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-GOD-LIFE-M/r001/cg_s_god_life_m.png",
+          "native_dimensions": "1264x848",
+          "native_aspect_error_pct": 0.63,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "775a15035e398e9a691da8b0cd91d32ae7e23dbddbf01c2c0875ec7d74f800ed",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "scaffold (template_3x2.png) + FORM-M r001 lateral-panel crop as content anchor (LIFE-S lesson applied); pre-counted six-cell rules first; NO-LABELS global rule",
+          "content_qa": {
+            "layout": "EXACTLY 3x2, six states once each - the LIFE-S layout defect is ELIMINATED (strategy validated)",
+            "no_text": "none anywhere",
+            "continuity": "same individual; juvenile ~2/3 scale; ancient heavier with settled creases",
+            "corpse": "side collapse with limp splayed wings and drooping fronds - reads correctly",
+            "ossuary": "LOW long species skull with hooked scoop jaw bone and blunt teeth, mantle vault plate, three frond rods, wing spar bones, tapering tail spine - species-correct, NOT a generic dragon skull",
+            "flags_for_gate": [
+              "ossuary skull renders ONE large round socket despite explicit prohibition - reads as a temporal fenestra; the registry anchors (species-recognizable ossuary; scavenger-not-dragon jaw) HOLD, so recorded as a disclosed deviation rather than an anchor failure; repair path recorded",
+              "injured panel shows ONE clear mark (wing membrane tear) with no distinctly visible flank scar - under-marked vs the two-mark convention (conservative direction, no gore)"
+            ]
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "AWAITING_APPROVAL",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-GOD-LIFE-M",
+        "CG-R-GOD-AGE",
+        "CG-R-GOD-DAMAGE",
+        "CG-R-GOD-CORPSE"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      },
+      "reason": "Layout anchor strategy from LIFE-S validated: exact 3x2, six states once each. Two disclosed gate flags (ossuary socket; injured under-mark). Repair path if the gate requires: r002 next turn with 'sealed smooth skull, small holes only' + explicitly drawn flank scar; same scaffold + single-view anchor.",
+      "retry_strategy_if_repair_required": "Targeted r002 (turn cap permitting): keep the exact 3x2 six-state structure; ossuary instruction becomes 'skull surface sealed and smooth with only small shallow pits - NO large openings of any size'; injured instruction adds 'draw the pale scar clearly on the flank behind the wing root'."
     }
   },
   "batch_checkpoints": {
@@ -4574,24 +4692,23 @@
     "B05": {
       "opened_utc": "2026-09-24T02:10:00+00:00",
       "gate": "Depends on B04 mantle torso (TORSO-M approved-provisional); no added limbs or feathers",
-      "mode": "PROVISIONAL - module pass done; FORM-M/LIFE-M pending user ruling on rejected-parent dependency (CROWN)",
+      "mode": "PROVISIONAL - pass complete (all 5 IDs have candidates); consolidated human gate pending",
       "counts": {
         "requested": 5,
-        "candidates_generated": 4,
-        "generation_attempts_this_turn": "6 of 10 (1 tool error, no image)",
+        "candidates_generated": 7,
+        "generation_attempts_total": "10 of 10 (1 missing-scaffold tool error, no image)",
         "rejected_candidates": 2,
-        "rejected_ids_budget_exhausted": 1,
-        "awaiting_approval_ids": 2,
-        "approved_source": 0,
-        "children_not_started": 2
+        "rejected_ids_budget_exhausted_then_pass2": 1,
+        "awaiting_approval_ids": 5,
+        "approved_source": 0
       },
       "plan": "3 independent modules first (LOCO-WING, FEED-CARRION, SENSE-ANTENNA-CROWN), then FORM-M + LIFE-M parent-first in the same pass if module inspection is clean; consolidated human gate at pass end. Scaffolds pre-staged (3x 2x2 + FORM-M 2x2 + LIFE-M 3x2) and verified with identify.",
       "id_states": {
         "CG-S-GOD-LOCO-WING": "CANDIDATE_AWAITING_APPROVAL (r001)",
         "CG-S-GOD-FEED-CARRION": "CANDIDATE_AWAITING_APPROVAL (r001)",
-        "CG-S-GOD-SENSE-ANTENNA-CROWN": "REJECTED this pass (r001+r002, plan-view count multiplication, TB-06); retry needs explicit fresh-pass authorization",
-        "CG-S-GOD-FORM-M": "NOT_STARTED - held pending user ruling (parent CROWN rejected; agent declined to self-authorize generation on rejected parent, deviation from recorded plan avoided)",
-        "CG-S-GOD-LIFE-M": "NOT_STARTED (parent FORM-M pending)"
+        "CG-S-GOD-SENSE-ANTENNA-CROWN": "r001+r002 REJECTED (TB-06) -> r003 AUTHORIZED PASS-2 CONFORMS (technical flag: canvas swap TB-07); AWAITING_APPROVAL",
+        "CG-S-GOD-FORM-M": "CANDIDATE_AWAITING_APPROVAL (r001; five-module assembly, flags non-blocking)",
+        "CG-S-GOD-LIFE-M": "CANDIDATE_AWAITING_APPROVAL (r001; exact 3x2 achieved; two disclosed flags: ossuary socket, injured under-mark; repair path recorded)"
       }
     }
   },
@@ -4779,6 +4896,19 @@
         ]
       },
       "recorded_utc": "2026-09-24T02:10:00+00:00"
+    },
+    {
+      "id": "B05_CROWN_PASS2_THEN_CHILDREN",
+      "ruling": {
+        "date": "2026-09-24",
+        "authority": "human (repository owner) via Arena gate answer (option crown_pass2_then_children)",
+        "decision": "One fresh SENSE-ANTENNA-CROWN pass (r003, recorded TB-06 per-panel-count strategy) authorized now. If r003 conforms: FORM-M and LIFE-M are generated in the same B05 pass (parent-first). Consolidated B05 human gate at pass end covering all 5 IDs.",
+        "scope_limits": [
+          "If CROWN r003 does not conform, children are NOT generated this pass (conditional authorization)",
+          "All provisional batch-local; canonical promotion pending the standing 2048/3072 resolution ruling"
+        ]
+      },
+      "recorded_utc": "2026-09-24T03:05:00+00:00"
     }
   ],
   "resolution_ruling_standing": {
@@ -4846,6 +4976,12 @@
       "recorded_utc": "2026-09-24T02:55:00+00:00",
       "observation": "B05 module pass: LOCO-WING r001 and FEED-CARRION r001 conform (awaiting gate). SENSE-ANTENNA-CROWN r001+r002 rejected on plan-view frond multiplication (TB-06); budget exhausted; retry strategy recorded. Pre-flight exposed FIFTH_WORKSPACE_RESET_RECOVERED (separate entry). FORM-M/LIFE-M intentionally NOT generated this turn: recorded plan said continue only on clean module inspection; inspection was not clean (CROWN rejected) and generating children on a rejected parent is a user ruling, not an agent decision. 6 of 10 generation attempts used (1 consumed by a missing-scaffold tool error, no image).",
       "content_loss": "none"
+    },
+    {
+      "incident": "B05_PASS_COMPLETE_RECORDED",
+      "recorded_utc": "2026-09-24T03:25:00+00:00",
+      "observation": "B05 pass complete within ruling B05_CROWN_PASS2_THEN_CHILDREN: CROWN r003 CONFORMS (per-panel-count TB-06 strategy validated; technical flag: 1376x768 canvas swap, TB-07); conditional branch fired - FORM-M r001 CONFORMS (five-module assembly) and LIFE-M r001 generated with the single-view-anchor strategy: exact 3x2 layout achieved (LIFE-S defect eliminated), six states once each, two disclosed gate flags (ossuary socket; injured under-mark). 10 of 10 generation attempts used this turn (1 consumed by missing-scaffold error, no image). Consolidated B05 gate is the next action.",
+      "content_loss": "none"
     }
   ],
   "tool_behavior_findings": [
@@ -4871,6 +5007,12 @@
       "date": "2026-09-24",
       "rule": "Top-down/radial views of counted radial anatomy (frond crowns, rosettes) reliably multiply element counts even under front-loaded exact-count instructions, fresh generations and blank scaffolds, while orthogonal (lateral/front/rear) views of the same sheet stay correct. One anchored repair attempt that reproduces the defect in the same panel should NOT be retried identically; mitigation: per-panel count instructions covering every view, or replacing the radial panel with oblique views.",
       "evidence": "B05 SENSE-ANTENNA-CROWN r001 and r002: plan panel 8-9 fronds / 8 blades vs six in all other panels; contrast SENSE-VIBRATION-ROSETTE r001 (B03) which conformed - radial-count risk is real but not certain per generation."
+    },
+    {
+      "finding_id": "TB-07_SCAFFOLD_CANVAS_ABANDONMENT",
+      "date": "2026-09-24",
+      "rule": "The image model can abandon a provided square scaffold canvas and render a native landscape canvas (observed 1376x768) even for a 2x2 sheet, after two prior generations on identical layout instructions honored the scaffold. Layout logic may survive (quadrants intact) but the sheet no longer matches its scaffold; verify identify() output on EVERY generation and treat canvas deviation as a disclosed technical flag for the gate, not a silent accept or an automatic content rejection.",
+      "evidence": "B05 SENSE-ANTENNA-CROWN r003: first two attempts 1024x1024 on scaffold; r003 1376x768 with intact quadrant logic."
     }
   ]
 }
