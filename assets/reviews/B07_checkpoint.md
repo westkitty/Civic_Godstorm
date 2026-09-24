@@ -42,3 +42,8 @@ All style-anchored on B02 BLD-DWELLING r003 (approved-provisional, subject ignor
 All three verified as correct transform kits of the shared pavilion family against the B02 MOT-BASALT r001 baseline (approved-provisional).
 
 ## PASS STATUS: COMPLETE — 19/19 conforming, zero rejections, zero repairs (cleanest batch of the run). Consolidated B07 human gate pending. Canonical paths absent (correct).
+
+
+## CLOSED 2026-09-24 — `B07_CONSOLIDATED_GATE_APPROVE_ALL`
+
+All 19 candidates approved as provisional batch-local. **B07 CLOSED 19/19** — the cleanest batch of the run. B08 (18 IDs: 10 ENV + 8 UNT) unlocked with scaffolds pre-staged. Canonical promotion pending the standing 2048/3072 resolution ruling.
