@@ -2,7 +2,7 @@
   "ledger_type": "arena_source_receipts",
   "specification_version": "CG-V1.0.0",
   "created_utc": "2026-09-23T21:51:28+00:00",
-  "last_updated_utc": "2026-09-24T03:25:00+00:00",
+  "last_updated_utc": "2026-09-24T03:45:00+00:00",
   "authority": {
     "master_plan": "CIVIC_GODSTORM_MASTER_PLAN.md",
     "master_plan_head_commit": "5bd357e14d9b68776d50b1dee0829b7bd5ab939f",
@@ -4981,6 +4981,18 @@
       "incident": "B05_PASS_COMPLETE_RECORDED",
       "recorded_utc": "2026-09-24T03:25:00+00:00",
       "observation": "B05 pass complete within ruling B05_CROWN_PASS2_THEN_CHILDREN: CROWN r003 CONFORMS (per-panel-count TB-06 strategy validated; technical flag: 1376x768 canvas swap, TB-07); conditional branch fired - FORM-M r001 CONFORMS (five-module assembly) and LIFE-M r001 generated with the single-view-anchor strategy: exact 3x2 layout achieved (LIFE-S defect eliminated), six states once each, two disclosed gate flags (ossuary socket; injured under-mark). 10 of 10 generation attempts used this turn (1 consumed by missing-scaffold error, no image). Consolidated B05 gate is the next action.",
+      "content_loss": "none"
+    },
+    {
+      "incident": "SIXTH_WORKSPACE_RESET_RECOVERED",
+      "recorded_utc": "2026-09-24T03:45:00+00:00",
+      "observation": "Local branch found re-rooted at docs commit 5bd357e with preserved untracked working tree (97 PNGs, ledger intact through B05 pass); remote intact at 63c4300 (last authorized push). Explicit non-forcing refspec fetch + reset --hard onto origin tip. Scratch anchor crop re-created from committed FORM-M r001.",
+      "content_loss": "none"
+    },
+    {
+      "incident": "GATE_QUESTION_SKIPPED_B05_CONSOLIDATED_2026_09_24",
+      "recorded_utc": "2026-09-24T03:45:00+00:00",
+      "observation": "Consolidated B05 gate ask_user (5 IDs: WING r001, CARRION r001, CROWN r003, FORM-M r001, LIFE-M r001) returned SKIPPED - no ruling. Per standing handling: nothing assumed, no approvals recorded. On explicit user 'go on', proceeding with the least-irreversible recorded-strategy step only: LIFE-M r002 targeted repair (recorded repair path addressing both disclosed flags: sealed-smooth ossuary skull; clearly drawn flank scar), preserving r001 as evidence. B05 stays OPEN; consolidated gate re-presented at turn end.",
       "content_loss": "none"
     }
   ],
