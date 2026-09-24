@@ -45,6 +45,15 @@ Runners accept `--runs <n>`, `--civs <1-6>`, `--seed <1-64 of A-Za-z0-9._:->`, `
 | `npm run preview` | Serves `dist/` on port 4173 | server |
 | `npm run validate:release` | Release asset gate: zero unresolved IDs and every authored source approved | 1: 285 IDs unresolved |
 
+Model pipeline (M03, first Q God). It needs the Python toolchain in `tools/models/requirements.txt` and a Chromium for the evidence capture:
+
+```bash
+python3.11 -m venv .toolchain/py && .toolchain/py/bin/pip install -r tools/models/requirements.txt
+tools/models/q-pipeline.sh
+```
+
+The pipeline builds the volumes, then the skinned GLBs with LODs and `.blend` files. It ground-solves the poses and measures silhouettes, identity anchors, structure and deformation. It runs the Khronos glTF-Validator, builds the offline `viewer.html` inspectors, captures the 144-frame turntables, validation sheets and age/injury sample, and registers the results in provenance. `tools/models/fit_form.py --write` refits the form placements and is not part of every run. `node tools/assets/intake.ts --check` confirms the canonical sources are byte-identical to the pinned Arena candidates.
+
 Helpers:
 
 - `npm run spec:compile` regenerates `assets/specification.json`, `assets/missing.json` and `src/assets/generated/specIndex.json` from the master.

@@ -1,0 +1,25 @@
+{
+  "id": "CG-D-GOD-SENSE-EYE-RING",
+  "glb": "assets/runtime/models/cg_d_god_sense_eye_ring.glb",
+  "lods": {
+    "LOD0": {
+      "present": true,
+      "trianglesFile": 3938,
+      "trianglesReimported": 3938,
+      "boundsErrorU": 0.0
+    },
+    "LOD1": {
+      "present": true,
+      "trianglesFile": 1966,
+      "trianglesReimported": 1966,
+      "boundsErrorU": 0.0
+    },
+    "LOD2": {
+      "present": true,
+      "trianglesFile": 686,
+      "trianglesReimported": 686,
+      "boundsErrorU": 0.0
+    }
+  },
+  "pass": true
+}

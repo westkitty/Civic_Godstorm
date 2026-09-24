@@ -17,6 +17,7 @@ import {
   ownGod,
   type TargetingState,
 } from './godView.ts';
+import { resolveGodModel } from '../render/god/godAsset.ts';
 import { WorldView } from './WorldView.tsx';
 
 interface GameScreenProps {
@@ -34,6 +35,8 @@ function isTypingTarget(target: EventTarget | null): boolean {
   if (!(target instanceof HTMLElement)) return false;
   return target.isContentEditable || ['INPUT', 'TEXTAREA', 'SELECT'].includes(target.tagName);
 }
+
+const GOD_MODEL = resolveGodModel();
 
 export function GameScreen({ session, debug, onRendererStatus, onRendererFailure, children }: GameScreenProps) {
   const snapshot = useSyncExternalStore(session.subscribe, session.getSnapshot);
@@ -56,7 +59,11 @@ export function GameScreen({ session, debug, onRendererStatus, onRendererFailure
     hostRef.current = host;
     if (debug) {
       (window as unknown as { __CG_DEBUG__?: unknown }).__CG_DEBUG__ = host
-        ? { clientPointOfCell: (cell: number) => host.clientPointOfCell(cell) }
+        ? {
+            clientPointOfCell: (cell: number) => host.clientPointOfCell(cell),
+            godModel: () => ({ ...host.godModel, state: host.godModelState }),
+            renderedGods: () => host.renderedGods(),
+          }
         : undefined;
     }
   }, [debug]);
@@ -207,10 +214,10 @@ export function GameScreen({ session, debug, onRendererStatus, onRendererFailure
           onFailure={onRendererFailure}
           onCellActivate={handleCell}
           onHost={handleHost}
-          label="Strategic map. Schematic development terrain; God and building art are marked MISSING until approved."
+          label="Strategic map. Schematic development terrain; building art is marked MISSING until approved; your God is drawn with its current body model."
         />
         <p className="cg-map-legend">
-          Schematic development map: terrain recipe CG-R-TERRAIN awaits CG-S-ART-DIRECTION approval. Bright cyan outline: your selected God.
+          Schematic development map: terrain recipe CG-R-TERRAIN is not built yet. Your God uses the body model named in the God panel. Bright cyan outline: your selected God.
           Yellow: planned route. Red: cells needing consent. Dark: unexplored.
         </p>
       </main>
@@ -222,6 +229,14 @@ export function GameScreen({ session, debug, onRendererStatus, onRendererFailure
               <span className="cg-missing__label">MISSING CG-R-GOD-EMBLEM</span>
             </div>
             <dl className="cg-facts">
+              <dt>Body model</dt>
+              <dd data-testid="god-model-status">
+                {GOD_MODEL.status === 'MISSING'
+                  ? `MISSING ${GOD_MODEL.id}`
+                  : GOD_MODEL.status === 'CANDIDATE'
+                    ? `Unapproved candidate ${GOD_MODEL.id} ${GOD_MODEL.revision ?? ''} (awaiting human review)`
+                    : `${GOD_MODEL.id} (verified)`}
+              </dd>
               <dt>Location</dt><dd data-testid="god-location">{cellLabel(view, god.anchor)} facing {god.heading * 60}°</dd>
               <dt>Order</dt><dd data-testid="god-order">{status.order}</dd>
               <dt>Next</dt><dd>{status.next}</dd>

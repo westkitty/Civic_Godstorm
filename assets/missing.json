@@ -800,7 +800,7 @@
     {
       "id": "CG-D-GOD-TORSO-Q",
       "class": "DERIVED ASSET",
-      "status": "SPECIFIED",
+      "status": "DERIVED_UNVERIFIED",
       "batch": null,
       "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
     },
@@ -828,7 +828,7 @@
     {
       "id": "CG-D-GOD-LOCO-PILLAR",
       "class": "DERIVED ASSET",
-      "status": "SPECIFIED",
+      "status": "DERIVED_UNVERIFIED",
       "batch": null,
       "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
     },
@@ -870,7 +870,7 @@
     {
       "id": "CG-D-GOD-FEED-BROWSE",
       "class": "DERIVED ASSET",
-      "status": "SPECIFIED",
+      "status": "DERIVED_UNVERIFIED",
       "batch": null,
       "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
     },
@@ -898,7 +898,7 @@
     {
       "id": "CG-D-GOD-SENSE-EYE-RING",
       "class": "DERIVED ASSET",
-      "status": "SPECIFIED",
+      "status": "DERIVED_UNVERIFIED",
       "batch": null,
       "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
     },
@@ -919,7 +919,7 @@
     {
       "id": "CG-D-GOD-TAIL-BALANCE",
       "class": "DERIVED ASSET",
-      "status": "SPECIFIED",
+      "status": "DERIVED_UNVERIFIED",
       "batch": null,
       "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
     },
@@ -1010,7 +1010,7 @@
     {
       "id": "CG-D-GOD-FORM-Q",
       "class": "DERIVED ASSET",
-      "status": "SPECIFIED",
+      "status": "DERIVED_UNVERIFIED",
       "batch": null,
       "needs": "APPROVED_SOURCES_THEN_VERIFIED_DERIVATION"
     },

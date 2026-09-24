@@ -2,8 +2,9 @@
 // Section 14.4). Renders on demand. Pointer gestures are normalised here into camera motion or a
 // picked cell; the UI decides what a cell activation means. Presentation never feeds game state.
 
-import { AmbientLight, Color, OrthographicCamera, Scene, Vector2, Vector3, WebGLRenderer } from 'three';
-import { MapPresenter } from './MapPresenter.ts';
+import { AmbientLight, Color, DirectionalLight, HemisphereLight, OrthographicCamera, Scene, SRGBColorSpace, Vector2, Vector3, WebGLRenderer } from 'three';
+import { loadGodModel, resolveGodModel, type GodModelResolution } from './god/godAsset.ts';
+import { MapPresenter, type GodRenderFact } from './MapPresenter.ts';
 import { cellCenter, type WorldSnapshot } from './worldSnapshot.ts';
 
 export type RendererStatus =
@@ -54,6 +55,8 @@ export class RendererHost {
   private frameRequest: number | null = null;
   private contextLost = false;
   private disposed = false;
+  readonly godModel: GodModelResolution;
+  godModelState: 'pending' | 'loaded' | 'failed' = 'pending';
 
   constructor(options: RendererHostOptions) {
     this.canvas = options.canvas;
@@ -63,7 +66,26 @@ export class RendererHost {
     // Throws when a context cannot be created; the caller shows the renderer error path.
     this.renderer = new WebGLRenderer({ canvas: this.canvas, antialias: true, powerPreference: 'high-performance' });
     this.renderer.setClearColor(new Color(UI_BACKGROUND));
-    this.scene.add(new AmbientLight(0xffffff, 1), this.presenter.root);
+    this.renderer.outputColorSpace = SRGBColorSpace;
+    // Terrain and overlays use unlit materials; the lights only shade the God's standard material.
+    const key = new DirectionalLight('#fff4e4', 2.0);
+    key.position.set(-0.45, 0.8, 0.4);
+    this.scene.add(new AmbientLight(0xffffff, 1), new HemisphereLight('#dfe8ee', '#3a3128', 0.9), key, this.presenter.root);
+    this.godModel = resolveGodModel();
+    if (this.godModel.status !== 'MISSING') {
+      loadGodModel(this.godModel)
+        .then((model) => {
+          if (this.disposed) return;
+          this.godModelState = 'loaded';
+          this.presenter.setGodModel(model);
+          this.requestRender();
+        })
+        .catch((error: unknown) => {
+          // Keep the MISSING placeholder; a corrupt or unreachable file is never shown as art.
+          this.godModelState = 'failed';
+          console.warn('God model unavailable:', error);
+        });
+    }
 
     this.canvas.addEventListener('webglcontextlost', this.handleContextLost);
     this.canvas.addEventListener('webglcontextrestored', this.handleContextRestored);
@@ -120,6 +142,11 @@ export class RendererHost {
   }
 
   /** Debug/test aid: CSS-pixel client coordinates of a cell's nearest wrap copy, or null. */
+  /** Measured facts about God instances drawn with the model (debug and evidence only). */
+  renderedGods(): readonly GodRenderFact[] {
+    return this.presenter.renderedGods;
+  }
+
   clientPointOfCell(cell: number): { x: number; y: number } | null {
     const snapshot = this.snapshot;
     if (!snapshot) return null;

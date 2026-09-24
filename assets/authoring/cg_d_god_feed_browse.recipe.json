@@ -1,0 +1,127 @@
+{
+  "id": "CG-D-GOD-FEED-BROWSE",
+  "recipe": "CG-Q-CONVERSION",
+  "revision": "c001",
+  "contract": "CG-V1.0.0",
+  "stages": [
+    "tools/models/build_volumes.py",
+    "tools/models/build_models.py"
+  ],
+  "parameters": {
+    "source": "CG-S-GOD-FEED-BROWSE",
+    "slug": "cg_d_god_feed_browse",
+    "grid": [
+      2,
+      2
+    ],
+    "rowDimensionsU": [
+      9,
+      7,
+      13
+    ],
+    "box": {
+      "x": [
+        -4.5,
+        4.5
+      ],
+      "y": [
+        -3.5,
+        3.5
+      ],
+      "z": [
+        0,
+        13
+      ]
+    },
+    "junctionOrigin": "centre of the rear junction ring",
+    "longAxis": "z",
+    "views": {
+      "front": {
+        "panel": 0,
+        "u": "+x",
+        "v": "-y"
+      },
+      "left": {
+        "panel": 1,
+        "u": "-z",
+        "v": "-y",
+        "deviation": "sheet draws the snout toward image left; mirrored by declared mapping"
+      },
+      "rear": {
+        "panel": 2,
+        "u": "-x",
+        "v": "-y"
+      },
+      "top": {
+        "panel": 3,
+        "u": "+x",
+        "v": "-z"
+      }
+    },
+    "loft": [
+      "left",
+      "top"
+    ],
+    "carve": [
+      "front",
+      "rear"
+    ],
+    "exponent": 3.0,
+    "triangleBudget": [
+      4000,
+      2000,
+      700
+    ],
+    "skeleton": [
+      {
+        "name": "head",
+        "parent": null,
+        "head": [
+          0,
+          0,
+          0
+        ],
+        "tail": [
+          0,
+          0.8,
+          8
+        ]
+      },
+      {
+        "name": "jaw",
+        "parent": "head",
+        "head": [
+          0,
+          -1.2,
+          5
+        ],
+        "tail": [
+          0,
+          -2.2,
+          12.5
+        ]
+      }
+    ],
+    "accentSpots": [
+      [
+        4.2,
+        1.4,
+        2.2,
+        0.35
+      ],
+      [
+        -4.2,
+        1.4,
+        2.2,
+        0.35
+      ]
+    ],
+    "carveSoftnessU": 0.2
+  },
+  "palette": {
+    "biologicalTeal": "#49A69D",
+    "charcoal": "#161E27",
+    "organAccent": "#E4C86E",
+    "paleStone": "#E1CEAC"
+  }
+}

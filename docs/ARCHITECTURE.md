@@ -1,6 +1,6 @@
 # CIVIC GODSTORM - Implementation Architecture Contract
 
-**Status:** implementation record (M00-M02). **Subordinate to:** `CIVIC_GODSTORM_MASTER_PLAN.md` (contract CG-V1.0.0).
+**Status:** implementation record (M00-M03). **Subordinate to:** `CIVIC_GODSTORM_MASTER_PLAN.md` (contract CG-V1.0.0).
 
 This file records how the code base realises the master's architecture. It is not a fourth planning document. It adds no scope, mechanics or assets. Where it and the master disagree, the master governs and the disagreement is a defect in this file.
 
@@ -19,6 +19,11 @@ This file records how the code base realises the master's architecture. It is no
 | ADR-M02-01 | God legality is one pure function over a `Knowledge` interface. Resolution passes true-state knowledge (physics); planning, previews and command validation pass observed knowledge, so a rejection or preview cannot reveal hidden truth. Execution follows the stored plan and halts rather than re-planning with hidden knowledge. | §4.4, §11 | `tests/sim/gods.test.ts` observation boundary |
 | ADR-M02-02 | Impulse simultaneity uses micro-slots: each moving God proposes one step against the same positions, and intersecting proposals halt both. Multi-AP steps accumulate payment across impulses. | §2.3, §16.1 | `tests/sim/gods.test.ts` |
 | ADR-M02-03 | The renderer consumes a `WorldSnapshot` built by the UI from the player's ObservationView and drafts, never from true state. The terrain is a schematic development presentation until CG-R-TERRAIN's art-direction dependency is approved. | §12.3, §17.8 | `src/ui/godView.ts` |
+| ADR-M03-01 | The model toolchain is Blender 4.5.14 LTS as a Python module (`bpy`, PyPI) plus numpy/scipy/scikit-image/Pillow and imageio-ffmpeg's static ffmpeg (libx264), pinned in `tools/models/requirements.txt` in a project-local venv (`.toolchain/py`). The cloud container cannot reach download.blender.org. `bpy` provides the same glTF exporter and `.blend` authoring files the master names. | §18.1, §18.4 | `tools/models/requirements.txt`, `docs/evidence/M03.md` |
+| ADR-M03-02 | Reference-constrained geometry is implicit. Each module is a slice loft: superellipse cross-sections whose extents come from the two approved views that contain the module's long axis, so those two silhouettes are reproduced by construction. The remaining approved views then carve it with a soft intersection. The complete Q form is a smooth union of the module volumes placed by `tools/models/fit_form.py`, a deterministic coordinate descent over named, bounded placement parameters. The fit maximises silhouette IoU against the scored form views and is constrained by identity anchors: four exposed eyes, exposed snout and tail tip, four separate feet on the ground and one connected body. | §18.1, §18.3 | `tools/models/volumes.py`, `build_volumes.py`, `fit_form.py` |
+| ADR-M03-03 | Skin weights are computed, not painted. Inverse-distance weights to bone segments are taken within each module region and blended across junctions by soft region membership from the module distance fields. They are limited to 4 influences and normalised to 1. Bone names come only from the recipe, and runtime binds them only after verifying them against the exported GLB (`bindQRig`, `tests/tools/models.test.ts`). | §17.2, §18.3, §18.4 | `tools/models/build_models.py`, `src/render/god/qRig.ts` |
+| ADR-M03-04 | Poses are data (`src/render/god/qPoses.json`): model-space rotations per joint, applied parent-first, plus a root offset. The TypeScript runtime and the Python validator implement the same rule, so pose deformation (volume ratio, edge stretch, ground contact) is measured on the delivered bytes. There are no baked clips. | §17.2 (no guessed clips), §19 M03 | `tools/models/validate_q.py`, `tools/models/fit_poses.py` |
+| ADR-M03-05 | A derived model is DERIVED_UNVERIFIED until every gate passes and the human art decision is recorded. The map draws a DERIVED_UNVERIFIED model only when its SHA-256 matches its provenance record, and labels it as an unapproved candidate in the God panel. A corrupt or missing file keeps the `CG-R-DEBUG` placeholder. Nothing enters the verified manifest before approval. | §18.2 | `src/render/god/godAsset.ts`, `tests/e2e/god-model.spec.ts` |
 | ADR-M00-06 | Lint encodes module boundaries and determinism. `src/sim/**` cannot import Three/React/render/ui/app/audio/persistence and cannot use `Math.random`, `Date.now`, `performance.now`, `new Date`, `window`, `document` or timers. `src/render/**` cannot import UI. | §13.2, §14.3 | Probe run in `docs/evidence/M00.md` |
 
 ## Module ownership (master §14.3)
@@ -28,7 +33,8 @@ Directories are created only when a milestone first needs them. The rows marked 
 | Module | Owns | State |
 |---|---|---|
 | `src/app/` | Boot, capability probe, error boundary, build identity | present |
-| `src/render/` | `RendererHost` (sole owner of `WebGLRenderer`, scene, camera and frame scheduling), recipes | present (`CG-R-DEBUG` only) |
+| `src/render/` | `RendererHost` (sole owner of `WebGLRenderer`, scene, camera and frame scheduling), recipes; `god/` Q model loading, rig/pose binding, age and injury presentation | present (`CG-R-DEBUG`; Q body from M03) |
+| `src/inspector/` | Offline single-file model inspector bundled into each `viewer.html` | present (M03) |
 | `src/ui/` | React surfaces, semantic controls, placeholder presentation | present |
 | `src/assets/` | Spec index lookup, `AssetRef {id, status:'MISSING'}` resolution, verified-manifest paths | present |
 | `src/sim/core/` | State types, command validation, turn reducer, integer math, RNG, canonical hash | present (M01) |
@@ -41,7 +47,7 @@ Directories are created only when a milestone first needs them. The rows marked 
 | `src/sim/gods/` | Grammar, God record, sweep geometry, body legality, footprint planner, God commands and resolution, start placement | present (M02) |
 | `src/sim/observation/` | Per-civilization knowledge and the ObservationView boundary | present (M02) |
 | `src/sim/ai/`, `src/audio/` | See master §14.3 | later milestones |
-| `tools/` | Spec compiler, asset gates, runners, environment probe | present |
+| `tools/` | Spec compiler, asset gates, source intake, runners, environment probe; `models/` Q conversion pipeline; `inspector/` viewer build and evidence capture | present |
 | `tests/` | `unit` + `tools` (vitest project `unit`), `sim` (project `sim`), `e2e` (Playwright) | present |
 
 ## Runtime shell invariants
@@ -60,9 +66,9 @@ Directories are created only when a milestone first needs them. The rows marked 
 | File | Producer | Meaning |
 |---|---|---|
 | `assets/specification.json` | `npm run spec:compile` (generated) | Section 17 requirements: 285 IDs with class, profile, path, consumers, recursive traceability, dependencies, batch and resolution path |
-| `assets/missing.json` | generated | Unresolved IDs. At M00 this is all 285 in state `SPECIFIED` |
+| `assets/missing.json` | generated from the contract plus provenance/manifest evidence | Unresolved IDs with their actual status |
 | `src/assets/generated/specIndex.json` | generated | Compact runtime lookup (ID, class, profile, path) |
-| `assets/provenance.json` | seeded once, then evidence only | Actual candidate, approval and rights records. Empty |
-| `assets/manifest.json` | seeded once, then evidence only | Verified shipping file facts and registered recipes. Empty |
+| `assets/provenance.json` | `tools/assets/intake.ts`, `tools/models/register-derived.ts` | Human rulings, APPROVED_SOURCE records (hash, native dimensions, waiver) and DERIVED_UNVERIFIED model records |
+| `assets/manifest.json` | `tools/assets/intake.ts` | Verified file facts: approved sources so far; no derived asset yet |
 
 The compiler never overwrites provenance or the manifest. `test:assets` fails if a generated registry is stale, if a manifest entry's path or hash disagrees with the file, or if any file sits at a canonical path without a provenance or manifest record.

@@ -1,0 +1,153 @@
+{
+  "id": "CG-D-GOD-LOCO-PILLAR",
+  "recipe": "CG-Q-CONVERSION",
+  "revision": "c001",
+  "contract": "CG-V1.0.0",
+  "stages": [
+    "tools/models/build_volumes.py",
+    "tools/models/build_models.py"
+  ],
+  "parameters": {
+    "source": "CG-S-GOD-LOCO-PILLAR",
+    "slug": "cg_d_god_loco_pillar",
+    "grid": [
+      2,
+      2
+    ],
+    "rowDimensionsU": [
+      5,
+      12,
+      6
+    ],
+    "box": {
+      "x": [
+        -2.5,
+        2.5
+      ],
+      "y": [
+        -12,
+        0
+      ],
+      "z": [
+        -3,
+        3
+      ]
+    },
+    "junctionOrigin": "centre of the top junction ring",
+    "longAxis": "y",
+    "views": {
+      "front": {
+        "panel": 0,
+        "u": "+x",
+        "v": "-y"
+      },
+      "left": {
+        "panel": 1,
+        "u": "+z",
+        "v": "-y"
+      },
+      "rear": {
+        "panel": 2,
+        "u": "-x",
+        "v": "-y"
+      },
+      "top": {
+        "panel": 3,
+        "u": "+x",
+        "v": "+z",
+        "deviation": "top view draws forward (toes) toward image bottom"
+      }
+    },
+    "loft": [
+      "front",
+      "left"
+    ],
+    "carve": [
+      "rear",
+      "top"
+    ],
+    "exponent": 3.0,
+    "triangleBudget": [
+      4000,
+      2000,
+      700
+    ],
+    "skeleton": [
+      {
+        "name": "leg_upper",
+        "parent": null,
+        "head": [
+          0,
+          0,
+          0
+        ],
+        "tail": [
+          0,
+          -5,
+          0.4
+        ]
+      },
+      {
+        "name": "leg_lower",
+        "parent": "leg_upper",
+        "head": [
+          0,
+          -5,
+          0.4
+        ],
+        "tail": [
+          0,
+          -9.5,
+          -0.6
+        ]
+      },
+      {
+        "name": "leg_foot",
+        "parent": "leg_lower",
+        "head": [
+          0,
+          -9.5,
+          -0.6
+        ],
+        "tail": [
+          0,
+          -11.2,
+          0.6
+        ]
+      },
+      {
+        "name": "leg_toe",
+        "parent": "leg_foot",
+        "head": [
+          0,
+          -11.2,
+          0.6
+        ],
+        "tail": [
+          0,
+          -11.6,
+          2.8
+        ]
+      }
+    ],
+    "accentSpots": [
+      [
+        2.3,
+        -9.6,
+        1.0,
+        0.35
+      ]
+    ],
+    "carveSoftnessU": 0.2,
+    "loftUnion": {
+      "front": "rear"
+    },
+    "loftUnionNote": "front and rear panels disagree in width; the lofted width is their union so neither approved view is under-filled"
+  },
+  "palette": {
+    "biologicalTeal": "#49A69D",
+    "charcoal": "#161E27",
+    "organAccent": "#E4C86E",
+    "paleStone": "#E1CEAC"
+  }
+}

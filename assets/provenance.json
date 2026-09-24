@@ -4,6 +4,162 @@
   "note": "Actual candidate, approval, native-dimension and rights records only. Empty means none exist.",
   "records": [
     {
+      "id": "CG-D-GOD-FEED-BROWSE",
+      "status": "DERIVED_UNVERIFIED",
+      "path": "assets/runtime/models/cg_d_god_feed_browse.glb",
+      "sha256": "88a1953d5502463057158f1e6dbb09aab1675e838cc2b1c466e88300fe36cba4",
+      "bytes": 228904,
+      "revision": "c001",
+      "sources": [
+        "CG-S-GOD-FEED-BROWSE"
+      ],
+      "authoring": {
+        "blend": "assets/authoring/cg_d_god_feed_browse.blend",
+        "recipe": "assets/authoring/cg_d_god_feed_browse.recipe.json",
+        "meta": "assets/runtime/models/cg_d_god_feed_browse.meta.json"
+      },
+      "validation": "artifacts/inspection/CG-D-GOD-FEED-BROWSE/c001/validation.json",
+      "gates": {
+        "silhouetteIoUAndLandmarks": true,
+        "structureSkinLodMaterial": true,
+        "khronosValidatorClean": true,
+        "blenderReimport": true,
+        "offlineInspectorAndTurntable": true,
+        "humanArtApproval": false
+      }
+    },
+    {
+      "id": "CG-D-GOD-FORM-Q",
+      "status": "DERIVED_UNVERIFIED",
+      "path": "assets/runtime/models/cg_d_god_form_q.glb",
+      "sha256": "a10f14c1a07180fea446f49b18eb2f445b8a66e96bb0ee976dc33e745fd13069",
+      "bytes": 681880,
+      "revision": "c001",
+      "sources": [
+        "CG-S-GOD-FORM-Q",
+        "CG-S-GOD-LIFE-Q",
+        "CG-S-GOD-TORSO-Q",
+        "CG-S-GOD-FEED-BROWSE",
+        "CG-S-GOD-SENSE-EYE-RING",
+        "CG-S-GOD-TAIL-BALANCE",
+        "CG-S-GOD-LOCO-PILLAR"
+      ],
+      "authoring": {
+        "blend": "assets/authoring/cg_d_god_form_q.blend",
+        "recipe": "assets/authoring/cg_d_god_form_q.recipe.json",
+        "meta": "assets/runtime/models/cg_d_god_form_q.meta.json"
+      },
+      "validation": "artifacts/inspection/CG-D-GOD-FORM-Q/c001/validation.json",
+      "gates": {
+        "silhouetteIoUAndLandmarks": false,
+        "structureSkinLodMaterial": true,
+        "khronosValidatorClean": true,
+        "blenderReimport": true,
+        "offlineInspectorAndTurntable": true,
+        "humanArtApproval": false
+      }
+    },
+    {
+      "id": "CG-D-GOD-LOCO-PILLAR",
+      "status": "DERIVED_UNVERIFIED",
+      "path": "assets/runtime/models/cg_d_god_loco_pillar.glb",
+      "sha256": "669de1ca67e8bbee6c777e5883ef1e432d400ddcab906966c622949b2d410774",
+      "bytes": 229516,
+      "revision": "c001",
+      "sources": [
+        "CG-S-GOD-LOCO-PILLAR"
+      ],
+      "authoring": {
+        "blend": "assets/authoring/cg_d_god_loco_pillar.blend",
+        "recipe": "assets/authoring/cg_d_god_loco_pillar.recipe.json",
+        "meta": "assets/runtime/models/cg_d_god_loco_pillar.meta.json"
+      },
+      "validation": "artifacts/inspection/CG-D-GOD-LOCO-PILLAR/c001/validation.json",
+      "gates": {
+        "silhouetteIoUAndLandmarks": true,
+        "structureSkinLodMaterial": true,
+        "khronosValidatorClean": true,
+        "blenderReimport": true,
+        "offlineInspectorAndTurntable": true,
+        "humanArtApproval": false
+      }
+    },
+    {
+      "id": "CG-D-GOD-SENSE-EYE-RING",
+      "status": "DERIVED_UNVERIFIED",
+      "path": "assets/runtime/models/cg_d_god_sense_eye_ring.glb",
+      "sha256": "ccc14c1a836d14d863673450f98578626ebb62ff7358e4d4644d27d36388fa88",
+      "bytes": 157188,
+      "revision": "c001",
+      "sources": [
+        "CG-S-GOD-SENSE-EYE-RING"
+      ],
+      "authoring": {
+        "blend": "assets/authoring/cg_d_god_sense_eye_ring.blend",
+        "recipe": "assets/authoring/cg_d_god_sense_eye_ring.recipe.json",
+        "meta": "assets/runtime/models/cg_d_god_sense_eye_ring.meta.json"
+      },
+      "validation": "artifacts/inspection/CG-D-GOD-SENSE-EYE-RING/c001/validation.json",
+      "gates": {
+        "silhouetteIoUAndLandmarks": true,
+        "structureSkinLodMaterial": true,
+        "khronosValidatorClean": true,
+        "blenderReimport": true,
+        "offlineInspectorAndTurntable": true,
+        "humanArtApproval": false
+      }
+    },
+    {
+      "id": "CG-D-GOD-TAIL-BALANCE",
+      "status": "DERIVED_UNVERIFIED",
+      "path": "assets/runtime/models/cg_d_god_tail_balance.glb",
+      "sha256": "af04b7c38ba7ac351600fc5a348f5c4f46a0e820ff93407e328bc4d88b7af740",
+      "bytes": 229156,
+      "revision": "c001",
+      "sources": [
+        "CG-S-GOD-TAIL-BALANCE"
+      ],
+      "authoring": {
+        "blend": "assets/authoring/cg_d_god_tail_balance.blend",
+        "recipe": "assets/authoring/cg_d_god_tail_balance.recipe.json",
+        "meta": "assets/runtime/models/cg_d_god_tail_balance.meta.json"
+      },
+      "validation": "artifacts/inspection/CG-D-GOD-TAIL-BALANCE/c001/validation.json",
+      "gates": {
+        "silhouetteIoUAndLandmarks": true,
+        "structureSkinLodMaterial": true,
+        "khronosValidatorClean": true,
+        "blenderReimport": true,
+        "offlineInspectorAndTurntable": true,
+        "humanArtApproval": false
+      }
+    },
+    {
+      "id": "CG-D-GOD-TORSO-Q",
+      "status": "DERIVED_UNVERIFIED",
+      "path": "assets/runtime/models/cg_d_god_torso_q.glb",
+      "sha256": "43c397e59240ff68a80de9c2b020eb6c8792a8b6f7f175faa3e007775b3e019c",
+      "bytes": 229056,
+      "revision": "c001",
+      "sources": [
+        "CG-S-GOD-TORSO-Q"
+      ],
+      "authoring": {
+        "blend": "assets/authoring/cg_d_god_torso_q.blend",
+        "recipe": "assets/authoring/cg_d_god_torso_q.recipe.json",
+        "meta": "assets/runtime/models/cg_d_god_torso_q.meta.json"
+      },
+      "validation": "artifacts/inspection/CG-D-GOD-TORSO-Q/c001/validation.json",
+      "gates": {
+        "silhouetteIoUAndLandmarks": true,
+        "structureSkinLodMaterial": true,
+        "khronosValidatorClean": true,
+        "blenderReimport": true,
+        "offlineInspectorAndTurntable": true,
+        "humanArtApproval": false
+      }
+    },
+    {
       "id": "CG-S-ART-DIRECTION",
       "status": "APPROVED_SOURCE",
       "path": "assets/source/art/cg_s_art_direction.png",

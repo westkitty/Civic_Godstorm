@@ -1,0 +1,73 @@
+{
+  "id": "CG-D-GOD-FORM-Q",
+  "revision": "c001",
+  "viewer": "artifacts/inspection/CG-D-GOD-FORM-Q/c001/viewer.html",
+  "load": {
+    "ready": true,
+    "error": null,
+    "joints": 28,
+    "lods": {
+      "LOD0": 11820,
+      "LOD1": 5910,
+      "LOD2": 1970
+    },
+    "coverage": 0.1329982847341338
+  },
+  "interaction": {
+    "orbitChangedView": true,
+    "zoomChangedView": true,
+    "resetRestoredView": true
+  },
+  "cameras": {
+    "front": 0.05815894797026872,
+    "left": 0.09377587192681533,
+    "rear": 0.058210405946255005,
+    "top": 0.10869411092052601,
+    "three quarter": 0.1329982847341338
+  },
+  "lodCoverage": {
+    "LOD0": 0.1329982847341338,
+    "LOD1": 0.13306003430531732,
+    "LOD2": 0.13307146941109205
+  },
+  "poseChangesPixels": {
+    "idle": true,
+    "walk": true,
+    "turn": true,
+    "feed": true,
+    "brace": true,
+    "rest": true,
+    "sleep": true
+  },
+  "lifeChangesPixels": {
+    "juvenile": true,
+    "ancient": true,
+    "injured": true
+  },
+  "turntable": {
+    "path": "artifacts/inspection/CG-D-GOD-FORM-Q/c001/turntable.mp4",
+    "framesRendered": 144,
+    "fps": 24,
+    "size": [
+      1024,
+      1024
+    ],
+    "codec": "H.264 (libx264, yuv420p)"
+  },
+  "validationSheet": {
+    "path": "artifacts/inspection/CG-D-GOD-FORM-Q/c001/validation-sheet.png",
+    "size": [
+      2048,
+      2048
+    ],
+    "views": [
+      "front",
+      "left",
+      "top",
+      "three-quarter"
+    ]
+  },
+  "networkRequestsBlocked": [],
+  "pageErrors": [],
+  "pass": true
+}

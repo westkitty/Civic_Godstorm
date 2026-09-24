@@ -67,6 +67,14 @@ function sweptAlong(view: ObservationView, god: GodState, plan: RoutePlan): numb
   return [...cells];
 }
 
+/** Presentation pose for the God's current order (M03 ordinary poses). */
+export function bodyPose(god: GodState): 'idle' | 'walk' | 'feed' | 'rest' {
+  if (god.order.kind === 'MOVE' && god.status.kind === 'ACTIVE') return 'walk';
+  if (god.order.kind === 'FEED') return 'feed';
+  if (god.order.kind === 'REST') return 'rest';
+  return 'idle';
+}
+
 export function buildWorldSnapshot(
   view: ObservationView,
   selected: boolean,
@@ -94,7 +102,20 @@ export function buildWorldSnapshot(
     farmOwner: o.knownFarm,
     settlements,
     gods: [
-      ...view.ownGods.filter((g) => g.lifecycle === 'ALIVE').map((g) => ({ id: g.id, own: true, cells: godCells(view, g), heading: g.heading })),
+      ...view.ownGods.filter((g) => g.lifecycle === 'ALIVE').map((g) => ({
+        id: g.id,
+        own: true,
+        cells: godCells(view, g),
+        heading: g.heading,
+        body: {
+          family: g.genome.family,
+          size: g.genome.size,
+          pose: bodyPose(g),
+          // Life stages from age arrive with the M06 age rules; every God is prime until then.
+          stage: 'prime' as const,
+          injured: g.regionHealth.locomotor < GOD_RULES.regionHealth,
+        },
+      })),
       ...[...foreign].map(([id, cells]) => ({ id, own: false, cells, heading: 0 })),
     ],
     overlay: {

@@ -152,6 +152,27 @@ export function auditAssets(root: string): AuditReport {
   check('provenance.approvedSources', sourceProblems.length === 0,
     sourceProblems.join('; ') || `${approvedRecords.length} approved sources verified (hash, path, native dimensions, waiver)`);
 
+  // Derived candidates (Section 18.2 DERIVED_UNVERIFIED): the recorded file must be the specified
+  // path with the recorded hash, and every authored source it depends on must be approved.
+  const derivedProblems: string[] = [];
+  const derivedRecords = provenance.records.filter((record) => record.status === 'DERIVED_UNVERIFIED' || record.status === 'INTEGRATED_VERIFIED');
+  for (const record of derivedRecords) {
+    const row = byId.get(record.id);
+    if (!row || row.assetClass !== 'DERIVED ASSET') { derivedProblems.push(`${record.id}: not a derived asset`); continue; }
+    if (record.path !== row.path) { derivedProblems.push(`${record.id}: path ${record.path ?? '?'} != ${row.path}`); continue; }
+    const target = resolve(root, row.path);
+    if (!existsSync(target)) { derivedProblems.push(`${record.id}: file absent`); continue; }
+    if (createHash('sha256').update(readFileSync(target)).digest('hex') !== record.sha256) derivedProblems.push(`${record.id}: sha256 mismatch (rerun the model pipeline)`);
+    for (const dep of row.dependencies) {
+      const depRow = byId.get(dep);
+      if (depRow && (depRow.assetClass === 'ARENA SOURCE ASSET' || depRow.assetClass === 'DIRECT ARENA ASSET') && !approvedIds.has(dep)) {
+        derivedProblems.push(`${record.id}: depends on unapproved source ${dep}`);
+      }
+    }
+  }
+  check('provenance.derivedCandidates', derivedProblems.length === 0,
+    derivedProblems.join('; ') || `${derivedRecords.length} derived records match their files and approved sources`);
+
   const approved = approvedIds;
   const authored = contract.assets.filter((row) => row.assetClass === 'ARENA SOURCE ASSET' || row.assetClass === 'DIRECT ARENA ASSET');
   const derived = contract.assets.filter((row) => row.assetClass === 'DERIVED ASSET');

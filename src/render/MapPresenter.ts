@@ -1,9 +1,10 @@
 // Schematic development map presentation (CG-R-DEBUG family). The production terrain recipe
-// CG-R-TERRAIN depends on the unapproved CG-S-ART-DIRECTION, so this draws flat, clearly
+// CG-R-TERRAIN is later milestone work (its CG-S-ART-DIRECTION source is now approved), so this draws flat, clearly
 // schematic hex prisms from observed knowledge plus the code-defined CG-R-FOG and CG-R-FOOTPRINTS
 // overlays. Three horizontal copies present the east-west wrap; state is never duplicated.
 
 import {
+  Box3,
   BufferGeometry,
   Color,
   CylinderGeometry,
@@ -15,9 +16,16 @@ import {
   Matrix4,
   MeshBasicMaterial,
   Raycaster,
+  Vector3,
   type Camera,
+  type Mesh,
+  type Object3D,
+  type SkinnedMesh,
   type Vector2,
 } from 'three';
+import type { LoadedGodModel } from './god/godAsset.ts';
+import { applyLifePresentation } from './god/qLife.ts';
+import { bindQRig } from './god/qRig.ts';
 import { createMissingPlaceholder, type MissingPlaceholder } from './recipes/cg_r_debug.ts';
 import { cellCenter, HEX_RADIUS, type WorldSnapshot } from './worldSnapshot.ts';
 
@@ -37,6 +45,30 @@ const COLORS = {
 
 const COPIES = [-1, 0, 1];
 
+/** Section 3.1: primary-mass height per size; the FORM-Q fixture is size II (22 U). */
+const SIZE_HEIGHT_U: Record<1 | 2 | 3, number> = { 1: 12, 2: 22, 3: 36 };
+const FIXTURE_HEIGHT_U = 22;
+
+/** Measured on the rendered instance (not the simulation): scale, contact and footprint fit. */
+export interface GodRenderFact {
+  readonly godId: number;
+  readonly modelStatus: 'VERIFIED' | 'CANDIDATE';
+  readonly modelId: string;
+  readonly heightU: number;
+  readonly lowestPointU: number;
+  readonly terrainTopU: number;
+  readonly verticesSampled: number;
+  readonly outsideFootprintFraction: number;
+}
+
+function insideHex(dx: number, dz: number): boolean {
+  // pointy-top hex of circumradius HEX_RADIUS centred at the origin
+  const ax = Math.abs(dx);
+  const az = Math.abs(dz);
+  const inradius = (HEX_RADIUS * Math.sqrt(3)) / 2;
+  return ax <= inradius && az <= HEX_RADIUS - ax / Math.sqrt(3) + 1e-6;
+}
+
 function prismHeight(biome: number, elevation: number): number {
   if (biome <= 1) return 0.6;
   return 2 + Math.max(0, Math.floor((elevation - 90) / 25)) * 1.5;
@@ -53,6 +85,8 @@ export class MapPresenter {
   private overlayResources: { geometry: BufferGeometry; material: LineBasicMaterial }[] = [];
   private snapshot: WorldSnapshot | null = null;
   private readonly raycaster = new Raycaster();
+  private godModel: LoadedGodModel | null = null;
+  private godRenderFacts: GodRenderFact[] = [];
 
   constructor() {
     this.terrainGeometry.translate(0, 0.5, 0);
@@ -70,6 +104,16 @@ export class MapPresenter {
     this.paintTerrain(snapshot);
     this.buildPlaceholders(snapshot);
     this.buildOverlays(snapshot);
+  }
+
+  /** Supplies the loaded God model; own Gods are then drawn with it instead of the placeholder. */
+  setGodModel(model: LoadedGodModel | null): void {
+    this.godModel = model;
+    if (this.snapshot) this.buildPlaceholders(this.snapshot);
+  }
+
+  get renderedGods(): readonly GodRenderFact[] {
+    return this.godRenderFacts;
   }
 
   /** Cell under a normalised device coordinate, or null. */
@@ -140,7 +184,18 @@ export class MapPresenter {
 
   private clearPlaceholders(): void {
     // Wrap-copy clones share the original's geometry/materials, which each placeholder disposes once.
-    for (const child of [...this.placeholderGroup.children]) child.removeFromParent();
+    // God instances own cloned materials/colour geometry (qLife) that are released here.
+    for (const child of [...this.placeholderGroup.children]) {
+      if (child.name.startsWith('god-')) {
+        child.traverse((node) => {
+          const mesh = node as Mesh;
+          if (!mesh.isMesh) return;
+          const materials = Array.isArray(mesh.material) ? mesh.material : [mesh.material];
+          for (const material of materials) material.dispose();
+        });
+      }
+      child.removeFromParent();
+    }
     for (const placeholder of this.placeholders) placeholder.dispose();
     this.placeholders = [];
   }
@@ -152,20 +207,92 @@ export class MapPresenter {
       const { x, z } = cellCenter(snapshot.width, settlement.cell);
       this.placeCopies(placeholder, x, this.topOf(settlement.cell), z, 0);
     }
+    this.godRenderFacts = [];
     for (const god of snapshot.gods) {
       const centers = god.cells.map((cell) => cellCenter(snapshot.width, cell));
       const first = centers[0];
       const last = centers[centers.length - 1];
       if (!first || !last) continue;
-      // Unwrap the far cell toward the first so a body straddling the seam stays contiguous.
+      // Unwrap every cell toward the first so a body straddling the seam stays contiguous.
       const span = snapshot.width * 32;
-      const lastX = last.x - first.x > span / 2 ? last.x - span : first.x - last.x > span / 2 ? last.x + span : last.x;
+      const unwrap = (x: number): number => (x - first.x > span / 2 ? x - span : first.x - x > span / 2 ? x + span : x);
+      const top = Math.max(...god.cells.map((cell) => this.topOf(cell)));
+      if (god.body && god.body.family === 'Q' && this.godModel) {
+        const cx = centers.reduce((sum, c) => sum + unwrap(c.x), 0) / centers.length;
+        const cz = centers.reduce((sum, c) => sum + c.z, 0) / centers.length;
+        this.placeGod(god, god.body, cx, cz, top, centers.map((c) => ({ x: unwrap(c.x), z: c.z })));
+        continue;
+      }
+      const lastX = unwrap(last.x);
       const length = Math.hypot(lastX - first.x, last.z - first.z) + 24;
       const placeholder = createMissingPlaceholder('CG-R-GOD-ASSEMBLY', { width: 18, height: 12, depth: length });
       const angle = Math.atan2(lastX - first.x, last.z - first.z);
-      const top = Math.max(...god.cells.map((cell) => this.topOf(cell)));
       this.placeCopies(placeholder, (first.x + lastX) / 2, top, (first.z + last.z) / 2, angle);
     }
+  }
+
+  /**
+   * One skinned instance per wrap copy. The body centre sits on the footprint centroid; model +Z
+   * maps to heading 0 by a +90 degree Y rotation (Section 16.2), and each heading step turns 60 degrees.
+   */
+  private placeGod(
+    god: WorldSnapshot['gods'][number],
+    body: NonNullable<WorldSnapshot['gods'][number]['body']>,
+    cx: number,
+    cz: number,
+    top: number,
+    cells: readonly { x: number; z: number }[],
+  ): void {
+    const model = this.godModel;
+    if (!model) return;
+    const width = (this.snapshot?.width ?? 0) * 32;
+    const sizeScale = SIZE_HEIGHT_U[body.size] / FIXTURE_HEIGHT_U;
+    let measured: Object3D | null = null;
+    for (const copy of COPIES) {
+      const outer = new Group();
+      outer.name = `god-${god.id}${copy === 0 ? '' : `-wrap${copy}`}`;
+      const life = new Group();
+      const instance = model.instantiate();
+      life.add(instance);
+      outer.add(life);
+      const rig = bindQRig(instance);
+      rig.setLod('LOD0');
+      const overlay = applyLifePresentation(life, rig, { stage: body.stage, injured: body.injured });
+      rig.setPose(body.pose, 1, overlay);
+      outer.scale.setScalar(sizeScale);
+      outer.rotation.y = Math.PI / 2 - (god.heading * Math.PI) / 3;
+      outer.position.set(cx + copy * width, top, cz);
+      this.placeholderGroup.add(outer);
+      if (copy === 0) measured = outer;
+    }
+    if (!measured) return;
+    measured.updateMatrixWorld(true);
+    const box = new Box3().setFromObject(measured, true);
+    // Plan-view fit: sample skinned LOD2 vertices and test them against the footprint hexes.
+    let outside = 0;
+    let sampled = 0;
+    const v = new Vector3();
+    measured.traverse((node) => {
+      const mesh = node as SkinnedMesh;
+      if (!mesh.isSkinnedMesh || !mesh.name.endsWith('LOD2')) return;
+      const position = mesh.geometry.getAttribute('position');
+      for (let i = 0; i < position.count; i += 1) {
+        mesh.getVertexPosition(i, v);
+        v.applyMatrix4(mesh.matrixWorld);
+        sampled += 1;
+        if (!cells.some((c) => insideHex(v.x - c.x, v.z - c.z))) outside += 1;
+      }
+    });
+    this.godRenderFacts.push({
+      godId: god.id,
+      modelStatus: model.resolution.status === 'VERIFIED' ? 'VERIFIED' : 'CANDIDATE',
+      modelId: model.resolution.id,
+      heightU: box.max.y - box.min.y,
+      lowestPointU: box.min.y,
+      terrainTopU: top,
+      verticesSampled: sampled,
+      outsideFootprintFraction: sampled ? outside / sampled : 1,
+    });
   }
 
   private placeCopies(placeholder: MissingPlaceholder, x: number, y: number, z: number, angle: number): void {

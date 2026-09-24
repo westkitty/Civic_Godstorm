@@ -1,0 +1,265 @@
+{
+  "id": "CG-D-GOD-FEED-BROWSE",
+  "revision": "c001",
+  "glb": {
+    "path": "assets/runtime/models/cg_d_god_feed_browse.glb",
+    "sha256": "88a1953d5502463057158f1e6dbb09aab1675e838cc2b1c466e88300fe36cba4",
+    "bytes": 228904
+  },
+  "sources": [
+    {
+      "id": "CG-S-GOD-FEED-BROWSE",
+      "sha256": "d652c8d8fe2d2d8453e693701d87542826d19b48097742c7e6ac86cb334df87a",
+      "path": "assets/source/god/cg_s_god_feed_browse.png"
+    }
+  ],
+  "tool": {
+    "blender": "4.5.14 LTS",
+    "exporter": "io_scene_gltf2 (bundled)",
+    "python": "3.11.15"
+  },
+  "recipe": {
+    "path": "tools/models/q_recipe.json",
+    "revision": "c001",
+    "sha256": "70cfd96f21b35660459012aa2d0a9c0db84068d5d134f4550d00e7df3fbaa023"
+  },
+  "export": {
+    "asset": {
+      "generator": "Khronos glTF Blender I/O v4.5.51",
+      "version": "2.0"
+    },
+    "nodes": [
+      "jaw",
+      "head",
+      "LOD0",
+      "LOD1",
+      "LOD2",
+      "skeleton"
+    ],
+    "meshes": {
+      "cg_d_god_feed_browse_LOD0": {
+        "triangles": 3938,
+        "attributes": [
+          "COLOR_0",
+          "JOINTS_0",
+          "NORMAL",
+          "POSITION",
+          "WEIGHTS_0"
+        ],
+        "min": [
+          -4.337100982666016,
+          -3.426740884780884,
+          0.08669250458478928
+        ],
+        "max": [
+          4.344043254852295,
+          3.4258229732513428,
+          12.998340606689453
+        ],
+        "vertices": 1971,
+        "materials": [
+          0
+        ]
+      },
+      "cg_d_god_feed_browse_LOD1": {
+        "triangles": 1968,
+        "attributes": [
+          "COLOR_0",
+          "JOINTS_0",
+          "NORMAL",
+          "POSITION",
+          "WEIGHTS_0"
+        ],
+        "min": [
+          -4.334456443786621,
+          -3.426740884780884,
+          0.08669250458478928
+        ],
+        "max": [
+          4.342517375946045,
+          3.426717758178711,
+          12.998340606689453
+        ],
+        "vertices": 986,
+        "materials": [
+          0
+        ]
+      },
+      "cg_d_god_feed_browse_LOD2": {
+        "triangles": 688,
+        "attributes": [
+          "COLOR_0",
+          "JOINTS_0",
+          "NORMAL",
+          "POSITION",
+          "WEIGHTS_0"
+        ],
+        "min": [
+          -4.32340145111084,
+          -3.4287757873535156,
+          0.086777463555336
+        ],
+        "max": [
+          4.347253799438477,
+          3.4206974506378174,
+          13.022228240966797
+        ],
+        "vertices": 346,
+        "materials": [
+          0
+        ]
+      }
+    },
+    "skins": [
+      {
+        "name": "skeleton",
+        "joints": [
+          "head",
+          "jaw"
+        ],
+        "inverseBindMatrices": 2
+      }
+    ],
+    "materials": [
+      {
+        "name": "cg_d_god_feed_browse_body",
+        "metallic": 0,
+        "roughness": 0.75,
+        "alphaMode": "OPAQUE",
+        "doubleSided": true
+      }
+    ],
+    "textures": 0,
+    "images": 0,
+    "animations": 0,
+    "extensionsUsed": []
+  },
+  "measurements": {
+    "id": "CG-D-GOD-FEED-BROWSE",
+    "glb": "assets/runtime/models/cg_d_god_feed_browse.glb",
+    "sha256": "88a1953d5502463057158f1e6dbb09aab1675e838cc2b1c466e88300fe36cba4",
+    "bounds": {
+      "min": [
+        -4.3371,
+        -3.4267,
+        0.0867
+      ],
+      "max": [
+        4.344,
+        3.4258,
+        12.9983
+      ]
+    },
+    "views": {
+      "front": {
+        "sheet": "CG-S-GOD-FEED-BROWSE",
+        "panel": 0,
+        "iou": 0.9381,
+        "declaredStretch": 0.4084,
+        "landmarkErrorMaxFraction": 0.0146,
+        "passes": true
+      },
+      "left": {
+        "sheet": "CG-S-GOD-FEED-BROWSE",
+        "panel": 1,
+        "iou": 0.9905,
+        "declaredStretch": 0.4282,
+        "landmarkErrorMaxFraction": 0.0029,
+        "passes": true
+      },
+      "rear": {
+        "sheet": "CG-S-GOD-FEED-BROWSE",
+        "panel": 2,
+        "iou": 0.9541,
+        "declaredStretch": 0.3466,
+        "landmarkErrorMaxFraction": 0.0118,
+        "passes": true
+      },
+      "top": {
+        "sheet": "CG-S-GOD-FEED-BROWSE",
+        "panel": 3,
+        "iou": 0.9871,
+        "declaredStretch": 0.0831,
+        "landmarkErrorMaxFraction": 0.0031,
+        "passes": true
+      }
+    },
+    "nonProjectable": {},
+    "structure": {
+      "lods": {
+        "LOD0": {
+          "triangles": 3938,
+          "vertices": 1971,
+          "budget": 4000,
+          "withinBudget": true,
+          "weightSumMaxError": 2.9802322387695312e-8,
+          "nanWeights": false,
+          "jointsReferenced": 2,
+          "hasVertexColor": true
+        },
+        "LOD1": {
+          "triangles": 1968,
+          "vertices": 986,
+          "budget": 2000,
+          "withinBudget": true,
+          "weightSumMaxError": 2.9802322387695312e-8,
+          "nanWeights": false,
+          "jointsReferenced": 2,
+          "hasVertexColor": true
+        },
+        "LOD2": {
+          "triangles": 688,
+          "vertices": 346,
+          "budget": 700,
+          "withinBudget": true,
+          "weightSumMaxError": 2.9802322387695312e-8,
+          "nanWeights": false,
+          "jointsReferenced": 2,
+          "hasVertexColor": true
+        }
+      },
+      "lodBudgets": true,
+      "skins": 1,
+      "joints": 2,
+      "jointLimit": 64,
+      "withinJointLimit": true,
+      "inverseBindFinite": true,
+      "inverseBindPositiveDeterminant": true,
+      "weightsNormalized": true,
+      "materials": 1,
+      "materialsWithinLimit": true,
+      "textures": 0,
+      "animations": 0,
+      "opaqueNonMetal": true
+    },
+    "silhouettePass": true,
+    "structuralPass": true
+  },
+  "gltfValidator": {
+    "version": "2.0.0-dev.3.10",
+    "numErrors": 0,
+    "numWarnings": 0,
+    "numInfos": 0,
+    "numHints": 0,
+    "messages": [],
+    "truncated": false,
+    "report": "artifacts/inspection/CG-D-GOD-FEED-BROWSE/c001/gltf-validator.json"
+  },
+  "reimport": {
+    "report": "artifacts/inspection/CG-D-GOD-FEED-BROWSE/c001/reimport.json",
+    "pass": true
+  },
+  "inspector": {
+    "report": "artifacts/inspection/CG-D-GOD-FEED-BROWSE/c001/inspector-evidence.json",
+    "pass": true
+  },
+  "gates": {
+    "silhouetteIoUAndLandmarks": true,
+    "structureSkinLodMaterial": true,
+    "khronosValidatorClean": true,
+    "blenderReimport": true,
+    "offlineInspectorAndTurntable": true,
+    "humanArtApproval": false
+  },
+  "verdict": "DERIVED_UNVERIFIED"
+}

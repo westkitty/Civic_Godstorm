@@ -1,0 +1,36 @@
+{
+  "id": "CG-D-GOD-FEED-BROWSE",
+  "glb": "assets/runtime/models/cg_d_god_feed_browse.glb",
+  "lods": {
+    "LOD0": {
+      "present": true,
+      "trianglesFile": 3938,
+      "trianglesReimported": 3938,
+      "boundsErrorU": 9.8e-05,
+      "weightSumMaxError": 0.0,
+      "vertexGroups": 2
+    },
+    "LOD1": {
+      "present": true,
+      "trianglesFile": 1968,
+      "trianglesReimported": 1968,
+      "boundsErrorU": 9.8e-05,
+      "weightSumMaxError": 0.0,
+      "vertexGroups": 2
+    },
+    "LOD2": {
+      "present": true,
+      "trianglesFile": 688,
+      "trianglesReimported": 688,
+      "boundsErrorU": 9.8e-05,
+      "weightSumMaxError": 0.0,
+      "vertexGroups": 2
+    }
+  },
+  "skeleton": {
+    "jointsInFile": 2,
+    "bonesReimported": 2,
+    "namesEqual": true
+  },
+  "pass": true
+}

@@ -1,0 +1,252 @@
+{
+  "id": "CG-D-GOD-TAIL-BALANCE",
+  "slug": "cg_d_god_tail_balance",
+  "glb": "assets/runtime/models/cg_d_god_tail_balance.glb",
+  "sha256": "af04b7c38ba7ac351600fc5a348f5c4f46a0e820ff93407e328bc4d88b7af740",
+  "bytes": 229156,
+  "tool": {
+    "blender": "4.5.14 LTS",
+    "exporter": "io_scene_gltf2 (bundled)",
+    "python": "3.11.15"
+  },
+  "recipe": {
+    "path": "tools/models/q_recipe.json",
+    "revision": "c001",
+    "sha256": "70cfd96f21b35660459012aa2d0a9c0db84068d5d134f4550d00e7df3fbaa023"
+  },
+  "triangleBudget": [
+    4000,
+    2000,
+    700
+  ],
+  "skinChecks": [
+    {
+      "lod": "LOD0",
+      "weightSumMaxError": 2.220446049250313e-16,
+      "maxInfluences": 4,
+      "nan": false
+    },
+    {
+      "lod": "LOD1",
+      "weightSumMaxError": 2.220446049250313e-16,
+      "maxInfluences": 4,
+      "nan": false
+    },
+    {
+      "lod": "LOD2",
+      "weightSumMaxError": 2.220446049250313e-16,
+      "maxInfluences": 4,
+      "nan": false
+    }
+  ],
+  "export": {
+    "asset": {
+      "generator": "Khronos glTF Blender I/O v4.5.51",
+      "version": "2.0"
+    },
+    "nodes": [
+      "tail_5",
+      "tail_4",
+      "tail_3",
+      "tail_2",
+      "tail_1",
+      "LOD0",
+      "LOD1",
+      "LOD2",
+      "skeleton"
+    ],
+    "meshes": {
+      "cg_d_god_tail_balance_LOD0": {
+        "triangles": 3938,
+        "attributes": [
+          "COLOR_0",
+          "JOINTS_0",
+          "NORMAL",
+          "POSITION",
+          "WEIGHTS_0"
+        ],
+        "min": [
+          -2.3911030292510986,
+          -2.398452043533325,
+          -23.97713851928711
+        ],
+        "max": [
+          2.40740704536438,
+          2.408310651779175,
+          -0.16002961993217468
+        ],
+        "vertices": 1971,
+        "materials": [
+          0
+        ]
+      },
+      "cg_d_god_tail_balance_LOD1": {
+        "triangles": 1968,
+        "attributes": [
+          "COLOR_0",
+          "JOINTS_0",
+          "NORMAL",
+          "POSITION",
+          "WEIGHTS_0"
+        ],
+        "min": [
+          -2.3993887901306152,
+          -2.4058494567871094,
+          -23.98122787475586
+        ],
+        "max": [
+          2.40740704536438,
+          2.404635190963745,
+          -0.1601802110671997
+        ],
+        "vertices": 986,
+        "materials": [
+          0
+        ]
+      },
+      "cg_d_god_tail_balance_LOD2": {
+        "triangles": 688,
+        "attributes": [
+          "COLOR_0",
+          "JOINTS_0",
+          "NORMAL",
+          "POSITION",
+          "WEIGHTS_0"
+        ],
+        "min": [
+          -2.386899709701538,
+          -2.3947482109069824,
+          -24.005908966064453
+        ],
+        "max": [
+          2.41660213470459,
+          2.4186737537384033,
+          -0.16038578748703003
+        ],
+        "vertices": 346,
+        "materials": [
+          0
+        ]
+      }
+    },
+    "skins": [
+      {
+        "name": "skeleton",
+        "joints": [
+          "tail_1",
+          "tail_2",
+          "tail_3",
+          "tail_4",
+          "tail_5"
+        ],
+        "inverseBindMatrices": 5
+      }
+    ],
+    "materials": [
+      {
+        "name": "cg_d_god_tail_balance_body",
+        "metallic": 0,
+        "roughness": 0.75,
+        "alphaMode": "OPAQUE",
+        "doubleSided": true
+      }
+    ],
+    "textures": 0,
+    "images": 0,
+    "animations": 0,
+    "extensionsUsed": []
+  },
+  "source": "CG-S-GOD-TAIL-BALANCE",
+  "rowDimensionsU": [
+    5,
+    5,
+    24
+  ],
+  "box": {
+    "x": [
+      -2.5,
+      2.5
+    ],
+    "y": [
+      -2.5,
+      2.5
+    ],
+    "z": [
+      -24,
+      0
+    ]
+  },
+  "junctionOrigin": "centre of the root junction ring",
+  "skeleton": [
+    {
+      "name": "tail_1",
+      "parent": null,
+      "head": [
+        0,
+        0,
+        0
+      ],
+      "tail": [
+        0,
+        0,
+        -4.8
+      ]
+    },
+    {
+      "name": "tail_2",
+      "parent": "tail_1",
+      "head": [
+        0,
+        0,
+        -4.8
+      ],
+      "tail": [
+        0,
+        0,
+        -9.6
+      ]
+    },
+    {
+      "name": "tail_3",
+      "parent": "tail_2",
+      "head": [
+        0,
+        0,
+        -9.6
+      ],
+      "tail": [
+        0,
+        0,
+        -14.4
+      ]
+    },
+    {
+      "name": "tail_4",
+      "parent": "tail_3",
+      "head": [
+        0,
+        0,
+        -14.4
+      ],
+      "tail": [
+        0,
+        0,
+        -19.2
+      ]
+    },
+    {
+      "name": "tail_5",
+      "parent": "tail_4",
+      "head": [
+        0,
+        0,
+        -19.2
+      ],
+      "tail": [
+        0,
+        0,
+        -24
+      ]
+    }
+  ]
+}

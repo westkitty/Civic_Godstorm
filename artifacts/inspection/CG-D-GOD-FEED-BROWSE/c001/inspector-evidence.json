@@ -1,0 +1,59 @@
+{
+  "id": "CG-D-GOD-FEED-BROWSE",
+  "revision": "c001",
+  "viewer": "artifacts/inspection/CG-D-GOD-FEED-BROWSE/c001/viewer.html",
+  "load": {
+    "ready": true,
+    "error": null,
+    "joints": 2,
+    "lods": {
+      "LOD0": 3938,
+      "LOD1": 1968,
+      "LOD2": 688
+    },
+    "coverage": 0.1901651936026936
+  },
+  "interaction": {
+    "orbitChangedView": true,
+    "zoomChangedView": true,
+    "resetRestoredView": true
+  },
+  "cameras": {
+    "front": 0.10309027777777778,
+    "left": 0.12951809764309763,
+    "rear": 0.10310711279461279,
+    "top": 0.20097327441077442,
+    "three quarter": 0.1901651936026936
+  },
+  "lodCoverage": {
+    "LOD0": 0.1901651936026936,
+    "LOD1": 0.19017150673400673,
+    "LOD2": 0.1901462542087542
+  },
+  "turntable": {
+    "path": "artifacts/inspection/CG-D-GOD-FEED-BROWSE/c001/turntable.mp4",
+    "framesRendered": 144,
+    "fps": 24,
+    "size": [
+      1024,
+      1024
+    ],
+    "codec": "H.264 (libx264, yuv420p)"
+  },
+  "validationSheet": {
+    "path": "artifacts/inspection/CG-D-GOD-FEED-BROWSE/c001/validation-sheet.png",
+    "size": [
+      2048,
+      2048
+    ],
+    "views": [
+      "front",
+      "left",
+      "top",
+      "three-quarter"
+    ]
+  },
+  "networkRequestsBlocked": [],
+  "pageErrors": [],
+  "pass": true
+}

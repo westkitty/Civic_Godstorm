@@ -1,0 +1,236 @@
+{
+  "id": "CG-D-GOD-LOCO-PILLAR",
+  "slug": "cg_d_god_loco_pillar",
+  "glb": "assets/runtime/models/cg_d_god_loco_pillar.glb",
+  "sha256": "669de1ca67e8bbee6c777e5883ef1e432d400ddcab906966c622949b2d410774",
+  "bytes": 229516,
+  "tool": {
+    "blender": "4.5.14 LTS",
+    "exporter": "io_scene_gltf2 (bundled)",
+    "python": "3.11.15"
+  },
+  "recipe": {
+    "path": "tools/models/q_recipe.json",
+    "revision": "c001",
+    "sha256": "70cfd96f21b35660459012aa2d0a9c0db84068d5d134f4550d00e7df3fbaa023"
+  },
+  "triangleBudget": [
+    4000,
+    2000,
+    700
+  ],
+  "skinChecks": [
+    {
+      "lod": "LOD0",
+      "weightSumMaxError": 2.220446049250313e-16,
+      "maxInfluences": 4,
+      "nan": false
+    },
+    {
+      "lod": "LOD1",
+      "weightSumMaxError": 2.220446049250313e-16,
+      "maxInfluences": 4,
+      "nan": false
+    },
+    {
+      "lod": "LOD2",
+      "weightSumMaxError": 2.220446049250313e-16,
+      "maxInfluences": 4,
+      "nan": false
+    }
+  ],
+  "export": {
+    "asset": {
+      "generator": "Khronos glTF Blender I/O v4.5.51",
+      "version": "2.0"
+    },
+    "nodes": [
+      "leg_toe",
+      "leg_foot",
+      "leg_lower",
+      "leg_upper",
+      "LOD0",
+      "LOD1",
+      "LOD2",
+      "skeleton"
+    ],
+    "meshes": {
+      "cg_d_god_loco_pillar_LOD0": {
+        "triangles": 3940,
+        "attributes": [
+          "COLOR_0",
+          "JOINTS_0",
+          "NORMAL",
+          "POSITION",
+          "WEIGHTS_0"
+        ],
+        "min": [
+          -2.2275278568267822,
+          -11.90829849243164,
+          -2.9355106353759766
+        ],
+        "max": [
+          2.2357752323150635,
+          -0.043610215187072754,
+          2.925356149673462
+        ],
+        "vertices": 1972,
+        "materials": [
+          0
+        ]
+      },
+      "cg_d_god_loco_pillar_LOD1": {
+        "triangles": 1970,
+        "attributes": [
+          "COLOR_0",
+          "JOINTS_0",
+          "NORMAL",
+          "POSITION",
+          "WEIGHTS_0"
+        ],
+        "min": [
+          -2.2248430252075195,
+          -11.909811019897461,
+          -2.9342780113220215
+        ],
+        "max": [
+          2.2357752323150635,
+          -0.03898971155285835,
+          2.9307336807250977
+        ],
+        "vertices": 987,
+        "materials": [
+          0
+        ]
+      },
+      "cg_d_god_loco_pillar_LOD2": {
+        "triangles": 688,
+        "attributes": [
+          "COLOR_0",
+          "JOINTS_0",
+          "NORMAL",
+          "POSITION",
+          "WEIGHTS_0"
+        ],
+        "min": [
+          -2.286548614501953,
+          -11.9072847366333,
+          -2.922616720199585
+        ],
+        "max": [
+          2.210639238357544,
+          -0.044848039746284485,
+          2.940607786178589
+        ],
+        "vertices": 346,
+        "materials": [
+          0
+        ]
+      }
+    },
+    "skins": [
+      {
+        "name": "skeleton",
+        "joints": [
+          "leg_upper",
+          "leg_lower",
+          "leg_foot",
+          "leg_toe"
+        ],
+        "inverseBindMatrices": 4
+      }
+    ],
+    "materials": [
+      {
+        "name": "cg_d_god_loco_pillar_body",
+        "metallic": 0,
+        "roughness": 0.75,
+        "alphaMode": "OPAQUE",
+        "doubleSided": true
+      }
+    ],
+    "textures": 0,
+    "images": 0,
+    "animations": 0,
+    "extensionsUsed": []
+  },
+  "source": "CG-S-GOD-LOCO-PILLAR",
+  "rowDimensionsU": [
+    5,
+    12,
+    6
+  ],
+  "box": {
+    "x": [
+      -2.5,
+      2.5
+    ],
+    "y": [
+      -12,
+      0
+    ],
+    "z": [
+      -3,
+      3
+    ]
+  },
+  "junctionOrigin": "centre of the top junction ring",
+  "skeleton": [
+    {
+      "name": "leg_upper",
+      "parent": null,
+      "head": [
+        0,
+        0,
+        0
+      ],
+      "tail": [
+        0,
+        -5,
+        0.4
+      ]
+    },
+    {
+      "name": "leg_lower",
+      "parent": "leg_upper",
+      "head": [
+        0,
+        -5,
+        0.4
+      ],
+      "tail": [
+        0,
+        -9.5,
+        -0.6
+      ]
+    },
+    {
+      "name": "leg_foot",
+      "parent": "leg_lower",
+      "head": [
+        0,
+        -9.5,
+        -0.6
+      ],
+      "tail": [
+        0,
+        -11.2,
+        0.6
+      ]
+    },
+    {
+      "name": "leg_toe",
+      "parent": "leg_foot",
+      "head": [
+        0,
+        -11.2,
+        0.6
+      ],
+      "tail": [
+        0,
+        -11.6,
+        2.8
+      ]
+    }
+  ]
+}

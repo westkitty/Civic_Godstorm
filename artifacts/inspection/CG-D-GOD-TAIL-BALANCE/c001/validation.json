@@ -1,0 +1,258 @@
+{
+  "id": "CG-D-GOD-TAIL-BALANCE",
+  "revision": "c001",
+  "glb": {
+    "path": "assets/runtime/models/cg_d_god_tail_balance.glb",
+    "sha256": "af04b7c38ba7ac351600fc5a348f5c4f46a0e820ff93407e328bc4d88b7af740",
+    "bytes": 229156
+  },
+  "sources": [
+    {
+      "id": "CG-S-GOD-TAIL-BALANCE",
+      "sha256": "2f1c06a980e138c14d0f8768090bd3744d98220fcc5781afb12c72e3e4d32bfe",
+      "path": "assets/source/god/cg_s_god_tail_balance.png"
+    }
+  ],
+  "tool": {
+    "blender": "4.5.14 LTS",
+    "exporter": "io_scene_gltf2 (bundled)",
+    "python": "3.11.15"
+  },
+  "recipe": {
+    "path": "tools/models/q_recipe.json",
+    "revision": "c001",
+    "sha256": "70cfd96f21b35660459012aa2d0a9c0db84068d5d134f4550d00e7df3fbaa023"
+  },
+  "export": {
+    "asset": {
+      "generator": "Khronos glTF Blender I/O v4.5.51",
+      "version": "2.0"
+    },
+    "nodes": [
+      "tail_5",
+      "tail_4",
+      "tail_3",
+      "tail_2",
+      "tail_1",
+      "LOD0",
+      "LOD1",
+      "LOD2",
+      "skeleton"
+    ],
+    "meshes": {
+      "cg_d_god_tail_balance_LOD0": {
+        "triangles": 3938,
+        "attributes": [
+          "COLOR_0",
+          "JOINTS_0",
+          "NORMAL",
+          "POSITION",
+          "WEIGHTS_0"
+        ],
+        "min": [
+          -2.3911030292510986,
+          -2.398452043533325,
+          -23.97713851928711
+        ],
+        "max": [
+          2.40740704536438,
+          2.408310651779175,
+          -0.16002961993217468
+        ],
+        "vertices": 1971,
+        "materials": [
+          0
+        ]
+      },
+      "cg_d_god_tail_balance_LOD1": {
+        "triangles": 1968,
+        "attributes": [
+          "COLOR_0",
+          "JOINTS_0",
+          "NORMAL",
+          "POSITION",
+          "WEIGHTS_0"
+        ],
+        "min": [
+          -2.3993887901306152,
+          -2.4058494567871094,
+          -23.98122787475586
+        ],
+        "max": [
+          2.40740704536438,
+          2.404635190963745,
+          -0.1601802110671997
+        ],
+        "vertices": 986,
+        "materials": [
+          0
+        ]
+      },
+      "cg_d_god_tail_balance_LOD2": {
+        "triangles": 688,
+        "attributes": [
+          "COLOR_0",
+          "JOINTS_0",
+          "NORMAL",
+          "POSITION",
+          "WEIGHTS_0"
+        ],
+        "min": [
+          -2.386899709701538,
+          -2.3947482109069824,
+          -24.005908966064453
+        ],
+        "max": [
+          2.41660213470459,
+          2.4186737537384033,
+          -0.16038578748703003
+        ],
+        "vertices": 346,
+        "materials": [
+          0
+        ]
+      }
+    },
+    "skins": [
+      {
+        "name": "skeleton",
+        "joints": [
+          "tail_1",
+          "tail_2",
+          "tail_3",
+          "tail_4",
+          "tail_5"
+        ],
+        "inverseBindMatrices": 5
+      }
+    ],
+    "materials": [
+      {
+        "name": "cg_d_god_tail_balance_body",
+        "metallic": 0,
+        "roughness": 0.75,
+        "alphaMode": "OPAQUE",
+        "doubleSided": true
+      }
+    ],
+    "textures": 0,
+    "images": 0,
+    "animations": 0,
+    "extensionsUsed": []
+  },
+  "measurements": {
+    "id": "CG-D-GOD-TAIL-BALANCE",
+    "glb": "assets/runtime/models/cg_d_god_tail_balance.glb",
+    "sha256": "af04b7c38ba7ac351600fc5a348f5c4f46a0e820ff93407e328bc4d88b7af740",
+    "bounds": {
+      "min": [
+        -2.3911,
+        -2.3985,
+        -23.9771
+      ],
+      "max": [
+        2.4074,
+        2.4083,
+        -0.16
+      ]
+    },
+    "views": {
+      "left": {
+        "sheet": "CG-S-GOD-TAIL-BALANCE",
+        "panel": 1,
+        "iou": 0.9773,
+        "declaredStretch": 0.2227,
+        "landmarkErrorMaxFraction": 0.0073,
+        "passes": true
+      },
+      "top": {
+        "sheet": "CG-S-GOD-TAIL-BALANCE",
+        "panel": 3,
+        "iou": 0.981,
+        "declaredStretch": 0.0557,
+        "landmarkErrorMaxFraction": 0.0044,
+        "passes": true
+      }
+    },
+    "nonProjectable": {
+      "rootEnd": "end-on view drawn with elevated perspective (tail body visible below the root flange)",
+      "tipEnd": "end-on view drawn with perspective (tapering body visible)"
+    },
+    "structure": {
+      "lods": {
+        "LOD0": {
+          "triangles": 3938,
+          "vertices": 1971,
+          "budget": 4000,
+          "withinBudget": true,
+          "weightSumMaxError": 1.2619420886039734e-7,
+          "nanWeights": false,
+          "jointsReferenced": 5,
+          "hasVertexColor": true
+        },
+        "LOD1": {
+          "triangles": 1968,
+          "vertices": 986,
+          "budget": 2000,
+          "withinBudget": true,
+          "weightSumMaxError": 1.1886004358530045e-7,
+          "nanWeights": false,
+          "jointsReferenced": 5,
+          "hasVertexColor": true
+        },
+        "LOD2": {
+          "triangles": 688,
+          "vertices": 346,
+          "budget": 700,
+          "withinBudget": true,
+          "weightSumMaxError": 1.1455267667770386e-7,
+          "nanWeights": false,
+          "jointsReferenced": 5,
+          "hasVertexColor": true
+        }
+      },
+      "lodBudgets": true,
+      "skins": 1,
+      "joints": 5,
+      "jointLimit": 64,
+      "withinJointLimit": true,
+      "inverseBindFinite": true,
+      "inverseBindPositiveDeterminant": true,
+      "weightsNormalized": true,
+      "materials": 1,
+      "materialsWithinLimit": true,
+      "textures": 0,
+      "animations": 0,
+      "opaqueNonMetal": true
+    },
+    "silhouettePass": true,
+    "structuralPass": true
+  },
+  "gltfValidator": {
+    "version": "2.0.0-dev.3.10",
+    "numErrors": 0,
+    "numWarnings": 0,
+    "numInfos": 0,
+    "numHints": 0,
+    "messages": [],
+    "truncated": false,
+    "report": "artifacts/inspection/CG-D-GOD-TAIL-BALANCE/c001/gltf-validator.json"
+  },
+  "reimport": {
+    "report": "artifacts/inspection/CG-D-GOD-TAIL-BALANCE/c001/reimport.json",
+    "pass": true
+  },
+  "inspector": {
+    "report": "artifacts/inspection/CG-D-GOD-TAIL-BALANCE/c001/inspector-evidence.json",
+    "pass": true
+  },
+  "gates": {
+    "silhouetteIoUAndLandmarks": true,
+    "structureSkinLodMaterial": true,
+    "khronosValidatorClean": true,
+    "blenderReimport": true,
+    "offlineInspectorAndTurntable": true,
+    "humanArtApproval": false
+  },
+  "verdict": "DERIVED_UNVERIFIED"
+}

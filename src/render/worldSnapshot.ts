@@ -17,6 +17,14 @@ export interface WorldSnapshot {
     readonly own: boolean;
     readonly cells: readonly number[];
     readonly heading: number;
+    /** Presentation of an own God's body; absent for foreign Gods (observation has no body data). */
+    readonly body?: {
+      readonly family: string;
+      readonly size: 1 | 2 | 3;
+      readonly pose: 'idle' | 'walk' | 'feed' | 'rest';
+      readonly stage: 'juvenile' | 'prime' | 'ancient';
+      readonly injured: boolean;
+    };
   }[];
   readonly overlay: {
     readonly selectedGodCells: readonly number[];
