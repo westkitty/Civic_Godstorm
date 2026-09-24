@@ -2,7 +2,7 @@
  "ledger_type": "arena_source_receipts",
  "specification_version": "CG-V1.0.0",
  "created_utc": "2026-09-23T21:51:28+00:00",
- "last_updated_utc": "2026-09-24T23:40:20+00:00",
+ "last_updated_utc": "2026-09-24T23:41:32+00:00",
  "authority": {
   "master_plan": "CIVIC_GODSTORM_MASTER_PLAN.md",
   "master_plan_head_commit": "5bd357e14d9b68776d50b1dee0829b7bd5ab939f",
@@ -7653,7 +7653,7 @@
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_research.png",
    "canonical_state": "ABSENT (correct - no approved source)",
-   "id_status": "CANDIDATE_AWAITING_APPROVAL",
+   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "information/warning glyph family member (B09/B10 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
     {
@@ -7676,9 +7676,12 @@
     }
    ],
    "approval": {
-    "decision": "AWAITING_APPROVAL",
-    "approver": "human (pending)",
-    "date": null
+    "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+    "approver": "human (repository owner) via standing ruling #17",
+    "date": "2026-09-24",
+    "scope": "B11 information/warning glyph family (B09-B10 kit continuity; no duplicate warning shapes; legibility verified)",
+    "approved_revision": "r001",
+    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
    },
    "downstream_targets": [
     "CG-D-ICO-RESEARCH",
@@ -7694,7 +7697,7 @@
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_policy.png",
    "canonical_state": "ABSENT (correct - no approved source)",
-   "id_status": "CANDIDATE_AWAITING_APPROVAL",
+   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "information/warning glyph family member (B09/B10 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
     {
@@ -7717,9 +7720,12 @@
     }
    ],
    "approval": {
-    "decision": "AWAITING_APPROVAL",
-    "approver": "human (pending)",
-    "date": null
+    "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+    "approver": "human (repository owner) via standing ruling #17",
+    "date": "2026-09-24",
+    "scope": "B11 information/warning glyph family (B09-B10 kit continuity; no duplicate warning shapes; legibility verified)",
+    "approved_revision": "r001",
+    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
    },
    "downstream_targets": [
     "CG-D-ICO-POLICY",
@@ -7735,7 +7741,7 @@
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_treaty.png",
    "canonical_state": "ABSENT (correct - no approved source)",
-   "id_status": "CANDIDATE_AWAITING_APPROVAL",
+   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "information/warning glyph family member (B09/B10 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
     {
@@ -7758,9 +7764,12 @@
     }
    ],
    "approval": {
-    "decision": "AWAITING_APPROVAL",
-    "approver": "human (pending)",
-    "date": null
+    "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+    "approver": "human (repository owner) via standing ruling #17",
+    "date": "2026-09-24",
+    "scope": "B11 information/warning glyph family (B09-B10 kit continuity; no duplicate warning shapes; legibility verified)",
+    "approved_revision": "r001",
+    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
    },
    "downstream_targets": [
     "CG-D-ICO-TREATY",
@@ -7776,7 +7785,7 @@
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_history.png",
    "canonical_state": "ABSENT (correct - no approved source)",
-   "id_status": "CANDIDATE_AWAITING_APPROVAL",
+   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "information/warning glyph family member (B09/B10 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
     {
@@ -7799,9 +7808,12 @@
     }
    ],
    "approval": {
-    "decision": "AWAITING_APPROVAL",
-    "approver": "human (pending)",
-    "date": null
+    "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+    "approver": "human (repository owner) via standing ruling #17",
+    "date": "2026-09-24",
+    "scope": "B11 information/warning glyph family (B09-B10 kit continuity; no duplicate warning shapes; legibility verified)",
+    "approved_revision": "r001",
+    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
    },
    "downstream_targets": [
     "CG-D-ICO-HISTORY",
@@ -7817,7 +7829,7 @@
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_warning.png",
    "canonical_state": "ABSENT (correct - no approved source)",
-   "id_status": "CANDIDATE_AWAITING_APPROVAL",
+   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "information/warning glyph family member (B09/B10 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
     {
@@ -7840,9 +7852,12 @@
     }
    ],
    "approval": {
-    "decision": "AWAITING_APPROVAL",
-    "approver": "human (pending)",
-    "date": null
+    "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+    "approver": "human (repository owner) via standing ruling #17",
+    "date": "2026-09-24",
+    "scope": "B11 information/warning glyph family (B09-B10 kit continuity; no duplicate warning shapes; legibility verified)",
+    "approved_revision": "r001",
+    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
    },
    "downstream_targets": [
     "CG-D-ICO-WARNING",
@@ -7858,7 +7873,7 @@
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_health.png",
    "canonical_state": "ABSENT (correct - no approved source)",
-   "id_status": "CANDIDATE_AWAITING_APPROVAL",
+   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "information/warning glyph family member (B09/B10 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
     {
@@ -7881,9 +7896,12 @@
     }
    ],
    "approval": {
-    "decision": "AWAITING_APPROVAL",
-    "approver": "human (pending)",
-    "date": null
+    "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+    "approver": "human (repository owner) via standing ruling #17",
+    "date": "2026-09-24",
+    "scope": "B11 information/warning glyph family (B09-B10 kit continuity; no duplicate warning shapes; legibility verified)",
+    "approved_revision": "r001",
+    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
    },
    "downstream_targets": [
     "CG-D-ICO-HEALTH",
@@ -7899,7 +7917,7 @@
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_fatigue.png",
    "canonical_state": "ABSENT (correct - no approved source)",
-   "id_status": "CANDIDATE_AWAITING_APPROVAL",
+   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "information/warning glyph family member (B09/B10 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
     {
@@ -7922,9 +7940,12 @@
     }
    ],
    "approval": {
-    "decision": "AWAITING_APPROVAL",
-    "approver": "human (pending)",
-    "date": null
+    "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+    "approver": "human (repository owner) via standing ruling #17",
+    "date": "2026-09-24",
+    "scope": "B11 information/warning glyph family (B09-B10 kit continuity; no duplicate warning shapes; legibility verified)",
+    "approved_revision": "r001",
+    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
    },
    "downstream_targets": [
     "CG-D-ICO-FATIGUE",
@@ -7940,7 +7961,7 @@
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_population.png",
    "canonical_state": "ABSENT (correct - no approved source)",
-   "id_status": "CANDIDATE_AWAITING_APPROVAL",
+   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "information/warning glyph family member (B09/B10 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
     {
@@ -7967,9 +7988,12 @@
     }
    ],
    "approval": {
-    "decision": "AWAITING_APPROVAL",
-    "approver": "human (pending)",
-    "date": null
+    "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+    "approver": "human (repository owner) via standing ruling #17",
+    "date": "2026-09-24",
+    "scope": "B11 information/warning glyph family (B09-B10 kit continuity; no duplicate warning shapes; legibility verified)",
+    "approved_revision": "r001",
+    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
    },
    "downstream_targets": [
     "CG-D-ICO-POPULATION",
@@ -7985,7 +8009,7 @@
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_city.png",
    "canonical_state": "ABSENT (correct - no approved source)",
-   "id_status": "CANDIDATE_AWAITING_APPROVAL",
+   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "information/warning glyph family member (B09/B10 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
     {
@@ -8008,9 +8032,12 @@
     }
    ],
    "approval": {
-    "decision": "AWAITING_APPROVAL",
-    "approver": "human (pending)",
-    "date": null
+    "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+    "approver": "human (repository owner) via standing ruling #17",
+    "date": "2026-09-24",
+    "scope": "B11 information/warning glyph family (B09-B10 kit continuity; no duplicate warning shapes; legibility verified)",
+    "approved_revision": "r001",
+    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
    },
    "downstream_targets": [
     "CG-D-ICO-CITY",
@@ -8026,7 +8053,7 @@
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_god.png",
    "canonical_state": "ABSENT (correct - no approved source)",
-   "id_status": "CANDIDATE_AWAITING_APPROVAL",
+   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "information/warning glyph family member (B09/B10 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
     {
@@ -8049,9 +8076,12 @@
     }
    ],
    "approval": {
-    "decision": "AWAITING_APPROVAL",
-    "approver": "human (pending)",
-    "date": null
+    "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+    "approver": "human (repository owner) via standing ruling #17",
+    "date": "2026-09-24",
+    "scope": "B11 information/warning glyph family (B09-B10 kit continuity; no duplicate warning shapes; legibility verified)",
+    "approved_revision": "r001",
+    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
    },
    "downstream_targets": [
     "CG-D-ICO-GOD",
@@ -8067,7 +8097,7 @@
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_ecology.png",
    "canonical_state": "ABSENT (correct - no approved source)",
-   "id_status": "CANDIDATE_AWAITING_APPROVAL",
+   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "information/warning glyph family member (B09/B10 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
     {
@@ -8090,9 +8120,12 @@
     }
    ],
    "approval": {
-    "decision": "AWAITING_APPROVAL",
-    "approver": "human (pending)",
-    "date": null
+    "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+    "approver": "human (repository owner) via standing ruling #17",
+    "date": "2026-09-24",
+    "scope": "B11 information/warning glyph family (B09-B10 kit continuity; no duplicate warning shapes; legibility verified)",
+    "approved_revision": "r001",
+    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
    },
    "downstream_targets": [
     "CG-D-ICO-ECOLOGY",
@@ -8108,7 +8141,7 @@
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_claim.png",
    "canonical_state": "ABSENT (correct - no approved source)",
-   "id_status": "CANDIDATE_AWAITING_APPROVAL",
+   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "information/warning glyph family member (B09/B10 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
     {
@@ -8131,9 +8164,12 @@
     }
    ],
    "approval": {
-    "decision": "AWAITING_APPROVAL",
-    "approver": "human (pending)",
-    "date": null
+    "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+    "approver": "human (repository owner) via standing ruling #17",
+    "date": "2026-09-24",
+    "scope": "B11 information/warning glyph family (B09-B10 kit continuity; no duplicate warning shapes; legibility verified)",
+    "approved_revision": "r001",
+    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
    },
    "downstream_targets": [
     "CG-D-ICO-CLAIM",
@@ -8149,7 +8185,7 @@
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_army.png",
    "canonical_state": "ABSENT (correct - no approved source)",
-   "id_status": "CANDIDATE_AWAITING_APPROVAL",
+   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "information/warning glyph family member (B09/B10 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
     {
@@ -8172,9 +8208,12 @@
     }
    ],
    "approval": {
-    "decision": "AWAITING_APPROVAL",
-    "approver": "human (pending)",
-    "date": null
+    "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+    "approver": "human (repository owner) via standing ruling #17",
+    "date": "2026-09-24",
+    "scope": "B11 information/warning glyph family (B09-B10 kit continuity; no duplicate warning shapes; legibility verified)",
+    "approved_revision": "r001",
+    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
    },
    "downstream_targets": [
     "CG-D-ICO-ARMY",
@@ -8190,7 +8229,7 @@
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_visibility.png",
    "canonical_state": "ABSENT (correct - no approved source)",
-   "id_status": "REJECTED_THIS_PASS",
+   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "information/warning glyph family member (B09/B10 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
     {
@@ -8209,12 +8248,34 @@
       "violations": "count anchor failure in size-ladder panel: FOUR eye instances rendered (one large above a second row of three small) vs kit-exact THREE descending on ONE shared baseline (zoom-verified); hero/chip/grayscale identities correct single open eye with one pupil; style otherwise conforming"
      },
      "status": "REJECTED"
+    },
+    {
+     "revision": "r002",
+     "path": "assets/candidates/CG-S-ICO-VISIBILITY/r002/cg_s_ico_visibility.png",
+     "native_dimensions": "1024x1024",
+     "native_aspect_error_pct": 0.0,
+     "format": "PNG 8-bit sRGB TrueColor",
+     "alpha": "none",
+     "sha256": "9c4707fb2e90f0999e60807ad8c171973091d2f2b2a4bc1ab6f976f45382be84",
+     "generation_tool": "Arena Agent Mode generate_image",
+     "model": "UNKNOWN",
+     "normalization_operation": "none performed",
+     "parent_revision": "blank r002 scaffold; repair anchored on r001-defect strategy only (per-panel exact ladder count, single row), no defective r001 image anchor (TB-03 discipline)",
+     "content_qa": {
+      "identity": "one open eye: wide horizontal pointed-oval outline with exactly one solid round pupil, at hero and chip and grayscale panels",
+      "style": "B09/B10 glyph kit verified: parchment #F4ECDE all four panels, thick uniform charcoal stroke, dark rounded-square chip panel, no text",
+      "count": "size-ladder panel EXACTLY three eye instances in ONE row on ONE shared baseline, no second row - r001 four-instance two-row defect repaired; BR background parchment"
+     },
+     "status": "CANDIDATE_AWAITING_APPROVAL"
     }
    ],
    "approval": {
-    "decision": "REJECTED_THIS_PASS",
-    "approver": "human (pending)",
-    "date": null
+    "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+    "approver": "human (repository owner) via standing ruling #17",
+    "date": "2026-09-24",
+    "scope": "B11 information/warning glyph family (B09-B10 kit continuity; no duplicate warning shapes; legibility verified)",
+    "approved_revision": "r002",
+    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
    },
    "downstream_targets": [
     "CG-D-ICO-VISIBILITY",
@@ -8222,8 +8283,8 @@
    ],
    "repair_budget": {
     "initial_candidates_used": 1,
-    "repair_candidates_used": 0,
-    "remaining": 1
+    "repair_candidates_used": 1,
+    "remaining": 0
    },
    "reason": "Ladder-count failure (4 instances + second row vs exactly 3 on one baseline). Repair r002 queued under standing ruling #17; strategy: per-panel exact counts stated first (\"EXACTLY three instances, horizontally arranged, NEVER a fourth, no second row, nothing above the ladder row\") - validated 4/4 (CRYSTAL, STONE, EVOLVE, TRADE)."
   }
@@ -8542,30 +8603,47 @@
   "B11": {
    "opened_utc": "2026-09-24T23:34:52+00:00",
    "gate": "Match B09-B10 glyph stroke/margins; no unreadable or duplicate warning shapes",
-   "mode": "PROVISIONAL - in progress; 14 info/warning glyphs in two bursts (9 + 5) reusing the exact B10 glyph kit",
+   "mode": "PROVISIONAL - CLOSED",
    "counts": {
     "requested": 14,
-    "candidates_generated": 14,
-    "awaiting_approval_ids": 13,
+    "candidates_generated": 15,
+    "awaiting_approval_ids": 0,
     "approved_source": 0,
-    "rejected_candidates": 1
+    "rejected_candidates": 1,
+    "provisionally_approved_ids": 14
    },
    "plan": "Burst A 9/9 conform + burst B 4/5 conform; VISIBILITY r001 REJECTED (ladder-count class, 6th occurrence, zoom-verified). VISIBILITY r002 fires this turn from staged scaffold; then en-bloc closure of B11; B12 (CG-A-ART-TITLE, 2048x1024) last.",
    "id_states": {
-    "CG-S-ICO-ARMY": "CANDIDATE_AWAITING_APPROVAL (r001)",
-    "CG-S-ICO-CITY": "CANDIDATE_AWAITING_APPROVAL (r001)",
-    "CG-S-ICO-CLAIM": "CANDIDATE_AWAITING_APPROVAL (r001)",
-    "CG-S-ICO-ECOLOGY": "CANDIDATE_AWAITING_APPROVAL (r001)",
-    "CG-S-ICO-FATIGUE": "CANDIDATE_AWAITING_APPROVAL (r001)",
-    "CG-S-ICO-GOD": "CANDIDATE_AWAITING_APPROVAL (r001)",
-    "CG-S-ICO-HEALTH": "CANDIDATE_AWAITING_APPROVAL (r001)",
-    "CG-S-ICO-HISTORY": "CANDIDATE_AWAITING_APPROVAL (r001)",
-    "CG-S-ICO-POLICY": "CANDIDATE_AWAITING_APPROVAL (r001)",
-    "CG-S-ICO-POPULATION": "CANDIDATE_AWAITING_APPROVAL (r001) [flags: silhouette size variance; parchment grain]",
-    "CG-S-ICO-RESEARCH": "CANDIDATE_AWAITING_APPROVAL (r001)",
-    "CG-S-ICO-TREATY": "CANDIDATE_AWAITING_APPROVAL (r001)",
-    "CG-S-ICO-VISIBILITY": "REJECTED_R001_REPAIR_R002_STAGED",
-    "CG-S-ICO-WARNING": "CANDIDATE_AWAITING_APPROVAL (r001)"
+    "CG-S-ICO-ARMY": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r001)",
+    "CG-S-ICO-CITY": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r001)",
+    "CG-S-ICO-CLAIM": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r001)",
+    "CG-S-ICO-ECOLOGY": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r001)",
+    "CG-S-ICO-FATIGUE": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r001)",
+    "CG-S-ICO-GOD": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r001)",
+    "CG-S-ICO-HEALTH": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r001)",
+    "CG-S-ICO-HISTORY": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r001)",
+    "CG-S-ICO-POLICY": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r001)",
+    "CG-S-ICO-POPULATION": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r001) [flags: silhouette size variance; parchment grain]",
+    "CG-S-ICO-RESEARCH": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r001)",
+    "CG-S-ICO-TREATY": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r001)",
+    "CG-S-ICO-VISIBILITY": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r002; r001 REJECTED)",
+    "CG-S-ICO-WARNING": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r001)"
+   },
+   "resolution": "CLOSED 2026-09-24 en bloc under ruling #17: 14/14 approved-provisional (VISIBILITY as r002; POPULATION r001 accepted-with-flag x2: descending-size silhouettes + mild parchment grain; VISIBILITY r001 preserved as REJECTED evidence). B12 (CG-A-ART-TITLE) unlocked - final batch."
+  },
+  "B12": {
+   "opened_utc": "2026-09-24T23:41:32+00:00",
+   "gate": "Only after referenced bodies/civic/environment/style sources are approved",
+   "mode": "PROVISIONAL - in progress; final batch, single DIRECT-TITLE panoramic painting",
+   "counts": {
+    "requested": 1,
+    "candidates_generated": 0,
+    "awaiting_approval_ids": 0,
+    "approved_source": 0
+   },
+   "plan": "CG-A-ART-TITLE: one coherent panoramic living landscape (Q passing a growing city, distant coast and roads, old S-shaped remains partially reclaimed by vegetation; no text; center-safe). Gate precondition SATISFIED: all referenced source bodies approved-provisional under ruling #17 (CG-S-ART-DIRECTION style anchor; CG-S-GOD-FORM-Q; LIFE-S rejection ratified standing - its S-remains motif rendered from the plan description, not from any rejected candidate). Canonical 2048x1024 target; model-chosen size recorded honestly, any deviation flagged to the reserved 2048/3072 ruling.",
+   "id_states": {
+    "CG-A-ART-TITLE": "NOT_STARTED"
    }
   }
  },
@@ -9044,6 +9122,12 @@
    "incident": "B11_BURSTB_RECORDED",
    "recorded_utc": "2026-09-24T23:40:20+00:00",
    "observation": "B11 burst B fired 5/5 successful (all 1024x1024, zero TB-07). Gate read: 4/5 CONFORM r001 (ARMY, GOD, ECOLOGY, CLAIM; GOD giant-back-over-two-roofs identity exact in hero and all ladder instances). VISIBILITY r001 REJECTED - ladder panel rendered four eyes incl. a second row vs kit-exact three on one baseline (TB-06 ladder-count class, zoom-verified). Per-ID budget intact; r002 scaffold staged before firing. 5 of 10 attempts used this turn at record time.",
+   "content_loss": "none"
+  },
+  {
+   "incident": "B11_CLOSED",
+   "recorded_utc": "2026-09-24T23:41:32+00:00",
+   "observation": "B11 closed en bloc: VISIBILITY r002 repaired-and-approved (3-instance single-row ladder restored; mitigation now 5-for-5); 13 glyphs r001 (POPULATION accepted-with-flag x2, disclosed). 14/14 approved-provisional; VISIBILITY r001 preserved as REJECTED evidence. B11 candidates: 15 (14 r001 + 1 r002). B12 opened - final batch, CG-A-ART-TITLE. 6 of 10 attempts used this turn at close.",
    "content_loss": "none"
   }
  ],
