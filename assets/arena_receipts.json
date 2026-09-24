@@ -2,7 +2,7 @@
   "ledger_type": "arena_source_receipts",
   "specification_version": "CG-V1.0.0",
   "created_utc": "2026-09-23T21:51:28+00:00",
-  "last_updated_utc": "2026-09-24T00:45:29+00:00",
+  "last_updated_utc": "2026-09-24T00:48:24+00:00",
   "authority": {
     "master_plan": "CIVIC_GODSTORM_MASTER_PLAN.md",
     "master_plan_head_commit": "5bd357e14d9b68776d50b1dee0829b7bd5ab939f",
@@ -3869,13 +3869,14 @@
       "resolution": "CLOSED - consolidated gate PASSED 2026-09-24; complete provisional evidence set (9/9 IDs)"
     },
     "B04": {
-      "opened_utc": "2026-09-24T00:45:29+00:00",
+      "opened_utc": "2026-09-24T00:48:24+00:00",
       "gate": "Check coherent water body/fin roots and narrow-channel silhouette",
       "mode": "PROVISIONAL - not yet started; modules precede whole-form/lifecycle candidates",
       "counts": {
         "requested": 10,
         "candidates_generated": 0
-      }
+      },
+      "plan": "8 modules this pass (TORSO-S, TORSO-M, LOCO-UNDULATOR, LOCO-FIN, LOCO-WEBBED, FEED-FILTER, TAIL-PADDLE, ORGAN-GILLS), then FORM-S and LIFE-S parent-first if all modules conform; consolidated human gate at pass end"
     }
   },
   "capability_probe": {
@@ -4091,6 +4092,12 @@
       "observation": "The consolidated B03 cross-session gate question (TORSO-H ratification / FORM-H approval / LIFE-H retry authorization) was presented and skipped with no answer. No ruling assumed.",
       "consequence": "TORSO-H remains AWAITING ratification (provisionally operative per parallel-session ledger, flagged); FORM-H remains AWAITING_APPROVAL; all remain non-canonical.",
       "continuation_basis": "User directed \"continue where you left off\". Least-irreversible productive step executed: LIFE-H retry per the recorded TB-04 strategy (fresh generation, no defective anchor, blank 3x2 scaffold, no-labels-first instruction). Its candidates face the same consolidated human gate; quota exposure bounded at 1+1."
+    },
+    {
+      "incident": "FOURTH_WORKSPACE_RESET_RECOVERED",
+      "recorded_utc": "2026-09-24T00:48:24+00:00",
+      "observation": "Local branch found re-rooted at docs commit 5bd357e with preserved working tree; remote intact at 274bfd2 (last authorized push). Recovery: reset --hard onto remote tip (no force, remote is own push), re-applied B04 open note. Scaffolds for B04 verified present post-reset.",
+      "content_loss": "none"
     }
   ],
   "tool_behavior_findings": [
