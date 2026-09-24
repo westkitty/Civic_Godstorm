@@ -29,3 +29,7 @@ A parallel session pushed `838fdae` (FORM-H r001/r002, LIFE-H r001/r002, its own
 ## LIFE-H retry (r003, 2026-09-24)
 
 Executed per the recorded TB-04 strategy on explicit user continue (gate question had been skipped — no ruling assumed; recorded in audit_trail). **CONFORMS:** no text anywhere, exactly 3×2 six panels, same individual, legal injury pair, low blunt crushing-rostrum skull in the ossuary. **AWAITING the consolidated human gate** together with TORSO-H ratification and FORM-H approval.
+
+## FINAL: B03 CLOSED — consolidated gate PASSED (2026-09-24)
+
+Human ruling: TORSO-H r003 ratified (cross-session acceptance upheld by independent inspection), FORM-H r002 approved (nodule flag noted), LIFE-H r003 accepted. B03 closes as the **complete provisional H-grammar evidence set (9/9 IDs)**: TORSO-H r003 · LOCO-DIGGER r001 · FEED-MINERAL r001 · SENSE-VIBRATION-ROSETTE r001 · TAIL-WEDGE r001 · ARMOR-SHELL r001 · ORGAN-THERMAL-VENT r001 · FORM-H r002 · LIFE-H r003. Canonical promotion remains pending the standing 2048/3072 resolution ruling. **B04 (aquatic/axial grammar, 10 IDs) unlocked.**

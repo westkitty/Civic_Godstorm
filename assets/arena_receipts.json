@@ -2,7 +2,7 @@
   "ledger_type": "arena_source_receipts",
   "specification_version": "CG-V1.0.0",
   "created_utc": "2026-09-23T21:51:28+00:00",
-  "last_updated_utc": "2026-09-24T00:43:18+00:00",
+  "last_updated_utc": "2026-09-24T00:45:29+00:00",
   "authority": {
     "master_plan": "CIVIC_GODSTORM_MASTER_PLAN.md",
     "master_plan_head_commit": "5bd357e14d9b68776d50b1dee0829b7bd5ab939f",
@@ -3260,7 +3260,7 @@
       "specification_version": "CG-V1.0.0",
       "canonical_path": "assets/source/god/cg_s_god_torso_h.png",
       "canonical_state": "ABSENT (correct - no approved source)",
-      "id_status": "ACCEPTED_PROVISIONAL_PASS3_TECHNICAL",
+      "id_status": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
       "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
       "candidates": [
         {
@@ -3320,9 +3320,9 @@
         }
       ],
       "approval": {
-        "decision": "ACCEPTED PROVISIONALLY (pass 3, r003) per human pre-authorization - technical conformance verified (exact three-pair ring count); final H-family acceptance at B03 close",
-        "approver": "human (pre-authorized)/arena verification",
-        "date": "2026-09-23"
+        "decision": "RATIFIED (pass-3 r003, cross-session acceptance upheld by independent inspection + human ruling)",
+        "approver": "human (repository owner)",
+        "date": "2026-09-24"
       },
       "downstream_targets": [
         "CG-D-GOD-TORSO-H",
@@ -3606,7 +3606,7 @@
       "specification_version": "CG-V1.0.0",
       "canonical_path": "assets/source/god/cg_s_god_form_h.png",
       "canonical_state": "ABSENT (correct)",
-      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "id_status": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
       "parent_dependency_revisions": {
         "CG-S-GOD-TORSO-H": "r003 (accepted provisional pass 3)",
         "CG-S-GOD-LOCO-DIGGER": "r001 (provisional ref)",
@@ -3655,9 +3655,9 @@
         }
       ],
       "approval": {
-        "decision": "AWAITING_APPROVAL (r002)",
-        "approver": "human (pending)",
-        "date": null
+        "decision": "APPROVED PROVISIONAL (r002; nodule flag noted)",
+        "approver": "human (repository owner)",
+        "date": "2026-09-24"
       },
       "downstream_targets": [
         "CG-S-GOD-LIFE-H",
@@ -3673,7 +3673,7 @@
       "specification_version": "CG-V1.0.0",
       "canonical_path": "assets/source/god/cg_s_god_life_h.png",
       "canonical_state": "ABSENT (correct)",
-      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "id_status": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
       "parent_dependency_revisions": {
         "CG-S-GOD-FORM-H": "r002 (candidate awaiting approval)"
       },
@@ -3739,9 +3739,9 @@
       ],
       "reason": "r002 introduced generated text labels (hard lock) and retained a generic skull reading; budget exhausted. New tool finding TB-04: capitalized per-cell stage names in prompts can leak as rendered labels - retry prompts must forbid words explicitly and avoid label-like tokens.",
       "approval": {
-        "decision": "REJECTED_THIS_PASS - new pass requires human authorization",
-        "approver": "pending",
-        "date": null
+        "decision": "APPROVED PROVISIONAL (retry r003)",
+        "approver": "human (repository owner)",
+        "date": "2026-09-24"
       },
       "downstream_targets": [
         "CG-D-GOD-LIFE-H",
@@ -3856,15 +3856,25 @@
       },
       "plan": "6 independent H modules this turn (TORSO-H, LOCO-DIGGER, FEED-MINERAL, SENSE-VIBRATION-ROSETTE, TAIL-WEDGE, ARMOR-SHELL); ORGAN-THERMAL-VENT + FORM-H + LIFE-H next turn parent-first (turn generation budget)",
       "id_states": {
-        "CG-S-GOD-TORSO-H": "ACCEPTED_PROVISIONAL_PASS3_TECHNICAL (r003; ring count fixed by fresh-generation strategy)",
-        "CG-S-GOD-LOCO-DIGGER": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
-        "CG-S-GOD-FEED-MINERAL": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
-        "CG-S-GOD-SENSE-VIBRATION-ROSETTE": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
-        "CG-S-GOD-TAIL-WEDGE": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
-        "CG-S-GOD-ARMOR-SHELL": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
-        "CG-S-GOD-ORGAN-THERMAL-VENT": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
-        "CG-S-GOD-FORM-H": "CANDIDATE_AWAITING_APPROVAL (r002)",
-        "CG-S-GOD-LIFE-H": "retry r003 conforming (labels eliminated); AWAITING consolidated human gate"
+        "CG-S-GOD-TORSO-H": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
+        "CG-S-GOD-LOCO-DIGGER": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
+        "CG-S-GOD-FEED-MINERAL": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
+        "CG-S-GOD-SENSE-VIBRATION-ROSETTE": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
+        "CG-S-GOD-TAIL-WEDGE": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
+        "CG-S-GOD-ARMOR-SHELL": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
+        "CG-S-GOD-ORGAN-THERMAL-VENT": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
+        "CG-S-GOD-FORM-H": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
+        "CG-S-GOD-LIFE-H": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING"
+      },
+      "resolution": "CLOSED - consolidated gate PASSED 2026-09-24; complete provisional evidence set (9/9 IDs)"
+    },
+    "B04": {
+      "opened_utc": "2026-09-24T00:45:29+00:00",
+      "gate": "Check coherent water body/fin roots and narrow-channel silhouette",
+      "mode": "PROVISIONAL - not yet started; modules precede whole-form/lifecycle candidates",
+      "counts": {
+        "requested": 10,
+        "candidates_generated": 0
       }
     }
   },
@@ -4025,6 +4035,19 @@
         ]
       },
       "recorded_utc": "2026-09-24T00:17:39+00:00"
+    },
+    {
+      "id": "B03_CONSOLIDATED_GATE_APPROVE_ALL",
+      "ruling": {
+        "date": "2026-09-24",
+        "authority": "human (repository owner) via Arena gate answer",
+        "decision": "Ratify TORSO-H r003 (including the parallel session self-acceptance), approve FORM-H r002 (back-centerline nodule flag noted), accept LIFE-H r003 - all provisional batch-local. B03 CLOSED as the complete H-grammar provisional evidence set (9/9 IDs). B04 unlocked.",
+        "scope_limits": [
+          "All provisional batch-local; canonical promotion pending the standing 2048/3072 resolution ruling",
+          "Flags recorded: FORM-H nodule pair; TORSO-H ratification of cross-session self-acceptance"
+        ]
+      },
+      "recorded_utc": "2026-09-24T00:45:29+00:00"
     }
   ],
   "resolution_ruling_standing": {
