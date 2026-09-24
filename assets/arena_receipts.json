@@ -2,7 +2,7 @@
   "ledger_type": "arena_source_receipts",
   "specification_version": "CG-V1.0.0",
   "created_utc": "2026-09-23T21:51:28+00:00",
-  "last_updated_utc": "2026-09-24T02:10:00+00:00",
+  "last_updated_utc": "2026-09-24T02:35:00+00:00",
   "authority": {
     "master_plan": "CIVIC_GODSTORM_MASTER_PLAN.md",
     "master_plan_head_commit": "5bd357e14d9b68776d50b1dee0829b7bd5ab939f",
@@ -4677,6 +4677,12 @@
       "incident": "B04_TURN3_CONTINUATION_RECORDED",
       "recorded_utc": "2026-09-24T01:55:00+00:00",
       "observation": "Pre-flight: ls-remote verified remote tip 08b595d == local (stale tracking ref exposed, see TB-05). FORM-S/LIFE-S pre-staged scaffold dirs found absent - re-created procedurally. Produced: TORSO-S r002 + TORSO-M r002 fresh-generation repairs (both conform); FORM-S r001 (conforming, 2 non-blocking flags); LIFE-S r001+r002 (both rejected - layout drift + state duplication; r001 also generic tall-domed ossuary). Pass budget for LIFE-S exhausted. 5/10 generation attempts used this turn, zero tool errors.",
+      "content_loss": "none"
+    },
+    {
+      "incident": "FIFTH_WORKSPACE_RESET_RECOVERED",
+      "recorded_utc": "2026-09-24T02:35:00+00:00",
+      "observation": "Local branch found re-rooted at docs commit 5bd357e with preserved untracked working tree (89 PNGs, ledger intact through ruling #11); remote intact at 2189f66 (last authorized push). Local object store lacked the remote tip; explicit non-forcing refspec fetch, then reset --hard onto origin tip. All 5 pre-staged B05 scaffolds verified present with correct dimensions post-reset.",
       "content_loss": "none"
     }
   ],
