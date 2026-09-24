@@ -2,7 +2,7 @@
   "ledger_type": "arena_source_receipts",
   "specification_version": "CG-V1.0.0",
   "created_utc": "2026-09-23T21:51:28+00:00",
-  "last_updated_utc": "2026-09-24T05:15:00+00:00",
+  "last_updated_utc": "2026-09-24T05:45:00+00:00",
   "authority": {
     "master_plan": "CIVIC_GODSTORM_MASTER_PLAN.md",
     "master_plan_head_commit": "5bd357e14d9b68776d50b1dee0829b7bd5ab939f",
@@ -4922,6 +4922,329 @@
         "remaining": 1
       },
       "reason": "Four once-forking bundles from one belly collar; radial count HELD this time (TB-06 per-panel discipline effective)."
+    },
+    "CG-S-BLD-ARCHIVE": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/buildings/cg_s_bld_archive.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "parent_dependency_revisions": "independent civic architecture module; style anchor B02 BLD-DWELLING r003 (approved-provisional, subject ignored)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-BLD-ARCHIVE/r001/cg_s_bld_archive.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "824f751952233be9a062ee1ba056e29b312a73897aa2ae28beca01901c49bac9",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "scaffold + B02 BLD-DWELLING r003 style anchor (subject ignored)",
+          "content_qa": {
+            "identity": "long low archive; thick storage walls (deep reveals at both doors); ONE clerestory strip high on the long side only; no other windows; plain heavy door; no towers/banners/people"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "AWAITING_APPROVAL",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-BLD-ARCHIVE",
+        "CG-R-CITY-RUINS"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      }
+    },
+    "CG-S-BLD-BARRACKS": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/buildings/cg_s_bld_barracks.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "parent_dependency_revisions": "independent civic architecture module; style anchor B02 BLD-DWELLING r003 (approved-provisional, subject ignored)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-BLD-BARRACKS/r001/cg_s_bld_barracks.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "c0d9bfdc50beafa35c0a0991ce9a396b18e94363074c05cc94fed848e65ffba9",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "scaffold + B02 BLD-DWELLING r003 style anchor (subject ignored)",
+          "content_qa": {
+            "identity": "long lodging block dominant + small enclosed drill court with clearly framed readable gate (posts + threshold); two-storey timber-framed block; no weapons/flags/people"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "AWAITING_APPROVAL",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-BLD-BARRACKS",
+        "CG-R-CITY-RUINS"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      }
+    },
+    "CG-S-BLD-CARAVAN-CANOPY": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/buildings/cg_s_bld_caravan_canopy.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "parent_dependency_revisions": "independent civic architecture module; style anchor B02 BLD-DWELLING r003 (approved-provisional, subject ignored)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-BLD-CARAVAN-CANOPY/r001/cg_s_bld_caravan_canopy.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "49c2e47699f0df52b4513e88d0559dca7831f37acfb05a92de802c69e26557f8",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "scaffold + B02 BLD-DWELLING r003 style anchor (subject ignored)",
+          "content_qa": {
+            "identity": "EXACTLY THREE curved textile-covered ribs under one continuous canvas roof; round removable poles in socket feet; fourth panel = correct compact lashed packed bundle; no wagon/animals/people",
+            "flags": "curtain doorway tiebacks are cloth, not extra frame"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "AWAITING_APPROVAL",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-BLD-CARAVAN-CANOPY",
+        "CG-R-CITY-RUINS"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      }
+    },
+    "CG-S-BLD-DEPOT": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/buildings/cg_s_bld_depot.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "parent_dependency_revisions": "independent civic architecture module; style anchor B02 BLD-DWELLING r003 (approved-provisional, subject ignored)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-BLD-DEPOT/r001/cg_s_bld_depot.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "78c19b619c9d74f61bbbb6cf2355fd73114f38e5be1bb831fc5f99247fa45c84",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "scaffold + B02 BLD-DWELLING r003 style anchor (subject ignored)",
+          "content_qa": {
+            "identity": "raised stone cargo platform on blocks + covered open-front store on back half + road-facing paved loading apron ramp; no cranes/carts/people"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "AWAITING_APPROVAL",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-BLD-DEPOT",
+        "CG-R-CITY-RUINS"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      }
+    },
+    "CG-S-BLD-DOCK": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/buildings/cg_s_bld_dock.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "parent_dependency_revisions": "independent civic architecture module; style anchor B02 BLD-DWELLING r003 (approved-provisional, subject ignored)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-BLD-DOCK/r001/cg_s_bld_dock.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "e8d898dbe002e437b8ddccdfe870dc98948c9c31c360b6b2706a85d1d2ab516b",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "scaffold + B02 BLD-DWELLING r003 style anchor (subject ignored)",
+          "content_qa": {
+            "identity": "stone quay + EXACTLY THREE timber pier fingers on piles + one low open cargo shelter on the quay; waterline genuinely met (horizontal water plane, piles and quay base submerged); no boats/people",
+            "flags": "water rendered as muted blue-gray plane consistent with batch palette"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "AWAITING_APPROVAL",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-BLD-DOCK",
+        "CG-R-CITY-RUINS"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      }
+    },
+    "CG-S-BLD-GRANARY": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/buildings/cg_s_bld_granary.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "parent_dependency_revisions": "independent civic architecture module; style anchor B02 BLD-DWELLING r003 (approved-provisional, subject ignored)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-BLD-GRANARY/r001/cg_s_bld_granary.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "25124265025e7ef077fb713acd453f88d3cc1b2ff9f131cfb461a6d27a4c4f80",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "scaffold + B02 BLD-DWELLING r003 style anchor (subject ignored)",
+          "content_qa": {
+            "identity": "EXACTLY THREE joined raised bins sharing walls, each on stout staddle blocks with ventilated under-gap, on ONE shared access deck with steps; per-bin hatch + top ventilation slots; no sacks/tools/people"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "AWAITING_APPROVAL",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-BLD-GRANARY",
+        "CG-R-CITY-RUINS"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      }
+    },
+    "CG-S-BLD-INFIRMARY": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/buildings/cg_s_bld_infirmary.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "parent_dependency_revisions": "independent civic architecture module; style anchor B02 BLD-DWELLING r003 (approved-provisional, subject ignored)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-BLD-INFIRMARY/r001/cg_s_bld_infirmary.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "1542af82cd376f1a89d936721795200cbd1958f5a53d1cb94027d1ca0bfb51e2",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "scaffold + B02 BLD-DWELLING r003 style anchor (subject ignored)",
+          "content_qa": {
+            "identity": "low courtyard treatment hall wrapping open central court; shaded porches with teal cloth awnings; ZERO religious emblems (no niches/altars/symbols/bells); no people/beds"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "AWAITING_APPROVAL",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-BLD-INFIRMARY",
+        "CG-R-CITY-RUINS"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      }
+    },
+    "CG-S-BLD-MARKET": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/buildings/cg_s_bld_market.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "parent_dependency_revisions": "independent civic architecture module; style anchor B02 BLD-DWELLING r003 (approved-provisional, subject ignored)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-BLD-MARKET/r001/cg_s_bld_market.png",
+          "native_dimensions": "1376x768",
+          "native_aspect_error_pct": 19.5,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "149ee85086c24774223f97b5f8e6e4d73953f93d316665c6a4f0a55ea0fc81b9",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "scaffold + B02 BLD-DWELLING r003 style anchor (subject ignored)",
+          "content_qa": {
+            "identity": "open-sided stall ring enclosing central cargo court; deep eaves court-facing; stone base ring; one wide entry gap; NO painted people, no goods/banners/animals",
+            "technical_flag": "TB-07 RECURRENCE (3rd observed): 1376x768 native landscape instead of square scaffold; quadrant logic intact"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "AWAITING_APPROVAL",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-BLD-MARKET",
+        "CG-R-CITY-RUINS"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      }
     }
   },
   "batch_checkpoints": {
@@ -5111,20 +5434,20 @@
       "mode": "PROVISIONAL - opened while B06 gate pends (B07 depends only on closed B02); module chunks within the 10-attempt turn budget",
       "counts": {
         "requested": 19,
-        "candidates_generated": 0,
-        "awaiting_approval_ids": 0,
+        "candidates_generated": 8,
+        "awaiting_approval_ids": 8,
         "approved_source": 0
       },
-      "plan": "19 independent IDs: 12 BLD + 4 INF + 3 MOT. Chunk 1 (this turn): 8 BLD alphabetical ARCHIVE..MARKET, style-anchored on B02 approved BLD-DWELLING r003 (subject ignored). Chunk 2: remaining 4 BLD + 4 INF. Chunk 3: 3 MOT + repair slack. Consolidated human gate at pass end.",
+      "plan": "Chunk 1 DONE (8 BLD conforming). Chunk 2 next turn: OBSERVATORY, SHRINE, TOWER, WORKSHOP, INF-BRIDGE, INF-CANAL, INF-MINE, INF-WALL. Chunk 3: MOT-CANOPY, MOT-REED, MOT-VAULT + repair slack. Consolidated gate at pass end.",
       "id_states": {
-        "CG-S-BLD-ARCHIVE": "NOT_STARTED",
-        "CG-S-BLD-BARRACKS": "NOT_STARTED",
-        "CG-S-BLD-CARAVAN-CANOPY": "NOT_STARTED",
-        "CG-S-BLD-DEPOT": "NOT_STARTED",
-        "CG-S-BLD-DOCK": "NOT_STARTED",
-        "CG-S-BLD-GRANARY": "NOT_STARTED",
-        "CG-S-BLD-INFIRMARY": "NOT_STARTED",
-        "CG-S-BLD-MARKET": "NOT_STARTED",
+        "CG-S-BLD-ARCHIVE": "CANDIDATE_AWAITING_APPROVAL (r001)",
+        "CG-S-BLD-BARRACKS": "CANDIDATE_AWAITING_APPROVAL (r001)",
+        "CG-S-BLD-CARAVAN-CANOPY": "CANDIDATE_AWAITING_APPROVAL (r001)",
+        "CG-S-BLD-DEPOT": "CANDIDATE_AWAITING_APPROVAL (r001)",
+        "CG-S-BLD-DOCK": "CANDIDATE_AWAITING_APPROVAL (r001)",
+        "CG-S-BLD-GRANARY": "CANDIDATE_AWAITING_APPROVAL (r001)",
+        "CG-S-BLD-INFIRMARY": "CANDIDATE_AWAITING_APPROVAL (r001)",
+        "CG-S-BLD-MARKET": "CANDIDATE_AWAITING_APPROVAL (r001; TB-07 canvas flag)",
         "CG-S-BLD-OBSERVATORY": "NOT_STARTED",
         "CG-S-BLD-SHRINE": "NOT_STARTED",
         "CG-S-BLD-TOWER": "NOT_STARTED",
@@ -5458,6 +5781,12 @@
       "incident": "GATE_QUESTION_SKIPPED_B06_CONSOLIDATED_2026_09_24",
       "recorded_utc": "2026-09-24T05:15:00+00:00",
       "observation": "Consolidated B06 gate ask_user (7 IDs) returned SKIPPED - no ruling. B06 remains OPEN with a complete audited pass (7/7 conforming claims independently verified). On explicit user 'go on': least-irreversible step = open B07 (its dependency B02 is CLOSED; no B06 module is a parent of any B07 ID; B00-blocked precedent) and begin its module pass. B06 gate to be re-presented at turn end.",
+      "content_loss": "none"
+    },
+    {
+      "incident": "B07_CHUNK1_RECORDED",
+      "recorded_utc": "2026-09-24T05:45:00+00:00",
+      "observation": "B07 opened (B06 gate skipped - no ruling; B07 depends only on closed B02; B00-blocked precedent). Chunk 1 = 8 of 19 IDs generated in one parallel burst: ARCHIVE, BARRACKS, CARAVAN-CANOPY, DEPOT, DOCK, GRANARY, INFIRMARY, MARKET - ALL 8 CONFORM on registry identity anchors (countable anchors verified: 3 canopy ribs, 3 dock piers, 3 granary bins, single clerestory strip). MARKET carries TB-07 canvas recurrence (3rd observed). PROCESS NOTE: first ledger-write attempt failed on a filename derivation bug (hyphens not mapped to underscores) and was committed without receipts (50b3f7a); this commit supplies the complete receipts, corrected against the plan's canonical paths (assets/source/buildings/*). 8 of 10 turn attempts used; chunk 2 (4 BLD + 4 INF) and chunk 3 (3 MOT) next turns. B06 gate + B07 interim report go to the user together.",
       "content_loss": "none"
     }
   ],
