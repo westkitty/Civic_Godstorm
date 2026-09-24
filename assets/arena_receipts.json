@@ -2,7 +2,7 @@
   "ledger_type": "arena_source_receipts",
   "specification_version": "CG-V1.0.0",
   "created_utc": "2026-09-23T21:51:28+00:00",
-  "last_updated_utc": "2026-09-24T00:53:52+00:00",
+  "last_updated_utc": "2026-09-24T01:55:00+00:00",
   "authority": {
     "master_plan": "CIVIC_GODSTORM_MASTER_PLAN.md",
     "master_plan_head_commit": "5bd357e14d9b68776d50b1dee0829b7bd5ab939f",
@@ -3766,7 +3766,7 @@
       "specification_version": "CG-V1.0.0",
       "canonical_path": "assets/source/god/cg_s_god_torso_s.png",
       "canonical_state": "ABSENT (correct - no approved source)",
-      "id_status": "REJECTED_THIS_PASS",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
       "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
       "candidates": [
         {
@@ -3785,10 +3785,32 @@
             "violations": "no ventral keel (plain round tube belly); no front-to-rear taper (constant-radius bend); cut ends left open/hollow instead of closed ribbon"
           },
           "status": "REJECTED"
+        },
+        {
+          "revision": "r002",
+          "path": "assets/candidates/CG-S-GOD-TORSO-S/r002/cg_s_god_torso_s.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "5f0331ebe3f227999cd31f39b7cd9d06647a755f7dd79e5ab5c2b0d965786e1e",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "FRESH GENERATION r002 (TB-03: NO defective r001 anchor; blank 2x2 template; corrective geometry first: keel plate, taller-front/lower-wider-rear taper, closed cut ends; TORSO-Q r003 style anchor, subject ignored)",
+          "content_qa": {
+            "keel": "broad flattened ventral keel plate present in all four views (side keel line, plan keel edges, front/rear keel cross-sections)",
+            "taper": "side profile tallest at front lowering to rear; plan narrower at front widening to rear - explicit axial taper present",
+            "ends": "both cut ends CLOSED as smooth sealed domes; no open hollow tube ends, no openings",
+            "family": "teal-green body consistent with B04 S-family sibling modules (LOCO-FIN, TAIL-PADDLE)",
+            "layout": "2x2: left-lateral / dorsal / front / rear; scaffold grid held; minor: front & rear elevations read near-identical (closed dome + flaring keel) - acceptable, both elevations required by sheet convention",
+            "style": "Q style anchor matched (sculpted matte, charcoal/pale-stone/ochre accents) while subject fully replaced - TB-03 strategy validated 4th time"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
         }
       ],
       "approval": {
-        "decision": "REJECTED_THIS_PASS",
+        "decision": "AWAITING_APPROVAL",
         "approver": "human (pending)",
         "date": null
       },
@@ -3799,17 +3821,16 @@
       ],
       "repair_budget": {
         "initial_candidates_used": 1,
-        "repair_candidates_used": 0,
-        "remaining": 1
+        "repair_candidates_used": 1,
+        "remaining": 0
       },
-      "reason": "Keel, taper and closed-ribbon requirements are ribbon-identity anchors; all three absent. Repair strategy recorded (fresh generation, corrective geometry front-loaded, no defective anchor); repair candidate NOT yet produced - internal MAX_TOKENS tool error consumed no candidate; turn generation cap (10) reached before retry.",
-      "tool_note": "Repair r002 pending next turn: keel plate + explicit taper + closed cut ends as first instructions."
+      "reason": "r001 REJECTED (keel/taper/closure anchors absent). r002 fresh-generation repair CONFORMS on all three anchors; awaiting consolidated B04 human gate. r001 preserved as evidence."
     },
     "CG-S-GOD-TORSO-M": {
       "specification_version": "CG-V1.0.0",
       "canonical_path": "assets/source/god/cg_s_god_torso_m.png",
       "canonical_state": "ABSENT (correct - no approved source)",
-      "id_status": "REJECTED_THIS_PASS",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
       "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
       "candidates": [
         {
@@ -3828,10 +3849,31 @@
             "violations": "two lateral fin roots rendered as open holes (flush seam rings required); central dorsal ridge missing; pointed rear protrusion (invented tail nub)"
           },
           "status": "REJECTED"
+        },
+        {
+          "revision": "r002",
+          "path": "assets/candidates/CG-S-GOD-TORSO-M/r002/cg_s_god_torso_m.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "1057e5c107cae3e2505d7d6f09f79f568fcc2df6ea037d51322520087a3bbe63",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "FRESH GENERATION r002 (TB-03: NO defective r001 anchor; blank 2x2 template; corrective geometry first: centerline dorsal ridge, two flush root seam RINGS never holes, closed rear with no protrusion; TORSO-Q r003 style anchor, subject ignored)",
+          "content_qa": {
+            "ridge": "continuous raised pale crest along dorsal centerline in lateral, dorsal, front and rear views",
+            "rings": "two lateral fin-root junctions rendered as raised double-cuff seam rings with flat sealed center disks (skin continuous across center) - verified at 3x zoom vs r001 dark-void holes; NOT holes",
+            "rear": "rear elevation fully closed, smoothly rounded, NO protrusion (small pale triangle = ridge cross-section end-on, not a nub)",
+            "palette_note": "core charcoal/pale-stone/ochre tokens match Q style-anchor presentation; distinct from S-family teal of other B04 siblings - M/TORSO is a different family; noted as minor observation for gate, non-blocking",
+            "layout": "2x2: left-lateral / dorsal / front / rear; scaffold grid held"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
         }
       ],
       "approval": {
-        "decision": "REJECTED_THIS_PASS",
+        "decision": "AWAITING_APPROVAL",
         "approver": "human (pending)",
         "date": null
       },
@@ -3842,10 +3884,10 @@
       ],
       "repair_budget": {
         "initial_candidates_used": 1,
-        "repair_candidates_used": 0,
-        "remaining": 1
+        "repair_candidates_used": 1,
+        "remaining": 0
       },
-      "reason": "Root treatment, ridge and rear closure are mantle-identity anchors. Repair strategy recorded (fresh generation, flush-ring/ridge/no-protrusion rules front-loaded); repair candidate NOT yet produced - turn generation cap (10) reached.",
+      "reason": "r001 REJECTED (holes-not-rings / no ridge / rear nub). r002 fresh-generation repair CONFORMS on all three anchors (ring treatment verified at zoom against r001 defect); awaiting consolidated B04 human gate. r001 preserved as evidence.",
       "tool_note": "Repair r002 pending next turn: ridge + flush rings + closed rear as first instructions."
     },
     "CG-S-GOD-LOCO-UNDULATOR": {
@@ -4100,6 +4142,119 @@
         "repair_candidates_used": 0,
         "remaining": 1
       }
+    },
+    "CG-S-GOD-FORM-S": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/god/cg_s_god_form_s.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "parent_dependency_revisions": "assembles registered S modules (all currently APPROVED_PROVISIONAL candidates or conforming-awaiting-gate): TORSO-S r002, LOCO-FIN r001, FEED-FILTER r001, SENSE-EYE-RING r002 (B01), TAIL-PADDLE r001, ORGAN-GILLS r001 - used as declared assembly sources per FORM-H precedent, not as style inspiration",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-GOD-FORM-S/r001/cg_s_god_form_s.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "95c678d779d09415c7f654fec33e6188f3bfcf62d9f8fd60e0f208f072cf52ac",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "scaffold (template_2x2.png) + six S-module candidate sheets as declared assembly sources (FORM-H precedent)",
+          "content_qa": {
+            "modules": "exactly the six registered modules, no invented anatomy, no extra limbs: keel ribbon body, one three-ray pectoral fin per side with continuous root, row of three rippled gill curtains per rear flank, single broad rounded paddle (split-free in lateral), brow band of four recessed closed-lid eyes wrapping the front dome, ventral filter funnel with bilateral comb folds opening downward",
+            "closure": "front and rear domes closed; no open ends",
+            "views": "2x2: 3/4 hero / left-lateral (keel+fin+gill row+paddle aligned) / front elevation / rear elevation",
+            "flags_nonblocking": [
+              "axial length compression: hero/front/rear views read compact; full ribbon proportion legible in lateral panel (length carries in the 130-U dimension note)",
+              "pectoral fins angle steeply downward in front/rear elevations - leg-like silhouette in those two views while plan/lateral read unmistakably as fin blades"
+            ],
+            "no_text": "none anywhere"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "AWAITING_APPROVAL",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-GOD-FORM-S",
+        "CG-R-GOD-ASSEMBLY",
+        "CG-R-GOD-LOCOMOTION"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      },
+      "reason": "Inventory-complete assembly of the six registered S modules with correct junction treatment; two non-blocking flags recorded for gate review. Parent modules themselves await the same consolidated gate (parent-first order preserved: FORM-S generated only after all six module candidates existed)."
+    },
+    "CG-S-GOD-LIFE-S": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/god/cg_s_god_life_s.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "REJECTED_THIS_PASS",
+      "parent_dependency_revisions": "CG-S-GOD-FORM-S r001 (conforming-awaiting-gate) used as declared content anchor",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-GOD-LIFE-S/r001/cg_s_god_life_s.png",
+          "native_dimensions": "1264x848",
+          "native_aspect_error_pct": 0.63,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "51b4e8ca962cf6d01a4c02fad0d09f1edd0c03535266358d95942ae96b73734b",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "scaffold (template_3x2.png) + FORM-S r001 content anchor (TB-04 practice: NO-LABELS first)",
+          "content_qa": {
+            "violations": "3x2 scaffold NOT held - rendered 4-row x 2-col grid with 8 slots; stage order broken (standing adult duplicated ~4x instead of six states once each); ossuary = generic tall-domed vertebrate skull (LIFE-H r002 defect class)",
+            "positives_preserved": "injury panel exactly two marks (darkened fin root + pale flank scar); corpse collapse correct; no text anywhere; individual continuity held"
+          },
+          "status": "REJECTED"
+        },
+        {
+          "revision": "r002",
+          "path": "assets/candidates/CG-S-GOD-LIFE-S/r002/cg_s_god_life_s.png",
+          "native_dimensions": "1264x848",
+          "native_aspect_error_pct": 0.63,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "aa4d2057378885bee46c5a2616ebb846747ce5ed2c14c308485137c8ad6cbe2a",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "FRESH targeted repair r002 (grid + state-count + ossuary geometry as FIRST instructions; explicit no-third-row and no-duplicate-state rules; same blank 3x2 scaffold + FORM-S r001 anchor)",
+          "content_qa": {
+            "violations": "layout drifted again - rendered 3 rows (3+2+2 = 7 slots) with the PRIME state duplicated as a 7th panel; six-states-once rule broken",
+            "fixed_from_r001": "ossuary now LOW long blunt wedge skull with rib line and paddle bone (tall dome eliminated); injury pair exact; corpse correct; no text",
+            "root_cause_hypothesis": "square 2x2 FORM-S sheet as content anchor biases row multiplication against the wide scaffold even when the anchor itself is conforming (extends TB-03: anchor composition dominates over scaffold)"
+          },
+          "status": "REJECTED"
+        }
+      ],
+      "approval": {
+        "decision": "REJECTED_THIS_PASS",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-GOD-LIFE-S",
+        "CG-R-GOD-AGE",
+        "CG-R-GOD-DAMAGE",
+        "CG-R-GOD-CORPSE"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 1,
+        "remaining": 0
+      },
+      "reason": "Both candidates REJECTED: scaffold layout drift (7-8 panels) + duplicated state (r002), plus generic tall-domed ossuary skull (r001 only). Per-ID 1+1 pass budget exhausted; a retry requires an explicit fresh-pass authorization (B02/B03 full_pass precedent).",
+      "retry_strategy_if_authorized": "Pass-2 r003: drop the full-sheet content anchor; crop FORM-S top-right LATERAL panel to a single side-profile anchor (removes square-grid composition bias); blank 3x2 scaffold; first instructions = exactly six pre-counted cells / no empty cell / no added cell; ossuary geometry rules repeated (low blunt wedge skull, paddle bone); NO-LABELS global rule."
     }
   },
   "batch_checkpoints": {
@@ -4210,29 +4365,30 @@
     "B04": {
       "opened_utc": "2026-09-24T00:48:24+00:00",
       "gate": "Check coherent water body/fin roots and narrow-channel silhouette",
-      "mode": "PROVISIONAL - not yet started; modules precede whole-form/lifecycle candidates",
+      "mode": "PROVISIONAL - pass complete (all 10 IDs have pass-budget candidates); consolidated human gate pending",
       "counts": {
         "requested": 10,
-        "candidates_generated": 8,
-        "rejected_candidates": 2,
-        "rejected_ids_this_pass": 2,
-        "awaiting_approval_ids": 6,
-        "approved_source": 0,
-        "children_not_started": 2
+        "candidates_generated_total": 13,
+        "generation_attempts_this_turn": "5 of 10 (0 tool errors)",
+        "rejected_candidates": 4,
+        "rejected_ids_budget_exhausted": 1,
+        "awaiting_approval_ids": 9,
+        "approved_source": 0
       },
       "plan": "8 modules this pass (TORSO-S, TORSO-M, LOCO-UNDULATOR, LOCO-FIN, LOCO-WEBBED, FEED-FILTER, TAIL-PADDLE, ORGAN-GILLS), then FORM-S and LIFE-S parent-first if all modules conform; consolidated human gate at pass end",
       "id_states": {
-        "CG-S-GOD-TORSO-S": "REJECTED this pass (keel/taper/closure anchors); repair r002 PENDING next turn (turn cap)",
-        "CG-S-GOD-TORSO-M": "REJECTED this pass (holes/ridge/nub anchors); repair r002 PENDING next turn (turn cap)",
-        "CG-S-GOD-LOCO-UNDULATOR": "CANDIDATE_AWAITING_APPROVAL",
-        "CG-S-GOD-LOCO-FIN": "CANDIDATE_AWAITING_APPROVAL",
-        "CG-S-GOD-LOCO-WEBBED": "CANDIDATE_AWAITING_APPROVAL",
-        "CG-S-GOD-FEED-FILTER": "CANDIDATE_AWAITING_APPROVAL",
-        "CG-S-GOD-TAIL-PADDLE": "CANDIDATE_AWAITING_APPROVAL",
-        "CG-S-GOD-ORGAN-GILLS": "CANDIDATE_AWAITING_APPROVAL",
-        "CG-S-GOD-FORM-S": "NOT_STARTED (parents incomplete)",
-        "CG-S-GOD-LIFE-S": "NOT_STARTED (parents incomplete)"
-      }
+        "CG-S-GOD-TORSO-S": "r001 REJECTED (preserved) -> r002 fresh-generation repair CONFORMS; AWAITING_APPROVAL",
+        "CG-S-GOD-TORSO-M": "r001 REJECTED (preserved) -> r002 fresh-generation repair CONFORMS (ring treatment zoom-verified); AWAITING_APPROVAL",
+        "CG-S-GOD-LOCO-UNDULATOR": "CANDIDATE_AWAITING_APPROVAL (r001)",
+        "CG-S-GOD-LOCO-FIN": "CANDIDATE_AWAITING_APPROVAL (r001)",
+        "CG-S-GOD-LOCO-WEBBED": "CANDIDATE_AWAITING_APPROVAL (r001)",
+        "CG-S-GOD-FEED-FILTER": "CANDIDATE_AWAITING_APPROVAL (r001)",
+        "CG-S-GOD-TAIL-PADDLE": "CANDIDATE_AWAITING_APPROVAL (r001)",
+        "CG-S-GOD-ORGAN-GILLS": "CANDIDATE_AWAITING_APPROVAL (r001)",
+        "CG-S-GOD-FORM-S": "CANDIDATE_AWAITING_APPROVAL (r001; flags: axial compression in hero/front/rear, downward pectoral angle in elevations - non-blocking)",
+        "CG-S-GOD-LIFE-S": "REJECTED this pass (r001 + r002); 1+1 budget exhausted; retry requires explicit fresh-pass authorization; single-view-anchor strategy recorded"
+      },
+      "gate_readiness": "CONSOLIDATED B04 GATE READY: 9 conforming candidates across 9 IDs + 1 ID rejected-exhausted (LIFE-S) with recorded retry strategy"
     }
   },
   "capability_probe": {
@@ -4454,6 +4610,12 @@
       "recorded_utc": "2026-09-24T00:48:24+00:00",
       "observation": "Local branch found re-rooted at docs commit 5bd357e with preserved working tree; remote intact at 274bfd2 (last authorized push). Recovery: reset --hard onto remote tip (no force, remote is own push), re-applied B04 open note. Scaffolds for B04 verified present post-reset.",
       "content_loss": "none"
+    },
+    {
+      "incident": "B04_TURN3_CONTINUATION_RECORDED",
+      "recorded_utc": "2026-09-24T01:55:00+00:00",
+      "observation": "Pre-flight: ls-remote verified remote tip 08b595d == local (stale tracking ref exposed, see TB-05). FORM-S/LIFE-S pre-staged scaffold dirs found absent - re-created procedurally. Produced: TORSO-S r002 + TORSO-M r002 fresh-generation repairs (both conform); FORM-S r001 (conforming, 2 non-blocking flags); LIFE-S r001+r002 (both rejected - layout drift + state duplication; r001 also generic tall-domed ossuary). Pass budget for LIFE-S exhausted. 5/10 generation attempts used this turn, zero tool errors.",
+      "content_loss": "none"
     }
   ],
   "tool_behavior_findings": [
@@ -4467,6 +4629,12 @@
       "finding_id": "TB-04_LABEL_LEAKAGE",
       "date": "2026-09-23",
       "rule": "Per-cell capitalized stage names in a multi-panel prompt can leak into the image as rendered text labels. Mitigation: state a global no-words rule and describe stages positionally (top-left cell etc.) without label-like tokens."
+    },
+    {
+      "finding_id": "TB-05_STALE_TRACKING_REF_AND_CHECKPOINT_DRIFT",
+      "date": "2026-09-24",
+      "rule": "(a) `git fetch` does not update refs/remotes/origin/arena/* because the sandbox clone's fetch refspec is limited to refs/heads/main - a stale tracking ref can falsely indicate a remote rollback. ALWAYS verify remote state with `git ls-remote origin` before any push/reset/recovery decision. (b) Pre-flight session context can drift from workspace reality (B04 turn-3 context claimed pre-staged FORM-S/LIFE-S scaffold dirs that were absent): re-verify declared pre-staged files with `identify` before consuming them, and re-create procedurally if missing (scaffolds are procedural aids, zero content impact).",
+      "evidence": "B04 turn 3: origin/arena ref read 274bfd2 while ls-remote confirmed remote tip 08b595d (no rollback, no parallel push); FORM-S/LIFE-S r001 scaffold dirs absent despite pre-flight claim - re-created from recorded convert commands."
     }
   ]
 }
