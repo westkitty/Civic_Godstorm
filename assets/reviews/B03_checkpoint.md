@@ -15,3 +15,9 @@
 | `CG-S-GOD-LIFE-H` | Not started | Child of FORM-H — correctly blocked |
 
 Counts: 8 candidates, 2 rejected candidates, 1 ID rejected, 6 awaiting approval, 0 approved. All hashes in `assets/arena_receipts.json`.
+
+## Pass 3 + children results (2026-09-23)
+
+- `CG-S-GOD-TORSO-H` r003 (fresh, TB-03, no defective anchor): **ring count FIXED** — exactly three pairs; accepted provisionally (technical) per your pre-authorization
+- `CG-S-GOD-FORM-H`: r001 strong H identity (six digger limbs, crusher, shell+vents; not a generic quadruped) with rear-panel 3/4 drift; r002 fixed it → **r002 conforming, awaiting gate**. (Initial plan-orientation flag on r001 was a verifier misread — corrected in the ledger.)
+- `CG-S-GOD-LIFE-H`: r001 six-cell layout held but ossuary read as a generic mammal skeleton; r002 (fresh regen) leaked **rendered text labels** into every panel (new finding TB-04) and kept a generic skull → **rejected this pass**, budget exhausted. Retry strategy recorded: no label-like tokens + explicit global no-words rule.

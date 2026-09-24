@@ -2,7 +2,7 @@
   "ledger_type": "arena_source_receipts",
   "specification_version": "CG-V1.0.0",
   "created_utc": "2026-09-23T21:51:28+00:00",
-  "last_updated_utc": "2026-09-24T00:13:20+00:00",
+  "last_updated_utc": "2026-09-24T00:24:06+00:00",
   "authority": {
     "master_plan": "CIVIC_GODSTORM_MASTER_PLAN.md",
     "master_plan_head_commit": "5bd357e14d9b68776d50b1dee0829b7bd5ab939f",
@@ -3260,7 +3260,7 @@
       "specification_version": "CG-V1.0.0",
       "canonical_path": "assets/source/god/cg_s_god_torso_h.png",
       "canonical_state": "ABSENT (correct - no approved source)",
-      "id_status": "REJECTED_THIS_PASS",
+      "id_status": "ACCEPTED_PROVISIONAL_PASS3_TECHNICAL",
       "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
       "candidates": [
         {
@@ -3297,12 +3297,32 @@
             "count_violation": "PERSISTS - same four-ring flank reproduced under anchored count-correction instruction (consistent with TB-03: anchors dominate content)"
           },
           "status": "REJECTED"
+        },
+        {
+          "revision": "r003",
+          "pass": 3,
+          "path": "assets/candidates/CG-S-GOD-TORSO-H/r003/cg_s_god_torso_h.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "11eac2eca2e68b66393785bdc48626c0b9cdd015727a911c58ddc2ac9744889c",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "FRESH generation (TB-03): no r001/r002 anchor; scaffold + TORSO-Q r003 family style anchor; count rule first instruction",
+          "content_qa": {
+            "ring_count": "FIXED - exactly three flush rings per flank (three pairs total)",
+            "design": "long low segmented tube, paired bulges, flattened belly, no foreign anatomy",
+            "style": "batch-consistent sculpted matte"
+          },
+          "status": "ACCEPTED_PROVISIONAL_PASS3_TECHNICAL"
         }
       ],
       "approval": {
-        "decision": "REJECTED_THIS_PASS - new pass requires human authorization",
-        "approver": "human (pending)",
-        "date": null
+        "decision": "ACCEPTED PROVISIONALLY (pass 3, r003) per human pre-authorization - technical conformance verified (exact three-pair ring count); final H-family acceptance at B03 close",
+        "approver": "human (pre-authorized)/arena verification",
+        "date": "2026-09-23"
       },
       "downstream_targets": [
         "CG-D-GOD-TORSO-H",
@@ -3315,13 +3335,20 @@
         "remaining": 0
       },
       "reason": "Junction-ring count (3 pairs) is an identity anchor; anchored edit reproduced the r001 count. Budget exhausted this pass. Children CG-S-GOD-FORM-H / CG-S-GOD-LIFE-H correctly NOT generated.",
-      "tool_note": "Retry strategy (if authorized): fresh generation with NO r001 anchor - scaffold + explicit six-ring geometry text only, same as TB-03."
+      "tool_note": "Retry strategy (if authorized): fresh generation with NO r001 anchor - scaffold + explicit six-ring geometry text only, same as TB-03.",
+      "pass_3": {
+        "opened_utc": "2026-09-24T00:17:39+00:00",
+        "strategy": "FRESH generation: no r001/r002 anchor; blank scaffold + TORSO-Q r003 family-continuity style anchor; six-ring count as first instruction",
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0
+      },
+      "provisional_reference_revision": "r003"
     },
     "CG-S-GOD-LOCO-DIGGER": {
       "specification_version": "CG-V1.0.0",
       "canonical_path": "assets/source/god/cg_s_god_loco_digger.png",
       "canonical_state": "ABSENT (correct - no approved source)",
-      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
       "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
       "candidates": [
         {
@@ -3344,9 +3371,10 @@
         }
       ],
       "approval": {
-        "decision": "AWAITING_APPROVAL",
-        "approver": "human (pending)",
-        "date": null
+        "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+        "approver": "human (repository owner)",
+        "date": "2026-09-23",
+        "scope": "B03 H-grammar evidence; anchors FORM-H assembly"
       },
       "downstream_targets": [
         "CG-D-GOD-LOCO-DIGGER",
@@ -3363,7 +3391,7 @@
       "specification_version": "CG-V1.0.0",
       "canonical_path": "assets/source/god/cg_s_god_feed_mineral.png",
       "canonical_state": "ABSENT (correct - no approved source)",
-      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
       "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
       "candidates": [
         {
@@ -3386,9 +3414,10 @@
         }
       ],
       "approval": {
-        "decision": "AWAITING_APPROVAL",
-        "approver": "human (pending)",
-        "date": null
+        "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+        "approver": "human (repository owner)",
+        "date": "2026-09-23",
+        "scope": "B03 H-grammar evidence; anchors FORM-H assembly"
       },
       "downstream_targets": [
         "CG-D-GOD-FEED-MINERAL",
@@ -3405,7 +3434,7 @@
       "specification_version": "CG-V1.0.0",
       "canonical_path": "assets/source/god/cg_s_god_sense_vibration_rosette.png",
       "canonical_state": "ABSENT (correct - no approved source)",
-      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
       "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
       "candidates": [
         {
@@ -3428,9 +3457,10 @@
         }
       ],
       "approval": {
-        "decision": "AWAITING_APPROVAL",
-        "approver": "human (pending)",
-        "date": null
+        "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+        "approver": "human (repository owner)",
+        "date": "2026-09-23",
+        "scope": "B03 H-grammar evidence; anchors FORM-H assembly"
       },
       "downstream_targets": [
         "CG-D-GOD-SENSE-VIBRATION-ROSETTE",
@@ -3447,7 +3477,7 @@
       "specification_version": "CG-V1.0.0",
       "canonical_path": "assets/source/god/cg_s_god_tail_wedge.png",
       "canonical_state": "ABSENT (correct - no approved source)",
-      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
       "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
       "candidates": [
         {
@@ -3470,9 +3500,10 @@
         }
       ],
       "approval": {
-        "decision": "AWAITING_APPROVAL",
-        "approver": "human (pending)",
-        "date": null
+        "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+        "approver": "human (repository owner)",
+        "date": "2026-09-23",
+        "scope": "B03 H-grammar evidence; anchors FORM-H assembly"
       },
       "downstream_targets": [
         "CG-D-GOD-TAIL-WEDGE",
@@ -3489,7 +3520,7 @@
       "specification_version": "CG-V1.0.0",
       "canonical_path": "assets/source/god/cg_s_god_armor_shell.png",
       "canonical_state": "ABSENT (correct - no approved source)",
-      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
       "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
       "candidates": [
         {
@@ -3512,9 +3543,10 @@
         }
       ],
       "approval": {
-        "decision": "AWAITING_APPROVAL",
-        "approver": "human (pending)",
-        "date": null
+        "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+        "approver": "human (repository owner)",
+        "date": "2026-09-23",
+        "scope": "B03 H-grammar evidence; anchors FORM-H assembly"
       },
       "downstream_targets": [
         "CG-D-GOD-ARMOR-SHELL",
@@ -3531,7 +3563,7 @@
       "specification_version": "CG-V1.0.0",
       "canonical_path": "assets/source/god/cg_s_god_organ_thermal_vent.png",
       "canonical_state": "ABSENT (correct - no approved source)",
-      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
       "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
       "candidates": [
         {
@@ -3554,9 +3586,10 @@
         }
       ],
       "approval": {
-        "decision": "AWAITING_APPROVAL",
-        "approver": "human (pending)",
-        "date": null
+        "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+        "approver": "human (repository owner)",
+        "date": "2026-09-23",
+        "scope": "B03 H-grammar evidence; anchors FORM-H assembly"
       },
       "downstream_targets": [
         "CG-D-GOD-ORGAN-THERMAL-VENT",
@@ -3566,6 +3599,136 @@
       "repair_budget": {
         "initial_candidates_used": 1,
         "repair_candidates_used": 0,
+        "remaining": 0
+      }
+    },
+    "CG-S-GOD-FORM-H": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/god/cg_s_god_form_h.png",
+      "canonical_state": "ABSENT (correct)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "parent_dependency_revisions": {
+        "CG-S-GOD-TORSO-H": "r003 (accepted provisional pass 3)",
+        "CG-S-GOD-LOCO-DIGGER": "r001 (provisional ref)",
+        "CG-S-GOD-FEED-MINERAL": "r001 (provisional ref)",
+        "CG-S-GOD-SENSE-VIBRATION-ROSETTE": "r001 (provisional ref)",
+        "CG-S-GOD-TAIL-WEDGE": "r001 (provisional ref)",
+        "CG-S-GOD-ARMOR-SHELL": "r001 (provisional ref)",
+        "CG-S-GOD-ORGAN-THERMAL-VENT": "r001 (provisional ref)"
+      },
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-GOD-FORM-H/r001/cg_s_god_form_h.png",
+          "native_dimensions": "1024x1024",
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "6272e3b8fe2d68f3ac492a8d9133eac51a7e096d8635b44f31c657281bc34d95",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "assembled from 7 accepted/provisional H references",
+          "content_qa": {
+            "identity": "strong H identity - six digger limbs, crusher head, wedge tail, shell+vents; not a generic quadruped",
+            "defects": "rear panel 3/4 drift; initial verifier flag on plan orientation was a MISREAD (plan already head-top) - corrected in record"
+          },
+          "status": "REJECTED"
+        },
+        {
+          "revision": "r002",
+          "path": "assets/candidates/CG-S-GOD-FORM-H/r002/cg_s_god_form_h.png",
+          "native_dimensions": "1024x1024",
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "740ff3113182db570f2c350bf316aa421b684c8bd06adc0e96ec11877d687e09",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "r001 (targeted rear-elevation fix)",
+          "content_qa": {
+            "rear": "FIXED - perfectly flat straight-on rear elevation",
+            "plan": "verified already head-top (r001 flag was verifier misread - rotation instruction moot, model correctly unchanged)",
+            "modules": "exactly seven registered modules; no invented anatomy",
+            "worst_view": "clean"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "AWAITING_APPROVAL (r002)",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-S-GOD-LIFE-H",
+        "CG-D-GOD-FORM-H"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 1,
+        "remaining": 0
+      }
+    },
+    "CG-S-GOD-LIFE-H": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/god/cg_s_god_life_h.png",
+      "canonical_state": "ABSENT (correct)",
+      "id_status": "REJECTED_THIS_PASS",
+      "parent_dependency_revisions": {
+        "CG-S-GOD-FORM-H": "r002 (candidate awaiting approval)"
+      },
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-GOD-LIFE-H/r001/cg_s_god_life_h.png",
+          "native_dimensions": "1264x848",
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "b639a24be146d3aec43d6a070ddfa8018c57a66d924c1cad1ee66ead8bd64de5",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "template scaffold from start (recorded r001/template_3x2.png)",
+          "parent_revision": "assembled from FORM-H r002",
+          "content_qa": {
+            "layout": "six cells first-try (scaffold)",
+            "injury": "legal pair (middle-left limb + rear scar)",
+            "ossuary_violation": "generic mammal skull with sockets and quadruped limb reading"
+          },
+          "status": "REJECTED"
+        },
+        {
+          "revision": "r002",
+          "path": "assets/candidates/CG-S-GOD-LIFE-H/r002/cg_s_god_life_h.png",
+          "native_dimensions": "1376x768",
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "2a3d0610ce7b320861d8d5c0e77b1b15c3f694985262773eb81940129558e45e",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none",
+          "parent_revision": "fresh regeneration (sharpened skeleton identity text)",
+          "content_qa": {
+            "text_violation": "model baked stage LABELS into every panel (JUVENILE/PRIME/...) - hard no-text lock violation",
+            "ossuary": "improved three-limb-per-side reading but skull still not the blunt eyeless crusher; canvas also 16:9"
+          },
+          "status": "REJECTED"
+        }
+      ],
+      "reason": "r002 introduced generated text labels (hard lock) and retained a generic skull reading; budget exhausted. New tool finding TB-04: capitalized per-cell stage names in prompts can leak as rendered labels - retry prompts must forbid words explicitly and avoid label-like tokens.",
+      "approval": {
+        "decision": "REJECTED_THIS_PASS - new pass requires human authorization",
+        "approver": "pending",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-GOD-LIFE-H",
+        "CG-R-GOD-AGE",
+        "CG-R-GOD-DAMAGE",
+        "CG-R-GOD-CORPSE"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 1,
         "remaining": 0
       }
     }
@@ -3653,24 +3816,25 @@
       "mode": "PROVISIONAL - candidates for gate review; no canonical promotion",
       "counts": {
         "requested": 9,
-        "candidates_generated": 8,
-        "rejected_candidates": 2,
-        "rejected_ids_this_pass": 1,
-        "awaiting_approval_ids": 6,
-        "approved_source": 0,
-        "blocked_children": 2
+        "candidates_generated": 11,
+        "rejected_candidates": 5,
+        "awaiting_approval_ids": 1,
+        "provisionally_approved_ids": 6,
+        "accepted_provisional_technical": 1,
+        "rejected_ids_this_pass_standing": 1,
+        "approved_source": 0
       },
       "plan": "6 independent H modules this turn (TORSO-H, LOCO-DIGGER, FEED-MINERAL, SENSE-VIBRATION-ROSETTE, TAIL-WEDGE, ARMOR-SHELL); ORGAN-THERMAL-VENT + FORM-H + LIFE-H next turn parent-first (turn generation budget)",
       "id_states": {
-        "CG-S-GOD-TORSO-H": "REJECTED this pass (ring-count anchor; retry strategy recorded); FORM-H/LIFE-H blocked",
-        "CG-S-GOD-LOCO-DIGGER": "CANDIDATE_AWAITING_APPROVAL",
-        "CG-S-GOD-FEED-MINERAL": "CANDIDATE_AWAITING_APPROVAL",
-        "CG-S-GOD-SENSE-VIBRATION-ROSETTE": "CANDIDATE_AWAITING_APPROVAL",
-        "CG-S-GOD-TAIL-WEDGE": "CANDIDATE_AWAITING_APPROVAL",
-        "CG-S-GOD-ARMOR-SHELL": "CANDIDATE_AWAITING_APPROVAL",
-        "CG-S-GOD-ORGAN-THERMAL-VENT": "CANDIDATE_AWAITING_APPROVAL",
-        "CG-S-GOD-FORM-H": "NOT_STARTED (child of rejected torso)",
-        "CG-S-GOD-LIFE-H": "NOT_STARTED (child of form)"
+        "CG-S-GOD-TORSO-H": "ACCEPTED_PROVISIONAL_PASS3_TECHNICAL (r003; ring count fixed by fresh-generation strategy)",
+        "CG-S-GOD-LOCO-DIGGER": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+        "CG-S-GOD-FEED-MINERAL": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+        "CG-S-GOD-SENSE-VIBRATION-ROSETTE": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+        "CG-S-GOD-TAIL-WEDGE": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+        "CG-S-GOD-ARMOR-SHELL": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+        "CG-S-GOD-ORGAN-THERMAL-VENT": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+        "CG-S-GOD-FORM-H": "CANDIDATE_AWAITING_APPROVAL (r002)",
+        "CG-S-GOD-LIFE-H": "REJECTED this pass (TB-04 labels + skull); retry strategy recorded"
       }
     }
   },
@@ -3819,6 +3983,18 @@
         ]
       },
       "recorded_utc": "2026-09-24T00:08:02+00:00"
+    },
+    {
+      "id": "B03_GATE_RULING",
+      "ruling": {
+        "date": "2026-09-23",
+        "authority": "human (repository owner) via Arena gate answer",
+        "decision": "Six H-modules (LOCO-DIGGER r001, FEED-MINERAL r001, SENSE-VIBRATION-ROSETTE r001, TAIL-WEDGE r001, ARMOR-SHELL r001, ORGAN-THERMAL-VENT r001) approved as provisional batch-local references; ONE fresh TORSO-H pass (1+1, TB-03 strategy: no defective anchor) authorized; FORM-H and LIFE-H pre-authorized to proceed parent-first if the fresh torso lands technically conforming (final acceptance at B03 close).",
+        "scope_limits": [
+          "Provisional batch-local only; canonical promotion pending standing resolution ruling"
+        ]
+      },
+      "recorded_utc": "2026-09-24T00:17:39+00:00"
     }
   ],
   "resolution_ruling_standing": {
@@ -3852,6 +4028,11 @@
       "date": "2026-09-23",
       "rule": "Template scaffolds fix LAYOUT but reference anchors dominate CONTENT: anchoring on a defective reference reproduces its defects (projection drift, duplicated views, portrait faces) even under explicit contrary instructions. Repairs must anchor only on conforming references (LIFE-Q precedent) or drop the anchor entirely (fresh generation + scaffold + text).",
       "evidence": "B02: DWELLING/HALL r002 kept 3/4 drift; CIVILIAN r002 kept six-figure layout + portrait face; contrast LIFE-Q r004 success where anchor (FORM-Q r004) was conforming."
+    },
+    {
+      "finding_id": "TB-04_LABEL_LEAKAGE",
+      "date": "2026-09-23",
+      "rule": "Per-cell capitalized stage names in a multi-panel prompt can leak into the image as rendered text labels. Mitigation: state a global no-words rule and describe stages positionally (top-left cell etc.) without label-like tokens."
     }
   ]
 }
