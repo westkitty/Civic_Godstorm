@@ -33,6 +33,10 @@
 - **Rejected (1):** LIFE-S (r001, r002) — retry only by explicit fresh-pass authorization
 - **Standing caveats:** canonical paths still empty (correct); 2048/3072 resolution ruling outstanding; M-family torso palette note (charcoal/ochre vs S-teal) recorded as minor observation.
 
+## GATE RESULT — CLOSED 2026-09-24
+
+Human ruling `B04_CONSOLIDATED_GATE_APPROVE_ALL` (option `approve_all_close_b04`): **all 9 conforming candidates APPROVED as provisional batch-local references** (approved revisions: TORSO-S r002, TORSO-M r002, all six modules r001, FORM-S r001). LIFE-S r001+r002 rejection **ratified** — no pass-2 authorized at this gate; single-view-anchor retry strategy preserved in the receipt; B05 does not depend on LIFE-S. **B04 CLOSED. B05 (aerial mantle grammar, 5 IDs) unlocked** — TORSO-M approved-provisional satisfies its torso dependency. Canonical promotion for all approved IDs remains pending the standing 2048/3072 resolution ruling.
+
 ## Session standing
 
 Provisional evidence sets closed: B01 identity (7/7), B02 civic/scale (6/6), B03 H-grammar (9/9). B04 pass complete pending gate. B05 (aerial mantle: LOCO-WING, FEED-CARRION, SENSE-ANTENNA-CROWN, FORM-M, LIFE-M) unlocks on B04 close and depends on TORSO-M (conforming-awaiting-gate). Zero canonical sources; no CG-D-*/CG-R-* content; four workspace resets survived, no force-pushes since incident #2.
