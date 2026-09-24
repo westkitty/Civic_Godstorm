@@ -2,7 +2,7 @@
   "ledger_type": "arena_source_receipts",
   "specification_version": "CG-V1.0.0",
   "created_utc": "2026-09-23T21:51:28+00:00",
-  "last_updated_utc": "2026-09-24T07:05:00+00:00",
+  "last_updated_utc": "2026-09-24T07:35:00+00:00",
   "authority": {
     "master_plan": "CIVIC_GODSTORM_MASTER_PLAN.md",
     "master_plan_head_commit": "5bd357e14d9b68776d50b1dee0829b7bd5ab939f",
@@ -5607,6 +5607,127 @@
         "repair_candidates_used": 0,
         "remaining": 1
       }
+    },
+    "CG-S-MOT-CANOPY": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/motifs/cg_s_mot_canopy.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "parent_dependency_revisions": "motif transform of the shared pavilion family; comparison baseline B02 MOT-BASALT r001 (approved-provisional)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-MOT-CANOPY/r001/cg_s_mot_canopy.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "0c6e3cc849282392991fea787881b75947f2baa18396516b0c7dc5ecd95f1cba",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "scaffold + B02 MOT-BASALT r001 family anchor (kit replaced per transform spec)",
+          "content_qa": {
+            "identity": "CANOPY transform kit: tensioned cloth roof over EXACTLY THREE curved ribs (verified hero, side and front views); forked timber supports cradling ribs (macro panel); open entry; ONE broad edge stripe; same pavilion family/scale as B02 MOT-BASALT r001 baseline",
+            "flags": "roof ridge bump between ribs in side view reads as cloth sag on the end rib - consistent with 3-rib structure"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "AWAITING_APPROVAL",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-MOT-CANOPY",
+        "CG-R-CITY-RUINS"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      }
+    },
+    "CG-S-MOT-REED": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/motifs/cg_s_mot_reed.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "parent_dependency_revisions": "motif transform of the shared pavilion family; comparison baseline B02 MOT-BASALT r001 (approved-provisional)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-MOT-REED/r001/cg_s_mot_reed.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "f7fe3a351f50867d1477cd07d07cc8c50512ba69c11466fcec89a986f614b900",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "scaffold + B02 MOT-BASALT r001 family anchor (kit replaced per transform spec)",
+          "content_qa": {
+            "identity": "REED transform kit: shallow pitched thatch roof with deep eaves; bundled cylindrical reed supports with lashings (macro); round-corner opening; continuous diagonal woven trim band under eaves; same pavilion family/scale as BASALT baseline"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "AWAITING_APPROVAL",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-MOT-REED",
+        "CG-R-CITY-RUINS"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      }
+    },
+    "CG-S-MOT-VAULT": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/motifs/cg_s_mot_vault.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "parent_dependency_revisions": "motif transform of the shared pavilion family; comparison baseline B02 MOT-BASALT r001 (approved-provisional)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-MOT-VAULT/r001/cg_s_mot_vault.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "5691421000baa320fd1f12685c93fed41e550e6460389e57b7860b0013badf5f",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "scaffold + B02 MOT-BASALT r001 family anchor (kit replaced per transform spec)",
+          "content_qa": {
+            "identity": "VAULT transform kit: low barrel-vault roof; paired arch supports at both ends; pointed entry opening; EXACTLY THREE inset stone bands (verified hero and rear views); masonry close-up; same pavilion family/scale as BASALT baseline"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "AWAITING_APPROVAL",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-MOT-VAULT",
+        "CG-R-CITY-RUINS"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      }
     }
   },
   "batch_checkpoints": {
@@ -5796,11 +5917,11 @@
     "B07": {
       "opened_utc": "2026-09-24T05:15:00+00:00",
       "gate": "Compare all named modes and four motif transforms against B02",
-      "mode": "PROVISIONAL - opened while B06 gate pends (B07 depends only on closed B02); module chunks within the 10-attempt turn budget",
+      "mode": "PROVISIONAL - pass complete (19/19 conforming); consolidated human gate pending",
       "counts": {
         "requested": 19,
-        "candidates_generated": 16,
-        "awaiting_approval_ids": 16,
+        "candidates_generated": 19,
+        "awaiting_approval_ids": 19,
         "approved_source": 0
       },
       "plan": "Chunks 1+2 DONE (16/19 conforming). Chunk 3 next: MOT-CANOPY, MOT-REED, MOT-VAULT (motif transforms vs B02) + repair slack. COAT r002 verdict + B06 closure + consolidated B07 gate at pass end.",
@@ -5821,9 +5942,9 @@
         "CG-S-INF-CANAL": "CANDIDATE_AWAITING_APPROVAL (r001; 3 named modes)",
         "CG-S-INF-MINE": "CANDIDATE_AWAITING_APPROVAL (r001; 3 named modes)",
         "CG-S-INF-WALL": "CANDIDATE_AWAITING_APPROVAL (r001; 3 named modes)",
-        "CG-S-MOT-CANOPY": "NOT_STARTED",
-        "CG-S-MOT-REED": "NOT_STARTED",
-        "CG-S-MOT-VAULT": "NOT_STARTED"
+        "CG-S-MOT-CANOPY": "CANDIDATE_AWAITING_APPROVAL (r001)",
+        "CG-S-MOT-REED": "CANDIDATE_AWAITING_APPROVAL (r001)",
+        "CG-S-MOT-VAULT": "CANDIDATE_AWAITING_APPROVAL (r001)"
       }
     }
   },
@@ -6191,6 +6312,12 @@
       "incident": "EIGHTH_WORKSPACE_RESET_RECOVERED",
       "recorded_utc": "2026-09-24T07:05:00+00:00",
       "observation": "Local branch found re-rooted at docs commit WITHOUT the usual untracked-assets preservation (working tree clean, assets/ absent) mid-closure. Recovery: explicit-refspec fetch + reset --hard onto origin tip 41c0494; 151 PNGs and ledger (61 receipts, 14 rulings) restored from remote - zero loss, all B06/B07 work had been committed+pushed before the reset. B06 closure (ruling #15) re-executed post-reset.",
+      "content_loss": "none"
+    },
+    {
+      "incident": "B07_CHUNK3_AND_PASS_COMPLETE",
+      "recorded_utc": "2026-09-24T07:35:00+00:00",
+      "observation": "B07 chunk 3 (MOT-CANOPY, MOT-REED, MOT-VAULT): ALL 3 CONFORM as correct transform kits of the shared pavilion family vs B02 MOT-BASALT r001 baseline (3 canopy ribs, reed bundles + round-corner + diagonal trim, vault + 3 inset bands + pointed opening). B07 PASS COMPLETE: 19/19 IDs conforming on first candidates, zero rejections, zero repairs - cleanest batch of the run. 3 of 10 attempts used this turn. Consolidated B07 gate is the next action.",
       "content_loss": "none"
     }
   ],

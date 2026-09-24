@@ -31,8 +31,14 @@ All style-anchored on B02 BLD-DWELLING r003 (approved-provisional, subject ignor
 | `CG-S-INF-MINE` | r001 CONFORMING | SHAFT headframe / QUARRY stepped cut / ADIT braced mouth + joinery detail |
 | `CG-S-INF-WALL` | r001 CONFORMING | SEGMENT / GATE arch / BUTTRESS + cap detail |
 
-## Remaining
+## Chunk 3 — DONE (3/3 conforming, 2026-09-24)
 
-- **Chunk 3:** MOT-CANOPY, MOT-REED, MOT-VAULT (motif transforms compared against B02) + repair slack
-- **B06 handoff:** COAT r002 conforms — B06 closes on the user's verdict
-- Consolidated B07 human gate at pass end; canonical paths absent (correct)
+| ID | Verdict | Key anchors verified |
+|---|---|---|
+| `CG-S-MOT-CANOPY` | r001 CONFORMING | tensioned cloth over exactly 3 ribs (all views); forked supports; open entry; one broad edge stripe |
+| `CG-S-MOT-REED` | r001 CONFORMING | shallow thatch pitch; bundled lashed reed supports; round-corner opening; diagonal woven trim |
+| `CG-S-MOT-VAULT` | r001 CONFORMING | barrel vault; paired end arches; pointed opening; exactly 3 inset stone bands |
+
+All three verified as correct transform kits of the shared pavilion family against the B02 MOT-BASALT r001 baseline (approved-provisional).
+
+## PASS STATUS: COMPLETE — 19/19 conforming, zero rejections, zero repairs (cleanest batch of the run). Consolidated B07 human gate pending. Canonical paths absent (correct).
