@@ -2,7 +2,7 @@
  "ledger_type": "arena_source_receipts",
  "specification_version": "CG-V1.0.0",
  "created_utc": "2026-09-23T21:51:28+00:00",
- "last_updated_utc": "2026-09-24T23:27:41+00:00",
+ "last_updated_utc": "2026-09-24T23:34:52+00:00",
  "authority": {
   "master_plan": "CIVIC_GODSTORM_MASTER_PLAN.md",
   "master_plan_head_commit": "5bd357e14d9b68776d50b1dee0829b7bd5ab939f",
@@ -7216,7 +7216,7 @@
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_move.png",
    "canonical_state": "ABSENT (correct - no approved source)",
-   "id_status": "CANDIDATE_AWAITING_APPROVAL",
+   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "action glyph family member (B09 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
     {
@@ -7239,9 +7239,12 @@
     }
    ],
    "approval": {
-    "decision": "AWAITING_APPROVAL",
-    "approver": "human (pending)",
-    "date": null
+    "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+    "approver": "human (repository owner) via standing ruling #17",
+    "date": "2026-09-24",
+    "scope": "B10 action glyph family (stroke/margin/legibility consistent burst; distinct critical actions verified)",
+    "approved_revision": "r001",
+    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
    },
    "downstream_targets": [
     "CG-D-ICO-MOVE",
@@ -7257,7 +7260,7 @@
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_feed.png",
    "canonical_state": "ABSENT (correct - no approved source)",
-   "id_status": "CANDIDATE_AWAITING_APPROVAL",
+   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "action glyph family member (B09 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
     {
@@ -7280,9 +7283,12 @@
     }
    ],
    "approval": {
-    "decision": "AWAITING_APPROVAL",
-    "approver": "human (pending)",
-    "date": null
+    "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+    "approver": "human (repository owner) via standing ruling #17",
+    "date": "2026-09-24",
+    "scope": "B10 action glyph family (stroke/margin/legibility consistent burst; distinct critical actions verified)",
+    "approved_revision": "r001",
+    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
    },
    "downstream_targets": [
     "CG-D-ICO-FEED",
@@ -7298,7 +7304,7 @@
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_rest.png",
    "canonical_state": "ABSENT (correct - no approved source)",
-   "id_status": "CANDIDATE_AWAITING_APPROVAL",
+   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "action glyph family member (B09 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
     {
@@ -7321,9 +7327,12 @@
     }
    ],
    "approval": {
-    "decision": "AWAITING_APPROVAL",
-    "approver": "human (pending)",
-    "date": null
+    "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+    "approver": "human (repository owner) via standing ruling #17",
+    "date": "2026-09-24",
+    "scope": "B10 action glyph family (stroke/margin/legibility consistent burst; distinct critical actions verified)",
+    "approved_revision": "r001",
+    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
    },
    "downstream_targets": [
     "CG-D-ICO-REST",
@@ -7339,7 +7348,7 @@
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_guard.png",
    "canonical_state": "ABSENT (correct - no approved source)",
-   "id_status": "CANDIDATE_AWAITING_APPROVAL",
+   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "action glyph family member (B09 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
     {
@@ -7362,9 +7371,12 @@
     }
    ],
    "approval": {
-    "decision": "AWAITING_APPROVAL",
-    "approver": "human (pending)",
-    "date": null
+    "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+    "approver": "human (repository owner) via standing ruling #17",
+    "date": "2026-09-24",
+    "scope": "B10 action glyph family (stroke/margin/legibility consistent burst; distinct critical actions verified)",
+    "approved_revision": "r001",
+    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
    },
    "downstream_targets": [
     "CG-D-ICO-GUARD",
@@ -7380,7 +7392,7 @@
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_attack.png",
    "canonical_state": "ABSENT (correct - no approved source)",
-   "id_status": "CANDIDATE_AWAITING_APPROVAL",
+   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "action glyph family member (B09 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
     {
@@ -7403,9 +7415,12 @@
     }
    ],
    "approval": {
-    "decision": "AWAITING_APPROVAL",
-    "approver": "human (pending)",
-    "date": null
+    "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+    "approver": "human (repository owner) via standing ruling #17",
+    "date": "2026-09-24",
+    "scope": "B10 action glyph family (stroke/margin/legibility consistent burst; distinct critical actions verified)",
+    "approved_revision": "r001",
+    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
    },
    "downstream_targets": [
     "CG-D-ICO-ATTACK",
@@ -7421,7 +7436,7 @@
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_migrate.png",
    "canonical_state": "ABSENT (correct - no approved source)",
-   "id_status": "CANDIDATE_AWAITING_APPROVAL",
+   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "action glyph family member (B09 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
     {
@@ -7447,9 +7462,12 @@
     }
    ],
    "approval": {
-    "decision": "AWAITING_APPROVAL",
-    "approver": "human (pending)",
-    "date": null
+    "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+    "approver": "human (repository owner) via standing ruling #17",
+    "date": "2026-09-24",
+    "scope": "B10 action glyph family (stroke/margin/legibility consistent burst; distinct critical actions verified)",
+    "approved_revision": "r001",
+    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
    },
    "downstream_targets": [
     "CG-D-ICO-MIGRATE",
@@ -7465,7 +7483,7 @@
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_build.png",
    "canonical_state": "ABSENT (correct - no approved source)",
-   "id_status": "CANDIDATE_AWAITING_APPROVAL",
+   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "action glyph family member (B09 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
     {
@@ -7488,9 +7506,12 @@
     }
    ],
    "approval": {
-    "decision": "AWAITING_APPROVAL",
-    "approver": "human (pending)",
-    "date": null
+    "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+    "approver": "human (repository owner) via standing ruling #17",
+    "date": "2026-09-24",
+    "scope": "B10 action glyph family (stroke/margin/legibility consistent burst; distinct critical actions verified)",
+    "approved_revision": "r001",
+    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
    },
    "downstream_targets": [
     "CG-D-ICO-BUILD",
@@ -7506,7 +7527,7 @@
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_evolve.png",
    "canonical_state": "ABSENT (correct - no approved source)",
-   "id_status": "REJECTED_THIS_PASS",
+   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "action glyph family member (B09 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
     {
@@ -7547,9 +7568,12 @@
     }
    ],
    "approval": {
-    "decision": "REJECTED_THIS_PASS",
-    "approver": "human (pending)",
-    "date": null
+    "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+    "approver": "human (repository owner) via standing ruling #17",
+    "date": "2026-09-24",
+    "scope": "B10 action glyph family (stroke/margin/legibility consistent burst; distinct critical actions verified)",
+    "approved_revision": "r002",
+    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
    },
    "downstream_targets": [
     "CG-D-ICO-EVOLVE",
@@ -7566,7 +7590,7 @@
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_trade.png",
    "canonical_state": "ABSENT (correct - no approved source)",
-   "id_status": "REJECTED_THIS_PASS",
+   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "action glyph family member (B09 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
     {
@@ -7585,12 +7609,34 @@
       "violations": "count anchor failure in size-ladder panel: FOUR opposed-arrow-pair instances (one large + three smaller) vs kit-exact THREE descending on one shared baseline; BR panel background light-gray instead of parchment #F4ECDE (hero/chip identities correct: two opposed cargo arrows). (zoom-verified BL and BR panels); style otherwise conforming to glyph family"
      },
      "status": "REJECTED"
+    },
+    {
+     "revision": "r002",
+     "path": "assets/candidates/CG-S-ICO-TRADE/r002/cg_s_ico_trade.png",
+     "native_dimensions": "1024x1024",
+     "native_aspect_error_pct": 0.0,
+     "format": "PNG 8-bit sRGB TrueColor",
+     "alpha": "none",
+     "sha256": "2c654e13a6ca4fa9a216e424990d0ac6c361a80fc7e4e74431380959ef9bdebd",
+     "generation_tool": "Arena Agent Mode generate_image",
+     "model": "UNKNOWN",
+     "normalization_operation": "none performed",
+     "parent_revision": "blank r002 scaffold; repair anchored on r001-defect strategy only (per-panel exact ladder count + all-parchment panels), no defective r001 image anchor (TB-03 discipline)",
+     "content_qa": {
+      "identity": "two opposed horizontal cargo arrows of equal length (top right, bottom left), one solid triangular head each, at hero and chip and grayscale panels",
+      "style": "B09/B10 glyph kit verified: parchment #F4ECDE all four panels, thick uniform charcoal stroke, dark rounded-square chip panel, no text",
+      "count": "size-ladder panel EXACTLY three glyph instances (large/medium/small) on ONE shared baseline - r001 four-instance defect repaired; BR background restored to parchment"
+     },
+     "status": "CANDIDATE_AWAITING_APPROVAL"
     }
    ],
    "approval": {
-    "decision": "REJECTED_THIS_PASS",
-    "approver": "human (pending)",
-    "date": null
+    "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+    "approver": "human (repository owner) via standing ruling #17",
+    "date": "2026-09-24",
+    "scope": "B10 action glyph family (stroke/margin/legibility consistent burst; distinct critical actions verified)",
+    "approved_revision": "r002",
+    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
    },
    "downstream_targets": [
     "CG-D-ICO-TRADE",
@@ -7598,8 +7644,8 @@
    ],
    "repair_budget": {
     "initial_candidates_used": 1,
-    "repair_candidates_used": 0,
-    "remaining": 1
+    "repair_candidates_used": 1,
+    "remaining": 0
    },
    "reason": "count anchor failure in size-ladder panel: FOUR opposed-arrow-pair instances (one large + three smaller) vs kit-exact THREE descending on one shared baseline; BR panel background light-gray instead of parchment #F4ECDE (hero/chip identities correct: two opposed cargo arrows). Repair r002 queued under standing ruling #17; strategy: per-panel exact counts stated first (\"size-ladder panel contains EXACTLY THREE glyph instances, large then medium then small on ONE baseline; never a fourth\") and all four panels EXACTLY parchment #F4ECDE (validated on STONE r002 / CRYSTAL r002)."
   }
@@ -7892,25 +7938,55 @@
   "B10": {
    "opened_utc": "2026-09-24T11:45:00+00:00",
    "gate": "Match accepted glyph stroke/margins; distinct critical actions",
-   "mode": "PROVISIONAL - not yet started; 9 action glyphs in ONE burst matching the B09 glyph family",
+   "mode": "PROVISIONAL - CLOSED",
    "counts": {
     "requested": 9,
-    "candidates_generated": 10,
-    "awaiting_approval_ids": 7,
+    "candidates_generated": 11,
+    "awaiting_approval_ids": 0,
     "approved_source": 0,
-    "rejected_candidates": 2
+    "rejected_candidates": 2,
+    "provisionally_approved_ids": 9
    },
    "plan": "Chunk 1 recorded (7 conform r001 + EVOLVE/TRADE r001 rejected, TB-06 ladder-count class). EVOLVE r002 generated and zoom-verified conforming (3-instance ladder, parchment BR) - awaiting en-bloc gate. TRADE r002 scaffold staged; fires next turn (10/10 attempt cap reached this turn). Then en-bloc closure of B10 and B11 open.",
    "id_states": {
-    "CG-S-ICO-MOVE": "CANDIDATE_AWAITING_APPROVAL (r001)",
-    "CG-S-ICO-FEED": "CANDIDATE_AWAITING_APPROVAL (r001)",
-    "CG-S-ICO-REST": "CANDIDATE_AWAITING_APPROVAL (r001)",
-    "CG-S-ICO-GUARD": "CANDIDATE_AWAITING_APPROVAL (r001)",
-    "CG-S-ICO-ATTACK": "CANDIDATE_AWAITING_APPROVAL (r001)",
-    "CG-S-ICO-EVOLVE": "R002_GENERATED_CONFORMING_AWAITING_EN_BLOC_GATE",
-    "CG-S-ICO-MIGRATE": "CANDIDATE_AWAITING_APPROVAL (r001)",
-    "CG-S-ICO-BUILD": "CANDIDATE_AWAITING_APPROVAL (r001)",
-    "CG-S-ICO-TRADE": "REJECTED_R001_REPAIR_R002_STAGED"
+    "CG-S-ICO-MOVE": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r001)",
+    "CG-S-ICO-FEED": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r001)",
+    "CG-S-ICO-REST": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r001)",
+    "CG-S-ICO-GUARD": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r001)",
+    "CG-S-ICO-ATTACK": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r001)",
+    "CG-S-ICO-EVOLVE": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r002; r001 REJECTED)",
+    "CG-S-ICO-MIGRATE": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r001) [third-waypoint-as-arrowhead flag]",
+    "CG-S-ICO-BUILD": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r001)",
+    "CG-S-ICO-TRADE": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r002; r001 REJECTED)"
+   },
+   "resolution": "CLOSED 2026-09-24 en bloc under ruling #17: 9/9 approved-provisional (EVOLVE + TRADE as r002; MIGRATE r001 accepted-with-flag: third waypoint rendered as terminal arrowhead); 2 rejected r001 candidates preserved as evidence; B11 unlocked"
+  },
+  "B11": {
+   "opened_utc": "2026-09-24T23:34:52+00:00",
+   "gate": "Match B09-B10 glyph stroke/margins; no unreadable or duplicate warning shapes",
+   "mode": "PROVISIONAL - in progress; 14 info/warning glyphs in two bursts (9 + 5) reusing the exact B10 glyph kit",
+   "counts": {
+    "requested": 14,
+    "candidates_generated": 0,
+    "awaiting_approval_ids": 0,
+    "approved_source": 0
+   },
+   "plan": "Burst A (9): RESEARCH, POLICY, TREATY, HISTORY, WARNING, HEALTH, FATIGUE, POPULATION, CITY. Burst B (5): ARMY, GOD, ECOLOGY, VISIBILITY, CLAIM. En-bloc gate at pass end; B12 (title art) next.",
+   "id_states": {
+    "CG-S-ICO-ARMY": "NOT_STARTED",
+    "CG-S-ICO-CITY": "NOT_STARTED",
+    "CG-S-ICO-CLAIM": "NOT_STARTED",
+    "CG-S-ICO-ECOLOGY": "NOT_STARTED",
+    "CG-S-ICO-FATIGUE": "NOT_STARTED",
+    "CG-S-ICO-GOD": "NOT_STARTED",
+    "CG-S-ICO-HEALTH": "NOT_STARTED",
+    "CG-S-ICO-HISTORY": "NOT_STARTED",
+    "CG-S-ICO-POLICY": "NOT_STARTED",
+    "CG-S-ICO-POPULATION": "NOT_STARTED",
+    "CG-S-ICO-RESEARCH": "NOT_STARTED",
+    "CG-S-ICO-TREATY": "NOT_STARTED",
+    "CG-S-ICO-VISIBILITY": "NOT_STARTED",
+    "CG-S-ICO-WARNING": "NOT_STARTED"
    }
   }
  },
@@ -8371,6 +8447,12 @@
    "incident": "B10_EVOLVE_R002_RECORDED",
    "recorded_utc": "2026-09-24T23:27:41+00:00",
    "observation": "EVOLVE r002 repair generated under the 10th and final attempt slot and zoom-verified CONFORMING: size-ladder exactly three instances on one baseline (r001 had four in a 2x2 arrangement) and BR panel background restored to parchment. Per-panel exact-count strategy now validated 4th time (CRYSTAL r002, STONE r002, EVOLVE r002 + STONE r002 family). TRADE r002 NOT fired: hard 10-attempt cap reached (9 burst + 1 repair); its scaffold is staged and the repair strategy is recorded in its receipt, so next turn is a single fire-and-verify. No content loss.",
+   "content_loss": "none"
+  },
+  {
+   "incident": "B10_CLOSED",
+   "recorded_utc": "2026-09-24T23:34:52+00:00",
+   "observation": "B10 closed en bloc: TRADE r002 repaired-and-approved (3-instance ladder + parchment BR restored); EVOLVE r002 approved; 7 glyphs r001 (MIGRATE accepted-with-flag: third waypoint rendered as terminal arrowhead, plan identity intact). 9/9 approved-provisional; EVOLVE r001 + TRADE r001 preserved as REJECTED evidence. Ladder-count mitigation now 4-for-4. B11 opened (14 IDs, two bursts 9+5). 1 of 10 attempts used this turn at close; burst A of 9 fires next.",
    "content_loss": "none"
   }
  ],
