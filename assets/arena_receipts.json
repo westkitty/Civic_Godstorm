@@ -2,7 +2,7 @@
   "ledger_type": "arena_source_receipts",
   "specification_version": "CG-V1.0.0",
   "created_utc": "2026-09-23T21:51:28+00:00",
-  "last_updated_utc": "2026-09-24T00:08:02+00:00",
+  "last_updated_utc": "2026-09-24T00:13:20+00:00",
   "authority": {
     "master_plan": "CIVIC_GODSTORM_MASTER_PLAN.md",
     "master_plan_head_commit": "5bd357e14d9b68776d50b1dee0829b7bd5ab939f",
@@ -3255,6 +3255,319 @@
         "repair_candidates_used": 0,
         "remaining": 0
       }
+    },
+    "CG-S-GOD-TORSO-H": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/god/cg_s_god_torso_h.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "REJECTED_THIS_PASS",
+      "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-GOD-TORSO-H/r001/cg_s_god_torso_h.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "309291777c4814f40e5c7369e8ee465efb8095bce11fdd94e27fc3f8a7d37128",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "scaffold + TORSO-Q r003 style anchor (subject ignored per instruction)",
+          "content_qa": {
+            "design": "long low segmented tube, three paired back bulges, flattened belly - conforming",
+            "count_violation": "side profile shows FOUR flush rings per flank; registry requires exactly three pairs (three per side) - ring count is an identity anchor"
+          },
+          "status": "REJECTED"
+        },
+        {
+          "revision": "r002",
+          "path": "assets/candidates/CG-S-GOD-TORSO-H/r002/cg_s_god_torso_h.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "9849f7aa9b2d34c5c89501b62c8d9eb79f0e3a85e4d910478aa523a89651593e",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "r001",
+          "content_qa": {
+            "count_violation": "PERSISTS - same four-ring flank reproduced under anchored count-correction instruction (consistent with TB-03: anchors dominate content)"
+          },
+          "status": "REJECTED"
+        }
+      ],
+      "approval": {
+        "decision": "REJECTED_THIS_PASS - new pass requires human authorization",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-GOD-TORSO-H",
+        "CG-R-GOD-ASSEMBLY",
+        "CG-R-GOD-LOCOMOTION"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 1,
+        "remaining": 0
+      },
+      "reason": "Junction-ring count (3 pairs) is an identity anchor; anchored edit reproduced the r001 count. Budget exhausted this pass. Children CG-S-GOD-FORM-H / CG-S-GOD-LIFE-H correctly NOT generated.",
+      "tool_note": "Retry strategy (if authorized): fresh generation with NO r001 anchor - scaffold + explicit six-ring geometry text only, same as TB-03."
+    },
+    "CG-S-GOD-LOCO-DIGGER": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/god/cg_s_god_loco_digger.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-GOD-LOCO-DIGGER/r001/cg_s_god_loco_digger.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "3b297f36f594386c1191fcee68a9da5a8860830cb0f82f6fa3c21fee4076e089",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "scaffold + LOCO-PILLAR r002 class/style anchor (different subject per instruction)",
+          "content_qa": {
+            "anatomy": "one limb, two bends, thick elbow armor pad, three broad fused shovel claws in pale keratin, flush collar - conforming",
+            "minor": "claw tips slightly pointed; blunt-spade ideal would be softer (non-blocking note for gate)"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "AWAITING_APPROVAL",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-GOD-LOCO-DIGGER",
+        "CG-R-GOD-ASSEMBLY",
+        "CG-R-GOD-LOCOMOTION"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 0
+      }
+    },
+    "CG-S-GOD-FEED-MINERAL": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/god/cg_s_god_feed_mineral.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-GOD-FEED-MINERAL/r001/cg_s_god_feed_mineral.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "58fab6c56f6a3b4e8e118ecf2ac2522ee6f09770ec50b204c0ea4f7106f70fd0",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "scaffold + FEED-BROWSE r001 class/style anchor",
+          "content_qa": {
+            "anatomy": "exactly four crushing plates (two upper/two lower pairs), chipped stone-keratin, eyeless, flush collar - conforming",
+            "views": "all four conform"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "AWAITING_APPROVAL",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-GOD-FEED-MINERAL",
+        "CG-R-GOD-ASSEMBLY",
+        "CG-R-GOD-LOCOMOTION"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 0
+      }
+    },
+    "CG-S-GOD-SENSE-VIBRATION-ROSETTE": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/god/cg_s_god_sense_vibration_rosette.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-GOD-SENSE-VIBRATION-ROSETTE/r001/cg_s_god_sense_vibration_rosette.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "a87def8608ebbc8af258fd90bbe13de02ad643db012bffd09cd7a84bc7ecafe9",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "scaffold + SENSE-EYE-RING r002 class/style anchor",
+          "content_qa": {
+            "anatomy": "exactly six low vanes around one central pressure membrane, low dome, flush mount base with dock ring - conforming",
+            "views": "all four conform"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "AWAITING_APPROVAL",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-GOD-SENSE-VIBRATION-ROSETTE",
+        "CG-R-GOD-ASSEMBLY",
+        "CG-R-GOD-LOCOMOTION"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 0
+      }
+    },
+    "CG-S-GOD-TAIL-WEDGE": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/god/cg_s_god_tail_wedge.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-GOD-TAIL-WEDGE/r001/cg_s_god_tail_wedge.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "9c835f6540138d2518f3ffe023931599c8360e44aaaf200938159f671518e193",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "scaffold + TAIL-BALANCE r002 class/style anchor",
+          "content_qa": {
+            "anatomy": "strong taper to one broad chisel edge, pale keratin edge, flush collar - conforming; axial continuation not a weapon",
+            "minor": "front/rear panels show small ochre nodules at collar rim (accent-adjacent; non-blocking note)"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "AWAITING_APPROVAL",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-GOD-TAIL-WEDGE",
+        "CG-R-GOD-ASSEMBLY",
+        "CG-R-GOD-LOCOMOTION"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 0
+      }
+    },
+    "CG-S-GOD-ARMOR-SHELL": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/god/cg_s_god_armor_shell.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-GOD-ARMOR-SHELL/r001/cg_s_god_armor_shell.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "7a661b3a9ab88d636b6daec8a76ab49599e725b6f933a2e33337c121502bf014",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "scaffold + FEED-BROWSE r001 material anchor (subject ignored)",
+          "content_qa": {
+            "anatomy": "exactly three overlapping vaulted plates with flexible marginal sutures, continuous dorsal cover - conforming",
+            "views": "all four conform"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "AWAITING_APPROVAL",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-GOD-ARMOR-SHELL",
+        "CG-R-GOD-ASSEMBLY",
+        "CG-R-GOD-LOCOMOTION"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 0
+      }
+    },
+    "CG-S-GOD-ORGAN-THERMAL-VENT": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/god/cg_s_god_organ_thermal_vent.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-GOD-ORGAN-THERMAL-VENT/r001/cg_s_god_organ_thermal_vent.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "6106aaaf19c5e28edc276a06594d177c80e88394bd1d77b209ba8aedc31bf4fe",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "scaffold + ARMOR-SHELL r001 material anchor (subject ignored)",
+          "content_qa": {
+            "anatomy": "exactly three thick-walled chimneys on one fleshy base mound, center tallest, crater rims, no smoke/glow - conforming",
+            "minor": "plan panel drawn at slight tilt rather than pure top-down (three circles read clearly; non-blocking note)"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "AWAITING_APPROVAL",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-GOD-ORGAN-THERMAL-VENT",
+        "CG-R-GOD-ASSEMBLY",
+        "CG-R-GOD-LOCOMOTION"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 0
+      }
     }
   },
   "batch_checkpoints": {
@@ -3340,12 +3653,25 @@
       "mode": "PROVISIONAL - candidates for gate review; no canonical promotion",
       "counts": {
         "requested": 9,
-        "candidates_generated": 0,
-        "rejected_candidates": 0,
-        "awaiting_approval_ids": 0,
-        "approved_source": 0
+        "candidates_generated": 8,
+        "rejected_candidates": 2,
+        "rejected_ids_this_pass": 1,
+        "awaiting_approval_ids": 6,
+        "approved_source": 0,
+        "blocked_children": 2
       },
-      "plan": "6 independent H modules this turn (TORSO-H, LOCO-DIGGER, FEED-MINERAL, SENSE-VIBRATION-ROSETTE, TAIL-WEDGE, ARMOR-SHELL); ORGAN-THERMAL-VENT + FORM-H + LIFE-H next turn parent-first (turn generation budget)"
+      "plan": "6 independent H modules this turn (TORSO-H, LOCO-DIGGER, FEED-MINERAL, SENSE-VIBRATION-ROSETTE, TAIL-WEDGE, ARMOR-SHELL); ORGAN-THERMAL-VENT + FORM-H + LIFE-H next turn parent-first (turn generation budget)",
+      "id_states": {
+        "CG-S-GOD-TORSO-H": "REJECTED this pass (ring-count anchor; retry strategy recorded); FORM-H/LIFE-H blocked",
+        "CG-S-GOD-LOCO-DIGGER": "CANDIDATE_AWAITING_APPROVAL",
+        "CG-S-GOD-FEED-MINERAL": "CANDIDATE_AWAITING_APPROVAL",
+        "CG-S-GOD-SENSE-VIBRATION-ROSETTE": "CANDIDATE_AWAITING_APPROVAL",
+        "CG-S-GOD-TAIL-WEDGE": "CANDIDATE_AWAITING_APPROVAL",
+        "CG-S-GOD-ARMOR-SHELL": "CANDIDATE_AWAITING_APPROVAL",
+        "CG-S-GOD-ORGAN-THERMAL-VENT": "CANDIDATE_AWAITING_APPROVAL",
+        "CG-S-GOD-FORM-H": "NOT_STARTED (child of rejected torso)",
+        "CG-S-GOD-LIFE-H": "NOT_STARTED (child of form)"
+      }
     }
   },
   "capability_probe": {
