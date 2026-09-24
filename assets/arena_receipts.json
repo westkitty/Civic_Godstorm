@@ -2,7 +2,7 @@
   "ledger_type": "arena_source_receipts",
   "specification_version": "CG-V1.0.0",
   "created_utc": "2026-09-23T21:51:28+00:00",
-  "last_updated_utc": "2026-09-24T00:48:24+00:00",
+  "last_updated_utc": "2026-09-24T00:53:52+00:00",
   "authority": {
     "master_plan": "CIVIC_GODSTORM_MASTER_PLAN.md",
     "master_plan_head_commit": "5bd357e14d9b68776d50b1dee0829b7bd5ab939f",
@@ -3761,6 +3761,345 @@
         "initial_candidates_used": 1,
         "repair_candidates_used": 0
       }
+    },
+    "CG-S-GOD-TORSO-S": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/god/cg_s_god_torso_s.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "REJECTED_THIS_PASS",
+      "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-GOD-TORSO-S/r001/cg_s_god_torso_s.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "6392ae2349d42f5377e080d850b6bfcb40c436dbcb8e173fe51c8fb42ed9af94",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "scaffold + TORSO-Q r003 style anchor (subject ignored)",
+          "content_qa": {
+            "violations": "no ventral keel (plain round tube belly); no front-to-rear taper (constant-radius bend); cut ends left open/hollow instead of closed ribbon"
+          },
+          "status": "REJECTED"
+        }
+      ],
+      "approval": {
+        "decision": "REJECTED_THIS_PASS",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-GOD-TORSO-S",
+        "CG-R-GOD-ASSEMBLY",
+        "CG-R-GOD-LOCOMOTION"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      },
+      "reason": "Keel, taper and closed-ribbon requirements are ribbon-identity anchors; all three absent. Repair strategy recorded (fresh generation, corrective geometry front-loaded, no defective anchor); repair candidate NOT yet produced - internal MAX_TOKENS tool error consumed no candidate; turn generation cap (10) reached before retry.",
+      "tool_note": "Repair r002 pending next turn: keel plate + explicit taper + closed cut ends as first instructions."
+    },
+    "CG-S-GOD-TORSO-M": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/god/cg_s_god_torso_m.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "REJECTED_THIS_PASS",
+      "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-GOD-TORSO-M/r001/cg_s_god_torso_m.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "3eb5c00553b1f00a16217c2f98b6c3416ac3a3b2e7a741454a61bd2bacec7f9f",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "scaffold + TORSO-Q r003 style anchor (subject ignored)",
+          "content_qa": {
+            "violations": "two lateral fin roots rendered as open holes (flush seam rings required); central dorsal ridge missing; pointed rear protrusion (invented tail nub)"
+          },
+          "status": "REJECTED"
+        }
+      ],
+      "approval": {
+        "decision": "REJECTED_THIS_PASS",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-GOD-TORSO-M",
+        "CG-R-GOD-ASSEMBLY",
+        "CG-R-GOD-LOCOMOTION"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      },
+      "reason": "Root treatment, ridge and rear closure are mantle-identity anchors. Repair strategy recorded (fresh generation, flush-ring/ridge/no-protrusion rules front-loaded); repair candidate NOT yet produced - turn generation cap (10) reached.",
+      "tool_note": "Repair r002 pending next turn: ridge + flush rings + closed rear as first instructions."
+    },
+    "CG-S-GOD-LOCO-UNDULATOR": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/god/cg_s_god_loco_undulator.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-GOD-LOCO-UNDULATOR/r001/cg_s_god_loco_undulator.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "0cb6d32be2e2982cba9345e06b22744b4f7f3d5639fc2eda307b8e8a85d20306",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "scaffold + conforming B01/B03 module style anchor (subject ignored per instruction); blank 2x2 templates recorded per ID r001",
+          "content_qa": {
+            "anatomy": "alternating backward-leaning chevron muscle folds, top attachment strip, flat keel cross-section - conforming",
+            "minor": "tiny ochre accent flecks on folds (restraint note, non-blocking)"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "AWAITING_APPROVAL",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-GOD-LOCO-UNDULATOR",
+        "CG-R-GOD-ASSEMBLY",
+        "CG-R-GOD-LOCOMOTION"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      }
+    },
+    "CG-S-GOD-LOCO-FIN": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/god/cg_s_god_loco_fin.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-GOD-LOCO-FIN/r001/cg_s_god_loco_fin.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "51df971b2021d23617169e139d20e75272c2196e72f819b63a6a430003c68cf4",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "scaffold + conforming B01/B03 module style anchor (subject ignored per instruction); blank 2x2 templates recorded per ID r001",
+          "content_qa": {
+            "anatomy": "three internal rays, continuous root cuff with dock seam, tapered rounded-tip membrane - conforming",
+            "minor": "edge-on tip slightly sharp (non-blocking)"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "AWAITING_APPROVAL",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-GOD-LOCO-FIN",
+        "CG-R-GOD-ASSEMBLY",
+        "CG-R-GOD-LOCOMOTION"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      }
+    },
+    "CG-S-GOD-LOCO-WEBBED": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/god/cg_s_god_loco_webbed.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-GOD-LOCO-WEBBED/r001/cg_s_god_loco_webbed.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "2a9a61910be9a4900dfdd01af20099690de103198598ea74f6243f6e3a3a23bb",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "scaffold + LOCO-PILLAR r002 class/style anchor",
+          "content_qa": {
+            "anatomy": "two bends, flush collar, exactly three blunt digits joined by unbroken webbing - conforming",
+            "views": "all four conform"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "AWAITING_APPROVAL",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-GOD-LOCO-WEBBED",
+        "CG-R-GOD-ASSEMBLY",
+        "CG-R-GOD-LOCOMOTION"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      }
+    },
+    "CG-S-GOD-FEED-FILTER": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/god/cg_s_god_feed_filter.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-GOD-FEED-FILTER/r001/cg_s_god_feed_filter.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "c634fddf1ded58aafa0020dfddbb79da9ba05bec09208cf4ea46a0b2ae27eba1",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "scaffold + FEED-BROWSE r001 class/style anchor",
+          "content_qa": {
+            "anatomy": "ventral funnel with bilateral comb folds (profile view), closable rim, flush collar, eyeless - conforming",
+            "minor": "comb ribs coarser than fine-baleen ideal (non-blocking)"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "AWAITING_APPROVAL",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-GOD-FEED-FILTER",
+        "CG-R-GOD-ASSEMBLY",
+        "CG-R-GOD-LOCOMOTION"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      }
+    },
+    "CG-S-GOD-TAIL-PADDLE": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/god/cg_s_god_tail_paddle.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-GOD-TAIL-PADDLE/r001/cg_s_god_tail_paddle.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "3012461156a6a106693a9657ba7863bc532b0e240ce988f6b0a434afd281f7e2",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "scaffold + TAIL-BALANCE r002 class/style anchor",
+          "content_qa": {
+            "anatomy": "slender root widening to one broad rounded split-free paddle, flush collar - conforming; top/rear views confirm single continuous blade",
+            "minor": "profile taper slightly needle-like before the paddle (non-blocking)"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "AWAITING_APPROVAL",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-GOD-TAIL-PADDLE",
+        "CG-R-GOD-ASSEMBLY",
+        "CG-R-GOD-LOCOMOTION"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      }
+    },
+    "CG-S-GOD-ORGAN-GILLS": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/god/cg_s_god_organ_gills.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-GOD-ORGAN-GILLS/r001/cg_s_god_organ_gills.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "189f77230935b850878438d5fa9e9a2df9480e9a4032986724d252d8e69e69f0",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "scaffold + ARMOR-SHELL r001 material anchor (subject ignored)",
+          "content_qa": {
+            "anatomy": "exactly three rippled curtains stacked with shadowed covered slit roots, flush rim - conforming",
+            "minor": "small accent fleck inside top slit (non-blocking)",
+            "tool_note": "first attempt failed with internal MAX_TOKENS error (no image); retry succeeded within turn cap"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "AWAITING_APPROVAL",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-GOD-ORGAN-GILLS",
+        "CG-R-GOD-ASSEMBLY",
+        "CG-R-GOD-LOCOMOTION"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      }
     }
   },
   "batch_checkpoints": {
@@ -3874,9 +4213,26 @@
       "mode": "PROVISIONAL - not yet started; modules precede whole-form/lifecycle candidates",
       "counts": {
         "requested": 10,
-        "candidates_generated": 0
+        "candidates_generated": 8,
+        "rejected_candidates": 2,
+        "rejected_ids_this_pass": 2,
+        "awaiting_approval_ids": 6,
+        "approved_source": 0,
+        "children_not_started": 2
       },
-      "plan": "8 modules this pass (TORSO-S, TORSO-M, LOCO-UNDULATOR, LOCO-FIN, LOCO-WEBBED, FEED-FILTER, TAIL-PADDLE, ORGAN-GILLS), then FORM-S and LIFE-S parent-first if all modules conform; consolidated human gate at pass end"
+      "plan": "8 modules this pass (TORSO-S, TORSO-M, LOCO-UNDULATOR, LOCO-FIN, LOCO-WEBBED, FEED-FILTER, TAIL-PADDLE, ORGAN-GILLS), then FORM-S and LIFE-S parent-first if all modules conform; consolidated human gate at pass end",
+      "id_states": {
+        "CG-S-GOD-TORSO-S": "REJECTED this pass (keel/taper/closure anchors); repair r002 PENDING next turn (turn cap)",
+        "CG-S-GOD-TORSO-M": "REJECTED this pass (holes/ridge/nub anchors); repair r002 PENDING next turn (turn cap)",
+        "CG-S-GOD-LOCO-UNDULATOR": "CANDIDATE_AWAITING_APPROVAL",
+        "CG-S-GOD-LOCO-FIN": "CANDIDATE_AWAITING_APPROVAL",
+        "CG-S-GOD-LOCO-WEBBED": "CANDIDATE_AWAITING_APPROVAL",
+        "CG-S-GOD-FEED-FILTER": "CANDIDATE_AWAITING_APPROVAL",
+        "CG-S-GOD-TAIL-PADDLE": "CANDIDATE_AWAITING_APPROVAL",
+        "CG-S-GOD-ORGAN-GILLS": "CANDIDATE_AWAITING_APPROVAL",
+        "CG-S-GOD-FORM-S": "NOT_STARTED (parents incomplete)",
+        "CG-S-GOD-LIFE-S": "NOT_STARTED (parents incomplete)"
+      }
     }
   },
   "capability_probe": {
