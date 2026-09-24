@@ -2,7 +2,7 @@
  "ledger_type": "arena_source_receipts",
  "specification_version": "CG-V1.0.0",
  "created_utc": "2026-09-23T21:51:28+00:00",
- "last_updated_utc": "2026-09-24T23:43:04+00:00",
+ "last_updated_utc": "2026-09-24T23:44:51+00:00",
  "authority": {
   "master_plan": "CIVIC_GODSTORM_MASTER_PLAN.md",
   "master_plan_head_commit": "5bd357e14d9b68776d50b1dee0829b7bd5ab939f",
@@ -2728,7 +2728,7 @@
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_life_q.png",
    "canonical_state": "ABSENT (correct - no approved source)",
-   "id_status": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
+   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": {
     "CG-S-GOD-FORM-Q": "r004 (accepted provisional, pass 2)"
    },
@@ -2820,9 +2820,12 @@
    "tool_error_note": "One generate_image call failed with an internal MAX_TOKENS error (no image produced, no file written, no candidate slot consumed); the repair request was retried once successfully.",
    "reason": null,
    "approval": {
-    "decision": "AWAITING_APPROVAL (pass 2, r004); B01 identity gate PASSED 2026-09-23",
-    "approver": "human (pending)",
-    "date": null
+    "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (pass 2, r004); B01 identity gate PASSED 2026-09-23",
+    "approver": "human (repository owner) via ruling LIFEQ_R004_ACCEPT_AND_B01_GATE_PASS",
+    "date": "2026-09-23",
+    "scope": "B01 first-God identity gate PASS - full Q lineage (torso r003 -> FORM-Q r004 -> LIFE-Q r004)",
+    "approved_revision": "r004",
+    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
    },
    "downstream_targets": [
     "CG-D-GOD-LIFE-Q",
@@ -2841,7 +2844,8 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 1,
     "strategy": "fresh anchor on FORM-Q r004"
-   }
+   },
+   "sync_note": "Receipt-level approval synced 2026-09-24 to the already-recorded ruling LIFEQ_R004_ACCEPT_AND_B01_GATE_PASS; the previous AWAITING_APPROVAL string was a write-lag, not a pending gate. No new approval invented."
   },
   "CG-S-MOT-BASALT": {
    "specification_version": "CG-V1.0.0",
@@ -5790,7 +5794,7 @@
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/environment/cg_s_env_deciduous.png",
    "canonical_state": "ABSENT (correct - no approved source)",
-   "id_status": "CANDIDATE_AWAITING_APPROVAL",
+   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "independent environment material family member (shared scale/material gate)",
    "candidates": [
     {
@@ -5812,9 +5816,12 @@
     }
    ],
    "approval": {
-    "decision": "AWAITING_APPROVAL",
-    "approver": "human (pending)",
-    "date": null
+    "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+    "approver": "human (repository owner) via standing ruling #17 (B08 en-bloc closure, commit dd995bb)",
+    "date": "2026-09-24",
+    "scope": "B08 environment material family (chunk 1, 9/10 conforming; CRYSTAL repaired separately)",
+    "approved_revision": "r001",
+    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
    },
    "downstream_targets": [
     "CG-D-ENV-DECIDUOUS"
@@ -5823,13 +5830,14 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 1
-   }
+   },
+   "sync_note": "Receipt-level approval synced 2026-09-24: the B08 en-bloc closure (batch_checkpoints.B08, audit B08_PASS_COMPLETE_CLOSED) had approved these 9 sheets but the receipt approval blocks were never written. No new approval invented."
   },
   "CG-S-ENV-CONIFER": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/environment/cg_s_env_conifer.png",
    "canonical_state": "ABSENT (correct - no approved source)",
-   "id_status": "CANDIDATE_AWAITING_APPROVAL",
+   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "independent environment material family member (shared scale/material gate)",
    "candidates": [
     {
@@ -5851,9 +5859,12 @@
     }
    ],
    "approval": {
-    "decision": "AWAITING_APPROVAL",
-    "approver": "human (pending)",
-    "date": null
+    "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+    "approver": "human (repository owner) via standing ruling #17 (B08 en-bloc closure, commit dd995bb)",
+    "date": "2026-09-24",
+    "scope": "B08 environment material family (chunk 1, 9/10 conforming; CRYSTAL repaired separately)",
+    "approved_revision": "r001",
+    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
    },
    "downstream_targets": [
     "CG-D-ENV-CONIFER"
@@ -5862,13 +5873,14 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 1
-   }
+   },
+   "sync_note": "Receipt-level approval synced 2026-09-24: the B08 en-bloc closure (batch_checkpoints.B08, audit B08_PASS_COMPLETE_CLOSED) had approved these 9 sheets but the receipt approval blocks were never written. No new approval invented."
   },
   "CG-S-ENV-PALM": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/environment/cg_s_env_palm.png",
    "canonical_state": "ABSENT (correct - no approved source)",
-   "id_status": "CANDIDATE_AWAITING_APPROVAL",
+   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "independent environment material family member (shared scale/material gate)",
    "candidates": [
     {
@@ -5890,9 +5902,12 @@
     }
    ],
    "approval": {
-    "decision": "AWAITING_APPROVAL",
-    "approver": "human (pending)",
-    "date": null
+    "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+    "approver": "human (repository owner) via standing ruling #17 (B08 en-bloc closure, commit dd995bb)",
+    "date": "2026-09-24",
+    "scope": "B08 environment material family (chunk 1, 9/10 conforming; CRYSTAL repaired separately)",
+    "approved_revision": "r001",
+    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
    },
    "downstream_targets": [
     "CG-D-ENV-PALM"
@@ -5901,13 +5916,14 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 1
-   }
+   },
+   "sync_note": "Receipt-level approval synced 2026-09-24: the B08 en-bloc closure (batch_checkpoints.B08, audit B08_PASS_COMPLETE_CLOSED) had approved these 9 sheets but the receipt approval blocks were never written. No new approval invented."
   },
   "CG-S-ENV-REEDS": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/environment/cg_s_env_reeds.png",
    "canonical_state": "ABSENT (correct - no approved source)",
-   "id_status": "CANDIDATE_AWAITING_APPROVAL",
+   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "independent environment material family member (shared scale/material gate)",
    "candidates": [
     {
@@ -5929,9 +5945,12 @@
     }
    ],
    "approval": {
-    "decision": "AWAITING_APPROVAL",
-    "approver": "human (pending)",
-    "date": null
+    "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+    "approver": "human (repository owner) via standing ruling #17 (B08 en-bloc closure, commit dd995bb)",
+    "date": "2026-09-24",
+    "scope": "B08 environment material family (chunk 1, 9/10 conforming; CRYSTAL repaired separately)",
+    "approved_revision": "r001",
+    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
    },
    "downstream_targets": [
     "CG-D-ENV-REEDS"
@@ -5940,13 +5959,14 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 1
-   }
+   },
+   "sync_note": "Receipt-level approval synced 2026-09-24: the B08 en-bloc closure (batch_checkpoints.B08, audit B08_PASS_COMPLETE_CLOSED) had approved these 9 sheets but the receipt approval blocks were never written. No new approval invented."
   },
   "CG-S-ENV-KELP": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/environment/cg_s_env_kelp.png",
    "canonical_state": "ABSENT (correct - no approved source)",
-   "id_status": "CANDIDATE_AWAITING_APPROVAL",
+   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "independent environment material family member (shared scale/material gate)",
    "candidates": [
     {
@@ -5968,9 +5988,12 @@
     }
    ],
    "approval": {
-    "decision": "AWAITING_APPROVAL",
-    "approver": "human (pending)",
-    "date": null
+    "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+    "approver": "human (repository owner) via standing ruling #17 (B08 en-bloc closure, commit dd995bb)",
+    "date": "2026-09-24",
+    "scope": "B08 environment material family (chunk 1, 9/10 conforming; CRYSTAL repaired separately)",
+    "approved_revision": "r001",
+    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
    },
    "downstream_targets": [
     "CG-D-ENV-KELP"
@@ -5979,13 +6002,14 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 1
-   }
+   },
+   "sync_note": "Receipt-level approval synced 2026-09-24: the B08 en-bloc closure (batch_checkpoints.B08, audit B08_PASS_COMPLETE_CLOSED) had approved these 9 sheets but the receipt approval blocks were never written. No new approval invented."
   },
   "CG-S-ENV-ROCK": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/environment/cg_s_env_rock.png",
    "canonical_state": "ABSENT (correct - no approved source)",
-   "id_status": "CANDIDATE_AWAITING_APPROVAL",
+   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "independent environment material family member (shared scale/material gate)",
    "candidates": [
     {
@@ -6007,9 +6031,12 @@
     }
    ],
    "approval": {
-    "decision": "AWAITING_APPROVAL",
-    "approver": "human (pending)",
-    "date": null
+    "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+    "approver": "human (repository owner) via standing ruling #17 (B08 en-bloc closure, commit dd995bb)",
+    "date": "2026-09-24",
+    "scope": "B08 environment material family (chunk 1, 9/10 conforming; CRYSTAL repaired separately)",
+    "approved_revision": "r001",
+    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
    },
    "downstream_targets": [
     "CG-D-ENV-ROCK"
@@ -6018,13 +6045,14 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 1
-   }
+   },
+   "sync_note": "Receipt-level approval synced 2026-09-24: the B08 en-bloc closure (batch_checkpoints.B08, audit B08_PASS_COMPLETE_CLOSED) had approved these 9 sheets but the receipt approval blocks were never written. No new approval invented."
   },
   "CG-S-ENV-ORE": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/environment/cg_s_env_ore.png",
    "canonical_state": "ABSENT (correct - no approved source)",
-   "id_status": "CANDIDATE_AWAITING_APPROVAL",
+   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "independent environment material family member (shared scale/material gate)",
    "candidates": [
     {
@@ -6046,9 +6074,12 @@
     }
    ],
    "approval": {
-    "decision": "AWAITING_APPROVAL",
-    "approver": "human (pending)",
-    "date": null
+    "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+    "approver": "human (repository owner) via standing ruling #17 (B08 en-bloc closure, commit dd995bb)",
+    "date": "2026-09-24",
+    "scope": "B08 environment material family (chunk 1, 9/10 conforming; CRYSTAL repaired separately)",
+    "approved_revision": "r001",
+    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
    },
    "downstream_targets": [
     "CG-D-ENV-ORE"
@@ -6057,7 +6088,8 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 1
-   }
+   },
+   "sync_note": "Receipt-level approval synced 2026-09-24: the B08 en-bloc closure (batch_checkpoints.B08, audit B08_PASS_COMPLETE_CLOSED) had approved these 9 sheets but the receipt approval blocks were never written. No new approval invented."
   },
   "CG-S-ENV-CRYSTAL": {
    "specification_version": "CG-V1.0.0",
@@ -6124,7 +6156,7 @@
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/environment/cg_s_env_fungus.png",
    "canonical_state": "ABSENT (correct - no approved source)",
-   "id_status": "CANDIDATE_AWAITING_APPROVAL",
+   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "independent environment material family member (shared scale/material gate)",
    "candidates": [
     {
@@ -6146,9 +6178,12 @@
     }
    ],
    "approval": {
-    "decision": "AWAITING_APPROVAL",
-    "approver": "human (pending)",
-    "date": null
+    "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+    "approver": "human (repository owner) via standing ruling #17 (B08 en-bloc closure, commit dd995bb)",
+    "date": "2026-09-24",
+    "scope": "B08 environment material family (chunk 1, 9/10 conforming; CRYSTAL repaired separately)",
+    "approved_revision": "r001",
+    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
    },
    "downstream_targets": [
     "CG-D-ENV-FUNGUS"
@@ -6157,13 +6192,14 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 1
-   }
+   },
+   "sync_note": "Receipt-level approval synced 2026-09-24: the B08 en-bloc closure (batch_checkpoints.B08, audit B08_PASS_COMPLETE_CLOSED) had approved these 9 sheets but the receipt approval blocks were never written. No new approval invented."
   },
   "CG-S-ENV-RUBBLE": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/environment/cg_s_env_rubble.png",
    "canonical_state": "ABSENT (correct - no approved source)",
-   "id_status": "CANDIDATE_AWAITING_APPROVAL",
+   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "independent environment material family member (shared scale/material gate)",
    "candidates": [
     {
@@ -6185,9 +6221,12 @@
     }
    ],
    "approval": {
-    "decision": "AWAITING_APPROVAL",
-    "approver": "human (pending)",
-    "date": null
+    "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+    "approver": "human (repository owner) via standing ruling #17 (B08 en-bloc closure, commit dd995bb)",
+    "date": "2026-09-24",
+    "scope": "B08 environment material family (chunk 1, 9/10 conforming; CRYSTAL repaired separately)",
+    "approved_revision": "r001",
+    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
    },
    "downstream_targets": [
     "CG-D-ENV-RUBBLE"
@@ -6196,7 +6235,8 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 1
-   }
+   },
+   "sync_note": "Receipt-level approval synced 2026-09-24: the B08 en-bloc closure (batch_checkpoints.B08, audit B08_PASS_COMPLETE_CLOSED) had approved these 9 sheets but the receipt approval blocks were never written. No new approval invented."
   },
   "CG-S-UNT-SOLDIER": {
    "specification_version": "CG-V1.0.0",
@@ -9212,6 +9252,12 @@
    "incident": "B12_CLOSED_RUN_COMPLETE",
    "recorded_utc": "2026-09-24T23:43:04+00:00",
    "observation": "B12 closed: CG-A-ART-TITLE r001 first-attempt conform, approved-provisional en bloc under ruling #17 (identity: god-creature passing growing city, coast+roads, S-remains reclaimed by vegetation, no text, center-safe; size flag disclosed 1456x720 vs 2048x1024 target, nothing resized). ALL 121 IDs dispositioned: 119 approved-provisional, LIFE-S closed by ratified rejection, 12 rejected candidates preserved as evidence. Zero canonical sources; B00 block + 2048/3072 promotion ruling surfaced to owner. 7 of 10 attempts used this turn (burst B 5 + VISIBILITY r002 + title).",
+   "content_loss": "none"
+  },
+  {
+   "incident": "RECEIPT_APPROVAL_SYNC_RUN_FINAL",
+   "recorded_utc": "2026-09-24T23:44:51+00:00",
+   "observation": "Final census reconciliation: 10 receipts carried stale AWAITING_APPROVAL blocks for approvals already recorded elsewhere - CG-S-GOD-LIFE-Q (ruling LIFEQ_R004_ACCEPT_AND_B01_GATE_PASS) and the 9 B08 ENV r001 sheets (B08 en-bloc closure under ruling #17). Receipt-level approval blocks synced to the standard approved vocabulary with explicit pointers to the authorizing rulings; candidate statuses untouched (ledger convention: approval lives at receipt level). Five early-era receipts (TORSO-Q, FORM-Q, TORSO-H, FORM-H, LIFE-H) keep their historical approval vocabulary (ACCEPTED/RATIFIED/APPROVED PROVISIONAL) unchanged - unambiguous approvals. CG-S-ART-DIRECTION remains NO_AMENDMENT_RUN_STOPPED (B00 block, owner-reserved); CG-S-GOD-LIFE-S remains REJECTED_FINAL_THIS_PASS (ratified standing). Final: 119 approved-provisional IDs of 121.",
    "content_loss": "none"
   }
  ],
