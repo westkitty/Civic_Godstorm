@@ -2,7 +2,7 @@
   "ledger_type": "arena_source_receipts",
   "specification_version": "CG-V1.0.0",
   "created_utc": "2026-09-23T21:51:28+00:00",
-  "last_updated_utc": "2026-09-24T03:45:00+00:00",
+  "last_updated_utc": "2026-09-24T03:55:00+00:00",
   "authority": {
     "master_plan": "CIVIC_GODSTORM_MASTER_PLAN.md",
     "master_plan_head_commit": "5bd357e14d9b68776d50b1dee0829b7bd5ab939f",
@@ -4506,7 +4506,7 @@
       "specification_version": "CG-V1.0.0",
       "canonical_path": "assets/source/god/cg_s_god_life_m.png",
       "canonical_state": "ABSENT (correct - no approved source)",
-      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "id_status": "REJECTED_THIS_PASS",
       "parent_dependency_revisions": "CG-S-GOD-FORM-M r001 (conforming-awaiting-gate) via SINGLE LATERAL-VIEW CROP anchor (recorded anti-row-multiplication strategy from LIFE-S)",
       "candidates": [
         {
@@ -4533,10 +4533,31 @@
             ]
           },
           "status": "CANDIDATE_AWAITING_APPROVAL"
+        },
+        {
+          "revision": "r002",
+          "path": "assets/candidates/CG-S-GOD-LIFE-M/r002/cg_s_god_life_m.png",
+          "native_dimensions": "1376x768",
+          "native_aspect_error_pct": 19.5,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "5e90c2b9452f530d9a5fd2cc2b13d587c9df89bd9ef26341a0e61a41067074e4",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "Targeted repair r002 (recorded path from r001 flags; same scaffold + single lateral-view crop anchor; sealed-skull phrased POSITIVELY to avoid prohibition-leak; flank scar as strongly drawn positive element)",
+          "content_qa": {
+            "layout": "EXACT 3x2 held again; six states once each; no text",
+            "injury": "FIXED - two clearly visible marks: wing membrane tear hole + pale scar stripe on mantle above/behind wing root",
+            "ossuary": "FLAG NOT FIXED - low long species skull with hooked scoop jaw and blunt teeth (species anchors hold) but bone surface renders TWO round openings (one prominent socket + one smaller) despite positive sealed-surface instruction; second attempt to eliminate large skull openings failed (r001 prohibition, r002 positive phrasing)",
+            "corpse": "collapsed with drooping fronds correct, but mantle shows pale gash-like streaks and wing hem reads tattered - ambiguous vs 'whole and undecayed' instruction",
+            "canvas": "TB-07 RECURRENCE - 1376x768 native landscape instead of 1264x848 scaffold (19.5% aspect deviation vs scaffold; quadrant grid logic intact)"
+          },
+          "status": "REJECTED"
         }
       ],
       "approval": {
-        "decision": "AWAITING_APPROVAL",
+        "decision": "REJECTED_THIS_PASS (budget exhausted; r001 preserved as awaiting-gate evidence pending user ruling)",
         "approver": "human (pending)",
         "date": null
       },
@@ -4548,11 +4569,12 @@
       ],
       "repair_budget": {
         "initial_candidates_used": 1,
-        "repair_candidates_used": 0,
-        "remaining": 1
+        "repair_candidates_used": 1,
+        "remaining": 0
       },
-      "reason": "Layout anchor strategy from LIFE-S validated: exact 3x2, six states once each. Two disclosed gate flags (ossuary socket; injured under-mark). Repair path if the gate requires: r002 next turn with 'sealed smooth skull, small holes only' + explicitly drawn flank scar; same scaffold + single-view anchor.",
-      "retry_strategy_if_repair_required": "Targeted r002 (turn cap permitting): keep the exact 3x2 six-state structure; ossuary instruction becomes 'skull surface sealed and smooth with only small shallow pits - NO large openings of any size'; injured instruction adds 'draw the pale scar clearly on the flank behind the wing root'."
+      "reason": "r001: two disclosed flags (ossuary socket; injured under-mark). r002 targeted repair: injury flag FIXED, ossuary socket flag NOT fixed (2 fresh attempts leaked the same defect - TB-06 pattern echo), corpse tattering ambiguity, TB-07 canvas recurrence. 1+1 pass budget exhausted.",
+      "retry_strategy_if_repair_required": "Targeted r002 (turn cap permitting): keep the exact 3x2 six-state structure; ossuary instruction becomes 'skull surface sealed and smooth with only small shallow pits - NO large openings of any size'; injured instruction adds 'draw the pale scar clearly on the flank behind the wing root'.",
+      "retry_strategy_if_authorized": "Pass-3 options recorded: (a) accept r001 as technical-with-flag (cleanest corpse; single socket read as fenestra; species anchors hold); (b) fresh pass r003: drop the side-profile-only constraint for the ossuary panel to a 3/4 view (skull openings may be a profile-reading artifact) + 'dented smooth bowl' skull phrasing; (c) reject standing like LIFE-S. User ruling required either way."
     }
   },
   "batch_checkpoints": {
@@ -4695,7 +4717,7 @@
       "mode": "PROVISIONAL - pass complete (all 5 IDs have candidates); consolidated human gate pending",
       "counts": {
         "requested": 5,
-        "candidates_generated": 7,
+        "candidates_generated": 8,
         "generation_attempts_total": "10 of 10 (1 missing-scaffold tool error, no image)",
         "rejected_candidates": 2,
         "rejected_ids_budget_exhausted_then_pass2": 1,
@@ -4708,7 +4730,7 @@
         "CG-S-GOD-FEED-CARRION": "CANDIDATE_AWAITING_APPROVAL (r001)",
         "CG-S-GOD-SENSE-ANTENNA-CROWN": "r001+r002 REJECTED (TB-06) -> r003 AUTHORIZED PASS-2 CONFORMS (technical flag: canvas swap TB-07); AWAITING_APPROVAL",
         "CG-S-GOD-FORM-M": "CANDIDATE_AWAITING_APPROVAL (r001; five-module assembly, flags non-blocking)",
-        "CG-S-GOD-LIFE-M": "CANDIDATE_AWAITING_APPROVAL (r001; exact 3x2 achieved; two disclosed flags: ossuary socket, injured under-mark; repair path recorded)"
+        "CG-S-GOD-LIFE-M": "r001 CANDIDATE_AWAITING_APPROVAL (2 flags) + r002 targeted repair REJECTED (ossuary flag persisted, injury fixed; TB-07 recurrence) - budget exhausted; user gate to decide accept-r001 / authorize-r003 / reject-standing"
       }
     }
   },
@@ -4994,6 +5016,12 @@
       "recorded_utc": "2026-09-24T03:45:00+00:00",
       "observation": "Consolidated B05 gate ask_user (5 IDs: WING r001, CARRION r001, CROWN r003, FORM-M r001, LIFE-M r001) returned SKIPPED - no ruling. Per standing handling: nothing assumed, no approvals recorded. On explicit user 'go on', proceeding with the least-irreversible recorded-strategy step only: LIFE-M r002 targeted repair (recorded repair path addressing both disclosed flags: sealed-smooth ossuary skull; clearly drawn flank scar), preserving r001 as evidence. B05 stays OPEN; consolidated gate re-presented at turn end.",
       "content_loss": "none"
+    },
+    {
+      "incident": "B05_LIFE_M_R002_REPAIR_RECORDED",
+      "recorded_utc": "2026-09-24T03:55:00+00:00",
+      "observation": "LIFE-M r002 (recorded-path repair under least-irreversible handling of the skipped gate): injury flag fixed, ossuary socket flag persisted across phrasing strategies (2 attempts), corpse ambiguity, TB-07 canvas recurrence. Budget exhausted. r001 preserved; both versions await the re-presented consolidated B05 gate. No approvals recorded (skip handling).",
+      "content_loss": "none"
     }
   ],
   "tool_behavior_findings": [
@@ -5024,7 +5052,7 @@
       "finding_id": "TB-07_SCAFFOLD_CANVAS_ABANDONMENT",
       "date": "2026-09-24",
       "rule": "The image model can abandon a provided square scaffold canvas and render a native landscape canvas (observed 1376x768) even for a 2x2 sheet, after two prior generations on identical layout instructions honored the scaffold. Layout logic may survive (quadrants intact) but the sheet no longer matches its scaffold; verify identify() output on EVERY generation and treat canvas deviation as a disclosed technical flag for the gate, not a silent accept or an automatic content rejection.",
-      "evidence": "B05 SENSE-ANTENNA-CROWN r003: first two attempts 1024x1024 on scaffold; r003 1376x768 with intact quadrant logic."
+      "evidence": "B05 SENSE-ANTENNA-CROWN r003: first two attempts 1024x1024 on scaffold; r003 1376x768 with intact quadrant logic.; B05 LIFE-M r002: 1376x768 recurrence on a 3x2 lifecycle sheet (prior r001 honored the scaffold)"
     }
   ]
 }
