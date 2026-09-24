@@ -2,7 +2,7 @@
   "ledger_type": "arena_source_receipts",
   "specification_version": "CG-V1.0.0",
   "created_utc": "2026-09-23T21:51:28+00:00",
-  "last_updated_utc": "2026-09-24T02:35:00+00:00",
+  "last_updated_utc": "2026-09-24T02:55:00+00:00",
   "authority": {
     "master_plan": "CIVIC_GODSTORM_MASTER_PLAN.md",
     "master_plan_head_commit": "5bd357e14d9b68776d50b1dee0829b7bd5ab939f",
@@ -4283,6 +4283,158 @@
       },
       "reason": "Both candidates REJECTED: scaffold layout drift (7-8 panels) + duplicated state (r002), plus generic tall-domed ossuary skull (r001 only). Per-ID 1+1 pass budget exhausted; a retry requires an explicit fresh-pass authorization (B02/B03 full_pass precedent).",
       "retry_strategy_if_authorized": "Pass-2 r003: drop the full-sheet content anchor; crop FORM-S top-right LATERAL panel to a single side-profile anchor (removes square-grid composition bias); blank 3x2 scaffold; first instructions = exactly six pre-counted cells / no empty cell / no added cell; ossuary geometry rules repeated (low blunt wedge skull, paddle bone); NO-LABELS global rule."
+    },
+    "CG-S-GOD-LOCO-WING": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/god/cg_s_god_loco_wing.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-GOD-LOCO-WING/r001/cg_s_god_loco_wing.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "67ace12d10ddf17b0d4f2d1e503f42965275e5d6b8b48a2708dff1940db24f00",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "scaffold + TORSO-M r002 style anchor (M-family charcoal/pale-stone/ochre, subject ignored)",
+          "content_qa": {
+            "membrane": "single broad taut skin panel; ZERO feathers, fur or fuzzy edges",
+            "spars": "exactly three internal structural rods radiating from one shared wrist root, raised ridges under skin, membrane stretched between them",
+            "root_cuff": "continuous rolled skin cuff, unbroken (dedicated close-up panel)",
+            "fold": "folded-along-spars panel reads as fan collapse against the cuff",
+            "minor": "ochre smudge accents on membrane (restraint note); small smooth wrist spur nub at spar junction (non-blocking)"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "AWAITING_APPROVAL",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-GOD-LOCO-WING",
+        "CG-R-GOD-ASSEMBLY",
+        "CG-R-GOD-LOCOMOTION"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      },
+      "reason": "All three identity anchors present (membrane-not-feathers, three spars, continuous root cuff) plus required fold demonstration."
+    },
+    "CG-S-GOD-FEED-CARRION": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/god/cg_s_god_feed_carrion.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-GOD-FEED-CARRION/r001/cg_s_god_feed_carrion.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "e9b4471603040b19a55541168999f4f947c7789cbd5d862fb351619967de04cd",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "scaffold + TORSO-M r002 style anchor (M-family charcoal/pale-stone/ochre, subject ignored)",
+          "content_qa": {
+            "hooked_scoop": "upper jaw tip curves down into a smooth ROUNDED blunt hook (scoop profile in lateral) - not a pointed fang",
+            "teeth": "exactly four blunt gripping teeth verified in both lateral and frontal views (2 upper paired + 2 lower paired), thick worn keratin",
+            "throat_pouch": "deep relaxed pouch behind the teeth visible in lateral and frontal views",
+            "anti_dragon": "no long predatory snout, no sharp fangs, no jagged rows, no brow horns, no eyes, no skull dome, no eye sockets",
+            "minor": "keratin pitting texture on jaw house; vertical seam groove on rear face (non-blocking)"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "AWAITING_APPROVAL",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-GOD-FEED-CARRION",
+        "CG-R-GOD-ASSEMBLY",
+        "CG-R-GOD-FEEDING"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      },
+      "reason": "Scavenger anatomy anchors all present; dragon-skull substitution explicitly absent."
+    },
+    "CG-S-GOD-SENSE-ANTENNA-CROWN": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/god/cg_s_god_sense_antenna_crown.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "REJECTED_THIS_PASS",
+      "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-GOD-SENSE-ANTENNA-CROWN/r001/cg_s_god_sense_antenna_crown.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "d400b06f6365abb206c8004f66bea7898c7c2d0e5ccb18f2f7705e1090a2185e",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "scaffold + TORSO-M r002 style anchor (M-family charcoal/pale-stone/ochre, subject ignored)",
+          "content_qa": {
+            "violations": "plan (top-down) panel shows EIGHT-NINE radiating fronds instead of exactly six (zoom-verified count); lateral/front/rear panels correctly show six in three mirrored pairs - sheet internally inconsistent; six-frond count is an identity anchor"
+          },
+          "status": "REJECTED"
+        },
+        {
+          "revision": "r002",
+          "path": "assets/candidates/CG-S-GOD-SENSE-ANTENNA-CROWN/r002/cg_s_god_sense_antenna_crown.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "b102b00bb09c0f548c8b507f850482fb1b309d383232d38cda161b7bd896c730",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "FRESH GENERATION r002 (TB-03: no defective r001 anchor; blank 2x2 template; EXACTLY-SIX count as first instruction, plan-view 'never eight' called out; same style anchor)",
+          "content_qa": {
+            "violations": "plan panel again shows EIGHT blades at zoom: the six thick fronds plus two long thin spikes at the mount's front/rear edges (bases of the inner pair reading as extra rays); lateral/front/rear panels correct at six",
+            "fixed_from_r001": "frond blade quality improved (smooth unbranched tapered blades, clear open central gap, closed dome mount); count defect persists in the same plan panel"
+          },
+          "status": "REJECTED"
+        }
+      ],
+      "approval": {
+        "decision": "REJECTED_THIS_PASS",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-GOD-SENSE-ANTENNA-CROWN",
+        "CG-R-GOD-ASSEMBLY"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 1,
+        "remaining": 0
+      },
+      "reason": "Plan-view frond multiplication persisted across fresh generation (2/2) - new tool behavior pattern: radial top-down panels invite count multiplication even when orthogonal panels conform and counts are front-loaded. Pass budget exhausted; retry requires explicit fresh-pass authorization.",
+      "retry_strategy_if_authorized": "Pass-2 r003: pure fresh generation, count stated PER PANEL ('lateral: exactly three fronds visible stepping down; front: exactly six, three per side, open center gap; plan: exactly six blades TOTAL, three per side, NOTHING growing from the mount's front or rear edge; rear: exactly six'); consider omitting the plan panel in favor of two three-quarter views if multiplication persists."
     }
   },
   "batch_checkpoints": {
@@ -4422,20 +4574,24 @@
     "B05": {
       "opened_utc": "2026-09-24T02:10:00+00:00",
       "gate": "Depends on B04 mantle torso (TORSO-M approved-provisional); no added limbs or feathers",
-      "mode": "PROVISIONAL - not yet started; modules precede whole-form/lifecycle candidates",
+      "mode": "PROVISIONAL - module pass done; FORM-M/LIFE-M pending user ruling on rejected-parent dependency (CROWN)",
       "counts": {
         "requested": 5,
-        "candidates_generated": 0,
-        "awaiting_approval_ids": 0,
-        "approved_source": 0
+        "candidates_generated": 4,
+        "generation_attempts_this_turn": "6 of 10 (1 tool error, no image)",
+        "rejected_candidates": 2,
+        "rejected_ids_budget_exhausted": 1,
+        "awaiting_approval_ids": 2,
+        "approved_source": 0,
+        "children_not_started": 2
       },
       "plan": "3 independent modules first (LOCO-WING, FEED-CARRION, SENSE-ANTENNA-CROWN), then FORM-M + LIFE-M parent-first in the same pass if module inspection is clean; consolidated human gate at pass end. Scaffolds pre-staged (3x 2x2 + FORM-M 2x2 + LIFE-M 3x2) and verified with identify.",
       "id_states": {
-        "CG-S-GOD-LOCO-WING": "NOT_STARTED",
-        "CG-S-GOD-FEED-CARRION": "NOT_STARTED",
-        "CG-S-GOD-SENSE-ANTENNA-CROWN": "NOT_STARTED",
-        "CG-S-GOD-FORM-M": "NOT_STARTED (parents: TORSO-M approved-provisional + 3 B05 modules pending)",
-        "CG-S-GOD-LIFE-M": "NOT_STARTED (parent: FORM-M pending)"
+        "CG-S-GOD-LOCO-WING": "CANDIDATE_AWAITING_APPROVAL (r001)",
+        "CG-S-GOD-FEED-CARRION": "CANDIDATE_AWAITING_APPROVAL (r001)",
+        "CG-S-GOD-SENSE-ANTENNA-CROWN": "REJECTED this pass (r001+r002, plan-view count multiplication, TB-06); retry needs explicit fresh-pass authorization",
+        "CG-S-GOD-FORM-M": "NOT_STARTED - held pending user ruling (parent CROWN rejected; agent declined to self-authorize generation on rejected parent, deviation from recorded plan avoided)",
+        "CG-S-GOD-LIFE-M": "NOT_STARTED (parent FORM-M pending)"
       }
     }
   },
@@ -4684,6 +4840,12 @@
       "recorded_utc": "2026-09-24T02:35:00+00:00",
       "observation": "Local branch found re-rooted at docs commit 5bd357e with preserved untracked working tree (89 PNGs, ledger intact through ruling #11); remote intact at 2189f66 (last authorized push). Local object store lacked the remote tip; explicit non-forcing refspec fetch, then reset --hard onto origin tip. All 5 pre-staged B05 scaffolds verified present with correct dimensions post-reset.",
       "content_loss": "none"
+    },
+    {
+      "incident": "B05_MODULE_PASS_RECORDED",
+      "recorded_utc": "2026-09-24T02:55:00+00:00",
+      "observation": "B05 module pass: LOCO-WING r001 and FEED-CARRION r001 conform (awaiting gate). SENSE-ANTENNA-CROWN r001+r002 rejected on plan-view frond multiplication (TB-06); budget exhausted; retry strategy recorded. Pre-flight exposed FIFTH_WORKSPACE_RESET_RECOVERED (separate entry). FORM-M/LIFE-M intentionally NOT generated this turn: recorded plan said continue only on clean module inspection; inspection was not clean (CROWN rejected) and generating children on a rejected parent is a user ruling, not an agent decision. 6 of 10 generation attempts used (1 consumed by a missing-scaffold tool error, no image).",
+      "content_loss": "none"
     }
   ],
   "tool_behavior_findings": [
@@ -4703,6 +4865,12 @@
       "date": "2026-09-24",
       "rule": "(a) `git fetch` does not update refs/remotes/origin/arena/* because the sandbox clone's fetch refspec is limited to refs/heads/main - a stale tracking ref can falsely indicate a remote rollback. ALWAYS verify remote state with `git ls-remote origin` before any push/reset/recovery decision. (b) Pre-flight session context can drift from workspace reality (B04 turn-3 context claimed pre-staged FORM-S/LIFE-S scaffold dirs that were absent): re-verify declared pre-staged files with `identify` before consuming them, and re-create procedurally if missing (scaffolds are procedural aids, zero content impact).",
       "evidence": "B04 turn 3: origin/arena ref read 274bfd2 while ls-remote confirmed remote tip 08b595d (no rollback, no parallel push); FORM-S/LIFE-S r001 scaffold dirs absent despite pre-flight claim - re-created from recorded convert commands."
+    },
+    {
+      "finding_id": "TB-06_RADIAL_PANEL_COUNT_MULTIPLICATION",
+      "date": "2026-09-24",
+      "rule": "Top-down/radial views of counted radial anatomy (frond crowns, rosettes) reliably multiply element counts even under front-loaded exact-count instructions, fresh generations and blank scaffolds, while orthogonal (lateral/front/rear) views of the same sheet stay correct. One anchored repair attempt that reproduces the defect in the same panel should NOT be retried identically; mitigation: per-panel count instructions covering every view, or replacing the radial panel with oblique views.",
+      "evidence": "B05 SENSE-ANTENNA-CROWN r001 and r002: plan panel 8-9 fronds / 8 blades vs six in all other panels; contrast SENSE-VIBRATION-ROSETTE r001 (B03) which conformed - radial-count risk is real but not certain per generation."
     }
   ]
 }
