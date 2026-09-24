@@ -2,7 +2,7 @@
   "ledger_type": "arena_source_receipts",
   "specification_version": "CG-V1.0.0",
   "created_utc": "2026-09-23T21:51:28+00:00",
-  "last_updated_utc": "2026-09-24T08:25:00+00:00",
+  "last_updated_utc": "2026-09-24T09:05:00+00:00",
   "authority": {
     "master_plan": "CIVIC_GODSTORM_MASTER_PLAN.md",
     "master_plan_head_commit": "5bd357e14d9b68776d50b1dee0829b7bd5ab939f",
@@ -5785,6 +5785,398 @@
         "repair_candidates_used": 0,
         "remaining": 1
       }
+    },
+    "CG-S-ENV-DECIDUOUS": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/environment/cg_s_env_deciduous.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "parent_dependency_revisions": "independent environment material family member (shared scale/material gate)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-ENV-DECIDUOUS/r001/cg_s_env_deciduous.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "87bbe7ee2a7186e62f06a1c264755719b5a8e072bd66286a1992e1cb5e820e8d",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "blank scaffold only (uniform hero/side/plan/detail kit; countable anchors per-panel)",
+          "content_qa": {
+            "identity": "one broad-canopy tree; distinct trunk; EXACTLY three major branching masses (plan-verified); clustered foliage sculpt; no extras"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "AWAITING_APPROVAL",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-ENV-DECIDUOUS"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      }
+    },
+    "CG-S-ENV-CONIFER": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/environment/cg_s_env_conifer.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "parent_dependency_revisions": "independent environment material family member (shared scale/material gate)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-ENV-CONIFER/r001/cg_s_env_conifer.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "695c1fb3b60743d5f66ae75aa5f0924a3d6a4f1e223e649af9f982f3973d1349",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "blank scaffold only (uniform hero/side/plan/detail kit; countable anchors per-panel)",
+          "content_qa": {
+            "identity": "tall narrow conifer; EXACTLY four stepped branch whorls (elevation + plan rings verified); narrow pointed top; no ground cones"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "AWAITING_APPROVAL",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-ENV-CONIFER"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      }
+    },
+    "CG-S-ENV-PALM": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/environment/cg_s_env_palm.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "parent_dependency_revisions": "independent environment material family member (shared scale/material gate)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-ENV-PALM/r001/cg_s_env_palm.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "6b938c029159afd975cf024e2085d67622f62a770331b4c5da539fc62c44f1b8",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "blank scaffold only (uniform hero/side/plan/detail kit; countable anchors per-panel)",
+          "content_qa": {
+            "identity": "one-bend bent trunk with rounded root base; EXACTLY six broad fronds (plan-verified); crown attach detail; no ground coconuts"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "AWAITING_APPROVAL",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-ENV-PALM"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      }
+    },
+    "CG-S-ENV-REEDS": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/environment/cg_s_env_reeds.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "parent_dependency_revisions": "independent environment material family member (shared scale/material gate)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-ENV-REEDS/r001/cg_s_env_reeds.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "4ee5e4b530fa929f212104d1353f9694c479a974fa83576192ab2d6e010017e3",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "blank scaffold only (uniform hero/side/plan/detail kit; countable anchors per-panel)",
+          "content_qa": {
+            "identity": "one shared tuft; EXACTLY five reed stalks (plan-verified) with broad bent seed-head tips in varied directions; segment joints in macro"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "AWAITING_APPROVAL",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-ENV-REEDS"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      }
+    },
+    "CG-S-ENV-KELP": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/environment/cg_s_env_kelp.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "parent_dependency_revisions": "independent environment material family member (shared scale/material gate)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-ENV-KELP/r001/cg_s_env_kelp.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "38ecefe88c540b63804a7a293a40c359a0459a3ba6f9bb7f8ac1ca5d99ec60c1",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "blank scaffold only (uniform hero/side/plan/detail kit; countable anchors per-panel)",
+          "content_qa": {
+            "identity": "one anchored holdfast; EXACTLY three continuous undulating ribbons (plan-verified); NO fish/animals/bubbles; holdfast macro"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "AWAITING_APPROVAL",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-ENV-KELP"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      }
+    },
+    "CG-S-ENV-ROCK": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/environment/cg_s_env_rock.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "parent_dependency_revisions": "independent environment material family member (shared scale/material gate)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-ENV-ROCK/r001/cg_s_env_rock.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "805c0be2c4c994457cb9905c41e5eccc1ce1d32d2ed6b33cd0c615afcfdb5c2c",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "blank scaffold only (uniform hero/side/plan/detail kit; countable anchors per-panel)",
+          "content_qa": {
+            "identity": "EXACTLY three joined angular weathered masses (tall dominant + two flanks); flat fractured facets; weathering close-up"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "AWAITING_APPROVAL",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-ENV-ROCK"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      }
+    },
+    "CG-S-ENV-ORE": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/environment/cg_s_env_ore.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "parent_dependency_revisions": "independent environment material family member (shared scale/material gate)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-ENV-ORE/r001/cg_s_env_ore.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "eacbc3ce1e52a0414ff952590063b0516094a7b9bdb3cb27a8c3e1010e1e6b79",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "blank scaffold only (uniform hero/side/plan/detail kit; countable anchors per-panel)",
+          "content_qa": {
+            "identity": "diagonal banded seam in rock; EXACTLY two strong contrasting strata (pale-light + deep-dark) with macro boundary; no tools/people"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "AWAITING_APPROVAL",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-ENV-ORE"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      }
+    },
+    "CG-S-ENV-CRYSTAL": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/environment/cg_s_env_crystal.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "REJECTED_THIS_PASS",
+      "parent_dependency_revisions": "independent environment material family member (shared scale/material gate)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-ENV-CRYSTAL/r001/cg_s_env_crystal.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "e66177c5685e1f4f1630099bfcb161062388f3647ae5c7b19988f108d617f286",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "blank scaffold only (uniform hero/side/plan/detail kit; countable anchors per-panel)",
+          "content_qa": {
+            "violations": "count anchor failed: FOUR unequal blunt columns rendered instead of exactly three (hero, elevation and plan footprints all show 4); blunt-tip and matte no-glow qualities correct; sheet internally consistent at 4 - the count is the identity anchor"
+          },
+          "status": "REJECTED"
+        }
+      ],
+      "approval": {
+        "decision": "REJECTED_THIS_PASS",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-ENV-CRYSTAL"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      },
+      "reason": "Count anchor failure (4 columns vs exactly 3). Pre-authorized repair r002 queued under ruling STANDING_CONTINUATION_ORDER_B08_TO_B12; strategy: 'exactly three columns total - one tall, one medium, one short' stated first + plan phrased as three footprints.",
+      "retry_strategy_if_authorized": "same"
+    },
+    "CG-S-ENV-FUNGUS": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/environment/cg_s_env_fungus.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "parent_dependency_revisions": "independent environment material family member (shared scale/material gate)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-ENV-FUNGUS/r001/cg_s_env_fungus.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "40cf7efa13a6a742631d4c9757f3c54645a4043dead097a41e0077fb6c3d0bfd",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "blank scaffold only (uniform hero/side/plan/detail kit; countable anchors per-panel)",
+          "content_qa": {
+            "identity": "EXACTLY three broad gently-domed caps (largest central) on ONE shared base mound; gill-ridge underside macro; no spore clouds"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "AWAITING_APPROVAL",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-ENV-FUNGUS"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      }
+    },
+    "CG-S-ENV-RUBBLE": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/environment/cg_s_env_rubble.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "parent_dependency_revisions": "independent environment material family member (shared scale/material gate)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-ENV-RUBBLE/r001/cg_s_env_rubble.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "873de4e386ad02b13e1610149e11ad3c66f185160bfbac1f735a26fc693fdd14",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "blank scaffold only (uniform hero/side/plan/detail kit; countable anchors per-panel)",
+          "content_qa": {
+            "identity": "EXACTLY five broken masonry blocks + EXACTLY two splintered ochre timber fragments in one pile (counted across hero and plan); fracture/splinter macro; no extra debris"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "AWAITING_APPROVAL",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-ENV-RUBBLE"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      }
     }
   },
   "batch_checkpoints": {
@@ -6009,25 +6401,26 @@
     "B08": {
       "opened_utc": "2026-09-24T08:05:00+00:00",
       "gate": "Shared scale/material gate; no extra people/animals/equipment",
-      "mode": "PROVISIONAL - not yet started; two chunks (10 ENV + 8 UNT) within the 10-attempt turn budget",
+      "mode": "PROVISIONAL - chunk 1 done (9 conforming + 1 queued repair); chunk 2 (8 UNT) next",
       "counts": {
         "requested": 18,
-        "candidates_generated": 0,
-        "awaiting_approval_ids": 0,
-        "approved_source": 0
+        "candidates_generated": 10,
+        "awaiting_approval_ids": 9,
+        "approved_source": 0,
+        "rejected_this_pass": 1
       },
       "plan": "Chunk 1: 10 ENV material sheets. Chunk 2: 8 UNT sheets (soldier is the ONLY human-bearing unit allowed; no extra people/animals/equipment anywhere). Consolidated human gate at pass end.",
       "id_states": {
-        "CG-S-ENV-CONIFER": "NOT_STARTED",
-        "CG-S-ENV-CRYSTAL": "NOT_STARTED",
-        "CG-S-ENV-DECIDUOUS": "NOT_STARTED",
-        "CG-S-ENV-FUNGUS": "NOT_STARTED",
-        "CG-S-ENV-KELP": "NOT_STARTED",
-        "CG-S-ENV-ORE": "NOT_STARTED",
-        "CG-S-ENV-PALM": "NOT_STARTED",
-        "CG-S-ENV-REEDS": "NOT_STARTED",
-        "CG-S-ENV-ROCK": "NOT_STARTED",
-        "CG-S-ENV-RUBBLE": "NOT_STARTED",
+        "CG-S-ENV-CONIFER": "CANDIDATE_AWAITING_APPROVAL (r001)",
+        "CG-S-ENV-CRYSTAL": "r001 REJECTED (4 columns vs 3) -> repair r002 queued (standing order)",
+        "CG-S-ENV-DECIDUOUS": "CANDIDATE_AWAITING_APPROVAL (r001)",
+        "CG-S-ENV-FUNGUS": "CANDIDATE_AWAITING_APPROVAL (r001)",
+        "CG-S-ENV-KELP": "CANDIDATE_AWAITING_APPROVAL (r001)",
+        "CG-S-ENV-ORE": "CANDIDATE_AWAITING_APPROVAL (r001)",
+        "CG-S-ENV-PALM": "CANDIDATE_AWAITING_APPROVAL (r001)",
+        "CG-S-ENV-REEDS": "CANDIDATE_AWAITING_APPROVAL (r001)",
+        "CG-S-ENV-ROCK": "CANDIDATE_AWAITING_APPROVAL (r001)",
+        "CG-S-ENV-RUBBLE": "CANDIDATE_AWAITING_APPROVAL (r001)",
         "CG-S-UNT-BALLISTA": "NOT_STARTED",
         "CG-S-UNT-BOW": "NOT_STARTED",
         "CG-S-UNT-HULL-MERCHANT": "NOT_STARTED",
@@ -6436,6 +6829,12 @@
       "incident": "B07_CHUNK3_AND_PASS_COMPLETE",
       "recorded_utc": "2026-09-24T07:35:00+00:00",
       "observation": "B07 chunk 3 (MOT-CANOPY, MOT-REED, MOT-VAULT): ALL 3 CONFORM as correct transform kits of the shared pavilion family vs B02 MOT-BASALT r001 baseline (3 canopy ribs, reed bundles + round-corner + diagonal trim, vault + 3 inset bands + pointed opening). B07 PASS COMPLETE: 19/19 IDs conforming on first candidates, zero rejections, zero repairs - cleanest batch of the run. 3 of 10 attempts used this turn. Consolidated B07 gate is the next action.",
+      "content_loss": "none"
+    },
+    {
+      "incident": "B08_CHUNK1_RECORDED",
+      "recorded_utc": "2026-09-24T09:05:00+00:00",
+      "observation": "B08 chunk 1 (10 ENV sheets, one parallel burst to the turn cap): 9/10 CONFORM on countable identity anchors (3 masses / 4 whorls / 6 fronds / 5 reeds / 3 ribbons / 2 strata / 3 caps / 5+2 rubble). CRYSTAL r001 REJECTED - four columns rendered vs exactly three (count anchor). Repair r002 queued next turn under the standing continuation order. 10 of 10 attempts used, zero tool errors, all sheets 1024x1024 on-scaffold.",
       "content_loss": "none"
     }
   ],
