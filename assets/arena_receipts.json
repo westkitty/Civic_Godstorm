@@ -2,7 +2,7 @@
   "ledger_type": "arena_source_receipts",
   "specification_version": "CG-V1.0.0",
   "created_utc": "2026-09-23T21:51:28+00:00",
-  "last_updated_utc": "2026-09-24T11:15:00+00:00",
+  "last_updated_utc": "2026-09-24T11:45:00+00:00",
   "authority": {
     "master_plan": "CIVIC_GODSTORM_MASTER_PLAN.md",
     "master_plan_head_commit": "5bd357e14d9b68776d50b1dee0829b7bd5ab939f",
@@ -6539,7 +6539,7 @@
       "specification_version": "CG-V1.0.0",
       "canonical_path": "assets/source/icons/cg_s_ico_food.png",
       "canonical_state": "ABSENT (correct - no approved source)",
-      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
       "parent_dependency_revisions": "economic glyph family member (shared stroke/margin/legibility gate)",
       "candidates": [
         {
@@ -6562,9 +6562,12 @@
         }
       ],
       "approval": {
-        "decision": "AWAITING_APPROVAL",
-        "approver": "human (pending)",
-        "date": null
+        "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+        "approver": "human (repository owner) via standing ruling #17",
+        "date": "2026-09-24",
+        "scope": "B09 economic glyph family (stroke/margin/legibility consistent burst)",
+        "approved_revision": "r001",
+        "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
       },
       "downstream_targets": [
         "CG-D-ICO-FOOD",
@@ -6580,7 +6583,7 @@
       "specification_version": "CG-V1.0.0",
       "canonical_path": "assets/source/icons/cg_s_ico_wood.png",
       "canonical_state": "ABSENT (correct - no approved source)",
-      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
       "parent_dependency_revisions": "economic glyph family member (shared stroke/margin/legibility gate)",
       "candidates": [
         {
@@ -6603,9 +6606,12 @@
         }
       ],
       "approval": {
-        "decision": "AWAITING_APPROVAL",
-        "approver": "human (pending)",
-        "date": null
+        "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+        "approver": "human (repository owner) via standing ruling #17",
+        "date": "2026-09-24",
+        "scope": "B09 economic glyph family (stroke/margin/legibility consistent burst)",
+        "approved_revision": "r001",
+        "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
       },
       "downstream_targets": [
         "CG-D-ICO-WOOD",
@@ -6621,7 +6627,7 @@
       "specification_version": "CG-V1.0.0",
       "canonical_path": "assets/source/icons/cg_s_ico_ore.png",
       "canonical_state": "ABSENT (correct - no approved source)",
-      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
       "parent_dependency_revisions": "economic glyph family member (shared stroke/margin/legibility gate)",
       "candidates": [
         {
@@ -6644,9 +6650,12 @@
         }
       ],
       "approval": {
-        "decision": "AWAITING_APPROVAL",
-        "approver": "human (pending)",
-        "date": null
+        "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+        "approver": "human (repository owner) via standing ruling #17",
+        "date": "2026-09-24",
+        "scope": "B09 economic glyph family (stroke/margin/legibility consistent burst)",
+        "approved_revision": "r001",
+        "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
       },
       "downstream_targets": [
         "CG-D-ICO-ORE",
@@ -6662,7 +6671,7 @@
       "specification_version": "CG-V1.0.0",
       "canonical_path": "assets/source/icons/cg_s_ico_tools.png",
       "canonical_state": "ABSENT (correct - no approved source)",
-      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
       "parent_dependency_revisions": "economic glyph family member (shared stroke/margin/legibility gate)",
       "candidates": [
         {
@@ -6685,9 +6694,12 @@
         }
       ],
       "approval": {
-        "decision": "AWAITING_APPROVAL",
-        "approver": "human (pending)",
-        "date": null
+        "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+        "approver": "human (repository owner) via standing ruling #17",
+        "date": "2026-09-24",
+        "scope": "B09 economic glyph family (stroke/margin/legibility consistent burst)",
+        "approved_revision": "r001",
+        "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
       },
       "downstream_targets": [
         "CG-D-ICO-TOOLS",
@@ -6703,7 +6715,7 @@
       "specification_version": "CG-V1.0.0",
       "canonical_path": "assets/source/icons/cg_s_ico_medicine.png",
       "canonical_state": "ABSENT (correct - no approved source)",
-      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
       "parent_dependency_revisions": "economic glyph family member (shared stroke/margin/legibility gate)",
       "candidates": [
         {
@@ -6726,9 +6738,12 @@
         }
       ],
       "approval": {
-        "decision": "AWAITING_APPROVAL",
-        "approver": "human (pending)",
-        "date": null
+        "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+        "approver": "human (repository owner) via standing ruling #17",
+        "date": "2026-09-24",
+        "scope": "B09 economic glyph family (stroke/margin/legibility consistent burst)",
+        "approved_revision": "r001",
+        "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
       },
       "downstream_targets": [
         "CG-D-ICO-MEDICINE",
@@ -6744,7 +6759,7 @@
       "specification_version": "CG-V1.0.0",
       "canonical_path": "assets/source/icons/cg_s_ico_bio.png",
       "canonical_state": "ABSENT (correct - no approved source)",
-      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
       "parent_dependency_revisions": "economic glyph family member (shared stroke/margin/legibility gate)",
       "candidates": [
         {
@@ -6767,9 +6782,12 @@
         }
       ],
       "approval": {
-        "decision": "AWAITING_APPROVAL",
-        "approver": "human (pending)",
-        "date": null
+        "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+        "approver": "human (repository owner) via standing ruling #17",
+        "date": "2026-09-24",
+        "scope": "B09 economic glyph family (stroke/margin/legibility consistent burst)",
+        "approved_revision": "r001",
+        "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
       },
       "downstream_targets": [
         "CG-D-ICO-BIO",
@@ -6785,7 +6803,7 @@
       "specification_version": "CG-V1.0.0",
       "canonical_path": "assets/source/icons/cg_s_ico_coin.png",
       "canonical_state": "ABSENT (correct - no approved source)",
-      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
       "parent_dependency_revisions": "economic glyph family member (shared stroke/margin/legibility gate)",
       "candidates": [
         {
@@ -6808,9 +6826,12 @@
         }
       ],
       "approval": {
-        "decision": "AWAITING_APPROVAL",
-        "approver": "human (pending)",
-        "date": null
+        "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+        "approver": "human (repository owner) via standing ruling #17",
+        "date": "2026-09-24",
+        "scope": "B09 economic glyph family (stroke/margin/legibility consistent burst)",
+        "approved_revision": "r001",
+        "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
       },
       "downstream_targets": [
         "CG-D-ICO-COIN",
@@ -6826,7 +6847,7 @@
       "specification_version": "CG-V1.0.0",
       "canonical_path": "assets/source/icons/cg_s_ico_knowledge.png",
       "canonical_state": "ABSENT (correct - no approved source)",
-      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
       "parent_dependency_revisions": "economic glyph family member (shared stroke/margin/legibility gate)",
       "candidates": [
         {
@@ -6849,9 +6870,12 @@
         }
       ],
       "approval": {
-        "decision": "AWAITING_APPROVAL",
-        "approver": "human (pending)",
-        "date": null
+        "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+        "approver": "human (repository owner) via standing ruling #17",
+        "date": "2026-09-24",
+        "scope": "B09 economic glyph family (stroke/margin/legibility consistent burst)",
+        "approved_revision": "r001",
+        "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
       },
       "downstream_targets": [
         "CG-D-ICO-KNOWLEDGE",
@@ -6867,7 +6891,7 @@
       "specification_version": "CG-V1.0.0",
       "canonical_path": "assets/source/icons/cg_s_ico_stone.png",
       "canonical_state": "ABSENT (correct - no approved source)",
-      "id_status": "REJECTED_THIS_PASS",
+      "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
       "parent_dependency_revisions": "economic glyph family member",
       "candidates": [
         {
@@ -6886,12 +6910,32 @@
             "violations": "count anchor failed: FIVE stone blocks rendered (two rows of two + one base) vs registry 'three squared stone blocks' (zoom-verified hero panel); style otherwise conforming to glyph family"
           },
           "status": "REJECTED"
+        },
+        {
+          "revision": "r002",
+          "path": "assets/candidates/CG-S-ICO-STONE/r002/cg_s_ico_stone.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "aac0110c0ea891aed20b1a78d0f445de12b3010ac40dc937a6b6a0a9eb68d776",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "targeted repair (per-panel EXACTLY-THREE counts: two top, one bottom, never five); no defective anchor",
+          "content_qa": {
+            "count": "exactly three blocks (two top, one wider bottom) in all four panels - count anchor restored; glyph family style held"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
         }
       ],
       "approval": {
-        "decision": "REJECTED_THIS_PASS",
-        "approver": "human (pending)",
-        "date": null
+        "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+        "approver": "human (repository owner) via standing ruling #17",
+        "date": "2026-09-24",
+        "scope": "B09 economic glyph; approved as r002; r001 preserved as rejected evidence",
+        "approved_revision": "r002",
+        "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
       },
       "downstream_targets": [
         "CG-D-GOD-ICO-STONE",
@@ -6899,10 +6943,274 @@
       ],
       "repair_budget": {
         "initial_candidates_used": 1,
-        "repair_candidates_used": 0,
-        "remaining": 1
+        "repair_candidates_used": 1,
+        "remaining": 0
       },
       "reason": "Count anchor failure (5 blocks vs 3). Repair r002 queued under standing ruling #17; strategy: per-panel 'exactly three blocks: two on top, one below' stated first (validated on CRYSTAL r002)."
+    },
+    "CG-S-EMB-01": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/emblems/cg_s_emb_01.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+      "parent_dependency_revisions": "faction emblem family (six-distinction identity set)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-EMB-01/r001/cg_s_emb_01.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "270ac7f8c96a917bc4facd9ef1f92ecd01b1f442ed082ae642f2865ab419ef5b",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "blank scaffold; uniform emblem kit (hero / dark chip / grayscale / banner flag)",
+          "content_qa": {
+            "identity": "three stepped bars around an open square",
+            "tint": "#C85B50",
+            "panels": "hero + chip + grayscale distinction proof + banner flag; no text; six-emblem distinction verified on contact sheet vs all tints"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+        "approver": "human (repository owner) via standing ruling #17",
+        "date": "2026-09-24",
+        "scope": "B09 faction emblem; six-distinction identity set complete",
+        "approved_revision": "r001",
+        "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+      },
+      "downstream_targets": [
+        "CG-D-EMB-01"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      }
+    },
+    "CG-S-EMB-02": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/emblems/cg_s_emb_02.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+      "parent_dependency_revisions": "faction emblem family (six-distinction identity set)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-EMB-02/r001/cg_s_emb_02.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "1ba3de27aca0184cecc056b7084f8dd17ef9f0931aec8904ed14cef703445cb1",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "blank scaffold; uniform emblem kit (hero / dark chip / grayscale / banner flag)",
+          "content_qa": {
+            "identity": "split rising disc above two parallel waves",
+            "tint": "#DAAC55",
+            "panels": "hero + chip + grayscale distinction proof + banner flag; no text; six-emblem distinction verified on contact sheet vs all tints"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+        "approver": "human (repository owner) via standing ruling #17",
+        "date": "2026-09-24",
+        "scope": "B09 faction emblem; six-distinction identity set complete",
+        "approved_revision": "r001",
+        "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+      },
+      "downstream_targets": [
+        "CG-D-EMB-02"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      }
+    },
+    "CG-S-EMB-03": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/emblems/cg_s_emb_03.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+      "parent_dependency_revisions": "faction emblem family (six-distinction identity set)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-EMB-03/r001/cg_s_emb_03.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "48dc7f084061a43b4b402a8d2ff586f2574a9617da5ea1f74e9c03101fb4b092",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "blank scaffold; uniform emblem kit (hero / dark chip / grayscale / banner flag)",
+          "content_qa": {
+            "identity": "open diamond surrounding one horizontal bridge",
+            "tint": "#55A59B",
+            "panels": "hero + chip + grayscale distinction proof + banner flag; no text; six-emblem distinction verified on contact sheet vs all tints"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+        "approver": "human (repository owner) via standing ruling #17",
+        "date": "2026-09-24",
+        "scope": "B09 faction emblem; six-distinction identity set complete",
+        "approved_revision": "r001",
+        "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+      },
+      "downstream_targets": [
+        "CG-D-EMB-03"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      }
+    },
+    "CG-S-EMB-04": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/emblems/cg_s_emb_04.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+      "parent_dependency_revisions": "faction emblem family (six-distinction identity set)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-EMB-04/r001/cg_s_emb_04.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "78124f71d138856430a170e2dd9d059e917c44f4667db7bd96f981b05da84d04",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "blank scaffold; uniform emblem kit (hero / dark chip / grayscale / banner flag)",
+          "content_qa": {
+            "identity": "three-spoke wheel with deliberate lower gap",
+            "tint": "#6F86C7",
+            "panels": "hero + chip + grayscale distinction proof + banner flag; no text; six-emblem distinction verified on contact sheet vs all tints"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+        "approver": "human (repository owner) via standing ruling #17",
+        "date": "2026-09-24",
+        "scope": "B09 faction emblem; six-distinction identity set complete",
+        "approved_revision": "r001",
+        "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+      },
+      "downstream_targets": [
+        "CG-D-EMB-04"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      }
+    },
+    "CG-S-EMB-05": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/emblems/cg_s_emb_05.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+      "parent_dependency_revisions": "faction emblem family (six-distinction identity set)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-EMB-05/r001/cg_s_emb_05.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "87ac15182f8fd87d2323d14d975225e6cadd697309c21badfcdd6b9245f1bc09",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "blank scaffold; uniform emblem kit (hero / dark chip / grayscale / banner flag)",
+          "content_qa": {
+            "identity": "two opposed hooked brackets enclosing a dot",
+            "tint": "#A979B1",
+            "panels": "hero + chip + grayscale distinction proof + banner flag; no text; six-emblem distinction verified on contact sheet vs all tints"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+        "approver": "human (repository owner) via standing ruling #17",
+        "date": "2026-09-24",
+        "scope": "B09 faction emblem; six-distinction identity set complete",
+        "approved_revision": "r001",
+        "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+      },
+      "downstream_targets": [
+        "CG-D-EMB-05"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      }
+    },
+    "CG-S-EMB-06": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/emblems/cg_s_emb_06.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+      "parent_dependency_revisions": "faction emblem family (six-distinction identity set)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-EMB-06/r001/cg_s_emb_06.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "e47594798768307069d328342e86306cc7485895a1c38eefd7fd84835565160b",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "blank scaffold; uniform emblem kit (hero / dark chip / grayscale / banner flag)",
+          "content_qa": {
+            "identity": "vertical stem bearing three offset block leaves",
+            "tint": "#C9C9B4",
+            "panels": "hero + chip + grayscale distinction proof + banner flag; no text; six-emblem distinction verified on contact sheet vs all tints"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+        "approver": "human (repository owner) via standing ruling #17",
+        "date": "2026-09-24",
+        "scope": "B09 faction emblem; six-distinction identity set complete",
+        "approved_revision": "r001",
+        "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+      },
+      "downstream_targets": [
+        "CG-D-EMB-06"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      }
     }
   },
   "batch_checkpoints": {
@@ -7163,12 +7471,12 @@
     "B09": {
       "opened_utc": "2026-09-24T10:15:00+00:00",
       "gate": "Grayscale shape legibility and all six identity distinctions",
-      "mode": "PROVISIONAL - not yet started; glyph set generated in ONE burst for stroke/margin family consistency",
+      "mode": "PROVISIONAL - CLOSED",
       "counts": {
         "requested": 15,
-        "candidates_generated": 0,
-        "awaiting_approval_ids": 0,
-        "approved_source": 0
+        "candidates_generated": 16,
+        "provisionally_approved_ids": 15,
+        "rejected_candidates": 1
       },
       "plan": "Chunk 1: 9 economic glyphs (one 2x2 sheet each, single burst). Chunk 2: 6 faction emblems. En-bloc gate under ruling #17. B10-B12 follow.",
       "id_states": {
@@ -7187,6 +7495,30 @@
         "CG-S-EMB-04": "NOT_STARTED",
         "CG-S-EMB-05": "NOT_STARTED",
         "CG-S-EMB-06": "NOT_STARTED"
+      },
+      "resolution": "CLOSED 2026-09-24 en bloc under ruling #17: 15/15 approved-provisional (STONE as r002); six-emblem distinction set verified; B10 unlocked"
+    },
+    "B10": {
+      "opened_utc": "2026-09-24T11:45:00+00:00",
+      "gate": "Match accepted glyph stroke/margins; distinct critical actions",
+      "mode": "PROVISIONAL - not yet started; 9 action glyphs in ONE burst matching the B09 glyph family",
+      "counts": {
+        "requested": 9,
+        "candidates_generated": 0,
+        "awaiting_approval_ids": 0,
+        "approved_source": 0
+      },
+      "plan": "One burst of 9 (MOVE, FEED, REST, GUARD, ATTACK, EVOLVE, MIGRATE, BUILD, TRADE) reusing the exact B09 glyph kit for stroke-family continuity; en-bloc gate; B11 next.",
+      "id_states": {
+        "CG-S-ICO-MOVE": "NOT_STARTED",
+        "CG-S-ICO-FEED": "NOT_STARTED",
+        "CG-S-ICO-REST": "NOT_STARTED",
+        "CG-S-ICO-GUARD": "NOT_STARTED",
+        "CG-S-ICO-ATTACK": "NOT_STARTED",
+        "CG-S-ICO-EVOLVE": "NOT_STARTED",
+        "CG-S-ICO-MIGRATE": "NOT_STARTED",
+        "CG-S-ICO-BUILD": "NOT_STARTED",
+        "CG-S-ICO-TRADE": "NOT_STARTED"
       }
     }
   },
@@ -7623,6 +7955,12 @@
       "incident": "B09_GLYPH_CANONICAL_PATHS_CORRECTED",
       "recorded_utc": "2026-09-24T11:15:00+00:00",
       "observation": "Chunk-1 receipts had guessed canonical paths (assets/source/glyphs/*); plan-verified actual: assets/source/icons/*. Corrected in place before any promotion.",
+      "content_loss": "none"
+    },
+    {
+      "incident": "B09_CLOSED",
+      "recorded_utc": "2026-09-24T11:45:00+00:00",
+      "observation": "B09 closed en bloc: STONE r002 repaired-and-approved (3-block count restored); 8 glyphs r001; 6 EMB r001 with six distinct faction tints and grayscale distinction proofs. 15/15 approved-provisional. B10 opened. 7 of 10 attempts used this turn.",
       "content_loss": "none"
     }
   ],
