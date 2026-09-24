@@ -2,7 +2,7 @@
   "ledger_type": "arena_source_receipts",
   "specification_version": "CG-V1.0.0",
   "created_utc": "2026-09-23T21:51:28+00:00",
-  "last_updated_utc": "2026-09-24T09:35:00+00:00",
+  "last_updated_utc": "2026-09-24T10:15:00+00:00",
   "authority": {
     "master_plan": "CIVIC_GODSTORM_MASTER_PLAN.md",
     "master_plan_head_commit": "5bd357e14d9b68776d50b1dee0829b7bd5ab939f",
@@ -6063,7 +6063,7 @@
       "specification_version": "CG-V1.0.0",
       "canonical_path": "assets/source/environment/cg_s_env_crystal.png",
       "canonical_state": "ABSENT (correct - no approved source)",
-      "id_status": "REJECTED_THIS_PASS",
+      "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
       "parent_dependency_revisions": "independent environment material family member (shared scale/material gate)",
       "candidates": [
         {
@@ -6082,20 +6082,40 @@
             "violations": "count anchor failed: FOUR unequal blunt columns rendered instead of exactly three (hero, elevation and plan footprints all show 4); blunt-tip and matte no-glow qualities correct; sheet internally consistent at 4 - the count is the identity anchor"
           },
           "status": "REJECTED"
+        },
+        {
+          "revision": "r002",
+          "path": "assets/candidates/CG-S-ENV-CRYSTAL/r002/cg_s_env_crystal.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "9a4f61548ee29708a773af45236e7c6d931d79fe56e57392d2723f913485be78",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "FRESH targeted repair (per-panel EXACTLY-THREE counts incl. plan footprints 'never four'); no defective anchor",
+          "content_qa": {
+            "count": "EXACTLY three columns (tall/medium/short) in hero, elevation and plan footprints - count anchor restored; blunt faceted prisms; matte with zero glow effects"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
         }
       ],
       "approval": {
-        "decision": "REJECTED_THIS_PASS",
-        "approver": "human (pending)",
-        "date": null
+        "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+        "approver": "human (repository owner) via standing ruling STANDING_CONTINUATION_ORDER_B08_TO_B12",
+        "date": "2026-09-24",
+        "scope": "B08 crystal formation; approved as r002 (per-panel count strategy validated 2nd time); r001 preserved as rejected evidence",
+        "approved_revision": "r002",
+        "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
       },
       "downstream_targets": [
         "CG-D-ENV-CRYSTAL"
       ],
       "repair_budget": {
         "initial_candidates_used": 1,
-        "repair_candidates_used": 0,
-        "remaining": 1
+        "repair_candidates_used": 1,
+        "remaining": 0
       },
       "reason": "Count anchor failure (4 columns vs exactly 3). Pre-authorized repair r002 queued under ruling STANDING_CONTINUATION_ORDER_B08_TO_B12; strategy: 'exactly three columns total - one tall, one medium, one short' stated first + plan phrased as three footprints.",
       "retry_strategy_if_authorized": "same"
@@ -6171,6 +6191,343 @@
       },
       "downstream_targets": [
         "CG-D-ENV-RUBBLE"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      }
+    },
+    "CG-S-UNT-SOLDIER": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/units/cg_s_unt_soldier.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+      "parent_dependency_revisions": "independent unit/equipment member (shared scale/material gate; SOLDIER is the batch's only human-bearing unit)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-UNT-SOLDIER/r001/cg_s_unt_soldier.png",
+          "native_dimensions": "1376x768",
+          "native_aspect_error_pct": 19.5,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "d7ca03075259548644be336521a6c15c4e17018d3d22e38c54fe7ef3fbd4f756",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "blank scaffold only (uniform kit; countable anchors per-panel)",
+          "content_qa": {
+            "identity": "ONE stylized armored figure, neutral A-pose, EMPTY open hands, closed simple helmet with vision slit, no plume/horns/face; two arms two legs; no second figure/animals/equipment",
+            "flags": "TB-07 canvas swap 1376x768, quadrant logic intact (5th occurrence)"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+        "approver": "human (repository owner) via standing ruling STANDING_CONTINUATION_ORDER_B08_TO_B12",
+        "date": "2026-09-24",
+        "scope": "B08 unit/equipment; en-bloc gate approval; canvas swap accepted as technical pass (precedent)",
+        "approved_revision": "r001",
+        "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+      },
+      "downstream_targets": [
+        "CG-D-UNT-SOLDIER"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      }
+    },
+    "CG-S-UNT-WAGON": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/units/cg_s_unt_wagon.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+      "parent_dependency_revisions": "independent unit/equipment member (shared scale/material gate; SOLDIER is the batch's only human-bearing unit)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-UNT-WAGON/r001/cg_s_unt_wagon.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "2fdc1c58b17dad7086241f797072f2bfa9e0059534f981cf5683467dfba94ad9",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "blank scaffold only (uniform kit; countable anchors per-panel)",
+          "content_qa": {
+            "identity": "two-axle four-wheel hand-pushed cargo wagon; rectangular boxes + rolled lashed canopy bundle; push handle; NO draft animal/harness"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+        "approver": "human (repository owner) via standing ruling STANDING_CONTINUATION_ORDER_B08_TO_B12",
+        "date": "2026-09-24",
+        "scope": "B08 unit/equipment; en-bloc gate approval",
+        "approved_revision": "r001",
+        "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+      },
+      "downstream_targets": [
+        "CG-D-UNT-WAGON"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      }
+    },
+    "CG-S-UNT-SPEAR": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/units/cg_s_unt_spear.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+      "parent_dependency_revisions": "independent unit/equipment member (shared scale/material gate; SOLDIER is the batch's only human-bearing unit)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-UNT-SPEAR/r001/cg_s_unt_spear.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "a2677fd881afb59c94b2422dfd0ec099479c4794fa0b12a6020d5142abd676bc",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "blank scaffold only (uniform kit; countable anchors per-panel)",
+          "content_qa": {
+            "identity": "one straight shaft, ONE leaf blade, wrapped grip, butt cap; single object, NO bearer/hands"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+        "approver": "human (repository owner) via standing ruling STANDING_CONTINUATION_ORDER_B08_TO_B12",
+        "date": "2026-09-24",
+        "scope": "B08 unit/equipment; en-bloc gate approval",
+        "approved_revision": "r001",
+        "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+      },
+      "downstream_targets": [
+        "CG-D-UNT-SPEAR"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      }
+    },
+    "CG-S-UNT-BOW": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/units/cg_s_unt_bow.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+      "parent_dependency_revisions": "independent unit/equipment member (shared scale/material gate; SOLDIER is the batch's only human-bearing unit)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-UNT-BOW/r001/cg_s_unt_bow.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "39aceaea7e7dd4ed3e13a10bd7a98c3a1011b1504d518e5becdcd9ee14dbf20e",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "blank scaffold only (uniform kit; countable anchors per-panel)",
+          "content_qa": {
+            "identity": "one recurved wooden bow with string + wrapped grip; EXACTLY ONE separate arrow alongside (leaf head, three-feather fletching); no quiver/bearer"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+        "approver": "human (repository owner) via standing ruling STANDING_CONTINUATION_ORDER_B08_TO_B12",
+        "date": "2026-09-24",
+        "scope": "B08 unit/equipment; en-bloc gate approval",
+        "approved_revision": "r001",
+        "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+      },
+      "downstream_targets": [
+        "CG-D-UNT-BOW"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      }
+    },
+    "CG-S-UNT-SHIELD": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/units/cg_s_unt_shield.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+      "parent_dependency_revisions": "independent unit/equipment member (shared scale/material gate; SOLDIER is the batch's only human-bearing unit)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-UNT-SHIELD/r001/cg_s_unt_shield.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "3bffa9ea6080b9be6980008a1de9e5117edcfe4c615f90f2fa937b19fe035db3",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "blank scaffold only (uniform kit; countable anchors per-panel)",
+          "content_qa": {
+            "identity": "one broad oval shield; central reinforced ridge + rim boss; REVERSE panel shows horizontal handgrip; no bearer/emblem"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+        "approver": "human (repository owner) via standing ruling STANDING_CONTINUATION_ORDER_B08_TO_B12",
+        "date": "2026-09-24",
+        "scope": "B08 unit/equipment; en-bloc gate approval",
+        "approved_revision": "r001",
+        "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+      },
+      "downstream_targets": [
+        "CG-D-UNT-SHIELD"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      }
+    },
+    "CG-S-UNT-BALLISTA": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/units/cg_s_unt_ballista.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+      "parent_dependency_revisions": "independent unit/equipment member (shared scale/material gate; SOLDIER is the batch's only human-bearing unit)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-UNT-BALLISTA/r001/cg_s_unt_ballista.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "3dff7f198fb065a4c5a3458ed63cf30225fa7d41a4877edd522cadcd66f90811",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "blank scaffold only (uniform kit; countable anchors per-panel)",
+          "content_qa": {
+            "identity": "wheeled timber tension engine; EXACTLY ONE horizontal bow; visible loading bed with bolt; rear windlass crank; NOT a cannon (no barrel/tube/smoke)"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+        "approver": "human (repository owner) via standing ruling STANDING_CONTINUATION_ORDER_B08_TO_B12",
+        "date": "2026-09-24",
+        "scope": "B08 unit/equipment; en-bloc gate approval",
+        "approved_revision": "r001",
+        "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+      },
+      "downstream_targets": [
+        "CG-D-UNT-BALLISTA"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      }
+    },
+    "CG-S-UNT-HULL-MERCHANT": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/units/cg_s_unt_hull_merchant.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+      "parent_dependency_revisions": "independent unit/equipment member (shared scale/material gate; SOLDIER is the batch's only human-bearing unit)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-UNT-HULL-MERCHANT/r001/cg_s_unt_hull_merchant.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "3f18e4ec5d8aebeb34e43829efbebcfd59f783690763b101dc874f9835e05e93",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "blank scaffold only (uniform kit; countable anchors per-panel)",
+          "content_qa": {
+            "identity": "single low broad cargo hull; ONE square sail on central mast; open deck with rectangular crates (WAGON cargo forms); stern steering oar; NO crew/animals/second mast"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+        "approver": "human (repository owner) via standing ruling STANDING_CONTINUATION_ORDER_B08_TO_B12",
+        "date": "2026-09-24",
+        "scope": "B08 unit/equipment; en-bloc gate approval",
+        "approved_revision": "r001",
+        "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+      },
+      "downstream_targets": [
+        "CG-D-UNT-HULL-MERCHANT"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      }
+    },
+    "CG-S-UNT-HULL-WAR": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/units/cg_s_unt_hull_war.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+      "parent_dependency_revisions": "independent unit/equipment member (shared scale/material gate; SOLDIER is the batch's only human-bearing unit)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-UNT-HULL-WAR/r001/cg_s_unt_hull_war.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "8937e43cb798b11556d7955236d5599082582e8cd8ecaf1b6a7fef5483fad38a",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "blank scaffold only (uniform kit; countable anchors per-panel)",
+          "content_qa": {
+            "identity": "long narrow oared hull (single oar bank both sides); ONE square sail; reinforced banded stem; shield rail along top rail (no figures on shields); plan shows benches + oar positions; NO crew/banners"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+        "approver": "human (repository owner) via standing ruling STANDING_CONTINUATION_ORDER_B08_TO_B12",
+        "date": "2026-09-24",
+        "scope": "B08 unit/equipment; en-bloc gate approval",
+        "approved_revision": "r001",
+        "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+      },
+      "downstream_targets": [
+        "CG-D-UNT-HULL-WAR"
       ],
       "repair_budget": {
         "initial_candidates_used": 1,
@@ -6401,13 +6758,15 @@
     "B08": {
       "opened_utc": "2026-09-24T08:05:00+00:00",
       "gate": "Shared scale/material gate; no extra people/animals/equipment",
-      "mode": "PROVISIONAL - chunk 1 done (9 conforming + CRYSTAL r002 pending); chunk 2 (8 UNT) next turn",
+      "mode": "PROVISIONAL - CLOSED",
       "counts": {
         "requested": 18,
-        "candidates_generated": 10,
+        "candidates_generated": 19,
         "awaiting_approval_ids": 9,
         "approved_source": 0,
-        "rejected_this_pass": 1
+        "rejected_this_pass": 1,
+        "provisionally_approved_ids": 18,
+        "rejected_candidates": 1
       },
       "plan": "Chunk 1: 10 ENV material sheets. Chunk 2: 8 UNT sheets (soldier is the ONLY human-bearing unit allowed; no extra people/animals/equipment anywhere). Consolidated human gate at pass end.",
       "id_states": {
@@ -6429,6 +6788,36 @@
         "CG-S-UNT-SOLDIER": "NOT_STARTED",
         "CG-S-UNT-SPEAR": "NOT_STARTED",
         "CG-S-UNT-WAGON": "NOT_STARTED"
+      },
+      "resolution": "CLOSED 2026-09-24 en bloc under ruling STANDING_CONTINUATION_ORDER_B08_TO_B12: 18/18 IDs approved-provisional (CRYSTAL as r002); chunk 1 9/10 conforming + r002 repair; chunk 2 8/8 conforming; B09 unlocked"
+    },
+    "B09": {
+      "opened_utc": "2026-09-24T10:15:00+00:00",
+      "gate": "Grayscale shape legibility and all six identity distinctions",
+      "mode": "PROVISIONAL - not yet started; glyph set generated in ONE burst for stroke/margin family consistency",
+      "counts": {
+        "requested": 15,
+        "candidates_generated": 0,
+        "awaiting_approval_ids": 0,
+        "approved_source": 0
+      },
+      "plan": "Chunk 1: 9 economic glyphs (one 2x2 sheet each, single burst). Chunk 2: 6 faction emblems. En-bloc gate under ruling #17. B10-B12 follow.",
+      "id_states": {
+        "CG-S-ICO-FOOD": "NOT_STARTED",
+        "CG-S-ICO-WOOD": "NOT_STARTED",
+        "CG-S-ICO-STONE": "NOT_STARTED",
+        "CG-S-ICO-ORE": "NOT_STARTED",
+        "CG-S-ICO-TOOLS": "NOT_STARTED",
+        "CG-S-ICO-MEDICINE": "NOT_STARTED",
+        "CG-S-ICO-BIO": "NOT_STARTED",
+        "CG-S-ICO-COIN": "NOT_STARTED",
+        "CG-S-ICO-KNOWLEDGE": "NOT_STARTED",
+        "CG-S-EMB-01": "NOT_STARTED",
+        "CG-S-EMB-02": "NOT_STARTED",
+        "CG-S-EMB-03": "NOT_STARTED",
+        "CG-S-EMB-04": "NOT_STARTED",
+        "CG-S-EMB-05": "NOT_STARTED",
+        "CG-S-EMB-06": "NOT_STARTED"
       }
     }
   },
@@ -6841,6 +7230,18 @@
       "incident": "B08_TURN_CAP_CRYSTAL_R002_PENDING",
       "recorded_utc": "2026-09-24T09:35:00+00:00",
       "observation": "CRYSTAL r002 repair attempt blocked by the hard 10-attempt turn cap (10 ENV generations + 1 missing-scaffold error consumed it). r002 template pre-staged; recorded per-panel count strategy ready ('three columns total: tall+medium+short, three footprints in plan'). Chunk 2 (8 UNT) also queued for next turn. No generation errors other than the cap itself.",
+      "content_loss": "none"
+    },
+    {
+      "incident": "NINTH_WORKSPACE_RESET_RECOVERED",
+      "recorded_utc": "2026-09-24T10:15:00+00:00",
+      "observation": "Local found re-rooted at docs 5bd357e again WITHOUT untracked assets (reset-#8 variant). Remote intact at 799461b (all B08 chunk-1 work pre-pushed). Recovery: explicit-refspec fetch + reset --hard; 183 PNGs restored from remote; CRYSTAL r002 scaffold re-created procedurally. Zero loss.",
+      "content_loss": "none"
+    },
+    {
+      "incident": "B08_PASS_COMPLETE_CLOSED",
+      "recorded_utc": "2026-09-24T10:15:00+00:00",
+      "observation": "B08 chunk 2 (8 UNT sheets incl. CRYSTAL r002): ALL CONFORM. B08 closed 18/18 en bloc under ruling #17 (CRYSTAL as r002; SOLDIER canvas flag accepted). B09 opened (15 IDs: 9 ICO + 6 EMB); scaffolds pre-staged next action. 9 of 10 turn attempts used; remaining attempt reserved to keep the B09 glyph set in a single consistent burst next turn.",
       "content_loss": "none"
     }
   ],
