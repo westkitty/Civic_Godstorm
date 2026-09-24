@@ -2,7 +2,7 @@
  "ledger_type": "arena_source_receipts",
  "specification_version": "CG-V1.0.0",
  "created_utc": "2026-09-23T21:51:28+00:00",
- "last_updated_utc": "2026-09-24T23:37:00+00:00",
+ "last_updated_utc": "2026-09-24T23:40:20+00:00",
  "authority": {
   "master_plan": "CIVIC_GODSTORM_MASTER_PLAN.md",
   "master_plan_head_commit": "5bd357e14d9b68776d50b1dee0829b7bd5ab939f",
@@ -8021,6 +8021,211 @@
     "repair_candidates_used": 0,
     "remaining": 1
    }
+  },
+  "CG-S-ICO-GOD": {
+   "specification_version": "CG-V1.0.0",
+   "canonical_path": "assets/source/icons/cg_s_ico_god.png",
+   "canonical_state": "ABSENT (correct - no approved source)",
+   "id_status": "CANDIDATE_AWAITING_APPROVAL",
+   "parent_dependency_revisions": "information/warning glyph family member (B09/B10 glyph kit; shared stroke/margin/legibility gate)",
+   "candidates": [
+    {
+     "revision": "r001",
+     "path": "assets/candidates/CG-S-ICO-GOD/r001/cg_s_ico_god.png",
+     "native_dimensions": "1024x1024",
+     "native_aspect_error_pct": 0.0,
+     "format": "PNG 8-bit sRGB TrueColor",
+     "alpha": "none",
+     "sha256": "28ed6a8e6dc10ead73146cf51091a44016ebe9464a5668470e054e80847ff673",
+     "generation_tool": "Arena Agent Mode generate_image",
+     "model": "UNKNOWN",
+     "normalization_operation": "none performed",
+     "parent_revision": "blank scaffold; uniform B09/B10 glyph kit (hero / dark-chip / 3-instance size ladder / grayscale) in one 5-sheet burst for family consistency",
+     "content_qa": {
+      "identity": "ONE enormous rounded nonhumanoid creature back (broad arching shoulder-hump silhouette, no face/limbs/eyes) looming above EXACTLY two tiny pitched-roof houses; verified at zoom in hero and in every ladder instance",
+      "style": "parchment-tone mark #F4ECDE, thick uniform dark charcoal stroke, rounded contour, generous margins; dark chip + 3-instance size ladder + grayscale panels present; no text; family consistency verified on contact sheet + native-resolution zooms against the B09/B10 glyph kit"
+     },
+     "status": "CANDIDATE_AWAITING_APPROVAL"
+    }
+   ],
+   "approval": {
+    "decision": "AWAITING_APPROVAL",
+    "approver": "human (pending)",
+    "date": null
+   },
+   "downstream_targets": [
+    "CG-D-ICO-GOD",
+    "CG-D-UI-ATLAS"
+   ],
+   "repair_budget": {
+    "initial_candidates_used": 1,
+    "repair_candidates_used": 0,
+    "remaining": 1
+   }
+  },
+  "CG-S-ICO-ECOLOGY": {
+   "specification_version": "CG-V1.0.0",
+   "canonical_path": "assets/source/icons/cg_s_ico_ecology.png",
+   "canonical_state": "ABSENT (correct - no approved source)",
+   "id_status": "CANDIDATE_AWAITING_APPROVAL",
+   "parent_dependency_revisions": "information/warning glyph family member (B09/B10 glyph kit; shared stroke/margin/legibility gate)",
+   "candidates": [
+    {
+     "revision": "r001",
+     "path": "assets/candidates/CG-S-ICO-ECOLOGY/r001/cg_s_ico_ecology.png",
+     "native_dimensions": "1024x1024",
+     "native_aspect_error_pct": 0.0,
+     "format": "PNG 8-bit sRGB TrueColor",
+     "alpha": "none",
+     "sha256": "aebf5fbe7f35948b752c60f145515510c29b938bbbd82874b2f0956c82fb3ded",
+     "generation_tool": "Arena Agent Mode generate_image",
+     "model": "UNKNOWN",
+     "normalization_operation": "none performed",
+     "parent_revision": "blank scaffold; uniform B09/B10 glyph kit (hero / dark-chip / 3-instance size ladder / grayscale) in one 5-sheet burst for family consistency",
+     "content_qa": {
+      "identity": "exactly one simple leaf (pointed oval, one center vein) beside exactly one teardrop-shaped water drop",
+      "style": "parchment-tone mark #F4ECDE, thick uniform dark charcoal stroke, rounded contour, generous margins; dark chip + 3-instance size ladder + grayscale panels present; no text; family consistency verified on contact sheet + native-resolution zooms against the B09/B10 glyph kit"
+     },
+     "status": "CANDIDATE_AWAITING_APPROVAL"
+    }
+   ],
+   "approval": {
+    "decision": "AWAITING_APPROVAL",
+    "approver": "human (pending)",
+    "date": null
+   },
+   "downstream_targets": [
+    "CG-D-ICO-ECOLOGY",
+    "CG-D-UI-ATLAS"
+   ],
+   "repair_budget": {
+    "initial_candidates_used": 1,
+    "repair_candidates_used": 0,
+    "remaining": 1
+   }
+  },
+  "CG-S-ICO-CLAIM": {
+   "specification_version": "CG-V1.0.0",
+   "canonical_path": "assets/source/icons/cg_s_ico_claim.png",
+   "canonical_state": "ABSENT (correct - no approved source)",
+   "id_status": "CANDIDATE_AWAITING_APPROVAL",
+   "parent_dependency_revisions": "information/warning glyph family member (B09/B10 glyph kit; shared stroke/margin/legibility gate)",
+   "candidates": [
+    {
+     "revision": "r001",
+     "path": "assets/candidates/CG-S-ICO-CLAIM/r001/cg_s_ico_claim.png",
+     "native_dimensions": "1024x1024",
+     "native_aspect_error_pct": 0.0,
+     "format": "PNG 8-bit sRGB TrueColor",
+     "alpha": "none",
+     "sha256": "04b922a36458345976f5c28762ce76dc858786f56a9e95e662ecaa7fb0c8bbb3",
+     "generation_tool": "Arena Agent Mode generate_image",
+     "model": "UNKNOWN",
+     "normalization_operation": "none performed",
+     "parent_revision": "blank scaffold; uniform B09/B10 glyph kit (hero / dark-chip / 3-instance size ladder / grayscale) in one 5-sheet burst for family consistency",
+     "content_qa": {
+      "identity": "one hexagon boundary outline enclosing exactly one small pennant flag on a short pole planted at center",
+      "style": "parchment-tone mark #F4ECDE, thick uniform dark charcoal stroke, rounded contour, generous margins; dark chip + 3-instance size ladder + grayscale panels present; no text; family consistency verified on contact sheet + native-resolution zooms against the B09/B10 glyph kit"
+     },
+     "status": "CANDIDATE_AWAITING_APPROVAL"
+    }
+   ],
+   "approval": {
+    "decision": "AWAITING_APPROVAL",
+    "approver": "human (pending)",
+    "date": null
+   },
+   "downstream_targets": [
+    "CG-D-ICO-CLAIM",
+    "CG-D-UI-ATLAS"
+   ],
+   "repair_budget": {
+    "initial_candidates_used": 1,
+    "repair_candidates_used": 0,
+    "remaining": 1
+   }
+  },
+  "CG-S-ICO-ARMY": {
+   "specification_version": "CG-V1.0.0",
+   "canonical_path": "assets/source/icons/cg_s_ico_army.png",
+   "canonical_state": "ABSENT (correct - no approved source)",
+   "id_status": "CANDIDATE_AWAITING_APPROVAL",
+   "parent_dependency_revisions": "information/warning glyph family member (B09/B10 glyph kit; shared stroke/margin/legibility gate)",
+   "candidates": [
+    {
+     "revision": "r001",
+     "path": "assets/candidates/CG-S-ICO-ARMY/r001/cg_s_ico_army.png",
+     "native_dimensions": "1024x1024",
+     "native_aspect_error_pct": 0.0,
+     "format": "PNG 8-bit sRGB TrueColor",
+     "alpha": "none",
+     "sha256": "a655e6c63f02272b211358d6d58809ec365c4066ff55cf1b788c1fc073989fb6",
+     "generation_tool": "Arena Agent Mode generate_image",
+     "model": "UNKNOWN",
+     "normalization_operation": "none performed",
+     "parent_revision": "blank scaffold; uniform B09/B10 glyph kit (hero / dark-chip / 3-instance size ladder / grayscale) in one 5-sheet burst for family consistency",
+     "content_qa": {
+      "identity": "exactly three vertical spear shafts of equal height with small leaf-shaped blades standing on ONE shared horizontal base bar",
+      "style": "parchment-tone mark #F4ECDE, thick uniform dark charcoal stroke, rounded contour, generous margins; dark chip + 3-instance size ladder + grayscale panels present; no text; family consistency verified on contact sheet + native-resolution zooms against the B09/B10 glyph kit"
+     },
+     "status": "CANDIDATE_AWAITING_APPROVAL"
+    }
+   ],
+   "approval": {
+    "decision": "AWAITING_APPROVAL",
+    "approver": "human (pending)",
+    "date": null
+   },
+   "downstream_targets": [
+    "CG-D-ICO-ARMY",
+    "CG-D-UI-ATLAS"
+   ],
+   "repair_budget": {
+    "initial_candidates_used": 1,
+    "repair_candidates_used": 0,
+    "remaining": 1
+   }
+  },
+  "CG-S-ICO-VISIBILITY": {
+   "specification_version": "CG-V1.0.0",
+   "canonical_path": "assets/source/icons/cg_s_ico_visibility.png",
+   "canonical_state": "ABSENT (correct - no approved source)",
+   "id_status": "REJECTED_THIS_PASS",
+   "parent_dependency_revisions": "information/warning glyph family member (B09/B10 glyph kit; shared stroke/margin/legibility gate)",
+   "candidates": [
+    {
+     "revision": "r001",
+     "path": "assets/candidates/CG-S-ICO-VISIBILITY/r001/cg_s_ico_visibility.png",
+     "native_dimensions": "1024x1024",
+     "native_aspect_error_pct": 0.0,
+     "format": "PNG 8-bit sRGB TrueColor",
+     "alpha": "none",
+     "sha256": "501832c7b93c010cafd1bda0fba9458f68c3f1591df7e997a3dda89cbc86c730",
+     "generation_tool": "Arena Agent Mode generate_image",
+     "model": "UNKNOWN",
+     "normalization_operation": "none performed",
+     "parent_revision": "blank scaffold; uniform B09/B10 glyph kit",
+     "content_qa": {
+      "violations": "count anchor failure in size-ladder panel: FOUR eye instances rendered (one large above a second row of three small) vs kit-exact THREE descending on ONE shared baseline (zoom-verified); hero/chip/grayscale identities correct single open eye with one pupil; style otherwise conforming"
+     },
+     "status": "REJECTED"
+    }
+   ],
+   "approval": {
+    "decision": "REJECTED_THIS_PASS",
+    "approver": "human (pending)",
+    "date": null
+   },
+   "downstream_targets": [
+    "CG-D-ICO-VISIBILITY",
+    "CG-D-UI-ATLAS"
+   ],
+   "repair_budget": {
+    "initial_candidates_used": 1,
+    "repair_candidates_used": 0,
+    "remaining": 1
+   },
+   "reason": "Ladder-count failure (4 instances + second row vs exactly 3 on one baseline). Repair r002 queued under standing ruling #17; strategy: per-panel exact counts stated first (\"EXACTLY three instances, horizontally arranged, NEVER a fourth, no second row, nothing above the ladder row\") - validated 4/4 (CRYSTAL, STONE, EVOLVE, TRADE)."
   }
  },
  "batch_checkpoints": {
@@ -8340,25 +8545,26 @@
    "mode": "PROVISIONAL - in progress; 14 info/warning glyphs in two bursts (9 + 5) reusing the exact B10 glyph kit",
    "counts": {
     "requested": 14,
-    "candidates_generated": 9,
-    "awaiting_approval_ids": 9,
-    "approved_source": 0
+    "candidates_generated": 14,
+    "awaiting_approval_ids": 13,
+    "approved_source": 0,
+    "rejected_candidates": 1
    },
-   "plan": "Burst A DONE (9/9 conform r001, zero rejections; POPULATION flagged: descending-size silhouettes + mild parchment grain, both disclosed). Burst B (ARMY, GOD, ECOLOGY, VISIBILITY, CLAIM) fires next turn - r001 scaffolds already staged. Then en-bloc closure of B11; B12 (CG-A-ART-TITLE) last.",
+   "plan": "Burst A 9/9 conform + burst B 4/5 conform; VISIBILITY r001 REJECTED (ladder-count class, 6th occurrence, zoom-verified). VISIBILITY r002 fires this turn from staged scaffold; then en-bloc closure of B11; B12 (CG-A-ART-TITLE, 2048x1024) last.",
    "id_states": {
-    "CG-S-ICO-ARMY": "NOT_STARTED",
+    "CG-S-ICO-ARMY": "CANDIDATE_AWAITING_APPROVAL (r001)",
     "CG-S-ICO-CITY": "CANDIDATE_AWAITING_APPROVAL (r001)",
-    "CG-S-ICO-CLAIM": "NOT_STARTED",
-    "CG-S-ICO-ECOLOGY": "NOT_STARTED",
+    "CG-S-ICO-CLAIM": "CANDIDATE_AWAITING_APPROVAL (r001)",
+    "CG-S-ICO-ECOLOGY": "CANDIDATE_AWAITING_APPROVAL (r001)",
     "CG-S-ICO-FATIGUE": "CANDIDATE_AWAITING_APPROVAL (r001)",
-    "CG-S-ICO-GOD": "NOT_STARTED",
+    "CG-S-ICO-GOD": "CANDIDATE_AWAITING_APPROVAL (r001)",
     "CG-S-ICO-HEALTH": "CANDIDATE_AWAITING_APPROVAL (r001)",
     "CG-S-ICO-HISTORY": "CANDIDATE_AWAITING_APPROVAL (r001)",
     "CG-S-ICO-POLICY": "CANDIDATE_AWAITING_APPROVAL (r001)",
     "CG-S-ICO-POPULATION": "CANDIDATE_AWAITING_APPROVAL (r001) [flags: silhouette size variance; parchment grain]",
     "CG-S-ICO-RESEARCH": "CANDIDATE_AWAITING_APPROVAL (r001)",
     "CG-S-ICO-TREATY": "CANDIDATE_AWAITING_APPROVAL (r001)",
-    "CG-S-ICO-VISIBILITY": "NOT_STARTED",
+    "CG-S-ICO-VISIBILITY": "REJECTED_R001_REPAIR_R002_STAGED",
     "CG-S-ICO-WARNING": "CANDIDATE_AWAITING_APPROVAL (r001)"
    }
   }
@@ -8832,6 +9038,12 @@
    "incident": "B11_BURSTA_RECORDED",
    "recorded_utc": "2026-09-24T23:37:00+00:00",
    "observation": "B11 burst A fired 9/9 successful (one burst, B09/B10 kit verbatim; all 1024x1024, zero TB-07). Gate read: ALL 9 CONFORM r001, zero rejections. Zooms settled three contact-scale ambiguities: HEALTH ladder exactly 3 hearts (fourth-heart impression was panel overlap), FATIGUE ladders are three 3-bar glyph instances, POLICY BR background is parchment. POPULATION accepted-with-flag (descending-size silhouettes; mild grain texture from prohibited-texture phrasing leak). 10/10 attempt cap reached this turn (TRADE r002 + burst A); burst B (5 glyphs) fires next turn from staged scaffolds.",
+   "content_loss": "none"
+  },
+  {
+   "incident": "B11_BURSTB_RECORDED",
+   "recorded_utc": "2026-09-24T23:40:20+00:00",
+   "observation": "B11 burst B fired 5/5 successful (all 1024x1024, zero TB-07). Gate read: 4/5 CONFORM r001 (ARMY, GOD, ECOLOGY, CLAIM; GOD giant-back-over-two-roofs identity exact in hero and all ladder instances). VISIBILITY r001 REJECTED - ladder panel rendered four eyes incl. a second row vs kit-exact three on one baseline (TB-06 ladder-count class, zoom-verified). Per-ID budget intact; r002 scaffold staged before firing. 5 of 10 attempts used this turn at record time.",
    "content_loss": "none"
   }
  ],
