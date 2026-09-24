@@ -2,7 +2,7 @@
  "ledger_type": "arena_source_receipts",
  "specification_version": "CG-V1.0.0",
  "created_utc": "2026-09-23T21:51:28+00:00",
- "last_updated_utc": "2026-09-24T23:41:32+00:00",
+ "last_updated_utc": "2026-09-24T23:43:04+00:00",
  "authority": {
   "master_plan": "CIVIC_GODSTORM_MASTER_PLAN.md",
   "master_plan_head_commit": "5bd357e14d9b68776d50b1dee0829b7bd5ab939f",
@@ -8287,6 +8287,52 @@
     "remaining": 0
    },
    "reason": "Ladder-count failure (4 instances + second row vs exactly 3 on one baseline). Repair r002 queued under standing ruling #17; strategy: per-panel exact counts stated first (\"EXACTLY three instances, horizontally arranged, NEVER a fourth, no second row, nothing above the ladder row\") - validated 4/4 (CRYSTAL, STONE, EVOLVE, TRADE)."
+  },
+  "CG-A-ART-TITLE": {
+   "specification_version": "CG-V1.0.0",
+   "canonical_path": "assets/source/art/cg_a_art_title.png",
+   "canonical_state": "ABSENT (correct - no approved source; promotion RESERVED to owner ruling)",
+   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "parent_dependency_revisions": "CG-S-ART-DIRECTION r002 (provisional style anchor; B00-block precedent disclosed); CG-S-GOD-FORM-Q r004; CG-S-GOD-LIFE-S: NO approved revision (rejection ratified standing) - S-remains motif rendered from plan text only, never from rejected candidates",
+   "candidates": [
+    {
+     "revision": "r001",
+     "path": "assets/candidates/CG-A-ART-TITLE/r001/cg_a_art_title.png",
+     "native_dimensions": "1456x720",
+     "native_aspect_error_pct": 1.1,
+     "format": "PNG 8-bit sRGB TrueColor",
+     "alpha": "none",
+     "sha256": "11ed670e6048665dcf4eab97175518f1e25e9193f8c0b0f1b36eaae91099e4ad",
+     "generation_tool": "Arena Agent Mode generate_image",
+     "model": "UNKNOWN",
+     "normalization_operation": "none performed",
+     "parent_revision": "direct text-to-image generation (no scaffold); composition from plan row 1045 identity + approved palette + FORM-Q/LIFE-S textual motifs",
+     "content_qa": {
+      "identity": "one coherent panoramic living landscape: colossal nonhumanoid god-creature (whale-like, frond-ridge back) passing a visibly growing city (scaffolds, cranes, half-built timber quarter); distant coastline with square-rigged ships; winding roads from the gates; foreground S-curved serpent remains (ribcage + skull) partially reclaimed by vegetation; birds; center-safe composition; zero text/logo/UI",
+      "style": "cohesive pale-stone #E1CEAC / ochre #B98549 / vegetation #55745C / water #315B75 / teal #49A69D / charcoal #161E27 palette, warm daylight, flat-painterly matte",
+      "flags": [
+       "model-chosen native canvas 1456x720 vs canonical 2048x1024: upscale distance 1.41x (<=2x bound), aspect delta +1.1% (<=2% corrective-padding bound); disclosed, nothing resized, promotion RESERVED to owner 2048/3072 ruling"
+      ]
+     },
+     "status": "CANDIDATE_AWAITING_APPROVAL"
+    }
+   ],
+   "approval": {
+    "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+    "approver": "human (repository owner) via standing ruling #17",
+    "date": "2026-09-24",
+    "scope": "B12 final DIRECT-TITLE key art; gate precondition satisfied (all referenced source bodies approved-provisional; LIFE-S rejection ratified standing, motif from plan text)",
+    "approved_revision": "r001",
+    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+   },
+   "downstream_targets": [
+    "CG-R-TITLE-COMPOSITION"
+   ],
+   "repair_budget": {
+    "initial_candidates_used": 1,
+    "repair_candidates_used": 0,
+    "remaining": 1
+   }
   }
  },
  "batch_checkpoints": {
@@ -8634,17 +8680,20 @@
   "B12": {
    "opened_utc": "2026-09-24T23:41:32+00:00",
    "gate": "Only after referenced bodies/civic/environment/style sources are approved",
-   "mode": "PROVISIONAL - in progress; final batch, single DIRECT-TITLE panoramic painting",
+   "mode": "PROVISIONAL - CLOSED",
    "counts": {
     "requested": 1,
-    "candidates_generated": 0,
+    "candidates_generated": 1,
     "awaiting_approval_ids": 0,
-    "approved_source": 0
+    "approved_source": 0,
+    "rejected_candidates": 0,
+    "provisionally_approved_ids": 1
    },
    "plan": "CG-A-ART-TITLE: one coherent panoramic living landscape (Q passing a growing city, distant coast and roads, old S-shaped remains partially reclaimed by vegetation; no text; center-safe). Gate precondition SATISFIED: all referenced source bodies approved-provisional under ruling #17 (CG-S-ART-DIRECTION style anchor; CG-S-GOD-FORM-Q; LIFE-S rejection ratified standing - its S-remains motif rendered from the plan description, not from any rejected candidate). Canonical 2048x1024 target; model-chosen size recorded honestly, any deviation flagged to the reserved 2048/3072 ruling.",
    "id_states": {
-    "CG-A-ART-TITLE": "NOT_STARTED"
-   }
+    "CG-A-ART-TITLE": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r001) [size flag: 1456x720 native, disclosed]"
+   },
+   "resolution": "CLOSED 2026-09-24 under ruling #17: CG-A-ART-TITLE r001 approved-provisional on first attempt (size flag disclosed: 1456x720 native vs 2048x1024 target). ALL 121 IDs now dispositioned. RESERVED to owner: B00 dimensional block; 2048/3072 canonical promotion ruling."
   }
  },
  "capability_probe": {
@@ -8684,16 +8733,45 @@
   }
  },
  "run_summary": {
-  "final_state_utc": "2026-09-23T22:09:52+00:00",
-  "mode": "REOPENED as provisional-only by explicit user direction (\"go on\", 2026-09-23). Section 0: current explicit user direction supersedes the earlier stop ruling. B00 dimensional BLOCK stands unchanged (no amendment). B01 produced as explicitly UNAPPROVED provisional candidates; nothing promoted to canonical; no CG-D-*/CG-R-* content.",
+  "final_state_utc": "2026-09-24T23:43:04+00:00",
+  "mode": "RUN COMPLETE under standing ruling #17 (STANDING_CONTINUATION_ORDER_B08_TO_B12). All 121 authored IDs dispositioned: 119 approved-provisional (118 CG-S + 1 CG-A), 1 ID closed by ratified standing rejection (CG-S-GOD-LIFE-S). Zero canonical files written; every promotion is RESERVED to the owner. No CG-D-*/CG-R-* content produced. B00 dimensional BLOCK stands unchanged.",
   "canonical_sources_approved": 0,
   "canonical_sources_blocked": 1,
-  "canonical_sources_awaiting_approval": 0,
-  "provisional_candidates_awaiting_human_gate": 4,
-  "provisional_ids_rejected_this_pass": 2,
-  "candidates_preserved_as_evidence": [
-   "CG-S-ART-DIRECTION r001",
-   "CG-S-ART-DIRECTION r002"
+  "canonical_sources_blocked_note": "B00 style board (REF-DIRECTION 3072x2048 class) - owner-reserved B00 block; B01 set remains provisional style anchor only",
+  "provisional_ids_approved": 119,
+  "provisional_ids_by_batch": {
+   "B01": 7,
+   "B02": 6,
+   "B03": 9,
+   "B04": 9,
+   "B05": 5,
+   "B06": 7,
+   "B07": 19,
+   "B08": 18,
+   "B09": 15,
+   "B10": 9,
+   "B11": 14,
+   "B12": 1
+  },
+  "provisional_ids_rejected_standing": 1,
+  "provisional_ids_rejected_standing_note": "CG-S-GOD-LIFE-S (r001+r002 rejected; rejection ratified by owner; not re-attempted per gate chain)",
+  "rejected_candidates_preserved_as_evidence": [
+   "CG-S-GOD-LIFE-S r001",
+   "CG-S-GOD-LIFE-S r002",
+   "CG-S-GOD-SENSE-ANTENNA-CROWN r001",
+   "CG-S-GOD-SENSE-ANTENNA-CROWN r002",
+   "CG-S-GOD-LIFE-M r002",
+   "CG-S-GOD-ORGAN-SPORE-SAC r001",
+   "CG-S-UNT-ARMOR-COAT r001",
+   "CG-S-ENV-CRYSTAL r001",
+   "CG-S-ICO-STONE r001",
+   "CG-S-ICO-EVOLVE r001",
+   "CG-S-ICO-TRADE r001",
+   "CG-S-ICO-VISIBILITY r001"
+  ],
+  "reserved_owner_rulings": [
+   "B00 dimensional block (style board 3072x2048 class)",
+   "2048/3072 canonical promotion ruling for all 119 approved-provisional sources"
   ]
  },
  "human_rulings": [
@@ -9128,6 +9206,12 @@
    "incident": "B11_CLOSED",
    "recorded_utc": "2026-09-24T23:41:32+00:00",
    "observation": "B11 closed en bloc: VISIBILITY r002 repaired-and-approved (3-instance single-row ladder restored; mitigation now 5-for-5); 13 glyphs r001 (POPULATION accepted-with-flag x2, disclosed). 14/14 approved-provisional; VISIBILITY r001 preserved as REJECTED evidence. B11 candidates: 15 (14 r001 + 1 r002). B12 opened - final batch, CG-A-ART-TITLE. 6 of 10 attempts used this turn at close.",
+   "content_loss": "none"
+  },
+  {
+   "incident": "B12_CLOSED_RUN_COMPLETE",
+   "recorded_utc": "2026-09-24T23:43:04+00:00",
+   "observation": "B12 closed: CG-A-ART-TITLE r001 first-attempt conform, approved-provisional en bloc under ruling #17 (identity: god-creature passing growing city, coast+roads, S-remains reclaimed by vegetation, no text, center-safe; size flag disclosed 1456x720 vs 2048x1024 target, nothing resized). ALL 121 IDs dispositioned: 119 approved-provisional, LIFE-S closed by ratified rejection, 12 rejected candidates preserved as evidence. Zero canonical sources; B00 block + 2048/3072 promotion ruling surfaced to owner. 7 of 10 attempts used this turn (burst B 5 + VISIBILITY r002 + title).",
    "content_loss": "none"
   }
  ],
