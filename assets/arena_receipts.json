@@ -2,7 +2,7 @@
   "ledger_type": "arena_source_receipts",
   "specification_version": "CG-V1.0.0",
   "created_utc": "2026-09-23T21:51:28+00:00",
-  "last_updated_utc": "2026-09-24T04:55:00+00:00",
+  "last_updated_utc": "2026-09-24T04:50:00+00:00",
   "authority": {
     "master_plan": "CIVIC_GODSTORM_MASTER_PLAN.md",
     "master_plan_head_commit": "5bd357e14d9b68776d50b1dee0829b7bd5ab939f",
@@ -5413,6 +5413,12 @@
       "incident": "B06_PASS_COMPLETE_RECORDED",
       "recorded_utc": "2026-09-24T04:55:00+00:00",
       "observation": "B06 initial pass: 7/7 IDs carry conforming candidates - OSTEODERM r001 (5 scutes zoom-verified), ARMOR-COAT r001 (feather-adjacent note disclosed), SOLAR-SAIL r001 (5 ribs zoom-verified), SPORE-SAC r002 after r001 REJECTED (TB-06 plan-panel pore multiplication 4+4; repaired via oblique-view + outer-face-placement mitigation - now validated), FUNGAL-GROVE r001, FOLLOWER-GALLERY r001 (TB-07 canvas recurrence 1376x768), ROOT-HOLDFAST r001 (4x1-fork verified). 9 of 10 generation attempts used (one consumed by missing-r002-scaffold error; scaffold created procedurally). Consolidated B06 gate next.",
+      "content_loss": "none"
+    },
+    {
+      "incident": "PARALLEL_SESSION_B06_INDEPENDENT_AUDIT",
+      "recorded_utc": "2026-09-24T04:50:00+00:00",
+      "observation": "Seventh workspace reset detected (local re-rooted at docs 5bd357e; assets preserved untracked, zero unique local work) AND remote advanced by the parallel session with the complete B06 pass (d49ceb6 on top of our bc5ec9a). Recovery: explicit-refspec fetch + reset --hard (no force). Independent audit of all foreign claims: 8 candidate sha256 hashes verified byte-identical to receipts (no fabricated pixels); dimensions verified (5x 1024x1024, 2x 1376x768 TB-07 canvas swaps matching their disclosures, SPORE-SAC r002 1024x1024); content anchors independently confirmed by pixel inspection - OSTEODERM exactly 5 scutes with irregular suture no bolts, ARMOR-COAT continuous directional locks not particle fur, SOLAR-SAIL exactly 5 ribs with opaque tonal-band translucency, SPORE-SAC r002 two sacs on broad saddle with exactly 6 raised flush pore-rims (3+3), FUNGAL-GROVE three joined crowns with one clear passage, FOLLOWER-GALLERY two timber-and-textile galleries on shared flexible saddle with central walkway (no castle), ROOT-HOLDFAST four once-forking bundles from one belly collar (registry 'retractable clearances' = functional allowance, no visible feature required). All 7 conforming claims CONCUR. Gate is the user's.",
       "content_loss": "none"
     }
   ],
