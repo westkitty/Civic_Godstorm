@@ -2,7 +2,7 @@
  "ledger_type": "arena_source_receipts",
  "specification_version": "CG-V1.0.0",
  "created_utc": "2026-09-23T21:51:28+00:00",
- "last_updated_utc": "2026-09-24T23:26:26+00:00",
+ "last_updated_utc": "2026-09-24T23:27:41+00:00",
  "authority": {
   "master_plan": "CIVIC_GODSTORM_MASTER_PLAN.md",
   "master_plan_head_commit": "5bd357e14d9b68776d50b1dee0829b7bd5ab939f",
@@ -7525,6 +7525,25 @@
       "violations": "count anchor failure in size-ladder panel: FOUR nested body-outline instances in a 2x2 arrangement vs kit-exact THREE descending on one shared baseline; BR panel background mid-gray instead of parchment #F4ECDE (hero/chip identities correct: two nested quadruped outlines). (zoom-verified BL and BR panels); style otherwise conforming to glyph family"
      },
      "status": "REJECTED"
+    },
+    {
+     "revision": "r002",
+     "path": "assets/candidates/CG-S-ICO-EVOLVE/r002/cg_s_ico_evolve.png",
+     "native_dimensions": "1024x1024",
+     "native_aspect_error_pct": 0.0,
+     "format": "PNG 8-bit sRGB TrueColor",
+     "alpha": "none",
+     "sha256": "7740bb0d8d18eeda6ca66b98e2a4232ed5a010f460a2759bdb07be58c1818a63",
+     "generation_tool": "Arena Agent Mode generate_image",
+     "model": "UNKNOWN",
+     "normalization_operation": "none performed",
+     "parent_revision": "blank r002 scaffold; repair anchored on r001-defect strategy only (per-panel exact ladder count + all-parchment panels), no defective r001 image anchor (TB-03 discipline)",
+     "content_qa": {
+      "identity": "two nested left-facing quadruped body outlines (small inside large) at hero and chip and grayscale panels",
+      "style": "B09/B10 glyph kit verified: parchment #F4ECDE all four panels, thick uniform charcoal stroke, dark rounded-square chip panel, no text",
+      "count": "size-ladder panel EXACTLY three glyph instances (large/medium/small) on ONE shared baseline - r001 four-instance defect repaired; BR background restored to parchment"
+     },
+     "status": "CANDIDATE_AWAITING_APPROVAL"
     }
    ],
    "approval": {
@@ -7538,10 +7557,10 @@
    ],
    "repair_budget": {
     "initial_candidates_used": 1,
-    "repair_candidates_used": 0,
-    "remaining": 1
+    "repair_candidates_used": 1,
+    "remaining": 0
    },
-   "reason": "count anchor failure in size-ladder panel: FOUR nested body-outline instances in a 2x2 arrangement vs kit-exact THREE descending on one shared baseline; BR panel background mid-gray instead of parchment #F4ECDE (hero/chip identities correct: two nested quadruped outlines). Repair r002 queued under standing ruling #17; strategy: per-panel exact counts stated first (\"size-ladder panel contains EXACTLY THREE glyph instances, large then medium then small on ONE baseline; never a fourth\") and all four panels EXACTLY parchment #F4ECDE (validated on STONE r002 / CRYSTAL r002)."
+   "reason": "RESOLVED_PENDING_GATE: r002 verified conforming at zoom (ladder count 3/3, parchment restored); approval lands at B10 en-bloc closure under ruling #17."
   },
   "CG-S-ICO-TRADE": {
    "specification_version": "CG-V1.0.0",
@@ -7876,19 +7895,19 @@
    "mode": "PROVISIONAL - not yet started; 9 action glyphs in ONE burst matching the B09 glyph family",
    "counts": {
     "requested": 9,
-    "candidates_generated": 9,
+    "candidates_generated": 10,
     "awaiting_approval_ids": 7,
     "approved_source": 0,
     "rejected_candidates": 2
    },
-   "plan": "Chunk 1 DONE: 7/9 conforming r001 (MIGRATE accepted-with-flag: third waypoint rendered as terminal arrowhead); EVOLVE + TRADE r001 REJECTED (TB-06 ladder-count class, zoom-verified); r002 scaffolds staged for both; EVOLVE r002 fired same turn under the 10th slot; TRADE r002 fires next turn; en-bloc closure after. Gate unchanged: match B09/B10 glyph stroke/margins; distinct critical actions.",
+   "plan": "Chunk 1 recorded (7 conform r001 + EVOLVE/TRADE r001 rejected, TB-06 ladder-count class). EVOLVE r002 generated and zoom-verified conforming (3-instance ladder, parchment BR) - awaiting en-bloc gate. TRADE r002 scaffold staged; fires next turn (10/10 attempt cap reached this turn). Then en-bloc closure of B10 and B11 open.",
    "id_states": {
     "CG-S-ICO-MOVE": "CANDIDATE_AWAITING_APPROVAL (r001)",
     "CG-S-ICO-FEED": "CANDIDATE_AWAITING_APPROVAL (r001)",
     "CG-S-ICO-REST": "CANDIDATE_AWAITING_APPROVAL (r001)",
     "CG-S-ICO-GUARD": "CANDIDATE_AWAITING_APPROVAL (r001)",
     "CG-S-ICO-ATTACK": "CANDIDATE_AWAITING_APPROVAL (r001)",
-    "CG-S-ICO-EVOLVE": "REJECTED_R001_REPAIR_R002_STAGED",
+    "CG-S-ICO-EVOLVE": "R002_GENERATED_CONFORMING_AWAITING_EN_BLOC_GATE",
     "CG-S-ICO-MIGRATE": "CANDIDATE_AWAITING_APPROVAL (r001)",
     "CG-S-ICO-BUILD": "CANDIDATE_AWAITING_APPROVAL (r001)",
     "CG-S-ICO-TRADE": "REJECTED_R001_REPAIR_R002_STAGED"
@@ -8346,6 +8365,12 @@
    "incident": "B10_CHUNK1_RECORDED",
    "recorded_utc": "2026-09-24T23:26:26+00:00",
    "observation": "B10 action-glyph burst 9/9 succeeded (one 9-sheet burst, B09 glyph kit reused verbatim; all 1024x1024, zero TB-07). Gate: 7/9 CONFORM r001 (MOVE, FEED, REST, GUARD, ATTACK, MIGRATE, BUILD; MIGRATE accepted-with-flag: third waypoint rendered as terminal arrowhead, plan identity intact). EVOLVE r001 and TRADE r001 REJECTED - size-ladder panel rendered FOUR instances vs kit-exact three (TB-06 class, 4th/5th occurrences) plus non-parchment BR backgrounds; per-ID 1+1 budgets intact, r002 scaffolds staged for both before firing. EVOLVE r002 fired under the 10th and final slot this turn; TRADE r002 fires next turn. Housekeeping: B08 checkpoint id_states/counts synced to closed state; assets/reviews/B08_checkpoint.md created (was missing); TB-05(b) evidence corrected (B04_TURN3_RECORDED_CORRECTION).",
+   "content_loss": "none"
+  },
+  {
+   "incident": "B10_EVOLVE_R002_RECORDED",
+   "recorded_utc": "2026-09-24T23:27:41+00:00",
+   "observation": "EVOLVE r002 repair generated under the 10th and final attempt slot and zoom-verified CONFORMING: size-ladder exactly three instances on one baseline (r001 had four in a 2x2 arrangement) and BR panel background restored to parchment. Per-panel exact-count strategy now validated 4th time (CRYSTAL r002, STONE r002, EVOLVE r002 + STONE r002 family). TRADE r002 NOT fired: hard 10-attempt cap reached (9 burst + 1 repair); its scaffold is staged and the repair strategy is recorded in its receipt, so next turn is a single fire-and-verify. No content loss.",
    "content_loss": "none"
   }
  ],
