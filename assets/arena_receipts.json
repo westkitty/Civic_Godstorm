@@ -2,7 +2,7 @@
   "ledger_type": "arena_source_receipts",
   "specification_version": "CG-V1.0.0",
   "created_utc": "2026-09-23T21:51:28+00:00",
-  "last_updated_utc": "2026-09-24T10:15:00+00:00",
+  "last_updated_utc": "2026-09-24T11:05:00+00:00",
   "authority": {
     "master_plan": "CIVIC_GODSTORM_MASTER_PLAN.md",
     "master_plan_head_commit": "5bd357e14d9b68776d50b1dee0829b7bd5ab939f",
@@ -6534,6 +6534,375 @@
         "repair_candidates_used": 0,
         "remaining": 1
       }
+    },
+    "CG-S-ICO-FOOD": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/glyphs/cg_s_ico_food.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "parent_dependency_revisions": "economic glyph family member (shared stroke/margin/legibility gate)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-ICO-FOOD/r001/cg_s_ico_food.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "a6883b266df59e74475e3a1350e14cfe33cd5a20ab3f9e3ff23848dfe76081c7",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "blank scaffold; uniform glyph kit (hero / dark-chip / size-ladder / grayscale) in one 9-sheet burst for family consistency",
+          "content_qa": {
+            "identity": "three grain kernels in triangle cluster",
+            "style": "parchment-tone mark, thick uniform stroke, rounded contour, generous margins; chip + size-ladder + grayscale panels present; no text anywhere; family consistency verified on contact sheet"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "AWAITING_APPROVAL",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-ICO-FOOD",
+        "CG-D-UI-ATLAS"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      }
+    },
+    "CG-S-ICO-WOOD": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/glyphs/cg_s_ico_wood.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "parent_dependency_revisions": "economic glyph family member (shared stroke/margin/legibility gate)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-ICO-WOOD/r001/cg_s_ico_wood.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "80c1d89a29be66cc40e3a8d160e0e5b08aa6eee99182a53f324b0eceb3713735",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "blank scaffold; uniform glyph kit (hero / dark-chip / size-ladder / grayscale) in one 9-sheet burst for family consistency",
+          "content_qa": {
+            "identity": "one split log with crack and ring",
+            "style": "parchment-tone mark, thick uniform stroke, rounded contour, generous margins; chip + size-ladder + grayscale panels present; no text anywhere; family consistency verified on contact sheet"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "AWAITING_APPROVAL",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-ICO-WOOD",
+        "CG-D-UI-ATLAS"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      }
+    },
+    "CG-S-ICO-ORE": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/glyphs/cg_s_ico_ore.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "parent_dependency_revisions": "economic glyph family member (shared stroke/margin/legibility gate)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-ICO-ORE/r001/cg_s_ico_ore.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "2121c11724907e94f017cb8434b50da43b5aaa5ff748b5170d8fd2d94fb9fbbb",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "blank scaffold; uniform glyph kit (hero / dark-chip / size-ladder / grayscale) in one 9-sheet burst for family consistency",
+          "content_qa": {
+            "identity": "one banded ore wedge, two bold parallel bands",
+            "style": "parchment-tone mark, thick uniform stroke, rounded contour, generous margins; chip + size-ladder + grayscale panels present; no text anywhere; family consistency verified on contact sheet"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "AWAITING_APPROVAL",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-ICO-ORE",
+        "CG-D-UI-ATLAS"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      }
+    },
+    "CG-S-ICO-TOOLS": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/glyphs/cg_s_ico_tools.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "parent_dependency_revisions": "economic glyph family member (shared stroke/margin/legibility gate)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-ICO-TOOLS/r001/cg_s_ico_tools.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "a35de1ed821594e91cbabe251c6e0ccc45b93afac1455d971691446c8a5c7e02",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "blank scaffold; uniform glyph kit (hero / dark-chip / size-ladder / grayscale) in one 9-sheet burst for family consistency",
+          "content_qa": {
+            "identity": "crossed mallet and tongs",
+            "style": "parchment-tone mark, thick uniform stroke, rounded contour, generous margins; chip + size-ladder + grayscale panels present; no text anywhere; family consistency verified on contact sheet"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "AWAITING_APPROVAL",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-ICO-TOOLS",
+        "CG-D-UI-ATLAS"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      }
+    },
+    "CG-S-ICO-MEDICINE": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/glyphs/cg_s_ico_medicine.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "parent_dependency_revisions": "economic glyph family member (shared stroke/margin/legibility gate)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-ICO-MEDICINE/r001/cg_s_ico_medicine.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "dfe38e58c5eca01126951566317feef54f8583bd05365c2f1046d75287e384f0",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "blank scaffold; uniform glyph kit (hero / dark-chip / size-ladder / grayscale) in one 9-sheet burst for family consistency",
+          "content_qa": {
+            "identity": "one stoppered flask, no medical cross",
+            "style": "parchment-tone mark, thick uniform stroke, rounded contour, generous margins; chip + size-ladder + grayscale panels present; no text anywhere; family consistency verified on contact sheet"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "AWAITING_APPROVAL",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-ICO-MEDICINE",
+        "CG-D-UI-ATLAS"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      }
+    },
+    "CG-S-ICO-BIO": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/glyphs/cg_s_ico_bio.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "parent_dependency_revisions": "economic glyph family member (shared stroke/margin/legibility gate)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-ICO-BIO/r001/cg_s_ico_bio.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "6819e86bb709cd4a641190f84e101ac1a5171461b18c32fe2a623f804301d88d",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "blank scaffold; uniform glyph kit (hero / dark-chip / size-ladder / grayscale) in one 9-sheet burst for family consistency",
+          "content_qa": {
+            "identity": "one living sac with once-forked sprout",
+            "style": "parchment-tone mark, thick uniform stroke, rounded contour, generous margins; chip + size-ladder + grayscale panels present; no text anywhere; family consistency verified on contact sheet"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "AWAITING_APPROVAL",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-ICO-BIO",
+        "CG-D-UI-ATLAS"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      }
+    },
+    "CG-S-ICO-COIN": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/glyphs/cg_s_ico_coin.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "parent_dependency_revisions": "economic glyph family member (shared stroke/margin/legibility gate)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-ICO-COIN/r001/cg_s_ico_coin.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "02c95fbaddbd3cb5e4ebfae800b79054c744bd4bcb9c2c469d16ee875e030219",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "blank scaffold; uniform glyph kit (hero / dark-chip / size-ladder / grayscale) in one 9-sheet burst for family consistency",
+          "content_qa": {
+            "identity": "one pierced coin, square hole, no portrait/lettering",
+            "style": "parchment-tone mark, thick uniform stroke, rounded contour, generous margins; chip + size-ladder + grayscale panels present; no text anywhere; family consistency verified on contact sheet"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "AWAITING_APPROVAL",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-ICO-COIN",
+        "CG-D-UI-ATLAS"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      }
+    },
+    "CG-S-ICO-KNOWLEDGE": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/glyphs/cg_s_ico_knowledge.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "parent_dependency_revisions": "economic glyph family member (shared stroke/margin/legibility gate)",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-ICO-KNOWLEDGE/r001/cg_s_ico_knowledge.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "75decb8f5b327449bc081bcbe3f50495bf0aed04a152ebcf38fbe2d11e910c2e",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "blank scaffold; uniform glyph kit (hero / dark-chip / size-ladder / grayscale) in one 9-sheet burst for family consistency",
+          "content_qa": {
+            "identity": "one open codex, abstract line marks, no real letters",
+            "style": "parchment-tone mark, thick uniform stroke, rounded contour, generous margins; chip + size-ladder + grayscale panels present; no text anywhere; family consistency verified on contact sheet"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
+        }
+      ],
+      "approval": {
+        "decision": "AWAITING_APPROVAL",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-ICO-KNOWLEDGE",
+        "CG-D-UI-ATLAS"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      }
+    },
+    "CG-S-ICO-STONE": {
+      "specification_version": "CG-V1.0.0",
+      "canonical_path": "assets/source/glyphs/cg_s_ico_stone.png",
+      "canonical_state": "ABSENT (correct - no approved source)",
+      "id_status": "REJECTED_THIS_PASS",
+      "parent_dependency_revisions": "economic glyph family member",
+      "candidates": [
+        {
+          "revision": "r001",
+          "path": "assets/candidates/CG-S-ICO-STONE/r001/cg_s_ico_stone.png",
+          "native_dimensions": "1024x1024",
+          "native_aspect_error_pct": 0.0,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "898288908da9e4afaa2c7408e65ea389398d60dce7286cd7acf804d6437d78be",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "blank scaffold; uniform glyph kit",
+          "content_qa": {
+            "violations": "count anchor failed: FIVE stone blocks rendered (two rows of two + one base) vs registry 'three squared stone blocks' (zoom-verified hero panel); style otherwise conforming to glyph family"
+          },
+          "status": "REJECTED"
+        }
+      ],
+      "approval": {
+        "decision": "REJECTED_THIS_PASS",
+        "approver": "human (pending)",
+        "date": null
+      },
+      "downstream_targets": [
+        "CG-D-GOD-ICO-STONE",
+        "CG-D-UI-ATLAS"
+      ],
+      "repair_budget": {
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0,
+        "remaining": 1
+      },
+      "reason": "Count anchor failure (5 blocks vs 3). Repair r002 queued under standing ruling #17; strategy: per-panel 'exactly three blocks: two on top, one below' stated first (validated on CRYSTAL r002)."
     }
   },
   "batch_checkpoints": {
@@ -7242,6 +7611,12 @@
       "incident": "B08_PASS_COMPLETE_CLOSED",
       "recorded_utc": "2026-09-24T10:15:00+00:00",
       "observation": "B08 chunk 2 (8 UNT sheets incl. CRYSTAL r002): ALL CONFORM. B08 closed 18/18 en bloc under ruling #17 (CRYSTAL as r002; SOLDIER canvas flag accepted). B09 opened (15 IDs: 9 ICO + 6 EMB); scaffolds pre-staged next action. 9 of 10 turn attempts used; remaining attempt reserved to keep the B09 glyph set in a single consistent burst next turn.",
+      "content_loss": "none"
+    },
+    {
+      "incident": "B09_CHUNK1_RECORDED",
+      "recorded_utc": "2026-09-24T11:05:00+00:00",
+      "observation": "B09 chunk 1 (9 economic glyphs in ONE burst, uniform kit): 8/9 conform with strong family consistency (contact-sheet review). STONE r001 REJECTED (5 blocks vs exactly 3, zoom-verified); r002 queued with proven per-panel count strategy. 9 of 10 attempts used. NOTE: canonical_path values for ICO/EMB must be re-verified against the plan before any promotion (recorded guesses used for glyphs; units/environment paths were verified, glyphs not yet).",
       "content_loss": "none"
     }
   ],
