@@ -39,6 +39,6 @@ Generation attempts: 9 of 10 (one consumed by a missing-r002-scaffold tool error
 - TB-07: run `identify` on every output; canvas deviation = disclosed flag, not silent accept/auto-reject.
 - Budget: 10 hard attempts/turn; 7 planned + 3 spare for single retries.
 
-## Status
+## Gate status
 
-No candidates generated yet. Nothing approved. Canonical paths remain absent (correct).
+Pass complete (7/7 conforming claims above were **independently re-verified by the primary session**: all 8 candidate sha256 hashes byte-identical to receipts, dimensions as declared, every content anchor confirmed by pixel inspection — audit entry `PARALLEL_SESSION_B06_INDEPENDENT_AUDIT`, commit `3324b84`). Consolidated gate ask_user SKIPPED TWICE (2026-09-24) — both skips recorded in `audit_trail`, no ruling assumed. B06 remains OPEN pending the user's ruling; canonical paths absent (correct).
