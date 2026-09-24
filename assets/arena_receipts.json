@@ -2,7 +2,7 @@
   "ledger_type": "arena_source_receipts",
   "specification_version": "CG-V1.0.0",
   "created_utc": "2026-09-23T21:51:28+00:00",
-  "last_updated_utc": "2026-09-24T11:05:00+00:00",
+  "last_updated_utc": "2026-09-24T11:15:00+00:00",
   "authority": {
     "master_plan": "CIVIC_GODSTORM_MASTER_PLAN.md",
     "master_plan_head_commit": "5bd357e14d9b68776d50b1dee0829b7bd5ab939f",
@@ -6537,7 +6537,7 @@
     },
     "CG-S-ICO-FOOD": {
       "specification_version": "CG-V1.0.0",
-      "canonical_path": "assets/source/glyphs/cg_s_ico_food.png",
+      "canonical_path": "assets/source/icons/cg_s_ico_food.png",
       "canonical_state": "ABSENT (correct - no approved source)",
       "id_status": "CANDIDATE_AWAITING_APPROVAL",
       "parent_dependency_revisions": "economic glyph family member (shared stroke/margin/legibility gate)",
@@ -6578,7 +6578,7 @@
     },
     "CG-S-ICO-WOOD": {
       "specification_version": "CG-V1.0.0",
-      "canonical_path": "assets/source/glyphs/cg_s_ico_wood.png",
+      "canonical_path": "assets/source/icons/cg_s_ico_wood.png",
       "canonical_state": "ABSENT (correct - no approved source)",
       "id_status": "CANDIDATE_AWAITING_APPROVAL",
       "parent_dependency_revisions": "economic glyph family member (shared stroke/margin/legibility gate)",
@@ -6619,7 +6619,7 @@
     },
     "CG-S-ICO-ORE": {
       "specification_version": "CG-V1.0.0",
-      "canonical_path": "assets/source/glyphs/cg_s_ico_ore.png",
+      "canonical_path": "assets/source/icons/cg_s_ico_ore.png",
       "canonical_state": "ABSENT (correct - no approved source)",
       "id_status": "CANDIDATE_AWAITING_APPROVAL",
       "parent_dependency_revisions": "economic glyph family member (shared stroke/margin/legibility gate)",
@@ -6660,7 +6660,7 @@
     },
     "CG-S-ICO-TOOLS": {
       "specification_version": "CG-V1.0.0",
-      "canonical_path": "assets/source/glyphs/cg_s_ico_tools.png",
+      "canonical_path": "assets/source/icons/cg_s_ico_tools.png",
       "canonical_state": "ABSENT (correct - no approved source)",
       "id_status": "CANDIDATE_AWAITING_APPROVAL",
       "parent_dependency_revisions": "economic glyph family member (shared stroke/margin/legibility gate)",
@@ -6701,7 +6701,7 @@
     },
     "CG-S-ICO-MEDICINE": {
       "specification_version": "CG-V1.0.0",
-      "canonical_path": "assets/source/glyphs/cg_s_ico_medicine.png",
+      "canonical_path": "assets/source/icons/cg_s_ico_medicine.png",
       "canonical_state": "ABSENT (correct - no approved source)",
       "id_status": "CANDIDATE_AWAITING_APPROVAL",
       "parent_dependency_revisions": "economic glyph family member (shared stroke/margin/legibility gate)",
@@ -6742,7 +6742,7 @@
     },
     "CG-S-ICO-BIO": {
       "specification_version": "CG-V1.0.0",
-      "canonical_path": "assets/source/glyphs/cg_s_ico_bio.png",
+      "canonical_path": "assets/source/icons/cg_s_ico_bio.png",
       "canonical_state": "ABSENT (correct - no approved source)",
       "id_status": "CANDIDATE_AWAITING_APPROVAL",
       "parent_dependency_revisions": "economic glyph family member (shared stroke/margin/legibility gate)",
@@ -6783,7 +6783,7 @@
     },
     "CG-S-ICO-COIN": {
       "specification_version": "CG-V1.0.0",
-      "canonical_path": "assets/source/glyphs/cg_s_ico_coin.png",
+      "canonical_path": "assets/source/icons/cg_s_ico_coin.png",
       "canonical_state": "ABSENT (correct - no approved source)",
       "id_status": "CANDIDATE_AWAITING_APPROVAL",
       "parent_dependency_revisions": "economic glyph family member (shared stroke/margin/legibility gate)",
@@ -6824,7 +6824,7 @@
     },
     "CG-S-ICO-KNOWLEDGE": {
       "specification_version": "CG-V1.0.0",
-      "canonical_path": "assets/source/glyphs/cg_s_ico_knowledge.png",
+      "canonical_path": "assets/source/icons/cg_s_ico_knowledge.png",
       "canonical_state": "ABSENT (correct - no approved source)",
       "id_status": "CANDIDATE_AWAITING_APPROVAL",
       "parent_dependency_revisions": "economic glyph family member (shared stroke/margin/legibility gate)",
@@ -6865,7 +6865,7 @@
     },
     "CG-S-ICO-STONE": {
       "specification_version": "CG-V1.0.0",
-      "canonical_path": "assets/source/glyphs/cg_s_ico_stone.png",
+      "canonical_path": "assets/source/icons/cg_s_ico_stone.png",
       "canonical_state": "ABSENT (correct - no approved source)",
       "id_status": "REJECTED_THIS_PASS",
       "parent_dependency_revisions": "economic glyph family member",
@@ -7617,6 +7617,12 @@
       "incident": "B09_CHUNK1_RECORDED",
       "recorded_utc": "2026-09-24T11:05:00+00:00",
       "observation": "B09 chunk 1 (9 economic glyphs in ONE burst, uniform kit): 8/9 conform with strong family consistency (contact-sheet review). STONE r001 REJECTED (5 blocks vs exactly 3, zoom-verified); r002 queued with proven per-panel count strategy. 9 of 10 attempts used. NOTE: canonical_path values for ICO/EMB must be re-verified against the plan before any promotion (recorded guesses used for glyphs; units/environment paths were verified, glyphs not yet).",
+      "content_loss": "none"
+    },
+    {
+      "incident": "B09_GLYPH_CANONICAL_PATHS_CORRECTED",
+      "recorded_utc": "2026-09-24T11:15:00+00:00",
+      "observation": "Chunk-1 receipts had guessed canonical paths (assets/source/glyphs/*); plan-verified actual: assets/source/icons/*. Corrected in place before any promotion.",
       "content_loss": "none"
     }
   ],
