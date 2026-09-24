@@ -2,7 +2,7 @@
   "ledger_type": "arena_source_receipts",
   "specification_version": "CG-V1.0.0",
   "created_utc": "2026-09-23T21:51:28+00:00",
-  "last_updated_utc": "2026-09-24T04:50:00+00:00",
+  "last_updated_utc": "2026-09-24T05:15:00+00:00",
   "authority": {
     "master_plan": "CIVIC_GODSTORM_MASTER_PLAN.md",
     "master_plan_head_commit": "5bd357e14d9b68776d50b1dee0829b7bd5ab939f",
@@ -5104,6 +5104,39 @@
         "CG-S-GOD-SYMB-FOLLOWER-GALLERY": "CANDIDATE_AWAITING_APPROVAL (r001; TB-07 canvas flag disclosed)",
         "CG-S-GOD-SYMB-ROOT-HOLDFAST": "CANDIDATE_AWAITING_APPROVAL (r001; 4x1-fork verified)"
       }
+    },
+    "B07": {
+      "opened_utc": "2026-09-24T05:15:00+00:00",
+      "gate": "Compare all named modes and four motif transforms against B02",
+      "mode": "PROVISIONAL - opened while B06 gate pends (B07 depends only on closed B02); module chunks within the 10-attempt turn budget",
+      "counts": {
+        "requested": 19,
+        "candidates_generated": 0,
+        "awaiting_approval_ids": 0,
+        "approved_source": 0
+      },
+      "plan": "19 independent IDs: 12 BLD + 4 INF + 3 MOT. Chunk 1 (this turn): 8 BLD alphabetical ARCHIVE..MARKET, style-anchored on B02 approved BLD-DWELLING r003 (subject ignored). Chunk 2: remaining 4 BLD + 4 INF. Chunk 3: 3 MOT + repair slack. Consolidated human gate at pass end.",
+      "id_states": {
+        "CG-S-BLD-ARCHIVE": "NOT_STARTED",
+        "CG-S-BLD-BARRACKS": "NOT_STARTED",
+        "CG-S-BLD-CARAVAN-CANOPY": "NOT_STARTED",
+        "CG-S-BLD-DEPOT": "NOT_STARTED",
+        "CG-S-BLD-DOCK": "NOT_STARTED",
+        "CG-S-BLD-GRANARY": "NOT_STARTED",
+        "CG-S-BLD-INFIRMARY": "NOT_STARTED",
+        "CG-S-BLD-MARKET": "NOT_STARTED",
+        "CG-S-BLD-OBSERVATORY": "NOT_STARTED",
+        "CG-S-BLD-SHRINE": "NOT_STARTED",
+        "CG-S-BLD-TOWER": "NOT_STARTED",
+        "CG-S-BLD-WORKSHOP": "NOT_STARTED",
+        "CG-S-INF-BRIDGE": "NOT_STARTED",
+        "CG-S-INF-CANAL": "NOT_STARTED",
+        "CG-S-INF-MINE": "NOT_STARTED",
+        "CG-S-INF-WALL": "NOT_STARTED",
+        "CG-S-MOT-CANOPY": "NOT_STARTED",
+        "CG-S-MOT-REED": "NOT_STARTED",
+        "CG-S-MOT-VAULT": "NOT_STARTED"
+      }
     }
   },
   "capability_probe": {
@@ -5419,6 +5452,12 @@
       "incident": "PARALLEL_SESSION_B06_INDEPENDENT_AUDIT",
       "recorded_utc": "2026-09-24T04:50:00+00:00",
       "observation": "Seventh workspace reset detected (local re-rooted at docs 5bd357e; assets preserved untracked, zero unique local work) AND remote advanced by the parallel session with the complete B06 pass (d49ceb6 on top of our bc5ec9a). Recovery: explicit-refspec fetch + reset --hard (no force). Independent audit of all foreign claims: 8 candidate sha256 hashes verified byte-identical to receipts (no fabricated pixels); dimensions verified (5x 1024x1024, 2x 1376x768 TB-07 canvas swaps matching their disclosures, SPORE-SAC r002 1024x1024); content anchors independently confirmed by pixel inspection - OSTEODERM exactly 5 scutes with irregular suture no bolts, ARMOR-COAT continuous directional locks not particle fur, SOLAR-SAIL exactly 5 ribs with opaque tonal-band translucency, SPORE-SAC r002 two sacs on broad saddle with exactly 6 raised flush pore-rims (3+3), FUNGAL-GROVE three joined crowns with one clear passage, FOLLOWER-GALLERY two timber-and-textile galleries on shared flexible saddle with central walkway (no castle), ROOT-HOLDFAST four once-forking bundles from one belly collar (registry 'retractable clearances' = functional allowance, no visible feature required). All 7 conforming claims CONCUR. Gate is the user's.",
+      "content_loss": "none"
+    },
+    {
+      "incident": "GATE_QUESTION_SKIPPED_B06_CONSOLIDATED_2026_09_24",
+      "recorded_utc": "2026-09-24T05:15:00+00:00",
+      "observation": "Consolidated B06 gate ask_user (7 IDs) returned SKIPPED - no ruling. B06 remains OPEN with a complete audited pass (7/7 conforming claims independently verified). On explicit user 'go on': least-irreversible step = open B07 (its dependency B02 is CLOSED; no B06 module is a parent of any B07 ID; B00-blocked precedent) and begin its module pass. B06 gate to be re-presented at turn end.",
       "content_loss": "none"
     }
   ],
