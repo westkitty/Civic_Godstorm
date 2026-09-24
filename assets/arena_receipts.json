@@ -2,7 +2,7 @@
   "ledger_type": "arena_source_receipts",
   "specification_version": "CG-V1.0.0",
   "created_utc": "2026-09-23T21:51:28+00:00",
-  "last_updated_utc": "2026-09-24T03:55:00+00:00",
+  "last_updated_utc": "2026-09-24T04:20:00+00:00",
   "authority": {
     "master_plan": "CIVIC_GODSTORM_MASTER_PLAN.md",
     "master_plan_head_commit": "5bd357e14d9b68776d50b1dee0829b7bd5ab939f",
@@ -4288,7 +4288,7 @@
       "specification_version": "CG-V1.0.0",
       "canonical_path": "assets/source/god/cg_s_god_loco_wing.png",
       "canonical_state": "ABSENT (correct - no approved source)",
-      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
       "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
       "candidates": [
         {
@@ -4314,9 +4314,12 @@
         }
       ],
       "approval": {
-        "decision": "AWAITING_APPROVAL",
-        "approver": "human (pending)",
-        "date": null
+        "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+        "approver": "human (repository owner)",
+        "date": "2026-09-24",
+        "scope": "B05 aerial grammar; anchors FORM-M assembly; foldable three-spar membrane wing with continuous root cuff",
+        "approved_revision": "r001",
+        "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
       },
       "downstream_targets": [
         "CG-D-GOD-LOCO-WING",
@@ -4334,7 +4337,7 @@
       "specification_version": "CG-V1.0.0",
       "canonical_path": "assets/source/god/cg_s_god_feed_carrion.png",
       "canonical_state": "ABSENT (correct - no approved source)",
-      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
       "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
       "candidates": [
         {
@@ -4360,9 +4363,12 @@
         }
       ],
       "approval": {
-        "decision": "AWAITING_APPROVAL",
-        "approver": "human (pending)",
-        "date": null
+        "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+        "approver": "human (repository owner)",
+        "date": "2026-09-24",
+        "scope": "B05 scavenger feeding module; hooked scoop, exactly four blunt gripping teeth, throat pouch; anchors FORM-M",
+        "approved_revision": "r001",
+        "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
       },
       "downstream_targets": [
         "CG-D-GOD-FEED-CARRION",
@@ -4380,7 +4386,7 @@
       "specification_version": "CG-V1.0.0",
       "canonical_path": "assets/source/god/cg_s_god_sense_antenna_crown.png",
       "canonical_state": "ABSENT (correct - no approved source)",
-      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
       "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
       "candidates": [
         {
@@ -4441,9 +4447,12 @@
         }
       ],
       "approval": {
-        "decision": "AWAITING_APPROVAL",
-        "approver": "human (pending)",
-        "date": null
+        "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+        "approver": "human (repository owner)",
+        "date": "2026-09-24",
+        "scope": "B05 antenna crown; r003 approved INCLUDING TB-07 canvas-swap (1376x768) accepted as technical pass (TORSO-H precedent); r001/r002 remain rejected evidence",
+        "approved_revision": "r003",
+        "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
       },
       "downstream_targets": [
         "CG-D-GOD-SENSE-ANTENNA-CROWN",
@@ -4462,7 +4471,7 @@
       "specification_version": "CG-V1.0.0",
       "canonical_path": "assets/source/god/cg_s_god_form_m.png",
       "canonical_state": "ABSENT (correct - no approved source)",
-      "id_status": "CANDIDATE_AWAITING_APPROVAL",
+      "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
       "parent_dependency_revisions": "assembles registered M modules: TORSO-M r002 (approved-provisional), LOCO-WING r001, FEED-CARRION r001, SENSE-ANTENNA-CROWN r003 (all awaiting this same gate), TAIL-BALANCE r002 (B01 approved-provisional) - declared assembly sources per FORM-H/FORM-S precedent",
       "candidates": [
         {
@@ -4486,9 +4495,12 @@
         }
       ],
       "approval": {
-        "decision": "AWAITING_APPROVAL",
-        "approver": "human (pending)",
-        "date": null
+        "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+        "approver": "human (repository owner)",
+        "date": "2026-09-24",
+        "scope": "B05 whole-form M exemplar (five-module assembly, wings at flush seam rings); anchors LIFE-M",
+        "approved_revision": "r001",
+        "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
       },
       "downstream_targets": [
         "CG-D-GOD-FORM-M",
@@ -4506,7 +4518,7 @@
       "specification_version": "CG-V1.0.0",
       "canonical_path": "assets/source/god/cg_s_god_life_m.png",
       "canonical_state": "ABSENT (correct - no approved source)",
-      "id_status": "REJECTED_THIS_PASS",
+      "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
       "parent_dependency_revisions": "CG-S-GOD-FORM-M r001 (conforming-awaiting-gate) via SINGLE LATERAL-VIEW CROP anchor (recorded anti-row-multiplication strategy from LIFE-S)",
       "candidates": [
         {
@@ -4557,9 +4569,12 @@
         }
       ],
       "approval": {
-        "decision": "REJECTED_THIS_PASS (budget exhausted; r001 preserved as awaiting-gate evidence pending user ruling)",
-        "approver": "human (pending)",
-        "date": null
+        "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
+        "approver": "human (repository owner)",
+        "date": "2026-09-24",
+        "scope": "B05 M lifecycle; r001 accepted TECHNICAL-WITH-FLAG: ossuary skull opening read as temporal fenestra (species anchors hold); r002 targeted repair remains REJECTED evidence; cleanest full sheet",
+        "approved_revision": "r001",
+        "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
       },
       "downstream_targets": [
         "CG-D-GOD-LIFE-M",
@@ -4722,7 +4737,8 @@
         "rejected_candidates": 2,
         "rejected_ids_budget_exhausted_then_pass2": 1,
         "awaiting_approval_ids": 5,
-        "approved_source": 0
+        "approved_source": 0,
+        "provisionally_approved_ids": 5
       },
       "plan": "3 independent modules first (LOCO-WING, FEED-CARRION, SENSE-ANTENNA-CROWN), then FORM-M + LIFE-M parent-first in the same pass if module inspection is clean; consolidated human gate at pass end. Scaffolds pre-staged (3x 2x2 + FORM-M 2x2 + LIFE-M 3x2) and verified with identify.",
       "id_states": {
@@ -4731,6 +4747,28 @@
         "CG-S-GOD-SENSE-ANTENNA-CROWN": "r001+r002 REJECTED (TB-06) -> r003 AUTHORIZED PASS-2 CONFORMS (technical flag: canvas swap TB-07); AWAITING_APPROVAL",
         "CG-S-GOD-FORM-M": "CANDIDATE_AWAITING_APPROVAL (r001; five-module assembly, flags non-blocking)",
         "CG-S-GOD-LIFE-M": "r001 CANDIDATE_AWAITING_APPROVAL (2 flags) + r002 targeted repair REJECTED (ossuary flag persisted, injury fixed; TB-07 recurrence) - budget exhausted; user gate to decide accept-r001 / authorize-r003 / reject-standing"
+      },
+      "resolution": "CLOSED - consolidated gate PASSED 2026-09-24 on re-presented question (approve_all_close_b05); provisional evidence set 5/5 IDs; LIFE-M r001 technical-with-flag; B06 unlocked"
+    },
+    "B06": {
+      "opened_utc": "2026-09-24T04:20:00+00:00",
+      "gate": "Check installed-slot compatibility and preserved base silhouettes",
+      "mode": "PROVISIONAL - not yet started; 7 independent modules, no whole-form children in this batch",
+      "counts": {
+        "requested": 7,
+        "candidates_generated": 0,
+        "awaiting_approval_ids": 0,
+        "approved_source": 0
+      },
+      "plan": "One pass: 7 parallel 2x2 module sheets (fits the 10-attempt turn budget with 3 spare slots); TB-03 fresh generations, per-panel counts for any radial anatomy (TB-06), verify identify() on every output (TB-07); consolidated human gate at pass end",
+      "id_states": {
+        "CG-S-GOD-ARMOR-OSTEODERM": "NOT_STARTED",
+        "CG-S-GOD-ARMOR-COAT": "NOT_STARTED",
+        "CG-S-GOD-ORGAN-SOLAR-SAIL": "NOT_STARTED",
+        "CG-S-GOD-ORGAN-SPORE-SAC": "NOT_STARTED",
+        "CG-S-GOD-SYMB-FUNGAL-GROVE": "NOT_STARTED",
+        "CG-S-GOD-SYMB-FOLLOWER-GALLERY": "NOT_STARTED",
+        "CG-S-GOD-SYMB-ROOT-HOLDFAST": "NOT_STARTED"
       }
     }
   },
@@ -4931,6 +4969,20 @@
         ]
       },
       "recorded_utc": "2026-09-24T03:05:00+00:00"
+    },
+    {
+      "id": "B05_CONSOLIDATED_GATE_APPROVE_ALL",
+      "ruling": {
+        "date": "2026-09-24",
+        "authority": "human (repository owner) via Arena gate answer (option approve_all_close_b05, on the re-presented question after one skip)",
+        "decision": "Approve all 5 B05 candidates - LOCO-WING r001, FEED-CARRION r001, SENSE-ANTENNA-CROWN r003 (canvas swap accepted as technical pass), FORM-M r001, LIFE-M r001 (technical-with-flag: ossuary opening = temporal fenestra; r002 preserved as rejected evidence). B05 CLOSED. B06 (7 adaptation/symbiosis modules) unlocked.",
+        "scope_limits": [
+          "All provisional batch-local; canonical promotion pending the standing 2048/3072 resolution ruling",
+          "Flags recorded: CROWN canvas swap (TB-07); LIFE-M ossuary fenestra reading + under-mark injury panel (r001)",
+          "Prior ask_user skip on this gate recorded; no ruling was assumed until this answer"
+        ]
+      },
+      "recorded_utc": "2026-09-24T04:20:00+00:00"
     }
   ],
   "resolution_ruling_standing": {
