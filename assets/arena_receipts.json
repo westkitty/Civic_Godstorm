@@ -2,7 +2,7 @@
   "ledger_type": "arena_source_receipts",
   "specification_version": "CG-V1.0.0",
   "created_utc": "2026-09-23T21:51:28+00:00",
-  "last_updated_utc": "2026-09-24T00:40:29+00:00",
+  "last_updated_utc": "2026-09-24T00:43:18+00:00",
   "authority": {
     "master_plan": "CIVIC_GODSTORM_MASTER_PLAN.md",
     "master_plan_head_commit": "5bd357e14d9b68776d50b1dee0829b7bd5ab939f",
@@ -3673,7 +3673,7 @@
       "specification_version": "CG-V1.0.0",
       "canonical_path": "assets/source/god/cg_s_god_life_h.png",
       "canonical_state": "ABSENT (correct)",
-      "id_status": "REJECTED_THIS_PASS",
+      "id_status": "CANDIDATE_AWAITING_APPROVAL",
       "parent_dependency_revisions": {
         "CG-S-GOD-FORM-H": "r002 (candidate awaiting approval)"
       },
@@ -3712,6 +3712,29 @@
             "ossuary": "improved three-limb-per-side reading but skull still not the blunt eyeless crusher; canvas also 16:9"
           },
           "status": "REJECTED"
+        },
+        {
+          "revision": "r003",
+          "retry_pass": true,
+          "path": "assets/candidates/CG-S-GOD-LIFE-H/r003/cg_s_god_life_h.png",
+          "native_dimensions": "1264x848",
+          "native_aspect_error_pct": 0.63,
+          "format": "PNG 8-bit sRGB TrueColor",
+          "alpha": "none",
+          "sha256": "14fdbe32bd962de0d91c351f093901b75e8db9bd46ec11ed11510b4ab00e40dd",
+          "generation_tool": "Arena Agent Mode generate_image",
+          "model": "UNKNOWN",
+          "normalization_operation": "none performed",
+          "parent_revision": "FRESH GENERATION (TB-04 strategy: blank 3x2 scaffold + FORM-H r002 content anchor; NO-LABELS as first instruction; blunt crushing-rostrum skull guidance)",
+          "content_qa": {
+            "labels": "NONE - TB-04 defect eliminated (no text anywhere)",
+            "layout": "exactly 3x2 six panels in declared order (template scaffold held)",
+            "continuity": "same individual; juvenile ~2/3 scale, ancient heavier with settled creases",
+            "injury_frame": "exactly two marks: middle-left leg roughened/darkened joint + one pale flank scar; no gore",
+            "corpse_ossuary": "side collapse fresh; ossuary skull LOW and BLUNT with crushing plates (anti tall-domed-skull guidance held); spine/ribs/tail/leg bones proportional",
+            "style": "batch-consistent sculpted matte; accents restrained"
+          },
+          "status": "CANDIDATE_AWAITING_APPROVAL"
         }
       ],
       "reason": "r002 introduced generated text labels (hard lock) and retained a generic skull reading; budget exhausted. New tool finding TB-04: capitalized per-cell stage names in prompts can leak as rendered labels - retry prompts must forbid words explicitly and avoid label-like tokens.",
@@ -3730,6 +3753,13 @@
         "initial_candidates_used": 1,
         "repair_candidates_used": 1,
         "remaining": 0
+      },
+      "pass_2_retry": {
+        "opened_utc": "2026-09-24T00:42:15+00:00",
+        "basis": "recorded TB-04 strategy + explicit user continue; parents provisionally operative (flagged)",
+        "strategy": "fresh generation: blank 3x2 scaffold (LIFE-Q precedent) + FORM-H r002 content-conforming anchor; NO-LABELS as first instruction; blunt crushing-rostrum skull guidance (anti recorded skull defect)",
+        "initial_candidates_used": 1,
+        "repair_candidates_used": 0
       }
     }
   },
@@ -3834,7 +3864,7 @@
         "CG-S-GOD-ARMOR-SHELL": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
         "CG-S-GOD-ORGAN-THERMAL-VENT": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
         "CG-S-GOD-FORM-H": "CANDIDATE_AWAITING_APPROVAL (r002)",
-        "CG-S-GOD-LIFE-H": "REJECTED this pass (TB-04 labels + skull); retry strategy recorded"
+        "CG-S-GOD-LIFE-H": "retry r003 conforming (labels eliminated); AWAITING consolidated human gate"
       }
     }
   },
@@ -4031,6 +4061,13 @@
         "CG-S-GOD-LIFE-H r002": "their REJECTION VERIFIED CORRECT by independent inspection - rendered text labels inside pixels violate the no-labels lock; TB-04 retry strategy stands"
       },
       "cross_session_discipline_note": "All cross-session candidate acceptances remain provisional pending the human gate; the human is the single approval authority across sessions."
+    },
+    {
+      "incident": "GATE_QUESTION_SKIPPED_2026_09_24",
+      "recorded_utc": "2026-09-24T00:42:15+00:00",
+      "observation": "The consolidated B03 cross-session gate question (TORSO-H ratification / FORM-H approval / LIFE-H retry authorization) was presented and skipped with no answer. No ruling assumed.",
+      "consequence": "TORSO-H remains AWAITING ratification (provisionally operative per parallel-session ledger, flagged); FORM-H remains AWAITING_APPROVAL; all remain non-canonical.",
+      "continuation_basis": "User directed \"continue where you left off\". Least-irreversible productive step executed: LIFE-H retry per the recorded TB-04 strategy (fresh generation, no defective anchor, blank 3x2 scaffold, no-labels-first instruction). Its candidates face the same consolidated human gate; quota exposure bounded at 1+1."
     }
   ],
   "tool_behavior_findings": [

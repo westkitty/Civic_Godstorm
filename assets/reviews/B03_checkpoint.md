@@ -25,3 +25,7 @@ Counts: 8 candidates, 2 rejected candidates, 1 ID rejected, 6 awaiting approval,
 ## Parallel-session reconciliation + independent inspection (2026-09-24)
 
 A parallel session pushed `838fdae` (FORM-H r001/r002, LIFE-H r001/r002, its own TORSO-H r003). This session reconciled onto the remote (no unique local work lost, no force) and **independently inspected** their pixels: TORSO-H r003 ring count correct (self-accepted → ratification needed); FORM-H r002 assembly-legal (minor back-centerline nodule flag); LIFE-H r002 rejection **independently confirmed** (rendered text labels = contract violation; TB-04 retry strategy stands). All remain provisional pending the human gate.
+
+## LIFE-H retry (r003, 2026-09-24)
+
+Executed per the recorded TB-04 strategy on explicit user continue (gate question had been skipped — no ruling assumed; recorded in audit_trail). **CONFORMS:** no text anywhere, exactly 3×2 six panels, same individual, legal injury pair, low blunt crushing-rostrum skull in the ossuary. **AWAITING the consolidated human gate** together with TORSO-H ratification and FORM-H approval.
