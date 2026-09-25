@@ -37,11 +37,12 @@ SOURCE-INSPECTED (every candidate read via contact sheet + native-resolution zoo
 
 | Operation | Count | Authority / bound |
 |---|---|---|
-| Lanczos upscale exactly 2.0× to 2048² | 90 | `CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS` (≤2× same-aspect) |
+| Lanczos upscale exactly 2.0× to 2048² | 71 | `CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS` (≤2× same-aspect); includes the 5 fresh-pass squares |
 | Downscale to 512² glyph spec | 38 | same ruling; REF-GLYPH target |
 | Title normalize (1.42× + ~1.1% center crop) | 1 | same ruling; DIRECT-TITLE ≤2×, ≤2% bounds |
-| Fresh-pass repairs, then 2.0× | 5 | `FRESH_CANONICAL_RESOLUTION_PASSES_AUTHORIZED` (MARKET r002, SHRINE r002, ANTENNA-CROWN r004, GALLERY r002, SOLDIER r002) |
 | As-is byte-identical at 1264×848 | 9 | `AS_IS_PROMOTION_HELD_LANDSCAPE_NINE` — disclosed deviation: 2.43× below the 3072×2048 REF-INF/REF-LIFE target; TB-08 model ceiling; deviation explicitly accepted by owner |
+
+(71 + 38 + 1 + 9 = 119; counts verified against receipt `promotion.operation` values at report time. The 5 fresh-pass repairs under `FRESH_CANONICAL_RESOLUTION_PASSES_AUTHORIZED` are inside the 71.)
 
 ## Deviations register (all disclosed in receipts, none silent)
 
