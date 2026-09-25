@@ -1,0 +1,5 @@
+
+> civic-godstorm@0.0.0-m00 test:campaigns
+> node tools/runners/campaigns.ts --seed bad seed
+
+test:campaigns: Invalid seed "bad seed" (1-64 of A-Z a-z 0-9 . _ : -)

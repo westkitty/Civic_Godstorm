@@ -1,0 +1,927 @@
+{
+  "recipe": "CG-Q-CONVERSION",
+  "revision": "c003",
+  "contract": "CG-V1.0.0",
+  "note": "Deterministic conversion parameters for the first Q God (master Sections 17.3, 18.3). View mappings, boxes and placements are inspected parameters recorded here; rerunning this recipe with the same sources and tools reproduces topology, bounds and metadata.",
+  "palette": {
+    "biologicalTeal": "#49A69D",
+    "charcoal": "#161E27",
+    "organAccent": "#E4C86E",
+    "paleStone": "#E1CEAC"
+  },
+  "modules": {
+    "CG-D-GOD-TORSO-Q": {
+      "source": "CG-S-GOD-TORSO-Q",
+      "slug": "cg_d_god_torso_q",
+      "grid": [
+        2,
+        2
+      ],
+      "rowDimensionsU": [
+        18,
+        12,
+        30
+      ],
+      "box": {
+        "x": [
+          -9,
+          9
+        ],
+        "y": [
+          -6,
+          6
+        ],
+        "z": [
+          -15,
+          15
+        ]
+      },
+      "junctionOrigin": "torso centre (root module; no parent junction)",
+      "longAxis": "z",
+      "views": {
+        "front": {
+          "panel": 0,
+          "u": "+x",
+          "v": "-y"
+        },
+        "left": {
+          "panel": 1,
+          "u": "-z",
+          "v": "-y",
+          "deviation": "sheet draws forward toward image left; mirrored by declared mapping"
+        },
+        "rear": {
+          "panel": 2,
+          "u": "-x",
+          "v": "-y"
+        },
+        "top": {
+          "panel": 3,
+          "u": "-z",
+          "v": "+x",
+          "deviation": "top view rotated 90 degrees with forward toward image left"
+        }
+      },
+      "loft": [
+        "left",
+        "top"
+      ],
+      "carve": [
+        "front",
+        "rear"
+      ],
+      "exponent": 3.0,
+      "triangleBudget": [
+        4000,
+        2000,
+        700
+      ],
+      "skeleton": [
+        {
+          "name": "torso_hips",
+          "parent": null,
+          "head": [
+            0,
+            0,
+            -9
+          ],
+          "tail": [
+            0,
+            0.5,
+            -3
+          ]
+        },
+        {
+          "name": "torso_spine",
+          "parent": "torso_hips",
+          "head": [
+            0,
+            0.5,
+            -3
+          ],
+          "tail": [
+            0,
+            1,
+            3
+          ]
+        },
+        {
+          "name": "torso_chest",
+          "parent": "torso_spine",
+          "head": [
+            0,
+            1,
+            3
+          ],
+          "tail": [
+            0,
+            1.5,
+            10
+          ]
+        }
+      ],
+      "accentSpots": [
+        [
+          8.2,
+          3.0,
+          6.0,
+          1.3
+        ],
+        [
+          -8.2,
+          3.0,
+          6.0,
+          1.3
+        ],
+        [
+          7.6,
+          2.4,
+          -8.0,
+          1.1
+        ],
+        [
+          -7.6,
+          2.4,
+          -8.0,
+          1.1
+        ]
+      ],
+      "carveSoftnessU": 0.2
+    },
+    "CG-D-GOD-LOCO-PILLAR": {
+      "source": "CG-S-GOD-LOCO-PILLAR",
+      "slug": "cg_d_god_loco_pillar",
+      "grid": [
+        2,
+        2
+      ],
+      "rowDimensionsU": [
+        5,
+        12,
+        6
+      ],
+      "box": {
+        "x": [
+          -2.5,
+          2.5
+        ],
+        "y": [
+          -12,
+          0
+        ],
+        "z": [
+          -3,
+          3
+        ]
+      },
+      "junctionOrigin": "centre of the top junction ring",
+      "longAxis": "y",
+      "views": {
+        "front": {
+          "panel": 0,
+          "u": "+x",
+          "v": "-y"
+        },
+        "left": {
+          "panel": 1,
+          "u": "+z",
+          "v": "-y"
+        },
+        "rear": {
+          "panel": 2,
+          "u": "-x",
+          "v": "-y"
+        },
+        "top": {
+          "panel": 3,
+          "u": "+x",
+          "v": "+z",
+          "deviation": "top view draws forward (toes) toward image bottom"
+        }
+      },
+      "loft": [
+        "front",
+        "left"
+      ],
+      "carve": [
+        "rear",
+        "top"
+      ],
+      "exponent": 3.0,
+      "triangleBudget": [
+        4000,
+        2000,
+        700
+      ],
+      "skeleton": [
+        {
+          "name": "leg_upper",
+          "parent": null,
+          "head": [
+            0,
+            0,
+            0
+          ],
+          "tail": [
+            0,
+            -5,
+            0.4
+          ]
+        },
+        {
+          "name": "leg_lower",
+          "parent": "leg_upper",
+          "head": [
+            0,
+            -5,
+            0.4
+          ],
+          "tail": [
+            0,
+            -9.5,
+            -0.6
+          ]
+        },
+        {
+          "name": "leg_foot",
+          "parent": "leg_lower",
+          "head": [
+            0,
+            -9.5,
+            -0.6
+          ],
+          "tail": [
+            0,
+            -11.2,
+            0.6
+          ]
+        },
+        {
+          "name": "leg_toe",
+          "parent": "leg_foot",
+          "head": [
+            0,
+            -11.2,
+            0.6
+          ],
+          "tail": [
+            0,
+            -11.6,
+            2.8
+          ]
+        }
+      ],
+      "accentSpots": [
+        [
+          2.3,
+          -9.6,
+          1.0,
+          0.35
+        ]
+      ],
+      "carveSoftnessU": 0.2,
+      "loftUnion": {
+        "front": "rear"
+      },
+      "loftUnionNote": "front and rear panels disagree in width; the lofted width is their union so neither approved view is under-filled"
+    },
+    "CG-D-GOD-FEED-BROWSE": {
+      "source": "CG-S-GOD-FEED-BROWSE",
+      "slug": "cg_d_god_feed_browse",
+      "grid": [
+        2,
+        2
+      ],
+      "rowDimensionsU": [
+        9,
+        7,
+        13
+      ],
+      "box": {
+        "x": [
+          -4.5,
+          4.5
+        ],
+        "y": [
+          -3.5,
+          3.5
+        ],
+        "z": [
+          0,
+          13
+        ]
+      },
+      "junctionOrigin": "centre of the rear junction ring",
+      "longAxis": "z",
+      "views": {
+        "front": {
+          "panel": 0,
+          "u": "+x",
+          "v": "-y"
+        },
+        "left": {
+          "panel": 1,
+          "u": "-z",
+          "v": "-y",
+          "deviation": "sheet draws the snout toward image left; mirrored by declared mapping"
+        },
+        "rear": {
+          "panel": 2,
+          "u": "-x",
+          "v": "-y"
+        },
+        "top": {
+          "panel": 3,
+          "u": "+x",
+          "v": "-z"
+        }
+      },
+      "loft": [
+        "left",
+        "top"
+      ],
+      "carve": [
+        "front",
+        "rear"
+      ],
+      "exponent": 3.0,
+      "triangleBudget": [
+        4000,
+        2000,
+        700
+      ],
+      "skeleton": [
+        {
+          "name": "head",
+          "parent": null,
+          "head": [
+            0,
+            0,
+            0
+          ],
+          "tail": [
+            0,
+            0.8,
+            8
+          ]
+        },
+        {
+          "name": "jaw",
+          "parent": "head",
+          "head": [
+            0,
+            -1.2,
+            5
+          ],
+          "tail": [
+            0,
+            -2.2,
+            12.5
+          ]
+        }
+      ],
+      "accentSpots": [
+        [
+          4.2,
+          1.4,
+          2.2,
+          0.35
+        ],
+        [
+          -4.2,
+          1.4,
+          2.2,
+          0.35
+        ]
+      ],
+      "carveSoftnessU": 0.2
+    },
+    "CG-D-GOD-TAIL-BALANCE": {
+      "source": "CG-S-GOD-TAIL-BALANCE",
+      "slug": "cg_d_god_tail_balance",
+      "grid": [
+        2,
+        2
+      ],
+      "rowDimensionsU": [
+        5,
+        5,
+        24
+      ],
+      "box": {
+        "x": [
+          -2.5,
+          2.5
+        ],
+        "y": [
+          -2.5,
+          2.5
+        ],
+        "z": [
+          -24,
+          0
+        ]
+      },
+      "junctionOrigin": "centre of the root junction ring",
+      "longAxis": "z",
+      "views": {
+        "rootEnd": {
+          "panel": 0,
+          "u": "+x",
+          "v": "-y",
+          "nonProjectable": "end-on view drawn with elevated perspective (tail body visible below the root flange)"
+        },
+        "left": {
+          "panel": 1,
+          "u": "+z",
+          "v": "-y"
+        },
+        "tipEnd": {
+          "panel": 2,
+          "u": "-x",
+          "v": "-y",
+          "nonProjectable": "end-on view drawn with perspective (tapering body visible)"
+        },
+        "top": {
+          "panel": 3,
+          "u": "+z",
+          "v": "+x"
+        }
+      },
+      "loft": [
+        "left",
+        "top"
+      ],
+      "carve": [],
+      "exponent": 2.0,
+      "triangleBudget": [
+        4000,
+        2000,
+        700
+      ],
+      "skeleton": [
+        {
+          "name": "tail_1",
+          "parent": null,
+          "head": [
+            0,
+            0,
+            0
+          ],
+          "tail": [
+            0,
+            0,
+            -4.8
+          ]
+        },
+        {
+          "name": "tail_2",
+          "parent": "tail_1",
+          "head": [
+            0,
+            0,
+            -4.8
+          ],
+          "tail": [
+            0,
+            0,
+            -9.6
+          ]
+        },
+        {
+          "name": "tail_3",
+          "parent": "tail_2",
+          "head": [
+            0,
+            0,
+            -9.6
+          ],
+          "tail": [
+            0,
+            0,
+            -14.4
+          ]
+        },
+        {
+          "name": "tail_4",
+          "parent": "tail_3",
+          "head": [
+            0,
+            0,
+            -14.4
+          ],
+          "tail": [
+            0,
+            0,
+            -19.2
+          ]
+        },
+        {
+          "name": "tail_5",
+          "parent": "tail_4",
+          "head": [
+            0,
+            0,
+            -19.2
+          ],
+          "tail": [
+            0,
+            0,
+            -24
+          ]
+        }
+      ],
+      "accentSpots": [
+        [
+          2.1,
+          -0.6,
+          -1.6,
+          0.25
+        ]
+      ]
+    },
+    "CG-D-GOD-SENSE-EYE-RING": {
+      "source": "CG-S-GOD-SENSE-EYE-RING",
+      "slug": "cg_d_god_sense_eye_ring",
+      "grid": [
+        2,
+        2
+      ],
+      "rowDimensionsU": [
+        8,
+        2,
+        5
+      ],
+      "box": {
+        "x": [
+          -4,
+          4
+        ],
+        "y": [
+          -1,
+          1
+        ],
+        "z": [
+          -2.5,
+          2.5
+        ]
+      },
+      "junctionOrigin": "centre of the band's plan bounds at mid-height",
+      "construction": "band",
+      "views": {
+        "front": {
+          "panel": 0,
+          "u": "+x",
+          "v": "-y",
+          "nonProjectable": "drawn from an elevated three-quarter camera, not orthographic front"
+        },
+        "left": {
+          "panel": 1,
+          "u": "+z",
+          "v": "-y",
+          "nonProjectable": "drawn tilted with perspective"
+        },
+        "rear": {
+          "panel": 2,
+          "u": "-x",
+          "v": "-y",
+          "nonProjectable": "drawn from an elevated camera"
+        },
+        "top": {
+          "panel": 3,
+          "u": "+x",
+          "v": "-z"
+        }
+      },
+      "eyes": {
+        "count": 4,
+        "anglesDeg": [
+          -58,
+          -22,
+          22,
+          58
+        ],
+        "lengthU": 1.25,
+        "heightU": 0.72,
+        "lidDepthU": 0.12,
+        "note": "four recessed closed-lid eyes, two per side; angles measured from forward around the band centre (inspected from the front and side panels)"
+      },
+      "triangleBudget": [
+        4000,
+        2000,
+        700
+      ],
+      "skeleton": [],
+      "accentSpots": [
+        [
+          3.4,
+          0.6,
+          -0.8,
+          0.5
+        ]
+      ]
+    }
+  },
+  "form": {
+    "id": "CG-D-GOD-FORM-Q",
+    "source": "CG-S-GOD-FORM-Q",
+    "slug": "cg_d_god_form_q",
+    "size": "II",
+    "footprintMask": "TRIANGLE",
+    "box": {
+      "x": [
+        -6.45,
+        6.45
+      ],
+      "y": [
+        0,
+        22
+      ],
+      "z": [
+        -18.45,
+        18.45
+      ]
+    },
+    "boxBasis": "height 22 U (Section 3.1 medium primary mass); length/height 1.68 from the LIFE-Q prime left profile; width from FORM-Q front (0.58 of height) and top (0.36 of length) averaged to 12.9 U",
+    "hullViews": {
+      "front": {
+        "sheet": "CG-S-GOD-FORM-Q",
+        "grid": [
+          2,
+          2
+        ],
+        "panel": 0,
+        "u": "+x",
+        "v": "-y"
+      },
+      "rear": {
+        "sheet": "CG-S-GOD-FORM-Q",
+        "grid": [
+          2,
+          2
+        ],
+        "panel": 2,
+        "u": "-x",
+        "v": "-y"
+      },
+      "top": {
+        "sheet": "CG-S-GOD-FORM-Q",
+        "grid": [
+          2,
+          2
+        ],
+        "panel": 3,
+        "u": "-z",
+        "v": "+x",
+        "deviation": "top view drawn with forward toward image left"
+      }
+    },
+    "nonProjectable": {
+      "CG-S-GOD-FORM-Q panel 1": "drawn as an elevated three-quarter view, not the orthographic left view the profile names; used for identity review only",
+      "CG-S-GOD-LIFE-Q r005 prime panel": "owner ruling OR-2026-09-25-02: FORM-Q r004 is anatomically authoritative; LIFE-Q r005 (domed shell) is continuity drift to be corrected/replaced, so it does not score or shape FORM-Q"
+    },
+    "hullDilationU": 0.6,
+    "blendU": 1.1,
+    "instances": [
+      {
+        "module": "CG-D-GOD-TORSO-Q",
+        "name": "torso",
+        "position": [
+          0,
+          14.399999999999999,
+          1.5
+        ],
+        "euler": [
+          -2.0,
+          0,
+          0
+        ],
+        "scale": [
+          0.78,
+          1.2875,
+          0.62
+        ]
+      },
+      {
+        "module": "CG-D-GOD-FEED-BROWSE",
+        "name": "head",
+        "position": [
+          0,
+          18.475,
+          9.5
+        ],
+        "euler": [
+          11.25,
+          0,
+          0
+        ],
+        "scale": [
+          0.7649999999999997,
+          0.7649999999999997,
+          0.7200000000000001
+        ]
+      },
+      {
+        "module": "CG-D-GOD-SENSE-EYE-RING",
+        "name": "eyes",
+        "position": [
+          0,
+          1.4,
+          8.8
+        ],
+        "euler": [
+          8,
+          0,
+          0
+        ],
+        "scale": [
+          1.0,
+          0.8,
+          1.0
+        ],
+        "relativeTo": "head"
+      },
+      {
+        "module": "CG-D-GOD-TAIL-BALANCE",
+        "name": "tail",
+        "position": [
+          0,
+          14.95,
+          -7.0
+        ],
+        "euler": [
+          3.0,
+          0,
+          0
+        ],
+        "scale": [
+          0.8099999999999998,
+          0.8099999999999998,
+          0.4999999999999999
+        ]
+      },
+      {
+        "module": "CG-D-GOD-LOCO-PILLAR",
+        "name": "leg_fl",
+        "position": [
+          -3.7500000000000004,
+          14.5,
+          8.099999999999998
+        ],
+        "euler": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.8749999999999999,
+          1.2208333333333334,
+          0.8749999999999999
+        ]
+      },
+      {
+        "module": "CG-D-GOD-LOCO-PILLAR",
+        "name": "leg_fr",
+        "position": [
+          3.7500000000000004,
+          14.5,
+          8.099999999999998
+        ],
+        "euler": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.8749999999999999,
+          1.2208333333333334,
+          0.8749999999999999
+        ]
+      },
+      {
+        "module": "CG-D-GOD-LOCO-PILLAR",
+        "name": "leg_hl",
+        "position": [
+          -4.125,
+          14.5,
+          -4.000000000000003
+        ],
+        "euler": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.8749999999999999,
+          1.2208333333333334,
+          0.8749999999999999
+        ]
+      },
+      {
+        "module": "CG-D-GOD-LOCO-PILLAR",
+        "name": "leg_hr",
+        "position": [
+          4.125,
+          14.5,
+          -4.000000000000003
+        ],
+        "euler": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.8749999999999999,
+          1.2208333333333334,
+          0.8749999999999999
+        ]
+      }
+    ],
+    "triangleBudget": [
+      12000,
+      6000,
+      2000
+    ],
+    "jointLimit": 64,
+    "accentSpots": [
+      [
+        5.9,
+        17.2,
+        7.0,
+        1.15
+      ],
+      [
+        -5.9,
+        17.2,
+        7.0,
+        1.15
+      ],
+      [
+        5.4,
+        16.2,
+        -6.2,
+        1.0
+      ],
+      [
+        -5.4,
+        16.2,
+        -6.2,
+        1.0
+      ],
+      [
+        0.0,
+        19.4,
+        12.9,
+        0.55
+      ]
+    ],
+    "gridStepU": 0.12,
+    "eyeBlendU": 0.8,
+    "hullClipSoftnessU": 2.0,
+    "fit": {
+      "tool": "tools/models/fit_form.py",
+      "objective": "mean projected silhouette IoU over scored form views",
+      "gridStepU": 0.2,
+      "passes": 8,
+      "evaluations": 304,
+      "start": {
+        "mean": 0.8864,
+        "front": 0.9544,
+        "rear": 0.942,
+        "top": 0.7629,
+        "anchorsPass": 1
+      },
+      "final": {
+        "mean": 0.9025,
+        "front": 0.9549,
+        "rear": 0.9408,
+        "top": 0.8119
+      },
+      "parameters": {
+        "front_leg_z": 8.1,
+        "hind_leg_z": -4.0,
+        "front_leg_x": 3.75,
+        "hind_leg_x": 4.125,
+        "leg_top_y": 14.5,
+        "leg_girth": 0.875,
+        "head_y": 18.475,
+        "head_z": 9.5,
+        "head_pitch": 11.25,
+        "head_scale": 0.765,
+        "tail_y": 14.95,
+        "tail_pitch": 3.0,
+        "tail_length": 0.5,
+        "tail_girth": 0.81,
+        "torso_y": 14.4,
+        "torso_z": 1.5,
+        "torso_pitch": -2.0,
+        "torso_width": 0.78,
+        "torso_height": 1.2875,
+        "torso_length": 0.62,
+        "head_length": 0.72
+      }
+    },
+    "hullClip": false
+  },
+  "accentSpotNote": "[x, y, z, radius] in model space U; organ accent colour; placements inspected from the approved sheets"
+}

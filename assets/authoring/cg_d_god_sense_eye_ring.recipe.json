@@ -1,0 +1,97 @@
+{
+  "id": "CG-D-GOD-SENSE-EYE-RING",
+  "recipe": "CG-Q-CONVERSION",
+  "revision": "c003",
+  "contract": "CG-V1.0.0",
+  "stages": [
+    "tools/models/build_volumes.py",
+    "tools/models/build_models.py"
+  ],
+  "parameters": {
+    "source": "CG-S-GOD-SENSE-EYE-RING",
+    "slug": "cg_d_god_sense_eye_ring",
+    "grid": [
+      2,
+      2
+    ],
+    "rowDimensionsU": [
+      8,
+      2,
+      5
+    ],
+    "box": {
+      "x": [
+        -4,
+        4
+      ],
+      "y": [
+        -1,
+        1
+      ],
+      "z": [
+        -2.5,
+        2.5
+      ]
+    },
+    "junctionOrigin": "centre of the band's plan bounds at mid-height",
+    "construction": "band",
+    "views": {
+      "front": {
+        "panel": 0,
+        "u": "+x",
+        "v": "-y",
+        "nonProjectable": "drawn from an elevated three-quarter camera, not orthographic front"
+      },
+      "left": {
+        "panel": 1,
+        "u": "+z",
+        "v": "-y",
+        "nonProjectable": "drawn tilted with perspective"
+      },
+      "rear": {
+        "panel": 2,
+        "u": "-x",
+        "v": "-y",
+        "nonProjectable": "drawn from an elevated camera"
+      },
+      "top": {
+        "panel": 3,
+        "u": "+x",
+        "v": "-z"
+      }
+    },
+    "eyes": {
+      "count": 4,
+      "anglesDeg": [
+        -58,
+        -22,
+        22,
+        58
+      ],
+      "lengthU": 1.25,
+      "heightU": 0.72,
+      "lidDepthU": 0.12,
+      "note": "four recessed closed-lid eyes, two per side; angles measured from forward around the band centre (inspected from the front and side panels)"
+    },
+    "triangleBudget": [
+      4000,
+      2000,
+      700
+    ],
+    "skeleton": [],
+    "accentSpots": [
+      [
+        3.4,
+        0.6,
+        -0.8,
+        0.5
+      ]
+    ]
+  },
+  "palette": {
+    "biologicalTeal": "#49A69D",
+    "charcoal": "#161E27",
+    "organAccent": "#E4C86E",
+    "paleStone": "#E1CEAC"
+  }
+}

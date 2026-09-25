@@ -1,0 +1,88 @@
+{
+  "id": "CG-D-GOD-TAIL-BALANCE",
+  "glb": "assets/runtime/models/cg_d_god_tail_balance.glb",
+  "sha256": "af04b7c38ba7ac351600fc5a348f5c4f46a0e820ff93407e328bc4d88b7af740",
+  "bounds": {
+    "min": [
+      -2.3911,
+      -2.3985,
+      -23.9771
+    ],
+    "max": [
+      2.4074,
+      2.4083,
+      -0.16
+    ]
+  },
+  "views": {
+    "left": {
+      "sheet": "CG-S-GOD-TAIL-BALANCE",
+      "panel": 1,
+      "iou": 0.9773,
+      "declaredStretch": 0.2227,
+      "landmarkErrorMaxFraction": 0.0073,
+      "passes": true
+    },
+    "top": {
+      "sheet": "CG-S-GOD-TAIL-BALANCE",
+      "panel": 3,
+      "iou": 0.981,
+      "declaredStretch": 0.0557,
+      "landmarkErrorMaxFraction": 0.0044,
+      "passes": true
+    }
+  },
+  "nonProjectable": {
+    "rootEnd": "end-on view drawn with elevated perspective (tail body visible below the root flange)",
+    "tipEnd": "end-on view drawn with perspective (tapering body visible)"
+  },
+  "structure": {
+    "lods": {
+      "LOD0": {
+        "triangles": 3938,
+        "vertices": 1971,
+        "budget": 4000,
+        "withinBudget": true,
+        "weightSumMaxError": 1.2619420886039734e-07,
+        "nanWeights": false,
+        "jointsReferenced": 5,
+        "hasVertexColor": true
+      },
+      "LOD1": {
+        "triangles": 1968,
+        "vertices": 986,
+        "budget": 2000,
+        "withinBudget": true,
+        "weightSumMaxError": 1.1886004358530045e-07,
+        "nanWeights": false,
+        "jointsReferenced": 5,
+        "hasVertexColor": true
+      },
+      "LOD2": {
+        "triangles": 688,
+        "vertices": 346,
+        "budget": 700,
+        "withinBudget": true,
+        "weightSumMaxError": 1.1455267667770386e-07,
+        "nanWeights": false,
+        "jointsReferenced": 5,
+        "hasVertexColor": true
+      }
+    },
+    "lodBudgets": true,
+    "skins": 1,
+    "joints": 5,
+    "jointLimit": 64,
+    "withinJointLimit": true,
+    "inverseBindFinite": true,
+    "inverseBindPositiveDeterminant": true,
+    "weightsNormalized": true,
+    "materials": 1,
+    "materialsWithinLimit": true,
+    "textures": 0,
+    "animations": 0,
+    "opaqueNonMetal": true
+  },
+  "silhouettePass": true,
+  "structuralPass": true
+}

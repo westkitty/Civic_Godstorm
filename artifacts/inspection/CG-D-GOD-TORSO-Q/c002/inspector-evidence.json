@@ -1,0 +1,59 @@
+{
+  "id": "CG-D-GOD-TORSO-Q",
+  "revision": "c002",
+  "viewer": "artifacts/inspection/CG-D-GOD-TORSO-Q/c002/viewer.html",
+  "load": {
+    "ready": true,
+    "error": null,
+    "joints": 3,
+    "lods": {
+      "LOD0": 3940,
+      "LOD1": 1970,
+      "LOD2": 688
+    },
+    "coverage": 0.1568002946127946
+  },
+  "interaction": {
+    "orbitChangedView": true,
+    "zoomChangedView": true,
+    "resetRestoredView": true
+  },
+  "cameras": {
+    "front": 0.0705702861952862,
+    "left": 0.11351641414141414,
+    "rear": 0.07055976430976431,
+    "top": 0.20185921717171718,
+    "three quarter": 0.1568002946127946
+  },
+  "lodCoverage": {
+    "LOD0": 0.1568002946127946,
+    "LOD1": 0.15681292087542087,
+    "LOD2": 0.15667087542087543
+  },
+  "turntable": {
+    "path": "artifacts/inspection/CG-D-GOD-TORSO-Q/c002/turntable.mp4",
+    "framesRendered": 144,
+    "fps": 24,
+    "size": [
+      1024,
+      1024
+    ],
+    "codec": "H.264 (libx264, yuv420p)"
+  },
+  "validationSheet": {
+    "path": "artifacts/inspection/CG-D-GOD-TORSO-Q/c002/validation-sheet.png",
+    "size": [
+      2048,
+      2048
+    ],
+    "views": [
+      "front",
+      "left",
+      "top",
+      "three-quarter"
+    ]
+  },
+  "networkRequestsBlocked": [],
+  "pageErrors": [],
+  "pass": true
+}

@@ -1,0 +1,204 @@
+{
+  "id": "CG-D-GOD-FEED-BROWSE",
+  "slug": "cg_d_god_feed_browse",
+  "glb": "assets/runtime/models/cg_d_god_feed_browse.glb",
+  "sha256": "05d8ac5ee50f53d76763891f0285f423442dfe7fe0a3b1d7dbfa079d2d97ac0d",
+  "bytes": 228904,
+  "tool": {
+    "blender": "4.5.14 LTS",
+    "exporter": "io_scene_gltf2 (bundled)",
+    "python": "3.11.16"
+  },
+  "recipe": {
+    "path": "tools/models/q_recipe.json",
+    "revision": "c003",
+    "sha256": "26139c46ee72eb28bfad72b211ce5c54835f3ebeb67ea00e70bb5106be7497e1"
+  },
+  "triangleBudget": [
+    4000,
+    2000,
+    700
+  ],
+  "skinChecks": [
+    {
+      "lod": "LOD0",
+      "weightSumMaxError": 1.1102230246251565e-16,
+      "maxInfluences": 2,
+      "nan": false
+    },
+    {
+      "lod": "LOD1",
+      "weightSumMaxError": 1.1102230246251565e-16,
+      "maxInfluences": 2,
+      "nan": false
+    },
+    {
+      "lod": "LOD2",
+      "weightSumMaxError": 1.1102230246251565e-16,
+      "maxInfluences": 2,
+      "nan": false
+    }
+  ],
+  "export": {
+    "asset": {
+      "generator": "Khronos glTF Blender I/O v4.5.51",
+      "version": "2.0"
+    },
+    "nodes": [
+      "jaw",
+      "head",
+      "LOD0",
+      "LOD1",
+      "LOD2",
+      "skeleton"
+    ],
+    "meshes": {
+      "cg_d_god_feed_browse_LOD0": {
+        "triangles": 3938,
+        "attributes": [
+          "COLOR_0",
+          "JOINTS_0",
+          "NORMAL",
+          "POSITION",
+          "WEIGHTS_0"
+        ],
+        "min": [
+          -4.342442035675049,
+          -3.42779278755188,
+          0.08667566627264023
+        ],
+        "max": [
+          4.344326972961426,
+          3.4256300926208496,
+          12.995838165283203
+        ],
+        "vertices": 1971,
+        "materials": [
+          0
+        ]
+      },
+      "cg_d_god_feed_browse_LOD1": {
+        "triangles": 1968,
+        "attributes": [
+          "COLOR_0",
+          "JOINTS_0",
+          "NORMAL",
+          "POSITION",
+          "WEIGHTS_0"
+        ],
+        "min": [
+          -4.34658670425415,
+          -3.430314779281616,
+          0.08673033118247986
+        ],
+        "max": [
+          4.347819805145264,
+          3.4219326972961426,
+          12.99722671508789
+        ],
+        "vertices": 986,
+        "materials": [
+          0
+        ]
+      },
+      "cg_d_god_feed_browse_LOD2": {
+        "triangles": 688,
+        "attributes": [
+          "COLOR_0",
+          "JOINTS_0",
+          "NORMAL",
+          "POSITION",
+          "WEIGHTS_0"
+        ],
+        "min": [
+          -4.345587253570557,
+          -3.4399635791778564,
+          0.08729737251996994
+        ],
+        "max": [
+          4.345091342926025,
+          3.419156789779663,
+          13.000983238220215
+        ],
+        "vertices": 346,
+        "materials": [
+          0
+        ]
+      }
+    },
+    "skins": [
+      {
+        "name": "skeleton",
+        "joints": [
+          "head",
+          "jaw"
+        ],
+        "inverseBindMatrices": 2
+      }
+    ],
+    "materials": [
+      {
+        "name": "cg_d_god_feed_browse_body",
+        "metallic": 0,
+        "roughness": 0.75,
+        "alphaMode": "OPAQUE",
+        "doubleSided": true
+      }
+    ],
+    "textures": 0,
+    "images": 0,
+    "animations": 0,
+    "extensionsUsed": []
+  },
+  "source": "CG-S-GOD-FEED-BROWSE",
+  "rowDimensionsU": [
+    9,
+    7,
+    13
+  ],
+  "box": {
+    "x": [
+      -4.5,
+      4.5
+    ],
+    "y": [
+      -3.5,
+      3.5
+    ],
+    "z": [
+      0,
+      13
+    ]
+  },
+  "junctionOrigin": "centre of the rear junction ring",
+  "skeleton": [
+    {
+      "name": "head",
+      "parent": null,
+      "head": [
+        0,
+        0,
+        0
+      ],
+      "tail": [
+        0,
+        0.8,
+        8
+      ]
+    },
+    {
+      "name": "jaw",
+      "parent": "head",
+      "head": [
+        0,
+        -1.2,
+        5
+      ],
+      "tail": [
+        0,
+        -2.2,
+        12.5
+      ]
+    }
+  ]
+}

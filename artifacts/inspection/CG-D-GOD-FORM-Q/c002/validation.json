@@ -1,0 +1,434 @@
+{
+  "id": "CG-D-GOD-FORM-Q",
+  "revision": "c002",
+  "glb": {
+    "path": "assets/runtime/models/cg_d_god_form_q.glb",
+    "sha256": "33166dff350d233e1dcb352efe6f435b169af7d2d998f27ce862d13dd2a3f3d0",
+    "bytes": 682032
+  },
+  "sources": [
+    {
+      "id": "CG-S-GOD-FORM-Q",
+      "sha256": "2e846c39288c9ea2458af62d5c023cd3e1ff094d809e2eaac70c4a5e4b13111b",
+      "path": "assets/source/god/cg_s_god_form_q.png"
+    },
+    {
+      "id": "CG-S-GOD-LIFE-Q",
+      "sha256": "b0feeac2ed83e715bd547a3e844fb84b0206aae8855b2e6b2eda595891662dfc",
+      "path": "assets/source/god/cg_s_god_life_q.png"
+    },
+    {
+      "id": "CG-S-GOD-TORSO-Q",
+      "sha256": "e45f88bf349b12e2d242fce155cd82cfe4655d99fcb0753cc608e5f48ba92552",
+      "path": "assets/source/god/cg_s_god_torso_q.png"
+    },
+    {
+      "id": "CG-S-GOD-FEED-BROWSE",
+      "sha256": "21ff4f0259c47f156ad97968fe48e0a03cef37a88e3f4af2d372a05750019efa",
+      "path": "assets/source/god/cg_s_god_feed_browse.png"
+    },
+    {
+      "id": "CG-S-GOD-SENSE-EYE-RING",
+      "sha256": "5efeaee2ea0c65ab641bd7443c00bc9d33ccc70632ac8c193c36dc649b7feedf",
+      "path": "assets/source/god/cg_s_god_sense_eye_ring.png"
+    },
+    {
+      "id": "CG-S-GOD-TAIL-BALANCE",
+      "sha256": "48c7e37c909609cfd90040a19503d862912b84e41191d3ac2544703e04b21c70",
+      "path": "assets/source/god/cg_s_god_tail_balance.png"
+    },
+    {
+      "id": "CG-S-GOD-LOCO-PILLAR",
+      "sha256": "bc9800bd1e9e56e2bd17a342aaff87d2aec7e4779fa304e6c5b7970a1690290e",
+      "path": "assets/source/god/cg_s_god_loco_pillar.png"
+    }
+  ],
+  "tool": {
+    "blender": "4.5.14 LTS",
+    "exporter": "io_scene_gltf2 (bundled)",
+    "python": "3.11.16"
+  },
+  "recipe": {
+    "path": "tools/models/q_recipe.json",
+    "revision": "c002",
+    "sha256": "feb998cdbd45b697d613b25093b1d3cf802e0046f3b9bc2c2a90ad13b3c2bc3e"
+  },
+  "export": {
+    "asset": {
+      "generator": "Khronos glTF Blender I/O v4.5.51",
+      "version": "2.0"
+    },
+    "nodes": [
+      "jaw",
+      "head",
+      "neck",
+      "leg_fl_toe",
+      "leg_fl_foot",
+      "leg_fl_lower",
+      "leg_fl_upper",
+      "leg_fr_toe",
+      "leg_fr_foot",
+      "leg_fr_lower",
+      "leg_fr_upper",
+      "torso_chest",
+      "torso_spine",
+      "tail_5",
+      "tail_4",
+      "tail_3",
+      "tail_2",
+      "tail_1",
+      "leg_hl_toe",
+      "leg_hl_foot",
+      "leg_hl_lower",
+      "leg_hl_upper",
+      "leg_hr_toe",
+      "leg_hr_foot",
+      "leg_hr_lower",
+      "leg_hr_upper",
+      "torso_hips",
+      "root",
+      "LOD0",
+      "LOD1",
+      "LOD2",
+      "skeleton"
+    ],
+    "meshes": {
+      "cg_d_god_form_q_LOD0": {
+        "triangles": 11820,
+        "attributes": [
+          "COLOR_0",
+          "JOINTS_0",
+          "NORMAL",
+          "POSITION",
+          "WEIGHTS_0"
+        ],
+        "min": [
+          -6.851609230041504,
+          0.0021130770910531282,
+          -18.97400665283203
+        ],
+        "max": [
+          6.855148792266846,
+          22.1578369140625,
+          18.24107551574707
+        ],
+        "vertices": 5912,
+        "materials": [
+          0
+        ]
+      },
+      "cg_d_god_form_q_LOD1": {
+        "triangles": 5910,
+        "attributes": [
+          "COLOR_0",
+          "JOINTS_0",
+          "NORMAL",
+          "POSITION",
+          "WEIGHTS_0"
+        ],
+        "min": [
+          -6.849240303039551,
+          -0.001779834390617907,
+          -18.977828979492188
+        ],
+        "max": [
+          6.871665000915527,
+          22.1578369140625,
+          18.24410629272461
+        ],
+        "vertices": 2957,
+        "materials": [
+          0
+        ]
+      },
+      "cg_d_god_form_q_LOD2": {
+        "triangles": 1970,
+        "attributes": [
+          "COLOR_0",
+          "JOINTS_0",
+          "NORMAL",
+          "POSITION",
+          "WEIGHTS_0"
+        ],
+        "min": [
+          -6.797872543334961,
+          -0.02473350614309311,
+          -19.002500534057617
+        ],
+        "max": [
+          6.858806610107422,
+          22.170303344726562,
+          18.244308471679688
+        ],
+        "vertices": 987,
+        "materials": [
+          0
+        ]
+      }
+    },
+    "skins": [
+      {
+        "name": "skeleton",
+        "joints": [
+          "root",
+          "torso_hips",
+          "torso_spine",
+          "torso_chest",
+          "neck",
+          "head",
+          "jaw",
+          "leg_fl_upper",
+          "leg_fl_lower",
+          "leg_fl_foot",
+          "leg_fl_toe",
+          "leg_fr_upper",
+          "leg_fr_lower",
+          "leg_fr_foot",
+          "leg_fr_toe",
+          "tail_1",
+          "tail_2",
+          "tail_3",
+          "tail_4",
+          "tail_5",
+          "leg_hl_upper",
+          "leg_hl_lower",
+          "leg_hl_foot",
+          "leg_hl_toe",
+          "leg_hr_upper",
+          "leg_hr_lower",
+          "leg_hr_foot",
+          "leg_hr_toe"
+        ],
+        "inverseBindMatrices": 28
+      }
+    ],
+    "materials": [
+      {
+        "name": "cg_d_god_form_q_body",
+        "metallic": 0,
+        "roughness": 0.75,
+        "alphaMode": "OPAQUE",
+        "doubleSided": true
+      }
+    ],
+    "textures": 0,
+    "images": 0,
+    "animations": 0,
+    "extensionsUsed": []
+  },
+  "measurements": {
+    "id": "CG-D-GOD-FORM-Q",
+    "glb": "assets/runtime/models/cg_d_god_form_q.glb",
+    "sha256": "33166dff350d233e1dcb352efe6f435b169af7d2d998f27ce862d13dd2a3f3d0",
+    "bounds": {
+      "min": [
+        -6.8516,
+        0.0021,
+        -18.974
+      ],
+      "max": [
+        6.8551,
+        22.1578,
+        18.2411
+      ]
+    },
+    "views": {
+      "front": {
+        "sheet": "CG-S-GOD-FORM-Q",
+        "panel": 0,
+        "iou": 0.9456,
+        "declaredStretch": 0.0154,
+        "landmarkErrorMaxFraction": 0.0066,
+        "passes": true
+      },
+      "rear": {
+        "sheet": "CG-S-GOD-FORM-Q",
+        "panel": 2,
+        "iou": 0.9274,
+        "declaredStretch": -0.0206,
+        "landmarkErrorMaxFraction": 0.0099,
+        "passes": true
+      },
+      "top": {
+        "sheet": "CG-S-GOD-FORM-Q",
+        "panel": 3,
+        "iou": 0.751,
+        "declaredStretch": 0.0117,
+        "landmarkErrorMaxFraction": 0.0559,
+        "passes": false
+      },
+      "left": {
+        "sheet": "CG-S-GOD-LIFE-Q",
+        "panel": 1,
+        "iou": 0.4633,
+        "declaredStretch": 0.1574,
+        "landmarkErrorMaxFraction": 0.0691,
+        "passes": false
+      }
+    },
+    "nonProjectable": {
+      "CG-S-GOD-FORM-Q panel 1": "drawn as an elevated three-quarter view, not the orthographic left view the profile names; used for identity review only"
+    },
+    "structure": {
+      "lods": {
+        "LOD0": {
+          "triangles": 11820,
+          "vertices": 5912,
+          "budget": 12000,
+          "withinBudget": true,
+          "weightSumMaxError": 1.341104507446289e-7,
+          "nanWeights": false,
+          "jointsReferenced": 27,
+          "hasVertexColor": true
+        },
+        "LOD1": {
+          "triangles": 5910,
+          "vertices": 2957,
+          "budget": 6000,
+          "withinBudget": true,
+          "weightSumMaxError": 1.4121178537607193e-7,
+          "nanWeights": false,
+          "jointsReferenced": 27,
+          "hasVertexColor": true
+        },
+        "LOD2": {
+          "triangles": 1970,
+          "vertices": 987,
+          "budget": 2000,
+          "withinBudget": true,
+          "weightSumMaxError": 1.4901161193847656e-7,
+          "nanWeights": false,
+          "jointsReferenced": 27,
+          "hasVertexColor": true
+        }
+      },
+      "lodBudgets": true,
+      "skins": 1,
+      "joints": 28,
+      "jointLimit": 64,
+      "withinJointLimit": true,
+      "inverseBindFinite": true,
+      "inverseBindPositiveDeterminant": true,
+      "weightsNormalized": true,
+      "materials": 1,
+      "materialsWithinLimit": true,
+      "textures": 0,
+      "animations": 0,
+      "opaqueNonMetal": true
+    },
+    "deformation": {
+      "bindPoseReproductionErrorU": 0.00001,
+      "restVolumeU3": -2897.2,
+      "poses": {
+        "idle": {
+          "volumeRatio": 0.9992,
+          "edgeStretchP99": 1.051,
+          "edgeCompressP1": 0.978,
+          "maxDisplacementU": 0.653,
+          "minY": 0.002,
+          "finite": true,
+          "pass": true
+        },
+        "walk": {
+          "volumeRatio": 0.9999,
+          "edgeStretchP99": 1.756,
+          "edgeCompressP1": 0.817,
+          "maxDisplacementU": 6.554,
+          "minY": 0.039,
+          "finite": true,
+          "pass": true
+        },
+        "turn": {
+          "volumeRatio": 0.9911,
+          "edgeStretchP99": 1.327,
+          "edgeCompressP1": 0.809,
+          "maxDisplacementU": 9.037,
+          "minY": -0.113,
+          "finite": true,
+          "pass": true
+        },
+        "feed": {
+          "volumeRatio": 0.9798,
+          "edgeStretchP99": 1.783,
+          "edgeCompressP1": 0.833,
+          "maxDisplacementU": 9.651,
+          "minY": -0.23,
+          "finite": true,
+          "pass": true
+        },
+        "brace": {
+          "volumeRatio": 1.031,
+          "edgeStretchP99": 1.821,
+          "edgeCompressP1": 0.874,
+          "maxDisplacementU": 5.295,
+          "minY": -0.232,
+          "finite": true,
+          "pass": true
+        },
+        "rest": {
+          "volumeRatio": 0.9867,
+          "edgeStretchP99": 1.22,
+          "edgeCompressP1": 0.904,
+          "maxDisplacementU": 4.221,
+          "minY": -0.198,
+          "finite": true,
+          "pass": true
+        },
+        "sleep": {
+          "volumeRatio": 0.9835,
+          "edgeStretchP99": 1.571,
+          "edgeCompressP1": 0.731,
+          "maxDisplacementU": 9.58,
+          "minY": -0.232,
+          "finite": true,
+          "pass": true
+        }
+      },
+      "pass": true
+    },
+    "identityAnchors": {
+      "eyesExposed": 4,
+      "eyeClearanceU": [
+        0.401,
+        0.426,
+        0.422,
+        0.398
+      ],
+      "snoutExposed": true,
+      "browExposed": true,
+      "tailTipExposed": true,
+      "groundContacts": 4,
+      "connectedBodies": 1,
+      "pass": true
+    },
+    "silhouettePass": false,
+    "structuralPass": true
+  },
+  "gltfValidator": {
+    "version": "2.0.0-dev.3.10",
+    "numErrors": 0,
+    "numWarnings": 0,
+    "numInfos": 0,
+    "numHints": 0,
+    "messages": [],
+    "truncated": false,
+    "report": "artifacts/inspection/CG-D-GOD-FORM-Q/c002/gltf-validator.json"
+  },
+  "reimport": {
+    "report": "artifacts/inspection/CG-D-GOD-FORM-Q/c002/reimport.json",
+    "pass": true
+  },
+  "inspector": {
+    "report": "artifacts/inspection/CG-D-GOD-FORM-Q/c002/inspector-evidence.json",
+    "pass": true
+  },
+  "gates": {
+    "silhouetteIoUAndLandmarks": false,
+    "structureSkinLodMaterial": true,
+    "khronosValidatorClean": true,
+    "blenderReimport": true,
+    "offlineInspectorAndTurntable": true,
+    "humanArtApproval": false
+  },
+  "verdict": "DERIVED_UNVERIFIED"
+}

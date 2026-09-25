@@ -1,0 +1,36 @@
+{
+  "id": "CG-D-GOD-FORM-Q",
+  "glb": "assets/runtime/models/cg_d_god_form_q.glb",
+  "lods": {
+    "LOD0": {
+      "present": true,
+      "trianglesFile": 11820,
+      "trianglesReimported": 11820,
+      "boundsErrorU": 4e-06,
+      "weightSumMaxError": 0.0,
+      "vertexGroups": 28
+    },
+    "LOD1": {
+      "present": true,
+      "trianglesFile": 5910,
+      "trianglesReimported": 5910,
+      "boundsErrorU": 4e-06,
+      "weightSumMaxError": 0.0,
+      "vertexGroups": 28
+    },
+    "LOD2": {
+      "present": true,
+      "trianglesFile": 1970,
+      "trianglesReimported": 1970,
+      "boundsErrorU": 3e-06,
+      "weightSumMaxError": 0.0,
+      "vertexGroups": 28
+    }
+  },
+  "skeleton": {
+    "jointsInFile": 28,
+    "bonesReimported": 28,
+    "namesEqual": true
+  },
+  "pass": true
+}

@@ -1,0 +1,6 @@
+
+> civic-godstorm@0.0.0-m00 test:campaigns
+> node tools/runners/campaigns.ts
+
+test:campaigns: NOT AVAILABLE. No simulation kernel exists yet; seeded headless runs arrive with M01 and full campaign suites with M08/M13.
+test:campaigns: arguments accepted: {"seed":"cg-default","map":"standard","scenario":null,"turns":240,"out":"artifacts/local/campaigns"}

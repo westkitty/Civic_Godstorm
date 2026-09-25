@@ -1,0 +1,36 @@
+{
+  "id": "CG-D-GOD-LOCO-PILLAR",
+  "glb": "assets/runtime/models/cg_d_god_loco_pillar.glb",
+  "lods": {
+    "LOD0": {
+      "present": true,
+      "trianglesFile": 3938,
+      "trianglesReimported": 3938,
+      "boundsErrorU": 4e-06,
+      "weightSumMaxError": 0.0,
+      "vertexGroups": 4
+    },
+    "LOD1": {
+      "present": true,
+      "trianglesFile": 1968,
+      "trianglesReimported": 1968,
+      "boundsErrorU": 4e-06,
+      "weightSumMaxError": 0.0,
+      "vertexGroups": 4
+    },
+    "LOD2": {
+      "present": true,
+      "trianglesFile": 688,
+      "trianglesReimported": 688,
+      "boundsErrorU": 3e-06,
+      "weightSumMaxError": 0.0,
+      "vertexGroups": 4
+    }
+  },
+  "skeleton": {
+    "jointsInFile": 4,
+    "bonesReimported": 4,
+    "namesEqual": true
+  },
+  "pass": true
+}

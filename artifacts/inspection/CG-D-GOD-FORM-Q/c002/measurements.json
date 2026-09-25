@@ -1,0 +1,188 @@
+{
+  "id": "CG-D-GOD-FORM-Q",
+  "glb": "assets/runtime/models/cg_d_god_form_q.glb",
+  "sha256": "33166dff350d233e1dcb352efe6f435b169af7d2d998f27ce862d13dd2a3f3d0",
+  "bounds": {
+    "min": [
+      -6.8516,
+      0.0021,
+      -18.974
+    ],
+    "max": [
+      6.8551,
+      22.1578,
+      18.2411
+    ]
+  },
+  "views": {
+    "front": {
+      "sheet": "CG-S-GOD-FORM-Q",
+      "panel": 0,
+      "iou": 0.9456,
+      "declaredStretch": 0.0154,
+      "landmarkErrorMaxFraction": 0.0066,
+      "passes": true
+    },
+    "rear": {
+      "sheet": "CG-S-GOD-FORM-Q",
+      "panel": 2,
+      "iou": 0.9274,
+      "declaredStretch": -0.0206,
+      "landmarkErrorMaxFraction": 0.0099,
+      "passes": true
+    },
+    "top": {
+      "sheet": "CG-S-GOD-FORM-Q",
+      "panel": 3,
+      "iou": 0.751,
+      "declaredStretch": 0.0117,
+      "landmarkErrorMaxFraction": 0.0559,
+      "passes": false
+    },
+    "left": {
+      "sheet": "CG-S-GOD-LIFE-Q",
+      "panel": 1,
+      "iou": 0.4633,
+      "declaredStretch": 0.1574,
+      "landmarkErrorMaxFraction": 0.0691,
+      "passes": false
+    }
+  },
+  "nonProjectable": {
+    "CG-S-GOD-FORM-Q panel 1": "drawn as an elevated three-quarter view, not the orthographic left view the profile names; used for identity review only"
+  },
+  "structure": {
+    "lods": {
+      "LOD0": {
+        "triangles": 11820,
+        "vertices": 5912,
+        "budget": 12000,
+        "withinBudget": true,
+        "weightSumMaxError": 1.341104507446289e-07,
+        "nanWeights": false,
+        "jointsReferenced": 27,
+        "hasVertexColor": true
+      },
+      "LOD1": {
+        "triangles": 5910,
+        "vertices": 2957,
+        "budget": 6000,
+        "withinBudget": true,
+        "weightSumMaxError": 1.4121178537607193e-07,
+        "nanWeights": false,
+        "jointsReferenced": 27,
+        "hasVertexColor": true
+      },
+      "LOD2": {
+        "triangles": 1970,
+        "vertices": 987,
+        "budget": 2000,
+        "withinBudget": true,
+        "weightSumMaxError": 1.4901161193847656e-07,
+        "nanWeights": false,
+        "jointsReferenced": 27,
+        "hasVertexColor": true
+      }
+    },
+    "lodBudgets": true,
+    "skins": 1,
+    "joints": 28,
+    "jointLimit": 64,
+    "withinJointLimit": true,
+    "inverseBindFinite": true,
+    "inverseBindPositiveDeterminant": true,
+    "weightsNormalized": true,
+    "materials": 1,
+    "materialsWithinLimit": true,
+    "textures": 0,
+    "animations": 0,
+    "opaqueNonMetal": true
+  },
+  "deformation": {
+    "bindPoseReproductionErrorU": 1e-05,
+    "restVolumeU3": -2897.2,
+    "poses": {
+      "idle": {
+        "volumeRatio": 0.9992,
+        "edgeStretchP99": 1.051,
+        "edgeCompressP1": 0.978,
+        "maxDisplacementU": 0.653,
+        "minY": 0.002,
+        "finite": true,
+        "pass": true
+      },
+      "walk": {
+        "volumeRatio": 0.9999,
+        "edgeStretchP99": 1.756,
+        "edgeCompressP1": 0.817,
+        "maxDisplacementU": 6.554,
+        "minY": 0.039,
+        "finite": true,
+        "pass": true
+      },
+      "turn": {
+        "volumeRatio": 0.9911,
+        "edgeStretchP99": 1.327,
+        "edgeCompressP1": 0.809,
+        "maxDisplacementU": 9.037,
+        "minY": -0.113,
+        "finite": true,
+        "pass": true
+      },
+      "feed": {
+        "volumeRatio": 0.9798,
+        "edgeStretchP99": 1.783,
+        "edgeCompressP1": 0.833,
+        "maxDisplacementU": 9.651,
+        "minY": -0.23,
+        "finite": true,
+        "pass": true
+      },
+      "brace": {
+        "volumeRatio": 1.031,
+        "edgeStretchP99": 1.821,
+        "edgeCompressP1": 0.874,
+        "maxDisplacementU": 5.295,
+        "minY": -0.232,
+        "finite": true,
+        "pass": true
+      },
+      "rest": {
+        "volumeRatio": 0.9867,
+        "edgeStretchP99": 1.22,
+        "edgeCompressP1": 0.904,
+        "maxDisplacementU": 4.221,
+        "minY": -0.198,
+        "finite": true,
+        "pass": true
+      },
+      "sleep": {
+        "volumeRatio": 0.9835,
+        "edgeStretchP99": 1.571,
+        "edgeCompressP1": 0.731,
+        "maxDisplacementU": 9.58,
+        "minY": -0.232,
+        "finite": true,
+        "pass": true
+      }
+    },
+    "pass": true
+  },
+  "identityAnchors": {
+    "eyesExposed": 4,
+    "eyeClearanceU": [
+      0.401,
+      0.426,
+      0.422,
+      0.398
+    ],
+    "snoutExposed": true,
+    "browExposed": true,
+    "tailTipExposed": true,
+    "groundContacts": 4,
+    "connectedBodies": 1,
+    "pass": true
+  },
+  "silhouettePass": false,
+  "structuralPass": true
+}

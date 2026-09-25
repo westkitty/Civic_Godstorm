@@ -1,0 +1,220 @@
+{
+  "id": "CG-D-GOD-TORSO-Q",
+  "slug": "cg_d_god_torso_q",
+  "glb": "assets/runtime/models/cg_d_god_torso_q.glb",
+  "sha256": "6b8fdabdcb89b41671173ff7e7ad005f6731bcdaf66e9e6d7e7e5ae59349f82f",
+  "bytes": 229188,
+  "tool": {
+    "blender": "4.5.14 LTS",
+    "exporter": "io_scene_gltf2 (bundled)",
+    "python": "3.11.16"
+  },
+  "recipe": {
+    "path": "tools/models/q_recipe.json",
+    "revision": "c003",
+    "sha256": "26139c46ee72eb28bfad72b211ce5c54835f3ebeb67ea00e70bb5106be7497e1"
+  },
+  "triangleBudget": [
+    4000,
+    2000,
+    700
+  ],
+  "skinChecks": [
+    {
+      "lod": "LOD0",
+      "weightSumMaxError": 2.220446049250313e-16,
+      "maxInfluences": 3,
+      "nan": false
+    },
+    {
+      "lod": "LOD1",
+      "weightSumMaxError": 2.220446049250313e-16,
+      "maxInfluences": 3,
+      "nan": false
+    },
+    {
+      "lod": "LOD2",
+      "weightSumMaxError": 2.220446049250313e-16,
+      "maxInfluences": 3,
+      "nan": false
+    }
+  ],
+  "export": {
+    "asset": {
+      "generator": "Khronos glTF Blender I/O v4.5.51",
+      "version": "2.0"
+    },
+    "nodes": [
+      "torso_chest",
+      "torso_spine",
+      "torso_hips",
+      "LOD0",
+      "LOD1",
+      "LOD2",
+      "skeleton"
+    ],
+    "meshes": {
+      "cg_d_god_torso_q_LOD0": {
+        "triangles": 3940,
+        "attributes": [
+          "COLOR_0",
+          "JOINTS_0",
+          "NORMAL",
+          "POSITION",
+          "WEIGHTS_0"
+        ],
+        "min": [
+          -8.790173530578613,
+          -5.92518949508667,
+          -14.7988920211792
+        ],
+        "max": [
+          8.784594535827637,
+          5.917581558227539,
+          14.997408866882324
+        ],
+        "vertices": 1972,
+        "materials": [
+          0
+        ]
+      },
+      "cg_d_god_torso_q_LOD1": {
+        "triangles": 1970,
+        "attributes": [
+          "COLOR_0",
+          "JOINTS_0",
+          "NORMAL",
+          "POSITION",
+          "WEIGHTS_0"
+        ],
+        "min": [
+          -8.78003978729248,
+          -5.92039680480957,
+          -14.796981811523438
+        ],
+        "max": [
+          8.786897659301758,
+          5.917550563812256,
+          14.99006175994873
+        ],
+        "vertices": 987,
+        "materials": [
+          0
+        ]
+      },
+      "cg_d_god_torso_q_LOD2": {
+        "triangles": 688,
+        "attributes": [
+          "COLOR_0",
+          "JOINTS_0",
+          "NORMAL",
+          "POSITION",
+          "WEIGHTS_0"
+        ],
+        "min": [
+          -8.763324737548828,
+          -5.901831150054932,
+          -14.796613693237305
+        ],
+        "max": [
+          8.77586841583252,
+          5.9324421882629395,
+          15.051794052124023
+        ],
+        "vertices": 346,
+        "materials": [
+          0
+        ]
+      }
+    },
+    "skins": [
+      {
+        "name": "skeleton",
+        "joints": [
+          "torso_hips",
+          "torso_spine",
+          "torso_chest"
+        ],
+        "inverseBindMatrices": 3
+      }
+    ],
+    "materials": [
+      {
+        "name": "cg_d_god_torso_q_body",
+        "metallic": 0,
+        "roughness": 0.75,
+        "alphaMode": "OPAQUE",
+        "doubleSided": true
+      }
+    ],
+    "textures": 0,
+    "images": 0,
+    "animations": 0,
+    "extensionsUsed": []
+  },
+  "source": "CG-S-GOD-TORSO-Q",
+  "rowDimensionsU": [
+    18,
+    12,
+    30
+  ],
+  "box": {
+    "x": [
+      -9,
+      9
+    ],
+    "y": [
+      -6,
+      6
+    ],
+    "z": [
+      -15,
+      15
+    ]
+  },
+  "junctionOrigin": "torso centre (root module; no parent junction)",
+  "skeleton": [
+    {
+      "name": "torso_hips",
+      "parent": null,
+      "head": [
+        0,
+        0,
+        -9
+      ],
+      "tail": [
+        0,
+        0.5,
+        -3
+      ]
+    },
+    {
+      "name": "torso_spine",
+      "parent": "torso_hips",
+      "head": [
+        0,
+        0.5,
+        -3
+      ],
+      "tail": [
+        0,
+        1,
+        3
+      ]
+    },
+    {
+      "name": "torso_chest",
+      "parent": "torso_spine",
+      "head": [
+        0,
+        1,
+        3
+      ],
+      "tail": [
+        0,
+        1.5,
+        10
+      ]
+    }
+  ]
+}

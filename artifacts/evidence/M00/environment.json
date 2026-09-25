@@ -1,0 +1,17 @@
+{
+  "os": {
+    "platform": "darwin",
+    "release": "25.6.0",
+    "arch": "arm64",
+    "productVersion": "26.6.2"
+  },
+  "cpu": "Apple M1",
+  "memoryBytes": 8589934592,
+  "node": "v24.21.0",
+  "npm": "11.19.0",
+  "git": "git version 2.55.0",
+  "commit": "5bd357e14d9b68776d50b1dee0829b7bd5ab939f",
+  "chrome": "Google Chrome 153.0.8010.53",
+  "blender": "Blender 5.2.2 LTS",
+  "python": "Python 3.14.7"
+}

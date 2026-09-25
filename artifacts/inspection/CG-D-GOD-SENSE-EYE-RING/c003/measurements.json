@@ -1,0 +1,66 @@
+{
+  "id": "CG-D-GOD-SENSE-EYE-RING",
+  "glb": "assets/runtime/models/cg_d_god_sense_eye_ring.glb",
+  "sha256": "c50a34dcb8ad2803f051dc659a4bb283d1d7231d3f035d2cea2ca8e2156bc0f4",
+  "bounds": {
+    "min": [
+      -4.0039,
+      -1.0007,
+      -2.5051
+    ],
+    "max": [
+      4.0038,
+      1.0006,
+      2.5381
+    ]
+  },
+  "views": {
+    "top": {
+      "sheet": "CG-S-GOD-SENSE-EYE-RING",
+      "panel": 3,
+      "iou": 0.9568,
+      "declaredStretch": -0.0182,
+      "landmarkErrorMaxFraction": 0.0043,
+      "passes": true
+    }
+  },
+  "nonProjectable": {
+    "front": "drawn from an elevated three-quarter camera, not orthographic front",
+    "left": "drawn tilted with perspective",
+    "rear": "drawn from an elevated camera"
+  },
+  "structure": {
+    "lods": {
+      "LOD0": {
+        "triangles": 3940,
+        "vertices": 1918,
+        "budget": 4000,
+        "withinBudget": true,
+        "hasVertexColor": true
+      },
+      "LOD1": {
+        "triangles": 1970,
+        "vertices": 933,
+        "budget": 2000,
+        "withinBudget": true,
+        "hasVertexColor": true
+      },
+      "LOD2": {
+        "triangles": 688,
+        "vertices": 292,
+        "budget": 700,
+        "withinBudget": true,
+        "hasVertexColor": true
+      }
+    },
+    "lodBudgets": true,
+    "skins": 0,
+    "materials": 1,
+    "materialsWithinLimit": true,
+    "textures": 0,
+    "animations": 0,
+    "opaqueNonMetal": true
+  },
+  "silhouettePass": true,
+  "structuralPass": true
+}

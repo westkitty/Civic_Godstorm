@@ -1,0 +1,36 @@
+{
+  "id": "CG-D-GOD-TAIL-BALANCE",
+  "glb": "assets/runtime/models/cg_d_god_tail_balance.glb",
+  "lods": {
+    "LOD0": {
+      "present": true,
+      "trianglesFile": 3940,
+      "trianglesReimported": 3940,
+      "boundsErrorU": 2e-06,
+      "weightSumMaxError": 0.0,
+      "vertexGroups": 5
+    },
+    "LOD1": {
+      "present": true,
+      "trianglesFile": 1970,
+      "trianglesReimported": 1970,
+      "boundsErrorU": 2e-06,
+      "weightSumMaxError": 0.0,
+      "vertexGroups": 5
+    },
+    "LOD2": {
+      "present": true,
+      "trianglesFile": 688,
+      "trianglesReimported": 688,
+      "boundsErrorU": 2e-06,
+      "weightSumMaxError": 0.0,
+      "vertexGroups": 5
+    }
+  },
+  "skeleton": {
+    "jointsInFile": 5,
+    "bonesReimported": 5,
+    "namesEqual": true
+  },
+  "pass": true
+}

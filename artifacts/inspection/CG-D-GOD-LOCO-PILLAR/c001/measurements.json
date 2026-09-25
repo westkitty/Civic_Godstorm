@@ -1,0 +1,101 @@
+{
+  "id": "CG-D-GOD-LOCO-PILLAR",
+  "glb": "assets/runtime/models/cg_d_god_loco_pillar.glb",
+  "sha256": "669de1ca67e8bbee6c777e5883ef1e432d400ddcab906966c622949b2d410774",
+  "bounds": {
+    "min": [
+      -2.2275,
+      -11.9083,
+      -2.9355
+    ],
+    "max": [
+      2.2358,
+      -0.0436,
+      2.9254
+    ]
+  },
+  "views": {
+    "front": {
+      "sheet": "CG-S-GOD-LOCO-PILLAR",
+      "panel": 0,
+      "iou": 0.9492,
+      "declaredStretch": 0.4203,
+      "landmarkErrorMaxFraction": 0.0094,
+      "passes": true
+    },
+    "left": {
+      "sheet": "CG-S-GOD-LOCO-PILLAR",
+      "panel": 1,
+      "iou": 0.9836,
+      "declaredStretch": 0.3869,
+      "landmarkErrorMaxFraction": 0.008,
+      "passes": true
+    },
+    "rear": {
+      "sheet": "CG-S-GOD-LOCO-PILLAR",
+      "panel": 2,
+      "iou": 0.9429,
+      "declaredStretch": 0.5915,
+      "landmarkErrorMaxFraction": 0.0064,
+      "passes": true
+    },
+    "top": {
+      "sheet": "CG-S-GOD-LOCO-PILLAR",
+      "panel": 3,
+      "iou": 0.9458,
+      "declaredStretch": 0.7105,
+      "landmarkErrorMaxFraction": 0.0105,
+      "passes": true
+    }
+  },
+  "nonProjectable": {},
+  "structure": {
+    "lods": {
+      "LOD0": {
+        "triangles": 3940,
+        "vertices": 1972,
+        "budget": 4000,
+        "withinBudget": true,
+        "weightSumMaxError": 1.2665987014770508e-07,
+        "nanWeights": false,
+        "jointsReferenced": 4,
+        "hasVertexColor": true
+      },
+      "LOD1": {
+        "triangles": 1970,
+        "vertices": 987,
+        "budget": 2000,
+        "withinBudget": true,
+        "weightSumMaxError": 1.2759119272232056e-07,
+        "nanWeights": false,
+        "jointsReferenced": 4,
+        "hasVertexColor": true
+      },
+      "LOD2": {
+        "triangles": 688,
+        "vertices": 346,
+        "budget": 700,
+        "withinBudget": true,
+        "weightSumMaxError": 1.434236764907837e-07,
+        "nanWeights": false,
+        "jointsReferenced": 4,
+        "hasVertexColor": true
+      }
+    },
+    "lodBudgets": true,
+    "skins": 1,
+    "joints": 4,
+    "jointLimit": 64,
+    "withinJointLimit": true,
+    "inverseBindFinite": true,
+    "inverseBindPositiveDeterminant": true,
+    "weightsNormalized": true,
+    "materials": 1,
+    "materialsWithinLimit": true,
+    "textures": 0,
+    "animations": 0,
+    "opaqueNonMetal": true
+  },
+  "silhouettePass": true,
+  "structuralPass": true
+}

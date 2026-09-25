@@ -1,0 +1,160 @@
+{
+  "id": "CG-D-GOD-TAIL-BALANCE",
+  "recipe": "CG-Q-CONVERSION",
+  "revision": "c003",
+  "contract": "CG-V1.0.0",
+  "stages": [
+    "tools/models/build_volumes.py",
+    "tools/models/build_models.py"
+  ],
+  "parameters": {
+    "source": "CG-S-GOD-TAIL-BALANCE",
+    "slug": "cg_d_god_tail_balance",
+    "grid": [
+      2,
+      2
+    ],
+    "rowDimensionsU": [
+      5,
+      5,
+      24
+    ],
+    "box": {
+      "x": [
+        -2.5,
+        2.5
+      ],
+      "y": [
+        -2.5,
+        2.5
+      ],
+      "z": [
+        -24,
+        0
+      ]
+    },
+    "junctionOrigin": "centre of the root junction ring",
+    "longAxis": "z",
+    "views": {
+      "rootEnd": {
+        "panel": 0,
+        "u": "+x",
+        "v": "-y",
+        "nonProjectable": "end-on view drawn with elevated perspective (tail body visible below the root flange)"
+      },
+      "left": {
+        "panel": 1,
+        "u": "+z",
+        "v": "-y"
+      },
+      "tipEnd": {
+        "panel": 2,
+        "u": "-x",
+        "v": "-y",
+        "nonProjectable": "end-on view drawn with perspective (tapering body visible)"
+      },
+      "top": {
+        "panel": 3,
+        "u": "+z",
+        "v": "+x"
+      }
+    },
+    "loft": [
+      "left",
+      "top"
+    ],
+    "carve": [],
+    "exponent": 2.0,
+    "triangleBudget": [
+      4000,
+      2000,
+      700
+    ],
+    "skeleton": [
+      {
+        "name": "tail_1",
+        "parent": null,
+        "head": [
+          0,
+          0,
+          0
+        ],
+        "tail": [
+          0,
+          0,
+          -4.8
+        ]
+      },
+      {
+        "name": "tail_2",
+        "parent": "tail_1",
+        "head": [
+          0,
+          0,
+          -4.8
+        ],
+        "tail": [
+          0,
+          0,
+          -9.6
+        ]
+      },
+      {
+        "name": "tail_3",
+        "parent": "tail_2",
+        "head": [
+          0,
+          0,
+          -9.6
+        ],
+        "tail": [
+          0,
+          0,
+          -14.4
+        ]
+      },
+      {
+        "name": "tail_4",
+        "parent": "tail_3",
+        "head": [
+          0,
+          0,
+          -14.4
+        ],
+        "tail": [
+          0,
+          0,
+          -19.2
+        ]
+      },
+      {
+        "name": "tail_5",
+        "parent": "tail_4",
+        "head": [
+          0,
+          0,
+          -19.2
+        ],
+        "tail": [
+          0,
+          0,
+          -24
+        ]
+      }
+    ],
+    "accentSpots": [
+      [
+        2.1,
+        -0.6,
+        -1.6,
+        0.25
+      ]
+    ]
+  },
+  "palette": {
+    "biologicalTeal": "#49A69D",
+    "charcoal": "#161E27",
+    "organAccent": "#E4C86E",
+    "paleStone": "#E1CEAC"
+  }
+}

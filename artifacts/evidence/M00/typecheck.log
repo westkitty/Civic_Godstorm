@@ -1,0 +1,4 @@
+
+> civic-godstorm@0.0.0-m00 typecheck
+> tsc -p tsconfig.app.json && tsc -p tsconfig.node.json
+

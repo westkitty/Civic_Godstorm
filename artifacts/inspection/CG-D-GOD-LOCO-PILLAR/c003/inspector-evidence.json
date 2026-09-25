@@ -1,0 +1,59 @@
+{
+  "id": "CG-D-GOD-LOCO-PILLAR",
+  "revision": "c003",
+  "viewer": "artifacts/inspection/CG-D-GOD-LOCO-PILLAR/c003/viewer.html",
+  "load": {
+    "ready": true,
+    "error": null,
+    "joints": 4,
+    "lods": {
+      "LOD0": 3938,
+      "LOD1": 1968,
+      "LOD2": 688
+    },
+    "coverage": 0.18889414983164984
+  },
+  "interaction": {
+    "orbitChangedView": true,
+    "zoomChangedView": true,
+    "resetRestoredView": true
+  },
+  "cameras": {
+    "front": 0.13861426767676768,
+    "left": 0.14412878787878788,
+    "rear": 0.13864478114478115,
+    "top": 0.08971485690235691,
+    "three quarter": 0.18889414983164984
+  },
+  "lodCoverage": {
+    "LOD0": 0.18889414983164984,
+    "LOD1": 0.18891835016835018,
+    "LOD2": 0.18886258417508417
+  },
+  "turntable": {
+    "path": "artifacts/inspection/CG-D-GOD-LOCO-PILLAR/c003/turntable.mp4",
+    "framesRendered": 144,
+    "fps": 24,
+    "size": [
+      1024,
+      1024
+    ],
+    "codec": "H.264 (libx264, yuv420p)"
+  },
+  "validationSheet": {
+    "path": "artifacts/inspection/CG-D-GOD-LOCO-PILLAR/c003/validation-sheet.png",
+    "size": [
+      2048,
+      2048
+    ],
+    "views": [
+      "front",
+      "left",
+      "top",
+      "three-quarter"
+    ]
+  },
+  "networkRequestsBlocked": [],
+  "pageErrors": [],
+  "pass": true
+}

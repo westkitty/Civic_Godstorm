@@ -1,0 +1,212 @@
+{
+  "id": "CG-D-GOD-SENSE-EYE-RING",
+  "revision": "c001",
+  "glb": {
+    "path": "assets/runtime/models/cg_d_god_sense_eye_ring.glb",
+    "sha256": "ccc14c1a836d14d863673450f98578626ebb62ff7358e4d4644d27d36388fa88",
+    "bytes": 157188
+  },
+  "sources": [
+    {
+      "id": "CG-S-GOD-SENSE-EYE-RING",
+      "sha256": "3276c59ae8040b0ff80645aa1ef511409bca3c33929f254ffb5cfbfb44b8d317",
+      "path": "assets/source/god/cg_s_god_sense_eye_ring.png"
+    }
+  ],
+  "tool": {
+    "blender": "4.5.14 LTS",
+    "exporter": "io_scene_gltf2 (bundled)",
+    "python": "3.11.15"
+  },
+  "recipe": {
+    "path": "tools/models/q_recipe.json",
+    "revision": "c001",
+    "sha256": "70cfd96f21b35660459012aa2d0a9c0db84068d5d134f4550d00e7df3fbaa023"
+  },
+  "export": {
+    "asset": {
+      "generator": "Khronos glTF Blender I/O v4.5.51",
+      "version": "2.0"
+    },
+    "nodes": [
+      "LOD0",
+      "LOD1",
+      "LOD2"
+    ],
+    "meshes": {
+      "cg_d_god_sense_eye_ring_LOD0": {
+        "triangles": 3938,
+        "attributes": [
+          "COLOR_0",
+          "NORMAL",
+          "POSITION"
+        ],
+        "min": [
+          -4.007333755493164,
+          -1.000120997428894,
+          -2.505274534225464
+        ],
+        "max": [
+          4.006690502166748,
+          1.0002886056900024,
+          2.5162556171417236
+        ],
+        "vertices": 1934,
+        "materials": [
+          0
+        ]
+      },
+      "cg_d_god_sense_eye_ring_LOD1": {
+        "triangles": 1966,
+        "attributes": [
+          "COLOR_0",
+          "NORMAL",
+          "POSITION"
+        ],
+        "min": [
+          -4.014632225036621,
+          -1,
+          -2.5081775188446045
+        ],
+        "max": [
+          3.998703718185425,
+          1.0030505657196045,
+          2.5133605003356934
+        ],
+        "vertices": 948,
+        "materials": [
+          0
+        ]
+      },
+      "cg_d_god_sense_eye_ring_LOD2": {
+        "triangles": 686,
+        "attributes": [
+          "COLOR_0",
+          "NORMAL",
+          "POSITION"
+        ],
+        "min": [
+          -4.0690789222717285,
+          -1.000887393951416,
+          -2.4805691242218018
+        ],
+        "max": [
+          4.0690789222717285,
+          1.2006725072860718,
+          2.524228096008301
+        ],
+        "vertices": 308,
+        "materials": [
+          0
+        ]
+      }
+    },
+    "skins": [],
+    "materials": [
+      {
+        "name": "cg_d_god_sense_eye_ring_body",
+        "metallic": 0,
+        "roughness": 0.75,
+        "alphaMode": "OPAQUE",
+        "doubleSided": true
+      }
+    ],
+    "textures": 0,
+    "images": 0,
+    "animations": 0,
+    "extensionsUsed": []
+  },
+  "measurements": {
+    "id": "CG-D-GOD-SENSE-EYE-RING",
+    "glb": "assets/runtime/models/cg_d_god_sense_eye_ring.glb",
+    "sha256": "ccc14c1a836d14d863673450f98578626ebb62ff7358e4d4644d27d36388fa88",
+    "bounds": {
+      "min": [
+        -4.0073,
+        -1.0001,
+        -2.5053
+      ],
+      "max": [
+        4.0067,
+        1.0003,
+        2.5163
+      ]
+    },
+    "views": {
+      "top": {
+        "sheet": "CG-S-GOD-SENSE-EYE-RING",
+        "panel": 3,
+        "iou": 0.9429,
+        "declaredStretch": -0.0163,
+        "landmarkErrorMaxFraction": 0.0045,
+        "passes": true
+      }
+    },
+    "nonProjectable": {
+      "front": "drawn from an elevated three-quarter camera, not orthographic front",
+      "left": "drawn tilted with perspective",
+      "rear": "drawn from an elevated camera"
+    },
+    "structure": {
+      "lods": {
+        "LOD0": {
+          "triangles": 3938,
+          "vertices": 1934,
+          "budget": 4000,
+          "withinBudget": true,
+          "hasVertexColor": true
+        },
+        "LOD1": {
+          "triangles": 1966,
+          "vertices": 948,
+          "budget": 2000,
+          "withinBudget": true,
+          "hasVertexColor": true
+        },
+        "LOD2": {
+          "triangles": 686,
+          "vertices": 308,
+          "budget": 700,
+          "withinBudget": true,
+          "hasVertexColor": true
+        }
+      },
+      "lodBudgets": true,
+      "skins": 0,
+      "materials": 1,
+      "materialsWithinLimit": true,
+      "textures": 0,
+      "animations": 0,
+      "opaqueNonMetal": true
+    },
+    "silhouettePass": true,
+    "structuralPass": true
+  },
+  "gltfValidator": {
+    "version": "2.0.0-dev.3.10",
+    "numErrors": 0,
+    "numWarnings": 0,
+    "numInfos": 0,
+    "numHints": 0,
+    "messages": [],
+    "truncated": false,
+    "report": "artifacts/inspection/CG-D-GOD-SENSE-EYE-RING/c001/gltf-validator.json"
+  },
+  "reimport": {
+    "report": "artifacts/inspection/CG-D-GOD-SENSE-EYE-RING/c001/reimport.json",
+    "pass": true
+  },
+  "inspector": {
+    "report": "artifacts/inspection/CG-D-GOD-SENSE-EYE-RING/c001/inspector-evidence.json",
+    "pass": true
+  },
+  "gates": {
+    "silhouetteIoUAndLandmarks": true,
+    "structureSkinLodMaterial": true,
+    "khronosValidatorClean": true,
+    "blenderReimport": true,
+    "offlineInspectorAndTurntable": true,
+    "humanArtApproval": false
+  },
+  "verdict": "DERIVED_UNVERIFIED"
+}

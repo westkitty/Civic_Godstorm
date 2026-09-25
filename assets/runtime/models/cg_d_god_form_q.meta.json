@@ -1,0 +1,623 @@
+{
+  "id": "CG-D-GOD-FORM-Q",
+  "slug": "cg_d_god_form_q",
+  "glb": "assets/runtime/models/cg_d_god_form_q.glb",
+  "sha256": "0744d3d8f86dc0d3e9c97e9ffc3a89252885222907add1183353f8e15c3a36e6",
+  "bytes": 682056,
+  "tool": {
+    "blender": "4.5.14 LTS",
+    "exporter": "io_scene_gltf2 (bundled)",
+    "python": "3.11.16"
+  },
+  "recipe": {
+    "path": "tools/models/q_recipe.json",
+    "revision": "c003",
+    "sha256": "26139c46ee72eb28bfad72b211ce5c54835f3ebeb67ea00e70bb5106be7497e1"
+  },
+  "triangleBudget": [
+    12000,
+    6000,
+    2000
+  ],
+  "skinChecks": [
+    {
+      "lod": "LOD0",
+      "weightSumMaxError": 3.3306690738754696e-16,
+      "maxInfluences": 4,
+      "nan": false
+    },
+    {
+      "lod": "LOD1",
+      "weightSumMaxError": 2.220446049250313e-16,
+      "maxInfluences": 4,
+      "nan": false
+    },
+    {
+      "lod": "LOD2",
+      "weightSumMaxError": 2.220446049250313e-16,
+      "maxInfluences": 4,
+      "nan": false
+    }
+  ],
+  "export": {
+    "asset": {
+      "generator": "Khronos glTF Blender I/O v4.5.51",
+      "version": "2.0"
+    },
+    "nodes": [
+      "jaw",
+      "head",
+      "neck",
+      "leg_fl_toe",
+      "leg_fl_foot",
+      "leg_fl_lower",
+      "leg_fl_upper",
+      "leg_fr_toe",
+      "leg_fr_foot",
+      "leg_fr_lower",
+      "leg_fr_upper",
+      "torso_chest",
+      "torso_spine",
+      "tail_5",
+      "tail_4",
+      "tail_3",
+      "tail_2",
+      "tail_1",
+      "leg_hl_toe",
+      "leg_hl_foot",
+      "leg_hl_lower",
+      "leg_hl_upper",
+      "leg_hr_toe",
+      "leg_hr_foot",
+      "leg_hr_lower",
+      "leg_hr_upper",
+      "torso_hips",
+      "root",
+      "LOD0",
+      "LOD1",
+      "LOD2",
+      "skeleton"
+    ],
+    "meshes": {
+      "cg_d_god_form_q_LOD0": {
+        "triangles": 11820,
+        "attributes": [
+          "COLOR_0",
+          "JOINTS_0",
+          "NORMAL",
+          "POSITION",
+          "WEIGHTS_0"
+        ],
+        "min": [
+          -6.852710247039795,
+          0.002106892643496394,
+          -18.97678565979004
+        ],
+        "max": [
+          6.856965065002441,
+          22.128223419189453,
+          18.345102310180664
+        ],
+        "vertices": 5912,
+        "materials": [
+          0
+        ]
+      },
+      "cg_d_god_form_q_LOD1": {
+        "triangles": 5910,
+        "attributes": [
+          "COLOR_0",
+          "JOINTS_0",
+          "NORMAL",
+          "POSITION",
+          "WEIGHTS_0"
+        ],
+        "min": [
+          -6.848024845123291,
+          -0.002245859708636999,
+          -18.99364471435547
+        ],
+        "max": [
+          6.8655877113342285,
+          22.141101837158203,
+          18.341951370239258
+        ],
+        "vertices": 2957,
+        "materials": [
+          0
+        ]
+      },
+      "cg_d_god_form_q_LOD2": {
+        "triangles": 1970,
+        "attributes": [
+          "COLOR_0",
+          "JOINTS_0",
+          "NORMAL",
+          "POSITION",
+          "WEIGHTS_0"
+        ],
+        "min": [
+          -6.837137699127197,
+          -0.02473350614309311,
+          -19.015132904052734
+        ],
+        "max": [
+          6.846017837524414,
+          22.182966232299805,
+          18.329526901245117
+        ],
+        "vertices": 987,
+        "materials": [
+          0
+        ]
+      }
+    },
+    "skins": [
+      {
+        "name": "skeleton",
+        "joints": [
+          "root",
+          "torso_hips",
+          "torso_spine",
+          "torso_chest",
+          "neck",
+          "head",
+          "jaw",
+          "leg_fl_upper",
+          "leg_fl_lower",
+          "leg_fl_foot",
+          "leg_fl_toe",
+          "leg_fr_upper",
+          "leg_fr_lower",
+          "leg_fr_foot",
+          "leg_fr_toe",
+          "tail_1",
+          "tail_2",
+          "tail_3",
+          "tail_4",
+          "tail_5",
+          "leg_hl_upper",
+          "leg_hl_lower",
+          "leg_hl_foot",
+          "leg_hl_toe",
+          "leg_hr_upper",
+          "leg_hr_lower",
+          "leg_hr_foot",
+          "leg_hr_toe"
+        ],
+        "inverseBindMatrices": 28
+      }
+    ],
+    "materials": [
+      {
+        "name": "cg_d_god_form_q_body",
+        "metallic": 0,
+        "roughness": 0.75,
+        "alphaMode": "OPAQUE",
+        "doubleSided": true
+      }
+    ],
+    "textures": 0,
+    "images": 0,
+    "animations": 0,
+    "extensionsUsed": []
+  },
+  "source": "CG-S-GOD-FORM-Q",
+  "modules": [
+    "CG-D-GOD-FEED-BROWSE",
+    "CG-D-GOD-LOCO-PILLAR",
+    "CG-D-GOD-SENSE-EYE-RING",
+    "CG-D-GOD-TAIL-BALANCE",
+    "CG-D-GOD-TORSO-Q"
+  ],
+  "box": {
+    "x": [
+      -6.45,
+      6.45
+    ],
+    "y": [
+      0,
+      22
+    ],
+    "z": [
+      -18.45,
+      18.45
+    ]
+  },
+  "size": "II",
+  "footprintMask": "TRIANGLE",
+  "skeleton": [
+    {
+      "name": "root",
+      "parent": null,
+      "head": [
+        0,
+        0,
+        0
+      ],
+      "tail": [
+        0,
+        0,
+        2.0
+      ]
+    },
+    {
+      "name": "torso_hips",
+      "parent": "root",
+      "head": [
+        0.0,
+        14.2053,
+        -4.0766
+      ],
+      "tail": [
+        0.0,
+        14.9784,
+        -0.3813
+      ]
+    },
+    {
+      "name": "torso_spine",
+      "parent": "torso_hips",
+      "head": [
+        0.0,
+        14.9784,
+        -0.3813
+      ],
+      "tail": [
+        0.0,
+        15.7516,
+        3.3139
+      ]
+    },
+    {
+      "name": "torso_chest",
+      "parent": "torso_spine",
+      "head": [
+        0.0,
+        15.7516,
+        3.3139
+      ],
+      "tail": [
+        0.0,
+        16.5465,
+        7.6288
+      ]
+    },
+    {
+      "name": "neck",
+      "parent": "torso_chest",
+      "head": [
+        0.0,
+        16.5465,
+        7.6288
+      ],
+      "tail": [
+        0.0,
+        18.475,
+        9.5
+      ]
+    },
+    {
+      "name": "head",
+      "parent": "neck",
+      "head": [
+        0.0,
+        18.475,
+        9.5
+      ],
+      "tail": [
+        0.0,
+        17.9515,
+        15.2687
+      ]
+    },
+    {
+      "name": "jaw",
+      "parent": "head",
+      "head": [
+        0.0,
+        16.8723,
+        12.8517
+      ],
+      "tail": [
+        0.0,
+        15.0685,
+        17.9987
+      ]
+    },
+    {
+      "name": "tail_1",
+      "parent": "torso_hips",
+      "head": [
+        0.0,
+        14.95,
+        -7.0
+      ],
+      "tail": [
+        0.0,
+        15.0756,
+        -9.3967
+      ]
+    },
+    {
+      "name": "tail_2",
+      "parent": "tail_1",
+      "head": [
+        0.0,
+        15.0756,
+        -9.3967
+      ],
+      "tail": [
+        0.0,
+        15.2012,
+        -11.7934
+      ]
+    },
+    {
+      "name": "tail_3",
+      "parent": "tail_2",
+      "head": [
+        0.0,
+        15.2012,
+        -11.7934
+      ],
+      "tail": [
+        0.0,
+        15.3268,
+        -14.1901
+      ]
+    },
+    {
+      "name": "tail_4",
+      "parent": "tail_3",
+      "head": [
+        0.0,
+        15.3268,
+        -14.1901
+      ],
+      "tail": [
+        0.0,
+        15.4524,
+        -16.5868
+      ]
+    },
+    {
+      "name": "tail_5",
+      "parent": "tail_4",
+      "head": [
+        0.0,
+        15.4524,
+        -16.5868
+      ],
+      "tail": [
+        0.0,
+        15.578,
+        -18.9836
+      ]
+    },
+    {
+      "name": "leg_fl_upper",
+      "parent": "torso_chest",
+      "head": [
+        -3.75,
+        14.5,
+        8.1
+      ],
+      "tail": [
+        -3.75,
+        8.3958,
+        8.45
+      ]
+    },
+    {
+      "name": "leg_fl_lower",
+      "parent": "leg_fl_upper",
+      "head": [
+        -3.75,
+        8.3958,
+        8.45
+      ],
+      "tail": [
+        -3.75,
+        2.9021,
+        7.575
+      ]
+    },
+    {
+      "name": "leg_fl_foot",
+      "parent": "leg_fl_lower",
+      "head": [
+        -3.75,
+        2.9021,
+        7.575
+      ],
+      "tail": [
+        -3.75,
+        0.8267,
+        8.625
+      ]
+    },
+    {
+      "name": "leg_fl_toe",
+      "parent": "leg_fl_foot",
+      "head": [
+        -3.75,
+        0.8267,
+        8.625
+      ],
+      "tail": [
+        -3.75,
+        0.3383,
+        10.55
+      ]
+    },
+    {
+      "name": "leg_fr_upper",
+      "parent": "torso_chest",
+      "head": [
+        3.75,
+        14.5,
+        8.1
+      ],
+      "tail": [
+        3.75,
+        8.3958,
+        8.45
+      ]
+    },
+    {
+      "name": "leg_fr_lower",
+      "parent": "leg_fr_upper",
+      "head": [
+        3.75,
+        8.3958,
+        8.45
+      ],
+      "tail": [
+        3.75,
+        2.9021,
+        7.575
+      ]
+    },
+    {
+      "name": "leg_fr_foot",
+      "parent": "leg_fr_lower",
+      "head": [
+        3.75,
+        2.9021,
+        7.575
+      ],
+      "tail": [
+        3.75,
+        0.8267,
+        8.625
+      ]
+    },
+    {
+      "name": "leg_fr_toe",
+      "parent": "leg_fr_foot",
+      "head": [
+        3.75,
+        0.8267,
+        8.625
+      ],
+      "tail": [
+        3.75,
+        0.3383,
+        10.55
+      ]
+    },
+    {
+      "name": "leg_hl_upper",
+      "parent": "torso_hips",
+      "head": [
+        -4.125,
+        14.5,
+        -4.0
+      ],
+      "tail": [
+        -4.125,
+        8.3958,
+        -3.65
+      ]
+    },
+    {
+      "name": "leg_hl_lower",
+      "parent": "leg_hl_upper",
+      "head": [
+        -4.125,
+        8.3958,
+        -3.65
+      ],
+      "tail": [
+        -4.125,
+        2.9021,
+        -4.525
+      ]
+    },
+    {
+      "name": "leg_hl_foot",
+      "parent": "leg_hl_lower",
+      "head": [
+        -4.125,
+        2.9021,
+        -4.525
+      ],
+      "tail": [
+        -4.125,
+        0.8267,
+        -3.475
+      ]
+    },
+    {
+      "name": "leg_hl_toe",
+      "parent": "leg_hl_foot",
+      "head": [
+        -4.125,
+        0.8267,
+        -3.475
+      ],
+      "tail": [
+        -4.125,
+        0.3383,
+        -1.55
+      ]
+    },
+    {
+      "name": "leg_hr_upper",
+      "parent": "torso_hips",
+      "head": [
+        4.125,
+        14.5,
+        -4.0
+      ],
+      "tail": [
+        4.125,
+        8.3958,
+        -3.65
+      ]
+    },
+    {
+      "name": "leg_hr_lower",
+      "parent": "leg_hr_upper",
+      "head": [
+        4.125,
+        8.3958,
+        -3.65
+      ],
+      "tail": [
+        4.125,
+        2.9021,
+        -4.525
+      ]
+    },
+    {
+      "name": "leg_hr_foot",
+      "parent": "leg_hr_lower",
+      "head": [
+        4.125,
+        2.9021,
+        -4.525
+      ],
+      "tail": [
+        4.125,
+        0.8267,
+        -3.475
+      ]
+    },
+    {
+      "name": "leg_hr_toe",
+      "parent": "leg_hr_foot",
+      "head": [
+        4.125,
+        0.8267,
+        -3.475
+      ],
+      "tail": [
+        4.125,
+        0.3383,
+        -1.55
+      ]
+    }
+  ]
+}

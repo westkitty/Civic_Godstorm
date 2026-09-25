@@ -1,0 +1,317 @@
+{
+  "id": "CG-D-GOD-FORM-Q",
+  "recipe": "CG-Q-CONVERSION",
+  "revision": "c003",
+  "contract": "CG-V1.0.0",
+  "stages": [
+    "tools/models/build_volumes.py",
+    "tools/models/build_models.py"
+  ],
+  "parameters": {
+    "id": "CG-D-GOD-FORM-Q",
+    "source": "CG-S-GOD-FORM-Q",
+    "slug": "cg_d_god_form_q",
+    "size": "II",
+    "footprintMask": "TRIANGLE",
+    "box": {
+      "x": [
+        -6.45,
+        6.45
+      ],
+      "y": [
+        0,
+        22
+      ],
+      "z": [
+        -18.45,
+        18.45
+      ]
+    },
+    "boxBasis": "height 22 U (Section 3.1 medium primary mass); length/height 1.68 from the LIFE-Q prime left profile; width from FORM-Q front (0.58 of height) and top (0.36 of length) averaged to 12.9 U",
+    "hullViews": {
+      "front": {
+        "sheet": "CG-S-GOD-FORM-Q",
+        "grid": [
+          2,
+          2
+        ],
+        "panel": 0,
+        "u": "+x",
+        "v": "-y"
+      },
+      "rear": {
+        "sheet": "CG-S-GOD-FORM-Q",
+        "grid": [
+          2,
+          2
+        ],
+        "panel": 2,
+        "u": "-x",
+        "v": "-y"
+      },
+      "top": {
+        "sheet": "CG-S-GOD-FORM-Q",
+        "grid": [
+          2,
+          2
+        ],
+        "panel": 3,
+        "u": "-z",
+        "v": "+x",
+        "deviation": "top view drawn with forward toward image left"
+      }
+    },
+    "nonProjectable": {
+      "CG-S-GOD-FORM-Q panel 1": "drawn as an elevated three-quarter view, not the orthographic left view the profile names; used for identity review only",
+      "CG-S-GOD-LIFE-Q r005 prime panel": "owner ruling OR-2026-09-25-02: FORM-Q r004 is anatomically authoritative; LIFE-Q r005 (domed shell) is continuity drift to be corrected/replaced, so it does not score or shape FORM-Q"
+    },
+    "hullDilationU": 0.6,
+    "blendU": 1.1,
+    "instances": [
+      {
+        "module": "CG-D-GOD-TORSO-Q",
+        "name": "torso",
+        "position": [
+          0,
+          14.399999999999999,
+          1.5
+        ],
+        "euler": [
+          -2.0,
+          0,
+          0
+        ],
+        "scale": [
+          0.78,
+          1.2875,
+          0.62
+        ]
+      },
+      {
+        "module": "CG-D-GOD-FEED-BROWSE",
+        "name": "head",
+        "position": [
+          0,
+          18.475,
+          9.5
+        ],
+        "euler": [
+          11.25,
+          0,
+          0
+        ],
+        "scale": [
+          0.7649999999999997,
+          0.7649999999999997,
+          0.7200000000000001
+        ]
+      },
+      {
+        "module": "CG-D-GOD-SENSE-EYE-RING",
+        "name": "eyes",
+        "position": [
+          0,
+          1.4,
+          8.8
+        ],
+        "euler": [
+          8,
+          0,
+          0
+        ],
+        "scale": [
+          1.0,
+          0.8,
+          1.0
+        ],
+        "relativeTo": "head"
+      },
+      {
+        "module": "CG-D-GOD-TAIL-BALANCE",
+        "name": "tail",
+        "position": [
+          0,
+          14.95,
+          -7.0
+        ],
+        "euler": [
+          3.0,
+          0,
+          0
+        ],
+        "scale": [
+          0.8099999999999998,
+          0.8099999999999998,
+          0.4999999999999999
+        ]
+      },
+      {
+        "module": "CG-D-GOD-LOCO-PILLAR",
+        "name": "leg_fl",
+        "position": [
+          -3.7500000000000004,
+          14.5,
+          8.099999999999998
+        ],
+        "euler": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.8749999999999999,
+          1.2208333333333334,
+          0.8749999999999999
+        ]
+      },
+      {
+        "module": "CG-D-GOD-LOCO-PILLAR",
+        "name": "leg_fr",
+        "position": [
+          3.7500000000000004,
+          14.5,
+          8.099999999999998
+        ],
+        "euler": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.8749999999999999,
+          1.2208333333333334,
+          0.8749999999999999
+        ]
+      },
+      {
+        "module": "CG-D-GOD-LOCO-PILLAR",
+        "name": "leg_hl",
+        "position": [
+          -4.125,
+          14.5,
+          -4.000000000000003
+        ],
+        "euler": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.8749999999999999,
+          1.2208333333333334,
+          0.8749999999999999
+        ]
+      },
+      {
+        "module": "CG-D-GOD-LOCO-PILLAR",
+        "name": "leg_hr",
+        "position": [
+          4.125,
+          14.5,
+          -4.000000000000003
+        ],
+        "euler": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          0.8749999999999999,
+          1.2208333333333334,
+          0.8749999999999999
+        ]
+      }
+    ],
+    "triangleBudget": [
+      12000,
+      6000,
+      2000
+    ],
+    "jointLimit": 64,
+    "accentSpots": [
+      [
+        5.9,
+        17.2,
+        7.0,
+        1.15
+      ],
+      [
+        -5.9,
+        17.2,
+        7.0,
+        1.15
+      ],
+      [
+        5.4,
+        16.2,
+        -6.2,
+        1.0
+      ],
+      [
+        -5.4,
+        16.2,
+        -6.2,
+        1.0
+      ],
+      [
+        0.0,
+        19.4,
+        12.9,
+        0.55
+      ]
+    ],
+    "gridStepU": 0.12,
+    "eyeBlendU": 0.8,
+    "hullClipSoftnessU": 2.0,
+    "fit": {
+      "tool": "tools/models/fit_form.py",
+      "objective": "mean projected silhouette IoU over scored form views",
+      "gridStepU": 0.2,
+      "passes": 8,
+      "evaluations": 304,
+      "start": {
+        "mean": 0.8864,
+        "front": 0.9544,
+        "rear": 0.942,
+        "top": 0.7629,
+        "anchorsPass": 1
+      },
+      "final": {
+        "mean": 0.9025,
+        "front": 0.9549,
+        "rear": 0.9408,
+        "top": 0.8119
+      },
+      "parameters": {
+        "front_leg_z": 8.1,
+        "hind_leg_z": -4.0,
+        "front_leg_x": 3.75,
+        "hind_leg_x": 4.125,
+        "leg_top_y": 14.5,
+        "leg_girth": 0.875,
+        "head_y": 18.475,
+        "head_z": 9.5,
+        "head_pitch": 11.25,
+        "head_scale": 0.765,
+        "tail_y": 14.95,
+        "tail_pitch": 3.0,
+        "tail_length": 0.5,
+        "tail_girth": 0.81,
+        "torso_y": 14.4,
+        "torso_z": 1.5,
+        "torso_pitch": -2.0,
+        "torso_width": 0.78,
+        "torso_height": 1.2875,
+        "torso_length": 0.62,
+        "head_length": 0.72
+      }
+    },
+    "hullClip": false
+  },
+  "palette": {
+    "biologicalTeal": "#49A69D",
+    "charcoal": "#161E27",
+    "organAccent": "#E4C86E",
+    "paleStone": "#E1CEAC"
+  }
+}

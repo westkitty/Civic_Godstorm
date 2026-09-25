@@ -1,0 +1,59 @@
+{
+  "id": "CG-D-GOD-TAIL-BALANCE",
+  "revision": "c001",
+  "viewer": "artifacts/inspection/CG-D-GOD-TAIL-BALANCE/c001/viewer.html",
+  "load": {
+    "ready": true,
+    "error": null,
+    "joints": 5,
+    "lods": {
+      "LOD0": 3938,
+      "LOD1": 1968,
+      "LOD2": 688
+    },
+    "coverage": 0.08539246632996633
+  },
+  "interaction": {
+    "orbitChangedView": true,
+    "zoomChangedView": true,
+    "resetRestoredView": true
+  },
+  "cameras": {
+    "front": 0.020250420875420876,
+    "left": 0.06451388888888888,
+    "rear": 0.02024621212121212,
+    "top": 0.09795980639730639,
+    "three quarter": 0.08539246632996633
+  },
+  "lodCoverage": {
+    "LOD0": 0.08539246632996633,
+    "LOD1": 0.08538404882154882,
+    "LOD2": 0.08532091750841751
+  },
+  "turntable": {
+    "path": "artifacts/inspection/CG-D-GOD-TAIL-BALANCE/c001/turntable.mp4",
+    "framesRendered": 144,
+    "fps": 24,
+    "size": [
+      1024,
+      1024
+    ],
+    "codec": "H.264 (libx264, yuv420p)"
+  },
+  "validationSheet": {
+    "path": "artifacts/inspection/CG-D-GOD-TAIL-BALANCE/c001/validation-sheet.png",
+    "size": [
+      2048,
+      2048
+    ],
+    "views": [
+      "front",
+      "left",
+      "top",
+      "three-quarter"
+    ]
+  },
+  "networkRequestsBlocked": [],
+  "pageErrors": [],
+  "pass": true
+}

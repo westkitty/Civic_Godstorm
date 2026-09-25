@@ -1,0 +1,16 @@
+// Local verification only (gitignored): the committed config targets installed Google Chrome,
+// Firefox and WebKit, none of which exist in this container. Reuse it with the preinstalled Chromium.
+import base from '../../playwright.config.ts';
+import { defineConfig } from '@playwright/test';
+const exe = '/opt/pw-browsers/chromium-1194/chrome-linux/chrome';
+const outputDir = 'artifacts/local/e2e';
+export default defineConfig({
+  ...base,
+  testDir: '../../tests/e2e',
+  outputDir,
+  reporter: [['list'], ['json', { outputFile: `${outputDir}/e2e-results.json` }]],
+  projects: [
+    { name: 'chromium-desktop', use: { launchOptions: { executablePath: exe }, viewport: { width: 1440, height: 900 } } },
+    { name: 'chromium-narrow', use: { launchOptions: { executablePath: exe }, viewport: { width: 800, height: 1100 } } },
+  ],
+});

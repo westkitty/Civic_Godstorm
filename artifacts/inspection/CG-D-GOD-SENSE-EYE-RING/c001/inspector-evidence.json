@@ -1,0 +1,59 @@
+{
+  "id": "CG-D-GOD-SENSE-EYE-RING",
+  "revision": "c001",
+  "viewer": "artifacts/inspection/CG-D-GOD-SENSE-EYE-RING/c001/viewer.html",
+  "load": {
+    "ready": true,
+    "error": null,
+    "joints": 0,
+    "lods": {
+      "LOD0": 3938,
+      "LOD1": 1966,
+      "LOD2": 686
+    },
+    "coverage": 0.14652882996632996
+  },
+  "interaction": {
+    "orbitChangedView": true,
+    "zoomChangedView": true,
+    "resetRestoredView": true
+  },
+  "cameras": {
+    "front": 0.09954335016835017,
+    "left": 0.062330597643097646,
+    "rear": 0.09958017676767676,
+    "top": 0.0882354797979798,
+    "three quarter": 0.14652882996632996
+  },
+  "lodCoverage": {
+    "LOD0": 0.14652882996632996,
+    "LOD1": 0.14654145622895623,
+    "LOD2": 0.13424031986531987
+  },
+  "turntable": {
+    "path": "artifacts/inspection/CG-D-GOD-SENSE-EYE-RING/c001/turntable.mp4",
+    "framesRendered": 144,
+    "fps": 24,
+    "size": [
+      1024,
+      1024
+    ],
+    "codec": "H.264 (libx264, yuv420p)"
+  },
+  "validationSheet": {
+    "path": "artifacts/inspection/CG-D-GOD-SENSE-EYE-RING/c001/validation-sheet.png",
+    "size": [
+      2048,
+      2048
+    ],
+    "views": [
+      "front",
+      "left",
+      "top",
+      "three-quarter"
+    ]
+  },
+  "networkRequestsBlocked": [],
+  "pageErrors": [],
+  "pass": true
+}

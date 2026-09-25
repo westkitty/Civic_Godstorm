@@ -1,0 +1,19 @@
+
+> civic-godstorm@0.2.0-m02 build
+> vite build
+
+vite v8.3.0 building client environment for production...
+transforming...
+✓ 59 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.60 kB │ gzip:   0.36 kB
+dist/assets/index-BFx2oHPA.css    3.81 kB │ gzip:   1.40 kB
+dist/assets/index-B8hDzxcR.js   874.33 kB │ gzip: 235.51 kB │ map: 4,088.77 kB
+
+✓ built in 301ms
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.

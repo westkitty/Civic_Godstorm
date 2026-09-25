@@ -1,0 +1,490 @@
+{
+  "family": "Q",
+  "note": "Seven ordinary pose controllers for the first Q God (master Section 19 M03; subset of the CG-R-GOD-ACTIONS semantic poses). Each entry rotates a joint about a MODEL-space axis through the joint's head, in degrees, applied parent-first; rootOffsetU translates the root. Joint names are bound only after verification against the exported GLB (tests/models).",
+  "axes": "model space: +X anatomical right, +Y up, +Z forward; a positive X rotation moves forward (+Z) points downward",
+  "poses": {
+    "idle": {
+      "rootOffsetU": [
+        0,
+        0,
+        0
+      ],
+      "rotations": {
+        "neck": [
+          [
+            "x",
+            4
+          ]
+        ],
+        "head": [
+          [
+            "x",
+            -3
+          ]
+        ],
+        "tail_1": [
+          [
+            "x",
+            2
+          ]
+        ],
+        "tail_3": [
+          [
+            "y",
+            4
+          ]
+        ]
+      }
+    },
+    "walk": {
+      "rootOffsetU": [
+        0,
+        -0.3,
+        0
+      ],
+      "rotations": {
+        "leg_fl_upper": [
+          [
+            "x",
+            -20
+          ]
+        ],
+        "leg_fl_lower": [
+          [
+            "x",
+            14
+          ]
+        ],
+        "leg_fr_upper": [
+          [
+            "x",
+            16
+          ]
+        ],
+        "leg_fr_lower": [
+          [
+            "x",
+            22
+          ]
+        ],
+        "leg_fr_foot": [
+          [
+            "x",
+            -18
+          ]
+        ],
+        "leg_hl_upper": [
+          [
+            "x",
+            16
+          ]
+        ],
+        "leg_hl_lower": [
+          [
+            "x",
+            20
+          ]
+        ],
+        "leg_hl_foot": [
+          [
+            "x",
+            -16
+          ]
+        ],
+        "leg_hr_upper": [
+          [
+            "x",
+            -18
+          ]
+        ],
+        "leg_hr_lower": [
+          [
+            "x",
+            12
+          ]
+        ],
+        "torso_chest": [
+          [
+            "y",
+            4
+          ]
+        ],
+        "neck": [
+          [
+            "y",
+            -5
+          ]
+        ],
+        "tail_1": [
+          [
+            "y",
+            -8
+          ]
+        ],
+        "tail_3": [
+          [
+            "y",
+            10
+          ]
+        ]
+      }
+    },
+    "turn": {
+      "rootOffsetU": [
+        0,
+        0,
+        0
+      ],
+      "rotations": {
+        "torso_spine": [
+          [
+            "y",
+            8
+          ]
+        ],
+        "torso_chest": [
+          [
+            "y",
+            8
+          ]
+        ],
+        "neck": [
+          [
+            "y",
+            16
+          ]
+        ],
+        "head": [
+          [
+            "y",
+            12
+          ]
+        ],
+        "tail_1": [
+          [
+            "y",
+            -12
+          ]
+        ],
+        "tail_2": [
+          [
+            "y",
+            -10
+          ]
+        ],
+        "leg_fl_upper": [
+          [
+            "z",
+            -6
+          ]
+        ],
+        "leg_fr_upper": [
+          [
+            "z",
+            -6
+          ]
+        ]
+      }
+    },
+    "feed": {
+      "rootOffsetU": [
+        0,
+        -0.232,
+        0
+      ],
+      "rotations": {
+        "neck": [
+          [
+            "x",
+            30
+          ]
+        ],
+        "head": [
+          [
+            "x",
+            22
+          ]
+        ],
+        "jaw": [
+          [
+            "x",
+            14
+          ]
+        ],
+        "leg_fl_upper": [
+          [
+            "x",
+            -8
+          ]
+        ],
+        "leg_fr_upper": [
+          [
+            "x",
+            -8
+          ]
+        ],
+        "leg_fl_lower": [
+          [
+            "x",
+            10
+          ]
+        ],
+        "leg_fr_lower": [
+          [
+            "x",
+            10
+          ]
+        ],
+        "tail_1": [
+          [
+            "x",
+            -6
+          ]
+        ]
+      }
+    },
+    "brace": {
+      "rootOffsetU": [
+        0,
+        -0.296,
+        0
+      ],
+      "rotations": {
+        "leg_fl_upper": [
+          [
+            "x",
+            -14
+          ],
+          [
+            "z",
+            -8
+          ]
+        ],
+        "leg_fr_upper": [
+          [
+            "x",
+            -14
+          ],
+          [
+            "z",
+            8
+          ]
+        ],
+        "leg_hl_upper": [
+          [
+            "x",
+            14
+          ],
+          [
+            "z",
+            -6
+          ]
+        ],
+        "leg_hr_upper": [
+          [
+            "x",
+            14
+          ],
+          [
+            "z",
+            6
+          ]
+        ],
+        "leg_hl_lower": [
+          [
+            "x",
+            10
+          ]
+        ],
+        "leg_hr_lower": [
+          [
+            "x",
+            10
+          ]
+        ],
+        "neck": [
+          [
+            "x",
+            -10
+          ]
+        ],
+        "head": [
+          [
+            "x",
+            8
+          ]
+        ],
+        "tail_1": [
+          [
+            "x",
+            -10
+          ]
+        ]
+      }
+    },
+    "rest": {
+      "rootOffsetU": [
+        0,
+        -0.2,
+        0
+      ],
+      "rotations": {
+        "neck": [
+          [
+            "x",
+            16
+          ]
+        ],
+        "head": [
+          [
+            "x",
+            8
+          ]
+        ],
+        "tail_1": [
+          [
+            "x",
+            8
+          ]
+        ],
+        "tail_2": [
+          [
+            "x",
+            6
+          ]
+        ],
+        "tail_3": [
+          [
+            "y",
+            -6
+          ]
+        ]
+      }
+    },
+    "sleep": {
+      "rootOffsetU": [
+        0,
+        -1.701,
+        0
+      ],
+      "rotations": {
+        "leg_fl_upper": [
+          [
+            "x",
+            -15
+          ]
+        ],
+        "leg_fl_lower": [
+          [
+            "x",
+            45
+          ]
+        ],
+        "leg_fr_upper": [
+          [
+            "x",
+            -15
+          ]
+        ],
+        "leg_fr_lower": [
+          [
+            "x",
+            45
+          ]
+        ],
+        "leg_hl_upper": [
+          [
+            "x",
+            -15
+          ]
+        ],
+        "leg_hl_lower": [
+          [
+            "x",
+            45
+          ]
+        ],
+        "leg_hr_upper": [
+          [
+            "x",
+            -15
+          ]
+        ],
+        "leg_hr_lower": [
+          [
+            "x",
+            45
+          ]
+        ],
+        "neck": [
+          [
+            "x",
+            6
+          ],
+          [
+            "y",
+            14
+          ]
+        ],
+        "head": [
+          [
+            "x",
+            4
+          ]
+        ],
+        "tail_1": [
+          [
+            "x",
+            -2
+          ],
+          [
+            "y",
+            12
+          ]
+        ],
+        "tail_2": [
+          [
+            "y",
+            18
+          ]
+        ],
+        "tail_3": [
+          [
+            "y",
+            22
+          ]
+        ],
+        "tail_4": [
+          [
+            "y",
+            20
+          ]
+        ],
+        "leg_fl_foot": [
+          [
+            "x",
+            -30
+          ]
+        ],
+        "leg_fr_foot": [
+          [
+            "x",
+            -30
+          ]
+        ],
+        "leg_hl_foot": [
+          [
+            "x",
+            -30
+          ]
+        ],
+        "leg_hr_foot": [
+          [
+            "x",
+            -30
+          ]
+        ]
+      }
+    }
+  }
+}

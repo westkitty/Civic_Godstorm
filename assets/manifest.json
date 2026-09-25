@@ -1,0 +1,722 @@
+{
+  "schemaVersion": 1,
+  "contract": "CG-V1.0.0",
+  "note": "Only verified shipping file facts and registered recipe IDs. Empty means nothing is verified.",
+  "verifiedFiles": [
+    {
+      "id": "CG-A-ART-TITLE",
+      "path": "assets/source/art/cg_a_art_title.png",
+      "sha256": "afb8a4027e92cebbcd088a55b87014f581a00b21235064eabbacbca85e581097",
+      "bytes": 2330210
+    },
+    {
+      "id": "CG-S-BLD-ARCHIVE",
+      "path": "assets/source/buildings/cg_s_bld_archive.png",
+      "sha256": "a55eb21a57d969819dec87d8dcc88b6b1481e3af016be29e516b1823df938efe",
+      "bytes": 2902539
+    },
+    {
+      "id": "CG-S-BLD-BARRACKS",
+      "path": "assets/source/buildings/cg_s_bld_barracks.png",
+      "sha256": "52124d5156849140205d5137e60d7cd2f4f64fc7397afbafc1ce7914be66999b",
+      "bytes": 3318767
+    },
+    {
+      "id": "CG-S-BLD-CARAVAN-CANOPY",
+      "path": "assets/source/buildings/cg_s_bld_caravan_canopy.png",
+      "sha256": "c242383b5ad2af443d8913e6af232b072834587cf00bbb8490d08cfd04e64a6e",
+      "bytes": 3175892
+    },
+    {
+      "id": "CG-S-BLD-DEPOT",
+      "path": "assets/source/buildings/cg_s_bld_depot.png",
+      "sha256": "020cb785c8c81336e987fc838bc01c376447e828bc6e9211079c77a61ce99fe2",
+      "bytes": 3094968
+    },
+    {
+      "id": "CG-S-BLD-DOCK",
+      "path": "assets/source/buildings/cg_s_bld_dock.png",
+      "sha256": "5b5b21553592fb2893f2d4e1daf4599186d7e8b4e7a3ead2d750bbbe1036cadf",
+      "bytes": 2941239
+    },
+    {
+      "id": "CG-S-BLD-DWELLING",
+      "path": "assets/source/buildings/cg_s_bld_dwelling.png",
+      "sha256": "16c81c4b4903f110de727cab9d7f703bca191eb17c43daf3b2c10e4c81082eb5",
+      "bytes": 2699927
+    },
+    {
+      "id": "CG-S-BLD-GRANARY",
+      "path": "assets/source/buildings/cg_s_bld_granary.png",
+      "sha256": "40b0ccf98a46e3d0c8fcaada22a6dbde2692e435aeac808d05c3f24705d95510",
+      "bytes": 3310288
+    },
+    {
+      "id": "CG-S-BLD-HALL",
+      "path": "assets/source/buildings/cg_s_bld_hall.png",
+      "sha256": "6d167fb9d75ff9d2ab2c0dac38a8eaa0f4f8d66f005b491a4cda46c0a1fe35fd",
+      "bytes": 2760274
+    },
+    {
+      "id": "CG-S-BLD-INFIRMARY",
+      "path": "assets/source/buildings/cg_s_bld_infirmary.png",
+      "sha256": "117f6f1c1e8f5582255e43ac5d7eebda1f60ba5324cde5d6f8e2ba5c186dcb08",
+      "bytes": 2923520
+    },
+    {
+      "id": "CG-S-BLD-MARKET",
+      "path": "assets/source/buildings/cg_s_bld_market.png",
+      "sha256": "d7b5c2a1d6004dc91021639a63386eefe465345a22cb93bd61020be622d8408e",
+      "bytes": 3051396
+    },
+    {
+      "id": "CG-S-BLD-OBSERVATORY",
+      "path": "assets/source/buildings/cg_s_bld_observatory.png",
+      "sha256": "aa3271df6ec49ad44eb9eece0156078c2f1db6894ec9d949d56085bad4dbc654",
+      "bytes": 3367018
+    },
+    {
+      "id": "CG-S-BLD-SHRINE",
+      "path": "assets/source/buildings/cg_s_bld_shrine.png",
+      "sha256": "197e58a242779097d6beae72a78a97e032021185166c16f7e360d306ae8e7f3d",
+      "bytes": 2858357
+    },
+    {
+      "id": "CG-S-BLD-TOWER",
+      "path": "assets/source/buildings/cg_s_bld_tower.png",
+      "sha256": "1e836bad2b75b63c7556d1e92ca146898f1a210b8fd06f409ac748c9bc62f8a7",
+      "bytes": 2820172
+    },
+    {
+      "id": "CG-S-BLD-WORKSHOP",
+      "path": "assets/source/buildings/cg_s_bld_workshop.png",
+      "sha256": "980f9c98637efb425390ce9bfdc7a83834372039c48c3fc2dec6afdfb5a42df4",
+      "bytes": 3022867
+    },
+    {
+      "id": "CG-S-EMB-01",
+      "path": "assets/source/emblems/cg_s_emb_01.png",
+      "sha256": "1e4069747ae405c344b8d73c3aeeaa657b6e598cdf0b50b9eeb3c42176829f0f",
+      "bytes": 185436
+    },
+    {
+      "id": "CG-S-EMB-02",
+      "path": "assets/source/emblems/cg_s_emb_02.png",
+      "sha256": "0371c794864375de8fbbdbba16e89cddce9741bc77606ec7e42f8ebe46e63f14",
+      "bytes": 218817
+    },
+    {
+      "id": "CG-S-EMB-03",
+      "path": "assets/source/emblems/cg_s_emb_03.png",
+      "sha256": "75d7708bba3a157dba4f3dc78d3249500ba7ca76fb7cb5328f5b8eec04bfbca0",
+      "bytes": 208557
+    },
+    {
+      "id": "CG-S-EMB-04",
+      "path": "assets/source/emblems/cg_s_emb_04.png",
+      "sha256": "166c68af7d7a7c03dc9f1f4be8c92612f23ee4b0131c7d643b8d866c5dc470c7",
+      "bytes": 215095
+    },
+    {
+      "id": "CG-S-EMB-05",
+      "path": "assets/source/emblems/cg_s_emb_05.png",
+      "sha256": "e921861aeb72ae2b6cf3b957790fa46e56d49710e609a01cbd175ad325ddd1fe",
+      "bytes": 203157
+    },
+    {
+      "id": "CG-S-EMB-06",
+      "path": "assets/source/emblems/cg_s_emb_06.png",
+      "sha256": "0386540c89cbee4713279c93db75688ab925ddca6f89fe874e4f3472fe99d5e1",
+      "bytes": 221013
+    },
+    {
+      "id": "CG-S-ENV-CONIFER",
+      "path": "assets/source/environment/cg_s_env_conifer.png",
+      "sha256": "16e592f84f5489473ebc9bc38d082ce71c78503fc45c4b04f8996db26a9421e9",
+      "bytes": 3416425
+    },
+    {
+      "id": "CG-S-ENV-CRYSTAL",
+      "path": "assets/source/environment/cg_s_env_crystal.png",
+      "sha256": "e60566497003d4a9487ff0a5a88340edfd95aa84aab989bf5c5016eccbc0c7f1",
+      "bytes": 2929892
+    },
+    {
+      "id": "CG-S-ENV-DECIDUOUS",
+      "path": "assets/source/environment/cg_s_env_deciduous.png",
+      "sha256": "600706d4258db5730b3828768a36c4d2f4d7dff36c2f27ed1a36104eac736139",
+      "bytes": 4430271
+    },
+    {
+      "id": "CG-S-ENV-FUNGUS",
+      "path": "assets/source/environment/cg_s_env_fungus.png",
+      "sha256": "6d447e4990846089d227a560c71be2c395ed1be028cd9c39217703d0c6ffa5f3",
+      "bytes": 3561174
+    },
+    {
+      "id": "CG-S-ENV-KELP",
+      "path": "assets/source/environment/cg_s_env_kelp.png",
+      "sha256": "3e45d57699507e5d2a057436dc635c4d3e183480e04e91b87054b36e4f8606d5",
+      "bytes": 2894222
+    },
+    {
+      "id": "CG-S-ENV-ORE",
+      "path": "assets/source/environment/cg_s_env_ore.png",
+      "sha256": "875b16fb6c944805efb30fc3d191ccf541ca15e23734266c72fd7c40007dc2f2",
+      "bytes": 4411530
+    },
+    {
+      "id": "CG-S-ENV-PALM",
+      "path": "assets/source/environment/cg_s_env_palm.png",
+      "sha256": "e1b9d648cf272e6de94c2056eb78de5e10c6c279422741ca48e2733a36e56c46",
+      "bytes": 3116858
+    },
+    {
+      "id": "CG-S-ENV-REEDS",
+      "path": "assets/source/environment/cg_s_env_reeds.png",
+      "sha256": "7fac35c63d14cc6a113a46746a3fe4aacf8105af6acb93cd1c4523721e059676",
+      "bytes": 3157271
+    },
+    {
+      "id": "CG-S-ENV-ROCK",
+      "path": "assets/source/environment/cg_s_env_rock.png",
+      "sha256": "56ac63fb66215d21b4e6de0281a096d553d7b9cf9b2dc84ff411cf1a384d3d19",
+      "bytes": 3469746
+    },
+    {
+      "id": "CG-S-ENV-RUBBLE",
+      "path": "assets/source/environment/cg_s_env_rubble.png",
+      "sha256": "41c16c5188de305f36688db7387d3a92dad47e2509ae8981f0e17f85a9b67836",
+      "bytes": 3199853
+    },
+    {
+      "id": "CG-S-GOD-ARMOR-COAT",
+      "path": "assets/source/god/cg_s_god_armor_coat.png",
+      "sha256": "1bc726a432b2144fcd33d973e394737d12be527493824fefc73bd372e1e9d70b",
+      "bytes": 3789432
+    },
+    {
+      "id": "CG-S-GOD-ARMOR-OSTEODERM",
+      "path": "assets/source/god/cg_s_god_armor_osteoderm.png",
+      "sha256": "9bbdb8f7dc73490c4c64c36e6a710c58abf0c83e17d4be80d98ff39751afd558",
+      "bytes": 3335413
+    },
+    {
+      "id": "CG-S-GOD-ARMOR-SHELL",
+      "path": "assets/source/god/cg_s_god_armor_shell.png",
+      "sha256": "7b50652c4a701589b6a0315098a22225a48ea7288a257095354a4e6b0ebc39ec",
+      "bytes": 2985231
+    },
+    {
+      "id": "CG-S-GOD-FEED-BROWSE",
+      "path": "assets/source/god/cg_s_god_feed_browse.png",
+      "sha256": "21ff4f0259c47f156ad97968fe48e0a03cef37a88e3f4af2d372a05750019efa",
+      "bytes": 2932460
+    },
+    {
+      "id": "CG-S-GOD-FEED-CARRION",
+      "path": "assets/source/god/cg_s_god_feed_carrion.png",
+      "sha256": "18689cb7d359a0e07681e22b8117c94a4f073f7fcf36134992d4dd626089b9e0",
+      "bytes": 3173209
+    },
+    {
+      "id": "CG-S-GOD-FEED-FILTER",
+      "path": "assets/source/god/cg_s_god_feed_filter.png",
+      "sha256": "0423c30ed018f88d2289182d9fccd5b7ce13884b73a41bf78a31cc68c2fc3da9",
+      "bytes": 3013644
+    },
+    {
+      "id": "CG-S-GOD-FEED-MINERAL",
+      "path": "assets/source/god/cg_s_god_feed_mineral.png",
+      "sha256": "cce32df059120144a28228a5a5741b045dabc05bdd9ad53458fd6eb830c58bda",
+      "bytes": 3049832
+    },
+    {
+      "id": "CG-S-GOD-FORM-H",
+      "path": "assets/source/god/cg_s_god_form_h.png",
+      "sha256": "b8a8a88911cdc0b8c20cb8ab0c0c9707101b711a6a159c28dd284c2dacf9a3ac",
+      "bytes": 3377681
+    },
+    {
+      "id": "CG-S-GOD-FORM-M",
+      "path": "assets/source/god/cg_s_god_form_m.png",
+      "sha256": "c75eb658a639c9bfed41e970a7b279b35060d3ee1155aef4d660ac6bdd63d57f",
+      "bytes": 3226197
+    },
+    {
+      "id": "CG-S-GOD-FORM-Q",
+      "path": "assets/source/god/cg_s_god_form_q.png",
+      "sha256": "2e846c39288c9ea2458af62d5c023cd3e1ff094d809e2eaac70c4a5e4b13111b",
+      "bytes": 2949288
+    },
+    {
+      "id": "CG-S-GOD-FORM-S",
+      "path": "assets/source/god/cg_s_god_form_s.png",
+      "sha256": "6c6f139b6fd8d9508d09464b47d65e75ab4c8133834eb6b33c09a7038f79aca4",
+      "bytes": 3017743
+    },
+    {
+      "id": "CG-S-GOD-LIFE-H",
+      "path": "assets/source/god/cg_s_god_life_h.png",
+      "sha256": "497ca6be0a442fa2689224f88ea03f3ea64e2d3152b0a8e6bf320797ccfae59f",
+      "bytes": 946669
+    },
+    {
+      "id": "CG-S-GOD-LIFE-M",
+      "path": "assets/source/god/cg_s_god_life_m.png",
+      "sha256": "60b29f1c2327b7babe10509a4692c66da9b7f3a1e6a441dd6359c80182a53ff3",
+      "bytes": 1006034
+    },
+    {
+      "id": "CG-S-GOD-LIFE-Q",
+      "path": "assets/source/god/cg_s_god_life_q.png",
+      "sha256": "b0feeac2ed83e715bd547a3e844fb84b0206aae8855b2e6b2eda595891662dfc",
+      "bytes": 1230368
+    },
+    {
+      "id": "CG-S-GOD-LOCO-DIGGER",
+      "path": "assets/source/god/cg_s_god_loco_digger.png",
+      "sha256": "bb2a044a7b48d709b2c562a346afd5b9be5ae65314109e868a13374902a6ba61",
+      "bytes": 2830661
+    },
+    {
+      "id": "CG-S-GOD-LOCO-FIN",
+      "path": "assets/source/god/cg_s_god_loco_fin.png",
+      "sha256": "d6075bfd62f3d69ba7563672b142c354f371b539a2ea7cf6218c8bed49db57a7",
+      "bytes": 2777540
+    },
+    {
+      "id": "CG-S-GOD-LOCO-PILLAR",
+      "path": "assets/source/god/cg_s_god_loco_pillar.png",
+      "sha256": "bc9800bd1e9e56e2bd17a342aaff87d2aec7e4779fa304e6c5b7970a1690290e",
+      "bytes": 2700903
+    },
+    {
+      "id": "CG-S-GOD-LOCO-UNDULATOR",
+      "path": "assets/source/god/cg_s_god_loco_undulator.png",
+      "sha256": "5ee8d7b6990facd1dc5be4cd6baa86c787bc7aad0a306916f77c3ffc0c6d5634",
+      "bytes": 2746602
+    },
+    {
+      "id": "CG-S-GOD-LOCO-WEBBED",
+      "path": "assets/source/god/cg_s_god_loco_webbed.png",
+      "sha256": "6f3393befe95717230565f8d5407a13da322b351d857e8b2d5c558047ac36e73",
+      "bytes": 2723438
+    },
+    {
+      "id": "CG-S-GOD-LOCO-WING",
+      "path": "assets/source/god/cg_s_god_loco_wing.png",
+      "sha256": "6e3d40d074d2af12fc12aae3866de5da0b3ae5bfedeb5366c9915f6ecc471f60",
+      "bytes": 3353176
+    },
+    {
+      "id": "CG-S-GOD-ORGAN-GILLS",
+      "path": "assets/source/god/cg_s_god_organ_gills.png",
+      "sha256": "d4e6c2bdb70cd8e5c3baecee4133acf4d135455befac4d7177e206c7df040ab9",
+      "bytes": 3146166
+    },
+    {
+      "id": "CG-S-GOD-ORGAN-SOLAR-SAIL",
+      "path": "assets/source/god/cg_s_god_organ_solar_sail.png",
+      "sha256": "e0058bb13ffb127c64cc1113d187092f86b905a02efde83c3cfa9d0d69cf2106",
+      "bytes": 3745854
+    },
+    {
+      "id": "CG-S-GOD-ORGAN-SPORE-SAC",
+      "path": "assets/source/god/cg_s_god_organ_spore_sac.png",
+      "sha256": "3f10adfe4ac13de28f3bc742f857a144cf363886e1ce258fd21ef18db6271a09",
+      "bytes": 3065704
+    },
+    {
+      "id": "CG-S-GOD-ORGAN-THERMAL-VENT",
+      "path": "assets/source/god/cg_s_god_organ_thermal_vent.png",
+      "sha256": "2f0501525a2bf2f0cb0941d24f73d06bf779bcb912bd5a68117bcde2cc47a656",
+      "bytes": 3077145
+    },
+    {
+      "id": "CG-S-GOD-SENSE-ANTENNA-CROWN",
+      "path": "assets/source/god/cg_s_god_sense_antenna_crown.png",
+      "sha256": "522fa40fcbf3da4c2e98b62e8004f228d4a875b2e9bd29d1a3c355f6059e5164",
+      "bytes": 2938074
+    },
+    {
+      "id": "CG-S-GOD-SENSE-EYE-RING",
+      "path": "assets/source/god/cg_s_god_sense_eye_ring.png",
+      "sha256": "5efeaee2ea0c65ab641bd7443c00bc9d33ccc70632ac8c193c36dc649b7feedf",
+      "bytes": 2667187
+    },
+    {
+      "id": "CG-S-GOD-SENSE-VIBRATION-ROSETTE",
+      "path": "assets/source/god/cg_s_god_sense_vibration_rosette.png",
+      "sha256": "566a00e81511d5270bf57b0c6fd93b849ed023a8bf704050984d49de40a45c65",
+      "bytes": 3147214
+    },
+    {
+      "id": "CG-S-GOD-SYMB-FOLLOWER-GALLERY",
+      "path": "assets/source/god/cg_s_god_symb_follower_gallery.png",
+      "sha256": "58823187c8a6080643fa52f29a003a8b7cbfaf5965887c560b7e086dfc907908",
+      "bytes": 2868032
+    },
+    {
+      "id": "CG-S-GOD-SYMB-FUNGAL-GROVE",
+      "path": "assets/source/god/cg_s_god_symb_fungal_grove.png",
+      "sha256": "b74bbe274a8c46b7f534cc8b5d0301920b5f0f16b11bf69a6f215d072284fdbd",
+      "bytes": 3624570
+    },
+    {
+      "id": "CG-S-GOD-SYMB-ROOT-HOLDFAST",
+      "path": "assets/source/god/cg_s_god_symb_root_holdfast.png",
+      "sha256": "d5e5a47df2e28da0e186d8c58ecb4b5e05017c0b177f64a09edb9e33481795e3",
+      "bytes": 3120280
+    },
+    {
+      "id": "CG-S-GOD-TAIL-BALANCE",
+      "path": "assets/source/god/cg_s_god_tail_balance.png",
+      "sha256": "48c7e37c909609cfd90040a19503d862912b84e41191d3ac2544703e04b21c70",
+      "bytes": 2894234
+    },
+    {
+      "id": "CG-S-GOD-TAIL-PADDLE",
+      "path": "assets/source/god/cg_s_god_tail_paddle.png",
+      "sha256": "a75cff665b384f4b8ecf5b01efbf47be3bf6f5b6496c948b1e3e8e4a490c087f",
+      "bytes": 3168719
+    },
+    {
+      "id": "CG-S-GOD-TAIL-WEDGE",
+      "path": "assets/source/god/cg_s_god_tail_wedge.png",
+      "sha256": "2b7a4f85437baa391b2231caa9ee2a5422b0742268eeb357c0d2e26e9898e223",
+      "bytes": 2916286
+    },
+    {
+      "id": "CG-S-GOD-TORSO-H",
+      "path": "assets/source/god/cg_s_god_torso_h.png",
+      "sha256": "8651154336ae26e39661f550a63516266e3acb7dae6b112532861bfae2288109",
+      "bytes": 2836159
+    },
+    {
+      "id": "CG-S-GOD-TORSO-M",
+      "path": "assets/source/god/cg_s_god_torso_m.png",
+      "sha256": "108b7e9ae6e32a12aa34c16c6b950b39552dc881222456e074bcf7392ddad42d",
+      "bytes": 2799711
+    },
+    {
+      "id": "CG-S-GOD-TORSO-Q",
+      "path": "assets/source/god/cg_s_god_torso_q.png",
+      "sha256": "e45f88bf349b12e2d242fce155cd82cfe4655d99fcb0753cc608e5f48ba92552",
+      "bytes": 2951115
+    },
+    {
+      "id": "CG-S-GOD-TORSO-S",
+      "path": "assets/source/god/cg_s_god_torso_s.png",
+      "sha256": "e2978c3f9f35e719ce4c72ed2a272cc51ba83059f021399cc255f263e5eebe46",
+      "bytes": 2778605
+    },
+    {
+      "id": "CG-S-ICO-ARMY",
+      "path": "assets/source/icons/cg_s_ico_army.png",
+      "sha256": "8b9b003b85be2f6a3c77f27ca7ebebb1a713da9086594f04cf7e839263da9af9",
+      "bytes": 223475
+    },
+    {
+      "id": "CG-S-ICO-ATTACK",
+      "path": "assets/source/icons/cg_s_ico_attack.png",
+      "sha256": "c4aa493b6403f062c99c63fd5ab6efe48b2064af4ef00a7aee3127a7a78c2119",
+      "bytes": 224778
+    },
+    {
+      "id": "CG-S-ICO-BIO",
+      "path": "assets/source/icons/cg_s_ico_bio.png",
+      "sha256": "fd0ac592cbde337021bede012371c1b8582bf6eef972349d7c385edb4200494f",
+      "bytes": 218691
+    },
+    {
+      "id": "CG-S-ICO-BUILD",
+      "path": "assets/source/icons/cg_s_ico_build.png",
+      "sha256": "5a1db37e5fc9171f74e21f7930ff50eb3a53bd2aad659d3280ebe4371bbaaa49",
+      "bytes": 241304
+    },
+    {
+      "id": "CG-S-ICO-CITY",
+      "path": "assets/source/icons/cg_s_ico_city.png",
+      "sha256": "2b098f9e7662ee67453e524785deea5c3303851e090b7317da8ee104428e4075",
+      "bytes": 229641
+    },
+    {
+      "id": "CG-S-ICO-CLAIM",
+      "path": "assets/source/icons/cg_s_ico_claim.png",
+      "sha256": "9a3a9fcc57243b0c8740d7db84ce85f73e2f89fc0a3a9caee35ec25982dc1e88",
+      "bytes": 235744
+    },
+    {
+      "id": "CG-S-ICO-COIN",
+      "path": "assets/source/icons/cg_s_ico_coin.png",
+      "sha256": "53925ad7a38cb9bc593f8bb3a852f426d810a4f79abb3a15ff37a0a13b7ea66c",
+      "bytes": 236886
+    },
+    {
+      "id": "CG-S-ICO-ECOLOGY",
+      "path": "assets/source/icons/cg_s_ico_ecology.png",
+      "sha256": "b3eb001057a212123cec08992a6dd6c97144858b6aa06ca6da464a4a936c15b4",
+      "bytes": 244983
+    },
+    {
+      "id": "CG-S-ICO-EVOLVE",
+      "path": "assets/source/icons/cg_s_ico_evolve.png",
+      "sha256": "633ffba47efbce7fabf5c74ea96386df65433830423df8d3fd25c469eab73b99",
+      "bytes": 237347
+    },
+    {
+      "id": "CG-S-ICO-FATIGUE",
+      "path": "assets/source/icons/cg_s_ico_fatigue.png",
+      "sha256": "6371337ed846457e3d7335da1853894c99d56f5531af2677a90552c10da00603",
+      "bytes": 215595
+    },
+    {
+      "id": "CG-S-ICO-FEED",
+      "path": "assets/source/icons/cg_s_ico_feed.png",
+      "sha256": "d575ab017e0a5cefe4e4e7f15c1da3734b491f38924ef2390e69e31495149769",
+      "bytes": 247640
+    },
+    {
+      "id": "CG-S-ICO-FOOD",
+      "path": "assets/source/icons/cg_s_ico_food.png",
+      "sha256": "884fac0364ef9f475fcab8f0180bf92d956ecc4bd9150e68a47dbea7014a0f5e",
+      "bytes": 231588
+    },
+    {
+      "id": "CG-S-ICO-GOD",
+      "path": "assets/source/icons/cg_s_ico_god.png",
+      "sha256": "6467d792c0463b953f4ef7c3036aff8b5e1acca0d8d9cba759616e407e314f5e",
+      "bytes": 242694
+    },
+    {
+      "id": "CG-S-ICO-GUARD",
+      "path": "assets/source/icons/cg_s_ico_guard.png",
+      "sha256": "541857244dcee9523300890e088aca5d5994370ec2e2e6f9332a925bcd29e35c",
+      "bytes": 248045
+    },
+    {
+      "id": "CG-S-ICO-HEALTH",
+      "path": "assets/source/icons/cg_s_ico_health.png",
+      "sha256": "ef625a2dd01815e7593da69a1e22cbd014a4f07f9b864c462ec7d8b47c6e04f0",
+      "bytes": 240785
+    },
+    {
+      "id": "CG-S-ICO-HISTORY",
+      "path": "assets/source/icons/cg_s_ico_history.png",
+      "sha256": "3bdeb63408e01384902f7e0763c94b25496971573d5014bcb166f7351e616a7b",
+      "bytes": 264241
+    },
+    {
+      "id": "CG-S-ICO-KNOWLEDGE",
+      "path": "assets/source/icons/cg_s_ico_knowledge.png",
+      "sha256": "f27a6a1937b69af13f72b41a4d8bb5a0d7bb7458bbc265a1fbe1ee49af8a46d6",
+      "bytes": 218059
+    },
+    {
+      "id": "CG-S-ICO-MEDICINE",
+      "path": "assets/source/icons/cg_s_ico_medicine.png",
+      "sha256": "e7f1ae5df6007afe8fe8caec715f0e569f3674703a6f4721c7790bfe7a07f060",
+      "bytes": 235134
+    },
+    {
+      "id": "CG-S-ICO-MIGRATE",
+      "path": "assets/source/icons/cg_s_ico_migrate.png",
+      "sha256": "27164477ef20a050c192e93baca1278817c869fed06ca35bdc65ade70f088875",
+      "bytes": 228455
+    },
+    {
+      "id": "CG-S-ICO-MOVE",
+      "path": "assets/source/icons/cg_s_ico_move.png",
+      "sha256": "929d226b0a26f0730d651eb1f89a4d840681ab96403fa1d7f73a8451dcfaa222",
+      "bytes": 214409
+    },
+    {
+      "id": "CG-S-ICO-ORE",
+      "path": "assets/source/icons/cg_s_ico_ore.png",
+      "sha256": "a5ec8532a4b397a5d1836371c29a82668e5f8910b3d96d4406dc8b09fc66d800",
+      "bytes": 235360
+    },
+    {
+      "id": "CG-S-ICO-POLICY",
+      "path": "assets/source/icons/cg_s_ico_policy.png",
+      "sha256": "7ca00ae40102b5bb70e4dc3146aa9d75691ee1277f2f2cf1f749110cf9f993b3",
+      "bytes": 215810
+    },
+    {
+      "id": "CG-S-ICO-POPULATION",
+      "path": "assets/source/icons/cg_s_ico_population.png",
+      "sha256": "84eab6a990a1083f71fe258936232a1b3dc211782c4926eea66bb193636284c0",
+      "bytes": 310307
+    },
+    {
+      "id": "CG-S-ICO-RESEARCH",
+      "path": "assets/source/icons/cg_s_ico_research.png",
+      "sha256": "6f7e0f583839ce78d98e9f1626a176a8d20a62aae0174bea3019aef14f87dc8f",
+      "bytes": 265968
+    },
+    {
+      "id": "CG-S-ICO-REST",
+      "path": "assets/source/icons/cg_s_ico_rest.png",
+      "sha256": "ce50b396180bbfa390461ef05bee0ec683c060c0fbbf1f96bc0f5e98328551a7",
+      "bytes": 229314
+    },
+    {
+      "id": "CG-S-ICO-STONE",
+      "path": "assets/source/icons/cg_s_ico_stone.png",
+      "sha256": "53140d43a156fdf03a44dfda87512b1b3b549c631f4a18d8eeded41648ff2890",
+      "bytes": 191372
+    },
+    {
+      "id": "CG-S-ICO-TOOLS",
+      "path": "assets/source/icons/cg_s_ico_tools.png",
+      "sha256": "839a4a1232a056adf9ecf52c50958aecb66bc881e77472713cc7aca20bd265fb",
+      "bytes": 245646
+    },
+    {
+      "id": "CG-S-ICO-TRADE",
+      "path": "assets/source/icons/cg_s_ico_trade.png",
+      "sha256": "7434541736a6bac1d3a11b8d152798d7873c03343b00ec790791d167a5e62f80",
+      "bytes": 234176
+    },
+    {
+      "id": "CG-S-ICO-TREATY",
+      "path": "assets/source/icons/cg_s_ico_treaty.png",
+      "sha256": "e9b2085c9c557e7844aa7bf537c94d4ef5fe2e3c553c074f5a01c6ceecf677cf",
+      "bytes": 278880
+    },
+    {
+      "id": "CG-S-ICO-VISIBILITY",
+      "path": "assets/source/icons/cg_s_ico_visibility.png",
+      "sha256": "66d366cb82ef7bc7edb663ce7bd3eb201b7352b470d6ed90f7da992570e662ee",
+      "bytes": 243005
+    },
+    {
+      "id": "CG-S-ICO-WARNING",
+      "path": "assets/source/icons/cg_s_ico_warning.png",
+      "sha256": "d81a2761cba77de451aeb69c15ad0b2005da39b17653b6284b1ac0f2dfdbccfc",
+      "bytes": 226263
+    },
+    {
+      "id": "CG-S-ICO-WOOD",
+      "path": "assets/source/icons/cg_s_ico_wood.png",
+      "sha256": "edfe1920980fc24c07360e44a38b0fce0edd53fd50fed9ce4de2637886b6696f",
+      "bytes": 236622
+    },
+    {
+      "id": "CG-S-INF-BRIDGE",
+      "path": "assets/source/infrastructure/cg_s_inf_bridge.png",
+      "sha256": "56957055645892aadc0306d8c0783440c6e8135e1d1c25af2c451e99d583a957",
+      "bytes": 1049679
+    },
+    {
+      "id": "CG-S-INF-CANAL",
+      "path": "assets/source/infrastructure/cg_s_inf_canal.png",
+      "sha256": "5e408ce03ff52f7d5993b2b471702a6269125fde59233dd4292b4ba2bea57fd1",
+      "bytes": 1457881
+    },
+    {
+      "id": "CG-S-INF-FARM",
+      "path": "assets/source/infrastructure/cg_s_inf_farm.png",
+      "sha256": "3adfe3833cf43065f4f268ae3cb74c74c0fb5df31ba1cb900b552be86807b3ed",
+      "bytes": 1573915
+    },
+    {
+      "id": "CG-S-INF-MINE",
+      "path": "assets/source/infrastructure/cg_s_inf_mine.png",
+      "sha256": "857fa2d4107e8163d18bff0815a732546f9a75e33d01ce4448a2a1d8d717572d",
+      "bytes": 1152440
+    },
+    {
+      "id": "CG-S-INF-ROAD",
+      "path": "assets/source/infrastructure/cg_s_inf_road.png",
+      "sha256": "f8812ccd20c244261dc952d42873fe5d341ce1fef8e967cf531458f01bdfe616",
+      "bytes": 1417732
+    },
+    {
+      "id": "CG-S-INF-WALL",
+      "path": "assets/source/infrastructure/cg_s_inf_wall.png",
+      "sha256": "117e4da004804e051f3a3d23c0884dbe51bd7474c6b4743c778c56315046ff44",
+      "bytes": 1070752
+    },
+    {
+      "id": "CG-S-MOT-BASALT",
+      "path": "assets/source/motifs/cg_s_mot_basalt.png",
+      "sha256": "3429219f92a85740d81ca0fb7e53aecd94002a115768a9a9d8935850570574dc",
+      "bytes": 2751131
+    },
+    {
+      "id": "CG-S-MOT-CANOPY",
+      "path": "assets/source/motifs/cg_s_mot_canopy.png",
+      "sha256": "6904ecb98ad37fea4b1d357daeb738b6a4dccc978d703b97420cb749156a5baa",
+      "bytes": 3330906
+    },
+    {
+      "id": "CG-S-MOT-REED",
+      "path": "assets/source/motifs/cg_s_mot_reed.png",
+      "sha256": "04634634b965ceefd4522dcefbe32120a54631686d8871e0418afa7eb5e8d4e4",
+      "bytes": 3710962
+    },
+    {
+      "id": "CG-S-MOT-VAULT",
+      "path": "assets/source/motifs/cg_s_mot_vault.png",
+      "sha256": "f68f8573fbe67ef12db99517ce99073368e87ec43d6282596bce1aa586c1b66b",
+      "bytes": 3717759
+    },
+    {
+      "id": "CG-S-UNT-BALLISTA",
+      "path": "assets/source/units/cg_s_unt_ballista.png",
+      "sha256": "4b276c79a519625526e2c79790e75d93e0e894f4f2e8749a4f17a82b6cb4ab04",
+      "bytes": 3672819
+    },
+    {
+      "id": "CG-S-UNT-BOW",
+      "path": "assets/source/units/cg_s_unt_bow.png",
+      "sha256": "560d04dcd84eaed47b51df94cfa01e34331ef766134371c06b16b7309ab85387",
+      "bytes": 2881193
+    },
+    {
+      "id": "CG-S-UNT-CIVILIAN",
+      "path": "assets/source/units/cg_s_unt_civilian.png",
+      "sha256": "e9f7e300b295570eb1a7d8d3665b080fa7421da9309c6274a09d6c3d2a4f2422",
+      "bytes": 2615624
+    },
+    {
+      "id": "CG-S-UNT-HULL-MERCHANT",
+      "path": "assets/source/units/cg_s_unt_hull_merchant.png",
+      "sha256": "d2657d0858831906b2a2c2f5b842e99d582e8df4e406a2da34a247d41dc4ad48",
+      "bytes": 2914640
+    },
+    {
+      "id": "CG-S-UNT-HULL-WAR",
+      "path": "assets/source/units/cg_s_unt_hull_war.png",
+      "sha256": "7c44f70ff360e4a9962174c343e84b8d58480ddbeb2e2f6ab0bc0989996a005d",
+      "bytes": 3233584
+    },
+    {
+      "id": "CG-S-UNT-SHIELD",
+      "path": "assets/source/units/cg_s_unt_shield.png",
+      "sha256": "613bd9d600cd538313529c0ffdc8254a31b673155901030cf517f388810975b0",
+      "bytes": 3042660
+    },
+    {
+      "id": "CG-S-UNT-SOLDIER",
+      "path": "assets/source/units/cg_s_unt_soldier.png",
+      "sha256": "ba074f8383bdd2dd520008e4cdba1d454547decc5f88050fd18cf002d1fcb56a",
+      "bytes": 2826494
+    },
+    {
+      "id": "CG-S-UNT-SPEAR",
+      "path": "assets/source/units/cg_s_unt_spear.png",
+      "sha256": "8be964c3b5ae18a2c37e66877017f499ac2739b0bf767cb2e02acbebc66a14f0",
+      "bytes": 3022902
+    },
+    {
+      "id": "CG-S-UNT-WAGON",
+      "path": "assets/source/units/cg_s_unt_wagon.png",
+      "sha256": "bd8a2eb1c9df5118468ac8e88b52a14699e51f49282262932aa898694b3cf30a",
+      "bytes": 3723454
+    }
+  ],
+  "registeredRecipes": []
+}

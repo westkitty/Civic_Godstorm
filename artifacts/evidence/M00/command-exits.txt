@@ -1,0 +1,10 @@
+typecheck exit=0
+lint exit=0
+test:unit exit=0
+test:sim exit=1
+test:assets exit=0
+test:campaigns exit=2
+bench exit=2
+build exit=0
+test:e2e exit=0
+validate:release exit=1

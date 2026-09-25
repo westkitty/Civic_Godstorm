@@ -1,0 +1,17 @@
+# dependencies and local toolchain
+node_modules/
+.toolchain/
+
+# build and test output
+dist/
+coverage/
+test-results/
+playwright-report/
+artifacts/local/
+
+# OS/editor noise
+.DS_Store
+*.log
+
+# committed milestone evidence logs
+!artifacts/evidence/**/*.log

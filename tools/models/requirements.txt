@@ -1,0 +1,10 @@
+# Model conversion toolchain (M03). Python 3.11 venv at .toolchain/py:
+#   python3.11 -m venv .toolchain/py && .toolchain/py/bin/pip install -r tools/models/requirements.txt
+# bpy is Blender 4.5.14 LTS as a Python module (Khronos glTF exporter bundled). imageio-ffmpeg
+# bundles a static ffmpeg with libx264 for the H.264 turntables.
+bpy==4.5.14
+numpy==1.26.4
+scipy==1.17.1
+scikit-image==0.26.0
+pillow==12.3.0
+imageio-ffmpeg==0.6.0
