@@ -2,7 +2,7 @@
  "ledger_type": "arena_source_receipts",
  "specification_version": "CG-V1.0.0",
  "created_utc": "2026-09-23T21:51:28+00:00",
- "last_updated_utc": "2026-09-25T00:35:20+00:00",
+ "last_updated_utc": "2026-09-25T00:51:30+00:00",
  "authority": {
   "master_plan": "CIVIC_GODSTORM_MASTER_PLAN.md",
   "master_plan_head_commit": "5bd357e14d9b68776d50b1dee0829b7bd5ab939f",
@@ -6304,7 +6304,7 @@
   "CG-S-ENV-DECIDUOUS": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/environment/cg_s_env_deciduous.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ENV-DECIDUOUS/r001/cg_s_env_deciduous.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "independent environment material family member (shared scale/material gate)",
    "candidates": [
@@ -6332,7 +6332,7 @@
     "date": "2026-09-24",
     "scope": "B08 environment material family (chunk 1, 9/10 conforming; CRYSTAL repaired separately)",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-ENV-DECIDUOUS"
@@ -6342,12 +6342,22 @@
     "repair_candidates_used": 0,
     "remaining": 1
    },
-   "sync_note": "Receipt-level approval synced 2026-09-24: the B08 en-bloc closure (batch_checkpoints.B08, audit B08_PASS_COMPLETE_CLOSED) had approved these 9 sheets but the receipt approval blocks were never written. No new approval invented."
+   "sync_note": "Receipt-level approval synced 2026-09-24: the B08 en-bloc closure (batch_checkpoints.B08, audit B08_PASS_COMPLETE_CLOSED) had approved these 9 sheets but the receipt approval blocks were never written. No new approval invented.",
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_UP2X 1024x1024 -> 2048x2048 (exactly 2.0x same-aspect; <=2x bound)",
+    "source_candidate": "assets/candidates/CG-S-ENV-DECIDUOUS/r001/cg_s_env_deciduous.png",
+    "source_candidate_sha256": "87bbe7ee2a7186e62f06a1c264755719b5a8e072bd66286a1992e1cb5e820e8d",
+    "canonical_dimensions": "2048x2048",
+    "canonical_sha256": "600706d4258db5730b3828768a36c4d2f4d7dff36c2f27ed1a36104eac736139",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
+   }
   },
   "CG-S-ENV-CONIFER": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/environment/cg_s_env_conifer.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ENV-CONIFER/r001/cg_s_env_conifer.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "independent environment material family member (shared scale/material gate)",
    "candidates": [
@@ -6375,7 +6385,7 @@
     "date": "2026-09-24",
     "scope": "B08 environment material family (chunk 1, 9/10 conforming; CRYSTAL repaired separately)",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-ENV-CONIFER"
@@ -6385,12 +6395,22 @@
     "repair_candidates_used": 0,
     "remaining": 1
    },
-   "sync_note": "Receipt-level approval synced 2026-09-24: the B08 en-bloc closure (batch_checkpoints.B08, audit B08_PASS_COMPLETE_CLOSED) had approved these 9 sheets but the receipt approval blocks were never written. No new approval invented."
+   "sync_note": "Receipt-level approval synced 2026-09-24: the B08 en-bloc closure (batch_checkpoints.B08, audit B08_PASS_COMPLETE_CLOSED) had approved these 9 sheets but the receipt approval blocks were never written. No new approval invented.",
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_UP2X 1024x1024 -> 2048x2048 (exactly 2.0x same-aspect; <=2x bound)",
+    "source_candidate": "assets/candidates/CG-S-ENV-CONIFER/r001/cg_s_env_conifer.png",
+    "source_candidate_sha256": "695c1fb3b60743d5f66ae75aa5f0924a3d6a4f1e223e649af9f982f3973d1349",
+    "canonical_dimensions": "2048x2048",
+    "canonical_sha256": "16e592f84f5489473ebc9bc38d082ce71c78503fc45c4b04f8996db26a9421e9",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
+   }
   },
   "CG-S-ENV-PALM": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/environment/cg_s_env_palm.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ENV-PALM/r001/cg_s_env_palm.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "independent environment material family member (shared scale/material gate)",
    "candidates": [
@@ -6418,7 +6438,7 @@
     "date": "2026-09-24",
     "scope": "B08 environment material family (chunk 1, 9/10 conforming; CRYSTAL repaired separately)",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-ENV-PALM"
@@ -6428,12 +6448,22 @@
     "repair_candidates_used": 0,
     "remaining": 1
    },
-   "sync_note": "Receipt-level approval synced 2026-09-24: the B08 en-bloc closure (batch_checkpoints.B08, audit B08_PASS_COMPLETE_CLOSED) had approved these 9 sheets but the receipt approval blocks were never written. No new approval invented."
+   "sync_note": "Receipt-level approval synced 2026-09-24: the B08 en-bloc closure (batch_checkpoints.B08, audit B08_PASS_COMPLETE_CLOSED) had approved these 9 sheets but the receipt approval blocks were never written. No new approval invented.",
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_UP2X 1024x1024 -> 2048x2048 (exactly 2.0x same-aspect; <=2x bound)",
+    "source_candidate": "assets/candidates/CG-S-ENV-PALM/r001/cg_s_env_palm.png",
+    "source_candidate_sha256": "6b938c029159afd975cf024e2085d67622f62a770331b4c5da539fc62c44f1b8",
+    "canonical_dimensions": "2048x2048",
+    "canonical_sha256": "e1b9d648cf272e6de94c2056eb78de5e10c6c279422741ca48e2733a36e56c46",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
+   }
   },
   "CG-S-ENV-REEDS": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/environment/cg_s_env_reeds.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ENV-REEDS/r001/cg_s_env_reeds.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "independent environment material family member (shared scale/material gate)",
    "candidates": [
@@ -6461,7 +6491,7 @@
     "date": "2026-09-24",
     "scope": "B08 environment material family (chunk 1, 9/10 conforming; CRYSTAL repaired separately)",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-ENV-REEDS"
@@ -6471,12 +6501,22 @@
     "repair_candidates_used": 0,
     "remaining": 1
    },
-   "sync_note": "Receipt-level approval synced 2026-09-24: the B08 en-bloc closure (batch_checkpoints.B08, audit B08_PASS_COMPLETE_CLOSED) had approved these 9 sheets but the receipt approval blocks were never written. No new approval invented."
+   "sync_note": "Receipt-level approval synced 2026-09-24: the B08 en-bloc closure (batch_checkpoints.B08, audit B08_PASS_COMPLETE_CLOSED) had approved these 9 sheets but the receipt approval blocks were never written. No new approval invented.",
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_UP2X 1024x1024 -> 2048x2048 (exactly 2.0x same-aspect; <=2x bound)",
+    "source_candidate": "assets/candidates/CG-S-ENV-REEDS/r001/cg_s_env_reeds.png",
+    "source_candidate_sha256": "4ee5e4b530fa929f212104d1353f9694c479a974fa83576192ab2d6e010017e3",
+    "canonical_dimensions": "2048x2048",
+    "canonical_sha256": "7fac35c63d14cc6a113a46746a3fe4aacf8105af6acb93cd1c4523721e059676",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
+   }
   },
   "CG-S-ENV-KELP": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/environment/cg_s_env_kelp.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ENV-KELP/r001/cg_s_env_kelp.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "independent environment material family member (shared scale/material gate)",
    "candidates": [
@@ -6504,7 +6544,7 @@
     "date": "2026-09-24",
     "scope": "B08 environment material family (chunk 1, 9/10 conforming; CRYSTAL repaired separately)",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-ENV-KELP"
@@ -6514,12 +6554,22 @@
     "repair_candidates_used": 0,
     "remaining": 1
    },
-   "sync_note": "Receipt-level approval synced 2026-09-24: the B08 en-bloc closure (batch_checkpoints.B08, audit B08_PASS_COMPLETE_CLOSED) had approved these 9 sheets but the receipt approval blocks were never written. No new approval invented."
+   "sync_note": "Receipt-level approval synced 2026-09-24: the B08 en-bloc closure (batch_checkpoints.B08, audit B08_PASS_COMPLETE_CLOSED) had approved these 9 sheets but the receipt approval blocks were never written. No new approval invented.",
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_UP2X 1024x1024 -> 2048x2048 (exactly 2.0x same-aspect; <=2x bound)",
+    "source_candidate": "assets/candidates/CG-S-ENV-KELP/r001/cg_s_env_kelp.png",
+    "source_candidate_sha256": "38ecefe88c540b63804a7a293a40c359a0459a3ba6f9bb7f8ac1ca5d99ec60c1",
+    "canonical_dimensions": "2048x2048",
+    "canonical_sha256": "3e45d57699507e5d2a057436dc635c4d3e183480e04e91b87054b36e4f8606d5",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
+   }
   },
   "CG-S-ENV-ROCK": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/environment/cg_s_env_rock.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ENV-ROCK/r001/cg_s_env_rock.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "independent environment material family member (shared scale/material gate)",
    "candidates": [
@@ -6547,7 +6597,7 @@
     "date": "2026-09-24",
     "scope": "B08 environment material family (chunk 1, 9/10 conforming; CRYSTAL repaired separately)",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-ENV-ROCK"
@@ -6557,12 +6607,22 @@
     "repair_candidates_used": 0,
     "remaining": 1
    },
-   "sync_note": "Receipt-level approval synced 2026-09-24: the B08 en-bloc closure (batch_checkpoints.B08, audit B08_PASS_COMPLETE_CLOSED) had approved these 9 sheets but the receipt approval blocks were never written. No new approval invented."
+   "sync_note": "Receipt-level approval synced 2026-09-24: the B08 en-bloc closure (batch_checkpoints.B08, audit B08_PASS_COMPLETE_CLOSED) had approved these 9 sheets but the receipt approval blocks were never written. No new approval invented.",
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_UP2X 1024x1024 -> 2048x2048 (exactly 2.0x same-aspect; <=2x bound)",
+    "source_candidate": "assets/candidates/CG-S-ENV-ROCK/r001/cg_s_env_rock.png",
+    "source_candidate_sha256": "805c0be2c4c994457cb9905c41e5eccc1ce1d32d2ed6b33cd0c615afcfdb5c2c",
+    "canonical_dimensions": "2048x2048",
+    "canonical_sha256": "56ac63fb66215d21b4e6de0281a096d553d7b9cf9b2dc84ff411cf1a384d3d19",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
+   }
   },
   "CG-S-ENV-ORE": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/environment/cg_s_env_ore.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ENV-ORE/r001/cg_s_env_ore.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "independent environment material family member (shared scale/material gate)",
    "candidates": [
@@ -6590,7 +6650,7 @@
     "date": "2026-09-24",
     "scope": "B08 environment material family (chunk 1, 9/10 conforming; CRYSTAL repaired separately)",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-ENV-ORE"
@@ -6600,12 +6660,22 @@
     "repair_candidates_used": 0,
     "remaining": 1
    },
-   "sync_note": "Receipt-level approval synced 2026-09-24: the B08 en-bloc closure (batch_checkpoints.B08, audit B08_PASS_COMPLETE_CLOSED) had approved these 9 sheets but the receipt approval blocks were never written. No new approval invented."
+   "sync_note": "Receipt-level approval synced 2026-09-24: the B08 en-bloc closure (batch_checkpoints.B08, audit B08_PASS_COMPLETE_CLOSED) had approved these 9 sheets but the receipt approval blocks were never written. No new approval invented.",
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_UP2X 1024x1024 -> 2048x2048 (exactly 2.0x same-aspect; <=2x bound)",
+    "source_candidate": "assets/candidates/CG-S-ENV-ORE/r001/cg_s_env_ore.png",
+    "source_candidate_sha256": "eacbc3ce1e52a0414ff952590063b0516094a7b9bdb3cb27a8c3e1010e1e6b79",
+    "canonical_dimensions": "2048x2048",
+    "canonical_sha256": "875b16fb6c944805efb30fc3d191ccf541ca15e23734266c72fd7c40007dc2f2",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
+   }
   },
   "CG-S-ENV-CRYSTAL": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/environment/cg_s_env_crystal.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ENV-CRYSTAL/r002/cg_s_env_crystal.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "independent environment material family member (shared scale/material gate)",
    "candidates": [
@@ -6650,7 +6720,7 @@
     "date": "2026-09-24",
     "scope": "B08 crystal formation; approved as r002 (per-panel count strategy validated 2nd time); r001 preserved as rejected evidence",
     "approved_revision": "r002",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-ENV-CRYSTAL"
@@ -6661,12 +6731,22 @@
     "remaining": 0
    },
    "reason": "Count anchor failure (4 columns vs exactly 3). Pre-authorized repair r002 queued under ruling STANDING_CONTINUATION_ORDER_B08_TO_B12; strategy: 'exactly three columns total - one tall, one medium, one short' stated first + plan phrased as three footprints.",
-   "retry_strategy_if_authorized": "same"
+   "retry_strategy_if_authorized": "same",
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_UP2X 1024x1024 -> 2048x2048 (exactly 2.0x same-aspect; <=2x bound)",
+    "source_candidate": "assets/candidates/CG-S-ENV-CRYSTAL/r002/cg_s_env_crystal.png",
+    "source_candidate_sha256": "9a4f61548ee29708a773af45236e7c6d931d79fe56e57392d2723f913485be78",
+    "canonical_dimensions": "2048x2048",
+    "canonical_sha256": "e60566497003d4a9487ff0a5a88340edfd95aa84aab989bf5c5016eccbc0c7f1",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
+   }
   },
   "CG-S-ENV-FUNGUS": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/environment/cg_s_env_fungus.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ENV-FUNGUS/r001/cg_s_env_fungus.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "independent environment material family member (shared scale/material gate)",
    "candidates": [
@@ -6694,7 +6774,7 @@
     "date": "2026-09-24",
     "scope": "B08 environment material family (chunk 1, 9/10 conforming; CRYSTAL repaired separately)",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-ENV-FUNGUS"
@@ -6704,12 +6784,22 @@
     "repair_candidates_used": 0,
     "remaining": 1
    },
-   "sync_note": "Receipt-level approval synced 2026-09-24: the B08 en-bloc closure (batch_checkpoints.B08, audit B08_PASS_COMPLETE_CLOSED) had approved these 9 sheets but the receipt approval blocks were never written. No new approval invented."
+   "sync_note": "Receipt-level approval synced 2026-09-24: the B08 en-bloc closure (batch_checkpoints.B08, audit B08_PASS_COMPLETE_CLOSED) had approved these 9 sheets but the receipt approval blocks were never written. No new approval invented.",
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_UP2X 1024x1024 -> 2048x2048 (exactly 2.0x same-aspect; <=2x bound)",
+    "source_candidate": "assets/candidates/CG-S-ENV-FUNGUS/r001/cg_s_env_fungus.png",
+    "source_candidate_sha256": "40cf7efa13a6a742631d4c9757f3c54645a4043dead097a41e0077fb6c3d0bfd",
+    "canonical_dimensions": "2048x2048",
+    "canonical_sha256": "6d447e4990846089d227a560c71be2c395ed1be028cd9c39217703d0c6ffa5f3",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
+   }
   },
   "CG-S-ENV-RUBBLE": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/environment/cg_s_env_rubble.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ENV-RUBBLE/r001/cg_s_env_rubble.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "independent environment material family member (shared scale/material gate)",
    "candidates": [
@@ -6737,7 +6827,7 @@
     "date": "2026-09-24",
     "scope": "B08 environment material family (chunk 1, 9/10 conforming; CRYSTAL repaired separately)",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-ENV-RUBBLE"
@@ -6747,7 +6837,17 @@
     "repair_candidates_used": 0,
     "remaining": 1
    },
-   "sync_note": "Receipt-level approval synced 2026-09-24: the B08 en-bloc closure (batch_checkpoints.B08, audit B08_PASS_COMPLETE_CLOSED) had approved these 9 sheets but the receipt approval blocks were never written. No new approval invented."
+   "sync_note": "Receipt-level approval synced 2026-09-24: the B08 en-bloc closure (batch_checkpoints.B08, audit B08_PASS_COMPLETE_CLOSED) had approved these 9 sheets but the receipt approval blocks were never written. No new approval invented.",
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_UP2X 1024x1024 -> 2048x2048 (exactly 2.0x same-aspect; <=2x bound)",
+    "source_candidate": "assets/candidates/CG-S-ENV-RUBBLE/r001/cg_s_env_rubble.png",
+    "source_candidate_sha256": "873de4e386ad02b13e1610149e11ad3c66f185160bfbac1f735a26fc693fdd14",
+    "canonical_dimensions": "2048x2048",
+    "canonical_sha256": "41c16c5188de305f36688db7387d3a92dad47e2509ae8981f0e17f85a9b67836",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
+   }
   },
   "CG-S-UNT-SOLDIER": {
    "specification_version": "CG-V1.0.0",
@@ -6795,7 +6895,7 @@
   "CG-S-UNT-WAGON": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/units/cg_s_unt_wagon.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-UNT-WAGON/r001/cg_s_unt_wagon.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "independent unit/equipment member (shared scale/material gate; SOLDIER is the batch's only human-bearing unit)",
    "candidates": [
@@ -6823,7 +6923,7 @@
     "date": "2026-09-24",
     "scope": "B08 unit/equipment; en-bloc gate approval",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-UNT-WAGON"
@@ -6832,12 +6932,22 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 1
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_UP2X 1024x1024 -> 2048x2048 (exactly 2.0x same-aspect; <=2x bound)",
+    "source_candidate": "assets/candidates/CG-S-UNT-WAGON/r001/cg_s_unt_wagon.png",
+    "source_candidate_sha256": "2fdc1c58b17dad7086241f797072f2bfa9e0059534f981cf5683467dfba94ad9",
+    "canonical_dimensions": "2048x2048",
+    "canonical_sha256": "bd8a2eb1c9df5118468ac8e88b52a14699e51f49282262932aa898694b3cf30a",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
    }
   },
   "CG-S-UNT-SPEAR": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/units/cg_s_unt_spear.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-UNT-SPEAR/r001/cg_s_unt_spear.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "independent unit/equipment member (shared scale/material gate; SOLDIER is the batch's only human-bearing unit)",
    "candidates": [
@@ -6865,7 +6975,7 @@
     "date": "2026-09-24",
     "scope": "B08 unit/equipment; en-bloc gate approval",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-UNT-SPEAR"
@@ -6874,12 +6984,22 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 1
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_UP2X 1024x1024 -> 2048x2048 (exactly 2.0x same-aspect; <=2x bound)",
+    "source_candidate": "assets/candidates/CG-S-UNT-SPEAR/r001/cg_s_unt_spear.png",
+    "source_candidate_sha256": "a2677fd881afb59c94b2422dfd0ec099479c4794fa0b12a6020d5142abd676bc",
+    "canonical_dimensions": "2048x2048",
+    "canonical_sha256": "8be964c3b5ae18a2c37e66877017f499ac2739b0bf767cb2e02acbebc66a14f0",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
    }
   },
   "CG-S-UNT-BOW": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/units/cg_s_unt_bow.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-UNT-BOW/r001/cg_s_unt_bow.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "independent unit/equipment member (shared scale/material gate; SOLDIER is the batch's only human-bearing unit)",
    "candidates": [
@@ -6907,7 +7027,7 @@
     "date": "2026-09-24",
     "scope": "B08 unit/equipment; en-bloc gate approval",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-UNT-BOW"
@@ -6916,12 +7036,22 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 1
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_UP2X 1024x1024 -> 2048x2048 (exactly 2.0x same-aspect; <=2x bound)",
+    "source_candidate": "assets/candidates/CG-S-UNT-BOW/r001/cg_s_unt_bow.png",
+    "source_candidate_sha256": "39aceaea7e7dd4ed3e13a10bd7a98c3a1011b1504d518e5becdcd9ee14dbf20e",
+    "canonical_dimensions": "2048x2048",
+    "canonical_sha256": "560d04dcd84eaed47b51df94cfa01e34331ef766134371c06b16b7309ab85387",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
    }
   },
   "CG-S-UNT-SHIELD": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/units/cg_s_unt_shield.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-UNT-SHIELD/r001/cg_s_unt_shield.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "independent unit/equipment member (shared scale/material gate; SOLDIER is the batch's only human-bearing unit)",
    "candidates": [
@@ -6949,7 +7079,7 @@
     "date": "2026-09-24",
     "scope": "B08 unit/equipment; en-bloc gate approval",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-UNT-SHIELD"
@@ -6958,12 +7088,22 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 1
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_UP2X 1024x1024 -> 2048x2048 (exactly 2.0x same-aspect; <=2x bound)",
+    "source_candidate": "assets/candidates/CG-S-UNT-SHIELD/r001/cg_s_unt_shield.png",
+    "source_candidate_sha256": "3bffa9ea6080b9be6980008a1de9e5117edcfe4c615f90f2fa937b19fe035db3",
+    "canonical_dimensions": "2048x2048",
+    "canonical_sha256": "613bd9d600cd538313529c0ffdc8254a31b673155901030cf517f388810975b0",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
    }
   },
   "CG-S-UNT-BALLISTA": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/units/cg_s_unt_ballista.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-UNT-BALLISTA/r001/cg_s_unt_ballista.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "independent unit/equipment member (shared scale/material gate; SOLDIER is the batch's only human-bearing unit)",
    "candidates": [
@@ -6991,7 +7131,7 @@
     "date": "2026-09-24",
     "scope": "B08 unit/equipment; en-bloc gate approval",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-UNT-BALLISTA"
@@ -7000,12 +7140,22 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 1
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_UP2X 1024x1024 -> 2048x2048 (exactly 2.0x same-aspect; <=2x bound)",
+    "source_candidate": "assets/candidates/CG-S-UNT-BALLISTA/r001/cg_s_unt_ballista.png",
+    "source_candidate_sha256": "3dff7f198fb065a4c5a3458ed63cf30225fa7d41a4877edd522cadcd66f90811",
+    "canonical_dimensions": "2048x2048",
+    "canonical_sha256": "4b276c79a519625526e2c79790e75d93e0e894f4f2e8749a4f17a82b6cb4ab04",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
    }
   },
   "CG-S-UNT-HULL-MERCHANT": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/units/cg_s_unt_hull_merchant.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-UNT-HULL-MERCHANT/r001/cg_s_unt_hull_merchant.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "independent unit/equipment member (shared scale/material gate; SOLDIER is the batch's only human-bearing unit)",
    "candidates": [
@@ -7033,7 +7183,7 @@
     "date": "2026-09-24",
     "scope": "B08 unit/equipment; en-bloc gate approval",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-UNT-HULL-MERCHANT"
@@ -7042,12 +7192,22 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 1
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_UP2X 1024x1024 -> 2048x2048 (exactly 2.0x same-aspect; <=2x bound)",
+    "source_candidate": "assets/candidates/CG-S-UNT-HULL-MERCHANT/r001/cg_s_unt_hull_merchant.png",
+    "source_candidate_sha256": "3f18e4ec5d8aebeb34e43829efbebcfd59f783690763b101dc874f9835e05e93",
+    "canonical_dimensions": "2048x2048",
+    "canonical_sha256": "d2657d0858831906b2a2c2f5b842e99d582e8df4e406a2da34a247d41dc4ad48",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
    }
   },
   "CG-S-UNT-HULL-WAR": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/units/cg_s_unt_hull_war.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-UNT-HULL-WAR/r001/cg_s_unt_hull_war.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "independent unit/equipment member (shared scale/material gate; SOLDIER is the batch's only human-bearing unit)",
    "candidates": [
@@ -7075,7 +7235,7 @@
     "date": "2026-09-24",
     "scope": "B08 unit/equipment; en-bloc gate approval",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-UNT-HULL-WAR"
@@ -7084,6 +7244,16 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 1
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_UP2X 1024x1024 -> 2048x2048 (exactly 2.0x same-aspect; <=2x bound)",
+    "source_candidate": "assets/candidates/CG-S-UNT-HULL-WAR/r001/cg_s_unt_hull_war.png",
+    "source_candidate_sha256": "8937e43cb798b11556d7955236d5599082582e8cd8ecaf1b6a7fef5483fad38a",
+    "canonical_dimensions": "2048x2048",
+    "canonical_sha256": "7c44f70ff360e4a9962174c343e84b8d58480ddbeb2e2f6ab0bc0989996a005d",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
    }
   },
   "CG-S-ICO-FOOD": {
@@ -9734,7 +9904,9 @@
     "CG-S-INF-WALL",
     "CG-S-UNT-SOLDIER"
    ],
-   "chunk_b": "22 promoted (B05-B07 UP2X); 88/105 canonical PRESENT; chunk C (B08, 17 UP2X) next"
+   "chunk_b": "22 promoted (B05-B07 UP2X); 88/105 canonical PRESENT; chunk C (B08, 17 UP2X) next",
+   "chunk_c": "17 promoted (B08 UP2X; SOLDIER held); 105/105 promotable canonical",
+   "final": "COMPLETE 2026-09-25: 105 canonical sources in assets/source/ (218.6MB, dims verified); 14 HELD beyond bounds (fresh canonical-resolution passes or explicit as-is instruction required); 2 no-source IDs (B00 block final; LIFE-S ratified rejection)."
   }
  },
  "human_rulings": [
@@ -10209,6 +10381,12 @@
    "incident": "PROMOTION_PATHS_CORRECTED_AND_CHUNK_B_EXECUTED",
    "recorded_utc": "2026-09-25T00:35:20+00:00",
    "observation": "Chunk-A path audit found 10 files written under assets/source/god/ or icons/ contrary to their plan-derived receipt canonical_path (4 B02 sheets: buildings/2, motifs/1, units/1 - INF-FARM and INF-ROAD are HELD 1264x848 sheets, not promoted; 6 EMB emblems: emblems/ not icons/). All 10 moved, sha256 unchanged, promotion blocks annotated. Root cause: chunk-A output dirs constructed from profile class instead of receipt canonical_path. Chunk B executed: 22 sheets (B05-B07) Lanczos UP2X 1024^2->2048^2 written directly to receipt canonical paths; 9 HELD sheets in range correctly skipped (BLD-MARKET, BLD-SHRINE, LIFE-M, SENSE-ANTENNA-CROWN, SYMB-FOLLOWER-GALLERY, INF-BRIDGE, INF-CANAL, INF-MINE, INF-WALL). Global verify: 88 PRESENT, every file at canonical_path with matching dimensions.",
+   "content_loss": "none"
+  },
+  {
+   "incident": "PROMOTION_CHUNK_C_COMPLETE_RUN_FINAL",
+   "recorded_utc": "2026-09-25T00:51:30+00:00",
+   "observation": "Chunk C executed: 17 B08 sheets (9 ENV -> environment/, 8 UNT -> units/) Lanczos UP2X 1024^2->2048^2 written to receipt canonical paths; UNT-SOLDIER correctly held (1376x768 aspect). FINAL STATE: 105/105 promotable sources canonical and dimension-verified; global re-verify passed on all 105 (path + dimensions); 14 HELD receipts carry dispositions; 2 no-source IDs unchanged.",
    "content_loss": "none"
   }
  ],
