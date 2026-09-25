@@ -2,7 +2,7 @@
  "ledger_type": "arena_source_receipts",
  "specification_version": "CG-V1.0.0",
  "created_utc": "2026-09-23T21:51:28+00:00",
- "last_updated_utc": "2026-09-25T00:51:30+00:00",
+ "last_updated_utc": "2026-09-25T00:56:43+00:00",
  "authority": {
   "master_plan": "CIVIC_GODSTORM_MASTER_PLAN.md",
   "master_plan_head_commit": "5bd357e14d9b68776d50b1dee0829b7bd5ab939f",
@@ -2911,7 +2911,13 @@
     "repair_candidates_used": 1,
     "strategy": "fresh anchor on FORM-Q r004"
    },
-   "sync_note": "Receipt-level approval synced 2026-09-24 to the already-recorded ruling LIFEQ_R004_ACCEPT_AND_B01_GATE_PASS; the previous AWAITING_APPROVAL string was a write-lag, not a pending gate. No new approval invented."
+   "sync_note": "Receipt-level approval synced 2026-09-24 to the already-recorded ruling LIFEQ_R004_ACCEPT_AND_B01_GATE_PASS; the previous AWAITING_APPROVAL string was a write-lag, not a pending gate. No new approval invented.",
+   "fresh_pass": {
+    "authorized": "FRESH_CANONICAL_RESOLUTION_PASSES_AUTHORIZED",
+    "revision": "r005",
+    "layout_scaffold": "assets/candidates/CG-S-GOD-LIFE-Q/r005/template_3x2.png",
+    "target": "3072x2048"
+   }
   },
   "CG-S-MOT-BASALT": {
    "specification_version": "CG-V1.0.0",
@@ -3322,7 +3328,13 @@
     "repair_candidates_used": 0,
     "remaining": 0
    },
-   "tool_note": "3:2 landscape emitted at 1264x848 without template scaffold - layout held when described as columns/rows explicitly"
+   "tool_note": "3:2 landscape emitted at 1264x848 without template scaffold - layout held when described as columns/rows explicitly",
+   "fresh_pass": {
+    "authorized": "FRESH_CANONICAL_RESOLUTION_PASSES_AUTHORIZED",
+    "revision": "r002",
+    "layout_scaffold": "assets/candidates/CG-S-INF-FARM/r002/template_3x2.png",
+    "target": "3072x2048"
+   }
   },
   "CG-S-INF-ROAD": {
    "specification_version": "CG-V1.0.0",
@@ -3370,6 +3382,12 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 0
+   },
+   "fresh_pass": {
+    "authorized": "FRESH_CANONICAL_RESOLUTION_PASSES_AUTHORIZED",
+    "revision": "r002",
+    "layout_scaffold": "assets/candidates/CG-S-INF-ROAD/r002/template_3x2.png",
+    "target": "3072x2048"
    }
   },
   "CG-S-GOD-TORSO-H": {
@@ -3939,6 +3957,27 @@
       "style": "batch-consistent sculpted matte; accents restrained"
      },
      "status": "CANDIDATE_AWAITING_APPROVAL"
+    },
+    {
+     "revision": "r004",
+     "path": "assets/candidates/CG-S-GOD-LIFE-H/r004/cg_s_god_life_h.png",
+     "native_dimensions": "1264x848",
+     "native_aspect_error_pct": 0.63,
+     "format": "PNG 8-bit sRGB TrueColor",
+     "alpha": "none",
+     "sha256": "497ca6be0a442fa2689224f88ea03f3ea64e2d3152b0a8e6bf320797ccfae59f",
+     "generation_tool": "Arena Agent Mode generate_image",
+     "model": "UNKNOWN",
+     "normalization_operation": "none performed",
+     "parent_revision": "fresh canonical-resolution pass authorized by ruling FRESH_CANONICAL_RESOLUTION_PASSES_AUTHORIZED",
+     "content_qa": {
+      "identity": "six left-profile states of the same six-ring tube individual in a legal 3x2 layout: juvenile smooth-pale / prime full ochre / ancient worn-cracked / injured prime (one crushed segment + scar) / recent corpse gray limp / ossuary ring bones in curve - layout violation of r002 repaired",
+      "style": "established family style retained; layout correct this pass"
+     },
+     "flags": [
+      "TB-08: model canvas ceiling - 1264x848 again (10th consecutive landscape-class occurrence); required scale to 3072x2048 is 2.43x > 2x bound"
+     ],
+     "status": "CANDIDATE_AWAITING_APPROVAL"
     }
    ],
    "reason": "r002 introduced generated text labels (hard lock) and retained a generic skull reading; budget exhausted. New tool finding TB-04: capitalized per-cell stage names in prompts can leak as rendered labels - retry prompts must forbid words explicitly and avoid label-like tokens.",
@@ -3946,7 +3985,7 @@
     "decision": "APPROVED PROVISIONAL (retry r003)",
     "approver": "human (repository owner)",
     "date": "2026-09-24",
-    "resolution": "HELD from promotion (owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS, 2026-09-25): approved candidate 1264x848 cannot reach profile target 3072x2048 within bounds (held scale). Options: fresh canonical-resolution pass (per-ID 1+1, explicit authorization required) or explicit as-is promotion instruction."
+    "resolution": "STILL HELD after fresh pass (ruling #20, 2026-09-25): fresh r004 is content-conforming (six left-profile states of the same six-ring tube individual...) but the model returned 1264x848 again (TB-08 canvas ceiling); 3072x2048 requires 2.43x > the 2x bound. Repair slot of the authorized 1+1 remains unused. Exits unchanged: owner as-is instruction, or a generation path that emits >=1536px landscape canvases."
    },
    "downstream_targets": [
     "CG-D-GOD-LIFE-H",
@@ -3965,6 +4004,13 @@
     "strategy": "fresh generation: blank 3x2 scaffold (LIFE-Q precedent) + FORM-H r002 content-conforming anchor; NO-LABELS as first instruction; blunt crushing-rostrum skull guidance (anti recorded skull defect)",
     "initial_candidates_used": 1,
     "repair_candidates_used": 0
+   },
+   "fresh_pass": {
+    "authorized": "FRESH_CANONICAL_RESOLUTION_PASSES_AUTHORIZED",
+    "revision": "r004",
+    "layout_scaffold": "assets/candidates/CG-S-GOD-LIFE-H/r004/template_3x2.png",
+    "target": "3072x2048",
+    "result": "CONTENT_CONFORMING_SIZE_BLOCKED_TB08"
    }
   },
   "CG-S-GOD-TORSO-S": {
@@ -4700,7 +4746,7 @@
   "CG-S-GOD-SENSE-ANTENNA-CROWN": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_sense_antenna_crown.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25; fresh pass under ruling FRESH_CANONICAL_RESOLUTION_PASSES_AUTHORIZED, normalized under CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidates preserved as evidence at assets/candidates/CG-S-GOD-SENSE-ANTENNA-CROWN/r004/cg_s_god_sense_antenna_crown.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
    "candidates": [
@@ -4759,6 +4805,24 @@
       "minor": "small ochre flecks at frond bases (restraint note)"
      },
      "status": "CANDIDATE_AWAITING_APPROVAL"
+    },
+    {
+     "revision": "r004",
+     "path": "assets/candidates/CG-S-GOD-SENSE-ANTENNA-CROWN/r004/cg_s_god_sense_antenna_crown.png",
+     "native_dimensions": "1024x1024",
+     "native_aspect_error_pct": 0.0,
+     "format": "PNG 8-bit sRGB TrueColor",
+     "alpha": "none",
+     "sha256": "4aca32460089b68e982c71e6efcc06394ee7321a0f1ef78618c77f3adf93d561",
+     "generation_tool": "Arena Agent Mode generate_image",
+     "model": "UNKNOWN",
+     "normalization_operation": "none performed",
+     "parent_revision": "fresh canonical-resolution pass authorized by ruling FRESH_CANONICAL_RESOLUTION_PASSES_AUTHORIZED; 2x2 scaffold; prior approved candidate kept as style reference",
+     "content_qa": {
+      "identity": "EXACTLY SIX tapered fronds in THREE mirrored pairs verified at zoom in front, side (occlusion-consistent) and top-down radiating views; open central negative space; flush dome base with junction collar",
+      "style": "established family style retained; square canvas honored"
+     },
+     "status": "CANDIDATE_AWAITING_APPROVAL"
     }
    ],
    "approval": {
@@ -4767,7 +4831,7 @@
     "date": "2026-09-24",
     "scope": "B05 antenna crown; r003 approved INCLUDING TB-07 canvas-swap (1376x768) accepted as technical pass (TORSO-H precedent); r001/r002 remain rejected evidence",
     "approved_revision": "r003",
-    "resolution": "HELD from promotion (owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS, 2026-09-25): approved candidate 1376x768 cannot reach profile target 2048x2048 within bounds (held aspect). Options: fresh canonical-resolution pass (per-ID 1+1, explicit authorization required) or explicit as-is promotion instruction."
+    "resolution": "PROMOTED to canonical 2026-09-25: fresh canonical-resolution pass (ruling #20) produced a within-bounds square sheet; Lanczos 2.0x to 2048x2048"
    },
    "downstream_targets": [
     "CG-D-GOD-SENSE-ANTENNA-CROWN",
@@ -4780,7 +4844,24 @@
     "remaining": 0
    },
    "reason": "r001/r002 REJECTED (TB-06 plan-panel multiplication). r003 authorized pass-2 CONFORMS on the six-frond anchor in all four panels (per-panel-count strategy validated); carries a technical flag: native 1376x768 landscape canvas instead of the square scaffold (quadrant logic intact). Awaiting consolidated B05 gate.",
-   "retry_strategy_if_authorized": "Pass-2 r003: pure fresh generation, count stated PER PANEL ('lateral: exactly three fronds visible stepping down; front: exactly six, three per side, open center gap; plan: exactly six blades TOTAL, three per side, NOTHING growing from the mount's front or rear edge; rear: exactly six'); consider omitting the plan panel in favor of two three-quarter views if multiplication persists."
+   "retry_strategy_if_authorized": "Pass-2 r003: pure fresh generation, count stated PER PANEL ('lateral: exactly three fronds visible stepping down; front: exactly six, three per side, open center gap; plan: exactly six blades TOTAL, three per side, NOTHING growing from the mount's front or rear edge; rear: exactly six'); consider omitting the plan panel in favor of two three-quarter views if multiplication persists.",
+   "fresh_pass": {
+    "authorized": "FRESH_CANONICAL_RESOLUTION_PASSES_AUTHORIZED",
+    "revision": "r004",
+    "layout_scaffold": "assets/candidates/CG-S-GOD-SENSE-ANTENNA-CROWN/r004/template_2x2.png",
+    "target": "3072x2048",
+    "result": "CONFORMING_AND_PROMOTED"
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "rulings #18 + #20",
+    "operation": "LANCZOS_UP2X 1024x1024 -> 2048x2048 (exactly 2.0x same-aspect; <=2x bound); fresh pass r004",
+    "source_candidate": "assets/candidates/CG-S-GOD-SENSE-ANTENNA-CROWN/r004/cg_s_god_sense_antenna_crown.png",
+    "source_candidate_sha256": "4aca32460089b68e982c71e6efcc06394ee7321a0f1ef78618c77f3adf93d561",
+    "canonical_dimensions": "2048x2048",
+    "canonical_sha256": "522fa40fcbf3da4c2e98b62e8004f228d4a875b2e9bd29d1a3c355f6059e5164",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
+   }
   },
   "CG-S-GOD-FORM-M": {
    "specification_version": "CG-V1.0.0",
@@ -4914,7 +4995,13 @@
    },
    "reason": "r001: two disclosed flags (ossuary socket; injured under-mark). r002 targeted repair: injury flag FIXED, ossuary socket flag NOT fixed (2 fresh attempts leaked the same defect - TB-06 pattern echo), corpse tattering ambiguity, TB-07 canvas recurrence. 1+1 pass budget exhausted.",
    "retry_strategy_if_repair_required": "Targeted r002 (turn cap permitting): keep the exact 3x2 six-state structure; ossuary instruction becomes 'skull surface sealed and smooth with only small shallow pits - NO large openings of any size'; injured instruction adds 'draw the pale scar clearly on the flank behind the wing root'.",
-   "retry_strategy_if_authorized": "Pass-3 options recorded: (a) accept r001 as technical-with-flag (cleanest corpse; single socket read as fenestra; species anchors hold); (b) fresh pass r003: drop the side-profile-only constraint for the ossuary panel to a 3/4 view (skull openings may be a profile-reading artifact) + 'dented smooth bowl' skull phrasing; (c) reject standing like LIFE-S. User ruling required either way."
+   "retry_strategy_if_authorized": "Pass-3 options recorded: (a) accept r001 as technical-with-flag (cleanest corpse; single socket read as fenestra; species anchors hold); (b) fresh pass r003: drop the side-profile-only constraint for the ossuary panel to a 3/4 view (skull openings may be a profile-reading artifact) + 'dented smooth bowl' skull phrasing; (c) reject standing like LIFE-S. User ruling required either way.",
+   "fresh_pass": {
+    "authorized": "FRESH_CANONICAL_RESOLUTION_PASSES_AUTHORIZED",
+    "revision": "r003",
+    "layout_scaffold": "assets/candidates/CG-S-GOD-LIFE-M/r003/template_3x2.png",
+    "target": "3072x2048"
+   }
   },
   "CG-S-GOD-ARMOR-OSTEODERM": {
    "specification_version": "CG-V1.0.0",
@@ -5247,7 +5334,7 @@
   "CG-S-GOD-SYMB-FOLLOWER-GALLERY": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_symb_follower_gallery.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25; fresh pass under ruling FRESH_CANONICAL_RESOLUTION_PASSES_AUTHORIZED, normalized under CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidates preserved as evidence at assets/candidates/CG-S-GOD-SYMB-FOLLOWER-GALLERY/r002/cg_s_god_symb_follower_gallery.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
    "candidates": [
@@ -5271,6 +5358,24 @@
       "canvas_flag": "TB-07 RECURRENCE: 1376x768 instead of square scaffold; quadrant logic intact (19.5% aspect dev) - disclosed for gate, CROWN-r003 precedent available"
      },
      "status": "CANDIDATE_AWAITING_APPROVAL"
+    },
+    {
+     "revision": "r002",
+     "path": "assets/candidates/CG-S-GOD-SYMB-FOLLOWER-GALLERY/r002/cg_s_god_symb_follower_gallery.png",
+     "native_dimensions": "1024x1024",
+     "native_aspect_error_pct": 0.0,
+     "format": "PNG 8-bit sRGB TrueColor",
+     "alpha": "none",
+     "sha256": "89808c495756163adc2251fae140cfaef5363118005dcdcb020c9b5dd572b431",
+     "generation_tool": "Arena Agent Mode generate_image",
+     "model": "UNKNOWN",
+     "normalization_operation": "none performed",
+     "parent_revision": "fresh canonical-resolution pass authorized by ruling FRESH_CANONICAL_RESOLUTION_PASSES_AUTHORIZED; 2x2 scaffold; prior approved candidate kept as style reference",
+     "content_qa": {
+      "identity": "two timber-and-textile gallery baskets sharing ONE flexible central dorsal saddle; low rails; empty of creatures; four views + top-down agree",
+      "style": "established family style retained; square canvas honored"
+     },
+     "status": "CANDIDATE_AWAITING_APPROVAL"
     }
    ],
    "approval": {
@@ -5279,7 +5384,7 @@
     "date": "2026-09-24",
     "scope": "B06 follower structure; canvas swap (TB-07) accepted as technical pass (CROWN r003 precedent)",
     "approved_revision": "r001",
-    "resolution": "HELD from promotion (owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS, 2026-09-25): approved candidate 1376x768 cannot reach profile target 2048x2048 within bounds (held aspect). Options: fresh canonical-resolution pass (per-ID 1+1, explicit authorization required) or explicit as-is promotion instruction."
+    "resolution": "PROMOTED to canonical 2026-09-25: fresh canonical-resolution pass (ruling #20) produced a within-bounds square sheet; Lanczos 2.0x to 2048x2048"
    },
    "downstream_targets": [
     "CG-D-GOD-SYMB-FOLLOWER-GALLERY",
@@ -5290,7 +5395,24 @@
     "repair_candidates_used": 0,
     "remaining": 1
    },
-   "reason": "Two-cabin timber/textile gallery on a shared flexible saddle with central walkway; carries disclosed TB-07 canvas flag."
+   "reason": "Two-cabin timber/textile gallery on a shared flexible saddle with central walkway; carries disclosed TB-07 canvas flag.",
+   "fresh_pass": {
+    "authorized": "FRESH_CANONICAL_RESOLUTION_PASSES_AUTHORIZED",
+    "revision": "r002",
+    "layout_scaffold": "assets/candidates/CG-S-GOD-SYMB-FOLLOWER-GALLERY/r002/template_2x2.png",
+    "target": "3072x2048",
+    "result": "CONFORMING_AND_PROMOTED"
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "rulings #18 + #20",
+    "operation": "LANCZOS_UP2X 1024x1024 -> 2048x2048 (exactly 2.0x same-aspect; <=2x bound); fresh pass r002",
+    "source_candidate": "assets/candidates/CG-S-GOD-SYMB-FOLLOWER-GALLERY/r002/cg_s_god_symb_follower_gallery.png",
+    "source_candidate_sha256": "89808c495756163adc2251fae140cfaef5363118005dcdcb020c9b5dd572b431",
+    "canonical_dimensions": "2048x2048",
+    "canonical_sha256": "58823187c8a6080643fa52f29a003a8b7cbfaf5965887c560b7e086dfc907908",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
+   }
   },
   "CG-S-GOD-SYMB-ROOT-HOLDFAST": {
    "specification_version": "CG-V1.0.0",
@@ -5725,7 +5847,7 @@
   "CG-S-BLD-MARKET": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/buildings/cg_s_bld_market.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25; fresh pass under ruling FRESH_CANONICAL_RESOLUTION_PASSES_AUTHORIZED, normalized under CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidates preserved as evidence at assets/candidates/CG-S-BLD-MARKET/r002/cg_s_bld_market.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "independent civic architecture module; style anchor B02 BLD-DWELLING r003 (approved-provisional, subject ignored)",
    "candidates": [
@@ -5746,6 +5868,24 @@
       "technical_flag": "TB-07 RECURRENCE (3rd observed): 1376x768 native landscape instead of square scaffold; quadrant logic intact"
      },
      "status": "CANDIDATE_AWAITING_APPROVAL"
+    },
+    {
+     "revision": "r002",
+     "path": "assets/candidates/CG-S-BLD-MARKET/r002/cg_s_bld_market.png",
+     "native_dimensions": "1024x1024",
+     "native_aspect_error_pct": 0.0,
+     "format": "PNG 8-bit sRGB TrueColor",
+     "alpha": "none",
+     "sha256": "6a42144f8c8f85e3b2ca64480cde154f7214a7646d568f10a80099a38a0df1c0",
+     "generation_tool": "Arena Agent Mode generate_image",
+     "model": "UNKNOWN",
+     "normalization_operation": "none performed",
+     "parent_revision": "fresh canonical-resolution pass authorized by ruling FRESH_CANONICAL_RESOLUTION_PASSES_AUTHORIZED; 2x2 scaffold; prior approved candidate kept as style reference",
+     "content_qa": {
+      "identity": "market ring rebuilt: canopy roof over stall ring around central open cargo court with ONE clear entry gap; no people/goods; all four orthographic views + plan agree",
+      "style": "established family style retained; square canvas honored"
+     },
+     "status": "CANDIDATE_AWAITING_APPROVAL"
     }
    ],
    "approval": {
@@ -5754,7 +5894,7 @@
     "date": "2026-09-24",
     "scope": "B07 civic architecture; consistent with B02 civic/scale gate; MARKET TB-07 canvas swap accepted as technical pass (precedent)",
     "approved_revision": "r001",
-    "resolution": "HELD from promotion (owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS, 2026-09-25): approved candidate 1376x768 cannot reach profile target 2048x2048 within bounds (held aspect). Options: fresh canonical-resolution pass (per-ID 1+1, explicit authorization required) or explicit as-is promotion instruction."
+    "resolution": "PROMOTED to canonical 2026-09-25: fresh canonical-resolution pass (ruling #20) produced a within-bounds square sheet; Lanczos 2.0x to 2048x2048"
    },
    "downstream_targets": [
     "CG-D-BLD-MARKET",
@@ -5764,6 +5904,23 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 1
+   },
+   "fresh_pass": {
+    "authorized": "FRESH_CANONICAL_RESOLUTION_PASSES_AUTHORIZED",
+    "revision": "r002",
+    "layout_scaffold": "assets/candidates/CG-S-BLD-MARKET/r002/template_2x2.png",
+    "target": "3072x2048",
+    "result": "CONFORMING_AND_PROMOTED"
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "rulings #18 + #20",
+    "operation": "LANCZOS_UP2X 1024x1024 -> 2048x2048 (exactly 2.0x same-aspect; <=2x bound); fresh pass r002",
+    "source_candidate": "assets/candidates/CG-S-BLD-MARKET/r002/cg_s_bld_market.png",
+    "source_candidate_sha256": "6a42144f8c8f85e3b2ca64480cde154f7214a7646d568f10a80099a38a0df1c0",
+    "canonical_dimensions": "2048x2048",
+    "canonical_sha256": "d7b5c2a1d6004dc91021639a63386eefe465345a22cb93bd61020be622d8408e",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
    }
   },
   "CG-S-BLD-OBSERVATORY": {
@@ -5822,7 +5979,7 @@
   "CG-S-BLD-SHRINE": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/buildings/cg_s_bld_shrine.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25; fresh pass under ruling FRESH_CANONICAL_RESOLUTION_PASSES_AUTHORIZED, normalized under CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidates preserved as evidence at assets/candidates/CG-S-BLD-SHRINE/r002/cg_s_bld_shrine.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "independent civic module; style anchor B02 BLD-DWELLING r003 (approved-provisional, subject ignored)",
    "candidates": [
@@ -5843,6 +6000,24 @@
       "flag": "TB-07 canvas swap 1376x768, quadrant logic intact (4th observed)"
      },
      "status": "CANDIDATE_AWAITING_APPROVAL"
+    },
+    {
+     "revision": "r002",
+     "path": "assets/candidates/CG-S-BLD-SHRINE/r002/cg_s_bld_shrine.png",
+     "native_dimensions": "1024x1024",
+     "native_aspect_error_pct": 0.0,
+     "format": "PNG 8-bit sRGB TrueColor",
+     "alpha": "none",
+     "sha256": "44fcf88cd0c99ca9d5b4b674e2b36afe9b0ac85f87745a822557256770ec0729",
+     "generation_tool": "Arena Agent Mode generate_image",
+     "model": "UNKNOWN",
+     "normalization_operation": "none performed",
+     "parent_revision": "fresh canonical-resolution pass authorized by ruling FRESH_CANONICAL_RESOLUTION_PASSES_AUTHORIZED; 2x2 scaffold; prior approved candidate kept as style reference",
+     "content_qa": {
+      "identity": "open sanctuary platform: single empty central aperture genuinely framing the landscape; no idol/altar/symbol; four views + plan agree",
+      "style": "established family style retained; square canvas honored"
+     },
+     "status": "CANDIDATE_AWAITING_APPROVAL"
     }
    ],
    "approval": {
@@ -5851,7 +6026,7 @@
     "date": "2026-09-24",
     "scope": "B07 civic architecture; consistent with B02 civic/scale gate; SHRINE TB-07 canvas swap accepted as technical pass (precedent)",
     "approved_revision": "r001",
-    "resolution": "HELD from promotion (owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS, 2026-09-25): approved candidate 1376x768 cannot reach profile target 2048x2048 within bounds (held aspect). Options: fresh canonical-resolution pass (per-ID 1+1, explicit authorization required) or explicit as-is promotion instruction."
+    "resolution": "PROMOTED to canonical 2026-09-25: fresh canonical-resolution pass (ruling #20) produced a within-bounds square sheet; Lanczos 2.0x to 2048x2048"
    },
    "downstream_targets": [
     "CG-D-BLD-SHRINE",
@@ -5861,6 +6036,23 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 1
+   },
+   "fresh_pass": {
+    "authorized": "FRESH_CANONICAL_RESOLUTION_PASSES_AUTHORIZED",
+    "revision": "r002",
+    "layout_scaffold": "assets/candidates/CG-S-BLD-SHRINE/r002/template_2x2.png",
+    "target": "3072x2048",
+    "result": "CONFORMING_AND_PROMOTED"
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "rulings #18 + #20",
+    "operation": "LANCZOS_UP2X 1024x1024 -> 2048x2048 (exactly 2.0x same-aspect; <=2x bound); fresh pass r002",
+    "source_candidate": "assets/candidates/CG-S-BLD-SHRINE/r002/cg_s_bld_shrine.png",
+    "source_candidate_sha256": "44fcf88cd0c99ca9d5b4b674e2b36afe9b0ac85f87745a822557256770ec0729",
+    "canonical_dimensions": "2048x2048",
+    "canonical_sha256": "197e58a242779097d6beae72a78a97e032021185166c16f7e360d306ae8e7f3d",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
    }
   },
   "CG-S-BLD-TOWER": {
@@ -5992,6 +6184,27 @@
       "identity": "three named modes at shared scale: LIGHT timber beam on abutments; HEAVY braced masonry arch with parapet; GODWAY broad reinforced composite span with rails; + GODWAY deck-abutment junction detail; no people/carts"
      },
      "status": "CANDIDATE_AWAITING_APPROVAL"
+    },
+    {
+     "revision": "r002",
+     "path": "assets/candidates/CG-S-INF-BRIDGE/r002/cg_s_inf_bridge.png",
+     "native_dimensions": "1264x848",
+     "native_aspect_error_pct": 0.63,
+     "format": "PNG 8-bit sRGB TrueColor",
+     "alpha": "none",
+     "sha256": "56957055645892aadc0306d8c0783440c6e8135e1d1c25af2c451e99d583a957",
+     "generation_tool": "Arena Agent Mode generate_image",
+     "model": "UNKNOWN",
+     "normalization_operation": "none performed",
+     "parent_revision": "fresh canonical-resolution pass authorized by ruling FRESH_CANONICAL_RESOLUTION_PASSES_AUTHORIZED",
+     "content_qa": {
+      "identity": "LIGHT timber beam / HEAVY braced masonry arch / GODWAY broad reinforced span with approach ramps; 3/4 row + plan row, one shared scale; exactly three modes",
+      "style": "established family style retained; layout correct this pass"
+     },
+     "flags": [
+      "TB-08: model canvas ceiling - 1264x848 again (10th consecutive landscape-class occurrence); required scale to 3072x2048 is 2.43x > 2x bound"
+     ],
+     "status": "CANDIDATE_AWAITING_APPROVAL"
     }
    ],
    "approval": {
@@ -6000,7 +6213,7 @@
     "date": "2026-09-24",
     "scope": "B07 infrastructure; all named modes present at shared scale",
     "approved_revision": "r001",
-    "resolution": "HELD from promotion (owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS, 2026-09-25): approved candidate 1024x1024 cannot reach profile target 3072x2048 within bounds (held aspect). Options: fresh canonical-resolution pass (per-ID 1+1, explicit authorization required) or explicit as-is promotion instruction."
+    "resolution": "STILL HELD after fresh pass (ruling #20, 2026-09-25): fresh r002 is content-conforming (LIGHT timber beam / HEAVY braced masonry arch / GODWAY broad...) but the model returned 1264x848 again (TB-08 canvas ceiling); 3072x2048 requires 2.43x > the 2x bound. Repair slot of the authorized 1+1 remains unused. Exits unchanged: owner as-is instruction, or a generation path that emits >=1536px landscape canvases."
    },
    "downstream_targets": [
     "CG-D-INF-BRIDGE",
@@ -6010,6 +6223,13 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 1
+   },
+   "fresh_pass": {
+    "authorized": "FRESH_CANONICAL_RESOLUTION_PASSES_AUTHORIZED",
+    "revision": "r002",
+    "layout_scaffold": "assets/candidates/CG-S-INF-BRIDGE/r002/template_3x2.png",
+    "target": "3072x2048",
+    "result": "CONTENT_CONFORMING_SIZE_BLOCKED_TB08"
    }
   },
   "CG-S-INF-CANAL": {
@@ -6035,6 +6255,27 @@
       "identity": "three named modes at shared channel width: DITCH lined cut between low banks; LOCK chamber with two gate frames; WEIR stepped overflow; + lining detail; no boats/people"
      },
      "status": "CANDIDATE_AWAITING_APPROVAL"
+    },
+    {
+     "revision": "r002",
+     "path": "assets/candidates/CG-S-INF-CANAL/r002/cg_s_inf_canal.png",
+     "native_dimensions": "1264x848",
+     "native_aspect_error_pct": 0.63,
+     "format": "PNG 8-bit sRGB TrueColor",
+     "alpha": "none",
+     "sha256": "5e408ce03ff52f7d5993b2b471702a6269125fde59233dd4292b4ba2bea57fd1",
+     "generation_tool": "Arena Agent Mode generate_image",
+     "model": "UNKNOWN",
+     "normalization_operation": "none performed",
+     "parent_revision": "fresh canonical-resolution pass authorized by ruling FRESH_CANONICAL_RESOLUTION_PASSES_AUTHORIZED",
+     "content_qa": {
+      "identity": "DITCH lined water cut / LOCK two-gate chamber / WEIR three-step stepped overflow; 3/4 + plan rows; exactly three modes",
+      "style": "established family style retained; layout correct this pass"
+     },
+     "flags": [
+      "TB-08: model canvas ceiling - 1264x848 again (10th consecutive landscape-class occurrence); required scale to 3072x2048 is 2.43x > 2x bound"
+     ],
+     "status": "CANDIDATE_AWAITING_APPROVAL"
     }
    ],
    "approval": {
@@ -6043,7 +6284,7 @@
     "date": "2026-09-24",
     "scope": "B07 infrastructure; all named modes present at shared scale",
     "approved_revision": "r001",
-    "resolution": "HELD from promotion (owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS, 2026-09-25): approved candidate 1024x1024 cannot reach profile target 3072x2048 within bounds (held aspect). Options: fresh canonical-resolution pass (per-ID 1+1, explicit authorization required) or explicit as-is promotion instruction."
+    "resolution": "STILL HELD after fresh pass (ruling #20, 2026-09-25): fresh r002 is content-conforming (DITCH lined water cut / LOCK two-gate chamber / WEIR three-s...) but the model returned 1264x848 again (TB-08 canvas ceiling); 3072x2048 requires 2.43x > the 2x bound. Repair slot of the authorized 1+1 remains unused. Exits unchanged: owner as-is instruction, or a generation path that emits >=1536px landscape canvases."
    },
    "downstream_targets": [
     "CG-D-INF-CANAL",
@@ -6053,6 +6294,13 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 1
+   },
+   "fresh_pass": {
+    "authorized": "FRESH_CANONICAL_RESOLUTION_PASSES_AUTHORIZED",
+    "revision": "r002",
+    "layout_scaffold": "assets/candidates/CG-S-INF-CANAL/r002/template_3x2.png",
+    "target": "3072x2048",
+    "result": "CONTENT_CONFORMING_SIZE_BLOCKED_TB08"
    }
   },
   "CG-S-INF-MINE": {
@@ -6078,6 +6326,27 @@
       "identity": "three named modes: SHAFT supported shafthead with windlass frame; QUARRY broad stepped stone cut; ADIT braced hillside mouth; + timber bracing joinery detail; no carts/ore/tools/people"
      },
      "status": "CANDIDATE_AWAITING_APPROVAL"
+    },
+    {
+     "revision": "r002",
+     "path": "assets/candidates/CG-S-INF-MINE/r002/cg_s_inf_mine.png",
+     "native_dimensions": "1264x848",
+     "native_aspect_error_pct": 0.63,
+     "format": "PNG 8-bit sRGB TrueColor",
+     "alpha": "none",
+     "sha256": "857fa2d4107e8163d18bff0815a732546f9a75e33d01ce4448a2a1d8d717572d",
+     "generation_tool": "Arena Agent Mode generate_image",
+     "model": "UNKNOWN",
+     "normalization_operation": "none performed",
+     "parent_revision": "fresh canonical-resolution pass authorized by ruling FRESH_CANONICAL_RESOLUTION_PASSES_AUTHORIZED",
+     "content_qa": {
+      "identity": "SHAFT timber headframe with rope wheel / QUARRY three-terrace stepped cut / ADIT braced hillside mouth with tram sill; 3/4 + plan rows",
+      "style": "established family style retained; layout correct this pass"
+     },
+     "flags": [
+      "TB-08: model canvas ceiling - 1264x848 again (10th consecutive landscape-class occurrence); required scale to 3072x2048 is 2.43x > 2x bound"
+     ],
+     "status": "CANDIDATE_AWAITING_APPROVAL"
     }
    ],
    "approval": {
@@ -6086,7 +6355,7 @@
     "date": "2026-09-24",
     "scope": "B07 infrastructure; all named modes present at shared scale",
     "approved_revision": "r001",
-    "resolution": "HELD from promotion (owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS, 2026-09-25): approved candidate 1024x1024 cannot reach profile target 3072x2048 within bounds (held aspect). Options: fresh canonical-resolution pass (per-ID 1+1, explicit authorization required) or explicit as-is promotion instruction."
+    "resolution": "STILL HELD after fresh pass (ruling #20, 2026-09-25): fresh r002 is content-conforming (SHAFT timber headframe with rope wheel / QUARRY three-terrac...) but the model returned 1264x848 again (TB-08 canvas ceiling); 3072x2048 requires 2.43x > the 2x bound. Repair slot of the authorized 1+1 remains unused. Exits unchanged: owner as-is instruction, or a generation path that emits >=1536px landscape canvases."
    },
    "downstream_targets": [
     "CG-D-INF-MINE",
@@ -6096,6 +6365,13 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 1
+   },
+   "fresh_pass": {
+    "authorized": "FRESH_CANONICAL_RESOLUTION_PASSES_AUTHORIZED",
+    "revision": "r002",
+    "layout_scaffold": "assets/candidates/CG-S-INF-MINE/r002/template_3x2.png",
+    "target": "3072x2048",
+    "result": "CONTENT_CONFORMING_SIZE_BLOCKED_TB08"
    }
   },
   "CG-S-INF-WALL": {
@@ -6121,6 +6397,27 @@
       "identity": "three named modes at shared height: SEGMENT continuous capped run; GATE arched crossing with timber door ajar; BUTTRESS external sloping brace; + cap/coursing detail; no banners/merlons"
      },
      "status": "CANDIDATE_AWAITING_APPROVAL"
+    },
+    {
+     "revision": "r002",
+     "path": "assets/candidates/CG-S-INF-WALL/r002/cg_s_inf_wall.png",
+     "native_dimensions": "1264x848",
+     "native_aspect_error_pct": 0.63,
+     "format": "PNG 8-bit sRGB TrueColor",
+     "alpha": "none",
+     "sha256": "117e4da004804e051f3a3d23c0884dbe51bd7474c6b4743c778c56315046ff44",
+     "generation_tool": "Arena Agent Mode generate_image",
+     "model": "UNKNOWN",
+     "normalization_operation": "none performed",
+     "parent_revision": "fresh canonical-resolution pass authorized by ruling FRESH_CANONICAL_RESOLUTION_PASSES_AUTHORIZED",
+     "content_qa": {
+      "identity": "SEGMENT crenellated curtain / GATE arched crossing with two flanking towers / BUTTRESS external brace pier; 3/4 + plan rows",
+      "style": "established family style retained; layout correct this pass"
+     },
+     "flags": [
+      "TB-08: model canvas ceiling - 1264x848 again (10th consecutive landscape-class occurrence); required scale to 3072x2048 is 2.43x > 2x bound"
+     ],
+     "status": "CANDIDATE_AWAITING_APPROVAL"
     }
    ],
    "approval": {
@@ -6129,7 +6426,7 @@
     "date": "2026-09-24",
     "scope": "B07 infrastructure; all named modes present at shared scale",
     "approved_revision": "r001",
-    "resolution": "HELD from promotion (owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS, 2026-09-25): approved candidate 1024x1024 cannot reach profile target 3072x2048 within bounds (held aspect). Options: fresh canonical-resolution pass (per-ID 1+1, explicit authorization required) or explicit as-is promotion instruction."
+    "resolution": "STILL HELD after fresh pass (ruling #20, 2026-09-25): fresh r002 is content-conforming (SEGMENT crenellated curtain / GATE arched crossing with two ...) but the model returned 1264x848 again (TB-08 canvas ceiling); 3072x2048 requires 2.43x > the 2x bound. Repair slot of the authorized 1+1 remains unused. Exits unchanged: owner as-is instruction, or a generation path that emits >=1536px landscape canvases."
    },
    "downstream_targets": [
     "CG-D-INF-WALL",
@@ -6139,6 +6436,13 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 1
+   },
+   "fresh_pass": {
+    "authorized": "FRESH_CANONICAL_RESOLUTION_PASSES_AUTHORIZED",
+    "revision": "r002",
+    "layout_scaffold": "assets/candidates/CG-S-INF-WALL/r002/template_3x2.png",
+    "target": "3072x2048",
+    "result": "CONTENT_CONFORMING_SIZE_BLOCKED_TB08"
    }
   },
   "CG-S-MOT-CANOPY": {
@@ -6852,7 +7156,7 @@
   "CG-S-UNT-SOLDIER": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/units/cg_s_unt_soldier.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25; fresh pass under ruling FRESH_CANONICAL_RESOLUTION_PASSES_AUTHORIZED, normalized under CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidates preserved as evidence at assets/candidates/CG-S-UNT-SOLDIER/r002/cg_s_unt_soldier.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "independent unit/equipment member (shared scale/material gate; SOLDIER is the batch's only human-bearing unit)",
    "candidates": [
@@ -6873,6 +7177,24 @@
       "flags": "TB-07 canvas swap 1376x768, quadrant logic intact (5th occurrence)"
      },
      "status": "CANDIDATE_AWAITING_APPROVAL"
+    },
+    {
+     "revision": "r002",
+     "path": "assets/candidates/CG-S-UNT-SOLDIER/r002/cg_s_unt_soldier.png",
+     "native_dimensions": "1024x1024",
+     "native_aspect_error_pct": 0.0,
+     "format": "PNG 8-bit sRGB TrueColor",
+     "alpha": "none",
+     "sha256": "e7dc5347245ccb9737c6296e90a4a2d8797521850c09a3644082101855b43188",
+     "generation_tool": "Arena Agent Mode generate_image",
+     "model": "UNKNOWN",
+     "normalization_operation": "none performed",
+     "parent_revision": "fresh canonical-resolution pass authorized by ruling FRESH_CANONICAL_RESOLUTION_PASSES_AUTHORIZED; 2x2 scaffold; prior approved candidate kept as style reference",
+     "content_qa": {
+      "identity": "ONE stylized armored figure, neutral A-pose, EMPTY open hands, closed simple helmet with vision slit, no plume/face; front/side/rear/top agree; TB-07 canvas flag CLEARED (square canvas honored)",
+      "style": "established family style retained; square canvas honored"
+     },
+     "status": "CANDIDATE_AWAITING_APPROVAL"
     }
    ],
    "approval": {
@@ -6881,7 +7203,7 @@
     "date": "2026-09-24",
     "scope": "B08 unit/equipment; en-bloc gate approval; canvas swap accepted as technical pass (precedent)",
     "approved_revision": "r001",
-    "resolution": "HELD from promotion (owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS, 2026-09-25): approved candidate 1376x768 cannot reach profile target 2048x2048 within bounds (held aspect). Options: fresh canonical-resolution pass (per-ID 1+1, explicit authorization required) or explicit as-is promotion instruction."
+    "resolution": "PROMOTED to canonical 2026-09-25: fresh canonical-resolution pass (ruling #20) produced a within-bounds square sheet; Lanczos 2.0x to 2048x2048"
    },
    "downstream_targets": [
     "CG-D-UNT-SOLDIER"
@@ -6890,6 +7212,23 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 1
+   },
+   "fresh_pass": {
+    "authorized": "FRESH_CANONICAL_RESOLUTION_PASSES_AUTHORIZED",
+    "revision": "r002",
+    "layout_scaffold": "assets/candidates/CG-S-UNT-SOLDIER/r002/template_2x2.png",
+    "target": "3072x2048",
+    "result": "CONFORMING_AND_PROMOTED"
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "rulings #18 + #20",
+    "operation": "LANCZOS_UP2X 1024x1024 -> 2048x2048 (exactly 2.0x same-aspect; <=2x bound); fresh pass r002",
+    "source_candidate": "assets/candidates/CG-S-UNT-SOLDIER/r002/cg_s_unt_soldier.png",
+    "source_candidate_sha256": "e7dc5347245ccb9737c6296e90a4a2d8797521850c09a3644082101855b43188",
+    "canonical_dimensions": "2048x2048",
+    "canonical_sha256": "ba074f8383bdd2dd520008e4cdba1d454547decc5f88050fd18cf002d1fcb56a",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
    }
   },
   "CG-S-UNT-WAGON": {
@@ -9906,7 +10245,8 @@
    ],
    "chunk_b": "22 promoted (B05-B07 UP2X); 88/105 canonical PRESENT; chunk C (B08, 17 UP2X) next",
    "chunk_c": "17 promoted (B08 UP2X; SOLDIER held); 105/105 promotable canonical",
-   "final": "COMPLETE 2026-09-25: 105 canonical sources in assets/source/ (218.6MB, dims verified); 14 HELD beyond bounds (fresh canonical-resolution passes or explicit as-is instruction required); 2 no-source IDs (B00 block final; LIFE-S ratified rejection)."
+   "final": "COMPLETE 2026-09-25: 105 canonical sources in assets/source/ (218.6MB, dims verified); 14 HELD beyond bounds (fresh canonical-resolution passes or explicit as-is instruction required); 2 no-source IDs (B00 block final; LIFE-S ratified rejection).",
+   "fresh_passes": "Ruling #20 pass 1/2: +5 canonical (squares); 5 landscape content-conforming but TB-08 size-blocked, still HELD; pass 2 (LIFE-M, LIFE-Q, FARM, ROAD) next turn"
   }
  },
  "human_rulings": [
@@ -10140,6 +10480,14 @@
     "date": "2026-09-24",
     "authority": "human (repository owner) via Arena gate answer (option keepblocked)",
     "decision": "B00 dimensional BLOCK is FINAL: the 3072x2048 style board is not generated; CG-S-ART-DIRECTION remains NO_AMENDMENT_RUN_STOPPED; the B01-era set remains the provisional style anchor of record."
+   }
+  },
+  {
+   "id": "FRESH_CANONICAL_RESOLUTION_PASSES_AUTHORIZED",
+   "ruling": {
+    "date": "2026-09-24",
+    "authority": "human (repository owner), reply \"go on\" to the completion report presenting the two recorded exits for the 14 HELD sheets",
+    "decision": "Authorize the first recorded exit: fresh canonical-resolution passes for the 14 HELD IDs (per-ID 1+1 budgets), each success normalizing within bounds under ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS. The as-is promotion exit was NOT selected. Sheets that still cannot reach their profile targets within bounds after their pass remain HELD with dispositions intact."
    }
   }
  ],
@@ -10388,6 +10736,12 @@
    "recorded_utc": "2026-09-25T00:51:30+00:00",
    "observation": "Chunk C executed: 17 B08 sheets (9 ENV -> environment/, 8 UNT -> units/) Lanczos UP2X 1024^2->2048^2 written to receipt canonical paths; UNT-SOLDIER correctly held (1376x768 aspect). FINAL STATE: 105/105 promotable sources canonical and dimension-verified; global re-verify passed on all 105 (path + dimensions); 14 HELD receipts carry dispositions; 2 no-source IDs unchanged.",
    "content_loss": "none"
+  },
+  {
+   "incident": "FRESH_CANONICAL_PASSES_CHROMIUM_SQUARES_PROMOTED",
+   "recorded_utc": "2026-09-25T00:56:43+00:00",
+   "observation": "Ruling #20 fresh passes fired 10/10 (turn cap consumed). Five square-canvas victims repaired and PROMOTED to 2048x2048 canonical (MARKET r002, SHRINE r002, ANTENNA-CROWN r004 - six-frond count clean at zoom after two prior TB-06 strikes, GALLERY r002, SOLDIER r002 - TB-07 flag cleared). Five landscape sheets (BRIDGE/CANAL/MINE/WALL/LIFE-H) are content-conforming - LIFE-H layout repaired - but again 1264x848; TB-08 canvas-ceiling finding recorded (10/10 landscape occurrences); they remain HELD with their 1+1 repair slots unused. Canonical count 110/119.",
+   "content_loss": "none"
   }
  ],
  "tool_behavior_findings": [
@@ -10419,6 +10773,12 @@
    "date": "2026-09-24",
    "rule": "The image model can abandon a provided square scaffold canvas and render a native landscape canvas (observed 1376x768) even for a 2x2 sheet, after two prior generations on identical layout instructions honored the scaffold. Layout logic may survive (quadrants intact) but the sheet no longer matches its scaffold; verify identify() output on EVERY generation and treat canvas deviation as a disclosed technical flag for the gate, not a silent accept or an automatic content rejection.",
    "evidence": "B05 SENSE-ANTENNA-CROWN r003: first two attempts 1024x1024 on scaffold; r003 1376x768 with intact quadrant logic.; B05 LIFE-M r002: 1376x768 recurrence on a 3x2 lifecycle sheet (prior r001 honored the scaffold)"
+  },
+  {
+   "finding_id": "TB-08_LANDSCAPE_CANVAS_CEILING",
+   "date": "2026-09-24",
+   "rule": "The image model emits landscape-class content at exactly 1264x848 regardless of scaffold canvas or instructional width (1024-wide 3x2 scaffold, 1264x848 3x2 scaffold, explicit \"width 1.5x height\" text). 10/10 landscape-class generations across the run landed at exactly 1264x848 (B01 LIFE sheets, B02 FARM/ROAD, B04 LIFE attempts, B07 INF sheets, all 5 fresh-pass landscape sheets). Historical TB-07 1376x768 events are the same class with model-varied width. Consequence: 3:2-class 3072x2048 profile targets are unreachable within the <=2x normalization bound; mitigation requires either an as-is owner instruction or a generation path that emits >=1536px-wide canvases.",
+   "evidence": "Fresh passes under FRESH_CANONICAL_RESOLUTION_PASSES_AUTHORIZED: BRIDGE/CANAL/MINE/WALL/LIFE-H all 1264x848 while the same-turn square requests honored 1024x1024 exactly (5/5)."
   }
  ]
 }
