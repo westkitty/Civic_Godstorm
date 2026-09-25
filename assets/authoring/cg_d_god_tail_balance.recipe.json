@@ -1,7 +1,7 @@
 {
   "id": "CG-D-GOD-TAIL-BALANCE",
   "recipe": "CG-Q-CONVERSION",
-  "revision": "c001",
+  "revision": "c003",
   "contract": "CG-V1.0.0",
   "stages": [
     "tools/models/build_volumes.py",

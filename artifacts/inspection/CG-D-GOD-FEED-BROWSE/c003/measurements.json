@@ -1,0 +1,101 @@
+{
+  "id": "CG-D-GOD-FEED-BROWSE",
+  "glb": "assets/runtime/models/cg_d_god_feed_browse.glb",
+  "sha256": "05d8ac5ee50f53d76763891f0285f423442dfe7fe0a3b1d7dbfa079d2d97ac0d",
+  "bounds": {
+    "min": [
+      -4.3424,
+      -3.4278,
+      0.0867
+    ],
+    "max": [
+      4.3443,
+      3.4256,
+      12.9958
+    ]
+  },
+  "views": {
+    "front": {
+      "sheet": "CG-S-GOD-FEED-BROWSE",
+      "panel": 0,
+      "iou": 0.937,
+      "declaredStretch": 0.4082,
+      "landmarkErrorMaxFraction": 0.0155,
+      "passes": true
+    },
+    "left": {
+      "sheet": "CG-S-GOD-FEED-BROWSE",
+      "panel": 1,
+      "iou": 0.9915,
+      "declaredStretch": 0.4282,
+      "landmarkErrorMaxFraction": 0.0037,
+      "passes": true
+    },
+    "rear": {
+      "sheet": "CG-S-GOD-FEED-BROWSE",
+      "panel": 2,
+      "iou": 0.95,
+      "declaredStretch": 0.3549,
+      "landmarkErrorMaxFraction": 0.0129,
+      "passes": true
+    },
+    "top": {
+      "sheet": "CG-S-GOD-FEED-BROWSE",
+      "panel": 3,
+      "iou": 0.9902,
+      "declaredStretch": 0.0809,
+      "landmarkErrorMaxFraction": 0.0037,
+      "passes": true
+    }
+  },
+  "nonProjectable": {},
+  "structure": {
+    "lods": {
+      "LOD0": {
+        "triangles": 3938,
+        "vertices": 1971,
+        "budget": 4000,
+        "withinBudget": true,
+        "weightSumMaxError": 2.9802322387695312e-08,
+        "nanWeights": false,
+        "jointsReferenced": 2,
+        "hasVertexColor": true
+      },
+      "LOD1": {
+        "triangles": 1968,
+        "vertices": 986,
+        "budget": 2000,
+        "withinBudget": true,
+        "weightSumMaxError": 2.9802322387695312e-08,
+        "nanWeights": false,
+        "jointsReferenced": 2,
+        "hasVertexColor": true
+      },
+      "LOD2": {
+        "triangles": 688,
+        "vertices": 346,
+        "budget": 700,
+        "withinBudget": true,
+        "weightSumMaxError": 2.9802322387695312e-08,
+        "nanWeights": false,
+        "jointsReferenced": 2,
+        "hasVertexColor": true
+      }
+    },
+    "lodBudgets": true,
+    "skins": 1,
+    "joints": 2,
+    "jointLimit": 64,
+    "withinJointLimit": true,
+    "inverseBindFinite": true,
+    "inverseBindPositiveDeterminant": true,
+    "weightsNormalized": true,
+    "materials": 1,
+    "materialsWithinLimit": true,
+    "textures": 0,
+    "animations": 0,
+    "opaqueNonMetal": true
+  },
+  "silhouettePass": true,
+  "structuralPass": true
+}

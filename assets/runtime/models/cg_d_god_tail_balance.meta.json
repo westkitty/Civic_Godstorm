@@ -2,17 +2,17 @@
   "id": "CG-D-GOD-TAIL-BALANCE",
   "slug": "cg_d_god_tail_balance",
   "glb": "assets/runtime/models/cg_d_god_tail_balance.glb",
-  "sha256": "af04b7c38ba7ac351600fc5a348f5c4f46a0e820ff93407e328bc4d88b7af740",
-  "bytes": 229156,
+  "sha256": "5902d8ab6e03886c58b1de1f04b4164cd6e5cda712f75d1c83a303b0eab0bad2",
+  "bytes": 229296,
   "tool": {
     "blender": "4.5.14 LTS",
     "exporter": "io_scene_gltf2 (bundled)",
-    "python": "3.11.15"
+    "python": "3.11.16"
   },
   "recipe": {
     "path": "tools/models/q_recipe.json",
-    "revision": "c001",
-    "sha256": "70cfd96f21b35660459012aa2d0a9c0db84068d5d134f4550d00e7df3fbaa023"
+    "revision": "c003",
+    "sha256": "26139c46ee72eb28bfad72b211ce5c54835f3ebeb67ea00e70bb5106be7497e1"
   },
   "triangleBudget": [
     4000,
@@ -22,7 +22,7 @@
   "skinChecks": [
     {
       "lod": "LOD0",
-      "weightSumMaxError": 2.220446049250313e-16,
+      "weightSumMaxError": 3.3306690738754696e-16,
       "maxInfluences": 4,
       "nan": false
     },
@@ -57,7 +57,7 @@
     ],
     "meshes": {
       "cg_d_god_tail_balance_LOD0": {
-        "triangles": 3938,
+        "triangles": 3940,
         "attributes": [
           "COLOR_0",
           "JOINTS_0",
@@ -66,22 +66,22 @@
           "WEIGHTS_0"
         ],
         "min": [
-          -2.3911030292510986,
-          -2.398452043533325,
-          -23.97713851928711
+          -2.4018025398254395,
+          -2.4133293628692627,
+          -23.978784561157227
         ],
         "max": [
-          2.40740704536438,
-          2.408310651779175,
-          -0.16002961993217468
+          2.410707950592041,
+          2.4198081493377686,
+          -0.16006441414356232
         ],
-        "vertices": 1971,
+        "vertices": 1972,
         "materials": [
           0
         ]
       },
       "cg_d_god_tail_balance_LOD1": {
-        "triangles": 1968,
+        "triangles": 1970,
         "attributes": [
           "COLOR_0",
           "JOINTS_0",
@@ -90,16 +90,16 @@
           "WEIGHTS_0"
         ],
         "min": [
-          -2.3993887901306152,
-          -2.4058494567871094,
-          -23.98122787475586
+          -2.402402639389038,
+          -2.4124112129211426,
+          -23.970809936523438
         ],
         "max": [
-          2.40740704536438,
-          2.404635190963745,
-          -0.1601802110671997
+          2.4124040603637695,
+          2.4183387756347656,
+          -0.1601255089044571
         ],
-        "vertices": 986,
+        "vertices": 987,
         "materials": [
           0
         ]
@@ -114,14 +114,14 @@
           "WEIGHTS_0"
         ],
         "min": [
-          -2.386899709701538,
-          -2.3947482109069824,
-          -24.005908966064453
+          -2.394507646560669,
+          -2.4140827655792236,
+          -23.98307991027832
         ],
         "max": [
-          2.41660213470459,
-          2.4186737537384033,
-          -0.16038578748703003
+          2.399238109588623,
+          2.422806739807129,
+          -0.16070325672626495
         ],
         "vertices": 346,
         "materials": [

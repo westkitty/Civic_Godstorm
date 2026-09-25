@@ -1,0 +1,36 @@
+{
+  "id": "CG-D-GOD-TORSO-Q",
+  "glb": "assets/runtime/models/cg_d_god_torso_q.glb",
+  "lods": {
+    "LOD0": {
+      "present": true,
+      "trianglesFile": 3940,
+      "trianglesReimported": 3940,
+      "boundsErrorU": 7.5e-05,
+      "weightSumMaxError": 0.0,
+      "vertexGroups": 3
+    },
+    "LOD1": {
+      "present": true,
+      "trianglesFile": 1970,
+      "trianglesReimported": 1970,
+      "boundsErrorU": 7.5e-05,
+      "weightSumMaxError": 0.0,
+      "vertexGroups": 3
+    },
+    "LOD2": {
+      "present": true,
+      "trianglesFile": 688,
+      "trianglesReimported": 688,
+      "boundsErrorU": 7.5e-05,
+      "weightSumMaxError": 0.0,
+      "vertexGroups": 3
+    }
+  },
+  "skeleton": {
+    "jointsInFile": 3,
+    "bonesReimported": 3,
+    "namesEqual": true
+  },
+  "pass": true
+}

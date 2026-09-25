@@ -1,7 +1,7 @@
 {
   "id": "CG-D-GOD-FORM-Q",
   "recipe": "CG-Q-CONVERSION",
-  "revision": "c001",
+  "revision": "c003",
   "contract": "CG-V1.0.0",
   "stages": [
     "tools/models/build_volumes.py",
@@ -59,21 +59,11 @@
         "u": "-z",
         "v": "+x",
         "deviation": "top view drawn with forward toward image left"
-      },
-      "left": {
-        "sheet": "CG-S-GOD-LIFE-Q",
-        "grid": [
-          3,
-          3
-        ],
-        "panel": 1,
-        "u": "-z",
-        "v": "-y",
-        "deviation": "left profile taken from the approved LIFE-Q prime panel; FORM-Q panel 1 is a three-quarter view (non-projectable)"
       }
     },
     "nonProjectable": {
-      "CG-S-GOD-FORM-Q panel 1": "drawn as an elevated three-quarter view, not the orthographic left view the profile names; used for identity review only"
+      "CG-S-GOD-FORM-Q panel 1": "drawn as an elevated three-quarter view, not the orthographic left view the profile names; used for identity review only",
+      "CG-S-GOD-LIFE-Q r005 prime panel": "owner ruling OR-2026-09-25-02: FORM-Q r004 is anatomically authoritative; LIFE-Q r005 (domed shell) is continuity drift to be corrected/replaced, so it does not score or shape FORM-Q"
     },
     "hullDilationU": 0.6,
     "blendU": 1.1,
@@ -94,7 +84,7 @@
         "scale": [
           0.78,
           1.2875,
-          0.7049999999999998
+          0.62
         ]
       },
       {
@@ -103,16 +93,16 @@
         "position": [
           0,
           18.475,
-          9.9
+          9.5
         ],
         "euler": [
-          17.25,
+          11.25,
           0,
           0
         ],
         "scale": [
-          0.9649999999999999,
-          0.9649999999999999,
+          0.7649999999999997,
+          0.7649999999999997,
           0.7200000000000001
         ]
       },
@@ -141,7 +131,7 @@
         "name": "tail",
         "position": [
           0,
-          14.45,
+          14.95,
           -7.0
         ],
         "euler": [
@@ -150,8 +140,8 @@
           0
         ],
         "scale": [
-          0.8899999999999999,
-          0.8899999999999999,
+          0.8099999999999998,
+          0.8099999999999998,
           0.4999999999999999
         ]
       },
@@ -199,7 +189,7 @@
         "position": [
           -4.125,
           14.5,
-          -6.400000000000001
+          -4.000000000000003
         ],
         "euler": [
           0,
@@ -218,7 +208,7 @@
         "position": [
           4.125,
           14.5,
-          -6.400000000000001
+          -4.000000000000003
         ],
         "euler": [
           0,
@@ -278,43 +268,41 @@
       "objective": "mean projected silhouette IoU over scored form views",
       "gridStepU": 0.2,
       "passes": 8,
-      "evaluations": 311,
+      "evaluations": 304,
       "start": {
-        "mean": 0.8469,
-        "front": 0.9271,
-        "rear": 0.8847,
-        "top": 0.7765,
-        "left": 0.7992,
+        "mean": 0.8864,
+        "front": 0.9544,
+        "rear": 0.942,
+        "top": 0.7629,
         "anchorsPass": 1
       },
       "final": {
-        "mean": 0.8669,
-        "front": 0.9563,
-        "rear": 0.9414,
-        "top": 0.773,
-        "left": 0.7969
+        "mean": 0.9025,
+        "front": 0.9549,
+        "rear": 0.9408,
+        "top": 0.8119
       },
       "parameters": {
         "front_leg_z": 8.1,
-        "hind_leg_z": -6.4,
+        "hind_leg_z": -4.0,
         "front_leg_x": 3.75,
         "hind_leg_x": 4.125,
         "leg_top_y": 14.5,
         "leg_girth": 0.875,
         "head_y": 18.475,
-        "head_z": 9.9,
-        "head_pitch": 17.25,
-        "head_scale": 0.965,
-        "tail_y": 14.45,
+        "head_z": 9.5,
+        "head_pitch": 11.25,
+        "head_scale": 0.765,
+        "tail_y": 14.95,
         "tail_pitch": 3.0,
         "tail_length": 0.5,
-        "tail_girth": 0.89,
+        "tail_girth": 0.81,
         "torso_y": 14.4,
         "torso_z": 1.5,
         "torso_pitch": -2.0,
         "torso_width": 0.78,
         "torso_height": 1.2875,
-        "torso_length": 0.705,
+        "torso_length": 0.62,
         "head_length": 0.72
       }
     },

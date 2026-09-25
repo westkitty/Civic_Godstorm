@@ -24,6 +24,7 @@ import build_volumes as bv  # noqa: E402
 from volumes import Grid  # noqa: E402
 
 RECIPE_PATH = bv.ROOT / 'tools/models/q_recipe.json'
+FRONT_REAR_FLOOR = 0.90
 
 # name: (instances, field, component, step, lower, upper, mirror-x)
 PARAMS = {
@@ -127,7 +128,10 @@ def main() -> None:
                 set_(trial, name, trial_v)
                 score, tious = objective(modules, trial, grid, hull_sdf)
                 evaluations += 1
-                if score > best + 1e-4 and (tious['anchorsPass'] or not ious.get('anchorsPass')):
+                # Owner ruling OR-2026-09-25-03: the top view is binding and the passing front/rear
+                # identity must be preserved, so a trial may not drop either below the gate.
+                keeps_front_rear = all(tious.get(v, 1.0) >= FRONT_REAR_FLOOR for v in ('front', 'rear'))
+                if score > best + 1e-4 and keeps_front_rear and (tious['anchorsPass'] or not ious.get('anchorsPass')):
                     best, ious, form, improved = score, tious, trial, True
                     print(f'  pass {p} {name}={trial_v:.3f} -> {best:.4f}')
                     break

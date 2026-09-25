@@ -2,17 +2,17 @@
   "id": "CG-D-GOD-SENSE-EYE-RING",
   "slug": "cg_d_god_sense_eye_ring",
   "glb": "assets/runtime/models/cg_d_god_sense_eye_ring.glb",
-  "sha256": "ccc14c1a836d14d863673450f98578626ebb62ff7358e4d4644d27d36388fa88",
-  "bytes": 157188,
+  "sha256": "c50a34dcb8ad2803f051dc659a4bb283d1d7231d3f035d2cea2ca8e2156bc0f4",
+  "bytes": 155560,
   "tool": {
     "blender": "4.5.14 LTS",
     "exporter": "io_scene_gltf2 (bundled)",
-    "python": "3.11.15"
+    "python": "3.11.16"
   },
   "recipe": {
     "path": "tools/models/q_recipe.json",
-    "revision": "c001",
-    "sha256": "70cfd96f21b35660459012aa2d0a9c0db84068d5d134f4550d00e7df3fbaa023"
+    "revision": "c003",
+    "sha256": "26139c46ee72eb28bfad72b211ce5c54835f3ebeb67ea00e70bb5106be7497e1"
   },
   "triangleBudget": [
     4000,
@@ -45,67 +45,67 @@
     ],
     "meshes": {
       "cg_d_god_sense_eye_ring_LOD0": {
-        "triangles": 3938,
+        "triangles": 3940,
         "attributes": [
           "COLOR_0",
           "NORMAL",
           "POSITION"
         ],
         "min": [
-          -4.007333755493164,
-          -1.000120997428894,
-          -2.505274534225464
+          -4.003901958465576,
+          -1.0006564855575562,
+          -2.5050835609436035
         ],
         "max": [
-          4.006690502166748,
-          1.0002886056900024,
-          2.5162556171417236
+          4.003822326660156,
+          1.0006351470947266,
+          2.5381150245666504
         ],
-        "vertices": 1934,
+        "vertices": 1918,
         "materials": [
           0
         ]
       },
       "cg_d_god_sense_eye_ring_LOD1": {
-        "triangles": 1966,
+        "triangles": 1970,
         "attributes": [
           "COLOR_0",
           "NORMAL",
           "POSITION"
         ],
         "min": [
-          -4.014632225036621,
-          -1,
-          -2.5081775188446045
+          -4.01188850402832,
+          -1.0023229122161865,
+          -2.5050835609436035
         ],
         "max": [
-          3.998703718185425,
-          1.0030505657196045,
-          2.5133605003356934
+          4.001900672912598,
+          1.0027002096176147,
+          2.544630289077759
         ],
-        "vertices": 948,
+        "vertices": 933,
         "materials": [
           0
         ]
       },
       "cg_d_god_sense_eye_ring_LOD2": {
-        "triangles": 686,
+        "triangles": 688,
         "attributes": [
           "COLOR_0",
           "NORMAL",
           "POSITION"
         ],
         "min": [
-          -4.0690789222717285,
-          -1.000887393951416,
-          -2.4805691242218018
+          -3.9585516452789307,
+          -1.0004817247390747,
+          -2.491872549057007
         ],
         "max": [
-          4.0690789222717285,
-          1.2006725072860718,
-          2.524228096008301
+          3.9896011352539062,
+          1.0027161836624146,
+          2.5751373767852783
         ],
-        "vertices": 308,
+        "vertices": 292,
         "materials": [
           0
         ]

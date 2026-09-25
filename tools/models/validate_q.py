@@ -27,7 +27,7 @@ from silhouettes import sheet_masks  # noqa: E402
 ROOT = Path(__file__).resolve().parents[2]
 RECIPE = json.loads((ROOT / 'tools/models/q_recipe.json').read_text())
 SOURCES = json.loads((ROOT / 'assets/provenance.json').read_text())['records']
-SOURCE_PATH = {r['id']: r['path'] for r in SOURCES}
+SOURCE_PATH = {r['id']: r['path'] for r in SOURCES if r['status'] == 'APPROVED_SOURCE'}
 COMPONENTS = {5120: np.int8, 5121: np.uint8, 5122: np.int16, 5123: np.uint16, 5125: np.uint32, 5126: np.float32}
 WIDTH = {'SCALAR': 1, 'VEC2': 2, 'VEC3': 3, 'VEC4': 4, 'MAT4': 16}
 IOU_TARGET = 0.90

@@ -41,7 +41,8 @@ const recipe = JSON.parse(readFileSync(resolve(root, 'tools/models/q_recipe.json
 };
 const revision = arg('--revision', recipe.revision);
 const executablePath = arg('--browser', process.env.CG_CHROMIUM ?? '');
-const ffmpeg = arg('--ffmpeg', resolve(root, '.toolchain/py/lib/python3.11/site-packages/imageio_ffmpeg/binaries/ffmpeg-linux-x86_64-v7.0.2'));
+// The static ffmpeg bundled by imageio-ffmpeg (platform-specific filename, resolved by the package).
+const ffmpeg = arg('--ffmpeg', execFileSync(resolve(root, '.toolchain/py/bin/python'), ['-c', 'import imageio_ffmpeg; print(imageio_ffmpeg.get_ffmpeg_exe())'], { encoding: 'utf8' }).trim());
 const poses = Object.keys((JSON.parse(readFileSync(resolve(root, 'src/render/god/qPoses.json'), 'utf8')) as { poses: Record<string, unknown> }).poses);
 const ids = [...Object.keys(recipe.modules), recipe.form.id];
 

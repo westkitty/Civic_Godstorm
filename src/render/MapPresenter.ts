@@ -1,5 +1,5 @@
 // Schematic development map presentation (CG-R-DEBUG family). The production terrain recipe
-// CG-R-TERRAIN is later milestone work (its CG-S-ART-DIRECTION source is now approved), so this draws flat, clearly
+// CG-R-TERRAIN is later milestone work (its CG-S-ART-DIRECTION source is BLOCKED by owner ruling), so this draws flat, clearly
 // schematic hex prisms from observed knowledge plus the code-defined CG-R-FOG and CG-R-FOOTPRINTS
 // overlays. Three horizontal copies present the east-west wrap; state is never duplicated.
 

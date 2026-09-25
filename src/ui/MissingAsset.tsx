@@ -11,8 +11,17 @@ interface MissingAssetProps {
  */
 export function MissingAsset({ assetId, className }: MissingAssetProps) {
   const ref = assetRegistry.resolve(assetId);
-  if (ref.status === 'VERIFIED') {
+  // Only runtime files are served. An approved authored source (assets/source/**) is a reference
+  // for derivation, not a shipped image, until its own integration milestone places it in runtime.
+  if (ref.status === 'VERIFIED' && ref.path.startsWith('assets/runtime/')) {
     return <img className={className} src={`${import.meta.env.BASE_URL}${ref.path}`} alt="" />;
+  }
+  if (ref.status === 'VERIFIED') {
+    return (
+      <div className={`cg-missing ${className ?? ''}`} data-unintegrated-asset={assetId}>
+        <span className="cg-missing__label">NOT INTEGRATED {assetId} (approved source only)</span>
+      </div>
+    );
   }
   return (
     <div className={`cg-missing ${className ?? ''}`} data-missing-asset={assetId}>

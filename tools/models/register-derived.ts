@@ -72,6 +72,8 @@ for (const model of models) {
     bytes: bytes.length,
     revision,
     sources: sources.map((s) => s.id),
+    // Source closure: the exact approved bytes this candidate was built and measured from.
+    sourceSha256: Object.fromEntries(sources.map((s) => [s.id, s.sha256])),
     authoring: { blend: `assets/authoring/${model.slug}.blend`, recipe: `assets/authoring/${model.slug}.recipe.json`, meta: `assets/runtime/models/${model.slug}.meta.json` },
     validation: `${dir}/validation.json`,
     gates,

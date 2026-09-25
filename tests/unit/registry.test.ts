@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import manifest from '../../assets/manifest.json';
+import missing from '../../assets/missing.json';
 import { assetRegistry, createAssetRegistry, UnknownAssetIdError } from '../../src/assets/registry.ts';
 
 describe('asset registry', () => {
@@ -10,8 +11,9 @@ describe('asset registry', () => {
     for (const file of manifest.verifiedFiles) {
       expect(assetRegistry.resolve(file.id)).toEqual({ id: file.id, status: 'VERIFIED', path: file.path });
     }
-    // An ID without verified evidence (B03, not produced) stays an explicit MISSING reference.
-    expect(assetRegistry.resolve('CG-S-GOD-TORSO-H')).toEqual({ id: 'CG-S-GOD-TORSO-H', status: 'MISSING' });
+    // Every ID without verified evidence (e.g. the owner-blocked CG-S-ART-DIRECTION) stays an explicit MISSING reference.
+    for (const { id } of missing.unresolved) expect(assetRegistry.resolve(id)).toEqual({ id, status: 'MISSING' });
+    expect(missing.unresolved.map((u) => u.id)).toContain('CG-S-ART-DIRECTION');
   });
 
   it('rejects guessed IDs instead of inventing a path', () => {

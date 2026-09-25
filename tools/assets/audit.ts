@@ -25,11 +25,13 @@ export interface ProvenanceRecord {
   readonly status: string;
   readonly path?: string;
   readonly sha256?: string;
-  readonly nativeWidth?: number;
-  readonly nativeHeight?: number;
+  /** Canonical file dimensions after the recorded normalization (not the generated native size). */
+  readonly width?: number;
+  readonly height?: number;
   readonly profileDimensions?: readonly [number, number];
   readonly dimensionWaiver?: string;
   readonly approval?: { readonly approver?: string; readonly ruling?: string };
+  readonly sourceSha256?: Readonly<Record<string, string>>;
 }
 
 export interface ProvenanceFile {
@@ -67,7 +69,7 @@ export function approvedSourceProblems(
   if (createHash('sha256').update(bytes).digest('hex') !== record.sha256) problems.push(`${record.id}: sha256 mismatch`);
   let facts: { width: number; height: number };
   try { facts = pngFacts(bytes); } catch (error) { return [...problems, `${record.id}: ${(error as Error).message}`]; }
-  if (facts.width !== record.nativeWidth || facts.height !== record.nativeHeight) problems.push(`${record.id}: recorded dimensions differ from file`);
+  if (facts.width !== record.width || facts.height !== record.height) problems.push(`${record.id}: recorded dimensions differ from file`);
   const [pw, ph] = record.profileDimensions ?? [0, 0];
   const exact = facts.width === pw && facts.height === ph;
   if (!exact && !(record.dimensionWaiver !== undefined && rulingIds.has(record.dimensionWaiver))) {
@@ -132,7 +134,7 @@ export function auditAssets(root: string): AuditReport {
   check('canonicalPaths.registered', unregistered.length === 0, unregistered.join(', ') || 'no unregistered files at canonical paths');
 
   // Section 17.2/18.2: an approved source is a human-approved file at its canonical path whose
-  // hash and native dimensions match the record. Dimensions differ from the profile only under a
+  // hash and file dimensions match the record. Dimensions differ from the profile only under a
   // recorded human ruling.
   const rulingIds = new Set((provenance.humanRulings ?? []).map((ruling) => ruling.id));
   const sourceProblems: string[] = [];
@@ -150,7 +152,7 @@ export function auditAssets(root: string): AuditReport {
     if (authoredFile && !approvedIds.has(file.id)) sourceProblems.push(`${file.id}: in manifest without an APPROVED_SOURCE record`);
   }
   check('provenance.approvedSources', sourceProblems.length === 0,
-    sourceProblems.join('; ') || `${approvedRecords.length} approved sources verified (hash, path, native dimensions, waiver)`);
+    sourceProblems.join('; ') || `${approvedRecords.length} approved sources verified (hash, path, dimensions, waiver)`);
 
   // Derived candidates (Section 18.2 DERIVED_UNVERIFIED): the recorded file must be the specified
   // path with the recorded hash, and every authored source it depends on must be approved.
@@ -163,6 +165,13 @@ export function auditAssets(root: string): AuditReport {
     const target = resolve(root, row.path);
     if (!existsSync(target)) { derivedProblems.push(`${record.id}: file absent`); continue; }
     if (createHash('sha256').update(readFileSync(target)).digest('hex') !== record.sha256) derivedProblems.push(`${record.id}: sha256 mismatch (rerun the model pipeline)`);
+    // Source closure: a derived candidate built from bytes other than the current approved source is stale.
+    const approvedSha = new Map(approvedRecords.map((r) => [r.id, r.sha256]));
+    const closure = record.sourceSha256;
+    if (!closure) derivedProblems.push(`${record.id}: no recorded source closure (rerun the model pipeline)`);
+    else for (const [dep, sha] of Object.entries(closure)) {
+      if (approvedSha.get(dep) !== sha) derivedProblems.push(`${record.id}: built from ${dep} bytes that are not the current approved source (rerun the model pipeline)`);
+    }
     for (const dep of row.dependencies) {
       const depRow = byId.get(dep);
       if (depRow && (depRow.assetClass === 'ARENA SOURCE ASSET' || depRow.assetClass === 'DIRECT ARENA ASSET') && !approvedIds.has(dep)) {

@@ -26,7 +26,8 @@ test('boots the shell with a rendering WebGL2 world view and honest asset status
   await expect(page.getByTestId('renderer-status')).toContainText('draw calls');
   const resolved = manifest.verifiedFiles.length + manifest.registeredRecipes.length;
   await expect(page.getByTestId('asset-summary')).toHaveText(`285 IDs specified; ${285 - resolved} unresolved`);
-  await expect(page.getByText('MISSING CG-A-ART-TITLE')).toBeVisible();
+  // The title source is approved but not yet integrated into the runtime (later milestone).
+  await expect(page.getByText('NOT INTEGRATED CG-A-ART-TITLE (approved source only)')).toBeVisible();
 
   // The canvas must contain actual rendered pixels, not only the clear colour.
   const canvas = page.getByTestId('world-canvas');

@@ -1,11 +1,12 @@
 // Age and injury sample for the first Q God (M03). This is the approved-source subset of
 // CG-R-GOD-AGE and CG-R-GOD-DAMAGE (master Section 17.8): proportion-safe stage scaling, wear
 // colour, one locomotor injury posture and one visible flank scar. No new anatomy is added.
-// Stage proportions are measured from the approved CG-S-GOD-LIFE-Q panels (declared six-panel map,
-// silhouette bounding boxes relative to the prime panel: juvenile 260x172 px, prime 361x215 px,
-// ancient 382x219 px). The injured-prime panel shows a wounded near (left) foreleg and one flank
-// scar.
-
+// Stage proportions are measured from the canonical CG-S-GOD-LIFE-Q r005 sheet (Arena 15c6f1b, 3x2
+// panels, silhouette bounding boxes: juvenile 193x154 px, prime 371x256 px, ancient 372x270 px,
+// width x height). The injured-prime panel shows a wounded near foreleg and one scar. r005 draws
+// the body with a domed carapace that FORM-Q r004 does not have. Owner ruling OR-2026-09-25-02 calls
+// r005 continuity drift to be replaced, so these proportions are provisional until a corrected
+// LIFE-Q exists (see docs/evidence/M03.md).
 import { BufferAttribute, Color, Vector3, type Mesh, type MeshStandardMaterial, type Object3D } from 'three';
 import type { AxisRotation, QRig } from './qRig.ts';
 
@@ -14,12 +15,12 @@ export const LIFE_STAGES: readonly LifeStage[] = ['juvenile', 'prime', 'ancient'
 
 /** Whole-body scale per stage: x (width) uses the geometric mean of the measured length and height ratios. */
 export const STAGE_SCALE: Record<LifeStage, readonly [number, number, number]> = {
-  juvenile: [0.759, 0.8, 0.72],
+  juvenile: [0.559, 0.602, 0.52],
   prime: [1, 1, 1],
-  ancient: [1.038, 1.019, 1.058],
+  ancient: [1.029, 1.055, 1.003],
 };
-/** Relative head scale: the juvenile panel's head is visibly larger in proportion to its body. */
-const STAGE_HEAD_SCALE: Record<LifeStage, number> = { juvenile: 1.12, prime: 1, ancient: 1 };
+/** Relative head scale: the r005 juvenile panel shows no enlarged head, so no stage changes it. */
+const STAGE_HEAD_SCALE: Record<LifeStage, number> = { juvenile: 1, prime: 1, ancient: 1 };
 /** Multiplier on the vertex colour: ancient wear darkens and desaturates slightly. */
 const STAGE_TINT: Record<LifeStage, string> = { juvenile: '#f2fbf8', prime: '#ffffff', ancient: '#e6e1d4' };
 
