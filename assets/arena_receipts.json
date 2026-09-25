@@ -2,7 +2,7 @@
  "ledger_type": "arena_source_receipts",
  "specification_version": "CG-V1.0.0",
  "created_utc": "2026-09-23T21:51:28+00:00",
- "last_updated_utc": "2026-09-25T00:56:43+00:00",
+ "last_updated_utc": "2026-09-25T01:00:33+00:00",
  "authority": {
   "master_plan": "CIVIC_GODSTORM_MASTER_PLAN.md",
   "master_plan_head_commit": "5bd357e14d9b68776d50b1dee0829b7bd5ab939f",
@@ -2880,6 +2880,27 @@
       "canvas": "1264x848 3:2-class (same as B00 board; 3072x2048 canonical question standing)"
      },
      "status": "CANDIDATE_AWAITING_APPROVAL"
+    },
+    {
+     "revision": "r005",
+     "path": "assets/candidates/CG-S-GOD-LIFE-Q/r005/cg_s_god_life_q.png",
+     "native_dimensions": "1264x848",
+     "native_aspect_error_pct": 0.63,
+     "format": "PNG 8-bit sRGB TrueColor",
+     "alpha": "none",
+     "sha256": "b0feeac2ed83e715bd547a3e844fb84b0206aae8855b2e6b2eda595891662dfc",
+     "generation_tool": "Arena Agent Mode generate_image",
+     "model": "UNKNOWN",
+     "normalization_operation": "none performed",
+     "parent_revision": "fresh canonical-resolution pass authorized by ruling FRESH_CANONICAL_RESOLUTION_PASSES_AUTHORIZED",
+     "content_qa": {
+      "identity": "six left-profile states of one pillar-leg Q individual in a legal 3x2 layout (r001/r002 nine-cell violation repaired): juvenile / prime / ancient cracked / injured prime with the legal injury pair (one locomotor foreleg injury + one shell scar, zoom-verified) / closed-eye gray corpse / ossuary with domed shell + four pillar bones + tail vertebrae",
+      "style": "established family style retained; layout correct this pass"
+     },
+     "flags": [
+      "TB-08 canvas ceiling: 1264x848 again (14th/15th/16th/17th consecutive landscape occurrence); 3072x2048 requires 2.43x > 2x bound"
+     ],
+     "status": "CANDIDATE_AWAITING_APPROVAL"
     }
    ],
    "tool_behavior_finding": "Layout-count defects are not repairable by reference-anchored edits: the model reproduces the reference grid. A successful retry requires anchoring on the single-subject FORM-Q sheet and requesting the 3x2 lifecycle grid fresh.",
@@ -2891,7 +2912,7 @@
     "date": "2026-09-23",
     "scope": "B01 first-God identity gate PASS - full Q lineage (torso r003 -> FORM-Q r004 -> LIFE-Q r004)",
     "approved_revision": "r004",
-    "resolution": "HELD from promotion (owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS, 2026-09-25): approved candidate 1264x848 cannot reach profile target 3072x2048 within bounds (held scale). Options: fresh canonical-resolution pass (per-ID 1+1, explicit authorization required) or explicit as-is promotion instruction."
+    "resolution": "STILL HELD after fresh pass (ruling #20, 2026-09-25): fresh r005 is content-conforming but the model returned 1264x848 again (TB-08); 3072x2048 requires 2.43x > the 2x bound. Authorized 1+1 repair slot unused per TB-06 no-identical-retry discipline. Exits unchanged: owner as-is instruction, or a >=1536px landscape generation path."
    },
    "downstream_targets": [
     "CG-D-GOD-LIFE-Q",
@@ -2916,7 +2937,8 @@
     "authorized": "FRESH_CANONICAL_RESOLUTION_PASSES_AUTHORIZED",
     "revision": "r005",
     "layout_scaffold": "assets/candidates/CG-S-GOD-LIFE-Q/r005/template_3x2.png",
-    "target": "3072x2048"
+    "target": "3072x2048",
+    "result": "CONTENT_CONFORMING_SIZE_BLOCKED_TB08"
    }
   },
   "CG-S-MOT-BASALT": {
@@ -3307,6 +3329,27 @@
       "notes": "minor: canopy style slightly outlined vs sculpted matte; structure correct"
      },
      "status": "CANDIDATE_AWAITING_APPROVAL"
+    },
+    {
+     "revision": "r002",
+     "path": "assets/candidates/CG-S-INF-FARM/r002/cg_s_inf_farm.png",
+     "native_dimensions": "1264x848",
+     "native_aspect_error_pct": 0.63,
+     "format": "PNG 8-bit sRGB TrueColor",
+     "alpha": "none",
+     "sha256": "3adfe3833cf43065f4f268ae3cb74c74c0fb5df31ba1cb900b552be86807b3ed",
+     "generation_tool": "Arena Agent Mode generate_image",
+     "model": "UNKNOWN",
+     "normalization_operation": "none performed",
+     "parent_revision": "fresh canonical-resolution pass authorized by ruling FRESH_CANONICAL_RESOLUTION_PASSES_AUTHORIZED",
+     "content_qa": {
+      "identity": "FIELD furrow parcel / WOODLOT managed tree plot / FISHERY bank-side racks with water strip; 3/4 row + plan row; exactly three modes",
+      "style": "established family style retained; layout correct this pass"
+     },
+     "flags": [
+      "TB-08 canvas ceiling: 1264x848 again (14th/15th/16th/17th consecutive landscape occurrence); 3072x2048 requires 2.43x > 2x bound"
+     ],
+     "status": "CANDIDATE_AWAITING_APPROVAL"
     }
    ],
    "approval": {
@@ -3314,7 +3357,7 @@
     "approver": "human (repository owner)",
     "date": "2026-09-23",
     "scope": "B02 civic/scale language evidence; anchors B07 building/motif production; never an approved canonical source",
-    "resolution": "HELD from promotion (owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS, 2026-09-25): approved candidate 1264x848 cannot reach profile target 3072x2048 within bounds (held scale). Options: fresh canonical-resolution pass (per-ID 1+1, explicit authorization required) or explicit as-is promotion instruction."
+    "resolution": "STILL HELD after fresh pass (ruling #20, 2026-09-25): fresh r002 is content-conforming but the model returned 1264x848 again (TB-08); 3072x2048 requires 2.43x > the 2x bound. Authorized 1+1 repair slot unused per TB-06 no-identical-retry discipline. Exits unchanged: owner as-is instruction, or a >=1536px landscape generation path."
    },
    "downstream_targets": [
     "CG-D-BLD-*",
@@ -3333,7 +3376,8 @@
     "authorized": "FRESH_CANONICAL_RESOLUTION_PASSES_AUTHORIZED",
     "revision": "r002",
     "layout_scaffold": "assets/candidates/CG-S-INF-FARM/r002/template_3x2.png",
-    "target": "3072x2048"
+    "target": "3072x2048",
+    "result": "CONTENT_CONFORMING_SIZE_BLOCKED_TB08"
    }
   },
   "CG-S-INF-ROAD": {
@@ -3362,6 +3406,27 @@
       "notes": "clean flat orthographic rows - conforms"
      },
      "status": "CANDIDATE_AWAITING_APPROVAL"
+    },
+    {
+     "revision": "r002",
+     "path": "assets/candidates/CG-S-INF-ROAD/r002/cg_s_inf_road.png",
+     "native_dimensions": "1264x848",
+     "native_aspect_error_pct": 0.63,
+     "format": "PNG 8-bit sRGB TrueColor",
+     "alpha": "none",
+     "sha256": "f8812ccd20c244261dc952d42873fe5d341ce1fef8e967cf531458f01bdfe616",
+     "generation_tool": "Arena Agent Mode generate_image",
+     "model": "UNKNOWN",
+     "normalization_operation": "none performed",
+     "parent_revision": "fresh canonical-resolution pass authorized by ruling FRESH_CANONICAL_RESOLUTION_PASSES_AUTHORIZED",
+     "content_qa": {
+      "identity": "TRACK graded earthen path / PAVED stone strip with kerbs / GODWAY reinforced wide corridor (clearly widest); 3/4 row + plan row, one shared scale; exactly three modes",
+      "style": "established family style retained; layout correct this pass"
+     },
+     "flags": [
+      "TB-08 canvas ceiling: 1264x848 again (14th/15th/16th/17th consecutive landscape occurrence); 3072x2048 requires 2.43x > 2x bound"
+     ],
+     "status": "CANDIDATE_AWAITING_APPROVAL"
     }
    ],
    "approval": {
@@ -3369,7 +3434,7 @@
     "approver": "human (repository owner)",
     "date": "2026-09-23",
     "scope": "B02 civic/scale language evidence; anchors B07 building/motif production; never an approved canonical source",
-    "resolution": "HELD from promotion (owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS, 2026-09-25): approved candidate 1264x848 cannot reach profile target 3072x2048 within bounds (held scale). Options: fresh canonical-resolution pass (per-ID 1+1, explicit authorization required) or explicit as-is promotion instruction."
+    "resolution": "STILL HELD after fresh pass (ruling #20, 2026-09-25): fresh r002 is content-conforming but the model returned 1264x848 again (TB-08); 3072x2048 requires 2.43x > the 2x bound. Authorized 1+1 repair slot unused per TB-06 no-identical-retry discipline. Exits unchanged: owner as-is instruction, or a >=1536px landscape generation path."
    },
    "downstream_targets": [
     "CG-D-BLD-*",
@@ -3387,7 +3452,8 @@
     "authorized": "FRESH_CANONICAL_RESOLUTION_PASSES_AUTHORIZED",
     "revision": "r002",
     "layout_scaffold": "assets/candidates/CG-S-INF-ROAD/r002/template_3x2.png",
-    "target": "3072x2048"
+    "target": "3072x2048",
+    "result": "CONTENT_CONFORMING_SIZE_BLOCKED_TB08"
    }
   },
   "CG-S-GOD-TORSO-H": {
@@ -4972,6 +5038,27 @@
       "canvas": "TB-07 RECURRENCE - 1376x768 native landscape instead of 1264x848 scaffold (19.5% aspect deviation vs scaffold; quadrant grid logic intact)"
      },
      "status": "REJECTED"
+    },
+    {
+     "revision": "r003",
+     "path": "assets/candidates/CG-S-GOD-LIFE-M/r003/cg_s_god_life_m.png",
+     "native_dimensions": "1264x848",
+     "native_aspect_error_pct": 0.63,
+     "format": "PNG 8-bit sRGB TrueColor",
+     "alpha": "none",
+     "sha256": "60b29f1c2327b7babe10509a4692c66da9b7f3a1e6a441dd6359c80182a53ff3",
+     "generation_tool": "Arena Agent Mode generate_image",
+     "model": "UNKNOWN",
+     "normalization_operation": "none performed",
+     "parent_revision": "fresh canonical-resolution pass authorized by ruling FRESH_CANONICAL_RESOLUTION_PASSES_AUTHORIZED",
+     "content_qa": {
+      "identity": "six left-profile states of one manta-mantle individual (3 wing spars per side, no legs/feathers) in a legal 3x2 layout: juvenile / prime / ancient frayed / injured prime (torn mantle + scar) / limp gray corpse / ossuary spar-and-spine bones",
+      "style": "established family style retained; layout correct this pass"
+     },
+     "flags": [
+      "TB-08 canvas ceiling: 1264x848 again (14th/15th/16th/17th consecutive landscape occurrence); 3072x2048 requires 2.43x > 2x bound"
+     ],
+     "status": "CANDIDATE_AWAITING_APPROVAL"
     }
    ],
    "approval": {
@@ -4980,7 +5067,7 @@
     "date": "2026-09-24",
     "scope": "B05 M lifecycle; r001 accepted TECHNICAL-WITH-FLAG: ossuary skull opening read as temporal fenestra (species anchors hold); r002 targeted repair remains REJECTED evidence; cleanest full sheet",
     "approved_revision": "r001",
-    "resolution": "HELD from promotion (owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS, 2026-09-25): approved candidate 1264x848 cannot reach profile target 3072x2048 within bounds (held scale). Options: fresh canonical-resolution pass (per-ID 1+1, explicit authorization required) or explicit as-is promotion instruction."
+    "resolution": "STILL HELD after fresh pass (ruling #20, 2026-09-25): fresh r003 is content-conforming but the model returned 1264x848 again (TB-08); 3072x2048 requires 2.43x > the 2x bound. Authorized 1+1 repair slot unused per TB-06 no-identical-retry discipline. Exits unchanged: owner as-is instruction, or a >=1536px landscape generation path."
    },
    "downstream_targets": [
     "CG-D-GOD-LIFE-M",
@@ -5000,7 +5087,8 @@
     "authorized": "FRESH_CANONICAL_RESOLUTION_PASSES_AUTHORIZED",
     "revision": "r003",
     "layout_scaffold": "assets/candidates/CG-S-GOD-LIFE-M/r003/template_3x2.png",
-    "target": "3072x2048"
+    "target": "3072x2048",
+    "result": "CONTENT_CONFORMING_SIZE_BLOCKED_TB08"
    }
   },
   "CG-S-GOD-ARMOR-OSTEODERM": {
@@ -10246,7 +10334,7 @@
    "chunk_b": "22 promoted (B05-B07 UP2X); 88/105 canonical PRESENT; chunk C (B08, 17 UP2X) next",
    "chunk_c": "17 promoted (B08 UP2X; SOLDIER held); 105/105 promotable canonical",
    "final": "COMPLETE 2026-09-25: 105 canonical sources in assets/source/ (218.6MB, dims verified); 14 HELD beyond bounds (fresh canonical-resolution passes or explicit as-is instruction required); 2 no-source IDs (B00 block final; LIFE-S ratified rejection).",
-   "fresh_passes": "Ruling #20 pass 1/2: +5 canonical (squares); 5 landscape content-conforming but TB-08 size-blocked, still HELD; pass 2 (LIFE-M, LIFE-Q, FARM, ROAD) next turn"
+   "fresh_passes": "Ruling #20 COMPLETE: +5 canonical (squares); 9 landscape sheets content-conforming but TB-08 size-blocked (14/14 occurrences conclusive); owner decision pending on as-is vs hold"
   }
  },
  "human_rulings": [
@@ -10742,6 +10830,12 @@
    "recorded_utc": "2026-09-25T00:56:43+00:00",
    "observation": "Ruling #20 fresh passes fired 10/10 (turn cap consumed). Five square-canvas victims repaired and PROMOTED to 2048x2048 canonical (MARKET r002, SHRINE r002, ANTENNA-CROWN r004 - six-frond count clean at zoom after two prior TB-06 strikes, GALLERY r002, SOLDIER r002 - TB-07 flag cleared). Five landscape sheets (BRIDGE/CANAL/MINE/WALL/LIFE-H) are content-conforming - LIFE-H layout repaired - but again 1264x848; TB-08 canvas-ceiling finding recorded (10/10 landscape occurrences); they remain HELD with their 1+1 repair slots unused. Canonical count 110/119.",
    "content_loss": "none"
+  },
+  {
+   "incident": "FRESH_CANONICAL_PASSES_COMPLETE_9_TB08_HELD",
+   "recorded_utc": "2026-09-25T01:00:33+00:00",
+   "observation": "Ruling #20 pass 2/2: ROAD r002, FARM r002, LIFE-M r003, LIFE-Q r005 fired 4/4. ALL content-conforming (both LIFE layout violations repaired; LIFE-Q legal injury pair zoom-verified) - all four again 1264x848 (TB-08, now 14/14 conclusive). Final disposition: 110/119 canonical; 9 HELD sheets (BRIDGE, CANAL, MINE, WALL, ROAD, FARM, LIFE-H, LIFE-M, LIFE-Q) are content-conforming, size-blocked, with both authorized slots intact, awaiting owner choice: as-is promotion at native 1264x848, or remain provisional-only pending a >=1536px landscape path.",
+   "content_loss": "none"
   }
  ],
  "tool_behavior_findings": [
@@ -10778,7 +10872,7 @@
    "finding_id": "TB-08_LANDSCAPE_CANVAS_CEILING",
    "date": "2026-09-24",
    "rule": "The image model emits landscape-class content at exactly 1264x848 regardless of scaffold canvas or instructional width (1024-wide 3x2 scaffold, 1264x848 3x2 scaffold, explicit \"width 1.5x height\" text). 10/10 landscape-class generations across the run landed at exactly 1264x848 (B01 LIFE sheets, B02 FARM/ROAD, B04 LIFE attempts, B07 INF sheets, all 5 fresh-pass landscape sheets). Historical TB-07 1376x768 events are the same class with model-varied width. Consequence: 3:2-class 3072x2048 profile targets are unreachable within the <=2x normalization bound; mitigation requires either an as-is owner instruction or a generation path that emits >=1536px-wide canvases.",
-   "evidence": "Fresh passes under FRESH_CANONICAL_RESOLUTION_PASSES_AUTHORIZED: BRIDGE/CANAL/MINE/WALL/LIFE-H all 1264x848 while the same-turn square requests honored 1024x1024 exactly (5/5)."
+   "evidence": "Fresh passes under FRESH_CANONICAL_RESOLUTION_PASSES_AUTHORIZED: BRIDGE/CANAL/MINE/WALL/LIFE-H all 1264x848 while the same-turn square requests honored 1024x1024 exactly (5/5). Pass 2 (ruling #20): ROAD/FARM/LIFE-M/LIFE-Q all 1264x848 while same-run square requests honored 1024x1024; TB-08 now 14/14 landscape occurrences - CONCLUSIVE model ceiling."
   }
  ]
 }
