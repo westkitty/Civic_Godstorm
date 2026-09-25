@@ -2,7 +2,7 @@
  "ledger_type": "arena_source_receipts",
  "specification_version": "CG-V1.0.0",
  "created_utc": "2026-09-23T21:51:28+00:00",
- "last_updated_utc": "2026-09-24T23:44:51+00:00",
+ "last_updated_utc": "2026-09-25T00:31:05+00:00",
  "authority": {
   "master_plan": "CIVIC_GODSTORM_MASTER_PLAN.md",
   "master_plan_head_commit": "5bd357e14d9b68776d50b1dee0829b7bd5ab939f",
@@ -2235,7 +2235,7 @@
   "CG-S-GOD-TORSO-Q": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_torso_q.png",
-   "canonical_state": "ABSENT (correct - no approved source; provisional candidates only)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-GOD-TORSO-Q/r003/cg_s_god_torso_q.png)",
    "id_status": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
    "mode": "PROVISIONAL - awaiting human first-God identity gate (B01); not an approved source",
    "candidates": [
@@ -2309,7 +2309,8 @@
    "approval": {
     "decision": "ACCEPTED (pass 2, r003) - provisional; B01 first-God identity gate still governs FORM-Q/LIFE-Q; B01 identity gate PASSED 2026-09-23",
     "approver": "human (repository owner)",
-    "date": "2026-09-23"
+    "date": "2026-09-23",
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-S-GOD-FORM-Q",
@@ -2330,12 +2331,22 @@
     "repair_candidates_used": 0,
     "failure_to_repair": "rear-view limb stumps (cross-view morphology disagreement) - r003 must show the same legless closed shell in ALL FOUR views"
    },
-   "provisional_reference_revision": "r003"
+   "provisional_reference_revision": "r003",
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_UP2X 1024x1024 -> 2048x2048 (exactly 2.0x same-aspect; <=2x bound)",
+    "source_candidate": "assets/candidates/CG-S-GOD-TORSO-Q/r003/cg_s_god_torso_q.png",
+    "source_candidate_sha256": "353753aa7126bb2a88700525526ab86871f771a703e9d792736d3b24b0454c67",
+    "canonical_dimensions": "2048x2048",
+    "canonical_sha256": "e45f88bf349b12e2d242fce155cd82cfe4655d99fcb0753cc608e5f48ba92552",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
+   }
   },
   "CG-S-GOD-LOCO-PILLAR": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_loco_pillar.png",
-   "canonical_state": "ABSENT (correct - no approved source; provisional candidates only)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-GOD-LOCO-PILLAR/r002/cg_s_god_loco_pillar.png)",
    "id_status": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
    "mode": "PROVISIONAL - awaiting human first-God identity gate (B01); not an approved source",
    "candidates": [
@@ -2393,7 +2404,8 @@
      "promotion requires full dependency-chain acceptance incl. CG-S-GOD-TORSO-Q plus the human first-God identity gate",
      "no derived/runtime integration may rely on it before full approval",
      "canonical path stays empty; native 1024x1024 is provisional-review-only per resolution ruling"
-    ]
+    ],
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-S-GOD-FORM-Q",
@@ -2404,12 +2416,22 @@
     "repair_candidates_used": 1,
     "remaining": 0
    },
-   "provisional_reference_revision": "r002"
+   "provisional_reference_revision": "r002",
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_UP2X 1024x1024 -> 2048x2048 (exactly 2.0x same-aspect; <=2x bound)",
+    "source_candidate": "assets/candidates/CG-S-GOD-LOCO-PILLAR/r002/cg_s_god_loco_pillar.png",
+    "source_candidate_sha256": "07e0e6eccf41f30df92c857ace98d2001cccc545b89e28801e89479d5d5cfa5e",
+    "canonical_dimensions": "2048x2048",
+    "canonical_sha256": "bc9800bd1e9e56e2bd17a342aaff87d2aec7e4779fa304e6c5b7970a1690290e",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
+   }
   },
   "CG-S-GOD-FEED-BROWSE": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_feed_browse.png",
-   "canonical_state": "ABSENT (correct - no approved source; provisional candidates only)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-GOD-FEED-BROWSE/r001/cg_s_god_feed_browse.png)",
    "id_status": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
    "mode": "PROVISIONAL - awaiting human first-God identity gate (B01); not an approved source",
    "candidates": [
@@ -2447,7 +2469,8 @@
      "promotion requires full dependency-chain acceptance incl. CG-S-GOD-TORSO-Q plus the human first-God identity gate",
      "no derived/runtime integration may rely on it before full approval",
      "canonical path stays empty; native 1024x1024 is provisional-review-only per resolution ruling"
-    ]
+    ],
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-S-GOD-FORM-Q",
@@ -2458,12 +2481,22 @@
     "repair_candidates_used": 1,
     "remaining": 0
    },
-   "provisional_reference_revision": "r001"
+   "provisional_reference_revision": "r001",
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_UP2X 1024x1024 -> 2048x2048 (exactly 2.0x same-aspect; <=2x bound)",
+    "source_candidate": "assets/candidates/CG-S-GOD-FEED-BROWSE/r001/cg_s_god_feed_browse.png",
+    "source_candidate_sha256": "d652c8d8fe2d2d8453e693701d87542826d19b48097742c7e6ac86cb334df87a",
+    "canonical_dimensions": "2048x2048",
+    "canonical_sha256": "21ff4f0259c47f156ad97968fe48e0a03cef37a88e3f4af2d372a05750019efa",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
+   }
   },
   "CG-S-GOD-SENSE-EYE-RING": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_sense_eye_ring.png",
-   "canonical_state": "ABSENT (correct - no approved source; provisional candidates only)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-GOD-SENSE-EYE-RING/r002/cg_s_god_sense_eye_ring.png)",
    "id_status": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
    "mode": "PROVISIONAL - awaiting human first-God identity gate (B01); not an approved source",
    "candidates": [
@@ -2521,7 +2554,8 @@
      "promotion requires full dependency-chain acceptance incl. CG-S-GOD-TORSO-Q plus the human first-God identity gate",
      "no derived/runtime integration may rely on it before full approval",
      "canonical path stays empty; native 1024x1024 is provisional-review-only per resolution ruling"
-    ]
+    ],
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-S-GOD-FORM-Q",
@@ -2532,12 +2566,22 @@
     "repair_candidates_used": 1,
     "remaining": 0
    },
-   "provisional_reference_revision": "r002"
+   "provisional_reference_revision": "r002",
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_UP2X 1024x1024 -> 2048x2048 (exactly 2.0x same-aspect; <=2x bound)",
+    "source_candidate": "assets/candidates/CG-S-GOD-SENSE-EYE-RING/r002/cg_s_god_sense_eye_ring.png",
+    "source_candidate_sha256": "3276c59ae8040b0ff80645aa1ef511409bca3c33929f254ffb5cfbfb44b8d317",
+    "canonical_dimensions": "2048x2048",
+    "canonical_sha256": "5efeaee2ea0c65ab641bd7443c00bc9d33ccc70632ac8c193c36dc649b7feedf",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
+   }
   },
   "CG-S-GOD-TAIL-BALANCE": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_tail_balance.png",
-   "canonical_state": "ABSENT (correct - no approved source; provisional candidates only)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-GOD-TAIL-BALANCE/r002/cg_s_god_tail_balance.png)",
    "id_status": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
    "mode": "PROVISIONAL - awaiting human first-God identity gate (B01); not an approved source",
    "candidates": [
@@ -2594,7 +2638,8 @@
      "promotion requires full dependency-chain acceptance incl. CG-S-GOD-TORSO-Q plus the human first-God identity gate",
      "no derived/runtime integration may rely on it before full approval",
      "canonical path stays empty; native 1024x1024 is provisional-review-only per resolution ruling"
-    ]
+    ],
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-S-GOD-FORM-Q",
@@ -2606,12 +2651,22 @@
     "repair_candidates_used": 1,
     "remaining": 0
    },
-   "provisional_reference_revision": "r002"
+   "provisional_reference_revision": "r002",
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_UP2X 1024x1024 -> 2048x2048 (exactly 2.0x same-aspect; <=2x bound)",
+    "source_candidate": "assets/candidates/CG-S-GOD-TAIL-BALANCE/r002/cg_s_god_tail_balance.png",
+    "source_candidate_sha256": "2f1c06a980e138c14d0f8768090bd3744d98220fcc5781afb12c72e3e4d32bfe",
+    "canonical_dimensions": "2048x2048",
+    "canonical_sha256": "48c7e37c909609cfd90040a19503d862912b84e41191d3ac2544703e04b21c70",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
+   }
   },
   "CG-S-GOD-FORM-Q": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_form_q.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-GOD-FORM-Q/r004/cg_s_god_form_q.png)",
    "id_status": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
    "parent_dependency_revisions": {
     "CG-S-GOD-TORSO-Q": "r003 (accepted provisional, pass 2)",
@@ -2706,7 +2761,8 @@
    "approval": {
     "decision": "ACCEPTED (pass 2, r004) - provisional; LIFE-Q unblocked; B01 identity gate PASSED 2026-09-23",
     "approver": "human (repository owner)",
-    "date": "2026-09-23"
+    "date": "2026-09-23",
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-S-GOD-LIFE-Q",
@@ -2722,7 +2778,17 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 1
    },
-   "provisional_reference_revision": "r004"
+   "provisional_reference_revision": "r004",
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_UP2X 1024x1024 -> 2048x2048 (exactly 2.0x same-aspect; <=2x bound)",
+    "source_candidate": "assets/candidates/CG-S-GOD-FORM-Q/r004/cg_s_god_form_q.png",
+    "source_candidate_sha256": "f8d645a7ed78d1d610c172522c8721e03b2a2dbb228804c6abccf3f5ec72cc32",
+    "canonical_dimensions": "2048x2048",
+    "canonical_sha256": "2e846c39288c9ea2458af62d5c023cd3e1ff094d809e2eaac70c4a5e4b13111b",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
+   }
   },
   "CG-S-GOD-LIFE-Q": {
    "specification_version": "CG-V1.0.0",
@@ -2825,7 +2891,7 @@
     "date": "2026-09-23",
     "scope": "B01 first-God identity gate PASS - full Q lineage (torso r003 -> FORM-Q r004 -> LIFE-Q r004)",
     "approved_revision": "r004",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "HELD from promotion (owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS, 2026-09-25): approved candidate 1264x848 cannot reach profile target 3072x2048 within bounds (held scale). Options: fresh canonical-resolution pass (per-ID 1+1, explicit authorization required) or explicit as-is promotion instruction."
    },
    "downstream_targets": [
     "CG-D-GOD-LIFE-Q",
@@ -2850,7 +2916,7 @@
   "CG-S-MOT-BASALT": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/motifs/cg_s_mot_basalt.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-MOT-BASALT/r001/cg_s_mot_basalt.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "CG-S-ART-DIRECTION r001 (B00 style board; BLOCKED dimensional - used only as permitted provisional style anchor for batch-local requests)",
    "candidates": [
@@ -2879,7 +2945,8 @@
     "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
     "approver": "human (repository owner)",
     "date": "2026-09-23",
-    "scope": "B02 civic/scale language evidence; anchors B07 building/motif production; never an approved canonical source"
+    "scope": "B02 civic/scale language evidence; anchors B07 building/motif production; never an approved canonical source",
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-BLD-*",
@@ -2892,12 +2959,22 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 0
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_UP2X 1024x1024 -> 2048x2048 (exactly 2.0x same-aspect; <=2x bound)",
+    "source_candidate": "assets/candidates/CG-S-MOT-BASALT/r001/cg_s_mot_basalt.png",
+    "source_candidate_sha256": "62ee8d1249b6c1f0816e8b59eb676f1f187d0ae891b8b296150133f3a6261708",
+    "canonical_dimensions": "2048x2048",
+    "canonical_sha256": "3429219f92a85740d81ca0fb7e53aecd94002a115768a9a9d8935850570574dc",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
    }
   },
   "CG-S-BLD-DWELLING": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/buildings/cg_s_bld_dwelling.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-BLD-DWELLING/r003/cg_s_bld_dwelling.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "CG-S-ART-DIRECTION r001 (B00 style board; BLOCKED dimensional - used only as permitted provisional style anchor for batch-local requests)",
    "candidates": [
@@ -2963,7 +3040,8 @@
     "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (retry r003)",
     "approver": "human (repository owner)",
     "date": "2026-09-23",
-    "scope": "B02 civic/scale language evidence"
+    "scope": "B02 civic/scale language evidence",
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-BLD-*",
@@ -2983,12 +3061,22 @@
     "strategy": "fresh generation: no r001/r002 anchor; blank 2x2 scaffold + MOT-BASALT r001 projection exemplar; design via text",
     "initial_candidates_used": 1,
     "repair_candidates_used": 0
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_UP2X 1024x1024 -> 2048x2048 (exactly 2.0x same-aspect; <=2x bound)",
+    "source_candidate": "assets/candidates/CG-S-BLD-DWELLING/r003/cg_s_bld_dwelling.png",
+    "source_candidate_sha256": "0ac398255a5df3923e795a0562b748e97992b4f73bf9057ccb3ea7982c694d67",
+    "canonical_dimensions": "2048x2048",
+    "canonical_sha256": "16c81c4b4903f110de727cab9d7f703bca191eb17c43daf3b2c10e4c81082eb5",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
    }
   },
   "CG-S-BLD-HALL": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/buildings/cg_s_bld_hall.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-BLD-HALL/r003/cg_s_bld_hall.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "CG-S-ART-DIRECTION r001 (B00 style board; BLOCKED dimensional - used only as permitted provisional style anchor for batch-local requests)",
    "candidates": [
@@ -3054,7 +3142,8 @@
     "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (retry r003)",
     "approver": "human (repository owner)",
     "date": "2026-09-23",
-    "scope": "B02 civic/scale language evidence"
+    "scope": "B02 civic/scale language evidence",
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-BLD-*",
@@ -3074,12 +3163,22 @@
     "strategy": "fresh generation: no r001/r002 anchor; blank 2x2 scaffold + MOT-BASALT r001 projection exemplar; design via text",
     "initial_candidates_used": 1,
     "repair_candidates_used": 0
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_UP2X 1024x1024 -> 2048x2048 (exactly 2.0x same-aspect; <=2x bound)",
+    "source_candidate": "assets/candidates/CG-S-BLD-HALL/r003/cg_s_bld_hall.png",
+    "source_candidate_sha256": "1c03de1e26ed73d8e023e4435fb0a756474049d3dd9b714f9f751aef1df1e22f",
+    "canonical_dimensions": "2048x2048",
+    "canonical_sha256": "6d167fb9d75ff9d2ab2c0dac38a8eaa0f4f8d66f005b491a4cda46c0a1fe35fd",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
    }
   },
   "CG-S-UNT-CIVILIAN": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/units/cg_s_unt_civilian.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-UNT-CIVILIAN/r003/cg_s_unt_civilian.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "CG-S-ART-DIRECTION r001 (B00 style board; BLOCKED dimensional - used only as permitted provisional style anchor for batch-local requests)",
    "candidates": [
@@ -3144,7 +3243,8 @@
     "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (retry r003)",
     "approver": "human (repository owner)",
     "date": "2026-09-23",
-    "scope": "B02 civic/scale language evidence"
+    "scope": "B02 civic/scale language evidence",
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-BLD-*",
@@ -3164,6 +3264,16 @@
     "strategy": "fresh generation: no r001/r002 anchor; blank 2x2 scaffold + MOT-BASALT r001 projection exemplar; design via text",
     "initial_candidates_used": 1,
     "repair_candidates_used": 0
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_UP2X 1024x1024 -> 2048x2048 (exactly 2.0x same-aspect; <=2x bound)",
+    "source_candidate": "assets/candidates/CG-S-UNT-CIVILIAN/r003/cg_s_unt_civilian.png",
+    "source_candidate_sha256": "e9688b67bef6e69ebb19e58d58da5e7fa8f500fe0abbd60cab43d01a70e03d14",
+    "canonical_dimensions": "2048x2048",
+    "canonical_sha256": "e9f7e300b295570eb1a7d8d3665b080fa7421da9309c6274a09d6c3d2a4f2422",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
    }
   },
   "CG-S-INF-FARM": {
@@ -3197,7 +3307,8 @@
     "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
     "approver": "human (repository owner)",
     "date": "2026-09-23",
-    "scope": "B02 civic/scale language evidence; anchors B07 building/motif production; never an approved canonical source"
+    "scope": "B02 civic/scale language evidence; anchors B07 building/motif production; never an approved canonical source",
+    "resolution": "HELD from promotion (owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS, 2026-09-25): approved candidate 1264x848 cannot reach profile target 3072x2048 within bounds (held scale). Options: fresh canonical-resolution pass (per-ID 1+1, explicit authorization required) or explicit as-is promotion instruction."
    },
    "downstream_targets": [
     "CG-D-BLD-*",
@@ -3245,7 +3356,8 @@
     "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
     "approver": "human (repository owner)",
     "date": "2026-09-23",
-    "scope": "B02 civic/scale language evidence; anchors B07 building/motif production; never an approved canonical source"
+    "scope": "B02 civic/scale language evidence; anchors B07 building/motif production; never an approved canonical source",
+    "resolution": "HELD from promotion (owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS, 2026-09-25): approved candidate 1264x848 cannot reach profile target 3072x2048 within bounds (held scale). Options: fresh canonical-resolution pass (per-ID 1+1, explicit authorization required) or explicit as-is promotion instruction."
    },
    "downstream_targets": [
     "CG-D-BLD-*",
@@ -3263,7 +3375,7 @@
   "CG-S-GOD-TORSO-H": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_torso_h.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-GOD-TORSO-H/r003/cg_s_god_torso_h.png)",
    "id_status": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
    "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
    "candidates": [
@@ -3326,7 +3438,8 @@
    "approval": {
     "decision": "RATIFIED (pass-3 r003, cross-session acceptance upheld by independent inspection + human ruling)",
     "approver": "human (repository owner)",
-    "date": "2026-09-24"
+    "date": "2026-09-24",
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-GOD-TORSO-H",
@@ -3346,12 +3459,22 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0
    },
-   "provisional_reference_revision": "r003"
+   "provisional_reference_revision": "r003",
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_UP2X 1024x1024 -> 2048x2048 (exactly 2.0x same-aspect; <=2x bound)",
+    "source_candidate": "assets/candidates/CG-S-GOD-TORSO-H/r003/cg_s_god_torso_h.png",
+    "source_candidate_sha256": "11eac2eca2e68b66393785bdc48626c0b9cdd015727a911c58ddc2ac9744889c",
+    "canonical_dimensions": "2048x2048",
+    "canonical_sha256": "8651154336ae26e39661f550a63516266e3acb7dae6b112532861bfae2288109",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
+   }
   },
   "CG-S-GOD-LOCO-DIGGER": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_loco_digger.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-GOD-LOCO-DIGGER/r001/cg_s_god_loco_digger.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
    "candidates": [
@@ -3378,7 +3501,8 @@
     "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
     "approver": "human (repository owner)",
     "date": "2026-09-23",
-    "scope": "B03 H-grammar evidence; anchors FORM-H assembly"
+    "scope": "B03 H-grammar evidence; anchors FORM-H assembly",
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-GOD-LOCO-DIGGER",
@@ -3389,12 +3513,22 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 0
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_UP2X 1024x1024 -> 2048x2048 (exactly 2.0x same-aspect; <=2x bound)",
+    "source_candidate": "assets/candidates/CG-S-GOD-LOCO-DIGGER/r001/cg_s_god_loco_digger.png",
+    "source_candidate_sha256": "3b297f36f594386c1191fcee68a9da5a8860830cb0f82f6fa3c21fee4076e089",
+    "canonical_dimensions": "2048x2048",
+    "canonical_sha256": "bb2a044a7b48d709b2c562a346afd5b9be5ae65314109e868a13374902a6ba61",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
    }
   },
   "CG-S-GOD-FEED-MINERAL": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_feed_mineral.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-GOD-FEED-MINERAL/r001/cg_s_god_feed_mineral.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
    "candidates": [
@@ -3421,7 +3555,8 @@
     "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
     "approver": "human (repository owner)",
     "date": "2026-09-23",
-    "scope": "B03 H-grammar evidence; anchors FORM-H assembly"
+    "scope": "B03 H-grammar evidence; anchors FORM-H assembly",
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-GOD-FEED-MINERAL",
@@ -3432,12 +3567,22 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 0
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_UP2X 1024x1024 -> 2048x2048 (exactly 2.0x same-aspect; <=2x bound)",
+    "source_candidate": "assets/candidates/CG-S-GOD-FEED-MINERAL/r001/cg_s_god_feed_mineral.png",
+    "source_candidate_sha256": "58fab6c56f6a3b4e8e118ecf2ac2522ee6f09770ec50b204c0ea4f7106f70fd0",
+    "canonical_dimensions": "2048x2048",
+    "canonical_sha256": "cce32df059120144a28228a5a5741b045dabc05bdd9ad53458fd6eb830c58bda",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
    }
   },
   "CG-S-GOD-SENSE-VIBRATION-ROSETTE": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_sense_vibration_rosette.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-GOD-SENSE-VIBRATION-ROSETTE/r001/cg_s_god_sense_vibration_rosette.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
    "candidates": [
@@ -3464,7 +3609,8 @@
     "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
     "approver": "human (repository owner)",
     "date": "2026-09-23",
-    "scope": "B03 H-grammar evidence; anchors FORM-H assembly"
+    "scope": "B03 H-grammar evidence; anchors FORM-H assembly",
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-GOD-SENSE-VIBRATION-ROSETTE",
@@ -3475,12 +3621,22 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 0
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_UP2X 1024x1024 -> 2048x2048 (exactly 2.0x same-aspect; <=2x bound)",
+    "source_candidate": "assets/candidates/CG-S-GOD-SENSE-VIBRATION-ROSETTE/r001/cg_s_god_sense_vibration_rosette.png",
+    "source_candidate_sha256": "a87def8608ebbc8af258fd90bbe13de02ad643db012bffd09cd7a84bc7ecafe9",
+    "canonical_dimensions": "2048x2048",
+    "canonical_sha256": "566a00e81511d5270bf57b0c6fd93b849ed023a8bf704050984d49de40a45c65",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
    }
   },
   "CG-S-GOD-TAIL-WEDGE": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_tail_wedge.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-GOD-TAIL-WEDGE/r001/cg_s_god_tail_wedge.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
    "candidates": [
@@ -3507,7 +3663,8 @@
     "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
     "approver": "human (repository owner)",
     "date": "2026-09-23",
-    "scope": "B03 H-grammar evidence; anchors FORM-H assembly"
+    "scope": "B03 H-grammar evidence; anchors FORM-H assembly",
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-GOD-TAIL-WEDGE",
@@ -3518,12 +3675,22 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 0
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_UP2X 1024x1024 -> 2048x2048 (exactly 2.0x same-aspect; <=2x bound)",
+    "source_candidate": "assets/candidates/CG-S-GOD-TAIL-WEDGE/r001/cg_s_god_tail_wedge.png",
+    "source_candidate_sha256": "9c835f6540138d2518f3ffe023931599c8360e44aaaf200938159f671518e193",
+    "canonical_dimensions": "2048x2048",
+    "canonical_sha256": "2b7a4f85437baa391b2231caa9ee2a5422b0742268eeb357c0d2e26e9898e223",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
    }
   },
   "CG-S-GOD-ARMOR-SHELL": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_armor_shell.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-GOD-ARMOR-SHELL/r001/cg_s_god_armor_shell.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
    "candidates": [
@@ -3550,7 +3717,8 @@
     "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
     "approver": "human (repository owner)",
     "date": "2026-09-23",
-    "scope": "B03 H-grammar evidence; anchors FORM-H assembly"
+    "scope": "B03 H-grammar evidence; anchors FORM-H assembly",
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-GOD-ARMOR-SHELL",
@@ -3561,12 +3729,22 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 0
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_UP2X 1024x1024 -> 2048x2048 (exactly 2.0x same-aspect; <=2x bound)",
+    "source_candidate": "assets/candidates/CG-S-GOD-ARMOR-SHELL/r001/cg_s_god_armor_shell.png",
+    "source_candidate_sha256": "7a661b3a9ab88d636b6daec8a76ab49599e725b6f933a2e33337c121502bf014",
+    "canonical_dimensions": "2048x2048",
+    "canonical_sha256": "7b50652c4a701589b6a0315098a22225a48ea7288a257095354a4e6b0ebc39ec",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
    }
   },
   "CG-S-GOD-ORGAN-THERMAL-VENT": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_organ_thermal_vent.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-GOD-ORGAN-THERMAL-VENT/r001/cg_s_god_organ_thermal_vent.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
    "candidates": [
@@ -3593,7 +3771,8 @@
     "decision": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE",
     "approver": "human (repository owner)",
     "date": "2026-09-23",
-    "scope": "B03 H-grammar evidence; anchors FORM-H assembly"
+    "scope": "B03 H-grammar evidence; anchors FORM-H assembly",
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-GOD-ORGAN-THERMAL-VENT",
@@ -3604,12 +3783,22 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 0
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_UP2X 1024x1024 -> 2048x2048 (exactly 2.0x same-aspect; <=2x bound)",
+    "source_candidate": "assets/candidates/CG-S-GOD-ORGAN-THERMAL-VENT/r001/cg_s_god_organ_thermal_vent.png",
+    "source_candidate_sha256": "6106aaaf19c5e28edc276a06594d177c80e88394bd1d77b209ba8aedc31bf4fe",
+    "canonical_dimensions": "2048x2048",
+    "canonical_sha256": "2f0501525a2bf2f0cb0941d24f73d06bf779bcb912bd5a68117bcde2cc47a656",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
    }
   },
   "CG-S-GOD-FORM-H": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_form_h.png",
-   "canonical_state": "ABSENT (correct)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-GOD-FORM-H/r002/cg_s_god_form_h.png)",
    "id_status": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
    "parent_dependency_revisions": {
     "CG-S-GOD-TORSO-H": "r003 (accepted provisional pass 3)",
@@ -3661,7 +3850,8 @@
    "approval": {
     "decision": "APPROVED PROVISIONAL (r002; nodule flag noted)",
     "approver": "human (repository owner)",
-    "date": "2026-09-24"
+    "date": "2026-09-24",
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-S-GOD-LIFE-H",
@@ -3671,6 +3861,16 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 1,
     "remaining": 0
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_UP2X 1024x1024 -> 2048x2048 (exactly 2.0x same-aspect; <=2x bound)",
+    "source_candidate": "assets/candidates/CG-S-GOD-FORM-H/r002/cg_s_god_form_h.png",
+    "source_candidate_sha256": "740ff3113182db570f2c350bf316aa421b684c8bd06adc0e96ec11877d687e09",
+    "canonical_dimensions": "2048x2048",
+    "canonical_sha256": "b8a8a88911cdc0b8c20cb8ab0c0c9707101b711a6a159c28dd284c2dacf9a3ac",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
    }
   },
   "CG-S-GOD-LIFE-H": {
@@ -3745,7 +3945,8 @@
    "approval": {
     "decision": "APPROVED PROVISIONAL (retry r003)",
     "approver": "human (repository owner)",
-    "date": "2026-09-24"
+    "date": "2026-09-24",
+    "resolution": "HELD from promotion (owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS, 2026-09-25): approved candidate 1264x848 cannot reach profile target 3072x2048 within bounds (held scale). Options: fresh canonical-resolution pass (per-ID 1+1, explicit authorization required) or explicit as-is promotion instruction."
    },
    "downstream_targets": [
     "CG-D-GOD-LIFE-H",
@@ -3769,7 +3970,7 @@
   "CG-S-GOD-TORSO-S": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_torso_s.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-GOD-TORSO-S/r002/cg_s_god_torso_s.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
    "candidates": [
@@ -3819,7 +4020,7 @@
     "date": "2026-09-24",
     "scope": "B04 aquatic grammar; anchors FORM-S assembly and S-family body plan (r001 rejection preserved as evidence)",
     "approved_revision": "r002",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-GOD-TORSO-S",
@@ -3831,12 +4032,22 @@
     "repair_candidates_used": 1,
     "remaining": 0
    },
-   "reason": "r001 REJECTED (keel/taper/closure anchors absent). r002 fresh-generation repair CONFORMS on all three anchors; awaiting consolidated B04 human gate. r001 preserved as evidence."
+   "reason": "r001 REJECTED (keel/taper/closure anchors absent). r002 fresh-generation repair CONFORMS on all three anchors; awaiting consolidated B04 human gate. r001 preserved as evidence.",
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_UP2X 1024x1024 -> 2048x2048 (exactly 2.0x same-aspect; <=2x bound)",
+    "source_candidate": "assets/candidates/CG-S-GOD-TORSO-S/r002/cg_s_god_torso_s.png",
+    "source_candidate_sha256": "5f0331ebe3f227999cd31f39b7cd9d06647a755f7dd79e5ab5c2b0d965786e1e",
+    "canonical_dimensions": "2048x2048",
+    "canonical_sha256": "e2978c3f9f35e719ce4c72ed2a272cc51ba83059f021399cc255f263e5eebe46",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
+   }
   },
   "CG-S-GOD-TORSO-M": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_torso_m.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-GOD-TORSO-M/r002/cg_s_god_torso_m.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
    "candidates": [
@@ -3885,7 +4096,7 @@
     "date": "2026-09-24",
     "scope": "B04 mantle grammar; anchors B05 FORM-M assembly (palette observation recorded)",
     "approved_revision": "r002",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-GOD-TORSO-M",
@@ -3898,12 +4109,22 @@
     "remaining": 0
    },
    "reason": "r001 REJECTED (holes-not-rings / no ridge / rear nub). r002 fresh-generation repair CONFORMS on all three anchors (ring treatment verified at zoom against r001 defect); awaiting consolidated B04 human gate. r001 preserved as evidence.",
-   "tool_note": "Repair r002 pending next turn: ridge + flush rings + closed rear as first instructions."
+   "tool_note": "Repair r002 pending next turn: ridge + flush rings + closed rear as first instructions.",
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_UP2X 1024x1024 -> 2048x2048 (exactly 2.0x same-aspect; <=2x bound)",
+    "source_candidate": "assets/candidates/CG-S-GOD-TORSO-M/r002/cg_s_god_torso_m.png",
+    "source_candidate_sha256": "1057e5c107cae3e2505d7d6f09f79f568fcc2df6ea037d51322520087a3bbe63",
+    "canonical_dimensions": "2048x2048",
+    "canonical_sha256": "108b7e9ae6e32a12aa34c16c6b950b39552dc881222456e074bcf7392ddad42d",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
+   }
   },
   "CG-S-GOD-LOCO-UNDULATOR": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_loco_undulator.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-GOD-LOCO-UNDULATOR/r001/cg_s_god_loco_undulator.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
    "candidates": [
@@ -3932,7 +4153,7 @@
     "date": "2026-09-24",
     "scope": "B04 axial locomotion evidence",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-GOD-LOCO-UNDULATOR",
@@ -3943,12 +4164,22 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 1
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_UP2X 1024x1024 -> 2048x2048 (exactly 2.0x same-aspect; <=2x bound)",
+    "source_candidate": "assets/candidates/CG-S-GOD-LOCO-UNDULATOR/r001/cg_s_god_loco_undulator.png",
+    "source_candidate_sha256": "0cb6d32be2e2982cba9345e06b22744b4f7f3d5639fc2eda307b8e8a85d20306",
+    "canonical_dimensions": "2048x2048",
+    "canonical_sha256": "5ee8d7b6990facd1dc5be4cd6baa86c787bc7aad0a306916f77c3ffc0c6d5634",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
    }
   },
   "CG-S-GOD-LOCO-FIN": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_loco_fin.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-GOD-LOCO-FIN/r001/cg_s_god_loco_fin.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
    "candidates": [
@@ -3977,7 +4208,7 @@
     "date": "2026-09-24",
     "scope": "B04 S-family pectoral fin; anchors FORM-S",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-GOD-LOCO-FIN",
@@ -3988,12 +4219,22 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 1
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_UP2X 1024x1024 -> 2048x2048 (exactly 2.0x same-aspect; <=2x bound)",
+    "source_candidate": "assets/candidates/CG-S-GOD-LOCO-FIN/r001/cg_s_god_loco_fin.png",
+    "source_candidate_sha256": "51df971b2021d23617169e139d20e75272c2196e72f819b63a6a430003c68cf4",
+    "canonical_dimensions": "2048x2048",
+    "canonical_sha256": "d6075bfd62f3d69ba7563672b142c354f371b539a2ea7cf6218c8bed49db57a7",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
    }
   },
   "CG-S-GOD-LOCO-WEBBED": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_loco_webbed.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-GOD-LOCO-WEBBED/r001/cg_s_god_loco_webbed.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
    "candidates": [
@@ -4022,7 +4263,7 @@
     "date": "2026-09-24",
     "scope": "B04 webbed limb evidence",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-GOD-LOCO-WEBBED",
@@ -4033,12 +4274,22 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 1
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_UP2X 1024x1024 -> 2048x2048 (exactly 2.0x same-aspect; <=2x bound)",
+    "source_candidate": "assets/candidates/CG-S-GOD-LOCO-WEBBED/r001/cg_s_god_loco_webbed.png",
+    "source_candidate_sha256": "2a9a61910be9a4900dfdd01af20099690de103198598ea74f6243f6e3a3a23bb",
+    "canonical_dimensions": "2048x2048",
+    "canonical_sha256": "6f3393befe95717230565f8d5407a13da322b351d857e8b2d5c558047ac36e73",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
    }
   },
   "CG-S-GOD-FEED-FILTER": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_feed_filter.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-GOD-FEED-FILTER/r001/cg_s_god_feed_filter.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
    "candidates": [
@@ -4067,7 +4318,7 @@
     "date": "2026-09-24",
     "scope": "B04 S-family filter feeding; anchors FORM-S",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-GOD-FEED-FILTER",
@@ -4078,12 +4329,22 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 1
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_UP2X 1024x1024 -> 2048x2048 (exactly 2.0x same-aspect; <=2x bound)",
+    "source_candidate": "assets/candidates/CG-S-GOD-FEED-FILTER/r001/cg_s_god_feed_filter.png",
+    "source_candidate_sha256": "c634fddf1ded58aafa0020dfddbb79da9ba05bec09208cf4ea46a0b2ae27eba1",
+    "canonical_dimensions": "2048x2048",
+    "canonical_sha256": "0423c30ed018f88d2289182d9fccd5b7ce13884b73a41bf78a31cc68c2fc3da9",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
    }
   },
   "CG-S-GOD-TAIL-PADDLE": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_tail_paddle.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-GOD-TAIL-PADDLE/r001/cg_s_god_tail_paddle.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
    "candidates": [
@@ -4112,7 +4373,7 @@
     "date": "2026-09-24",
     "scope": "B04 S-family tail; anchors FORM-S",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-GOD-TAIL-PADDLE",
@@ -4123,12 +4384,22 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 1
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_UP2X 1024x1024 -> 2048x2048 (exactly 2.0x same-aspect; <=2x bound)",
+    "source_candidate": "assets/candidates/CG-S-GOD-TAIL-PADDLE/r001/cg_s_god_tail_paddle.png",
+    "source_candidate_sha256": "3012461156a6a106693a9657ba7863bc532b0e240ce988f6b0a434afd281f7e2",
+    "canonical_dimensions": "2048x2048",
+    "canonical_sha256": "a75cff665b384f4b8ecf5b01efbf47be3bf6f5b6496c948b1e3e8e4a490c087f",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
    }
   },
   "CG-S-GOD-ORGAN-GILLS": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_organ_gills.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-GOD-ORGAN-GILLS/r001/cg_s_god_organ_gills.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
    "candidates": [
@@ -4158,7 +4429,7 @@
     "date": "2026-09-24",
     "scope": "B04 S-family respiratory organ; anchors FORM-S",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-GOD-ORGAN-GILLS",
@@ -4169,12 +4440,22 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 1
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_UP2X 1024x1024 -> 2048x2048 (exactly 2.0x same-aspect; <=2x bound)",
+    "source_candidate": "assets/candidates/CG-S-GOD-ORGAN-GILLS/r001/cg_s_god_organ_gills.png",
+    "source_candidate_sha256": "189f77230935b850878438d5fa9e9a2df9480e9a4032986724d252d8e69e69f0",
+    "canonical_dimensions": "2048x2048",
+    "canonical_sha256": "d4e6c2bdb70cd8e5c3baecee4133acf4d135455befac4d7177e206c7df040ab9",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
    }
   },
   "CG-S-GOD-FORM-S": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_form_s.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-GOD-FORM-S/r001/cg_s_god_form_s.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "assembles registered S modules (all currently APPROVED_PROVISIONAL candidates or conforming-awaiting-gate): TORSO-S r002, LOCO-FIN r001, FEED-FILTER r001, SENSE-EYE-RING r002 (B01), TAIL-PADDLE r001, ORGAN-GILLS r001 - used as declared assembly sources per FORM-H precedent, not as style inspiration",
    "candidates": [
@@ -4209,7 +4490,7 @@
     "date": "2026-09-24",
     "scope": "B04 whole-form S exemplar (flags recorded: axial compression in hero/front/rear views; downward pectoral angle in elevations)",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-GOD-FORM-S",
@@ -4221,7 +4502,17 @@
     "repair_candidates_used": 0,
     "remaining": 1
    },
-   "reason": "Inventory-complete assembly of the six registered S modules with correct junction treatment; two non-blocking flags recorded for gate review. Parent modules themselves await the same consolidated gate (parent-first order preserved: FORM-S generated only after all six module candidates existed)."
+   "reason": "Inventory-complete assembly of the six registered S modules with correct junction treatment; two non-blocking flags recorded for gate review. Parent modules themselves await the same consolidated gate (parent-first order preserved: FORM-S generated only after all six module candidates existed).",
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_UP2X 1024x1024 -> 2048x2048 (exactly 2.0x same-aspect; <=2x bound)",
+    "source_candidate": "assets/candidates/CG-S-GOD-FORM-S/r001/cg_s_god_form_s.png",
+    "source_candidate_sha256": "95c678d779d09415c7f654fec33e6188f3bfcf62d9f8fd60e0f208f072cf52ac",
+    "canonical_dimensions": "2048x2048",
+    "canonical_sha256": "6c6f139b6fd8d9508d09464b47d65e75ab4c8133834eb6b33c09a7038f79aca4",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
+   }
   },
   "CG-S-GOD-LIFE-S": {
    "specification_version": "CG-V1.0.0",
@@ -4456,7 +4747,7 @@
     "date": "2026-09-24",
     "scope": "B05 antenna crown; r003 approved INCLUDING TB-07 canvas-swap (1376x768) accepted as technical pass (TORSO-H precedent); r001/r002 remain rejected evidence",
     "approved_revision": "r003",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "HELD from promotion (owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS, 2026-09-25): approved candidate 1376x768 cannot reach profile target 2048x2048 within bounds (held aspect). Options: fresh canonical-resolution pass (per-ID 1+1, explicit authorization required) or explicit as-is promotion instruction."
    },
    "downstream_targets": [
     "CG-D-GOD-SENSE-ANTENNA-CROWN",
@@ -4578,7 +4869,7 @@
     "date": "2026-09-24",
     "scope": "B05 M lifecycle; r001 accepted TECHNICAL-WITH-FLAG: ossuary skull opening read as temporal fenestra (species anchors hold); r002 targeted repair remains REJECTED evidence; cleanest full sheet",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "HELD from promotion (owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS, 2026-09-25): approved candidate 1264x848 cannot reach profile target 3072x2048 within bounds (held scale). Options: fresh canonical-resolution pass (per-ID 1+1, explicit authorization required) or explicit as-is promotion instruction."
    },
    "downstream_targets": [
     "CG-D-GOD-LIFE-M",
@@ -4908,7 +5199,7 @@
     "date": "2026-09-24",
     "scope": "B06 follower structure; canvas swap (TB-07) accepted as technical pass (CROWN r003 precedent)",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "HELD from promotion (owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS, 2026-09-25): approved candidate 1376x768 cannot reach profile target 2048x2048 within bounds (held aspect). Options: fresh canonical-resolution pass (per-ID 1+1, explicit authorization required) or explicit as-is promotion instruction."
    },
    "downstream_targets": [
     "CG-D-GOD-SYMB-FOLLOWER-GALLERY",
@@ -5303,7 +5594,7 @@
     "date": "2026-09-24",
     "scope": "B07 civic architecture; consistent with B02 civic/scale gate; MARKET TB-07 canvas swap accepted as technical pass (precedent)",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "HELD from promotion (owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS, 2026-09-25): approved candidate 1376x768 cannot reach profile target 2048x2048 within bounds (held aspect). Options: fresh canonical-resolution pass (per-ID 1+1, explicit authorization required) or explicit as-is promotion instruction."
    },
    "downstream_targets": [
     "CG-D-BLD-MARKET",
@@ -5390,7 +5681,7 @@
     "date": "2026-09-24",
     "scope": "B07 civic architecture; consistent with B02 civic/scale gate; SHRINE TB-07 canvas swap accepted as technical pass (precedent)",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "HELD from promotion (owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS, 2026-09-25): approved candidate 1376x768 cannot reach profile target 2048x2048 within bounds (held aspect). Options: fresh canonical-resolution pass (per-ID 1+1, explicit authorization required) or explicit as-is promotion instruction."
    },
    "downstream_targets": [
     "CG-D-BLD-SHRINE",
@@ -5519,7 +5810,7 @@
     "date": "2026-09-24",
     "scope": "B07 infrastructure; all named modes present at shared scale",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "HELD from promotion (owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS, 2026-09-25): approved candidate 1024x1024 cannot reach profile target 3072x2048 within bounds (held aspect). Options: fresh canonical-resolution pass (per-ID 1+1, explicit authorization required) or explicit as-is promotion instruction."
    },
    "downstream_targets": [
     "CG-D-INF-BRIDGE",
@@ -5562,7 +5853,7 @@
     "date": "2026-09-24",
     "scope": "B07 infrastructure; all named modes present at shared scale",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "HELD from promotion (owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS, 2026-09-25): approved candidate 1024x1024 cannot reach profile target 3072x2048 within bounds (held aspect). Options: fresh canonical-resolution pass (per-ID 1+1, explicit authorization required) or explicit as-is promotion instruction."
    },
    "downstream_targets": [
     "CG-D-INF-CANAL",
@@ -5605,7 +5896,7 @@
     "date": "2026-09-24",
     "scope": "B07 infrastructure; all named modes present at shared scale",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "HELD from promotion (owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS, 2026-09-25): approved candidate 1024x1024 cannot reach profile target 3072x2048 within bounds (held aspect). Options: fresh canonical-resolution pass (per-ID 1+1, explicit authorization required) or explicit as-is promotion instruction."
    },
    "downstream_targets": [
     "CG-D-INF-MINE",
@@ -5648,7 +5939,7 @@
     "date": "2026-09-24",
     "scope": "B07 infrastructure; all named modes present at shared scale",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "HELD from promotion (owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS, 2026-09-25): approved candidate 1024x1024 cannot reach profile target 3072x2048 within bounds (held aspect). Options: fresh canonical-resolution pass (per-ID 1+1, explicit authorization required) or explicit as-is promotion instruction."
    },
    "downstream_targets": [
     "CG-D-INF-WALL",
@@ -6270,7 +6561,7 @@
     "date": "2026-09-24",
     "scope": "B08 unit/equipment; en-bloc gate approval; canvas swap accepted as technical pass (precedent)",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "HELD from promotion (owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS, 2026-09-25): approved candidate 1376x768 cannot reach profile target 2048x2048 within bounds (held aspect). Options: fresh canonical-resolution pass (per-ID 1+1, explicit authorization required) or explicit as-is promotion instruction."
    },
    "downstream_targets": [
     "CG-D-UNT-SOLDIER"
@@ -6578,7 +6869,7 @@
   "CG-S-ICO-FOOD": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_food.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ICO-FOOD/r001/cg_s_ico_food.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "economic glyph family member (shared stroke/margin/legibility gate)",
    "candidates": [
@@ -6607,7 +6898,7 @@
     "date": "2026-09-24",
     "scope": "B09 economic glyph family (stroke/margin/legibility consistent burst)",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-ICO-FOOD",
@@ -6617,12 +6908,22 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 1
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_DOWN2X 1024x1024 -> 512x512 (REF-GLYPH 512x512 source spec)",
+    "source_candidate": "assets/candidates/CG-S-ICO-FOOD/r001/cg_s_ico_food.png",
+    "source_candidate_sha256": "a6883b266df59e74475e3a1350e14cfe33cd5a20ab3f9e3ff23848dfe76081c7",
+    "canonical_dimensions": "512x512",
+    "canonical_sha256": "884fac0364ef9f475fcab8f0180bf92d956ecc4bd9150e68a47dbea7014a0f5e",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
    }
   },
   "CG-S-ICO-WOOD": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_wood.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ICO-WOOD/r001/cg_s_ico_wood.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "economic glyph family member (shared stroke/margin/legibility gate)",
    "candidates": [
@@ -6651,7 +6952,7 @@
     "date": "2026-09-24",
     "scope": "B09 economic glyph family (stroke/margin/legibility consistent burst)",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-ICO-WOOD",
@@ -6661,12 +6962,22 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 1
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_DOWN2X 1024x1024 -> 512x512 (REF-GLYPH 512x512 source spec)",
+    "source_candidate": "assets/candidates/CG-S-ICO-WOOD/r001/cg_s_ico_wood.png",
+    "source_candidate_sha256": "80c1d89a29be66cc40e3a8d160e0e5b08aa6eee99182a53f324b0eceb3713735",
+    "canonical_dimensions": "512x512",
+    "canonical_sha256": "edfe1920980fc24c07360e44a38b0fce0edd53fd50fed9ce4de2637886b6696f",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
    }
   },
   "CG-S-ICO-ORE": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_ore.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ICO-ORE/r001/cg_s_ico_ore.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "economic glyph family member (shared stroke/margin/legibility gate)",
    "candidates": [
@@ -6695,7 +7006,7 @@
     "date": "2026-09-24",
     "scope": "B09 economic glyph family (stroke/margin/legibility consistent burst)",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-ICO-ORE",
@@ -6705,12 +7016,22 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 1
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_DOWN2X 1024x1024 -> 512x512 (REF-GLYPH 512x512 source spec)",
+    "source_candidate": "assets/candidates/CG-S-ICO-ORE/r001/cg_s_ico_ore.png",
+    "source_candidate_sha256": "2121c11724907e94f017cb8434b50da43b5aaa5ff748b5170d8fd2d94fb9fbbb",
+    "canonical_dimensions": "512x512",
+    "canonical_sha256": "a5ec8532a4b397a5d1836371c29a82668e5f8910b3d96d4406dc8b09fc66d800",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
    }
   },
   "CG-S-ICO-TOOLS": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_tools.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ICO-TOOLS/r001/cg_s_ico_tools.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "economic glyph family member (shared stroke/margin/legibility gate)",
    "candidates": [
@@ -6739,7 +7060,7 @@
     "date": "2026-09-24",
     "scope": "B09 economic glyph family (stroke/margin/legibility consistent burst)",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-ICO-TOOLS",
@@ -6749,12 +7070,22 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 1
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_DOWN2X 1024x1024 -> 512x512 (REF-GLYPH 512x512 source spec)",
+    "source_candidate": "assets/candidates/CG-S-ICO-TOOLS/r001/cg_s_ico_tools.png",
+    "source_candidate_sha256": "a35de1ed821594e91cbabe251c6e0ccc45b93afac1455d971691446c8a5c7e02",
+    "canonical_dimensions": "512x512",
+    "canonical_sha256": "839a4a1232a056adf9ecf52c50958aecb66bc881e77472713cc7aca20bd265fb",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
    }
   },
   "CG-S-ICO-MEDICINE": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_medicine.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ICO-MEDICINE/r001/cg_s_ico_medicine.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "economic glyph family member (shared stroke/margin/legibility gate)",
    "candidates": [
@@ -6783,7 +7114,7 @@
     "date": "2026-09-24",
     "scope": "B09 economic glyph family (stroke/margin/legibility consistent burst)",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-ICO-MEDICINE",
@@ -6793,12 +7124,22 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 1
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_DOWN2X 1024x1024 -> 512x512 (REF-GLYPH 512x512 source spec)",
+    "source_candidate": "assets/candidates/CG-S-ICO-MEDICINE/r001/cg_s_ico_medicine.png",
+    "source_candidate_sha256": "dfe38e58c5eca01126951566317feef54f8583bd05365c2f1046d75287e384f0",
+    "canonical_dimensions": "512x512",
+    "canonical_sha256": "e7f1ae5df6007afe8fe8caec715f0e569f3674703a6f4721c7790bfe7a07f060",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
    }
   },
   "CG-S-ICO-BIO": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_bio.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ICO-BIO/r001/cg_s_ico_bio.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "economic glyph family member (shared stroke/margin/legibility gate)",
    "candidates": [
@@ -6827,7 +7168,7 @@
     "date": "2026-09-24",
     "scope": "B09 economic glyph family (stroke/margin/legibility consistent burst)",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-ICO-BIO",
@@ -6837,12 +7178,22 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 1
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_DOWN2X 1024x1024 -> 512x512 (REF-GLYPH 512x512 source spec)",
+    "source_candidate": "assets/candidates/CG-S-ICO-BIO/r001/cg_s_ico_bio.png",
+    "source_candidate_sha256": "6819e86bb709cd4a641190f84e101ac1a5171461b18c32fe2a623f804301d88d",
+    "canonical_dimensions": "512x512",
+    "canonical_sha256": "fd0ac592cbde337021bede012371c1b8582bf6eef972349d7c385edb4200494f",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
    }
   },
   "CG-S-ICO-COIN": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_coin.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ICO-COIN/r001/cg_s_ico_coin.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "economic glyph family member (shared stroke/margin/legibility gate)",
    "candidates": [
@@ -6871,7 +7222,7 @@
     "date": "2026-09-24",
     "scope": "B09 economic glyph family (stroke/margin/legibility consistent burst)",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-ICO-COIN",
@@ -6881,12 +7232,22 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 1
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_DOWN2X 1024x1024 -> 512x512 (REF-GLYPH 512x512 source spec)",
+    "source_candidate": "assets/candidates/CG-S-ICO-COIN/r001/cg_s_ico_coin.png",
+    "source_candidate_sha256": "02c95fbaddbd3cb5e4ebfae800b79054c744bd4bcb9c2c469d16ee875e030219",
+    "canonical_dimensions": "512x512",
+    "canonical_sha256": "53925ad7a38cb9bc593f8bb3a852f426d810a4f79abb3a15ff37a0a13b7ea66c",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
    }
   },
   "CG-S-ICO-KNOWLEDGE": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_knowledge.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ICO-KNOWLEDGE/r001/cg_s_ico_knowledge.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "economic glyph family member (shared stroke/margin/legibility gate)",
    "candidates": [
@@ -6915,7 +7276,7 @@
     "date": "2026-09-24",
     "scope": "B09 economic glyph family (stroke/margin/legibility consistent burst)",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-ICO-KNOWLEDGE",
@@ -6925,12 +7286,22 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 1
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_DOWN2X 1024x1024 -> 512x512 (REF-GLYPH 512x512 source spec)",
+    "source_candidate": "assets/candidates/CG-S-ICO-KNOWLEDGE/r001/cg_s_ico_knowledge.png",
+    "source_candidate_sha256": "75decb8f5b327449bc081bcbe3f50495bf0aed04a152ebcf38fbe2d11e910c2e",
+    "canonical_dimensions": "512x512",
+    "canonical_sha256": "f27a6a1937b69af13f72b41a4d8bb5a0d7bb7458bbc265a1fbe1ee49af8a46d6",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
    }
   },
   "CG-S-ICO-STONE": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_stone.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ICO-STONE/r002/cg_s_ico_stone.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "economic glyph family member",
    "candidates": [
@@ -6975,7 +7346,7 @@
     "date": "2026-09-24",
     "scope": "B09 economic glyph; approved as r002; r001 preserved as rejected evidence",
     "approved_revision": "r002",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-GOD-ICO-STONE",
@@ -6986,12 +7357,22 @@
     "repair_candidates_used": 1,
     "remaining": 0
    },
-   "reason": "Count anchor failure (5 blocks vs 3). Repair r002 queued under standing ruling #17; strategy: per-panel 'exactly three blocks: two on top, one below' stated first (validated on CRYSTAL r002)."
+   "reason": "Count anchor failure (5 blocks vs 3). Repair r002 queued under standing ruling #17; strategy: per-panel 'exactly three blocks: two on top, one below' stated first (validated on CRYSTAL r002).",
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_DOWN2X 1024x1024 -> 512x512 (REF-GLYPH 512x512 source spec)",
+    "source_candidate": "assets/candidates/CG-S-ICO-STONE/r002/cg_s_ico_stone.png",
+    "source_candidate_sha256": "aac0110c0ea891aed20b1a78d0f445de12b3010ac40dc937a6b6a0a9eb68d776",
+    "canonical_dimensions": "512x512",
+    "canonical_sha256": "53140d43a156fdf03a44dfda87512b1b3b549c631f4a18d8eeded41648ff2890",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
+   }
   },
   "CG-S-EMB-01": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/emblems/cg_s_emb_01.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-EMB-01/r001/cg_s_emb_01.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "faction emblem family (six-distinction identity set)",
    "candidates": [
@@ -7021,7 +7402,7 @@
     "date": "2026-09-24",
     "scope": "B09 faction emblem; six-distinction identity set complete",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-EMB-01"
@@ -7030,12 +7411,22 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 1
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_DOWN2X 1024x1024 -> 512x512 (REF-GLYPH 512x512 source spec)",
+    "source_candidate": "assets/candidates/CG-S-EMB-01/r001/cg_s_emb_01.png",
+    "source_candidate_sha256": "270ac7f8c96a917bc4facd9ef1f92ecd01b1f442ed082ae642f2865ab419ef5b",
+    "canonical_dimensions": "512x512",
+    "canonical_sha256": "1e4069747ae405c344b8d73c3aeeaa657b6e598cdf0b50b9eeb3c42176829f0f",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
    }
   },
   "CG-S-EMB-02": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/emblems/cg_s_emb_02.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-EMB-02/r001/cg_s_emb_02.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "faction emblem family (six-distinction identity set)",
    "candidates": [
@@ -7065,7 +7456,7 @@
     "date": "2026-09-24",
     "scope": "B09 faction emblem; six-distinction identity set complete",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-EMB-02"
@@ -7074,12 +7465,22 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 1
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_DOWN2X 1024x1024 -> 512x512 (REF-GLYPH 512x512 source spec)",
+    "source_candidate": "assets/candidates/CG-S-EMB-02/r001/cg_s_emb_02.png",
+    "source_candidate_sha256": "1ba3de27aca0184cecc056b7084f8dd17ef9f0931aec8904ed14cef703445cb1",
+    "canonical_dimensions": "512x512",
+    "canonical_sha256": "0371c794864375de8fbbdbba16e89cddce9741bc77606ec7e42f8ebe46e63f14",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
    }
   },
   "CG-S-EMB-03": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/emblems/cg_s_emb_03.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-EMB-03/r001/cg_s_emb_03.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "faction emblem family (six-distinction identity set)",
    "candidates": [
@@ -7109,7 +7510,7 @@
     "date": "2026-09-24",
     "scope": "B09 faction emblem; six-distinction identity set complete",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-EMB-03"
@@ -7118,12 +7519,22 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 1
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_DOWN2X 1024x1024 -> 512x512 (REF-GLYPH 512x512 source spec)",
+    "source_candidate": "assets/candidates/CG-S-EMB-03/r001/cg_s_emb_03.png",
+    "source_candidate_sha256": "48dc7f084061a43b4b402a8d2ff586f2574a9617da5ea1f74e9c03101fb4b092",
+    "canonical_dimensions": "512x512",
+    "canonical_sha256": "75d7708bba3a157dba4f3dc78d3249500ba7ca76fb7cb5328f5b8eec04bfbca0",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
    }
   },
   "CG-S-EMB-04": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/emblems/cg_s_emb_04.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-EMB-04/r001/cg_s_emb_04.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "faction emblem family (six-distinction identity set)",
    "candidates": [
@@ -7153,7 +7564,7 @@
     "date": "2026-09-24",
     "scope": "B09 faction emblem; six-distinction identity set complete",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-EMB-04"
@@ -7162,12 +7573,22 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 1
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_DOWN2X 1024x1024 -> 512x512 (REF-GLYPH 512x512 source spec)",
+    "source_candidate": "assets/candidates/CG-S-EMB-04/r001/cg_s_emb_04.png",
+    "source_candidate_sha256": "78124f71d138856430a170e2dd9d059e917c44f4667db7bd96f981b05da84d04",
+    "canonical_dimensions": "512x512",
+    "canonical_sha256": "166c68af7d7a7c03dc9f1f4be8c92612f23ee4b0131c7d643b8d866c5dc470c7",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
    }
   },
   "CG-S-EMB-05": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/emblems/cg_s_emb_05.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-EMB-05/r001/cg_s_emb_05.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "faction emblem family (six-distinction identity set)",
    "candidates": [
@@ -7197,7 +7618,7 @@
     "date": "2026-09-24",
     "scope": "B09 faction emblem; six-distinction identity set complete",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-EMB-05"
@@ -7206,12 +7627,22 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 1
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_DOWN2X 1024x1024 -> 512x512 (REF-GLYPH 512x512 source spec)",
+    "source_candidate": "assets/candidates/CG-S-EMB-05/r001/cg_s_emb_05.png",
+    "source_candidate_sha256": "87ac15182f8fd87d2323d14d975225e6cadd697309c21badfcdd6b9245f1bc09",
+    "canonical_dimensions": "512x512",
+    "canonical_sha256": "e921861aeb72ae2b6cf3b957790fa46e56d49710e609a01cbd175ad325ddd1fe",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
    }
   },
   "CG-S-EMB-06": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/emblems/cg_s_emb_06.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-EMB-06/r001/cg_s_emb_06.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "faction emblem family (six-distinction identity set)",
    "candidates": [
@@ -7241,7 +7672,7 @@
     "date": "2026-09-24",
     "scope": "B09 faction emblem; six-distinction identity set complete",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-EMB-06"
@@ -7250,12 +7681,22 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 1
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_DOWN2X 1024x1024 -> 512x512 (REF-GLYPH 512x512 source spec)",
+    "source_candidate": "assets/candidates/CG-S-EMB-06/r001/cg_s_emb_06.png",
+    "source_candidate_sha256": "e47594798768307069d328342e86306cc7485895a1c38eefd7fd84835565160b",
+    "canonical_dimensions": "512x512",
+    "canonical_sha256": "0386540c89cbee4713279c93db75688ab925ddca6f89fe874e4f3472fe99d5e1",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
    }
   },
   "CG-S-ICO-MOVE": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_move.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ICO-MOVE/r001/cg_s_ico_move.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "action glyph family member (B09 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
@@ -7284,7 +7725,7 @@
     "date": "2026-09-24",
     "scope": "B10 action glyph family (stroke/margin/legibility consistent burst; distinct critical actions verified)",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-ICO-MOVE",
@@ -7294,12 +7735,22 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 1
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_DOWN2X 1024x1024 -> 512x512 (REF-GLYPH 512x512 source spec)",
+    "source_candidate": "assets/candidates/CG-S-ICO-MOVE/r001/cg_s_ico_move.png",
+    "source_candidate_sha256": "778f03c78f0f14427cc29203e6e7de8852acc3d53e2ff72452707f42598f2895",
+    "canonical_dimensions": "512x512",
+    "canonical_sha256": "929d226b0a26f0730d651eb1f89a4d840681ab96403fa1d7f73a8451dcfaa222",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
    }
   },
   "CG-S-ICO-FEED": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_feed.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ICO-FEED/r001/cg_s_ico_feed.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "action glyph family member (B09 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
@@ -7328,7 +7779,7 @@
     "date": "2026-09-24",
     "scope": "B10 action glyph family (stroke/margin/legibility consistent burst; distinct critical actions verified)",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-ICO-FEED",
@@ -7338,12 +7789,22 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 1
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_DOWN2X 1024x1024 -> 512x512 (REF-GLYPH 512x512 source spec)",
+    "source_candidate": "assets/candidates/CG-S-ICO-FEED/r001/cg_s_ico_feed.png",
+    "source_candidate_sha256": "0a9d8d485a7a8bcb607e7543fad237db3d09381d2b35a44c04ab6e4dbbe757fd",
+    "canonical_dimensions": "512x512",
+    "canonical_sha256": "d575ab017e0a5cefe4e4e7f15c1da3734b491f38924ef2390e69e31495149769",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
    }
   },
   "CG-S-ICO-REST": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_rest.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ICO-REST/r001/cg_s_ico_rest.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "action glyph family member (B09 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
@@ -7372,7 +7833,7 @@
     "date": "2026-09-24",
     "scope": "B10 action glyph family (stroke/margin/legibility consistent burst; distinct critical actions verified)",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-ICO-REST",
@@ -7382,12 +7843,22 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 1
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_DOWN2X 1024x1024 -> 512x512 (REF-GLYPH 512x512 source spec)",
+    "source_candidate": "assets/candidates/CG-S-ICO-REST/r001/cg_s_ico_rest.png",
+    "source_candidate_sha256": "c8b026ca05c620c0aeb0be0edea0a919d768164531bd7497760902234e3e8bbb",
+    "canonical_dimensions": "512x512",
+    "canonical_sha256": "ce50b396180bbfa390461ef05bee0ec683c060c0fbbf1f96bc0f5e98328551a7",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
    }
   },
   "CG-S-ICO-GUARD": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_guard.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ICO-GUARD/r001/cg_s_ico_guard.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "action glyph family member (B09 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
@@ -7416,7 +7887,7 @@
     "date": "2026-09-24",
     "scope": "B10 action glyph family (stroke/margin/legibility consistent burst; distinct critical actions verified)",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-ICO-GUARD",
@@ -7426,12 +7897,22 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 1
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_DOWN2X 1024x1024 -> 512x512 (REF-GLYPH 512x512 source spec)",
+    "source_candidate": "assets/candidates/CG-S-ICO-GUARD/r001/cg_s_ico_guard.png",
+    "source_candidate_sha256": "27001313c64596635ef6964e36fa8a91ce6d8b41e6c73b4741f258d4131d0c0e",
+    "canonical_dimensions": "512x512",
+    "canonical_sha256": "541857244dcee9523300890e088aca5d5994370ec2e2e6f9332a925bcd29e35c",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
    }
   },
   "CG-S-ICO-ATTACK": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_attack.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ICO-ATTACK/r001/cg_s_ico_attack.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "action glyph family member (B09 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
@@ -7460,7 +7941,7 @@
     "date": "2026-09-24",
     "scope": "B10 action glyph family (stroke/margin/legibility consistent burst; distinct critical actions verified)",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-ICO-ATTACK",
@@ -7470,12 +7951,22 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 1
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_DOWN2X 1024x1024 -> 512x512 (REF-GLYPH 512x512 source spec)",
+    "source_candidate": "assets/candidates/CG-S-ICO-ATTACK/r001/cg_s_ico_attack.png",
+    "source_candidate_sha256": "956c1e6b7721fdb59cd74f027b0ceb629b4924e2c19c3aa4c7ae3fd661bff199",
+    "canonical_dimensions": "512x512",
+    "canonical_sha256": "c4aa493b6403f062c99c63fd5ab6efe48b2064af4ef00a7aee3127a7a78c2119",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
    }
   },
   "CG-S-ICO-MIGRATE": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_migrate.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ICO-MIGRATE/r001/cg_s_ico_migrate.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "action glyph family member (B09 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
@@ -7507,7 +7998,7 @@
     "date": "2026-09-24",
     "scope": "B10 action glyph family (stroke/margin/legibility consistent burst; distinct critical actions verified)",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-ICO-MIGRATE",
@@ -7517,12 +8008,22 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 1
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_DOWN2X 1024x1024 -> 512x512 (REF-GLYPH 512x512 source spec)",
+    "source_candidate": "assets/candidates/CG-S-ICO-MIGRATE/r001/cg_s_ico_migrate.png",
+    "source_candidate_sha256": "c59e199ee4fcf8f1c258e7f10bda2235c744509d1fc4a9edb2be7eec6ac11e15",
+    "canonical_dimensions": "512x512",
+    "canonical_sha256": "27164477ef20a050c192e93baca1278817c869fed06ca35bdc65ade70f088875",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
    }
   },
   "CG-S-ICO-BUILD": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_build.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ICO-BUILD/r001/cg_s_ico_build.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "action glyph family member (B09 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
@@ -7551,7 +8052,7 @@
     "date": "2026-09-24",
     "scope": "B10 action glyph family (stroke/margin/legibility consistent burst; distinct critical actions verified)",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-ICO-BUILD",
@@ -7561,12 +8062,22 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 1
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_DOWN2X 1024x1024 -> 512x512 (REF-GLYPH 512x512 source spec)",
+    "source_candidate": "assets/candidates/CG-S-ICO-BUILD/r001/cg_s_ico_build.png",
+    "source_candidate_sha256": "bf976e42c279f353de0cb1d53de2b5affad4b179cc0ff17ad06c3021c87a9e9d",
+    "canonical_dimensions": "512x512",
+    "canonical_sha256": "5a1db37e5fc9171f74e21f7930ff50eb3a53bd2aad659d3280ebe4371bbaaa49",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
    }
   },
   "CG-S-ICO-EVOLVE": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_evolve.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ICO-EVOLVE/r002/cg_s_ico_evolve.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "action glyph family member (B09 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
@@ -7613,7 +8124,7 @@
     "date": "2026-09-24",
     "scope": "B10 action glyph family (stroke/margin/legibility consistent burst; distinct critical actions verified)",
     "approved_revision": "r002",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-ICO-EVOLVE",
@@ -7624,12 +8135,22 @@
     "repair_candidates_used": 1,
     "remaining": 0
    },
-   "reason": "RESOLVED_PENDING_GATE: r002 verified conforming at zoom (ladder count 3/3, parchment restored); approval lands at B10 en-bloc closure under ruling #17."
+   "reason": "RESOLVED_PENDING_GATE: r002 verified conforming at zoom (ladder count 3/3, parchment restored); approval lands at B10 en-bloc closure under ruling #17.",
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_DOWN2X 1024x1024 -> 512x512 (REF-GLYPH 512x512 source spec)",
+    "source_candidate": "assets/candidates/CG-S-ICO-EVOLVE/r002/cg_s_ico_evolve.png",
+    "source_candidate_sha256": "7740bb0d8d18eeda6ca66b98e2a4232ed5a010f460a2759bdb07be58c1818a63",
+    "canonical_dimensions": "512x512",
+    "canonical_sha256": "633ffba47efbce7fabf5c74ea96386df65433830423df8d3fd25c469eab73b99",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
+   }
   },
   "CG-S-ICO-TRADE": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_trade.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ICO-TRADE/r002/cg_s_ico_trade.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "action glyph family member (B09 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
@@ -7676,7 +8197,7 @@
     "date": "2026-09-24",
     "scope": "B10 action glyph family (stroke/margin/legibility consistent burst; distinct critical actions verified)",
     "approved_revision": "r002",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-ICO-TRADE",
@@ -7687,12 +8208,22 @@
     "repair_candidates_used": 1,
     "remaining": 0
    },
-   "reason": "count anchor failure in size-ladder panel: FOUR opposed-arrow-pair instances (one large + three smaller) vs kit-exact THREE descending on one shared baseline; BR panel background light-gray instead of parchment #F4ECDE (hero/chip identities correct: two opposed cargo arrows). Repair r002 queued under standing ruling #17; strategy: per-panel exact counts stated first (\"size-ladder panel contains EXACTLY THREE glyph instances, large then medium then small on ONE baseline; never a fourth\") and all four panels EXACTLY parchment #F4ECDE (validated on STONE r002 / CRYSTAL r002)."
+   "reason": "count anchor failure in size-ladder panel: FOUR opposed-arrow-pair instances (one large + three smaller) vs kit-exact THREE descending on one shared baseline; BR panel background light-gray instead of parchment #F4ECDE (hero/chip identities correct: two opposed cargo arrows). Repair r002 queued under standing ruling #17; strategy: per-panel exact counts stated first (\"size-ladder panel contains EXACTLY THREE glyph instances, large then medium then small on ONE baseline; never a fourth\") and all four panels EXACTLY parchment #F4ECDE (validated on STONE r002 / CRYSTAL r002).",
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_DOWN2X 1024x1024 -> 512x512 (REF-GLYPH 512x512 source spec)",
+    "source_candidate": "assets/candidates/CG-S-ICO-TRADE/r002/cg_s_ico_trade.png",
+    "source_candidate_sha256": "2c654e13a6ca4fa9a216e424990d0ac6c361a80fc7e4e74431380959ef9bdebd",
+    "canonical_dimensions": "512x512",
+    "canonical_sha256": "7434541736a6bac1d3a11b8d152798d7873c03343b00ec790791d167a5e62f80",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
+   }
   },
   "CG-S-ICO-RESEARCH": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_research.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ICO-RESEARCH/r001/cg_s_ico_research.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "information/warning glyph family member (B09/B10 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
@@ -7721,7 +8252,7 @@
     "date": "2026-09-24",
     "scope": "B11 information/warning glyph family (B09-B10 kit continuity; no duplicate warning shapes; legibility verified)",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-ICO-RESEARCH",
@@ -7731,12 +8262,22 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 1
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_DOWN2X 1024x1024 -> 512x512 (REF-GLYPH 512x512 source spec)",
+    "source_candidate": "assets/candidates/CG-S-ICO-RESEARCH/r001/cg_s_ico_research.png",
+    "source_candidate_sha256": "ead1802d5588d461d5cbfa844bc545e263e7aef6426d71066efb180b7c6dfac1",
+    "canonical_dimensions": "512x512",
+    "canonical_sha256": "6f7e0f583839ce78d98e9f1626a176a8d20a62aae0174bea3019aef14f87dc8f",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
    }
   },
   "CG-S-ICO-POLICY": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_policy.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ICO-POLICY/r001/cg_s_ico_policy.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "information/warning glyph family member (B09/B10 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
@@ -7765,7 +8306,7 @@
     "date": "2026-09-24",
     "scope": "B11 information/warning glyph family (B09-B10 kit continuity; no duplicate warning shapes; legibility verified)",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-ICO-POLICY",
@@ -7775,12 +8316,22 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 1
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_DOWN2X 1024x1024 -> 512x512 (REF-GLYPH 512x512 source spec)",
+    "source_candidate": "assets/candidates/CG-S-ICO-POLICY/r001/cg_s_ico_policy.png",
+    "source_candidate_sha256": "662ccc0f9617dcd6599b45145c2f90489d7cbecfc429cbc27b2a25f3574e4c57",
+    "canonical_dimensions": "512x512",
+    "canonical_sha256": "7ca00ae40102b5bb70e4dc3146aa9d75691ee1277f2f2cf1f749110cf9f993b3",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
    }
   },
   "CG-S-ICO-TREATY": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_treaty.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ICO-TREATY/r001/cg_s_ico_treaty.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "information/warning glyph family member (B09/B10 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
@@ -7809,7 +8360,7 @@
     "date": "2026-09-24",
     "scope": "B11 information/warning glyph family (B09-B10 kit continuity; no duplicate warning shapes; legibility verified)",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-ICO-TREATY",
@@ -7819,12 +8370,22 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 1
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_DOWN2X 1024x1024 -> 512x512 (REF-GLYPH 512x512 source spec)",
+    "source_candidate": "assets/candidates/CG-S-ICO-TREATY/r001/cg_s_ico_treaty.png",
+    "source_candidate_sha256": "2d8e49c36508926e73841391c50f227f342ef2ceb4c6bed285f3eb06291e6b7a",
+    "canonical_dimensions": "512x512",
+    "canonical_sha256": "e9b2085c9c557e7844aa7bf537c94d4ef5fe2e3c553c074f5a01c6ceecf677cf",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
    }
   },
   "CG-S-ICO-HISTORY": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_history.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ICO-HISTORY/r001/cg_s_ico_history.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "information/warning glyph family member (B09/B10 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
@@ -7853,7 +8414,7 @@
     "date": "2026-09-24",
     "scope": "B11 information/warning glyph family (B09-B10 kit continuity; no duplicate warning shapes; legibility verified)",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-ICO-HISTORY",
@@ -7863,12 +8424,22 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 1
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_DOWN2X 1024x1024 -> 512x512 (REF-GLYPH 512x512 source spec)",
+    "source_candidate": "assets/candidates/CG-S-ICO-HISTORY/r001/cg_s_ico_history.png",
+    "source_candidate_sha256": "8499f395400745667bc85488b5c57da040485bd977892f46130eff90913e7878",
+    "canonical_dimensions": "512x512",
+    "canonical_sha256": "3bdeb63408e01384902f7e0763c94b25496971573d5014bcb166f7351e616a7b",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
    }
   },
   "CG-S-ICO-WARNING": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_warning.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ICO-WARNING/r001/cg_s_ico_warning.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "information/warning glyph family member (B09/B10 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
@@ -7897,7 +8468,7 @@
     "date": "2026-09-24",
     "scope": "B11 information/warning glyph family (B09-B10 kit continuity; no duplicate warning shapes; legibility verified)",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-ICO-WARNING",
@@ -7907,12 +8478,22 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 1
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_DOWN2X 1024x1024 -> 512x512 (REF-GLYPH 512x512 source spec)",
+    "source_candidate": "assets/candidates/CG-S-ICO-WARNING/r001/cg_s_ico_warning.png",
+    "source_candidate_sha256": "be12645934b5209f13b47ef9b32e11cf2d49fb7d098d9c6f6d875f85b28be2f3",
+    "canonical_dimensions": "512x512",
+    "canonical_sha256": "d81a2761cba77de451aeb69c15ad0b2005da39b17653b6284b1ac0f2dfdbccfc",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
    }
   },
   "CG-S-ICO-HEALTH": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_health.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ICO-HEALTH/r001/cg_s_ico_health.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "information/warning glyph family member (B09/B10 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
@@ -7941,7 +8522,7 @@
     "date": "2026-09-24",
     "scope": "B11 information/warning glyph family (B09-B10 kit continuity; no duplicate warning shapes; legibility verified)",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-ICO-HEALTH",
@@ -7951,12 +8532,22 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 1
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_DOWN2X 1024x1024 -> 512x512 (REF-GLYPH 512x512 source spec)",
+    "source_candidate": "assets/candidates/CG-S-ICO-HEALTH/r001/cg_s_ico_health.png",
+    "source_candidate_sha256": "f878bb048d0684e200a2586bda66cf078497bbeebc3ca15b7c2dcaedecd58017",
+    "canonical_dimensions": "512x512",
+    "canonical_sha256": "ef625a2dd01815e7593da69a1e22cbd014a4f07f9b864c462ec7d8b47c6e04f0",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
    }
   },
   "CG-S-ICO-FATIGUE": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_fatigue.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ICO-FATIGUE/r001/cg_s_ico_fatigue.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "information/warning glyph family member (B09/B10 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
@@ -7985,7 +8576,7 @@
     "date": "2026-09-24",
     "scope": "B11 information/warning glyph family (B09-B10 kit continuity; no duplicate warning shapes; legibility verified)",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-ICO-FATIGUE",
@@ -7995,12 +8586,22 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 1
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_DOWN2X 1024x1024 -> 512x512 (REF-GLYPH 512x512 source spec)",
+    "source_candidate": "assets/candidates/CG-S-ICO-FATIGUE/r001/cg_s_ico_fatigue.png",
+    "source_candidate_sha256": "11bf34b0c3f5af0572ea5e75eb9abb9e7231079d00290ac577d82b37272b9b3a",
+    "canonical_dimensions": "512x512",
+    "canonical_sha256": "6371337ed846457e3d7335da1853894c99d56f5531af2677a90552c10da00603",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
    }
   },
   "CG-S-ICO-POPULATION": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_population.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ICO-POPULATION/r001/cg_s_ico_population.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "information/warning glyph family member (B09/B10 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
@@ -8033,7 +8634,7 @@
     "date": "2026-09-24",
     "scope": "B11 information/warning glyph family (B09-B10 kit continuity; no duplicate warning shapes; legibility verified)",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-ICO-POPULATION",
@@ -8043,12 +8644,22 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 1
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_DOWN2X 1024x1024 -> 512x512 (REF-GLYPH 512x512 source spec)",
+    "source_candidate": "assets/candidates/CG-S-ICO-POPULATION/r001/cg_s_ico_population.png",
+    "source_candidate_sha256": "20ff764b911d860da9a60f001cdedf3188fb489108f806b112739c655ea2a750",
+    "canonical_dimensions": "512x512",
+    "canonical_sha256": "84eab6a990a1083f71fe258936232a1b3dc211782c4926eea66bb193636284c0",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
    }
   },
   "CG-S-ICO-CITY": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_city.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ICO-CITY/r001/cg_s_ico_city.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "information/warning glyph family member (B09/B10 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
@@ -8077,7 +8688,7 @@
     "date": "2026-09-24",
     "scope": "B11 information/warning glyph family (B09-B10 kit continuity; no duplicate warning shapes; legibility verified)",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-ICO-CITY",
@@ -8087,12 +8698,22 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 1
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_DOWN2X 1024x1024 -> 512x512 (REF-GLYPH 512x512 source spec)",
+    "source_candidate": "assets/candidates/CG-S-ICO-CITY/r001/cg_s_ico_city.png",
+    "source_candidate_sha256": "11c91e78bc0addae6ceabb92db2e028f8ad6fa61a56594c68cbf4090adf2e4bd",
+    "canonical_dimensions": "512x512",
+    "canonical_sha256": "2b098f9e7662ee67453e524785deea5c3303851e090b7317da8ee104428e4075",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
    }
   },
   "CG-S-ICO-GOD": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_god.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ICO-GOD/r001/cg_s_ico_god.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "information/warning glyph family member (B09/B10 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
@@ -8121,7 +8742,7 @@
     "date": "2026-09-24",
     "scope": "B11 information/warning glyph family (B09-B10 kit continuity; no duplicate warning shapes; legibility verified)",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-ICO-GOD",
@@ -8131,12 +8752,22 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 1
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_DOWN2X 1024x1024 -> 512x512 (REF-GLYPH 512x512 source spec)",
+    "source_candidate": "assets/candidates/CG-S-ICO-GOD/r001/cg_s_ico_god.png",
+    "source_candidate_sha256": "28ed6a8e6dc10ead73146cf51091a44016ebe9464a5668470e054e80847ff673",
+    "canonical_dimensions": "512x512",
+    "canonical_sha256": "6467d792c0463b953f4ef7c3036aff8b5e1acca0d8d9cba759616e407e314f5e",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
    }
   },
   "CG-S-ICO-ECOLOGY": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_ecology.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ICO-ECOLOGY/r001/cg_s_ico_ecology.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "information/warning glyph family member (B09/B10 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
@@ -8165,7 +8796,7 @@
     "date": "2026-09-24",
     "scope": "B11 information/warning glyph family (B09-B10 kit continuity; no duplicate warning shapes; legibility verified)",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-ICO-ECOLOGY",
@@ -8175,12 +8806,22 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 1
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_DOWN2X 1024x1024 -> 512x512 (REF-GLYPH 512x512 source spec)",
+    "source_candidate": "assets/candidates/CG-S-ICO-ECOLOGY/r001/cg_s_ico_ecology.png",
+    "source_candidate_sha256": "aebf5fbe7f35948b752c60f145515510c29b938bbbd82874b2f0956c82fb3ded",
+    "canonical_dimensions": "512x512",
+    "canonical_sha256": "b3eb001057a212123cec08992a6dd6c97144858b6aa06ca6da464a4a936c15b4",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
    }
   },
   "CG-S-ICO-CLAIM": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_claim.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ICO-CLAIM/r001/cg_s_ico_claim.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "information/warning glyph family member (B09/B10 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
@@ -8209,7 +8850,7 @@
     "date": "2026-09-24",
     "scope": "B11 information/warning glyph family (B09-B10 kit continuity; no duplicate warning shapes; legibility verified)",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-ICO-CLAIM",
@@ -8219,12 +8860,22 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 1
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_DOWN2X 1024x1024 -> 512x512 (REF-GLYPH 512x512 source spec)",
+    "source_candidate": "assets/candidates/CG-S-ICO-CLAIM/r001/cg_s_ico_claim.png",
+    "source_candidate_sha256": "04b922a36458345976f5c28762ce76dc858786f56a9e95e662ecaa7fb0c8bbb3",
+    "canonical_dimensions": "512x512",
+    "canonical_sha256": "9a3a9fcc57243b0c8740d7db84ce85f73e2f89fc0a3a9caee35ec25982dc1e88",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
    }
   },
   "CG-S-ICO-ARMY": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_army.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ICO-ARMY/r001/cg_s_ico_army.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "information/warning glyph family member (B09/B10 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
@@ -8253,7 +8904,7 @@
     "date": "2026-09-24",
     "scope": "B11 information/warning glyph family (B09-B10 kit continuity; no duplicate warning shapes; legibility verified)",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-ICO-ARMY",
@@ -8263,12 +8914,22 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 1
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_DOWN2X 1024x1024 -> 512x512 (REF-GLYPH 512x512 source spec)",
+    "source_candidate": "assets/candidates/CG-S-ICO-ARMY/r001/cg_s_ico_army.png",
+    "source_candidate_sha256": "a655e6c63f02272b211358d6d58809ec365c4066ff55cf1b788c1fc073989fb6",
+    "canonical_dimensions": "512x512",
+    "canonical_sha256": "8b9b003b85be2f6a3c77f27ca7ebebb1a713da9086594f04cf7e839263da9af9",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
    }
   },
   "CG-S-ICO-VISIBILITY": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_visibility.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ICO-VISIBILITY/r002/cg_s_ico_visibility.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "information/warning glyph family member (B09/B10 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
@@ -8315,7 +8976,7 @@
     "date": "2026-09-24",
     "scope": "B11 information/warning glyph family (B09-B10 kit continuity; no duplicate warning shapes; legibility verified)",
     "approved_revision": "r002",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-D-ICO-VISIBILITY",
@@ -8326,12 +8987,22 @@
     "repair_candidates_used": 1,
     "remaining": 0
    },
-   "reason": "Ladder-count failure (4 instances + second row vs exactly 3 on one baseline). Repair r002 queued under standing ruling #17; strategy: per-panel exact counts stated first (\"EXACTLY three instances, horizontally arranged, NEVER a fourth, no second row, nothing above the ladder row\") - validated 4/4 (CRYSTAL, STONE, EVOLVE, TRADE)."
+   "reason": "Ladder-count failure (4 instances + second row vs exactly 3 on one baseline). Repair r002 queued under standing ruling #17; strategy: per-panel exact counts stated first (\"EXACTLY three instances, horizontally arranged, NEVER a fourth, no second row, nothing above the ladder row\") - validated 4/4 (CRYSTAL, STONE, EVOLVE, TRADE).",
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "LANCZOS_DOWN2X 1024x1024 -> 512x512 (REF-GLYPH 512x512 source spec)",
+    "source_candidate": "assets/candidates/CG-S-ICO-VISIBILITY/r002/cg_s_ico_visibility.png",
+    "source_candidate_sha256": "9c4707fb2e90f0999e60807ad8c171973091d2f2b2a4bc1ab6f976f45382be84",
+    "canonical_dimensions": "512x512",
+    "canonical_sha256": "66d366cb82ef7bc7edb663ce7bd3eb201b7352b470d6ed90f7da992570e662ee",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
+   }
   },
   "CG-A-ART-TITLE": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/art/cg_a_art_title.png",
-   "canonical_state": "ABSENT (correct - no approved source; promotion RESERVED to owner ruling)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-A-ART-TITLE/r001/cg_a_art_title.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "CG-S-ART-DIRECTION r002 (provisional style anchor; B00-block precedent disclosed); CG-S-GOD-FORM-Q r004; CG-S-GOD-LIFE-S: NO approved revision (rejection ratified standing) - S-remains motif rendered from plan text only, never from rejected candidates",
    "candidates": [
@@ -8363,7 +9034,7 @@
     "date": "2026-09-24",
     "scope": "B12 final DIRECT-TITLE key art; gate precondition satisfied (all referenced source bodies approved-provisional; LIFE-S rejection ratified standing, motif from plan text)",
     "approved_revision": "r001",
-    "resolution": "canonical promotion pending the standing 2048/3072 resolution ruling"
+    "resolution": "PROMOTED to canonical under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (2026-09-25)"
    },
    "downstream_targets": [
     "CG-R-TITLE-COMPOSITION"
@@ -8372,6 +9043,16 @@
     "initial_candidates_used": 1,
     "repair_candidates_used": 0,
     "remaining": 1
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+    "operation": "TITLE_NORMALIZE 1456x720 -> 2048x1024: Lanczos height-exact resize to 2070x1024 (1.422x, <=2x bound) then center crop to 2048x1024 (~1.1% width, <=2% bound; center-safe composition by spec)",
+    "source_candidate": "assets/candidates/CG-A-ART-TITLE/r001/cg_a_art_title.png",
+    "source_candidate_sha256": "11ed670e6048665dcf4eab97175518f1e25e9193f8c0b0f1b36eaae91099e4ad",
+    "canonical_dimensions": "2048x1024",
+    "canonical_sha256": "afb8a4027e92cebbcd088a55b87014f581a00b21235064eabbacbca85e581097",
+    "normalization_tool": "ImageMagick convert -filter Lanczos"
    }
   }
  },
@@ -8391,7 +9072,7 @@
     "CG-S-ART-DIRECTION": "BLOCKED"
    },
    "capacity_note": "B01 dependency CG-S-ART-DIRECTION is not satisfied; per Section 4, production does not proceed to B01 without resolution.",
-   "resolution": "TERMINAL - run stopped by human ruling (no amendment)",
+   "resolution": "BLOCKED - FINAL by owner ruling B00_BLOCK_FINAL (2026-09-24): style board not generated; CG-S-ART-DIRECTION remains NO_AMENDMENT_RUN_STOPPED; B01-era set remains provisional style anchor.",
    "resolution_date_utc": "2026-09-23T22:02:21+00:00",
    "production_run": "ENDED at B00 gate; B01-B12 not started; 0 of 121 canonical sources produced in this environment"
   },
@@ -8812,7 +9493,28 @@
   "reserved_owner_rulings": [
    "B00 dimensional block (style board 3072x2048 class)",
    "2048/3072 canonical promotion ruling for all 119 approved-provisional sources"
-  ]
+  ],
+  "promotion": {
+   "ruling": "CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (owner, 2026-09-24)",
+   "plan": "105 promotable (66 UP2X + 38 DOWN2X + 1 title fit) in 3 chunks under the per-turn payload cap; 14 HELD beyond bounds; 2 no-source IDs",
+   "chunk_a": "66 promoted this turn (batches B01-B04 + all 38 glyphs + title); chunks B (B05-B07) and C (B08) next",
+   "held_ids": [
+    "CG-S-BLD-MARKET",
+    "CG-S-BLD-SHRINE",
+    "CG-S-GOD-LIFE-H",
+    "CG-S-GOD-LIFE-M",
+    "CG-S-GOD-LIFE-Q",
+    "CG-S-GOD-SENSE-ANTENNA-CROWN",
+    "CG-S-GOD-SYMB-FOLLOWER-GALLERY",
+    "CG-S-INF-BRIDGE",
+    "CG-S-INF-CANAL",
+    "CG-S-INF-FARM",
+    "CG-S-INF-MINE",
+    "CG-S-INF-ROAD",
+    "CG-S-INF-WALL",
+    "CG-S-UNT-SOLDIER"
+   ]
+  }
  },
  "human_rulings": [
   {
@@ -9030,12 +9732,28 @@
     ]
    },
    "recorded_utc": "2026-09-24T08:25:00+00:00"
+  },
+  {
+   "id": "CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS",
+   "ruling": {
+    "date": "2026-09-24",
+    "authority": "human (repository owner) via Arena gate answer (option normalize)",
+    "decision": "Resolve the standing 2048/3072 promotion ruling: normalize within bounds, then promote. Same-aspect <=2x Lanczos upscale to profile targets (1024^2 -> 2048^2), glyph-class 1024^2 downscaled to the 512^2 REF-GLYPH spec, title 1456x720 normalized to 2048x1024 via height-exact resize + ~1.1% center crop (center-safe by spec, <=2% bound). Sheets that cannot reach target within bounds (native aspect mismatch >1%, or required scale >2x) stay candidates: HELD pending fresh canonical-resolution passes or an explicit as-is instruction."
+   }
+  },
+  {
+   "id": "B00_BLOCK_FINAL",
+   "ruling": {
+    "date": "2026-09-24",
+    "authority": "human (repository owner) via Arena gate answer (option keepblocked)",
+    "decision": "B00 dimensional BLOCK is FINAL: the 3072x2048 style board is not generated; CG-S-ART-DIRECTION remains NO_AMENDMENT_RUN_STOPPED; the B01-era set remains the provisional style anchor of record."
+   }
   }
  ],
  "resolution_ruling_standing": {
-  "canonical_sheet_targets": "UNCHANGED (e.g. REF-GOD 2048x2048, REF-DIRECTION 3072x2048)",
-  "native_1024_status": "provisional review artifacts only; never canonical without a formal spec amendment",
-  "dimensional_block": "remains real for B00 and any profile the tool cannot natively meet"
+  "canonical_sheet_targets": "RESOLVED 2026-09-24 by owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (normalize within bounds, then promote; beyond-bound sheets HELD)",
+  "native_1024_status": "glyph class downscaled to 512x512 canonical; sheet class Lanczos-upscaled 2.0x to 2048-class canonical; beyond-bound sheets remain provisional candidates",
+  "dimensional_block": "FINAL per owner ruling B00_BLOCK_FINAL (2026-09-24): REF-DIRECTION style board not generated"
  },
  "audit_trail": [
   {
@@ -9258,6 +9976,12 @@
    "incident": "RECEIPT_APPROVAL_SYNC_RUN_FINAL",
    "recorded_utc": "2026-09-24T23:44:51+00:00",
    "observation": "Final census reconciliation: 10 receipts carried stale AWAITING_APPROVAL blocks for approvals already recorded elsewhere - CG-S-GOD-LIFE-Q (ruling LIFEQ_R004_ACCEPT_AND_B01_GATE_PASS) and the 9 B08 ENV r001 sheets (B08 en-bloc closure under ruling #17). Receipt-level approval blocks synced to the standard approved vocabulary with explicit pointers to the authorizing rulings; candidate statuses untouched (ledger convention: approval lives at receipt level). Five early-era receipts (TORSO-Q, FORM-Q, TORSO-H, FORM-H, LIFE-H) keep their historical approval vocabulary (ACCEPTED/RATIFIED/APPROVED PROVISIONAL) unchanged - unambiguous approvals. CG-S-ART-DIRECTION remains NO_AMENDMENT_RUN_STOPPED (B00 block, owner-reserved); CG-S-GOD-LIFE-S remains REJECTED_FINAL_THIS_PASS (ratified standing). Final: 119 approved-provisional IDs of 121.",
+   "content_loss": "none"
+  },
+  {
+   "incident": "PROMOTION_CHUNK_A_EXECUTED",
+   "recorded_utc": "2026-09-25T00:31:05+00:00",
+   "observation": "Owner rulings recorded: CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS + B00_BLOCK_FINAL. Workspace reset #10 detected post-ruling, recovered zero-loss to 45b1a74. Chunk A: 66 canonical files written and dimension-verified under assets/source/ (27 UP2X sheets B01-B04 -> 2048^2; 38 glyph-class DOWN2X -> 512^2 incl. 32 ICO + 6 EMB; title normalized to 2048x1024 via 1.422x + 1.1% center crop), 89.5MB. NOTE: the PNG commit (d3fd956) landed BEFORE this ledger write because the first ledger script aborted on a missing approved_revision key in 4 early-vocabulary receipts (TORSO-Q, FORM-Q, TORSO-H, FORM-H - revision resolved via last-candidate fallback) while the unconditional git line ran anyway; this write completes the record (the 50b3f7a lesson re-learned: unconditional git lines after heredocs). 14 HELD dispositions recorded. Chunks B (B05-B07) and C (B08) remain.",
    "content_loss": "none"
   }
  ],
