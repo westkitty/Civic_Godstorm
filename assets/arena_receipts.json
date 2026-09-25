@@ -2,7 +2,7 @@
  "ledger_type": "arena_source_receipts",
  "specification_version": "CG-V1.0.0",
  "created_utc": "2026-09-23T21:51:28+00:00",
- "last_updated_utc": "2026-09-25T01:00:33+00:00",
+ "last_updated_utc": "2026-09-25T01:06:49+00:00",
  "authority": {
   "master_plan": "CIVIC_GODSTORM_MASTER_PLAN.md",
   "master_plan_head_commit": "5bd357e14d9b68776d50b1dee0829b7bd5ab939f",
@@ -2793,7 +2793,7 @@
   "CG-S-GOD-LIFE-Q": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_life_q.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted AS-IS 2026-09-25 under owner ruling AS_IS_PROMOTION_HELD_LANDSCAPE_NINE; native 1264x848, BELOW the 3072x2048 profile target by 2.43x linear - disclosed deviation per TB-08; source candidate preserved at assets/candidates/CG-S-GOD-LIFE-Q/r005/cg_s_god_life_q.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": {
     "CG-S-GOD-FORM-Q": "r004 (accepted provisional, pass 2)"
@@ -2912,7 +2912,7 @@
     "date": "2026-09-23",
     "scope": "B01 first-God identity gate PASS - full Q lineage (torso r003 -> FORM-Q r004 -> LIFE-Q r004)",
     "approved_revision": "r004",
-    "resolution": "STILL HELD after fresh pass (ruling #20, 2026-09-25): fresh r005 is content-conforming but the model returned 1264x848 again (TB-08); 3072x2048 requires 2.43x > the 2x bound. Authorized 1+1 repair slot unused per TB-06 no-identical-retry discipline. Exits unchanged: owner as-is instruction, or a >=1536px landscape generation path."
+    "resolution": "PROMOTED AS-IS 2026-09-25 by explicit owner instruction (ruling #21): content-conforming fresh pass r005; dimensional deviation from profile target disclosed and accepted"
    },
    "downstream_targets": [
     "CG-D-GOD-LIFE-Q",
@@ -2938,7 +2938,18 @@
     "revision": "r005",
     "layout_scaffold": "assets/candidates/CG-S-GOD-LIFE-Q/r005/template_3x2.png",
     "target": "3072x2048",
-    "result": "CONTENT_CONFORMING_SIZE_BLOCKED_TB08"
+    "result": "PROMOTED_AS_IS"
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling AS_IS_PROMOTION_HELD_LANDSCAPE_NINE",
+    "operation": "AS-IS BYTE-IDENTICAL COPY (no resize performed)",
+    "source_candidate": "assets/candidates/CG-S-GOD-LIFE-Q/r005/cg_s_god_life_q.png",
+    "source_candidate_sha256": "b0feeac2ed83e715bd547a3e844fb84b0206aae8855b2e6b2eda595891662dfc",
+    "canonical_dimensions": "1264x848",
+    "deviation": "profile target 3072x2048 (3:2) not met; native 1264x848 is 2.43x below linear target; TB-08 model canvas ceiling documented; deviation explicitly accepted by owner",
+    "canonical_sha256": "b0feeac2ed83e715bd547a3e844fb84b0206aae8855b2e6b2eda595891662dfc",
+    "normalization_tool": "none (byte-identical copy)"
    }
   },
   "CG-S-MOT-BASALT": {
@@ -3307,7 +3318,7 @@
   "CG-S-INF-FARM": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/infrastructure/cg_s_inf_farm.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted AS-IS 2026-09-25 under owner ruling AS_IS_PROMOTION_HELD_LANDSCAPE_NINE; native 1264x848, BELOW the 3072x2048 profile target by 2.43x linear - disclosed deviation per TB-08; source candidate preserved at assets/candidates/CG-S-INF-FARM/r002/cg_s_inf_farm.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "CG-S-ART-DIRECTION r001 (B00 style board; BLOCKED dimensional - used only as permitted provisional style anchor for batch-local requests)",
    "candidates": [
@@ -3357,7 +3368,7 @@
     "approver": "human (repository owner)",
     "date": "2026-09-23",
     "scope": "B02 civic/scale language evidence; anchors B07 building/motif production; never an approved canonical source",
-    "resolution": "STILL HELD after fresh pass (ruling #20, 2026-09-25): fresh r002 is content-conforming but the model returned 1264x848 again (TB-08); 3072x2048 requires 2.43x > the 2x bound. Authorized 1+1 repair slot unused per TB-06 no-identical-retry discipline. Exits unchanged: owner as-is instruction, or a >=1536px landscape generation path."
+    "resolution": "PROMOTED AS-IS 2026-09-25 by explicit owner instruction (ruling #21): content-conforming fresh pass r002; dimensional deviation from profile target disclosed and accepted"
    },
    "downstream_targets": [
     "CG-D-BLD-*",
@@ -3377,13 +3388,24 @@
     "revision": "r002",
     "layout_scaffold": "assets/candidates/CG-S-INF-FARM/r002/template_3x2.png",
     "target": "3072x2048",
-    "result": "CONTENT_CONFORMING_SIZE_BLOCKED_TB08"
+    "result": "PROMOTED_AS_IS"
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling AS_IS_PROMOTION_HELD_LANDSCAPE_NINE",
+    "operation": "AS-IS BYTE-IDENTICAL COPY (no resize performed)",
+    "source_candidate": "assets/candidates/CG-S-INF-FARM/r002/cg_s_inf_farm.png",
+    "source_candidate_sha256": "3adfe3833cf43065f4f268ae3cb74c74c0fb5df31ba1cb900b552be86807b3ed",
+    "canonical_dimensions": "1264x848",
+    "deviation": "profile target 3072x2048 (3:2) not met; native 1264x848 is 2.43x below linear target; TB-08 model canvas ceiling documented; deviation explicitly accepted by owner",
+    "canonical_sha256": "3adfe3833cf43065f4f268ae3cb74c74c0fb5df31ba1cb900b552be86807b3ed",
+    "normalization_tool": "none (byte-identical copy)"
    }
   },
   "CG-S-INF-ROAD": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/infrastructure/cg_s_inf_road.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted AS-IS 2026-09-25 under owner ruling AS_IS_PROMOTION_HELD_LANDSCAPE_NINE; native 1264x848, BELOW the 3072x2048 profile target by 2.43x linear - disclosed deviation per TB-08; source candidate preserved at assets/candidates/CG-S-INF-ROAD/r002/cg_s_inf_road.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "CG-S-ART-DIRECTION r001 (B00 style board; BLOCKED dimensional - used only as permitted provisional style anchor for batch-local requests)",
    "candidates": [
@@ -3434,7 +3456,7 @@
     "approver": "human (repository owner)",
     "date": "2026-09-23",
     "scope": "B02 civic/scale language evidence; anchors B07 building/motif production; never an approved canonical source",
-    "resolution": "STILL HELD after fresh pass (ruling #20, 2026-09-25): fresh r002 is content-conforming but the model returned 1264x848 again (TB-08); 3072x2048 requires 2.43x > the 2x bound. Authorized 1+1 repair slot unused per TB-06 no-identical-retry discipline. Exits unchanged: owner as-is instruction, or a >=1536px landscape generation path."
+    "resolution": "PROMOTED AS-IS 2026-09-25 by explicit owner instruction (ruling #21): content-conforming fresh pass r002; dimensional deviation from profile target disclosed and accepted"
    },
    "downstream_targets": [
     "CG-D-BLD-*",
@@ -3453,7 +3475,18 @@
     "revision": "r002",
     "layout_scaffold": "assets/candidates/CG-S-INF-ROAD/r002/template_3x2.png",
     "target": "3072x2048",
-    "result": "CONTENT_CONFORMING_SIZE_BLOCKED_TB08"
+    "result": "PROMOTED_AS_IS"
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling AS_IS_PROMOTION_HELD_LANDSCAPE_NINE",
+    "operation": "AS-IS BYTE-IDENTICAL COPY (no resize performed)",
+    "source_candidate": "assets/candidates/CG-S-INF-ROAD/r002/cg_s_inf_road.png",
+    "source_candidate_sha256": "f8812ccd20c244261dc952d42873fe5d341ce1fef8e967cf531458f01bdfe616",
+    "canonical_dimensions": "1264x848",
+    "deviation": "profile target 3072x2048 (3:2) not met; native 1264x848 is 2.43x below linear target; TB-08 model canvas ceiling documented; deviation explicitly accepted by owner",
+    "canonical_sha256": "f8812ccd20c244261dc952d42873fe5d341ce1fef8e967cf531458f01bdfe616",
+    "normalization_tool": "none (byte-identical copy)"
    }
   },
   "CG-S-GOD-TORSO-H": {
@@ -3960,7 +3993,7 @@
   "CG-S-GOD-LIFE-H": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_life_h.png",
-   "canonical_state": "ABSENT (correct)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted AS-IS 2026-09-25 under owner ruling AS_IS_PROMOTION_HELD_LANDSCAPE_NINE; native 1264x848, BELOW the 3072x2048 profile target by 2.43x linear - disclosed deviation per TB-08; source candidate preserved at assets/candidates/CG-S-GOD-LIFE-H/r004/cg_s_god_life_h.png)",
    "id_status": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
    "parent_dependency_revisions": {
     "CG-S-GOD-FORM-H": "r002 (candidate awaiting approval)"
@@ -4051,7 +4084,7 @@
     "decision": "APPROVED PROVISIONAL (retry r003)",
     "approver": "human (repository owner)",
     "date": "2026-09-24",
-    "resolution": "STILL HELD after fresh pass (ruling #20, 2026-09-25): fresh r004 is content-conforming (six left-profile states of the same six-ring tube individual...) but the model returned 1264x848 again (TB-08 canvas ceiling); 3072x2048 requires 2.43x > the 2x bound. Repair slot of the authorized 1+1 remains unused. Exits unchanged: owner as-is instruction, or a generation path that emits >=1536px landscape canvases."
+    "resolution": "PROMOTED AS-IS 2026-09-25 by explicit owner instruction (ruling #21): content-conforming fresh pass r004; dimensional deviation from profile target disclosed and accepted"
    },
    "downstream_targets": [
     "CG-D-GOD-LIFE-H",
@@ -4076,7 +4109,18 @@
     "revision": "r004",
     "layout_scaffold": "assets/candidates/CG-S-GOD-LIFE-H/r004/template_3x2.png",
     "target": "3072x2048",
-    "result": "CONTENT_CONFORMING_SIZE_BLOCKED_TB08"
+    "result": "PROMOTED_AS_IS"
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling AS_IS_PROMOTION_HELD_LANDSCAPE_NINE",
+    "operation": "AS-IS BYTE-IDENTICAL COPY (no resize performed)",
+    "source_candidate": "assets/candidates/CG-S-GOD-LIFE-H/r004/cg_s_god_life_h.png",
+    "source_candidate_sha256": "497ca6be0a442fa2689224f88ea03f3ea64e2d3152b0a8e6bf320797ccfae59f",
+    "canonical_dimensions": "1264x848",
+    "deviation": "profile target 3072x2048 (3:2) not met; native 1264x848 is 2.43x below linear target; TB-08 model canvas ceiling documented; deviation explicitly accepted by owner",
+    "canonical_sha256": "497ca6be0a442fa2689224f88ea03f3ea64e2d3152b0a8e6bf320797ccfae59f",
+    "normalization_tool": "none (byte-identical copy)"
    }
   },
   "CG-S-GOD-TORSO-S": {
@@ -4989,7 +5033,7 @@
   "CG-S-GOD-LIFE-M": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_life_m.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted AS-IS 2026-09-25 under owner ruling AS_IS_PROMOTION_HELD_LANDSCAPE_NINE; native 1264x848, BELOW the 3072x2048 profile target by 2.43x linear - disclosed deviation per TB-08; source candidate preserved at assets/candidates/CG-S-GOD-LIFE-M/r003/cg_s_god_life_m.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "CG-S-GOD-FORM-M r001 (conforming-awaiting-gate) via SINGLE LATERAL-VIEW CROP anchor (recorded anti-row-multiplication strategy from LIFE-S)",
    "candidates": [
@@ -5067,7 +5111,7 @@
     "date": "2026-09-24",
     "scope": "B05 M lifecycle; r001 accepted TECHNICAL-WITH-FLAG: ossuary skull opening read as temporal fenestra (species anchors hold); r002 targeted repair remains REJECTED evidence; cleanest full sheet",
     "approved_revision": "r001",
-    "resolution": "STILL HELD after fresh pass (ruling #20, 2026-09-25): fresh r003 is content-conforming but the model returned 1264x848 again (TB-08); 3072x2048 requires 2.43x > the 2x bound. Authorized 1+1 repair slot unused per TB-06 no-identical-retry discipline. Exits unchanged: owner as-is instruction, or a >=1536px landscape generation path."
+    "resolution": "PROMOTED AS-IS 2026-09-25 by explicit owner instruction (ruling #21): content-conforming fresh pass r003; dimensional deviation from profile target disclosed and accepted"
    },
    "downstream_targets": [
     "CG-D-GOD-LIFE-M",
@@ -5088,7 +5132,18 @@
     "revision": "r003",
     "layout_scaffold": "assets/candidates/CG-S-GOD-LIFE-M/r003/template_3x2.png",
     "target": "3072x2048",
-    "result": "CONTENT_CONFORMING_SIZE_BLOCKED_TB08"
+    "result": "PROMOTED_AS_IS"
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling AS_IS_PROMOTION_HELD_LANDSCAPE_NINE",
+    "operation": "AS-IS BYTE-IDENTICAL COPY (no resize performed)",
+    "source_candidate": "assets/candidates/CG-S-GOD-LIFE-M/r003/cg_s_god_life_m.png",
+    "source_candidate_sha256": "60b29f1c2327b7babe10509a4692c66da9b7f3a1e6a441dd6359c80182a53ff3",
+    "canonical_dimensions": "1264x848",
+    "deviation": "profile target 3072x2048 (3:2) not met; native 1264x848 is 2.43x below linear target; TB-08 model canvas ceiling documented; deviation explicitly accepted by owner",
+    "canonical_sha256": "60b29f1c2327b7babe10509a4692c66da9b7f3a1e6a441dd6359c80182a53ff3",
+    "normalization_tool": "none (byte-identical copy)"
    }
   },
   "CG-S-GOD-ARMOR-OSTEODERM": {
@@ -6252,7 +6307,7 @@
   "CG-S-INF-BRIDGE": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/infrastructure/cg_s_inf_bridge.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted AS-IS 2026-09-25 under owner ruling AS_IS_PROMOTION_HELD_LANDSCAPE_NINE; native 1264x848, BELOW the 3072x2048 profile target by 2.43x linear - disclosed deviation per TB-08; source candidate preserved at assets/candidates/CG-S-INF-BRIDGE/r002/cg_s_inf_bridge.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "independent civic module; style anchor B02 BLD-DWELLING r003 (approved-provisional, subject ignored)",
    "candidates": [
@@ -6301,7 +6356,7 @@
     "date": "2026-09-24",
     "scope": "B07 infrastructure; all named modes present at shared scale",
     "approved_revision": "r001",
-    "resolution": "STILL HELD after fresh pass (ruling #20, 2026-09-25): fresh r002 is content-conforming (LIGHT timber beam / HEAVY braced masonry arch / GODWAY broad...) but the model returned 1264x848 again (TB-08 canvas ceiling); 3072x2048 requires 2.43x > the 2x bound. Repair slot of the authorized 1+1 remains unused. Exits unchanged: owner as-is instruction, or a generation path that emits >=1536px landscape canvases."
+    "resolution": "PROMOTED AS-IS 2026-09-25 by explicit owner instruction (ruling #21): content-conforming fresh pass r002; dimensional deviation from profile target disclosed and accepted"
    },
    "downstream_targets": [
     "CG-D-INF-BRIDGE",
@@ -6317,13 +6372,24 @@
     "revision": "r002",
     "layout_scaffold": "assets/candidates/CG-S-INF-BRIDGE/r002/template_3x2.png",
     "target": "3072x2048",
-    "result": "CONTENT_CONFORMING_SIZE_BLOCKED_TB08"
+    "result": "PROMOTED_AS_IS"
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling AS_IS_PROMOTION_HELD_LANDSCAPE_NINE",
+    "operation": "AS-IS BYTE-IDENTICAL COPY (no resize performed)",
+    "source_candidate": "assets/candidates/CG-S-INF-BRIDGE/r002/cg_s_inf_bridge.png",
+    "source_candidate_sha256": "56957055645892aadc0306d8c0783440c6e8135e1d1c25af2c451e99d583a957",
+    "canonical_dimensions": "1264x848",
+    "deviation": "profile target 3072x2048 (3:2) not met; native 1264x848 is 2.43x below linear target; TB-08 model canvas ceiling documented; deviation explicitly accepted by owner",
+    "canonical_sha256": "56957055645892aadc0306d8c0783440c6e8135e1d1c25af2c451e99d583a957",
+    "normalization_tool": "none (byte-identical copy)"
    }
   },
   "CG-S-INF-CANAL": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/infrastructure/cg_s_inf_canal.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted AS-IS 2026-09-25 under owner ruling AS_IS_PROMOTION_HELD_LANDSCAPE_NINE; native 1264x848, BELOW the 3072x2048 profile target by 2.43x linear - disclosed deviation per TB-08; source candidate preserved at assets/candidates/CG-S-INF-CANAL/r002/cg_s_inf_canal.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "independent civic module; style anchor B02 BLD-DWELLING r003 (approved-provisional, subject ignored)",
    "candidates": [
@@ -6372,7 +6438,7 @@
     "date": "2026-09-24",
     "scope": "B07 infrastructure; all named modes present at shared scale",
     "approved_revision": "r001",
-    "resolution": "STILL HELD after fresh pass (ruling #20, 2026-09-25): fresh r002 is content-conforming (DITCH lined water cut / LOCK two-gate chamber / WEIR three-s...) but the model returned 1264x848 again (TB-08 canvas ceiling); 3072x2048 requires 2.43x > the 2x bound. Repair slot of the authorized 1+1 remains unused. Exits unchanged: owner as-is instruction, or a generation path that emits >=1536px landscape canvases."
+    "resolution": "PROMOTED AS-IS 2026-09-25 by explicit owner instruction (ruling #21): content-conforming fresh pass r002; dimensional deviation from profile target disclosed and accepted"
    },
    "downstream_targets": [
     "CG-D-INF-CANAL",
@@ -6388,13 +6454,24 @@
     "revision": "r002",
     "layout_scaffold": "assets/candidates/CG-S-INF-CANAL/r002/template_3x2.png",
     "target": "3072x2048",
-    "result": "CONTENT_CONFORMING_SIZE_BLOCKED_TB08"
+    "result": "PROMOTED_AS_IS"
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling AS_IS_PROMOTION_HELD_LANDSCAPE_NINE",
+    "operation": "AS-IS BYTE-IDENTICAL COPY (no resize performed)",
+    "source_candidate": "assets/candidates/CG-S-INF-CANAL/r002/cg_s_inf_canal.png",
+    "source_candidate_sha256": "5e408ce03ff52f7d5993b2b471702a6269125fde59233dd4292b4ba2bea57fd1",
+    "canonical_dimensions": "1264x848",
+    "deviation": "profile target 3072x2048 (3:2) not met; native 1264x848 is 2.43x below linear target; TB-08 model canvas ceiling documented; deviation explicitly accepted by owner",
+    "canonical_sha256": "5e408ce03ff52f7d5993b2b471702a6269125fde59233dd4292b4ba2bea57fd1",
+    "normalization_tool": "none (byte-identical copy)"
    }
   },
   "CG-S-INF-MINE": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/infrastructure/cg_s_inf_mine.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted AS-IS 2026-09-25 under owner ruling AS_IS_PROMOTION_HELD_LANDSCAPE_NINE; native 1264x848, BELOW the 3072x2048 profile target by 2.43x linear - disclosed deviation per TB-08; source candidate preserved at assets/candidates/CG-S-INF-MINE/r002/cg_s_inf_mine.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "independent civic module; style anchor B02 BLD-DWELLING r003 (approved-provisional, subject ignored)",
    "candidates": [
@@ -6443,7 +6520,7 @@
     "date": "2026-09-24",
     "scope": "B07 infrastructure; all named modes present at shared scale",
     "approved_revision": "r001",
-    "resolution": "STILL HELD after fresh pass (ruling #20, 2026-09-25): fresh r002 is content-conforming (SHAFT timber headframe with rope wheel / QUARRY three-terrac...) but the model returned 1264x848 again (TB-08 canvas ceiling); 3072x2048 requires 2.43x > the 2x bound. Repair slot of the authorized 1+1 remains unused. Exits unchanged: owner as-is instruction, or a generation path that emits >=1536px landscape canvases."
+    "resolution": "PROMOTED AS-IS 2026-09-25 by explicit owner instruction (ruling #21): content-conforming fresh pass r002; dimensional deviation from profile target disclosed and accepted"
    },
    "downstream_targets": [
     "CG-D-INF-MINE",
@@ -6459,13 +6536,24 @@
     "revision": "r002",
     "layout_scaffold": "assets/candidates/CG-S-INF-MINE/r002/template_3x2.png",
     "target": "3072x2048",
-    "result": "CONTENT_CONFORMING_SIZE_BLOCKED_TB08"
+    "result": "PROMOTED_AS_IS"
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling AS_IS_PROMOTION_HELD_LANDSCAPE_NINE",
+    "operation": "AS-IS BYTE-IDENTICAL COPY (no resize performed)",
+    "source_candidate": "assets/candidates/CG-S-INF-MINE/r002/cg_s_inf_mine.png",
+    "source_candidate_sha256": "857fa2d4107e8163d18bff0815a732546f9a75e33d01ce4448a2a1d8d717572d",
+    "canonical_dimensions": "1264x848",
+    "deviation": "profile target 3072x2048 (3:2) not met; native 1264x848 is 2.43x below linear target; TB-08 model canvas ceiling documented; deviation explicitly accepted by owner",
+    "canonical_sha256": "857fa2d4107e8163d18bff0815a732546f9a75e33d01ce4448a2a1d8d717572d",
+    "normalization_tool": "none (byte-identical copy)"
    }
   },
   "CG-S-INF-WALL": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/infrastructure/cg_s_inf_wall.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
+   "canonical_state": "PRESENT - CANONICAL SOURCE (promoted AS-IS 2026-09-25 under owner ruling AS_IS_PROMOTION_HELD_LANDSCAPE_NINE; native 1264x848, BELOW the 3072x2048 profile target by 2.43x linear - disclosed deviation per TB-08; source candidate preserved at assets/candidates/CG-S-INF-WALL/r002/cg_s_inf_wall.png)",
    "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
    "parent_dependency_revisions": "independent civic module; style anchor B02 BLD-DWELLING r003 (approved-provisional, subject ignored)",
    "candidates": [
@@ -6514,7 +6602,7 @@
     "date": "2026-09-24",
     "scope": "B07 infrastructure; all named modes present at shared scale",
     "approved_revision": "r001",
-    "resolution": "STILL HELD after fresh pass (ruling #20, 2026-09-25): fresh r002 is content-conforming (SEGMENT crenellated curtain / GATE arched crossing with two ...) but the model returned 1264x848 again (TB-08 canvas ceiling); 3072x2048 requires 2.43x > the 2x bound. Repair slot of the authorized 1+1 remains unused. Exits unchanged: owner as-is instruction, or a generation path that emits >=1536px landscape canvases."
+    "resolution": "PROMOTED AS-IS 2026-09-25 by explicit owner instruction (ruling #21): content-conforming fresh pass r002; dimensional deviation from profile target disclosed and accepted"
    },
    "downstream_targets": [
     "CG-D-INF-WALL",
@@ -6530,7 +6618,18 @@
     "revision": "r002",
     "layout_scaffold": "assets/candidates/CG-S-INF-WALL/r002/template_3x2.png",
     "target": "3072x2048",
-    "result": "CONTENT_CONFORMING_SIZE_BLOCKED_TB08"
+    "result": "PROMOTED_AS_IS"
+   },
+   "promotion": {
+    "date": "2026-09-25",
+    "authority": "owner ruling AS_IS_PROMOTION_HELD_LANDSCAPE_NINE",
+    "operation": "AS-IS BYTE-IDENTICAL COPY (no resize performed)",
+    "source_candidate": "assets/candidates/CG-S-INF-WALL/r002/cg_s_inf_wall.png",
+    "source_candidate_sha256": "117e4da004804e051f3a3d23c0884dbe51bd7474c6b4743c778c56315046ff44",
+    "canonical_dimensions": "1264x848",
+    "deviation": "profile target 3072x2048 (3:2) not met; native 1264x848 is 2.43x below linear target; TB-08 model canvas ceiling documented; deviation explicitly accepted by owner",
+    "canonical_sha256": "117e4da004804e051f3a3d23c0884dbe51bd7474c6b4743c778c56315046ff44",
+    "normalization_tool": "none (byte-identical copy)"
    }
   },
   "CG-S-MOT-CANOPY": {
@@ -10333,8 +10432,9 @@
    ],
    "chunk_b": "22 promoted (B05-B07 UP2X); 88/105 canonical PRESENT; chunk C (B08, 17 UP2X) next",
    "chunk_c": "17 promoted (B08 UP2X; SOLDIER held); 105/105 promotable canonical",
-   "final": "COMPLETE 2026-09-25: 105 canonical sources in assets/source/ (218.6MB, dims verified); 14 HELD beyond bounds (fresh canonical-resolution passes or explicit as-is instruction required); 2 no-source IDs (B00 block final; LIFE-S ratified rejection).",
-   "fresh_passes": "Ruling #20 COMPLETE: +5 canonical (squares); 9 landscape sheets content-conforming but TB-08 size-blocked (14/14 occurrences conclusive); owner decision pending on as-is vs hold"
+   "final": "COMPLETE 2026-09-25: 119/119 approved sources canonical in assets/source/ (105 within-bounds normalized + 9 as-is landscape with disclosed deviation + 5 fresh-pass squares; bytes in receipts); 2 no-source IDs (B00 block final; LIFE-S ratified rejection).",
+   "fresh_passes": "Ruling #20 COMPLETE: +5 canonical (squares); 9 landscape sheets content-conforming but TB-08 size-blocked (14/14 occurrences conclusive); owner decision pending on as-is vs hold",
+   "as_is": "9 landscape sheets promoted as-is under ruling #21"
   }
  },
  "human_rulings": [
@@ -10576,6 +10676,14 @@
     "date": "2026-09-24",
     "authority": "human (repository owner), reply \"go on\" to the completion report presenting the two recorded exits for the 14 HELD sheets",
     "decision": "Authorize the first recorded exit: fresh canonical-resolution passes for the 14 HELD IDs (per-ID 1+1 budgets), each success normalizing within bounds under ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS. The as-is promotion exit was NOT selected. Sheets that still cannot reach their profile targets within bounds after their pass remain HELD with dispositions intact."
+   }
+  },
+  {
+   "id": "AS_IS_PROMOTION_HELD_LANDSCAPE_NINE",
+   "ruling": {
+    "date": "2026-09-24",
+    "authority": "human (repository owner) via Arena gate answer (option asis)",
+    "decision": "Promote the 9 content-conforming landscape sheets (CG-S-INF-BRIDGE, CG-S-INF-CANAL, CG-S-INF-MINE, CG-S-INF-WALL, CG-S-INF-ROAD, CG-S-INF-FARM, CG-S-GOD-LIFE-H, CG-S-GOD-LIFE-M, CG-S-GOD-LIFE-Q) to canonical AS-IS at native 1264x848 with per-receipt deviation disclosures. The TB-08 model canvas ceiling (14/14) makes 3072x2048 unreachable; owner accepts the documented deviation."
    }
   }
  ],
@@ -10835,6 +10943,12 @@
    "incident": "FRESH_CANONICAL_PASSES_COMPLETE_9_TB08_HELD",
    "recorded_utc": "2026-09-25T01:00:33+00:00",
    "observation": "Ruling #20 pass 2/2: ROAD r002, FARM r002, LIFE-M r003, LIFE-Q r005 fired 4/4. ALL content-conforming (both LIFE layout violations repaired; LIFE-Q legal injury pair zoom-verified) - all four again 1264x848 (TB-08, now 14/14 conclusive). Final disposition: 110/119 canonical; 9 HELD sheets (BRIDGE, CANAL, MINE, WALL, ROAD, FARM, LIFE-H, LIFE-M, LIFE-Q) are content-conforming, size-blocked, with both authorized slots intact, awaiting owner choice: as-is promotion at native 1264x848, or remain provisional-only pending a >=1536px landscape path.",
+   "content_loss": "none"
+  },
+  {
+   "incident": "AS_IS_PROMOTION_EXECUTED_CANONICAL_119_OF_119",
+   "recorded_utc": "2026-09-25T01:06:49+00:00",
+   "observation": "Ruling #21 executed: 9 content-conforming landscape sheets (5 INF + LIFE-H/M/Q fresh passes) copied byte-identical to canonical paths at native 1264x848; zero resampling; per-receipt deviation blocks record the 2.43x shortfall vs the 3072x2048 profile target and the owner acceptance. Canonical set FINAL: 119/119 approved-provisional sources now PRESENT (110 within bounds/2.0x + 9 as-is deviation-accepted). 2 no-source IDs stand: CG-S-ART-DIRECTION (B00 block final), CG-S-GOD-LIFE-S (ratified rejection). RUN FULLY DELIVERED.",
    "content_loss": "none"
   }
  ],
