@@ -2,7 +2,7 @@
  "ledger_type": "arena_source_receipts",
  "specification_version": "CG-V1.0.0",
  "created_utc": "2026-09-23T21:51:28+00:00",
- "last_updated_utc": "2026-09-25T01:42:21+00:00",
+ "last_updated_utc": "2026-09-25T02:16:49+00:00",
  "authority": {
   "master_plan": "CIVIC_GODSTORM_MASTER_PLAN.md",
   "master_plan_head_commit": "5bd357e14d9b68776d50b1dee0829b7bd5ab939f",
@@ -10646,14 +10646,14 @@
    ],
    "chunk_b": "22 promoted (B05-B07 UP2X); 88/105 canonical PRESENT; chunk C (B08, 17 UP2X) next",
    "chunk_c": "17 promoted (B08 UP2X; SOLDIER held); 105/105 promotable canonical",
-   "final": "COMPLETE 2026-09-25: 119/119 approved sources canonical in assets/source/ (105 within-bounds normalized + 9 as-is landscape with disclosed deviation + 5 fresh-pass squares; bytes in receipts); 2 no-source IDs (B00 block final; LIFE-S ratified rejection).",
-   "fresh_passes": "Ruling #20 COMPLETE: +5 canonical (squares); 9 landscape sheets content-conforming but TB-08 size-blocked (14/14 occurrences conclusive); owner decision pending on as-is vs hold",
+   "final": "Promotion COMPLETE 2026-09-25 UTC for every approved source: 119/119 approved sources are canonical and present in assets/source/ (105 normalized within bounds under ruling #18 + 5 ruling-#20 fresh-pass squares normalized within bounds + 9 landscape sheets promoted AS-IS under ruling #21 with disclosed dimensional deviation; SHA-256 and dimensions recorded per receipt). 2 IDs have no canonical source: CG-S-ART-DIRECTION - absent under permanent owner ruling #19 B00_BLOCK_FINAL; CG-S-GOD-LIFE-S - UNRESOLVED: r001/r002 rejected in the B04 pass, then the owner-authorized closure fresh pass (ruling #22 CLOSURE_FRESH_PASS_LIFE_S_AUTHORIZED) produced r003 and r004, both REJECTED; LIFE-S remains the sole remaining Arena asset blocker. The 121-ID authored-source contract is NOT complete (119 canonical + 1 permanent owner block + 1 unresolved blocker).",
+   "fresh_passes": "Ruling #20 FRESH_CANONICAL_RESOLUTION_PASSES_AUTHORIZED (fresh 1+1 canonical-resolution passes for the 14 IDs HELD under ruling #18) COMPLETE: 5 conforming square sheets normalized within bounds (Lanczos 2.0x) and promoted canonical; 9 landscape sheets content-conforming but blocked solely by the TB-08 Arena landscape canvas ceiling (native 1264x848; 14/14 occurrences conclusive at that time, 15/15 after LIFE-S r004), so at the close of the ruling-#20 pass those 9 remained HELD while the owner chose between as-is promotion and continued hold. RESOLVED by owner ruling #21 AS_IS_PROMOTION_HELD_LANDSCAPE_NINE: all 9 promoted AS-IS at native 1264x848 with the dimensional deviation (2.43x below the 3072x2048 profile target) explicitly disclosed in each receipt's deviation block. No ruling-#18 HELD ID remains held.",
    "as_is": "9 landscape sheets promoted as-is under ruling #21"
   },
   "closure_pass": {
    "date": "2026-09-24",
    "scope": "LIFE-S authorized fresh pass; B09 checkpoint creation; ledger current-state reconciliation; report corrections; fresh full audit",
-   "outcome": "LIFE-S fresh pass failed content QA twice (honestly recorded); 12 bookkeeping defects repaired; verdict BLOCKED for full completeness, with all documentation defects fixed"
+   "outcome": "Closure pass (commit 3139056): the LIFE-S ruling-#22 fresh pass failed content QA twice (r003 and r004 REJECTED; honestly recorded) and the major reconciliation defects (12 bookkeeping defects) were repaired. That pass's claim that every documentation defect had been fixed was disproven by independent inspection: residual stale current-state strings survived in run_summary.promotion.final, run_summary.promotion.fresh_passes, resolution_ruling_standing.native_1024_status, this outcome field, and SESSION_REPORT.md (stale ruling count in the section-4 heading; stale ruling/audit counts in the section-10 ledger inventory). A final bookkeeping-only pass (no assets generated or modified; no dispositions changed) corrected those residual strings. Verdict unchanged: full asset completeness BLOCKED solely by CG-S-GOD-LIFE-S (UNRESOLVED after ruling #22; sole remaining Arena asset blocker); the 121-ID authored-source contract is NOT complete (119 canonical + CG-S-ART-DIRECTION permanently blocked under B00_BLOCK_FINAL + LIFE-S unresolved)."
   }
  },
  "human_rulings": [
@@ -10916,7 +10916,7 @@
  ],
  "resolution_ruling_standing": {
   "canonical_sheet_targets": "RESOLVED 2026-09-24 by owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (normalize within bounds, then promote; beyond-bound sheets HELD)",
-  "native_1024_status": "glyph class downscaled to 512x512 canonical; sheet class Lanczos-upscaled 2.0x to 2048-class canonical; beyond-bound sheets remain provisional candidates",
+  "native_1024_status": "RESOLVED: 38 glyph-class sources normalized (Lanczos downscale) to 512x512 canonical; eligible square sheet-class sources normalized within the ruling-#18 bounds (Lanczos 2.0x to 2048x2048: 66 in the ruling-#18 promotion chunks + 5 ruling-#20 fresh-pass squares = 71), plus the title fit to 2048x1024 under the same ruling; of the 14 sheets HELD beyond bounds under ruling #18, 5 were resolved by those ruling-#20 fresh-pass squares and the 9 content-conforming landscape sheets were later promoted AS-IS at native 1264x848 under ruling #21 with disclosed dimensional deviation. CG-S-GOD-LIFE-S was NOT among those promoted sheets: it has no conforming source and remains UNRESOLVED after ruling #22 (closure fresh pass r003 and r004 both REJECTED) - the sole remaining Arena asset blocker.",
   "dimensional_block": "FINAL per owner ruling B00_BLOCK_FINAL (2026-09-24): REF-DIRECTION style board not generated"
  },
  "audit_trail": [

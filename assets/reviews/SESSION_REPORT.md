@@ -47,7 +47,7 @@ Execute the CIVIC GODSTORM asset-production contract (CG-V1.0.0, Master Plan Sec
 | B11 | 14 info/warning glyphs | 14/14 | VISIBILITY r001 rejected (4 eyes, two rows) → r002 approved; POPULATION accepted-with-flag ×2 (silhouette size variance, mild grain) |
 | B12 | Title painting, 1 | 1/1 | `CG-A-ART-TITLE` **first-pass conform** (god-creature passing a growing city, coast + roads, S-remains reclaimed by vegetation; zero text; center-safe); size flag disclosed (1456×720 native) |
 
-## 4. Governance — the 21 human rulings
+## 4. Governance — the 22 human rulings
 
 **Gate era (ask_user, one question per batch):** B01 identity gate + torso/form/life pass authorizations and accepts (7 rulings) → B02 full pass + retries-closed (2) → B03 (2, incl. cross-session ratification) → B04 approve-all with LIFE-S rejection (1) → B05 crown-then-children + approve-all (2) → B06 approve-6-hold-coat + coat-accept-close (2) → B07 approve-all (1).
 
@@ -106,7 +106,7 @@ Pre-flight before every turn (local/remote tip equality + tree cleanliness) · p
 ## 10. Deliverables inventory
 
 - `assets/source/**` — **119 canonical files**: `god/` 37 · `icons/` 32 · `buildings/` 14 · `environment/` 10 · `units/` 9 · `emblems/` 6 · `infrastructure/` 6 · `motifs/` 4 · `art/` 1
-- `assets/arena_receipts.json` — 121 receipts · 21 rulings · 41 audits · 6 findings · run summary + promotion record · `resolution_ruling_standing` RESOLVED
+- `assets/arena_receipts.json` — 121 receipts · 22 rulings · 42 audits · 6 findings · run summary + promotion record · `resolution_ruling_standing` RESOLVED
 - `assets/reviews/` — 13 batch checkpoint files (B00–B12; `B09_checkpoint.md` created during the closure pass) + `DELIVERY_REPORT.md` + this report
 - `assets/candidates/**` — 308 committed files; 39 rejected candidates preserved as evidence with explicit status
 - Branch `arena/01a0d03e-civic-godstorm`, fully pushed; `main` untouched
@@ -114,6 +114,8 @@ Pre-flight before every turn (local/remote tip equality + tree cleanliness) · p
 ## 11. Corrections issued at report time and in the closure pass
 
 Full-census verification for this report caught arithmetic errors in `DELIVERY_REPORT.md`'s tables (UP2X count written 90, actual 71; directory tallies stale from the pre-fresh-pass state) — corrected same-turn. The later closure pass then corrected this report and the delivery report again against the reconciled ledger: LIFE-S's disposition (from "ratified standing rejection / never re-attempted" to "unresolved blocker after the authorized fresh pass"), the B00/LIFE-S distinction (permanent block vs per-pass rejection now followed by a failed authorized retry), checkpoint-file count (12 → 13 with B09 physically created), ledger current-state fields (119 receipts flipped `CANONICAL_SOURCE_PRESENT`; all 13 checkpoint id_states/counts reconciled; run_summary rewritten to closure reality), and all counts (rulings 22, audits 42, candidates 173/39 rejected, TB-08 15/15).
+
+A final bookkeeping-only pass then corrected residual stale current-state strings that survived the closure pass (independent inspection showed that not every documentation defect had been fixed): this report's §4 heading (ruling count 21 → 22) and §10 ledger inventory counts (rulings 21 → 22, audits 41 → 42), plus four ledger fields — `run_summary.promotion.final`, `run_summary.promotion.fresh_passes`, `resolution_ruling_standing.native_1024_status`, `run_summary.closure_pass.outcome`. No assets were generated or modified and no disposition changed; LIFE-S remains the sole unresolved Arena asset blocker.
 
 ## 12. Final state
 
