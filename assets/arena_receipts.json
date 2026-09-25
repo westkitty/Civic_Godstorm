@@ -2,7 +2,7 @@
  "ledger_type": "arena_source_receipts",
  "specification_version": "CG-V1.0.0",
  "created_utc": "2026-09-23T21:51:28+00:00",
- "last_updated_utc": "2026-09-25T01:06:49+00:00",
+ "last_updated_utc": "2026-09-25T01:42:21+00:00",
  "authority": {
   "master_plan": "CIVIC_GODSTORM_MASTER_PLAN.md",
   "master_plan_head_commit": "5bd357e14d9b68776d50b1dee0829b7bd5ab939f",
@@ -2154,7 +2154,7 @@
   "CG-S-ART-DIRECTION": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/art/cg_s_art_direction.png",
-   "canonical_state": "ABSENT (correct - no approved source exists; BLOCKED ID must not occupy canonical path)",
+   "canonical_state": "ABSENT (correct - no approved source exists; BLOCKED under owner ruling B00_BLOCK_FINAL - must not occupy canonical path)",
    "id_status": "BLOCKED",
    "blocked_reason": "Native generation below the 1536x1024 normalization floor for the 3072x2048 REF-DIRECTION profile; best same-aspect native output 1264x848 would require a 2.43x upscale, exceeding the master-plan 2x normalization allowance. One initial candidate + one targeted repair candidate used; repair budget exhausted.",
    "candidates": [
@@ -2236,7 +2236,7 @@
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_torso_q.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-GOD-TORSO-Q/r003/cg_s_god_torso_q.png)",
-   "id_status": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "mode": "PROVISIONAL - awaiting human first-God identity gate (B01); not an approved source",
    "candidates": [
     {
@@ -2341,13 +2341,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "e45f88bf349b12e2d242fce155cd82cfe4655d99fcb0753cc608e5f48ba92552",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-GOD-LOCO-PILLAR": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_loco_pillar.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-GOD-LOCO-PILLAR/r002/cg_s_god_loco_pillar.png)",
-   "id_status": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "mode": "PROVISIONAL - awaiting human first-God identity gate (B01); not an approved source",
    "candidates": [
     {
@@ -2426,13 +2427,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "bc9800bd1e9e56e2bd17a342aaff87d2aec7e4779fa304e6c5b7970a1690290e",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-GOD-FEED-BROWSE": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_feed_browse.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-GOD-FEED-BROWSE/r001/cg_s_god_feed_browse.png)",
-   "id_status": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "mode": "PROVISIONAL - awaiting human first-God identity gate (B01); not an approved source",
    "candidates": [
     {
@@ -2491,13 +2493,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "21ff4f0259c47f156ad97968fe48e0a03cef37a88e3f4af2d372a05750019efa",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-GOD-SENSE-EYE-RING": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_sense_eye_ring.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-GOD-SENSE-EYE-RING/r002/cg_s_god_sense_eye_ring.png)",
-   "id_status": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "mode": "PROVISIONAL - awaiting human first-God identity gate (B01); not an approved source",
    "candidates": [
     {
@@ -2576,13 +2579,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "5efeaee2ea0c65ab641bd7443c00bc9d33ccc70632ac8c193c36dc649b7feedf",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-GOD-TAIL-BALANCE": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_tail_balance.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-GOD-TAIL-BALANCE/r002/cg_s_god_tail_balance.png)",
-   "id_status": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "mode": "PROVISIONAL - awaiting human first-God identity gate (B01); not an approved source",
    "candidates": [
     {
@@ -2661,13 +2665,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "48c7e37c909609cfd90040a19503d862912b84e41191d3ac2544703e04b21c70",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-GOD-FORM-Q": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_form_q.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-GOD-FORM-Q/r004/cg_s_god_form_q.png)",
-   "id_status": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": {
     "CG-S-GOD-TORSO-Q": "r003 (accepted provisional, pass 2)",
     "CG-S-GOD-LOCO-PILLAR": "r002 (provisional batch-local reference)",
@@ -2788,13 +2793,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "2e846c39288c9ea2458af62d5c023cd3e1ff094d809e2eaac70c4a5e4b13111b",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-GOD-LIFE-Q": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_life_q.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted AS-IS 2026-09-25 under owner ruling AS_IS_PROMOTION_HELD_LANDSCAPE_NINE; native 1264x848, BELOW the 3072x2048 profile target by 2.43x linear - disclosed deviation per TB-08; source candidate preserved at assets/candidates/CG-S-GOD-LIFE-Q/r005/cg_s_god_life_q.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": {
     "CG-S-GOD-FORM-Q": "r004 (accepted provisional, pass 2)"
    },
@@ -2950,13 +2956,14 @@
     "deviation": "profile target 3072x2048 (3:2) not met; native 1264x848 is 2.43x below linear target; TB-08 model canvas ceiling documented; deviation explicitly accepted by owner",
     "canonical_sha256": "b0feeac2ed83e715bd547a3e844fb84b0206aae8855b2e6b2eda595891662dfc",
     "normalization_tool": "none (byte-identical copy)"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-MOT-BASALT": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/motifs/cg_s_mot_basalt.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-MOT-BASALT/r001/cg_s_mot_basalt.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "CG-S-ART-DIRECTION r001 (B00 style board; BLOCKED dimensional - used only as permitted provisional style anchor for batch-local requests)",
    "candidates": [
     {
@@ -3008,13 +3015,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "3429219f92a85740d81ca0fb7e53aecd94002a115768a9a9d8935850570574dc",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-BLD-DWELLING": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/buildings/cg_s_bld_dwelling.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-BLD-DWELLING/r003/cg_s_bld_dwelling.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "CG-S-ART-DIRECTION r001 (B00 style board; BLOCKED dimensional - used only as permitted provisional style anchor for batch-local requests)",
    "candidates": [
     {
@@ -3110,13 +3118,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "16c81c4b4903f110de727cab9d7f703bca191eb17c43daf3b2c10e4c81082eb5",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-BLD-HALL": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/buildings/cg_s_bld_hall.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-BLD-HALL/r003/cg_s_bld_hall.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "CG-S-ART-DIRECTION r001 (B00 style board; BLOCKED dimensional - used only as permitted provisional style anchor for batch-local requests)",
    "candidates": [
     {
@@ -3212,13 +3221,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "6d167fb9d75ff9d2ab2c0dac38a8eaa0f4f8d66f005b491a4cda46c0a1fe35fd",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-UNT-CIVILIAN": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/units/cg_s_unt_civilian.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-UNT-CIVILIAN/r003/cg_s_unt_civilian.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "CG-S-ART-DIRECTION r001 (B00 style board; BLOCKED dimensional - used only as permitted provisional style anchor for batch-local requests)",
    "candidates": [
     {
@@ -3313,13 +3323,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "e9f7e300b295570eb1a7d8d3665b080fa7421da9309c6274a09d6c3d2a4f2422",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-INF-FARM": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/infrastructure/cg_s_inf_farm.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted AS-IS 2026-09-25 under owner ruling AS_IS_PROMOTION_HELD_LANDSCAPE_NINE; native 1264x848, BELOW the 3072x2048 profile target by 2.43x linear - disclosed deviation per TB-08; source candidate preserved at assets/candidates/CG-S-INF-FARM/r002/cg_s_inf_farm.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "CG-S-ART-DIRECTION r001 (B00 style board; BLOCKED dimensional - used only as permitted provisional style anchor for batch-local requests)",
    "candidates": [
     {
@@ -3400,13 +3411,14 @@
     "deviation": "profile target 3072x2048 (3:2) not met; native 1264x848 is 2.43x below linear target; TB-08 model canvas ceiling documented; deviation explicitly accepted by owner",
     "canonical_sha256": "3adfe3833cf43065f4f268ae3cb74c74c0fb5df31ba1cb900b552be86807b3ed",
     "normalization_tool": "none (byte-identical copy)"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-INF-ROAD": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/infrastructure/cg_s_inf_road.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted AS-IS 2026-09-25 under owner ruling AS_IS_PROMOTION_HELD_LANDSCAPE_NINE; native 1264x848, BELOW the 3072x2048 profile target by 2.43x linear - disclosed deviation per TB-08; source candidate preserved at assets/candidates/CG-S-INF-ROAD/r002/cg_s_inf_road.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "CG-S-ART-DIRECTION r001 (B00 style board; BLOCKED dimensional - used only as permitted provisional style anchor for batch-local requests)",
    "candidates": [
     {
@@ -3487,13 +3499,14 @@
     "deviation": "profile target 3072x2048 (3:2) not met; native 1264x848 is 2.43x below linear target; TB-08 model canvas ceiling documented; deviation explicitly accepted by owner",
     "canonical_sha256": "f8812ccd20c244261dc952d42873fe5d341ce1fef8e967cf531458f01bdfe616",
     "normalization_tool": "none (byte-identical copy)"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-GOD-TORSO-H": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_torso_h.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-GOD-TORSO-H/r003/cg_s_god_torso_h.png)",
-   "id_status": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
    "candidates": [
     {
@@ -3586,13 +3599,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "8651154336ae26e39661f550a63516266e3acb7dae6b112532861bfae2288109",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-GOD-LOCO-DIGGER": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_loco_digger.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-GOD-LOCO-DIGGER/r001/cg_s_god_loco_digger.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
    "candidates": [
     {
@@ -3640,13 +3654,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "bb2a044a7b48d709b2c562a346afd5b9be5ae65314109e868a13374902a6ba61",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-GOD-FEED-MINERAL": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_feed_mineral.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-GOD-FEED-MINERAL/r001/cg_s_god_feed_mineral.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
    "candidates": [
     {
@@ -3694,13 +3709,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "cce32df059120144a28228a5a5741b045dabc05bdd9ad53458fd6eb830c58bda",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-GOD-SENSE-VIBRATION-ROSETTE": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_sense_vibration_rosette.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-GOD-SENSE-VIBRATION-ROSETTE/r001/cg_s_god_sense_vibration_rosette.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
    "candidates": [
     {
@@ -3748,13 +3764,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "566a00e81511d5270bf57b0c6fd93b849ed023a8bf704050984d49de40a45c65",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-GOD-TAIL-WEDGE": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_tail_wedge.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-GOD-TAIL-WEDGE/r001/cg_s_god_tail_wedge.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
    "candidates": [
     {
@@ -3802,13 +3819,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "2b7a4f85437baa391b2231caa9ee2a5422b0742268eeb357c0d2e26e9898e223",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-GOD-ARMOR-SHELL": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_armor_shell.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-GOD-ARMOR-SHELL/r001/cg_s_god_armor_shell.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
    "candidates": [
     {
@@ -3856,13 +3874,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "7b50652c4a701589b6a0315098a22225a48ea7288a257095354a4e6b0ebc39ec",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-GOD-ORGAN-THERMAL-VENT": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_organ_thermal_vent.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-GOD-ORGAN-THERMAL-VENT/r001/cg_s_god_organ_thermal_vent.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
    "candidates": [
     {
@@ -3910,13 +3929,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "2f0501525a2bf2f0cb0941d24f73d06bf779bcb912bd5a68117bcde2cc47a656",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-GOD-FORM-H": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_form_h.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-GOD-FORM-H/r002/cg_s_god_form_h.png)",
-   "id_status": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": {
     "CG-S-GOD-TORSO-H": "r003 (accepted provisional pass 3)",
     "CG-S-GOD-LOCO-DIGGER": "r001 (provisional ref)",
@@ -3988,13 +4008,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "b8a8a88911cdc0b8c20cb8ab0c0c9707101b711a6a159c28dd284c2dacf9a3ac",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-GOD-LIFE-H": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_life_h.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted AS-IS 2026-09-25 under owner ruling AS_IS_PROMOTION_HELD_LANDSCAPE_NINE; native 1264x848, BELOW the 3072x2048 profile target by 2.43x linear - disclosed deviation per TB-08; source candidate preserved at assets/candidates/CG-S-GOD-LIFE-H/r004/cg_s_god_life_h.png)",
-   "id_status": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": {
     "CG-S-GOD-FORM-H": "r002 (candidate awaiting approval)"
    },
@@ -4121,13 +4142,14 @@
     "deviation": "profile target 3072x2048 (3:2) not met; native 1264x848 is 2.43x below linear target; TB-08 model canvas ceiling documented; deviation explicitly accepted by owner",
     "canonical_sha256": "497ca6be0a442fa2689224f88ea03f3ea64e2d3152b0a8e6bf320797ccfae59f",
     "normalization_tool": "none (byte-identical copy)"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-GOD-TORSO-S": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_torso_s.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-GOD-TORSO-S/r002/cg_s_god_torso_s.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
    "candidates": [
     {
@@ -4198,13 +4220,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "e2978c3f9f35e719ce4c72ed2a272cc51ba83059f021399cc255f263e5eebe46",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-GOD-TORSO-M": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_torso_m.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-GOD-TORSO-M/r002/cg_s_god_torso_m.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
    "candidates": [
     {
@@ -4275,13 +4298,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "108b7e9ae6e32a12aa34c16c6b950b39552dc881222456e074bcf7392ddad42d",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-GOD-LOCO-UNDULATOR": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_loco_undulator.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-GOD-LOCO-UNDULATOR/r001/cg_s_god_loco_undulator.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
    "candidates": [
     {
@@ -4330,13 +4354,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "5ee8d7b6990facd1dc5be4cd6baa86c787bc7aad0a306916f77c3ffc0c6d5634",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-GOD-LOCO-FIN": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_loco_fin.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-GOD-LOCO-FIN/r001/cg_s_god_loco_fin.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
    "candidates": [
     {
@@ -4385,13 +4410,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "d6075bfd62f3d69ba7563672b142c354f371b539a2ea7cf6218c8bed49db57a7",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-GOD-LOCO-WEBBED": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_loco_webbed.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-GOD-LOCO-WEBBED/r001/cg_s_god_loco_webbed.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
    "candidates": [
     {
@@ -4440,13 +4466,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "6f3393befe95717230565f8d5407a13da322b351d857e8b2d5c558047ac36e73",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-GOD-FEED-FILTER": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_feed_filter.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-GOD-FEED-FILTER/r001/cg_s_god_feed_filter.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
    "candidates": [
     {
@@ -4495,13 +4522,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "0423c30ed018f88d2289182d9fccd5b7ce13884b73a41bf78a31cc68c2fc3da9",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-GOD-TAIL-PADDLE": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_tail_paddle.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-GOD-TAIL-PADDLE/r001/cg_s_god_tail_paddle.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
    "candidates": [
     {
@@ -4550,13 +4578,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "a75cff665b384f4b8ecf5b01efbf47be3bf6f5b6496c948b1e3e8e4a490c087f",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-GOD-ORGAN-GILLS": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_organ_gills.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-GOD-ORGAN-GILLS/r001/cg_s_god_organ_gills.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
    "candidates": [
     {
@@ -4606,13 +4635,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "d4e6c2bdb70cd8e5c3baecee4133acf4d135455befac4d7177e206c7df040ab9",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-GOD-FORM-S": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_form_s.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-GOD-FORM-S/r001/cg_s_god_form_s.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "assembles registered S modules (all currently APPROVED_PROVISIONAL candidates or conforming-awaiting-gate): TORSO-S r002, LOCO-FIN r001, FEED-FILTER r001, SENSE-EYE-RING r002 (B01), TAIL-PADDLE r001, ORGAN-GILLS r001 - used as declared assembly sources per FORM-H precedent, not as style inspiration",
    "candidates": [
     {
@@ -4668,13 +4698,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "6c6f139b6fd8d9508d09464b47d65e75ab4c8133834eb6b33c09a7038f79aca4",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-GOD-LIFE-S": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_life_s.png",
-   "canonical_state": "ABSENT (correct - no approved source)",
-   "id_status": "REJECTED_THIS_PASS",
+   "canonical_state": "ABSENT (no conforming source; authorized closure fresh pass exhausted)",
+   "id_status": "UNRESOLVED_REMAINING_ASSET_BLOCKER",
    "parent_dependency_revisions": "CG-S-GOD-FORM-S r001 (conforming-awaiting-gate) used as declared content anchor",
    "candidates": [
     {
@@ -4713,13 +4744,51 @@
       "root_cause_hypothesis": "square 2x2 FORM-S sheet as content anchor biases row multiplication against the wide scaffold even when the anchor itself is conforming (extends TB-03: anchor composition dominates over scaffold)"
      },
      "status": "REJECTED"
+    },
+    {
+     "revision": "r003",
+     "path": "assets/candidates/CG-S-GOD-LIFE-S/r003/cg_s_god_life_s.png",
+     "native_dimensions": "1024x1024",
+     "native_aspect_error_pct": 100.0,
+     "format": "PNG 8-bit sRGB TrueColor",
+     "alpha": "none",
+     "sha256": "08d440f3530bcdba7bf2049fc91b811bc19877e9b092fbe2f0ee920440eac95b",
+     "generation_tool": "Arena Agent Mode generate_image",
+     "model": "UNKNOWN",
+     "normalization_operation": "none performed",
+     "parent_revision": "closure-pass fresh attempt per recorded retry_strategy_if_authorized: single FORM-S top-right LATERAL crop as identity anchor (no failed-sheet image anchor) + blank 3x2 scaffold",
+     "content_qa": {
+      "violations": "RENDERED TEXT LABELS on five panels (\"Juvenile Stage\" etc., TB-04 leak); only FIVE panels - injured-prime state MISSING entirely; ossuary regressed to tall toothed vertebrate skull + fish-like skeleton (r001 defect class); anatomy drift: goggle-eye band + glossy shading + open jawed mouth vs FORM-S closed-lid toothless identity; canvas swap to square 1024x1024 (TB-07 class, 6th occurrence)",
+      "positives_preserved": "six-state concept attempted in order; juvenile/prime/ancient/corpse individually legible"
+     },
+     "status": "REJECTED"
+    },
+    {
+     "revision": "r004",
+     "path": "assets/candidates/CG-S-GOD-LIFE-S/r004/cg_s_god_life_s.png",
+     "native_dimensions": "1264x848",
+     "native_aspect_error_pct": 0.63,
+     "format": "PNG 8-bit sRGB TrueColor",
+     "alpha": "none",
+     "sha256": "ff6cb67079c27855771b5f734e27281fd51307fec25d873a6a6b9945538b5f09",
+     "generation_tool": "Arena Agent Mode generate_image",
+     "model": "UNKNOWN",
+     "normalization_operation": "none performed",
+     "parent_revision": "closure-pass targeted repair: all r003 defects countered (wordless-sheet first rule, six-panels-first, identity protections: no goggles/teeth/jaw, low wedge skull rules, per-panel state map)",
+     "content_qa": {
+      "violations": "ossuary NON-CONFORMING: THREE separate bone groups (detached serrated/toothed wedge skull + one conforming low axial spine + a third fish-like skeleton with open toothed jaw, eye socket and multiple rib pairs) - violates the S-family ossuary requirement (low, long, single axial ribbon framework; no toothed, domed or many-rib vertebrate skeleton)",
+      "positives_preserved": "EXACTLY SIX panels 3x2, all six states once each, zero text anywhere (TB-04 countered successfully), correct family matte style + closed-lid brow band + toothless living mouths, injured prime exactly one torn fin ray + one flank scar (zoom-verified), TB-08 landscape ceiling again (15th occurrence)",
+      "gate_result": "REJECTED on ossuary gate alone"
+     },
+     "status": "REJECTED"
     }
    ],
    "approval": {
-    "decision": "REJECTED_FINAL_THIS_PASS (ratified by user ruling B04_CONSOLIDATED_GATE_APPROVE_ALL)",
+    "decision": "UNRESOLVED - REMAINING ASSET BLOCKER (authorized closure fresh pass r003+r004 both REJECTED 2026-09-24)",
+    "decision_historical": "REJECTED_FINAL_THIS_PASS (ratified by user ruling B04_CONSOLIDATED_GATE_APPROVE_ALL)",
     "approver": "human (repository owner)",
     "date": "2026-09-24",
-    "scope": "r001+r002 preserved as evidence; retry requires an explicit fresh-pass authorization; single-view-anchor retry strategy recorded in receipt"
+    "scope": "r001-r004 all preserved as evidence; closure instruction authorized one fresh pass (1+1); requirements NOT weakened; LIFE-S is the sole remaining Arena asset blocker"
    },
    "downstream_targets": [
     "CG-D-GOD-LIFE-S",
@@ -4733,13 +4802,22 @@
     "remaining": 0
    },
    "reason": "Both candidates REJECTED: scaffold layout drift (7-8 panels) + duplicated state (r002), plus generic tall-domed ossuary skull (r001 only). Per-ID 1+1 pass budget exhausted; a retry requires an explicit fresh-pass authorization (B02/B03 full_pass precedent).",
-   "retry_strategy_if_authorized": "Pass-2 r003: drop the full-sheet content anchor; crop FORM-S top-right LATERAL panel to a single side-profile anchor (removes square-grid composition bias); blank 3x2 scaffold; first instructions = exactly six pre-counted cells / no empty cell / no added cell; ossuary geometry rules repeated (low blunt wedge skull, paddle bone); NO-LABELS global rule."
+   "retry_strategy_if_authorized": "Pass-2 r003: drop the full-sheet content anchor; crop FORM-S top-right LATERAL panel to a single side-profile anchor (removes square-grid composition bias); blank 3x2 scaffold; first instructions = exactly six pre-counted cells / no empty cell / no added cell; ossuary geometry rules repeated (low blunt wedge skull, paddle bone); NO-LABELS global rule.",
+   "fresh_pass": {
+    "authorization": "FINAL ARENA CLOSURE PASS owner instruction (recorded as ruling #22)",
+    "attempts": [
+     "r003",
+     "r004"
+    ],
+    "outcome": "BOTH REJECTED - r003 (text labels, 5 panels, tall-skull ossuary, anatomy drift); r004 (ossuary: three bone groups incl. toothed multi-rib fish-like skeleton)",
+    "size_note": "r004 content aside, landed 1264x848 again (TB-08, 15th occurrence); as-is promotion authorized only for content-conforming results - not applicable"
+   }
   },
   "CG-S-GOD-LOCO-WING": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_loco_wing.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-GOD-LOCO-WING/r001/cg_s_god_loco_wing.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
    "candidates": [
     {
@@ -4792,13 +4870,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "6e3d40d074d2af12fc12aae3866de5da0b3ae5bfedeb5366c9915f6ecc471f60",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-GOD-FEED-CARRION": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_feed_carrion.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-GOD-FEED-CARRION/r001/cg_s_god_feed_carrion.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
    "candidates": [
     {
@@ -4851,13 +4930,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "18689cb7d359a0e07681e22b8117c94a4f073f7fcf36134992d4dd626089b9e0",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-GOD-SENSE-ANTENNA-CROWN": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_sense_antenna_crown.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25; fresh pass under ruling FRESH_CANONICAL_RESOLUTION_PASSES_AUTHORIZED, normalized under CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidates preserved as evidence at assets/candidates/CG-S-GOD-SENSE-ANTENNA-CROWN/r004/cg_s_god_sense_antenna_crown.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
    "candidates": [
     {
@@ -4971,13 +5051,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "522fa40fcbf3da4c2e98b62e8004f228d4a875b2e9bd29d1a3c355f6059e5164",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-GOD-FORM-M": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_form_m.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-GOD-FORM-M/r001/cg_s_god_form_m.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "assembles registered M modules: TORSO-M r002 (approved-provisional), LOCO-WING r001, FEED-CARRION r001, SENSE-ANTENNA-CROWN r003 (all awaiting this same gate), TAIL-BALANCE r002 (B01 approved-provisional) - declared assembly sources per FORM-H/FORM-S precedent",
    "candidates": [
     {
@@ -5028,13 +5109,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "c75eb658a639c9bfed41e970a7b279b35060d3ee1155aef4d660ac6bdd63d57f",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-GOD-LIFE-M": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_life_m.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted AS-IS 2026-09-25 under owner ruling AS_IS_PROMOTION_HELD_LANDSCAPE_NINE; native 1264x848, BELOW the 3072x2048 profile target by 2.43x linear - disclosed deviation per TB-08; source candidate preserved at assets/candidates/CG-S-GOD-LIFE-M/r003/cg_s_god_life_m.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "CG-S-GOD-FORM-M r001 (conforming-awaiting-gate) via SINGLE LATERAL-VIEW CROP anchor (recorded anti-row-multiplication strategy from LIFE-S)",
    "candidates": [
     {
@@ -5144,13 +5226,14 @@
     "deviation": "profile target 3072x2048 (3:2) not met; native 1264x848 is 2.43x below linear target; TB-08 model canvas ceiling documented; deviation explicitly accepted by owner",
     "canonical_sha256": "60b29f1c2327b7babe10509a4692c66da9b7f3a1e6a441dd6359c80182a53ff3",
     "normalization_tool": "none (byte-identical copy)"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-GOD-ARMOR-OSTEODERM": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_armor_osteoderm.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-GOD-ARMOR-OSTEODERM/r001/cg_s_god_armor_osteoderm.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
    "candidates": [
     {
@@ -5203,13 +5286,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "9bbdb8f7dc73490c4c64c36e6a710c58abf0c83e17d4be80d98ff39751afd558",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-GOD-ARMOR-COAT": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_armor_coat.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-GOD-ARMOR-COAT/r002/cg_s_god_armor_coat.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
    "candidates": [
     {
@@ -5282,13 +5366,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "1bc726a432b2144fcd33d973e394737d12be527493824fefc73bd372e1e9d70b",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-GOD-ORGAN-SOLAR-SAIL": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_organ_solar_sail.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-GOD-ORGAN-SOLAR-SAIL/r001/cg_s_god_organ_solar_sail.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
    "candidates": [
     {
@@ -5340,13 +5425,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "e0058bb13ffb127c64cc1113d187092f86b905a02efde83c3cfa9d0d69cf2106",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-GOD-ORGAN-SPORE-SAC": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_organ_spore_sac.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-GOD-ORGAN-SPORE-SAC/r002/cg_s_god_organ_spore_sac.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
    "candidates": [
     {
@@ -5415,13 +5501,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "3f10adfe4ac13de28f3bc742f857a144cf363886e1ce258fd21ef18db6271a09",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-GOD-SYMB-FUNGAL-GROVE": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_symb_fungal_grove.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-GOD-SYMB-FUNGAL-GROVE/r001/cg_s_god_symb_fungal_grove.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
    "candidates": [
     {
@@ -5472,13 +5559,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "b74bbe274a8c46b7f534cc8b5d0301920b5f0f16b11bf69a6f215d072284fdbd",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-GOD-SYMB-FOLLOWER-GALLERY": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_symb_follower_gallery.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25; fresh pass under ruling FRESH_CANONICAL_RESOLUTION_PASSES_AUTHORIZED, normalized under CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidates preserved as evidence at assets/candidates/CG-S-GOD-SYMB-FOLLOWER-GALLERY/r002/cg_s_god_symb_follower_gallery.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
    "candidates": [
     {
@@ -5555,13 +5643,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "58823187c8a6080643fa52f29a003a8b7cbfaf5965887c560b7e086dfc907908",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-GOD-SYMB-ROOT-HOLDFAST": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/god/cg_s_god_symb_root_holdfast.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-GOD-SYMB-ROOT-HOLDFAST/r001/cg_s_god_symb_root_holdfast.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "independent grammar module (registry dependency: code-defined primitive)",
    "candidates": [
     {
@@ -5612,13 +5701,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "d5e5a47df2e28da0e186d8c58ecb4b5e05017c0b177f64a09edb9e33481795e3",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-BLD-ARCHIVE": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/buildings/cg_s_bld_archive.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-BLD-ARCHIVE/r001/cg_s_bld_archive.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "independent civic architecture module; style anchor B02 BLD-DWELLING r003 (approved-provisional, subject ignored)",
    "candidates": [
     {
@@ -5665,13 +5755,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "a55eb21a57d969819dec87d8dcc88b6b1481e3af016be29e516b1823df938efe",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-BLD-BARRACKS": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/buildings/cg_s_bld_barracks.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-BLD-BARRACKS/r001/cg_s_bld_barracks.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "independent civic architecture module; style anchor B02 BLD-DWELLING r003 (approved-provisional, subject ignored)",
    "candidates": [
     {
@@ -5718,13 +5809,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "52124d5156849140205d5137e60d7cd2f4f64fc7397afbafc1ce7914be66999b",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-BLD-CARAVAN-CANOPY": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/buildings/cg_s_bld_caravan_canopy.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-BLD-CARAVAN-CANOPY/r001/cg_s_bld_caravan_canopy.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "independent civic architecture module; style anchor B02 BLD-DWELLING r003 (approved-provisional, subject ignored)",
    "candidates": [
     {
@@ -5772,13 +5864,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "c242383b5ad2af443d8913e6af232b072834587cf00bbb8490d08cfd04e64a6e",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-BLD-DEPOT": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/buildings/cg_s_bld_depot.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-BLD-DEPOT/r001/cg_s_bld_depot.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "independent civic architecture module; style anchor B02 BLD-DWELLING r003 (approved-provisional, subject ignored)",
    "candidates": [
     {
@@ -5825,13 +5918,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "020cb785c8c81336e987fc838bc01c376447e828bc6e9211079c77a61ce99fe2",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-BLD-DOCK": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/buildings/cg_s_bld_dock.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-BLD-DOCK/r001/cg_s_bld_dock.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "independent civic architecture module; style anchor B02 BLD-DWELLING r003 (approved-provisional, subject ignored)",
    "candidates": [
     {
@@ -5879,13 +5973,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "5b5b21553592fb2893f2d4e1daf4599186d7e8b4e7a3ead2d750bbbe1036cadf",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-BLD-GRANARY": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/buildings/cg_s_bld_granary.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-BLD-GRANARY/r001/cg_s_bld_granary.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "independent civic architecture module; style anchor B02 BLD-DWELLING r003 (approved-provisional, subject ignored)",
    "candidates": [
     {
@@ -5932,13 +6027,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "40b0ccf98a46e3d0c8fcaada22a6dbde2692e435aeac808d05c3f24705d95510",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-BLD-INFIRMARY": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/buildings/cg_s_bld_infirmary.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-BLD-INFIRMARY/r001/cg_s_bld_infirmary.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "independent civic architecture module; style anchor B02 BLD-DWELLING r003 (approved-provisional, subject ignored)",
    "candidates": [
     {
@@ -5985,13 +6081,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "117f6f1c1e8f5582255e43ac5d7eebda1f60ba5324cde5d6f8e2ba5c186dcb08",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-BLD-MARKET": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/buildings/cg_s_bld_market.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25; fresh pass under ruling FRESH_CANONICAL_RESOLUTION_PASSES_AUTHORIZED, normalized under CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidates preserved as evidence at assets/candidates/CG-S-BLD-MARKET/r002/cg_s_bld_market.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "independent civic architecture module; style anchor B02 BLD-DWELLING r003 (approved-provisional, subject ignored)",
    "candidates": [
     {
@@ -6064,13 +6161,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "d7b5c2a1d6004dc91021639a63386eefe465345a22cb93bd61020be622d8408e",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-BLD-OBSERVATORY": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/buildings/cg_s_bld_observatory.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-BLD-OBSERVATORY/r001/cg_s_bld_observatory.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "independent civic module; style anchor B02 BLD-DWELLING r003 (approved-provisional, subject ignored)",
    "candidates": [
     {
@@ -6117,13 +6215,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "aa3271df6ec49ad44eb9eece0156078c2f1db6894ec9d949d56085bad4dbc654",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-BLD-SHRINE": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/buildings/cg_s_bld_shrine.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25; fresh pass under ruling FRESH_CANONICAL_RESOLUTION_PASSES_AUTHORIZED, normalized under CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidates preserved as evidence at assets/candidates/CG-S-BLD-SHRINE/r002/cg_s_bld_shrine.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "independent civic module; style anchor B02 BLD-DWELLING r003 (approved-provisional, subject ignored)",
    "candidates": [
     {
@@ -6196,13 +6295,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "197e58a242779097d6beae72a78a97e032021185166c16f7e360d306ae8e7f3d",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-BLD-TOWER": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/buildings/cg_s_bld_tower.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-BLD-TOWER/r001/cg_s_bld_tower.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "independent civic module; style anchor B02 BLD-DWELLING r003 (approved-provisional, subject ignored)",
    "candidates": [
     {
@@ -6249,13 +6349,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "1e836bad2b75b63c7556d1e92ca146898f1a210b8fd06f409ac748c9bc62f8a7",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-BLD-WORKSHOP": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/buildings/cg_s_bld_workshop.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-BLD-WORKSHOP/r001/cg_s_bld_workshop.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "independent civic module; style anchor B02 BLD-DWELLING r003 (approved-provisional, subject ignored)",
    "candidates": [
     {
@@ -6302,13 +6403,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "980f9c98637efb425390ce9bfdc7a83834372039c48c3fc2dec6afdfb5a42df4",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-INF-BRIDGE": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/infrastructure/cg_s_inf_bridge.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted AS-IS 2026-09-25 under owner ruling AS_IS_PROMOTION_HELD_LANDSCAPE_NINE; native 1264x848, BELOW the 3072x2048 profile target by 2.43x linear - disclosed deviation per TB-08; source candidate preserved at assets/candidates/CG-S-INF-BRIDGE/r002/cg_s_inf_bridge.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "independent civic module; style anchor B02 BLD-DWELLING r003 (approved-provisional, subject ignored)",
    "candidates": [
     {
@@ -6384,13 +6486,14 @@
     "deviation": "profile target 3072x2048 (3:2) not met; native 1264x848 is 2.43x below linear target; TB-08 model canvas ceiling documented; deviation explicitly accepted by owner",
     "canonical_sha256": "56957055645892aadc0306d8c0783440c6e8135e1d1c25af2c451e99d583a957",
     "normalization_tool": "none (byte-identical copy)"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-INF-CANAL": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/infrastructure/cg_s_inf_canal.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted AS-IS 2026-09-25 under owner ruling AS_IS_PROMOTION_HELD_LANDSCAPE_NINE; native 1264x848, BELOW the 3072x2048 profile target by 2.43x linear - disclosed deviation per TB-08; source candidate preserved at assets/candidates/CG-S-INF-CANAL/r002/cg_s_inf_canal.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "independent civic module; style anchor B02 BLD-DWELLING r003 (approved-provisional, subject ignored)",
    "candidates": [
     {
@@ -6466,13 +6569,14 @@
     "deviation": "profile target 3072x2048 (3:2) not met; native 1264x848 is 2.43x below linear target; TB-08 model canvas ceiling documented; deviation explicitly accepted by owner",
     "canonical_sha256": "5e408ce03ff52f7d5993b2b471702a6269125fde59233dd4292b4ba2bea57fd1",
     "normalization_tool": "none (byte-identical copy)"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-INF-MINE": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/infrastructure/cg_s_inf_mine.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted AS-IS 2026-09-25 under owner ruling AS_IS_PROMOTION_HELD_LANDSCAPE_NINE; native 1264x848, BELOW the 3072x2048 profile target by 2.43x linear - disclosed deviation per TB-08; source candidate preserved at assets/candidates/CG-S-INF-MINE/r002/cg_s_inf_mine.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "independent civic module; style anchor B02 BLD-DWELLING r003 (approved-provisional, subject ignored)",
    "candidates": [
     {
@@ -6548,13 +6652,14 @@
     "deviation": "profile target 3072x2048 (3:2) not met; native 1264x848 is 2.43x below linear target; TB-08 model canvas ceiling documented; deviation explicitly accepted by owner",
     "canonical_sha256": "857fa2d4107e8163d18bff0815a732546f9a75e33d01ce4448a2a1d8d717572d",
     "normalization_tool": "none (byte-identical copy)"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-INF-WALL": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/infrastructure/cg_s_inf_wall.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted AS-IS 2026-09-25 under owner ruling AS_IS_PROMOTION_HELD_LANDSCAPE_NINE; native 1264x848, BELOW the 3072x2048 profile target by 2.43x linear - disclosed deviation per TB-08; source candidate preserved at assets/candidates/CG-S-INF-WALL/r002/cg_s_inf_wall.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "independent civic module; style anchor B02 BLD-DWELLING r003 (approved-provisional, subject ignored)",
    "candidates": [
     {
@@ -6630,13 +6735,14 @@
     "deviation": "profile target 3072x2048 (3:2) not met; native 1264x848 is 2.43x below linear target; TB-08 model canvas ceiling documented; deviation explicitly accepted by owner",
     "canonical_sha256": "117e4da004804e051f3a3d23c0884dbe51bd7474c6b4743c778c56315046ff44",
     "normalization_tool": "none (byte-identical copy)"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-MOT-CANOPY": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/motifs/cg_s_mot_canopy.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-MOT-CANOPY/r001/cg_s_mot_canopy.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "motif transform of the shared pavilion family; comparison baseline B02 MOT-BASALT r001 (approved-provisional)",
    "candidates": [
     {
@@ -6684,13 +6790,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "6904ecb98ad37fea4b1d357daeb738b6a4dccc978d703b97420cb749156a5baa",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-MOT-REED": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/motifs/cg_s_mot_reed.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-MOT-REED/r001/cg_s_mot_reed.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "motif transform of the shared pavilion family; comparison baseline B02 MOT-BASALT r001 (approved-provisional)",
    "candidates": [
     {
@@ -6737,13 +6844,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "04634634b965ceefd4522dcefbe32120a54631686d8871e0418afa7eb5e8d4e4",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-MOT-VAULT": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/motifs/cg_s_mot_vault.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-MOT-VAULT/r001/cg_s_mot_vault.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "motif transform of the shared pavilion family; comparison baseline B02 MOT-BASALT r001 (approved-provisional)",
    "candidates": [
     {
@@ -6790,13 +6898,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "f68f8573fbe67ef12db99517ce99073368e87ec43d6282596bce1aa586c1b66b",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-ENV-DECIDUOUS": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/environment/cg_s_env_deciduous.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ENV-DECIDUOUS/r001/cg_s_env_deciduous.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "independent environment material family member (shared scale/material gate)",
    "candidates": [
     {
@@ -6843,13 +6952,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "600706d4258db5730b3828768a36c4d2f4d7dff36c2f27ed1a36104eac736139",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-ENV-CONIFER": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/environment/cg_s_env_conifer.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ENV-CONIFER/r001/cg_s_env_conifer.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "independent environment material family member (shared scale/material gate)",
    "candidates": [
     {
@@ -6896,13 +7006,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "16e592f84f5489473ebc9bc38d082ce71c78503fc45c4b04f8996db26a9421e9",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-ENV-PALM": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/environment/cg_s_env_palm.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ENV-PALM/r001/cg_s_env_palm.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "independent environment material family member (shared scale/material gate)",
    "candidates": [
     {
@@ -6949,13 +7060,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "e1b9d648cf272e6de94c2056eb78de5e10c6c279422741ca48e2733a36e56c46",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-ENV-REEDS": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/environment/cg_s_env_reeds.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ENV-REEDS/r001/cg_s_env_reeds.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "independent environment material family member (shared scale/material gate)",
    "candidates": [
     {
@@ -7002,13 +7114,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "7fac35c63d14cc6a113a46746a3fe4aacf8105af6acb93cd1c4523721e059676",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-ENV-KELP": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/environment/cg_s_env_kelp.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ENV-KELP/r001/cg_s_env_kelp.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "independent environment material family member (shared scale/material gate)",
    "candidates": [
     {
@@ -7055,13 +7168,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "3e45d57699507e5d2a057436dc635c4d3e183480e04e91b87054b36e4f8606d5",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-ENV-ROCK": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/environment/cg_s_env_rock.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ENV-ROCK/r001/cg_s_env_rock.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "independent environment material family member (shared scale/material gate)",
    "candidates": [
     {
@@ -7108,13 +7222,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "56ac63fb66215d21b4e6de0281a096d553d7b9cf9b2dc84ff411cf1a384d3d19",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-ENV-ORE": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/environment/cg_s_env_ore.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ENV-ORE/r001/cg_s_env_ore.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "independent environment material family member (shared scale/material gate)",
    "candidates": [
     {
@@ -7161,13 +7276,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "875b16fb6c944805efb30fc3d191ccf541ca15e23734266c72fd7c40007dc2f2",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-ENV-CRYSTAL": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/environment/cg_s_env_crystal.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ENV-CRYSTAL/r002/cg_s_env_crystal.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "independent environment material family member (shared scale/material gate)",
    "candidates": [
     {
@@ -7232,13 +7348,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "e60566497003d4a9487ff0a5a88340edfd95aa84aab989bf5c5016eccbc0c7f1",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-ENV-FUNGUS": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/environment/cg_s_env_fungus.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ENV-FUNGUS/r001/cg_s_env_fungus.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "independent environment material family member (shared scale/material gate)",
    "candidates": [
     {
@@ -7285,13 +7402,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "6d447e4990846089d227a560c71be2c395ed1be028cd9c39217703d0c6ffa5f3",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-ENV-RUBBLE": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/environment/cg_s_env_rubble.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ENV-RUBBLE/r001/cg_s_env_rubble.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "independent environment material family member (shared scale/material gate)",
    "candidates": [
     {
@@ -7338,13 +7456,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "41c16c5188de305f36688db7387d3a92dad47e2509ae8981f0e17f85a9b67836",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-UNT-SOLDIER": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/units/cg_s_unt_soldier.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25; fresh pass under ruling FRESH_CANONICAL_RESOLUTION_PASSES_AUTHORIZED, normalized under CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidates preserved as evidence at assets/candidates/CG-S-UNT-SOLDIER/r002/cg_s_unt_soldier.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "independent unit/equipment member (shared scale/material gate; SOLDIER is the batch's only human-bearing unit)",
    "candidates": [
     {
@@ -7416,13 +7535,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "ba074f8383bdd2dd520008e4cdba1d454547decc5f88050fd18cf002d1fcb56a",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-UNT-WAGON": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/units/cg_s_unt_wagon.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-UNT-WAGON/r001/cg_s_unt_wagon.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "independent unit/equipment member (shared scale/material gate; SOLDIER is the batch's only human-bearing unit)",
    "candidates": [
     {
@@ -7468,13 +7588,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "bd8a2eb1c9df5118468ac8e88b52a14699e51f49282262932aa898694b3cf30a",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-UNT-SPEAR": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/units/cg_s_unt_spear.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-UNT-SPEAR/r001/cg_s_unt_spear.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "independent unit/equipment member (shared scale/material gate; SOLDIER is the batch's only human-bearing unit)",
    "candidates": [
     {
@@ -7520,13 +7641,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "8be964c3b5ae18a2c37e66877017f499ac2739b0bf767cb2e02acbebc66a14f0",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-UNT-BOW": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/units/cg_s_unt_bow.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-UNT-BOW/r001/cg_s_unt_bow.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "independent unit/equipment member (shared scale/material gate; SOLDIER is the batch's only human-bearing unit)",
    "candidates": [
     {
@@ -7572,13 +7694,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "560d04dcd84eaed47b51df94cfa01e34331ef766134371c06b16b7309ab85387",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-UNT-SHIELD": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/units/cg_s_unt_shield.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-UNT-SHIELD/r001/cg_s_unt_shield.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "independent unit/equipment member (shared scale/material gate; SOLDIER is the batch's only human-bearing unit)",
    "candidates": [
     {
@@ -7624,13 +7747,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "613bd9d600cd538313529c0ffdc8254a31b673155901030cf517f388810975b0",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-UNT-BALLISTA": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/units/cg_s_unt_ballista.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-UNT-BALLISTA/r001/cg_s_unt_ballista.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "independent unit/equipment member (shared scale/material gate; SOLDIER is the batch's only human-bearing unit)",
    "candidates": [
     {
@@ -7676,13 +7800,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "4b276c79a519625526e2c79790e75d93e0e894f4f2e8749a4f17a82b6cb4ab04",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-UNT-HULL-MERCHANT": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/units/cg_s_unt_hull_merchant.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-UNT-HULL-MERCHANT/r001/cg_s_unt_hull_merchant.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "independent unit/equipment member (shared scale/material gate; SOLDIER is the batch's only human-bearing unit)",
    "candidates": [
     {
@@ -7728,13 +7853,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "d2657d0858831906b2a2c2f5b842e99d582e8df4e406a2da34a247d41dc4ad48",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-UNT-HULL-WAR": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/units/cg_s_unt_hull_war.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-UNT-HULL-WAR/r001/cg_s_unt_hull_war.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "independent unit/equipment member (shared scale/material gate; SOLDIER is the batch's only human-bearing unit)",
    "candidates": [
     {
@@ -7780,13 +7906,14 @@
     "canonical_dimensions": "2048x2048",
     "canonical_sha256": "7c44f70ff360e4a9962174c343e84b8d58480ddbeb2e2f6ab0bc0989996a005d",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-ICO-FOOD": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_food.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ICO-FOOD/r001/cg_s_ico_food.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "economic glyph family member (shared stroke/margin/legibility gate)",
    "candidates": [
     {
@@ -7834,13 +7961,14 @@
     "canonical_dimensions": "512x512",
     "canonical_sha256": "884fac0364ef9f475fcab8f0180bf92d956ecc4bd9150e68a47dbea7014a0f5e",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-ICO-WOOD": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_wood.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ICO-WOOD/r001/cg_s_ico_wood.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "economic glyph family member (shared stroke/margin/legibility gate)",
    "candidates": [
     {
@@ -7888,13 +8016,14 @@
     "canonical_dimensions": "512x512",
     "canonical_sha256": "edfe1920980fc24c07360e44a38b0fce0edd53fd50fed9ce4de2637886b6696f",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-ICO-ORE": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_ore.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ICO-ORE/r001/cg_s_ico_ore.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "economic glyph family member (shared stroke/margin/legibility gate)",
    "candidates": [
     {
@@ -7942,13 +8071,14 @@
     "canonical_dimensions": "512x512",
     "canonical_sha256": "a5ec8532a4b397a5d1836371c29a82668e5f8910b3d96d4406dc8b09fc66d800",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-ICO-TOOLS": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_tools.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ICO-TOOLS/r001/cg_s_ico_tools.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "economic glyph family member (shared stroke/margin/legibility gate)",
    "candidates": [
     {
@@ -7996,13 +8126,14 @@
     "canonical_dimensions": "512x512",
     "canonical_sha256": "839a4a1232a056adf9ecf52c50958aecb66bc881e77472713cc7aca20bd265fb",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-ICO-MEDICINE": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_medicine.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ICO-MEDICINE/r001/cg_s_ico_medicine.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "economic glyph family member (shared stroke/margin/legibility gate)",
    "candidates": [
     {
@@ -8050,13 +8181,14 @@
     "canonical_dimensions": "512x512",
     "canonical_sha256": "e7f1ae5df6007afe8fe8caec715f0e569f3674703a6f4721c7790bfe7a07f060",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-ICO-BIO": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_bio.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ICO-BIO/r001/cg_s_ico_bio.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "economic glyph family member (shared stroke/margin/legibility gate)",
    "candidates": [
     {
@@ -8104,13 +8236,14 @@
     "canonical_dimensions": "512x512",
     "canonical_sha256": "fd0ac592cbde337021bede012371c1b8582bf6eef972349d7c385edb4200494f",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-ICO-COIN": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_coin.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ICO-COIN/r001/cg_s_ico_coin.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "economic glyph family member (shared stroke/margin/legibility gate)",
    "candidates": [
     {
@@ -8158,13 +8291,14 @@
     "canonical_dimensions": "512x512",
     "canonical_sha256": "53925ad7a38cb9bc593f8bb3a852f426d810a4f79abb3a15ff37a0a13b7ea66c",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-ICO-KNOWLEDGE": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_knowledge.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ICO-KNOWLEDGE/r001/cg_s_ico_knowledge.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "economic glyph family member (shared stroke/margin/legibility gate)",
    "candidates": [
     {
@@ -8212,13 +8346,14 @@
     "canonical_dimensions": "512x512",
     "canonical_sha256": "f27a6a1937b69af13f72b41a4d8bb5a0d7bb7458bbc265a1fbe1ee49af8a46d6",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-ICO-STONE": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_stone.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ICO-STONE/r002/cg_s_ico_stone.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "economic glyph family member",
    "candidates": [
     {
@@ -8283,13 +8418,14 @@
     "canonical_dimensions": "512x512",
     "canonical_sha256": "53140d43a156fdf03a44dfda87512b1b3b549c631f4a18d8eeded41648ff2890",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-EMB-01": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/emblems/cg_s_emb_01.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-EMB-01/r001/cg_s_emb_01.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "faction emblem family (six-distinction identity set)",
    "candidates": [
     {
@@ -8337,13 +8473,14 @@
     "canonical_dimensions": "512x512",
     "canonical_sha256": "1e4069747ae405c344b8d73c3aeeaa657b6e598cdf0b50b9eeb3c42176829f0f",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-EMB-02": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/emblems/cg_s_emb_02.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-EMB-02/r001/cg_s_emb_02.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "faction emblem family (six-distinction identity set)",
    "candidates": [
     {
@@ -8391,13 +8528,14 @@
     "canonical_dimensions": "512x512",
     "canonical_sha256": "0371c794864375de8fbbdbba16e89cddce9741bc77606ec7e42f8ebe46e63f14",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-EMB-03": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/emblems/cg_s_emb_03.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-EMB-03/r001/cg_s_emb_03.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "faction emblem family (six-distinction identity set)",
    "candidates": [
     {
@@ -8445,13 +8583,14 @@
     "canonical_dimensions": "512x512",
     "canonical_sha256": "75d7708bba3a157dba4f3dc78d3249500ba7ca76fb7cb5328f5b8eec04bfbca0",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-EMB-04": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/emblems/cg_s_emb_04.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-EMB-04/r001/cg_s_emb_04.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "faction emblem family (six-distinction identity set)",
    "candidates": [
     {
@@ -8499,13 +8638,14 @@
     "canonical_dimensions": "512x512",
     "canonical_sha256": "166c68af7d7a7c03dc9f1f4be8c92612f23ee4b0131c7d643b8d866c5dc470c7",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-EMB-05": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/emblems/cg_s_emb_05.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-EMB-05/r001/cg_s_emb_05.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "faction emblem family (six-distinction identity set)",
    "candidates": [
     {
@@ -8553,13 +8693,14 @@
     "canonical_dimensions": "512x512",
     "canonical_sha256": "e921861aeb72ae2b6cf3b957790fa46e56d49710e609a01cbd175ad325ddd1fe",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-EMB-06": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/emblems/cg_s_emb_06.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-EMB-06/r001/cg_s_emb_06.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "faction emblem family (six-distinction identity set)",
    "candidates": [
     {
@@ -8607,13 +8748,14 @@
     "canonical_dimensions": "512x512",
     "canonical_sha256": "0386540c89cbee4713279c93db75688ab925ddca6f89fe874e4f3472fe99d5e1",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-ICO-MOVE": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_move.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ICO-MOVE/r001/cg_s_ico_move.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "action glyph family member (B09 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
     {
@@ -8661,13 +8803,14 @@
     "canonical_dimensions": "512x512",
     "canonical_sha256": "929d226b0a26f0730d651eb1f89a4d840681ab96403fa1d7f73a8451dcfaa222",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-ICO-FEED": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_feed.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ICO-FEED/r001/cg_s_ico_feed.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "action glyph family member (B09 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
     {
@@ -8715,13 +8858,14 @@
     "canonical_dimensions": "512x512",
     "canonical_sha256": "d575ab017e0a5cefe4e4e7f15c1da3734b491f38924ef2390e69e31495149769",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-ICO-REST": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_rest.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ICO-REST/r001/cg_s_ico_rest.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "action glyph family member (B09 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
     {
@@ -8769,13 +8913,14 @@
     "canonical_dimensions": "512x512",
     "canonical_sha256": "ce50b396180bbfa390461ef05bee0ec683c060c0fbbf1f96bc0f5e98328551a7",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-ICO-GUARD": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_guard.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ICO-GUARD/r001/cg_s_ico_guard.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "action glyph family member (B09 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
     {
@@ -8823,13 +8968,14 @@
     "canonical_dimensions": "512x512",
     "canonical_sha256": "541857244dcee9523300890e088aca5d5994370ec2e2e6f9332a925bcd29e35c",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-ICO-ATTACK": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_attack.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ICO-ATTACK/r001/cg_s_ico_attack.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "action glyph family member (B09 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
     {
@@ -8877,13 +9023,14 @@
     "canonical_dimensions": "512x512",
     "canonical_sha256": "c4aa493b6403f062c99c63fd5ab6efe48b2064af4ef00a7aee3127a7a78c2119",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-ICO-MIGRATE": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_migrate.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ICO-MIGRATE/r001/cg_s_ico_migrate.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "action glyph family member (B09 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
     {
@@ -8934,13 +9081,14 @@
     "canonical_dimensions": "512x512",
     "canonical_sha256": "27164477ef20a050c192e93baca1278817c869fed06ca35bdc65ade70f088875",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-ICO-BUILD": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_build.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ICO-BUILD/r001/cg_s_ico_build.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "action glyph family member (B09 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
     {
@@ -8988,13 +9136,14 @@
     "canonical_dimensions": "512x512",
     "canonical_sha256": "5a1db37e5fc9171f74e21f7930ff50eb3a53bd2aad659d3280ebe4371bbaaa49",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-ICO-EVOLVE": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_evolve.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ICO-EVOLVE/r002/cg_s_ico_evolve.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "action glyph family member (B09 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
     {
@@ -9061,13 +9210,14 @@
     "canonical_dimensions": "512x512",
     "canonical_sha256": "633ffba47efbce7fabf5c74ea96386df65433830423df8d3fd25c469eab73b99",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-ICO-TRADE": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_trade.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ICO-TRADE/r002/cg_s_ico_trade.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "action glyph family member (B09 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
     {
@@ -9134,13 +9284,14 @@
     "canonical_dimensions": "512x512",
     "canonical_sha256": "7434541736a6bac1d3a11b8d152798d7873c03343b00ec790791d167a5e62f80",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-ICO-RESEARCH": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_research.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ICO-RESEARCH/r001/cg_s_ico_research.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "information/warning glyph family member (B09/B10 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
     {
@@ -9188,13 +9339,14 @@
     "canonical_dimensions": "512x512",
     "canonical_sha256": "6f7e0f583839ce78d98e9f1626a176a8d20a62aae0174bea3019aef14f87dc8f",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-ICO-POLICY": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_policy.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ICO-POLICY/r001/cg_s_ico_policy.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "information/warning glyph family member (B09/B10 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
     {
@@ -9242,13 +9394,14 @@
     "canonical_dimensions": "512x512",
     "canonical_sha256": "7ca00ae40102b5bb70e4dc3146aa9d75691ee1277f2f2cf1f749110cf9f993b3",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-ICO-TREATY": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_treaty.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ICO-TREATY/r001/cg_s_ico_treaty.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "information/warning glyph family member (B09/B10 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
     {
@@ -9296,13 +9449,14 @@
     "canonical_dimensions": "512x512",
     "canonical_sha256": "e9b2085c9c557e7844aa7bf537c94d4ef5fe2e3c553c074f5a01c6ceecf677cf",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-ICO-HISTORY": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_history.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ICO-HISTORY/r001/cg_s_ico_history.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "information/warning glyph family member (B09/B10 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
     {
@@ -9350,13 +9504,14 @@
     "canonical_dimensions": "512x512",
     "canonical_sha256": "3bdeb63408e01384902f7e0763c94b25496971573d5014bcb166f7351e616a7b",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-ICO-WARNING": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_warning.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ICO-WARNING/r001/cg_s_ico_warning.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "information/warning glyph family member (B09/B10 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
     {
@@ -9404,13 +9559,14 @@
     "canonical_dimensions": "512x512",
     "canonical_sha256": "d81a2761cba77de451aeb69c15ad0b2005da39b17653b6284b1ac0f2dfdbccfc",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-ICO-HEALTH": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_health.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ICO-HEALTH/r001/cg_s_ico_health.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "information/warning glyph family member (B09/B10 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
     {
@@ -9458,13 +9614,14 @@
     "canonical_dimensions": "512x512",
     "canonical_sha256": "ef625a2dd01815e7593da69a1e22cbd014a4f07f9b864c462ec7d8b47c6e04f0",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-ICO-FATIGUE": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_fatigue.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ICO-FATIGUE/r001/cg_s_ico_fatigue.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "information/warning glyph family member (B09/B10 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
     {
@@ -9512,13 +9669,14 @@
     "canonical_dimensions": "512x512",
     "canonical_sha256": "6371337ed846457e3d7335da1853894c99d56f5531af2677a90552c10da00603",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-ICO-POPULATION": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_population.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ICO-POPULATION/r001/cg_s_ico_population.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "information/warning glyph family member (B09/B10 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
     {
@@ -9570,13 +9728,14 @@
     "canonical_dimensions": "512x512",
     "canonical_sha256": "84eab6a990a1083f71fe258936232a1b3dc211782c4926eea66bb193636284c0",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-ICO-CITY": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_city.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ICO-CITY/r001/cg_s_ico_city.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "information/warning glyph family member (B09/B10 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
     {
@@ -9624,13 +9783,14 @@
     "canonical_dimensions": "512x512",
     "canonical_sha256": "2b098f9e7662ee67453e524785deea5c3303851e090b7317da8ee104428e4075",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-ICO-GOD": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_god.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ICO-GOD/r001/cg_s_ico_god.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "information/warning glyph family member (B09/B10 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
     {
@@ -9678,13 +9838,14 @@
     "canonical_dimensions": "512x512",
     "canonical_sha256": "6467d792c0463b953f4ef7c3036aff8b5e1acca0d8d9cba759616e407e314f5e",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-ICO-ECOLOGY": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_ecology.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ICO-ECOLOGY/r001/cg_s_ico_ecology.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "information/warning glyph family member (B09/B10 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
     {
@@ -9732,13 +9893,14 @@
     "canonical_dimensions": "512x512",
     "canonical_sha256": "b3eb001057a212123cec08992a6dd6c97144858b6aa06ca6da464a4a936c15b4",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-ICO-CLAIM": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_claim.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ICO-CLAIM/r001/cg_s_ico_claim.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "information/warning glyph family member (B09/B10 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
     {
@@ -9786,13 +9948,14 @@
     "canonical_dimensions": "512x512",
     "canonical_sha256": "9a3a9fcc57243b0c8740d7db84ce85f73e2f89fc0a3a9caee35ec25982dc1e88",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-ICO-ARMY": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_army.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ICO-ARMY/r001/cg_s_ico_army.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "information/warning glyph family member (B09/B10 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
     {
@@ -9840,13 +10003,14 @@
     "canonical_dimensions": "512x512",
     "canonical_sha256": "8b9b003b85be2f6a3c77f27ca7ebebb1a713da9086594f04cf7e839263da9af9",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-S-ICO-VISIBILITY": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/icons/cg_s_ico_visibility.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-S-ICO-VISIBILITY/r002/cg_s_ico_visibility.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "information/warning glyph family member (B09/B10 glyph kit; shared stroke/margin/legibility gate)",
    "candidates": [
     {
@@ -9913,13 +10077,14 @@
     "canonical_dimensions": "512x512",
     "canonical_sha256": "66d366cb82ef7bc7edb663ce7bd3eb201b7352b470d6ed90f7da992570e662ee",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   },
   "CG-A-ART-TITLE": {
    "specification_version": "CG-V1.0.0",
    "canonical_path": "assets/source/art/cg_a_art_title.png",
    "canonical_state": "PRESENT - CANONICAL SOURCE (promoted 2026-09-25 under owner ruling CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS; source candidate preserved as evidence at assets/candidates/CG-A-ART-TITLE/r001/cg_a_art_title.png)",
-   "id_status": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
+   "id_status": "CANONICAL_SOURCE_PRESENT",
    "parent_dependency_revisions": "CG-S-ART-DIRECTION r002 (provisional style anchor; B00-block precedent disclosed); CG-S-GOD-FORM-Q r004; CG-S-GOD-LIFE-S: NO approved revision (rejection ratified standing) - S-remains motif rendered from plan text only, never from rejected candidates",
    "candidates": [
     {
@@ -9969,7 +10134,8 @@
     "canonical_dimensions": "2048x1024",
     "canonical_sha256": "afb8a4027e92cebbcd088a55b87014f581a00b21235064eabbacbca85e581097",
     "normalization_tool": "ImageMagick convert -filter Lanczos"
-   }
+   },
+   "id_status_historical_gate_era": "(see approval.decision - historical gate vocabulary preserved there)"
   }
  },
  "batch_checkpoints": {
@@ -9990,7 +10156,8 @@
    "capacity_note": "B01 dependency CG-S-ART-DIRECTION is not satisfied; per Section 4, production does not proceed to B01 without resolution.",
    "resolution": "BLOCKED - FINAL by owner ruling B00_BLOCK_FINAL (2026-09-24): style board not generated; CG-S-ART-DIRECTION remains NO_AMENDMENT_RUN_STOPPED; B01-era set remains provisional style anchor.",
    "resolution_date_utc": "2026-09-23T22:02:21+00:00",
-   "production_run": "ENDED at B00 gate; B01-B12 not started; 0 of 121 canonical sources produced in this environment"
+   "production_run": "ENDED at B00 gate; B01-B12 not started; 0 of 121 canonical sources produced in this environment",
+   "canonical_state": "INTENTIONALLY ABSENT - CG-S-ART-DIRECTION not generated (owner ruling B00_BLOCK_FINAL, FINAL)"
   },
   "B01": {
    "checkpoint_date_utc": "2026-09-23T22:09:52+00:00",
@@ -10002,20 +10169,20 @@
     "rejected_candidates": 10,
     "rejected_ids_this_pass": 2,
     "awaiting_approval_ids": 0,
-    "not_started_children": 2,
-    "approved_source": 0,
+    "not_started_children": 0,
+    "approved_source": 7,
     "blocked_standing": [
      "CG-S-ART-DIRECTION (B00, dimensional)"
     ]
    },
    "id_states": {
-    "CG-S-GOD-TORSO-Q": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
-    "CG-S-GOD-LOCO-PILLAR": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
-    "CG-S-GOD-FEED-BROWSE": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
-    "CG-S-GOD-SENSE-EYE-RING": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
-    "CG-S-GOD-TAIL-BALANCE": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
-    "CG-S-GOD-FORM-Q": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
-    "CG-S-GOD-LIFE-Q": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING"
+    "CG-S-GOD-TORSO-Q": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-GOD-LOCO-PILLAR": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-GOD-FEED-BROWSE": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-GOD-SENSE-EYE-RING": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-GOD-TAIL-BALANCE": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-GOD-FORM-Q": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-GOD-LIFE-Q": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)"
    },
    "generation_budget": {
     "clips_used_this_turn": 9,
@@ -10024,7 +10191,8 @@
    },
    "dependency_note": "The four conforming modules are registry-independent grammar siblings (dependency: code-defined primitive), so producing them provisionally while the torso is rejected is compliant; parent-first promotion still applies - none may be promoted before the torso identity is resolved and the gate passes.",
    "gate_ruling": "Human ruling 2026-09-23 recorded in human_rulings[B01_GATE_RULING_1]",
-   "resolution": "CLOSED - identity gate PASSED 2026-09-23; complete provisional evidence set (7/7 IDs)"
+   "resolution": "CLOSED - identity gate PASSED 2026-09-23; complete provisional evidence set (7/7 IDs)",
+   "canonical_state": "ALL 7 SOURCES PROMOTED TO CANONICAL (rulings #18/#20/#21, 2026-09-24; files hash+dimension verified)"
   },
   "B02": {
    "opened_utc": "2026-09-23T23:50:33+00:00",
@@ -10035,19 +10203,20 @@
     "candidates_generated": 12,
     "rejected_candidates": 6,
     "rejected_ids_this_pass": 3,
-    "awaiting_approval_ids": 6,
-    "approved_source": 0,
+    "awaiting_approval_ids": 0,
+    "approved_source": 6,
     "rejected_ids_standing": 0
    },
    "id_states": {
-    "CG-S-MOT-BASALT": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
-    "CG-S-BLD-DWELLING": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
-    "CG-S-BLD-HALL": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
-    "CG-S-INF-FARM": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
-    "CG-S-INF-ROAD": "PROVISIONAL_BATCH_LOCAL_REFERENCE",
-    "CG-S-UNT-CIVILIAN": "PROVISIONAL_BATCH_LOCAL_REFERENCE"
+    "CG-S-MOT-BASALT": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-BLD-DWELLING": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-BLD-HALL": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-INF-FARM": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-INF-ROAD": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-UNT-CIVILIAN": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)"
    },
-   "resolution": "CLOSED - civic/scale gate PASSED 2026-09-23; complete provisional evidence set (6/6 IDs)"
+   "resolution": "CLOSED - civic/scale gate PASSED 2026-09-23; complete provisional evidence set (6/6 IDs)",
+   "canonical_state": "ALL 6 SOURCES PROMOTED TO CANONICAL (rulings #18/#20/#21, 2026-09-24; files hash+dimension verified)"
   },
   "B03": {
    "opened_utc": "2026-09-24T00:08:02+00:00",
@@ -10057,25 +10226,26 @@
     "requested": 9,
     "candidates_generated": 11,
     "rejected_candidates": 5,
-    "awaiting_approval_ids": 1,
-    "provisionally_approved_ids": 6,
+    "awaiting_approval_ids": 0,
+    "provisionally_approved_ids": 9,
     "accepted_provisional_technical": 1,
     "rejected_ids_this_pass_standing": 1,
-    "approved_source": 0
+    "approved_source": 9
    },
    "plan": "6 independent H modules this turn (TORSO-H, LOCO-DIGGER, FEED-MINERAL, SENSE-VIBRATION-ROSETTE, TAIL-WEDGE, ARMOR-SHELL); ORGAN-THERMAL-VENT + FORM-H + LIFE-H next turn parent-first (turn generation budget)",
    "id_states": {
-    "CG-S-GOD-TORSO-H": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
-    "CG-S-GOD-LOCO-DIGGER": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
-    "CG-S-GOD-FEED-MINERAL": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
-    "CG-S-GOD-SENSE-VIBRATION-ROSETTE": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
-    "CG-S-GOD-TAIL-WEDGE": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
-    "CG-S-GOD-ARMOR-SHELL": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
-    "CG-S-GOD-ORGAN-THERMAL-VENT": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
-    "CG-S-GOD-FORM-H": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
-    "CG-S-GOD-LIFE-H": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING"
+    "CG-S-GOD-TORSO-H": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-GOD-LOCO-DIGGER": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-GOD-FEED-MINERAL": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-GOD-SENSE-VIBRATION-ROSETTE": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-GOD-TAIL-WEDGE": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-GOD-ARMOR-SHELL": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-GOD-ORGAN-THERMAL-VENT": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-GOD-FORM-H": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-GOD-LIFE-H": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)"
    },
-   "resolution": "CLOSED - consolidated gate PASSED 2026-09-24; complete provisional evidence set (9/9 IDs)"
+   "resolution": "CLOSED - consolidated gate PASSED 2026-09-24; complete provisional evidence set (9/9 IDs)",
+   "canonical_state": "ALL 9 SOURCES PROMOTED TO CANONICAL (rulings #18/#20/#21, 2026-09-24; files hash+dimension verified)"
   },
   "B04": {
    "opened_utc": "2026-09-24T00:48:24+00:00",
@@ -10087,24 +10257,27 @@
     "generation_attempts_this_turn": "5 of 10 (0 tool errors)",
     "rejected_candidates": 4,
     "rejected_ids_budget_exhausted": 1,
-    "awaiting_approval_ids": 9,
-    "approved_source": 0,
-    "provisionally_approved_ids": 9
+    "awaiting_approval_ids": 0,
+    "approved_source": 9,
+    "provisionally_approved_ids": 10,
+    "unresolved_ids": 1,
+    "historical_note": "B04 gate ratified the r001+r002 rejection for that pass (budget exhausted); closure pass 2026-09-24 ran the later-authorized fresh pass - outcome in receipt"
    },
    "plan": "8 modules this pass (TORSO-S, TORSO-M, LOCO-UNDULATOR, LOCO-FIN, LOCO-WEBBED, FEED-FILTER, TAIL-PADDLE, ORGAN-GILLS), then FORM-S and LIFE-S parent-first if all modules conform; consolidated human gate at pass end",
    "id_states": {
-    "CG-S-GOD-TORSO-S": "r001 REJECTED (preserved) -> r002 fresh-generation repair CONFORMS; AWAITING_APPROVAL",
-    "CG-S-GOD-TORSO-M": "r001 REJECTED (preserved) -> r002 fresh-generation repair CONFORMS (ring treatment zoom-verified); AWAITING_APPROVAL",
-    "CG-S-GOD-LOCO-UNDULATOR": "CANDIDATE_AWAITING_APPROVAL (r001)",
-    "CG-S-GOD-LOCO-FIN": "CANDIDATE_AWAITING_APPROVAL (r001)",
-    "CG-S-GOD-LOCO-WEBBED": "CANDIDATE_AWAITING_APPROVAL (r001)",
-    "CG-S-GOD-FEED-FILTER": "CANDIDATE_AWAITING_APPROVAL (r001)",
-    "CG-S-GOD-TAIL-PADDLE": "CANDIDATE_AWAITING_APPROVAL (r001)",
-    "CG-S-GOD-ORGAN-GILLS": "CANDIDATE_AWAITING_APPROVAL (r001)",
-    "CG-S-GOD-FORM-S": "CANDIDATE_AWAITING_APPROVAL (r001; flags: axial compression in hero/front/rear, downward pectoral angle in elevations - non-blocking)",
-    "CG-S-GOD-LIFE-S": "REJECTED this pass (r001 + r002); 1+1 budget exhausted; retry requires explicit fresh-pass authorization; single-view-anchor strategy recorded"
+    "CG-S-GOD-TORSO-S": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-GOD-TORSO-M": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-GOD-LOCO-UNDULATOR": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-GOD-LOCO-FIN": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-GOD-LOCO-WEBBED": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-GOD-FEED-FILTER": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-GOD-TAIL-PADDLE": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-GOD-ORGAN-GILLS": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-GOD-FORM-S": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-GOD-LIFE-S": "UNRESOLVED_REMAINING_ASSET_BLOCKER (closure fresh pass r003+r004 rejected 2026-09-24; r001+r002 rejected earlier - history in receipt)"
    },
-   "resolution": "CLOSED - consolidated gate PASSED 2026-09-24 (approve_all_close_b04); provisional evidence set 9/10 IDs approved-provisional; LIFE-S rejected-final standing (retry needs explicit fresh pass); B05 unlocked"
+   "resolution": "CLOSED - consolidated gate PASSED 2026-09-24 (approve_all_close_b04); provisional evidence set 9/10 IDs approved-provisional; LIFE-S rejected-final standing (retry needs explicit fresh pass); B05 unlocked",
+   "canonical_state": "9 OF 10 PROMOTED; CG-S-GOD-LIFE-S UNRESOLVED"
   },
   "B05": {
    "opened_utc": "2026-09-24T02:10:00+00:00",
@@ -10116,19 +10289,20 @@
     "generation_attempts_total": "10 of 10 (1 missing-scaffold tool error, no image)",
     "rejected_candidates": 2,
     "rejected_ids_budget_exhausted_then_pass2": 1,
-    "awaiting_approval_ids": 5,
-    "approved_source": 0,
+    "awaiting_approval_ids": 0,
+    "approved_source": 5,
     "provisionally_approved_ids": 5
    },
    "plan": "3 independent modules first (LOCO-WING, FEED-CARRION, SENSE-ANTENNA-CROWN), then FORM-M + LIFE-M parent-first in the same pass if module inspection is clean; consolidated human gate at pass end. Scaffolds pre-staged (3x 2x2 + FORM-M 2x2 + LIFE-M 3x2) and verified with identify.",
    "id_states": {
-    "CG-S-GOD-LOCO-WING": "CANDIDATE_AWAITING_APPROVAL (r001)",
-    "CG-S-GOD-FEED-CARRION": "CANDIDATE_AWAITING_APPROVAL (r001)",
-    "CG-S-GOD-SENSE-ANTENNA-CROWN": "r001+r002 REJECTED (TB-06) -> r003 AUTHORIZED PASS-2 CONFORMS (technical flag: canvas swap TB-07); AWAITING_APPROVAL",
-    "CG-S-GOD-FORM-M": "CANDIDATE_AWAITING_APPROVAL (r001; five-module assembly, flags non-blocking)",
-    "CG-S-GOD-LIFE-M": "r001 CANDIDATE_AWAITING_APPROVAL (2 flags) + r002 targeted repair REJECTED (ossuary flag persisted, injury fixed; TB-07 recurrence) - budget exhausted; user gate to decide accept-r001 / authorize-r003 / reject-standing"
+    "CG-S-GOD-LOCO-WING": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-GOD-FEED-CARRION": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-GOD-SENSE-ANTENNA-CROWN": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-GOD-FORM-M": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-GOD-LIFE-M": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)"
    },
-   "resolution": "CLOSED - consolidated gate PASSED 2026-09-24 on re-presented question (approve_all_close_b05); provisional evidence set 5/5 IDs; LIFE-M r001 technical-with-flag; B06 unlocked"
+   "resolution": "CLOSED - consolidated gate PASSED 2026-09-24 on re-presented question (approve_all_close_b05); provisional evidence set 5/5 IDs; LIFE-M r001 technical-with-flag; B06 unlocked",
+   "canonical_state": "ALL 5 SOURCES PROMOTED TO CANONICAL (rulings #18/#20/#21, 2026-09-24; files hash+dimension verified)"
   },
   "B06": {
    "opened_utc": "2026-09-24T04:20:00+00:00",
@@ -10139,22 +10313,23 @@
     "candidates_generated": 8,
     "generation_attempts": "9 of 10 (1 missing-scaffold tool error, no image)",
     "rejected_candidates": 1,
-    "awaiting_approval_ids": 7,
-    "approved_source": 0,
+    "awaiting_approval_ids": 0,
+    "approved_source": 7,
     "provisionally_approved_ids": 7,
     "held_for_repair": 0
    },
    "plan": "One pass: 7 parallel 2x2 module sheets (fits the 10-attempt turn budget with 3 spare slots); TB-03 fresh generations, per-panel counts for any radial anatomy (TB-06), verify identify() on every output (TB-07); consolidated human gate at pass end",
    "id_states": {
-    "CG-S-GOD-ARMOR-OSTEODERM": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
-    "CG-S-GOD-ARMOR-COAT": "r001 HELD for targeted r002 (ruling B06_CONSOLIDATED_GATE_APPROVE6_HOLD_COAT); B06 open until resolved",
-    "CG-S-GOD-ORGAN-SOLAR-SAIL": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
-    "CG-S-GOD-ORGAN-SPORE-SAC": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
-    "CG-S-GOD-SYMB-FUNGAL-GROVE": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
-    "CG-S-GOD-SYMB-FOLLOWER-GALLERY": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING",
-    "CG-S-GOD-SYMB-ROOT-HOLDFAST": "IDENTITY_APPROVED_PROVISIONAL_RESOLUTION_PENDING"
+    "CG-S-GOD-ARMOR-OSTEODERM": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-GOD-ARMOR-COAT": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-GOD-ORGAN-SOLAR-SAIL": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-GOD-ORGAN-SPORE-SAC": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-GOD-SYMB-FUNGAL-GROVE": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-GOD-SYMB-FOLLOWER-GALLERY": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-GOD-SYMB-ROOT-HOLDFAST": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)"
    },
-   "resolution": "CLOSED - COAT r002 accepted 2026-09-24 (ruling B06_COAT_R002_ACCEPT_CLOSE); complete provisional evidence set 7/7 IDs (COAT as r002)"
+   "resolution": "CLOSED - COAT r002 accepted 2026-09-24 (ruling B06_COAT_R002_ACCEPT_CLOSE); complete provisional evidence set 7/7 IDs (COAT as r002)",
+   "canonical_state": "ALL 7 SOURCES PROMOTED TO CANONICAL (rulings #18/#20/#21, 2026-09-24; files hash+dimension verified)"
   },
   "B07": {
    "opened_utc": "2026-09-24T05:15:00+00:00",
@@ -10163,33 +10338,34 @@
    "counts": {
     "requested": 19,
     "candidates_generated": 19,
-    "awaiting_approval_ids": 19,
-    "approved_source": 0,
+    "awaiting_approval_ids": 0,
+    "approved_source": 19,
     "provisionally_approved_ids": 19
    },
    "plan": "Chunks 1+2 DONE (16/19 conforming). Chunk 3 next: MOT-CANOPY, MOT-REED, MOT-VAULT (motif transforms vs B02) + repair slack. COAT r002 verdict + B06 closure + consolidated B07 gate at pass end.",
    "id_states": {
-    "CG-S-BLD-ARCHIVE": "CANDIDATE_AWAITING_APPROVAL (r001)",
-    "CG-S-BLD-BARRACKS": "CANDIDATE_AWAITING_APPROVAL (r001)",
-    "CG-S-BLD-CARAVAN-CANOPY": "CANDIDATE_AWAITING_APPROVAL (r001)",
-    "CG-S-BLD-DEPOT": "CANDIDATE_AWAITING_APPROVAL (r001)",
-    "CG-S-BLD-DOCK": "CANDIDATE_AWAITING_APPROVAL (r001)",
-    "CG-S-BLD-GRANARY": "CANDIDATE_AWAITING_APPROVAL (r001)",
-    "CG-S-BLD-INFIRMARY": "CANDIDATE_AWAITING_APPROVAL (r001)",
-    "CG-S-BLD-MARKET": "CANDIDATE_AWAITING_APPROVAL (r001; TB-07 canvas flag)",
-    "CG-S-BLD-OBSERVATORY": "CANDIDATE_AWAITING_APPROVAL (r001)",
-    "CG-S-BLD-SHRINE": "CANDIDATE_AWAITING_APPROVAL (r001; TB-07 canvas flag)",
-    "CG-S-BLD-TOWER": "CANDIDATE_AWAITING_APPROVAL (r001)",
-    "CG-S-BLD-WORKSHOP": "CANDIDATE_AWAITING_APPROVAL (r001)",
-    "CG-S-INF-BRIDGE": "CANDIDATE_AWAITING_APPROVAL (r001; 3 named modes)",
-    "CG-S-INF-CANAL": "CANDIDATE_AWAITING_APPROVAL (r001; 3 named modes)",
-    "CG-S-INF-MINE": "CANDIDATE_AWAITING_APPROVAL (r001; 3 named modes)",
-    "CG-S-INF-WALL": "CANDIDATE_AWAITING_APPROVAL (r001; 3 named modes)",
-    "CG-S-MOT-CANOPY": "CANDIDATE_AWAITING_APPROVAL (r001)",
-    "CG-S-MOT-REED": "CANDIDATE_AWAITING_APPROVAL (r001)",
-    "CG-S-MOT-VAULT": "CANDIDATE_AWAITING_APPROVAL (r001)"
+    "CG-S-BLD-ARCHIVE": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-BLD-BARRACKS": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-BLD-CARAVAN-CANOPY": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-BLD-DEPOT": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-BLD-DOCK": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-BLD-GRANARY": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-BLD-INFIRMARY": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-BLD-MARKET": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-BLD-OBSERVATORY": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-BLD-SHRINE": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-BLD-TOWER": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-BLD-WORKSHOP": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-INF-BRIDGE": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-INF-CANAL": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-INF-MINE": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-INF-WALL": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-MOT-CANOPY": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-MOT-REED": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-MOT-VAULT": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)"
    },
-   "resolution": "CLOSED - consolidated gate PASSED 2026-09-24 (approve_all_close_b07); complete provisional civic-architecture evidence set 19/19"
+   "resolution": "CLOSED - consolidated gate PASSED 2026-09-24 (approve_all_close_b07); complete provisional civic-architecture evidence set 19/19",
+   "canonical_state": "ALL 19 SOURCES PROMOTED TO CANONICAL (rulings #18/#20/#21, 2026-09-24; files hash+dimension verified)"
   },
   "B08": {
    "opened_utc": "2026-09-24T08:05:00+00:00",
@@ -10199,33 +10375,34 @@
     "requested": 18,
     "candidates_generated": 19,
     "awaiting_approval_ids": 0,
-    "approved_source": 0,
+    "approved_source": 18,
     "rejected_this_pass": 1,
     "provisionally_approved_ids": 18,
     "rejected_candidates": 1
    },
    "plan": "Chunk 1: 10 ENV material sheets. Chunk 2: 8 UNT sheets (soldier is the ONLY human-bearing unit allowed; no extra people/animals/equipment anywhere). Consolidated human gate at pass end.",
    "id_states": {
-    "CG-S-ENV-CONIFER": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r001)",
-    "CG-S-ENV-CRYSTAL": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r002; r001 REJECTED)",
-    "CG-S-ENV-DECIDUOUS": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r001)",
-    "CG-S-ENV-FUNGUS": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r001)",
-    "CG-S-ENV-KELP": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r001)",
-    "CG-S-ENV-ORE": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r001)",
-    "CG-S-ENV-PALM": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r001)",
-    "CG-S-ENV-REEDS": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r001)",
-    "CG-S-ENV-ROCK": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r001)",
-    "CG-S-ENV-RUBBLE": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r001)",
-    "CG-S-UNT-BALLISTA": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r001)",
-    "CG-S-UNT-BOW": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r001)",
-    "CG-S-UNT-HULL-MERCHANT": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r001)",
-    "CG-S-UNT-HULL-WAR": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r001)",
-    "CG-S-UNT-SHIELD": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r001)",
-    "CG-S-UNT-SOLDIER": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r001) [TB-07 canvas flag]",
-    "CG-S-UNT-SPEAR": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r001)",
-    "CG-S-UNT-WAGON": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r001)"
+    "CG-S-ENV-CONIFER": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-ENV-CRYSTAL": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-ENV-DECIDUOUS": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-ENV-FUNGUS": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-ENV-KELP": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-ENV-ORE": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-ENV-PALM": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-ENV-REEDS": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-ENV-ROCK": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-ENV-RUBBLE": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-UNT-BALLISTA": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-UNT-BOW": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-UNT-HULL-MERCHANT": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-UNT-HULL-WAR": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-UNT-SHIELD": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-UNT-SOLDIER": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-UNT-SPEAR": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-UNT-WAGON": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)"
    },
-   "resolution": "CLOSED 2026-09-24 en bloc under ruling STANDING_CONTINUATION_ORDER_B08_TO_B12: 18/18 IDs approved-provisional (CRYSTAL as r002); chunk 1 9/10 conforming + r002 repair; chunk 2 8/8 conforming; B09 unlocked"
+   "resolution": "CLOSED 2026-09-24 en bloc under ruling STANDING_CONTINUATION_ORDER_B08_TO_B12: 18/18 IDs approved-provisional (CRYSTAL as r002); chunk 1 9/10 conforming + r002 repair; chunk 2 8/8 conforming; B09 unlocked",
+   "canonical_state": "ALL 18 SOURCES PROMOTED TO CANONICAL (rulings #18/#20/#21, 2026-09-24; files hash+dimension verified)"
   },
   "B09": {
    "opened_utc": "2026-09-24T10:15:00+00:00",
@@ -10235,27 +10412,29 @@
     "requested": 15,
     "candidates_generated": 16,
     "provisionally_approved_ids": 15,
-    "rejected_candidates": 1
+    "rejected_candidates": 1,
+    "approved_source": 15
    },
    "plan": "Chunk 1: 9 economic glyphs (one 2x2 sheet each, single burst). Chunk 2: 6 faction emblems. En-bloc gate under ruling #17. B10-B12 follow.",
    "id_states": {
-    "CG-S-ICO-FOOD": "NOT_STARTED",
-    "CG-S-ICO-WOOD": "NOT_STARTED",
-    "CG-S-ICO-STONE": "NOT_STARTED",
-    "CG-S-ICO-ORE": "NOT_STARTED",
-    "CG-S-ICO-TOOLS": "NOT_STARTED",
-    "CG-S-ICO-MEDICINE": "NOT_STARTED",
-    "CG-S-ICO-BIO": "NOT_STARTED",
-    "CG-S-ICO-COIN": "NOT_STARTED",
-    "CG-S-ICO-KNOWLEDGE": "NOT_STARTED",
-    "CG-S-EMB-01": "NOT_STARTED",
-    "CG-S-EMB-02": "NOT_STARTED",
-    "CG-S-EMB-03": "NOT_STARTED",
-    "CG-S-EMB-04": "NOT_STARTED",
-    "CG-S-EMB-05": "NOT_STARTED",
-    "CG-S-EMB-06": "NOT_STARTED"
+    "CG-S-ICO-FOOD": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-ICO-WOOD": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-ICO-STONE": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-ICO-ORE": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-ICO-TOOLS": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-ICO-MEDICINE": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-ICO-BIO": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-ICO-COIN": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-ICO-KNOWLEDGE": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-EMB-01": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-EMB-02": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-EMB-03": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-EMB-04": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-EMB-05": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-EMB-06": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)"
    },
-   "resolution": "CLOSED 2026-09-24 en bloc under ruling #17: 15/15 approved-provisional (STONE as r002); six-emblem distinction set verified; B10 unlocked"
+   "resolution": "CLOSED 2026-09-24 en bloc under ruling #17: 15/15 approved-provisional (STONE as r002); six-emblem distinction set verified; B10 unlocked",
+   "canonical_state": "ALL 15 SOURCES PROMOTED TO CANONICAL (rulings #18/#20/#21, 2026-09-24; files hash+dimension verified)"
   },
   "B10": {
    "opened_utc": "2026-09-24T11:45:00+00:00",
@@ -10265,23 +10444,24 @@
     "requested": 9,
     "candidates_generated": 11,
     "awaiting_approval_ids": 0,
-    "approved_source": 0,
+    "approved_source": 9,
     "rejected_candidates": 2,
     "provisionally_approved_ids": 9
    },
    "plan": "Chunk 1 recorded (7 conform r001 + EVOLVE/TRADE r001 rejected, TB-06 ladder-count class). EVOLVE r002 generated and zoom-verified conforming (3-instance ladder, parchment BR) - awaiting en-bloc gate. TRADE r002 scaffold staged; fires next turn (10/10 attempt cap reached this turn). Then en-bloc closure of B10 and B11 open.",
    "id_states": {
-    "CG-S-ICO-MOVE": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r001)",
-    "CG-S-ICO-FEED": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r001)",
-    "CG-S-ICO-REST": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r001)",
-    "CG-S-ICO-GUARD": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r001)",
-    "CG-S-ICO-ATTACK": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r001)",
-    "CG-S-ICO-EVOLVE": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r002; r001 REJECTED)",
-    "CG-S-ICO-MIGRATE": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r001) [third-waypoint-as-arrowhead flag]",
-    "CG-S-ICO-BUILD": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r001)",
-    "CG-S-ICO-TRADE": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r002; r001 REJECTED)"
+    "CG-S-ICO-MOVE": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-ICO-FEED": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-ICO-REST": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-ICO-GUARD": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-ICO-ATTACK": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-ICO-EVOLVE": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-ICO-MIGRATE": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-ICO-BUILD": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-ICO-TRADE": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)"
    },
-   "resolution": "CLOSED 2026-09-24 en bloc under ruling #17: 9/9 approved-provisional (EVOLVE + TRADE as r002; MIGRATE r001 accepted-with-flag: third waypoint rendered as terminal arrowhead); 2 rejected r001 candidates preserved as evidence; B11 unlocked"
+   "resolution": "CLOSED 2026-09-24 en bloc under ruling #17: 9/9 approved-provisional (EVOLVE + TRADE as r002; MIGRATE r001 accepted-with-flag: third waypoint rendered as terminal arrowhead); 2 rejected r001 candidates preserved as evidence; B11 unlocked",
+   "canonical_state": "ALL 9 SOURCES PROMOTED TO CANONICAL (rulings #18/#20/#21, 2026-09-24; files hash+dimension verified)"
   },
   "B11": {
    "opened_utc": "2026-09-24T23:34:52+00:00",
@@ -10291,28 +10471,29 @@
     "requested": 14,
     "candidates_generated": 15,
     "awaiting_approval_ids": 0,
-    "approved_source": 0,
+    "approved_source": 14,
     "rejected_candidates": 1,
     "provisionally_approved_ids": 14
    },
    "plan": "Burst A 9/9 conform + burst B 4/5 conform; VISIBILITY r001 REJECTED (ladder-count class, 6th occurrence, zoom-verified). VISIBILITY r002 fires this turn from staged scaffold; then en-bloc closure of B11; B12 (CG-A-ART-TITLE, 2048x1024) last.",
    "id_states": {
-    "CG-S-ICO-ARMY": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r001)",
-    "CG-S-ICO-CITY": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r001)",
-    "CG-S-ICO-CLAIM": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r001)",
-    "CG-S-ICO-ECOLOGY": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r001)",
-    "CG-S-ICO-FATIGUE": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r001)",
-    "CG-S-ICO-GOD": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r001)",
-    "CG-S-ICO-HEALTH": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r001)",
-    "CG-S-ICO-HISTORY": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r001)",
-    "CG-S-ICO-POLICY": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r001)",
-    "CG-S-ICO-POPULATION": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r001) [flags: silhouette size variance; parchment grain]",
-    "CG-S-ICO-RESEARCH": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r001)",
-    "CG-S-ICO-TREATY": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r001)",
-    "CG-S-ICO-VISIBILITY": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r002; r001 REJECTED)",
-    "CG-S-ICO-WARNING": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r001)"
+    "CG-S-ICO-ARMY": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-ICO-CITY": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-ICO-CLAIM": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-ICO-ECOLOGY": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-ICO-FATIGUE": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-ICO-GOD": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-ICO-HEALTH": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-ICO-HISTORY": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-ICO-POLICY": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-ICO-POPULATION": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-ICO-RESEARCH": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-ICO-TREATY": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-ICO-VISIBILITY": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)",
+    "CG-S-ICO-WARNING": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)"
    },
-   "resolution": "CLOSED 2026-09-24 en bloc under ruling #17: 14/14 approved-provisional (VISIBILITY as r002; POPULATION r001 accepted-with-flag x2: descending-size silhouettes + mild parchment grain; VISIBILITY r001 preserved as REJECTED evidence). B12 (CG-A-ART-TITLE) unlocked - final batch."
+   "resolution": "CLOSED 2026-09-24 en bloc under ruling #17: 14/14 approved-provisional (VISIBILITY as r002; POPULATION r001 accepted-with-flag x2: descending-size silhouettes + mild parchment grain; VISIBILITY r001 preserved as REJECTED evidence). B12 (CG-A-ART-TITLE) unlocked - final batch.",
+   "canonical_state": "ALL 14 SOURCES PROMOTED TO CANONICAL (rulings #18/#20/#21, 2026-09-24; files hash+dimension verified)"
   },
   "B12": {
    "opened_utc": "2026-09-24T23:41:32+00:00",
@@ -10322,15 +10503,16 @@
     "requested": 1,
     "candidates_generated": 1,
     "awaiting_approval_ids": 0,
-    "approved_source": 0,
+    "approved_source": 1,
     "rejected_candidates": 0,
     "provisionally_approved_ids": 1
    },
    "plan": "CG-A-ART-TITLE: one coherent panoramic living landscape (Q passing a growing city, distant coast and roads, old S-shaped remains partially reclaimed by vegetation; no text; center-safe). Gate precondition SATISFIED: all referenced source bodies approved-provisional under ruling #17 (CG-S-ART-DIRECTION style anchor; CG-S-GOD-FORM-Q; LIFE-S rejection ratified standing - its S-remains motif rendered from the plan description, not from any rejected candidate). Canonical 2048x1024 target; model-chosen size recorded honestly, any deviation flagged to the reserved 2048/3072 ruling.",
    "id_states": {
-    "CG-A-ART-TITLE": "PROVISIONALLY_APPROVED_AS_BATCH_LOCAL_REFERENCE (r001) [size flag: 1456x720 native, disclosed]"
+    "CG-A-ART-TITLE": "CANONICAL_SOURCE_PRESENT (promoted 2026-09-24; full gate history in receipt)"
    },
-   "resolution": "CLOSED 2026-09-24 under ruling #17: CG-A-ART-TITLE r001 approved-provisional on first attempt (size flag disclosed: 1456x720 native vs 2048x1024 target). ALL 121 IDs now dispositioned. RESERVED to owner: B00 dimensional block; 2048/3072 canonical promotion ruling."
+   "resolution": "CLOSED 2026-09-24 under ruling #17: CG-A-ART-TITLE r001 approved-provisional on first attempt (size flag disclosed: 1456x720 native vs 2048x1024 target). ALL 121 IDs now dispositioned. RESERVED to owner: B00 dimensional block; 2048/3072 canonical promotion ruling.",
+   "canonical_state": "ALL 1 SOURCES PROMOTED TO CANONICAL (rulings #18/#20/#21, 2026-09-24; files hash+dimension verified)"
   }
  },
  "capability_probe": {
@@ -10370,12 +10552,16 @@
   }
  },
  "run_summary": {
-  "final_state_utc": "2026-09-24T23:43:04+00:00",
-  "mode": "RUN COMPLETE under standing ruling #17 (STANDING_CONTINUATION_ORDER_B08_TO_B12). All 121 authored IDs dispositioned: 119 approved-provisional (118 CG-S + 1 CG-A), 1 ID closed by ratified standing rejection (CG-S-GOD-LIFE-S). Zero canonical files written; every promotion is RESERVED to the owner. No CG-D-*/CG-R-* content produced. B00 dimensional BLOCK stands unchanged.",
-  "canonical_sources_approved": 0,
+  "final_state_utc": "2026-09-25T01:42:21+00:00",
+  "mode": "CLOSURE PASS COMPLETE - VERDICT: BLOCKED for full asset completeness. 119 of 120 source-bearing IDs are canonical (hash+dimension verified); CG-S-ART-DIRECTION intentionally absent under owner ruling B00_BLOCK_FINAL (FINAL); CG-S-GOD-LIFE-S UNRESOLVED - the authorized closure fresh pass produced r003 and r004, both content-rejected; LIFE-S is the sole remaining Arena asset blocker. Requirements were not weakened.",
+  "canonical_sources_approved": 119,
+  "canonical_sources_approved_note": "all formerly-provisional approved sources; promoted under rulings #18/#20/#21 and verified in the closure audit",
   "canonical_sources_blocked": 1,
-  "canonical_sources_blocked_note": "B00 style board (REF-DIRECTION 3072x2048 class) - owner-reserved B00 block; B01 set remains provisional style anchor only",
-  "provisional_ids_approved": 119,
+  "canonical_sources_blocked_note": "CG-S-ART-DIRECTION - B00 dimensional block FINAL by owner ruling B00_BLOCK_FINAL; never to be generated unless the owner lifts it",
+  "canonical_sources_awaiting_approval": 0,
+  "unresolved_ids": 1,
+  "unresolved_ids_note": "CG-S-GOD-LIFE-S - r001+r002 rejected (B04 pass, ratified for that pass); closure fresh pass r003+r004 both rejected (r003: text labels + 5 panels + tall-skull ossuary + anatomy drift; r004: ossuary three bone groups incl. toothed multi-rib fish-like skeleton). Sole remaining asset blocker.",
+  "provisional_ids_approved_historical": 119,
   "provisional_ids_by_batch": {
    "B01": 7,
    "B02": 6,
@@ -10390,25 +10576,53 @@
    "B11": 14,
    "B12": 1
   },
-  "provisional_ids_rejected_standing": 1,
-  "provisional_ids_rejected_standing_note": "CG-S-GOD-LIFE-S (r001+r002 rejected; rejection ratified by owner; not re-attempted per gate chain)",
   "rejected_candidates_preserved_as_evidence": [
-   "CG-S-GOD-LIFE-S r001",
-   "CG-S-GOD-LIFE-S r002",
+   "CG-S-GOD-TORSO-Q r001",
+   "CG-S-GOD-TORSO-Q r002",
+   "CG-S-GOD-TORSO-H r001",
+   "CG-S-GOD-TORSO-H r002",
+   "CG-S-GOD-TORSO-S r001",
+   "CG-S-GOD-TORSO-M r001",
+   "CG-S-GOD-LOCO-PILLAR r001",
+   "CG-S-GOD-SENSE-EYE-RING r001",
    "CG-S-GOD-SENSE-ANTENNA-CROWN r001",
    "CG-S-GOD-SENSE-ANTENNA-CROWN r002",
-   "CG-S-GOD-LIFE-M r002",
+   "CG-S-GOD-TAIL-BALANCE r001",
    "CG-S-GOD-ORGAN-SPORE-SAC r001",
-   "CG-S-UNT-ARMOR-COAT r001",
+   "CG-S-GOD-FORM-Q r001",
+   "CG-S-GOD-FORM-Q r002",
+   "CG-S-GOD-FORM-Q r003",
+   "CG-S-GOD-FORM-H r001",
+   "CG-S-GOD-LIFE-Q r001",
+   "CG-S-GOD-LIFE-Q r002",
+   "CG-S-GOD-LIFE-Q r003",
+   "CG-S-GOD-LIFE-H r001",
+   "CG-S-GOD-LIFE-H r002",
+   "CG-S-GOD-LIFE-S r001",
+   "CG-S-GOD-LIFE-S r002",
+   "CG-S-GOD-LIFE-S r003",
+   "CG-S-GOD-LIFE-S r004",
+   "CG-S-GOD-LIFE-M r002",
+   "CG-S-BLD-DWELLING r001",
+   "CG-S-BLD-DWELLING r002",
+   "CG-S-BLD-HALL r001",
+   "CG-S-BLD-HALL r002",
+   "CG-S-UNT-CIVILIAN r001",
+   "CG-S-UNT-CIVILIAN r002",
    "CG-S-ENV-CRYSTAL r001",
    "CG-S-ICO-STONE r001",
    "CG-S-ICO-EVOLVE r001",
    "CG-S-ICO-TRADE r001",
-   "CG-S-ICO-VISIBILITY r001"
+   "CG-S-ICO-VISIBILITY r001",
+   "CG-S-ART-DIRECTION r001",
+   "CG-S-ART-DIRECTION r002"
   ],
   "reserved_owner_rulings": [
-   "B00 dimensional block (style board 3072x2048 class)",
-   "2048/3072 canonical promotion ruling for all 119 approved-provisional sources"
+   "RESOLVED: 2048/3072 promotion - ruling #18 CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (executed)",
+   "RESOLVED: B00 dimensional block - ruling #19 B00_BLOCK_FINAL (FINAL)",
+   "EXECUTED: ruling #20 FRESH_CANONICAL_RESOLUTION_PASSES_AUTHORIZED (5 promoted, 9 later as-is under #21)",
+   "EXECUTED: ruling #21 AS_IS_PROMOTION_HELD_LANDSCAPE_NINE",
+   "EXECUTED: ruling #22 closure fresh pass for CG-S-GOD-LIFE-S (both attempts rejected - unresolved)"
   ],
   "promotion": {
    "ruling": "CANONICAL_PROMOTION_NORMALIZE_WITHIN_BOUNDS (owner, 2026-09-24)",
@@ -10435,6 +10649,11 @@
    "final": "COMPLETE 2026-09-25: 119/119 approved sources canonical in assets/source/ (105 within-bounds normalized + 9 as-is landscape with disclosed deviation + 5 fresh-pass squares; bytes in receipts); 2 no-source IDs (B00 block final; LIFE-S ratified rejection).",
    "fresh_passes": "Ruling #20 COMPLETE: +5 canonical (squares); 9 landscape sheets content-conforming but TB-08 size-blocked (14/14 occurrences conclusive); owner decision pending on as-is vs hold",
    "as_is": "9 landscape sheets promoted as-is under ruling #21"
+  },
+  "closure_pass": {
+   "date": "2026-09-24",
+   "scope": "LIFE-S authorized fresh pass; B09 checkpoint creation; ledger current-state reconciliation; report corrections; fresh full audit",
+   "outcome": "LIFE-S fresh pass failed content QA twice (honestly recorded); 12 bookkeeping defects repaired; verdict BLOCKED for full completeness, with all documentation defects fixed"
   }
  },
  "human_rulings": [
@@ -10684,6 +10903,14 @@
     "date": "2026-09-24",
     "authority": "human (repository owner) via Arena gate answer (option asis)",
     "decision": "Promote the 9 content-conforming landscape sheets (CG-S-INF-BRIDGE, CG-S-INF-CANAL, CG-S-INF-MINE, CG-S-INF-WALL, CG-S-INF-ROAD, CG-S-INF-FARM, CG-S-GOD-LIFE-H, CG-S-GOD-LIFE-M, CG-S-GOD-LIFE-Q) to canonical AS-IS at native 1264x848 with per-receipt deviation disclosures. The TB-08 model canvas ceiling (14/14) makes 3072x2048 unreachable; owner accepts the documented deviation."
+   }
+  },
+  {
+   "id": "CLOSURE_FRESH_PASS_LIFE_S_AUTHORIZED",
+   "ruling": {
+    "date": "2026-09-24",
+    "authority": "human (repository owner) via FINAL ARENA CLOSURE PASS instruction document",
+    "decision": "One bounded fresh pass for CG-S-GOD-LIFE-S: use accepted CG-S-GOD-FORM-S identity (lateral crop anchor, no failed-sheet image anchors), exactly six states in one 3x2 sheet, ossuary S-family-specific (low long axial ribbon framework, no generic tall-domed/toothed vertebrate skull), 1 initial + 1 targeted repair; content-conforming result at 1264x848 may be promoted AS-IS with prominent deviation recording; if both fail, mark honestly unresolved and report LIFE-S as the sole remaining asset blocker. B00_BLOCK_FINAL remains in force. Outcome: r003 REJECTED, r004 REJECTED - LIFE-S unresolved."
    }
   }
  ],
@@ -10950,6 +11177,12 @@
    "recorded_utc": "2026-09-25T01:06:49+00:00",
    "observation": "Ruling #21 executed: 9 content-conforming landscape sheets (5 INF + LIFE-H/M/Q fresh passes) copied byte-identical to canonical paths at native 1264x848; zero resampling; per-receipt deviation blocks record the 2.43x shortfall vs the 3072x2048 profile target and the owner acceptance. Canonical set FINAL: 119/119 approved-provisional sources now PRESENT (110 within bounds/2.0x + 9 as-is deviation-accepted). 2 no-source IDs stand: CG-S-ART-DIRECTION (B00 block final), CG-S-GOD-LIFE-S (ratified rejection). RUN FULLY DELIVERED.",
    "content_loss": "none"
+  },
+  {
+   "incident": "CLOSURE_PASS_EXECUTED_LIFE_S_BLOCKER_HONEST",
+   "recorded_utc": "2026-09-25T01:42:21+00:00",
+   "observation": "Workspace reset #11 detected (local re-root 5bd357e) and recovered zero-loss to ba398ff before any closure work. Ruling #22 fresh pass for LIFE-S: r003 REJECTED (rendered text labels on five panels [TB-04], only five panels - injured prime missing, ossuary tall toothed skull regression [r001 class], goggle/gloss/jaw anatomy drift, square canvas [TB-07 6th]); r004 targeted repair REJECTED on the ossuary gate alone (three bone groups incl. toothed open-jaw multi-rib fish-like skeleton) while fixing the text/layout/injury gates (exactly six states once each, zero text, legal injury pair zoom-verified); 1264x848 (TB-08 15th). LIFE-S marked UNRESOLVED_REMAINING_ASSET_BLOCKER with requirements intact. Bookkeeping repairs: 119 receipt id_status -> CANONICAL_SOURCE_PRESENT; all 13 checkpoint id_states/counts/approved_source reconciled to current reality (historical counts kept); B09_checkpoint.md created; run_summary rewritten to closure reality (canonical_sources_approved 119, awaiting 0, unresolved 1); reports corrected. No historical statuses, rulings, audits, rejected candidates or timestamps erased.",
+   "content_loss": "none"
   }
  ],
  "tool_behavior_findings": [
@@ -10980,13 +11213,13 @@
    "finding_id": "TB-07_SCAFFOLD_CANVAS_ABANDONMENT",
    "date": "2026-09-24",
    "rule": "The image model can abandon a provided square scaffold canvas and render a native landscape canvas (observed 1376x768) even for a 2x2 sheet, after two prior generations on identical layout instructions honored the scaffold. Layout logic may survive (quadrants intact) but the sheet no longer matches its scaffold; verify identify() output on EVERY generation and treat canvas deviation as a disclosed technical flag for the gate, not a silent accept or an automatic content rejection.",
-   "evidence": "B05 SENSE-ANTENNA-CROWN r003: first two attempts 1024x1024 on scaffold; r003 1376x768 with intact quadrant logic.; B05 LIFE-M r002: 1376x768 recurrence on a 3x2 lifecycle sheet (prior r001 honored the scaffold)"
+   "evidence": "B05 SENSE-ANTENNA-CROWN r003: first two attempts 1024x1024 on scaffold; r003 1376x768 with intact quadrant logic.; B05 LIFE-M r002: 1376x768 recurrence on a 3x2 lifecycle sheet (prior r001 honored the scaffold); B08 SOLDIER r002 honored square after one 1376x768 event; LIFE-S closure r003 swapped to square (6th occurrence) and its r004 returned to 1264x848"
   },
   {
    "finding_id": "TB-08_LANDSCAPE_CANVAS_CEILING",
    "date": "2026-09-24",
    "rule": "The image model emits landscape-class content at exactly 1264x848 regardless of scaffold canvas or instructional width (1024-wide 3x2 scaffold, 1264x848 3x2 scaffold, explicit \"width 1.5x height\" text). 10/10 landscape-class generations across the run landed at exactly 1264x848 (B01 LIFE sheets, B02 FARM/ROAD, B04 LIFE attempts, B07 INF sheets, all 5 fresh-pass landscape sheets). Historical TB-07 1376x768 events are the same class with model-varied width. Consequence: 3:2-class 3072x2048 profile targets are unreachable within the <=2x normalization bound; mitigation requires either an as-is owner instruction or a generation path that emits >=1536px-wide canvases.",
-   "evidence": "Fresh passes under FRESH_CANONICAL_RESOLUTION_PASSES_AUTHORIZED: BRIDGE/CANAL/MINE/WALL/LIFE-H all 1264x848 while the same-turn square requests honored 1024x1024 exactly (5/5). Pass 2 (ruling #20): ROAD/FARM/LIFE-M/LIFE-Q all 1264x848 while same-run square requests honored 1024x1024; TB-08 now 14/14 landscape occurrences - CONCLUSIVE model ceiling."
+   "evidence": "Fresh passes under FRESH_CANONICAL_RESOLUTION_PASSES_AUTHORIZED: BRIDGE/CANAL/MINE/WALL/LIFE-H all 1264x848 while the same-turn square requests honored 1024x1024 exactly (5/5). Pass 2 (ruling #20): ROAD/FARM/LIFE-M/LIFE-Q all 1264x848 while same-run square requests honored 1024x1024; TB-08 now 14/14 landscape occurrences - CONCLUSIVE model ceiling. Closure pass: LIFE-S r004 landed 1264x848 (15th occurrence) even with a lateral single-panel identity anchor."
   }
  ]
 }
