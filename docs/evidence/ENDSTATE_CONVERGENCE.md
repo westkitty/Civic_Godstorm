@@ -23,7 +23,7 @@
 | **D** | Reactive ecology, terrain and infrastructure | 1 | **3** |
 | **E** | Godform, injury, aging, death and remains | 1 | **4** |
 | **F** | Diplomacy, territorial rights and information boundaries | 1 | 1 |
-| **G** | Warfare, logistics and strategic consequence | 0 | 0 |
+| **G** | Warfare, logistics and strategic consequence | 0 | **2** |
 | **H** | AI parity and autonomous civilization behavior | 1 | 1 |
 | **I** | Persistent history / causal world memory | 1 | **3** |
 | **J** | World presentation, scale and visual readability | 2 | 2 |
@@ -285,8 +285,38 @@
   - Vitest sim suite: 19 test files, 103/103 passed (including all 50 headless campaigns)
   - `npm run build`: built in 357ms
   - Playwright E2E: 20/20 passed across desktop and mobile viewports
-- **Commit:** (In progress)
-- **Next Candidate:** Strategic Armies & Logistics (Warfare 1 of 3).
+- **Commit:** `3ba19db`
+
+### `uplift(12)`: Strategic Armies & Logistics (Warfare 1 of 3)
+- **Goal:** Implement Section 8.1, 8.2, 8.3 & 16.5 strategic military units:
+  - Unit schemas: `ArmyState { id, ownerId, cell, name, companies, supplyReserve, stance, apRemaining, turnsWithoutSupply }` and `CompanyState { id, type, strength, cohesion, equipment, rations, populationMilli, originSettlementId }`.
+  - Recruitment commands: `RECRUIT_COMPANY` (consuming 200 milli-pop, materials, and enforcing tech gating such as T-ENG-3 for SIEGE).
+  - Army movement AP, terrain step costs, stances (`DEFENSIVE`, `AGGRESSIVE`, `MARCH`, `FORTIFY`), and supply line upkeep (1 FOOD/turn per unit; shortage inflicts -15 cohesion attrition/turn after 2 unsupplied turns).
+  - Combat resolution between opposing armies with terrain modifiers (hills, woodland, urban, river crossing) and simultaneous cohesion damage (`clamp(floor(20 * atk / def), 2, 35)`) and casualties.
+  - Section 8.3 anti-God defense: God strikes deal 50 cohesion damage to companies in targeted cell.
+  - Army demobilization (`DISBAND_ARMY`) restoring surviving population to origin settlement without duplicate accounting.
+- **Category:** Warfare / deterrence / catastrophe / military logistics (1 of 3).
+- **Scorecard Axes Advanced:** G (0 → 2).
+- **Master-plan Requirements Advanced:** Sections 8.1, 8.2, 8.3, 16.5.
+- **Meaningful Result:**
+  - Created `src/sim/military/army.ts` with company types (`MILITIA`, `INFANTRY`, `ARCHER`, `ENGINEER`, `SIEGE`), recruitment rules, army stances, combat resolution, and turn upkeep.
+  - Extended `CampaignState` with `armies: ArmyState[]` and history event types (`ARMY_RECRUITED`, `ARMY_CLASH`, `ARMY_ROUTED`, `ARMY_DISBANDED`).
+  - Added commands `RECRUIT_COMPANY`, `ARMY_MOVE`, `ARMY_STANCE`, and `DISBAND_ARMY` to `src/sim/core/commands.ts`.
+  - Integrated military logistics & supplies into turn resolution step 5c (`resolveArmiesTurn`).
+  - Wired Section 8.3 strike damage (50 cohesion damage to companies) into `src/sim/gods/resolve.ts`.
+  - Added invariants in `assertInvariants` verifying army and company bounds.
+  - Golden vectors updated in `tests/fixtures/selfcheck.json`.
+- **Validation:**
+  - `npm run typecheck`: clean
+  - `npm run lint`: clean (0 errors, 0 warnings)
+  - `tests/sim/army.test.ts`: 8/8 passed
+  - `tests/sim/selfcheck.test.ts`: passed with updated determinism hashes
+  - Vitest sim suite: 20 test files, 111/111 passed (including all 50 headless campaigns)
+  - Vitest unit suite: 7 test files, 47/47 passed
+  - `npm run build`: built in 342ms
+  - Playwright E2E: 20/20 passed across desktop and narrow viewports (`chrome-desktop`, `chrome-narrow`)
+- **Commit:** `1b115db`
+- **Next Candidate:** Treaties, Border Easements & Migration Corridors (Diplomacy 1 of 3).
 
 
 

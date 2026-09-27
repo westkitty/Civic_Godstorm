@@ -12,6 +12,7 @@ import { applyCommand, compareCommands, laborMilli, validateCommand, type Comman
 import type { CampaignState } from './state.ts';
 import { TECH_BY_ID, type PolicyAxis } from '../data/tech.ts';
 import { regenerateEcologyWithSoil } from '../world/ecology.ts';
+import { resolveArmiesTurn } from '../military/army.ts';
 
 export interface TurnResult {
   readonly state: CampaignState;
@@ -58,6 +59,17 @@ export function assertInvariants(state: CampaignState): void {
     if (god.reserve < 0 || !Number.isSafeInteger(god.reserve)) problems.push(`god ${god.id} reserve ${god.reserve}`);
     if (god.fatigue < 0 || god.fatigue > 100) problems.push(`god ${god.id} fatigue ${god.fatigue}`);
     if (god.vitalHealth < 0) problems.push(`god ${god.id} vital ${god.vitalHealth}`);
+  }
+  for (const army of state.armies) {
+    if (!Number.isSafeInteger(army.id) || army.id <= 0) problems.push(`army id ${army.id}`);
+    if (!state.civs.some((c) => c.id === army.ownerId)) problems.push(`army ${army.id} owner ${army.ownerId}`);
+    if (army.cell < 0 || army.cell >= state.map.elevation.length) problems.push(`army ${army.id} cell ${army.cell}`);
+    if (army.companies.length > 6) problems.push(`army ${army.id} companies ${army.companies.length} > 6`);
+    for (const company of army.companies) {
+      if (company.cohesion < 0 || company.cohesion > 100) problems.push(`army ${army.id} company cohesion ${company.cohesion}`);
+      if (company.equipment < 0 || company.equipment > 1000) problems.push(`army ${army.id} company equipment ${company.equipment}`);
+      if (company.populationMilli < 0) problems.push(`army ${army.id} company pop ${company.populationMilli}`);
+    }
   }
   const { map } = state;
   for (let cell = 0; cell < map.biomass.length; cell += 1) {
@@ -143,6 +155,9 @@ export function resolveTurn(committed: CampaignState, commands: readonly Command
       }
     }
   }
+
+  // Step 5c: strategic armies logistics, supplies and maintenance.
+  resolveArmiesTurn(state);
 
   // Step 6: observations, then commit.
   updateAllObservations(state);

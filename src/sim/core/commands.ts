@@ -19,6 +19,18 @@ import {
   type PolicyAxis,
   type PolicyChoice,
 } from '../data/tech.ts';
+import {
+  ARMY_RULES,
+  ARMY_STANCES,
+  COMPANY_SPECS,
+  COMPANY_TYPES,
+  disbandArmy,
+  resolveArmyClash,
+  type ArmyStance,
+  type CompanyState,
+  type CompanyType,
+} from '../military/army.ts';
+import { findPath, terrainStepCost } from '../world/path.ts';
 
 export const REJECTION_CODES = [
   'NOT_OWNER',
@@ -70,7 +82,11 @@ export type Command =
   | (CommandBase & { readonly kind: 'GOD_GUARD'; readonly options: { readonly targetSettlementId?: number } })
   | (CommandBase & { readonly kind: 'GOD_STRIKE'; readonly options: { readonly targetCell: number } })
   | (CommandBase & { readonly kind: 'GOD_CULTIVATE'; readonly options: { readonly targetCell: number; readonly adaptation?: string } })
-  | (CommandBase & { readonly kind: 'GOD_ASSIST'; readonly options: { readonly settlementId: number; readonly service: 'CONSTRUCTION' | 'PROTECTION' | 'ECOLOGY' } });
+  | (CommandBase & { readonly kind: 'GOD_ASSIST'; readonly options: { readonly settlementId: number; readonly service: 'CONSTRUCTION' | 'PROTECTION' | 'ECOLOGY' } })
+  | (CommandBase & { readonly kind: 'RECRUIT_COMPANY'; readonly options: { readonly companyType: CompanyType; readonly armyId?: number | undefined } })
+  | (CommandBase & { readonly kind: 'ARMY_MOVE'; readonly options: { readonly armyId: number; readonly targetCell?: number | undefined; readonly path?: readonly number[] | undefined } })
+  | (CommandBase & { readonly kind: 'ARMY_STANCE'; readonly options: { readonly armyId: number; readonly stance: ArmyStance } })
+  | (CommandBase & { readonly kind: 'DISBAND_ARMY'; readonly options: { readonly armyId: number } });
 
 export interface Rejection {
   readonly commandId: string;
@@ -247,12 +263,135 @@ function validateAdoptPolicy(state: CampaignState, civId: number, axis: PolicyAx
   return OK;
 }
 
+export type ArmyCommand = Extract<
+  Command,
+  { kind: 'RECRUIT_COMPANY' | 'ARMY_MOVE' | 'ARMY_STANCE' | 'DISBAND_ARMY' }
+>;
+
+export function isArmyCommand(command: Command): command is ArmyCommand {
+  return (
+    command.kind === 'RECRUIT_COMPANY' ||
+    command.kind === 'ARMY_MOVE' ||
+    command.kind === 'ARMY_STANCE' ||
+    command.kind === 'DISBAND_ARMY'
+  );
+}
+
+function validateArmyCommand(state: CampaignState, command: ArmyCommand): ValidationResult {
+  switch (command.kind) {
+    case 'RECRUIT_COMPANY': {
+      const settlement = state.settlements.find((s) => s.id === command.actorId);
+      if (!settlement || settlement.ownerId !== command.civId) {
+        return fail('NOT_OWNER', 'recruitment settlement not owned by this civilization');
+      }
+      const type = command.options.companyType;
+      if (!COMPANY_TYPES.includes(type)) {
+        return fail('UNSUPPORTED_STATE', `unknown company type ${type}`);
+      }
+      const spec = COMPANY_SPECS[type];
+      const civ = state.civs.find((c) => c.id === command.civId);
+      if (spec.requiredTech && !civ?.completedTechs.includes(spec.requiredTech)) {
+        return fail('PREREQUISITE_MISSING', `company type ${type} requires technology ${spec.requiredTech}`);
+      }
+      if (settlement.populationMilli < 1200) {
+        return fail('INSUFFICIENT_STOCK', 'settlement requires at least 1200 population to recruit troops');
+      }
+      if (settlement.storage.FOOD < units(spec.foodCost)) {
+        return fail('INSUFFICIENT_STOCK', `recruiting ${type} requires ${spec.foodCost} FOOD`);
+      }
+      if (settlement.storage.TOOLS < units(spec.toolsCost)) {
+        return fail('INSUFFICIENT_STOCK', `recruiting ${type} requires ${spec.toolsCost} TOOLS`);
+      }
+      if (command.options.armyId !== undefined) {
+        const targetArmy = state.armies.find((a) => a.id === command.options.armyId);
+        if (!targetArmy || targetArmy.ownerId !== command.civId) {
+          return fail('NOT_OWNER', 'target army not owned by this civilization');
+        }
+        if (targetArmy.cell !== settlement.cell) {
+          return fail('UNSUPPORTED_STATE', 'target army must be located at recruitment settlement');
+        }
+        if (targetArmy.companies.length >= ARMY_RULES.maxCompaniesPerArmy) {
+          return fail('CAPACITY_REACHED', 'target army already has 6 companies');
+        }
+      }
+      return OK;
+    }
+    case 'ARMY_MOVE': {
+      const army = state.armies.find((a) => a.id === command.options.armyId);
+      if (!army || army.ownerId !== command.civId) {
+        return fail('NOT_OWNER', 'army not owned by this civilization');
+      }
+      if (army.stance === 'FORTIFY') {
+        return fail('UNSUPPORTED_STATE', 'fortified army cannot move');
+      }
+      if (command.options.path && command.options.path.length > 0) {
+        let current = army.cell;
+        let totalAp = 0;
+        for (const step of command.options.path) {
+          if (!neighbors(state.map, current).includes(step)) {
+            return fail('UNSUPPORTED_STATE', 'path steps must be adjacent neighbors');
+          }
+          const cost = terrainStepCost(state.map, current, step);
+          if (cost === null) {
+            return fail('BODY_BLOCKED', 'path crosses impassable terrain');
+          }
+          totalAp += cost;
+          current = step;
+        }
+        if (totalAp > army.apRemaining) {
+          return fail('INSUFFICIENT_AP', `movement requires ${totalAp} AP, army has ${army.apRemaining}`);
+        }
+        return OK;
+      } else if (command.options.targetCell !== undefined) {
+        const target = command.options.targetCell;
+        if (target < 0 || target >= state.map.elevation.length) {
+          return fail('UNSUPPORTED_STATE', 'target cell out of bounds');
+        }
+        const pathRes = findPath({
+          dims: state.map,
+          from: army.cell,
+          to: target,
+          stepCost: (f, t) => terrainStepCost(state.map, f, t),
+          minStepCost: 1,
+          maxExpansions: 1000,
+        });
+        if (pathRes.kind !== 'FOUND') {
+          return fail('BODY_BLOCKED', 'no path found to target cell');
+        }
+        if (pathRes.cost > army.apRemaining) {
+          return fail('INSUFFICIENT_AP', `movement requires ${pathRes.cost} AP, army has ${army.apRemaining}`);
+        }
+        return OK;
+      }
+      return fail('UNSUPPORTED_STATE', 'ARMY_MOVE requires path or targetCell');
+    }
+    case 'ARMY_STANCE': {
+      const army = state.armies.find((a) => a.id === command.options.armyId);
+      if (!army || army.ownerId !== command.civId) {
+        return fail('NOT_OWNER', 'army not owned by this civilization');
+      }
+      if (!ARMY_STANCES.includes(command.options.stance)) {
+        return fail('UNSUPPORTED_STATE', `unknown stance ${command.options.stance}`);
+      }
+      return OK;
+    }
+    case 'DISBAND_ARMY': {
+      const army = state.armies.find((a) => a.id === command.options.armyId);
+      if (!army || army.ownerId !== command.civId) {
+        return fail('NOT_OWNER', 'army not owned by this civilization');
+      }
+      return OK;
+    }
+  }
+}
+
 export function validateCommand(state: CampaignState, command: Command): ValidationResult {
   if (command.expectedStateVersion !== state.turn || command.issuedForTurn !== state.turn + 1) {
     return fail('STALE_STATE', `command names state ${command.expectedStateVersion}/turn ${command.issuedForTurn}; current state ${state.turn}`);
   }
   if (!state.civs.some((civ) => civ.id === command.civId)) return fail('NOT_OWNER', 'unknown civilization');
   if (isGodCommand(command)) return validateGodCommand(state, command);
+  if (isArmyCommand(command)) return validateArmyCommand(state, command);
   const settlement = state.settlements.find((s) => s.id === command.actorId);
   if (!settlement || settlement.ownerId !== command.civId) return fail('NOT_OWNER', 'actor is not owned by this civilization');
   switch (command.kind) {
@@ -273,10 +412,173 @@ export function validateCommand(state: CampaignState, command: Command): Validat
   }
 }
 
+function applyArmyCommand(state: CampaignState, command: ArmyCommand): void {
+  switch (command.kind) {
+    case 'RECRUIT_COMPANY': {
+      const settlement = state.settlements.find((s) => s.id === command.actorId)!;
+      const type = command.options.companyType;
+      const spec = COMPANY_SPECS[type];
+
+      settlement.storage.FOOD -= units(spec.foodCost);
+      if (spec.toolsCost > 0) {
+        settlement.storage.TOOLS -= units(spec.toolsCost);
+      }
+      settlement.populationMilli -= spec.populationMilliCost;
+
+      // Trim any excess assigned jobs now that available labor dropped
+      let excess = Object.values(settlement.jobs).reduce((sum, value) => sum + value, 0) - laborMilli(settlement);
+      if (excess > 0) {
+        const TRIM_ORDER = ['builder', 'quarry', 'forestry', 'farm'] as const;
+        for (const job of TRIM_ORDER) {
+          if (excess <= 0) break;
+          const cut = Math.min(excess, settlement.jobs[job]);
+          settlement.jobs[job] -= cut;
+          excess -= cut;
+        }
+      }
+
+      let army = command.options.armyId !== undefined
+        ? state.armies.find((a) => a.id === command.options.armyId)
+        : state.armies.find((a) => a.cell === settlement.cell && a.ownerId === settlement.ownerId && a.companies.length < ARMY_RULES.maxCompaniesPerArmy);
+
+      if (!army) {
+        const newArmyId = state.nextEntityId++;
+        const civ = state.civs.find((c) => c.id === settlement.ownerId);
+        army = {
+          id: newArmyId,
+          ownerId: settlement.ownerId,
+          cell: settlement.cell,
+          name: `${civ?.name ?? 'Civ'} Army ${newArmyId}`,
+          companies: [],
+          supplyReserve: 4,
+          stance: 'DEFENSIVE',
+          apRemaining: ARMY_RULES.baseAp,
+          turnsWithoutSupply: 0,
+        };
+        state.armies.push(army);
+      }
+
+      const company: CompanyState = {
+        id: state.nextEntityId++,
+        type,
+        strength: spec.baseStrength,
+        cohesion: 100,
+        equipment: 1000,
+        rations: 2,
+        populationMilli: spec.populationMilliCost,
+        originSettlementId: settlement.id,
+      };
+      army.companies.push(company);
+
+      state.history.push({
+        eventId: state.history.length + 1,
+        turn: state.turn,
+        impulse: 0,
+        type: 'ARMY_RECRUITED',
+        actorIds: [settlement.ownerId, army.id],
+        locationIds: [settlement.cell],
+        causeIds: [],
+        observerCivIds: [settlement.ownerId],
+        payload: {
+          armyId: army.id,
+          settlementId: settlement.id,
+          companyType: type,
+        },
+        schemaVersion: 1,
+      });
+      return;
+    }
+    case 'ARMY_MOVE': {
+      const army = state.armies.find((a) => a.id === command.options.armyId)!;
+      let steps: number[] = [];
+      if (command.options.path && command.options.path.length > 0) {
+        steps = [...command.options.path];
+      } else if (command.options.targetCell !== undefined) {
+        const pathRes = findPath({
+          dims: state.map,
+          from: army.cell,
+          to: command.options.targetCell,
+          stepCost: (f, t) => terrainStepCost(state.map, f, t),
+          minStepCost: 1,
+          maxExpansions: 1000,
+        });
+        if (pathRes.kind === 'FOUND') {
+          steps = pathRes.cells.slice(1);
+        }
+      }
+
+      let current = army.cell;
+      for (const step of steps) {
+        const cost = terrainStepCost(state.map, current, step) ?? 1;
+        if (army.apRemaining < cost) break;
+        army.apRemaining -= cost;
+
+        const hostileArmy = state.armies.find((a) => a.cell === step && a.ownerId !== army.ownerId);
+        if (hostileArmy) {
+          const clash = resolveArmyClash(state, army, hostileArmy, current);
+          state.history.push({
+            eventId: state.history.length + 1,
+            turn: state.turn,
+            impulse: 0,
+            type: 'ARMY_CLASH',
+            actorIds: [army.id, hostileArmy.id],
+            locationIds: [step],
+            causeIds: [],
+            observerCivIds: [army.ownerId, hostileArmy.ownerId],
+            payload: {
+              attackerId: army.id,
+              defenderId: hostileArmy.id,
+              attackerCasualties: clash.attackerCasualtiesMilli,
+              defenderCasualties: clash.defenderCasualtiesMilli,
+            },
+            schemaVersion: 1,
+          });
+
+          if (clash.attackerRouted) {
+            break;
+          }
+          if (clash.defenderRouted) {
+            const retreatOptions = neighbors(state.map, step).filter(
+              (n) => !isWater(state.map, n) && !state.armies.some((a) => a.cell === n && a.ownerId !== hostileArmy.ownerId),
+            );
+            if (retreatOptions.length > 0 && retreatOptions[0] !== undefined) {
+              hostileArmy.cell = retreatOptions[0];
+            } else {
+              hostileArmy.companies = [];
+            }
+            current = step;
+            army.cell = current;
+          } else {
+            // Defender held position; attacker cannot enter step cell
+            break;
+          }
+        } else {
+          current = step;
+          army.cell = current;
+        }
+      }
+      return;
+    }
+    case 'ARMY_STANCE': {
+      const army = state.armies.find((a) => a.id === command.options.armyId)!;
+      army.stance = command.options.stance;
+      return;
+    }
+    case 'DISBAND_ARMY': {
+      disbandArmy(state, command.options.armyId);
+      return;
+    }
+  }
+}
+
 /** Applies an already validated command to mutable (cloned) state. */
 export function applyCommand(state: CampaignState, command: Command): void {
   if (isGodCommand(command)) {
     applyGodCommand(state, command);
+    return;
+  }
+  if (isArmyCommand(command)) {
+    applyArmyCommand(state, command);
     return;
   }
   const settlement = state.settlements.find((s) => s.id === command.actorId) as SettlementState;

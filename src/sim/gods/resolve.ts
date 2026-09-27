@@ -183,6 +183,19 @@ export function resolveGods(state: CampaignState): GodTurnSummary[] {
         god.reserve = Math.max(0, god.reserve - size.upkeep * 100);
         state.map.soilDisturbance[targetCell] = Math.min(1000, (state.map.soilDisturbance[targetCell] as number) + 300);
         ctx.disturbed.add(targetCell);
+
+        // Section 8.3: 50 cohesion damage to companies in targeted cell
+        if (state.armies) {
+          for (const army of state.armies) {
+            if (army.cell === targetCell) {
+              for (const company of army.companies) {
+                company.cohesion = Math.max(0, company.cohesion - 50);
+                const cas = Math.min(company.populationMilli, Math.floor((50 / 1000) * company.populationMilli));
+                company.populationMilli -= cas;
+              }
+            }
+          }
+        }
         const strikeEventId = state.history.length + 1;
         state.history.push({
           eventId: strikeEventId,

@@ -8,6 +8,7 @@ import type { MapSizeName } from '../world/hex.ts';
 import type { GodState } from '../gods/god.ts';
 import type { CorpseState } from '../gods/corpse.ts';
 import type { PolicyAxis, PolicyChoice } from '../data/tech.ts';
+import type { ArmyState } from '../military/army.ts';
 
 export interface MapState {
   readonly size: MapSizeName;
@@ -145,7 +146,11 @@ export type HistoryEventType =
   | 'GOD_WOUNDED'
   | 'GOD_HEALED'
   | 'CORPSE_STAGE_CHANGED'
-  | 'CORPSE_HARVESTED';
+  | 'CORPSE_HARVESTED'
+  | 'ARMY_RECRUITED'
+  | 'ARMY_CLASH'
+  | 'ARMY_ROUTED'
+  | 'ARMY_DISBANDED';
 
 export interface HistoryEvent {
   readonly eventId: number;
@@ -237,6 +242,7 @@ export interface CampaignState {
   gods: GodState[];
   corpses: CorpseState[];
   landmarks: Landmark[];
+  armies: ArmyState[];
   observations: ObservationState[];
   history: HistoryEvent[];
   lastTurn: TurnSummary | null;
