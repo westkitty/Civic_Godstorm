@@ -123,7 +123,8 @@ export type HistoryEventType =
   | 'GOD_HEALED'
   | 'GOD_DIED'
   | 'CORPSE_STAGE_CHANGED'
-  | 'CORPSE_HARVESTED';
+  | 'CORPSE_HARVESTED'
+  | 'ROUTE_CHANGED';
 
 export interface HistoryEvent {
   readonly eventId: number;

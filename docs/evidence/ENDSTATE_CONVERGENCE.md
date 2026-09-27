@@ -20,7 +20,7 @@
 | **A** | Direct God agency and physical embodiment | 2 | **3** |
 | **B** | Civilization economy / settlement / 4X depth | 1 | **4** |
 | **C** | Two-way God ↔ civilization dependency | 1 | **2** |
-| **D** | Reactive ecology, terrain and infrastructure | 1 | **2** |
+| **D** | Reactive ecology, terrain and infrastructure | 1 | **3** |
 | **E** | Godform, injury, aging, death and remains | 1 | **4** |
 | **F** | Diplomacy, territorial rights and information boundaries | 1 | 1 |
 | **G** | Warfare, logistics and strategic consequence | 0 | 0 |
@@ -214,8 +214,32 @@
   - Vitest sim suite: 15 test files, 85/85 passed
   - `npm run build`: built in 323ms
   - Playwright E2E: 20/20 passed across desktop and mobile viewports
+- **Commit:** `dc6dec6`
+
+### `uplift(09)`: Soil Degradation, Defoliation & Ecological Healing
+- **Goal:** Implement the authoritative Section 3.2, 4.6, 5.1 & 16.4 reactive ecology: soil disturbance accumulation, compaction thresholds, fertility degradation, defoliation classifications, multi-turn natural soil healing, policy/tech restoration bonuses, and road destruction by massive trampling.
+- **Category:** Reactive ecology, terrain and infrastructure (2 of 3).
+- **Scorecard Axes Advanced:** D (2 → 3: Reactive ecology, terrain and infrastructure advanced to integrated and clearly useful).
+- **Master-plan Requirements Advanced:** Sections 3.2, 4.6, 5.1, 16.4.
+- **Meaningful Result:**
+  - Created `src/sim/world/ecology.ts` implementing `ECOLOGY_RULES`, `effectiveFertility`, `isCompacted`, `DefoliationStage` (`PRISTINE`, `HARVESTED`, `DEPLETED`, `BARREN`), `defoliationStageFor`, `applyColossalTrampling`, `recoverSoil`, and `regenerateEcologyWithSoil`.
+  - Soil disturbance & compaction: Disturbance scales from 0 to 1000. Disturbance >= 500 triggers compaction. Effective fertility scales dynamically down to 50% at maximum disturbance (`Math.floor(base * (1000 - floor(dist / 2)) / 1000)`).
+  - Farm productivity impact: Settlements farming compacted parcels suffer reduced yields and emit `'FARM_SOIL_COMPACTED'` warnings.
+  - Multi-turn ecological healing: Undisturbed resting cells naturally recover 25 disturbance points per turn. Proximity to `P-STEWARDSHIP` settlements doubles recovery (+25 bonus), and ecological technologies (`T-ECO-2`, `T-ECO-3`) accelerate recovery (+15 bonus).
+  - Compaction regrowth penalties: Biomass replenishment in `regenerateEcology` is halved on compacted soil until the soil heals.
+  - Colossal infrastructure impact: In accordance with Section 16.4, heavy God trampling (mass >= 20) reaching severe disturbance (>= 750) crushes unreinforced roads, recording authoritative `ROUTE_CHANGED` events.
+  - Active God restoration: The God `CULTIVATE` action actively rehabilitates targeted cells, reducing disturbance by 400 and restoring +200 biomass.
+- **Validation:**
+  - `npm run typecheck`: clean
+  - `npm run lint`: clean (0 errors, 0 warnings)
+  - `tests/sim/ecology.test.ts`: 7/7 passed
+  - `tests/sim/selfcheck.test.ts`: passed (deterministic fixture intact)
+  - Vitest sim suite: 17 test files, 94/94 passed (including all 50 headless campaigns)
+  - `npm run build`: built in 348ms
+  - Playwright E2E: 20/20 passed across desktop and mobile viewports
 - **Commit:** (In progress)
-- **Next Candidate:** Soil Degradation, Defoliation & Ecological Healing (Ecology 2 of 3).
+- **Next Candidate:** Causal World History Event Ledger (History 1 of 3).
+
 
 
 

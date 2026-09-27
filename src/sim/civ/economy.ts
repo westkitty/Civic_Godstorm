@@ -8,6 +8,7 @@ import { occupiedCells } from '../gods/body.ts';
 import { checked, units } from '../core/quantity.ts';
 import type { CampaignState, SettlementState, SettlementTurnSummary } from '../core/state.ts';
 import { ECONOMY_RULES, PHYSICAL_RESOURCES, WORLD_RULES, type BuildKind, type PhysicalResource } from '../data/rules.ts';
+import { effectiveFertility, isCompacted } from '../world/ecology.ts';
 
 const TRIM_ORDER = ['builder', 'quarry', 'forestry', 'farm'] as const;
 
@@ -72,7 +73,11 @@ export function runSettlementTurn(state: CampaignState, settlement: SettlementSt
     }
     const workers = Math.min(farmWorkers, ECONOMY_RULES.maxWorkersPerSite * 1000);
     farmWorkers -= workers;
-    farmNumerator += ECONOMY_RULES.farmFoodPerWorker * 100 * (map.fertility[site.cell] as number) * workers;
+    const fertility = effectiveFertility(map, site.cell);
+    farmNumerator += ECONOMY_RULES.farmFoodPerWorker * 100 * fertility * workers;
+    if (isCompacted(map, site.cell)) {
+      warnings.push('FARM_SOIL_COMPACTED');
+    }
   }
   produced.FOOD += carryDivide(settlement, 'farm', farmNumerator, 1_000_000);
 

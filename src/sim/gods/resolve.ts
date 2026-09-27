@@ -15,6 +15,7 @@ import { apForFatigue, sizeRules, type GodState, type MoveOrder } from './god.ts
 import { ageBracketFor, chronicIntegrityLoss } from './lifecycle.ts';
 import { applyGodDeathShock, createCorpseFromGod } from './corpse.ts';
 import { applyMedicalCare, hasFeedingImpairment, progressWoundHealing } from './wounds.ts';
+import { applyColossalTrampling } from '../world/ecology.ts';
 
 interface TurnContext {
   apRemaining: number;
@@ -76,7 +77,9 @@ function feed(state: CampaignState, god: GodState, ctx: TurnContext): void {
 function disturb(state: CampaignState, god: GodState, cells: readonly number[]): void {
   const base = GOD_RULES.passageDisturbancePerMass * sizeRules(god).mass;
   const amount = god.stance === 'CAREFUL' ? Math.floor(base / 2) : god.stance === 'FORCEFUL' ? Math.floor((base * 3) / 2) : base;
-  for (const cell of cells) state.map.soilDisturbance[cell] = Math.min(1000, (state.map.soilDisturbance[cell] as number) + amount);
+  for (const cell of cells) {
+    applyColossalTrampling(state, god, cell, amount);
+  }
 }
 
 /** The next step a God wants to take this micro-slot, or a reason it cannot (null = nothing to do now). */
@@ -228,6 +231,11 @@ export function resolveGods(state: CampaignState): GodTurnSummary[] {
         ctx.apRemaining -= 2;
         ctx.apSpent += 2;
         god.fatigue = Math.min(100, god.fatigue + 10);
+        state.map.soilDisturbance[targetCell] = Math.max(0, (state.map.soilDisturbance[targetCell] as number) - 400);
+        state.map.biomass[targetCell] = Math.min(
+          state.map.biomassCapacity[targetCell] as number,
+          (state.map.biomass[targetCell] as number) + 200,
+        );
         state.history.push({
           eventId: state.history.length + 1,
           turn: state.turn,

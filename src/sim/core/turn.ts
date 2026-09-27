@@ -6,11 +6,12 @@ import { runSettlementTurn } from '../civ/economy.ts';
 import { resolveGods } from '../gods/resolve.ts';
 import { resolveCorpses } from '../gods/corpse.ts';
 import { updateAllObservations } from '../observation/observation.ts';
-import { BIOME_RULES, BIOMES, JOBS, PHYSICAL_RESOURCES, type Biome } from '../data/rules.ts';
+import { JOBS, PHYSICAL_RESOURCES } from '../data/rules.ts';
 import { canonicalHash } from './canonical.ts';
 import { applyCommand, compareCommands, laborMilli, validateCommand, type Command, type Rejection } from './commands.ts';
 import type { CampaignState } from './state.ts';
 import { TECH_BY_ID, type PolicyAxis } from '../data/tech.ts';
+import { regenerateEcologyWithSoil } from '../world/ecology.ts';
 
 export interface TurnResult {
   readonly state: CampaignState;
@@ -27,17 +28,9 @@ export function hashState(state: CampaignState): string {
   return canonicalHash(state);
 }
 
-/** Step 3: ecological replenishment, floor((capacity - current) * rate / 1000), minimum 1 below capacity. */
+/** Step 3: ecological replenishment and multi-turn soil recovery (master Sections 3.2, 4.6). */
 export function regenerateEcology(state: CampaignState): void {
-  const { map } = state;
-  for (let cell = 0; cell < map.biomass.length; cell += 1) {
-    const capacity = map.biomassCapacity[cell] as number;
-    const current = map.biomass[cell] as number;
-    if (current >= capacity) continue;
-    const rate = BIOME_RULES[BIOMES[map.biome[cell] as number] as Biome].regenRate;
-    if (rate === 0) continue;
-    map.biomass[cell] = Math.min(capacity, current + Math.max(1, Math.floor(((capacity - current) * rate) / 1000)));
-  }
+  regenerateEcologyWithSoil(state);
 }
 
 /** Checks every bounded quantity; thrown violations are defects, never clamped away. */
@@ -71,6 +64,8 @@ export function assertInvariants(state: CampaignState): void {
     const biomass = map.biomass[cell] as number;
     if (biomass < 0 || biomass > (map.biomassCapacity[cell] as number)) problems.push(`cell ${cell} biomass ${biomass}`);
     if ((map.stoneReserve[cell] as number) < 0) problems.push(`cell ${cell} stone`);
+    const disturbance = map.soilDisturbance[cell] as number;
+    if (disturbance < 0 || disturbance > 1000) problems.push(`cell ${cell} disturbance ${disturbance}`);
   }
   if (problems.length > 0) throw new InvariantViolation(problems.slice(0, 10).join('; '));
 }
