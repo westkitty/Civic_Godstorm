@@ -123,6 +123,18 @@ function validateBuild(state: CampaignState, settlement: SettlementState, build:
     const taken = state.settlements.some((other) => other.cell === cell || other.farmSites.some((site) => site.cell === cell)
       || other.queue.some((item) => item.kind === 'FARM' && item.cell === cell));
     if (taken) return fail('CAPACITY_REACHED', 'cell already holds a settlement or farm');
+  } else if (build === 'ROAD') {
+    if (cell === null) return fail('UNSUPPORTED_STATE', 'ROAD requires a target cell');
+    if (isWater(state.map, cell)) return fail('WRONG_DOMAIN', 'ROAD cannot be built on water');
+    if ((state.map.roads[cell] as number) > 0) return fail('CAPACITY_REACHED', 'cell already has a road');
+    const queued = state.settlements.some((other) => other.queue.some((item) => item.kind === 'ROAD' && item.cell === cell));
+    if (queued) return fail('CAPACITY_REACHED', 'road already queued for this cell');
+  } else if (build === 'BRIDGE') {
+    if (cell === null) return fail('UNSUPPORTED_STATE', 'BRIDGE requires a target cell');
+    if (!isWater(state.map, cell)) return fail('WRONG_DOMAIN', 'BRIDGE must be built across water');
+    if ((state.map.bridges[cell] as number) > 0) return fail('CAPACITY_REACHED', 'cell already has a bridge');
+    const queued = state.settlements.some((other) => other.queue.some((item) => item.kind === 'BRIDGE' && item.cell === cell));
+    if (queued) return fail('CAPACITY_REACHED', 'bridge already queued for this cell');
   } else {
     if (cell !== settlement.cell) return fail('UNSUPPORTED_STATE', `${build} targets its own settlement cell`);
     const districts = settlement.dwellings
@@ -131,7 +143,7 @@ function validateBuild(state: CampaignState, settlement: SettlementState, build:
       + (settlement.buildings?.depot ?? 0)
       + (settlement.buildings?.archive ?? 0)
       + (settlement.buildings?.infirmary ?? 0);
-    const planned = districts + settlement.queue.filter((item) => item.kind !== 'FARM').length;
+    const planned = districts + settlement.queue.filter((item) => item.kind !== 'FARM' && item.kind !== 'ROAD' && item.kind !== 'BRIDGE').length;
     if (planned >= ECONOMY_RULES.maxDistrictParcels) return fail('CAPACITY_REACHED', 'all six district parcels are used');
   }
   for (const [resource, amount] of Object.entries(BUILD_RULES[build].materials)) {

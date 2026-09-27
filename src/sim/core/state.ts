@@ -23,6 +23,10 @@ export interface MapState {
   stoneReserve: number[];
   /** Section 3.2 soil disturbance 0..1000. */
   soilDisturbance: number[];
+  /** Section 6.5 infrastructure: 0 none, 1 road. */
+  roads: number[];
+  /** Section 6.5 bridges across water channels: 0 none, 1 bridge. */
+  bridges: number[];
 }
 
 /** Per-civilization map knowledge (master Sections 9, 11). Never a pointer into true state. */

@@ -109,6 +109,8 @@ export function generateMap(size: MapSizeName, seed: string): MapState {
     biomassCapacity,
     stoneReserve,
     soilDisturbance: new Array<number>(cellCount).fill(0),
+    roads: new Array<number>(cellCount).fill(0),
+    bridges: new Array<number>(cellCount).fill(0),
   };
 }
 

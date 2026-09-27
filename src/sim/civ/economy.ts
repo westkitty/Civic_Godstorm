@@ -209,6 +209,10 @@ export function runSettlementTurn(state: CampaignState, settlement: SettlementSt
         settlement.dwellings += 1;
       } else if (item.kind === 'FARM') {
         settlement.farmSites.push({ cell: item.cell });
+      } else if (item.kind === 'ROAD') {
+        state.map.roads[item.cell] = 1;
+      } else if (item.kind === 'BRIDGE') {
+        state.map.bridges[item.cell] = 1;
       } else if (item.kind === 'GRANARY') {
         settlement.buildings.granary += 1;
       } else if (item.kind === 'WORKSHOP') {

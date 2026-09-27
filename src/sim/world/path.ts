@@ -4,6 +4,28 @@
 // never reported as NO_PATH.
 
 import { distance, neighbors, type MapDimensions } from './hex.ts';
+import type { MapState } from '../core/state.ts';
+import { isWater, isWoodland } from './generate.ts';
+import { BIOME_INDEX } from '../data/rules.ts';
+
+/** Section 14.3 / 6.5 terrain step cost for ordinary units, considering roads and bridges. */
+export function terrainStepCost(map: MapState, from: number, to: number): number | null {
+  if (isWater(map, to)) {
+    if (map.bridges && map.bridges[to] === 1) return 1;
+    // Shallow coast fordable at high cost (3); deep sea impassable
+    if (map.biome[to] === BIOME_INDEX.COAST_SHALLOW) return 3;
+    return null;
+  }
+  // If road is present on destination and origin, fast transit (cost 1 even on hills)
+  if (map.roads && map.roads[to] === 1 && (from === to || map.roads[from] === 1)) {
+    return 1;
+  }
+  // Rough terrain (hills elevation >= 160 or woodland) costs 2
+  if ((map.elevation[to] as number) >= 160 || isWoodland(map, to)) {
+    return 2;
+  }
+  return 1;
+}
 
 export type PathResult =
   | { readonly kind: 'FOUND'; readonly cells: number[]; readonly cost: number; readonly expanded: number }

@@ -18,9 +18,9 @@
 | Axis | Meaning | Baseline (99eb980) | Current |
 |---|---|:---:|:---:|
 | **A** | Direct God agency and physical embodiment | 2 | 2 |
-| **B** | Civilization economy / settlement / 4X depth | 1 | **2** |
+| **B** | Civilization economy / settlement / 4X depth | 1 | 2 |
 | **C** | Two-way God ↔ civilization dependency | 1 | 1 |
-| **D** | Reactive ecology, terrain and infrastructure | 1 | 1 |
+| **D** | Reactive ecology, terrain and infrastructure | 1 | **2** |
 | **E** | Godform, injury, aging, death and remains | 1 | 1 |
 | **F** | Diplomacy, territorial rights and information boundaries | 1 | 1 |
 | **G** | Warfare, logistics and strategic consequence | 0 | 0 |
@@ -55,7 +55,25 @@
   - `tests/sim/selfcheck.test.ts`: passed with updated determinism hashes
   - `npm run build`: built in 363ms
   - Playwright E2E: 20/20 passed across desktop and narrow viewports
-- **Known Limitations:** Visual rendering of district buildings in 3D scene is schematic (addressed in Presentation iteration).
-- **Next Candidate:** Infrastructure network (ROADS and BRIDGES on hex edges/cells reducing travel AP).
+- **Commit:** `1f473c6`
+
+### `uplift(02)`: Infrastructure Network — Roads and Bridges on Hex Edges & Cells
+- **Goal:** Establish physical road and bridge infrastructure across the hex world reducing movement costs and bridging waterways.
+- **Category:** Civilization / economy / settlement / infrastructure / 4X (2 of 4) & Reactive ecology, terrain and infrastructure (1 of 3).
+- **Scorecard Axes Advanced:** D (1 → 2).
+- **Master-plan Requirements Advanced:** Sections 6.5, 14.3, 16.5.
+- **Meaningful Result:**
+  - Added persistent `roads: number[]` and `bridges: number[]` to `MapState`.
+  - Added `ROAD` and `BRIDGE` infrastructure construction to `BuildKind`, `BUILD_RULES`, and command validation.
+  - Construction completion stamps physical road and bridge networks into authoritative world state.
+  - Implemented `terrainStepCost` A* path cost function accounting for road bonuses (cutting step costs from 2 to 1 on rough/forested terrain) and bridge crossings over water.
+- **Validation:**
+  - `npm run typecheck`: clean
+  - `npm run lint`: clean
+  - `tests/sim/path.test.ts`: 4/4 passed (including terrainStepCost road/bridge tests)
+  - `tests/sim/selfcheck.test.ts`: passed with updated determinism hashes
+  - `npm run build`: built in 663ms
+- **Known Limitations:** Visual representation of roads in Three.js renderer is currently flat (addressed in Presentation iteration).
+- **Next Candidate:** Settlement colonization/founding (SETTLE command, pioneer cohorts, territory expansion).
 
 

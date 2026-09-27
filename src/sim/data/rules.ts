@@ -133,9 +133,9 @@ export const ECONOMY_RULES = {
   maxQueueLength: 8,
 } as const;
 
-export type BuildKind = 'DWELLING' | 'FARM' | 'GRANARY' | 'WORKSHOP' | 'DEPOT' | 'ARCHIVE' | 'INFIRMARY';
+export type BuildKind = 'DWELLING' | 'FARM' | 'GRANARY' | 'WORKSHOP' | 'DEPOT' | 'ARCHIVE' | 'INFIRMARY' | 'ROAD' | 'BRIDGE';
 
-/** Section 6.3/6.4 costs in whole units; work in whole work units. */
+/** Section 6.3/6.4/6.5 costs in whole units; work in whole work units. */
 export const BUILD_RULES: Readonly<Record<BuildKind, { readonly materials: Partial<Record<PhysicalResource, number>>; readonly work: number }>> = {
   DWELLING: { materials: { TIMBER: 12, STONE: 8 }, work: 10 },
   FARM: { materials: { TIMBER: 4 }, work: 4 },
@@ -144,6 +144,8 @@ export const BUILD_RULES: Readonly<Record<BuildKind, { readonly materials: Parti
   DEPOT: { materials: { TIMBER: 14, STONE: 10 }, work: 12 },
   ARCHIVE: { materials: { TIMBER: 12, STONE: 14 }, work: 14 },
   INFIRMARY: { materials: { TIMBER: 10, STONE: 10 }, work: 12 },
+  ROAD: { materials: { TIMBER: 2, STONE: 2 }, work: 4 },
+  BRIDGE: { materials: { TIMBER: 6, STONE: 8 }, work: 8 },
 };
 
 /** God rules (master Sections 2.3, 4.5, 4.6, 16.1, 16.3, 16.4). */

@@ -1,7 +1,8 @@
 import { describe, expect, it } from 'vitest';
 import { initStreams, RngCursor } from '../../src/sim/core/rng.ts';
 import { cellIndexOfOffset, neighbors, type MapDimensions } from '../../src/sim/world/hex.ts';
-import { findPath } from '../../src/sim/world/path.ts';
+import { findPath, terrainStepCost } from '../../src/sim/world/path.ts';
+import { generateMap } from '../../src/sim/world/generate.ts';
 
 /** Reference Dijkstra without a heuristic. */
 function dijkstra(dims: MapDimensions, from: number, to: number, cost: (a: number, b: number) => number | null): number | null {
@@ -70,5 +71,19 @@ describe('ordinary A*', () => {
     const wall = new Set(Array.from({ length: dims.height }, (_, r) => [cellIndexOfOffset(dims, 3, r), cellIndexOfOffset(dims, 9, r)]).flat());
     const blocked = findPath({ dims, from, to, stepCost: (_, next) => (wall.has(next) ? null : 1), minStepCost: 1, maxExpansions: 10_000 });
     expect(blocked.kind).toBe('NO_PATH');
+  });
+
+  it('applies road speed bonuses and bridge crossings with terrainStepCost', () => {
+    const map = generateMap('small', 'path-infra');
+    const hillCell = map.elevation.findIndex((e, idx) => e >= 160 && map.biome[idx] !== 0);
+    expect(hillCell).toBeGreaterThanOrEqual(0);
+    expect(terrainStepCost(map, hillCell, hillCell)).toBe(2);
+    map.roads[hillCell] = 1;
+    expect(terrainStepCost(map, hillCell, hillCell)).toBe(1);
+
+    const waterCell = map.biome.findIndex((b) => b === 0 || b === 1);
+    expect(waterCell).toBeGreaterThanOrEqual(0);
+    map.bridges[waterCell] = 1;
+    expect(terrainStepCost(map, hillCell, waterCell)).toBe(1);
   });
 });
