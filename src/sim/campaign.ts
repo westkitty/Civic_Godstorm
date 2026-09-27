@@ -69,6 +69,24 @@ export function createCampaign(options: NewCampaignOptions): CampaignState {
         coin: units(ECONOMY_RULES.startingCoin),
         knowledge: 0,
         capitalSettlementId: settlementId,
+        completedTechs: [],
+        currentResearch: null,
+        policies: {
+          RESOURCE_ETHICS: 'NEUTRAL',
+          CULTURAL_LEGITIMACY: 'NEUTRAL',
+          SECURITY: 'NEUTRAL',
+          AUTHORITY: 'NEUTRAL',
+          SERVICE_OWNERSHIP: 'NEUTRAL',
+          SETTLEMENT_FORM: 'NEUTRAL',
+        },
+        policyCooldowns: {
+          RESOURCE_ETHICS: 0,
+          CULTURAL_LEGITIMACY: 0,
+          SECURITY: 0,
+          AUTHORITY: 0,
+          SERVICE_OWNERSHIP: 0,
+          SETTLEMENT_FORM: 0,
+        },
       });
       settlements.push({
         id: settlementId,

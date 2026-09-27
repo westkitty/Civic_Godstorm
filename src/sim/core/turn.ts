@@ -9,6 +9,7 @@ import { BIOME_RULES, BIOMES, JOBS, PHYSICAL_RESOURCES, type Biome } from '../da
 import { canonicalHash } from './canonical.ts';
 import { applyCommand, compareCommands, laborMilli, validateCommand, type Command, type Rejection } from './commands.ts';
 import type { CampaignState } from './state.ts';
+import { TECH_BY_ID, type PolicyAxis } from '../data/tech.ts';
 
 export interface TurnResult {
   readonly state: CampaignState;
@@ -105,6 +106,46 @@ export function resolveTurn(committed: CampaignState, commands: readonly Command
   const summaries = [...state.settlements]
     .sort((a, b) => a.id - b.id)
     .map((settlement) => runSettlementTurn(state, settlement));
+
+  // Step 5b: civilization research progression and policy cooldowns.
+  for (const civ of state.civs) {
+    if (civ.policyCooldowns) {
+      for (const axis of Object.keys(civ.policyCooldowns) as PolicyAxis[]) {
+        if (civ.policyCooldowns[axis] > 0) {
+          civ.policyCooldowns[axis] -= 1;
+        }
+      }
+    }
+    if (civ.currentResearch) {
+      const tech = TECH_BY_ID.get(civ.currentResearch.techId);
+      if (tech) {
+        const needed = tech.cost - civ.currentResearch.progress;
+        const invested = Math.min(needed, civ.knowledge);
+        civ.knowledge -= invested;
+        civ.currentResearch.progress += invested;
+        if (civ.currentResearch.progress >= tech.cost) {
+          civ.completedTechs.push(tech.id);
+          state.history.push({
+            eventId: state.history.length + 1,
+            turn: state.turn,
+            impulse: 0,
+            type: 'TECH_RESEARCHED',
+            actorIds: [civ.id],
+            locationIds: [],
+            causeIds: [],
+            observerCivIds: [civ.id],
+            payload: {
+              civId: civ.id,
+              techId: tech.id,
+              name: tech.name,
+            },
+            schemaVersion: 1,
+          });
+          civ.currentResearch = null;
+        }
+      }
+    }
+  }
 
   // Step 6: observations, then commit.
   updateAllObservations(state);

@@ -124,7 +124,8 @@ export function runSettlementTurn(state: CampaignState, settlement: SettlementSt
 
   // Archives: generate KNOWLEDGE from research.
   if ((settlement.buildings?.archive ?? 0) > 0) {
-    civ.knowledge += units(settlement.buildings.archive * ECONOMY_RULES.archiveKnowledgeYield);
+    const secularBonus = civ.policies?.CULTURAL_LEGITIMACY === 'P-SECULAR' ? 1 : 0;
+    civ.knowledge += units(settlement.buildings.archive * (ECONOMY_RULES.archiveKnowledgeYield + secularBonus));
   }
 
   produced.FOOD += units(ECONOMY_RULES.baseFoodYield);
@@ -140,8 +141,9 @@ export function runSettlementTurn(state: CampaignState, settlement: SettlementSt
   if (coverage < 1000) warnings.push('FOOD_SHORTAGE');
 
   // Overflow above storage capacity spoils at 10% per turn (granaries and depots expand capacity and reduce spoilage).
-  const foodCapacity = units(ECONOMY_RULES.baseStorage + (settlement.buildings?.granary ?? 0) * ECONOMY_RULES.granaryStorageBonus);
-  const materialCapacity = units(ECONOMY_RULES.baseStorage + (settlement.buildings?.depot ?? 0) * ECONOMY_RULES.depotStorageBonus);
+  const fixedTenureBonus = civ.policies?.SETTLEMENT_FORM === 'P-FIXED-TENURE' ? 20 : 0;
+  const foodCapacity = units(ECONOMY_RULES.baseStorage + fixedTenureBonus + (settlement.buildings?.granary ?? 0) * ECONOMY_RULES.granaryStorageBonus);
+  const materialCapacity = units(ECONOMY_RULES.baseStorage + fixedTenureBonus + (settlement.buildings?.depot ?? 0) * ECONOMY_RULES.depotStorageBonus);
   const foodSpoilageRate = (settlement.buildings?.granary ?? 0) > 0 ? 5 : ECONOMY_RULES.spoilagePercent;
   const matSpoilageRate = (settlement.buildings?.depot ?? 0) > 0 ? 5 : ECONOMY_RULES.spoilagePercent;
 

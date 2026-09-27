@@ -6,6 +6,7 @@ import type { RngStreams } from './rng.ts';
 import type { Quantity } from './quantity.ts';
 import type { MapSizeName } from '../world/hex.ts';
 import type { GodState } from '../gods/god.ts';
+import type { PolicyAxis, PolicyChoice } from '../data/tech.ts';
 
 export interface MapState {
   readonly size: MapSizeName;
@@ -54,6 +55,10 @@ export interface CivState {
   coin: Quantity;
   knowledge: Quantity;
   readonly capitalSettlementId: number;
+  completedTechs: string[];
+  currentResearch: { techId: string; progress: Quantity } | null;
+  policies: Record<PolicyAxis, PolicyChoice>;
+  policyCooldowns: Record<PolicyAxis, number>;
 }
 
 export interface FarmSite {
@@ -104,7 +109,7 @@ export interface SettlementState {
   legitimacy: number;
 }
 
-export type HistoryEventType = 'CITY_FOUNDED';
+export type HistoryEventType = 'CITY_FOUNDED' | 'TECH_RESEARCHED' | 'POLICY_ADOPTED';
 
 export interface HistoryEvent {
   readonly eventId: number;

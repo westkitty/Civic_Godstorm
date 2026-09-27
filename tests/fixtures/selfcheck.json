@@ -8,7 +8,7 @@
   "simulationVersion": "cg-sim-m02.1",
   "rulesHash": "bb7dcac6b28841d27684aa99175ec493a2dee025c4b5a8e0d7f78829b35dbc2f",
   "goldenVectorsPass": true,
-  "initialHash": "dc67b74f5e3ec22eca8ed9dff7f17c80d67e24b12ea984ecdef8298a0a624155",
-  "finalHash": "69c0ba81d7a651a688f07a4f8157dc14fe34823e6c8384c30d1b79ce087e1b21",
+  "initialHash": "7be11aa16c857e4f30d66f40ce403bfe9e24ea98af22bb911a8b44603412525d",
+  "finalHash": "d58bc55ae76353f587914700fad8e0e02fd07fb1209a74f9179c0578e9a2b8a8",
   "turns": 30
 }

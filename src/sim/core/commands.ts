@@ -8,6 +8,16 @@ import { units } from './quantity.ts';
 import type { CampaignState, JobAllocation, SettlementState } from './state.ts';
 import type { FollowUp, RouteMode, Stance } from '../gods/god.ts';
 import { applyGodCommand, isGodCommand, validateGodCommand } from '../gods/commands.ts';
+import {
+  canResearchTech,
+  POLICY_AXES,
+  POLICY_CHOICES,
+  POLICY_COOLDOWN_TURNS,
+  POLICY_COST_COIN,
+  TECH_BY_ID,
+  type PolicyAxis,
+  type PolicyChoice,
+} from '../data/tech.ts';
 
 export const REJECTION_CODES = [
   'NOT_OWNER',
@@ -46,6 +56,8 @@ export type Command =
   | (CommandBase & { readonly kind: 'QUEUE_BUILD'; readonly options: { readonly build: BuildKind } })
   | (CommandBase & { readonly kind: 'CANCEL_BUILD'; readonly options: { readonly itemId: number } })
   | (CommandBase & { readonly kind: 'FOUND_SETTLEMENT'; readonly options: { readonly name?: string } })
+  | (CommandBase & { readonly kind: 'RESEARCH_TECH'; readonly options: { readonly techId: string } })
+  | (CommandBase & { readonly kind: 'ADOPT_POLICY'; readonly options: { readonly axis: PolicyAxis; readonly choice: PolicyChoice } })
   | (CommandBase & {
       readonly kind: 'GOD_MOVE';
       readonly options: { readonly waypoints: readonly number[]; readonly routeMode: RouteMode; readonly then: FollowUp };
@@ -192,6 +204,44 @@ function validateFoundSettlement(state: CampaignState, settlement: SettlementSta
   return OK;
 }
 
+function validateResearchTech(state: CampaignState, civId: number, techId: string): ValidationResult {
+  const civ = state.civs.find((c) => c.id === civId);
+  if (!civ) return fail('NOT_OWNER', 'unknown civilization');
+  const tech = TECH_BY_ID.get(techId);
+  if (!tech) return fail('UNSUPPORTED_STATE', `unknown technology ${techId}`);
+  if (civ.completedTechs.includes(techId)) {
+    return fail('CAPACITY_REACHED', `technology ${techId} already researched`);
+  }
+  if (!canResearchTech(civ.completedTechs, techId)) {
+    return fail('PREREQUISITE_MISSING', `prerequisites not met for ${techId}`);
+  }
+  return OK;
+}
+
+function validateAdoptPolicy(state: CampaignState, civId: number, axis: PolicyAxis, choice: PolicyChoice): ValidationResult {
+  const civ = state.civs.find((c) => c.id === civId);
+  if (!civ) return fail('NOT_OWNER', 'unknown civilization');
+  if (!POLICY_AXES.includes(axis)) return fail('UNSUPPORTED_STATE', `unknown policy axis ${axis}`);
+  const legalChoices = POLICY_CHOICES[axis] as readonly string[];
+  if (!legalChoices.includes(choice)) return fail('UNSUPPORTED_STATE', `illegal choice ${choice} for axis ${axis}`);
+
+  if (axis !== 'RESOURCE_ETHICS' && axis !== 'SETTLEMENT_FORM') {
+    if (!civ.completedTechs.includes('T-INS-2')) {
+      return fail('PREREQUISITE_MISSING', 'axis requires T-INS-2 Civic Charters');
+    }
+  }
+
+  if ((civ.policyCooldowns[axis] ?? 0) > 0) {
+    return fail('CAPACITY_REACHED', `policy axis ${axis} is in cooldown for ${civ.policyCooldowns[axis]} more turns`);
+  }
+
+  if (civ.coin < units(POLICY_COST_COIN)) {
+    return fail('INSUFFICIENT_STOCK', `adopting policy requires ${POLICY_COST_COIN} COIN`);
+  }
+
+  return OK;
+}
+
 export function validateCommand(state: CampaignState, command: Command): ValidationResult {
   if (command.expectedStateVersion !== state.turn || command.issuedForTurn !== state.turn + 1) {
     return fail('STALE_STATE', `command names state ${command.expectedStateVersion}/turn ${command.issuedForTurn}; current state ${state.turn}`);
@@ -211,6 +261,10 @@ export function validateCommand(state: CampaignState, command: Command): Validat
         : fail('UNSUPPORTED_STATE', 'no such queued item');
     case 'FOUND_SETTLEMENT':
       return validateFoundSettlement(state, settlement, command.target);
+    case 'RESEARCH_TECH':
+      return validateResearchTech(state, command.civId, command.options.techId);
+    case 'ADOPT_POLICY':
+      return validateAdoptPolicy(state, command.civId, command.options.axis, command.options.choice);
   }
 }
 
@@ -321,6 +375,37 @@ export function applyCommand(state: CampaignState, command: Command): void {
           parentSettlementId: settlement.id,
           settlementId: newId,
           cell: targetCell,
+        },
+        schemaVersion: 1,
+      });
+      return;
+    }
+    case 'RESEARCH_TECH': {
+      const civ = state.civs.find((c) => c.id === command.civId)!;
+      if (civ.currentResearch?.techId !== command.options.techId) {
+        civ.currentResearch = { techId: command.options.techId, progress: 0 };
+      }
+      return;
+    }
+    case 'ADOPT_POLICY': {
+      const civ = state.civs.find((c) => c.id === command.civId)!;
+      civ.coin -= units(POLICY_COST_COIN);
+      civ.policies[command.options.axis] = command.options.choice;
+      civ.policyCooldowns[command.options.axis] = POLICY_COOLDOWN_TURNS;
+
+      state.history.push({
+        eventId: state.history.length + 1,
+        turn: state.turn,
+        impulse: 0,
+        type: 'POLICY_ADOPTED',
+        actorIds: [civ.id],
+        locationIds: [],
+        causeIds: [],
+        observerCivIds: [civ.id],
+        payload: {
+          civId: civ.id,
+          axis: command.options.axis,
+          choice: command.options.choice,
         },
         schemaVersion: 1,
       });

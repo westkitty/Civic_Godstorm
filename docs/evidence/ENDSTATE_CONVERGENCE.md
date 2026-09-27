@@ -18,7 +18,7 @@
 | Axis | Meaning | Baseline (99eb980) | Current |
 |---|---|:---:|:---:|
 | **A** | Direct God agency and physical embodiment | 2 | 2 |
-| **B** | Civilization economy / settlement / 4X depth | 1 | **3** |
+| **B** | Civilization economy / settlement / 4X depth | 1 | **4** |
 | **C** | Two-way God ↔ civilization dependency | 1 | 1 |
 | **D** | Reactive ecology, terrain and infrastructure | 1 | **2** |
 | **E** | Godform, injury, aging, death and remains | 1 | 1 |
@@ -97,6 +97,28 @@
   - `npm run build`: built in 347ms
   - Playwright E2E: 20/20 passed across desktop and mobile viewports
 - **Next Candidate:** Technology research DAG & policy adoption framework (Civ 4 of 4).
+
+### `uplift(04)`: Technology Research DAG & Policy Adoption Framework
+- **Goal:** Implement the authoritative Section 7.1 technology tree (24 entries across 6 branches and 4 tiers) and Section 7.2 policy framework (12 policies across 6 axes).
+- **Category:** Civilization / economy / settlement / infrastructure / 4X (4 of 4).
+- **Scorecard Axes Advanced:** B (3 → 4: Civilization economy / settlement / 4X depth advanced to strong production-quality behavior).
+- **Master-plan Requirements Advanced:** Sections 7.1, 7.2, 16.1.
+- **Meaningful Result:**
+  - Created `src/sim/data/tech.ts` with complete definitions for 24 technologies spanning branches PRO, NET, INS, ANA, ENG, ECO across 4 tiers with fixed tier costs (60, 140, 300, 600 KNOWLEDGE) and exact intra-branch and cross-branch prerequisite dependencies.
+  - Implemented 6 policy axes (RESOURCE_ETHICS, CULTURAL_LEGITIMACY, SECURITY, AUTHORITY, SERVICE_OWNERSHIP, SETTLEMENT_FORM) with 12 distinct policies, transition costs (20 COIN), 10-turn cooldowns, and prerequisite tech gating (T-INS-2 required for advanced axes).
+  - Added `RESEARCH_TECH` and `ADOPT_POLICY` commands to `Command` schema with strict validation and deterministic state resolution.
+  - Implemented turn-based knowledge accumulation and research progression: settlement archives and base knowledge fund research progress, automatically unlock completed technologies, and log `TECH_RESEARCHED` and `POLICY_ADOPTED` history events.
+  - Connected systemic policy effects into simulation: `P-FIXED-TENURE` expands settlement storage by 20 units; `P-SECULAR` grants +1 KNOWLEDGE/turn to archives.
+- **Validation:**
+  - `npm run typecheck`: clean
+  - `npm run lint`: 0 warnings, 0 errors
+  - `tests/sim/tech.test.ts`: 4/4 passed (prerequisite gating, knowledge investment, policy adoption, and systemic storage bonus)
+  - `tests/sim/selfcheck.test.ts`: passed with updated determinism hashes
+  - Vitest sim suite: 11 files, 65/65 tests passed
+  - `npm run build`: built in 345ms
+  - Playwright E2E: 20/20 passed across desktop and mobile viewports
+- **Next Candidate:** Advanced God Actions & Stance Mechanics (God 1 of 4: STRIKE, GUARD, CULTIVATE, ASSIST commands).
+
 
 
 
