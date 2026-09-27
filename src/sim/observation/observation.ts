@@ -7,6 +7,7 @@ import type { CampaignState, ObservationState, SettlementState } from '../core/s
 import { occupiedCells, type CellKnowledge, type Knowledge } from '../gods/body.ts';
 import type { GodState } from '../gods/god.ts';
 import { SENSOR_SIGHT } from '../gods/grammar.ts';
+import { hasSensoryImpairment } from '../gods/wounds.ts';
 import { cellsWithin, distance, type MapDimensions } from '../world/hex.ts';
 
 export const SETTLEMENT_SIGHT = 2;
@@ -38,7 +39,8 @@ export function visibleCells(state: CampaignState, civId: number): Set<number> {
   }
   for (const god of state.gods) {
     if (god.ownerId !== civId || god.lifecycle !== 'ALIVE') continue;
-    const radius = SENSOR_SIGHT[god.genome.sensor];
+    const baseRadius = SENSOR_SIGHT[god.genome.sensor];
+    const radius = hasSensoryImpairment(god) ? Math.max(1, baseRadius - 1) : baseRadius;
     for (const cell of godCells(state, god)) for (const seen of cellsWithin(state.map, cell, radius)) visible.add(seen);
   }
   return visible;

@@ -63,6 +63,8 @@ export interface RegionHealth {
   defensive: number;
 }
 
+import type { Wound, Scar } from './wounds.ts';
+
 export interface GodState {
   readonly id: number;
   readonly ownerId: number;
@@ -74,6 +76,8 @@ export interface GodState {
   readonly domain: 'SURFACE';
   vitalHealth: number;
   regionHealth: RegionHealth;
+  wounds: Wound[];
+  scars: Scar[];
   fatigue: number;
   /** Nutrition reserve in hundredths. */
   reserve: Quantity;
@@ -89,10 +93,27 @@ export function sizeRules(god: Pick<GodState, 'genome'>): (typeof SIZE_RULES)[1]
   return SIZE_RULES[god.genome.size];
 }
 
-/** Section 4.6: AP available this turn given fatigue. */
-export function apForFatigue(fatigue: number): number {
-  for (const band of GOD_RULES.fatigueAp) if (fatigue >= band.atLeast) return band.ap;
-  return GOD_RULES.apPerTurn;
+/** Section 4.6 & 4.7: AP available this turn given fatigue and locomotor injury. */
+export function apForFatigue(
+  fatigue: number,
+  god?: { readonly regionHealth?: RegionHealth | undefined; readonly wounds?: readonly Wound[] | undefined },
+): number {
+  let ap: number = GOD_RULES.apPerTurn;
+  for (const band of GOD_RULES.fatigueAp) {
+    if (fatigue >= band.atLeast) {
+      ap = band.ap;
+      break;
+    }
+  }
+  if (god) {
+    const hasLocoDamage =
+      (god.regionHealth ? god.regionHealth.locomotor <= 200 : false) ||
+      (god.wounds ? god.wounds.some((w) => w.region === 'locomotor' && (w.type === 'FRACTURE' || w.type === 'LOST_STRUCTURE')) : false);
+    if (hasLocoDamage) {
+      ap = Math.max(0, ap - 1);
+    }
+  }
+  return ap;
 }
 
 export function createGod(options: {
@@ -117,6 +138,8 @@ export function createGod(options: {
     domain: 'SURFACE',
     vitalHealth: size.health,
     regionHealth: { core: GOD_RULES.regionHealth, locomotor: GOD_RULES.regionHealth, feeding: GOD_RULES.regionHealth, sensory: GOD_RULES.regionHealth, defensive: GOD_RULES.regionHealth },
+    wounds: [],
+    scars: [],
     fatigue: 0,
     reserve: size.upkeep * GOD_RULES.startingReserveTurns * 100,
     age: 0,

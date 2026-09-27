@@ -21,7 +21,7 @@
 | **B** | Civilization economy / settlement / 4X depth | 1 | **4** |
 | **C** | Two-way God ↔ civilization dependency | 1 | **2** |
 | **D** | Reactive ecology, terrain and infrastructure | 1 | **2** |
-| **E** | Godform, injury, aging, death and remains | 1 | **2** |
+| **E** | Godform, injury, aging, death and remains | 1 | **3** |
 | **F** | Diplomacy, territorial rights and information boundaries | 1 | 1 |
 | **G** | Warfare, logistics and strategic consequence | 0 | 0 |
 | **H** | AI parity and autonomous civilization behavior | 1 | 1 |
@@ -165,8 +165,37 @@
   - Vitest sim suite: 13 test files, 74/74 passed
   - `npm run build`: built in 345ms
   - Playwright E2E: 20/20 passed across desktop and mobile viewports
+- **Commit:** `1ae9954`
+
+### `uplift(07)`: Regional Anatomical Wounding & Scar History
+- **Goal:** Implement the authoritative Section 4.6 & 4.7 regional anatomical wounding, functional injury penalties, medical treatment, and permanent scar history.
+- **Category:** Godform, injury, aging, death and remains (2 of 4).
+- **Scorecard Axes Advanced:** E (2 → 3: Godform, injury, aging, death and remains advanced to integrated and clearly useful).
+- **Master-plan Requirements Advanced:** Sections 4.6, 4.7, 16.5.
+- **Meaningful Result:**
+  - Created `src/sim/gods/wounds.ts` defining `BodyRegion` (`core`, `locomotor`, `feeding`, `sensory`, `defensive`), `WoundType` (`BRUISE`, `TEAR`, `FRACTURE`, `INFECTION`, `LOST_STRUCTURE`), `Wound` schema, `Scar` schema, and `inflictWound`.
+  - Implemented functional injury penalties:
+    - Locomotor fracture / severe damage removes 1 AP and impairs movement speed.
+    - Sensory damage reduces observation sight radius by 1 hex.
+    - Feeding apparatus damage reduces food conversion efficiency by 25%.
+    - Injuries diminish follower trust and increase public burden.
+  - Implemented medical treatment and recovery mechanics:
+    - RESTing God near a settlement with an infirmary and medicine consumes 1 MEDICINE unit and doubles regional healing from 20 to 40 per turn.
+    - Progresses wound healing: minor bruises heal cleanly; severe tears and fractures require medical treatment and heal into permanent `Scar` records on the God.
+    - Emits authoritative `GOD_HEALED` history events upon recovery.
+  - Updated UI `describeGod` in `src/ui/godView.ts` to surface active wounds, severity, and accumulated scars.
+  - Updated determinism fixtures with new golden hashes.
+- **Validation:**
+  - `npm run typecheck`: clean
+  - `npm run lint`: clean (0 errors, 0 warnings)
+  - `tests/sim/wounds.test.ts`: 6/6 passed
+  - `tests/sim/selfcheck.test.ts`: passed with updated determinism hashes
+  - Vitest sim suite: 14 test files, 80/80 passed
+  - `npm run build`: built in 615ms
+  - Playwright E2E: 20/20 passed across desktop and mobile viewports
 - **Commit:** pending push
-- **Next Candidate:** Regional Anatomical Wounding & Scar History (God 3 of 4).
+- **Next Candidate:** Permanent Death & Corpse Geography (God 4 of 4).
+
 
 
 

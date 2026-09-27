@@ -7,8 +7,9 @@ import { GOD_RULES } from '../data/rules.ts';
 import { distance } from '../world/hex.ts';
 import { OpenSet } from '../world/path.ts';
 import { evaluateTransition, type Knowledge, type Pose } from './body.ts';
-import { apForFatigue, type PlanStep, type RouteMode } from './god.ts';
+import { apForFatigue, type PlanStep, type RegionHealth, type RouteMode } from './god.ts';
 import type { BodyAction } from './sweep.ts';
+import type { Wound } from './wounds.ts';
 
 const ACTIONS: readonly BodyAction[] = ['FORWARD', 'TURN_LEFT', 'TURN_RIGHT'];
 
@@ -150,14 +151,22 @@ export interface RoutePreview {
 
 export function previewRoute(
   knowledge: Knowledge,
-  god: { readonly ownerId: number; readonly maskName: string; readonly anchor: number; readonly heading: number; readonly fatigue: number },
+  god: {
+    readonly ownerId: number;
+    readonly maskName: string;
+    readonly anchor: number;
+    readonly heading: number;
+    readonly fatigue: number;
+    readonly regionHealth?: RegionHealth | undefined;
+    readonly wounds?: readonly Wound[] | undefined;
+  },
   waypoints: readonly number[],
 ): RoutePreview {
   const start = { anchor: god.anchor, heading: god.heading };
   const direct = planRoute(knowledge, god.ownerId, god.maskName, start, waypoints, 'DIRECT');
   const needsConsent = direct.ok && (direct.civilianCollateral.length > 0 || direct.trespass.length > 0);
   const safe = needsConsent ? planRoute(knowledge, god.ownerId, god.maskName, start, waypoints, 'SAFE') : null;
-  const apPerTurn = apForFatigue(god.fatigue);
+  const apPerTurn = apForFatigue(god.fatigue, god);
   const estimate = direct.ok
     ? {
         apPerTurn,

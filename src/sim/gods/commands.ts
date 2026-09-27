@@ -50,7 +50,7 @@ export function validateGodCommand(state: CampaignState, command: GodCommand): V
       if (waypoints.some((cell) => !Number.isInteger(cell) || cell < 0 || cell >= cells)) return fail('UNSUPPORTED_STATE', 'waypoint outside the map');
       if (routeMode !== 'SAFE' && routeMode !== 'DIRECT') return fail('UNSUPPORTED_STATE', 'unknown route mode');
       if (then !== null && then !== 'FEED' && then !== 'REST') return fail('UNSUPPORTED_STATE', 'unknown follow-up action');
-      if (apForFatigue(god.fatigue) === 0) return fail('INSUFFICIENT_AP', 'exhausted (fatigue 100): only REST, FEED or HOLD are legal');
+      if (apForFatigue(god.fatigue, god) === 0) return fail('INSUFFICIENT_AP', 'exhausted (fatigue 100): only REST, FEED or HOLD are legal');
       const plan = planForCommand(state, god, command);
       if (!plan.ok) {
         if (plan.failure === 'BUDGET_EXCEEDED') return fail('BUDGET_EXCEEDED', `route search budget exhausted at waypoint ${plan.waypointIndex + 1}; choose a closer waypoint`);
@@ -68,7 +68,7 @@ export function validateGodCommand(state: CampaignState, command: GodCommand): V
     case 'GOD_STANCE':
       return STANCES.includes(command.options.stance) ? { ok: true } : fail('UNSUPPORTED_STATE', 'unknown stance');
     case 'GOD_GUARD': {
-      if (apForFatigue(god.fatigue) < 2) return fail('INSUFFICIENT_AP', 'GUARD requires at least 2 AP');
+      if (apForFatigue(god.fatigue, god) < 2) return fail('INSUFFICIENT_AP', 'GUARD requires at least 2 AP');
       if (command.options.targetSettlementId !== undefined) {
         const target = state.settlements.find((s) => s.id === command.options.targetSettlementId);
         if (!target || target.ownerId !== god.ownerId) return fail('UNSUPPORTED_STATE', 'target settlement must belong to this civilization');
@@ -76,7 +76,7 @@ export function validateGodCommand(state: CampaignState, command: GodCommand): V
       return { ok: true };
     }
     case 'GOD_STRIKE': {
-      if (apForFatigue(god.fatigue) < 2) return fail('INSUFFICIENT_AP', 'STRIKE requires at least 2 AP');
+      if (apForFatigue(god.fatigue, god) < 2) return fail('INSUFFICIENT_AP', 'STRIKE requires at least 2 AP');
       const targetCell = command.options.targetCell;
       if (targetCell < 0 || targetCell >= state.map.elevation.length) return fail('UNSUPPORTED_STATE', 'target cell outside map');
       const cells = occupiedCells(state.map, god.maskName, god) ?? [];
@@ -86,7 +86,7 @@ export function validateGodCommand(state: CampaignState, command: GodCommand): V
       return { ok: true };
     }
     case 'GOD_CULTIVATE': {
-      if (apForFatigue(god.fatigue) < 2) return fail('INSUFFICIENT_AP', 'CULTIVATE requires at least 2 AP');
+      if (apForFatigue(god.fatigue, god) < 2) return fail('INSUFFICIENT_AP', 'CULTIVATE requires at least 2 AP');
       const targetCell = command.options.targetCell;
       if (targetCell < 0 || targetCell >= state.map.elevation.length) return fail('UNSUPPORTED_STATE', 'target cell outside map');
       const cells = occupiedCells(state.map, god.maskName, god) ?? [];
@@ -95,7 +95,7 @@ export function validateGodCommand(state: CampaignState, command: GodCommand): V
       return { ok: true };
     }
     case 'GOD_ASSIST': {
-      if (apForFatigue(god.fatigue) < 2) return fail('INSUFFICIENT_AP', 'ASSIST requires at least 2 AP');
+      if (apForFatigue(god.fatigue, god) < 2) return fail('INSUFFICIENT_AP', 'ASSIST requires at least 2 AP');
       const settlement = state.settlements.find((s) => s.id === command.options.settlementId);
       if (!settlement || settlement.ownerId !== god.ownerId) return fail('UNSUPPORTED_STATE', 'assisted settlement must belong to this civilization');
       const cells = occupiedCells(state.map, god.maskName, god) ?? [];

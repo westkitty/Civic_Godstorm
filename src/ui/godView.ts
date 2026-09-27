@@ -114,7 +114,7 @@ export function buildWorldSnapshot(
           pose: bodyPose(g),
           // Life stages from age arrive with the M06 age rules; every God is prime until then.
           stage: 'prime' as const,
-          injured: g.regionHealth.locomotor < GOD_RULES.regionHealth,
+          injured: g.regionHealth.locomotor < GOD_RULES.regionHealth || (g.wounds?.some((w) => w.region === 'locomotor') ?? false),
         },
       })),
       ...[...foreign].map(([id, cells]) => ({ id, own: false, cells, heading: 0 })),
@@ -180,17 +180,19 @@ export function describeGod(view: ObservationView, god: GodState): GodStatusText
   } else if (!danger && bracket === 'ANCIENT' && longevity < 5) {
     danger = `Ancient decay: losing ${5 - longevity} vital health/turn due to insufficient longevity support (${longevity}/5). Construct infirmaries or supply medicine.`;
   }
-  return {
-    order: orderText,
-    next,
-    destination,
-    arrival,
-    reserve: `${(god.reserve / 100).toFixed(0)} of ${size.reserve} nutrition (about ${reserveTurns} turn(s) of upkeep)`,
-    fatigue: `${god.fatigue} / 100 (${apPerTurn} AP per turn)`,
-    health: `${god.vitalHealth} / ${size.health} vital (${bracket.toLowerCase()}, age ${god.age}); longevity ${longevity}/5`,
-    danger,
-  };
-}
+    const woundsText = god.wounds?.length ? `${god.wounds.length} wound(s)` : 'no active wounds';
+    const scarsText = god.scars?.length ? `, ${god.scars.length} scar(s)` : '';
+    return {
+      order: orderText,
+      next,
+      destination,
+      arrival,
+      reserve: `${(god.reserve / 100).toFixed(0)} of ${size.reserve} nutrition (about ${reserveTurns} turn(s) of upkeep)`,
+      fatigue: `${god.fatigue} / 100 (${apPerTurn} AP per turn)`,
+      health: `${god.vitalHealth} / ${size.health} vital (${bracket.toLowerCase()}, age ${god.age}); ${woundsText}${scarsText}; longevity ${longevity}/5`,
+      danger,
+    };
+  }
 
 export function describeDraft(view: ObservationView, command: Command): string {
   switch (command.kind) {

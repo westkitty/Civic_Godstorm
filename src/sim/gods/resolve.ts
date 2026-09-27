@@ -13,6 +13,7 @@ import { evaluateTransition, occupiedCells, type TransitionVerdict } from './bod
 import { consentCovers } from './commands.ts';
 import { apForFatigue, sizeRules, type GodState, type MoveOrder } from './god.ts';
 import { ageBracketFor, chronicIntegrityLoss } from './lifecycle.ts';
+import { applyMedicalCare, hasFeedingImpairment, progressWoundHealing } from './wounds.ts';
 
 interface TurnContext {
   apRemaining: number;
@@ -62,7 +63,10 @@ function feed(state: CampaignState, god: GodState, ctx: TurnContext): void {
     units -= take;
     taken += take;
   }
-  const gained = taken * GOD_RULES.biomassPerNutrition;
+  let gained = taken * GOD_RULES.biomassPerNutrition;
+  if (hasFeedingImpairment(god)) {
+    gained = Math.floor((gained * 3) / 4); // Section 4.7: damaged feeding apparatus reduces food conversion
+  }
   god.reserve += gained;
   ctx.nutritionGained += gained;
   ctx.fed = true;
@@ -113,9 +117,9 @@ export function resolveGods(state: CampaignState): GodTurnSummary[] {
   const gods = state.gods.filter((g) => g.lifecycle === 'ALIVE').sort((a, b) => a.id - b.id);
   const contexts = new Map<number, TurnContext>();
   for (const god of gods) {
-    const exhausted = apForFatigue(god.fatigue) === 0;
+    const exhausted = apForFatigue(god.fatigue, god) === 0;
     contexts.set(god.id, {
-      apRemaining: god.order.kind === 'REST' ? 0 : exhausted && god.order.kind === 'FEED' ? GOD_RULES.feedAp : apForFatigue(god.fatigue),
+      apRemaining: god.order.kind === 'REST' ? 0 : exhausted && god.order.kind === 'FEED' ? GOD_RULES.feedAp : apForFatigue(god.fatigue, god),
       apSpent: 0,
       movementAp: 0,
       firstForwardDone: false,
@@ -338,9 +342,31 @@ export function resolveGods(state: CampaignState): GodTurnSummary[] {
     if (ctx.rested) {
       god.fatigue -= GOD_RULES.restFatigueRecovery;
       if (shortfall === 0) {
+        const medical = applyMedicalCare(state, god);
+        const regionHeal = medical.consumedMedicine ? GOD_RULES.restRegionHeal * 2 : GOD_RULES.restRegionHeal;
         god.vitalHealth = Math.min(size.health, god.vitalHealth + GOD_RULES.restVitalHeal);
         for (const region of Object.keys(god.regionHealth) as (keyof GodState['regionHealth'])[]) {
-          god.regionHealth[region] = Math.min(GOD_RULES.regionHealth, god.regionHealth[region] + GOD_RULES.restRegionHeal);
+          god.regionHealth[region] = Math.min(GOD_RULES.regionHealth, god.regionHealth[region] + regionHeal);
+        }
+        const { healed, newScars } = progressWoundHealing(god, state.turn, medical);
+        for (const h of healed) {
+          state.history.push({
+            eventId: state.history.length + 1,
+            turn: state.turn,
+            impulse: 0,
+            type: 'GOD_HEALED',
+            actorIds: [god.id],
+            locationIds: [god.anchor],
+            causeIds: [],
+            observerCivIds: [god.ownerId],
+            payload: {
+              godId: god.id,
+              region: h.region,
+              woundType: h.type,
+              scarCreated: newScars.some((s) => s.region === h.region) ? 1 : 0,
+            },
+            schemaVersion: 1,
+          });
         }
       }
     }
