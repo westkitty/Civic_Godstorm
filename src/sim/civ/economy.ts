@@ -7,7 +7,7 @@ import { forestrySite, housingCapacityMilli, laborMilli, quarrySite } from '../c
 import { occupiedCells } from '../gods/body.ts';
 import { checked, units } from '../core/quantity.ts';
 import type { CampaignState, SettlementState, SettlementTurnSummary } from '../core/state.ts';
-import { ECONOMY_RULES, PHYSICAL_RESOURCES, type BuildKind, type PhysicalResource } from '../data/rules.ts';
+import { ECONOMY_RULES, PHYSICAL_RESOURCES, WORLD_RULES, type BuildKind, type PhysicalResource } from '../data/rules.ts';
 
 const TRIM_ORDER = ['builder', 'quarry', 'forestry', 'farm'] as const;
 
@@ -37,10 +37,12 @@ export function welfareOf(settlement: SettlementState, foodCoverage: number): nu
   const weights = ECONOMY_RULES.welfareWeights;
   const population = settlement.populationMilli;
   const housing = population === 0 ? 1000 : Math.min(1000, Math.floor((housingCapacityMilli(settlement) * 1000) / population));
+  const healthBonus = (settlement.buildings?.infirmary ?? 0) * ECONOMY_RULES.infirmaryHealthBonus;
+  const health = Math.min(1000, ECONOMY_RULES.baseHealth + healthBonus);
   return Math.floor(
     (weights.food * foodCoverage +
       weights.housing * housing +
-      weights.health * ECONOMY_RULES.baseHealth +
+      weights.health * health +
       weights.safety * ECONOMY_RULES.baseSafety +
       weights.participation * settlement.legitimacy) /
       1000,
@@ -98,6 +100,31 @@ export function runSettlementTurn(state: CampaignState, settlement: SettlementSt
     }
     map.stoneReserve[quarry] = (map.stoneReserve[quarry] as number) - Math.ceil(stone / 100);
     produced.STONE += stone;
+    if ((map.elevation[quarry] as number) >= WORLD_RULES.uplandAbove) {
+      const ore = carryDivide(settlement, 'quarry_ore', 100 * settlement.jobs.quarry, 1000);
+      produced.ORE += ore;
+    }
+  }
+
+  // Workshops: convert TIMBER and STONE/ORE into TOOLS.
+  if ((settlement.buildings?.workshop ?? 0) > 0) {
+    const workshops = settlement.buildings.workshop;
+    for (let w = 0; w < workshops; w += 1) {
+      if (settlement.storage.TIMBER >= units(1) && settlement.storage.ORE >= units(1)) {
+        settlement.storage.TIMBER -= units(1);
+        settlement.storage.ORE -= units(1);
+        produced.TOOLS += units(2);
+      } else if (settlement.storage.TIMBER >= units(1) && settlement.storage.STONE >= units(1)) {
+        settlement.storage.TIMBER -= units(1);
+        settlement.storage.STONE -= units(1);
+        produced.TOOLS += units(1);
+      }
+    }
+  }
+
+  // Archives: generate KNOWLEDGE from research.
+  if ((settlement.buildings?.archive ?? 0) > 0) {
+    civ.knowledge += units(settlement.buildings.archive * ECONOMY_RULES.archiveKnowledgeYield);
   }
 
   produced.FOOD += units(ECONOMY_RULES.baseFoodYield);
@@ -112,12 +139,18 @@ export function runSettlementTurn(state: CampaignState, settlement: SettlementSt
   settlement.foodCoverage = coverage;
   if (coverage < 1000) warnings.push('FOOD_SHORTAGE');
 
-  // Overflow above storage capacity spoils at 10% per turn.
-  const capacity = units(ECONOMY_RULES.baseStorage);
+  // Overflow above storage capacity spoils at 10% per turn (granaries and depots expand capacity and reduce spoilage).
+  const foodCapacity = units(ECONOMY_RULES.baseStorage + (settlement.buildings?.granary ?? 0) * ECONOMY_RULES.granaryStorageBonus);
+  const materialCapacity = units(ECONOMY_RULES.baseStorage + (settlement.buildings?.depot ?? 0) * ECONOMY_RULES.depotStorageBonus);
+  const foodSpoilageRate = (settlement.buildings?.granary ?? 0) > 0 ? 5 : ECONOMY_RULES.spoilagePercent;
+  const matSpoilageRate = (settlement.buildings?.depot ?? 0) > 0 ? 5 : ECONOMY_RULES.spoilagePercent;
+
   for (const resource of PHYSICAL_RESOURCES) {
-    const overflow = settlement.storage[resource] - capacity;
+    const cap = resource === 'FOOD' ? foodCapacity : materialCapacity;
+    const rate = resource === 'FOOD' ? foodSpoilageRate : matSpoilageRate;
+    const overflow = settlement.storage[resource] - cap;
     if (overflow > 0) {
-      const loss = Math.floor((overflow * ECONOMY_RULES.spoilagePercent) / 100);
+      const loss = Math.floor((overflow * rate) / 100);
       settlement.storage[resource] -= loss;
       spoiled[resource] = loss;
       if (loss > 0) warnings.push(`SPOILAGE:${resource}`);
@@ -172,8 +205,21 @@ export function runSettlementTurn(state: CampaignState, settlement: SettlementSt
     if (item.workDone >= item.workRequired) {
       settlement.queue.shift();
       completed.push(item.kind);
-      if (item.kind === 'DWELLING') settlement.dwellings += 1;
-      else settlement.farmSites.push({ cell: item.cell });
+      if (item.kind === 'DWELLING') {
+        settlement.dwellings += 1;
+      } else if (item.kind === 'FARM') {
+        settlement.farmSites.push({ cell: item.cell });
+      } else if (item.kind === 'GRANARY') {
+        settlement.buildings.granary += 1;
+      } else if (item.kind === 'WORKSHOP') {
+        settlement.buildings.workshop += 1;
+      } else if (item.kind === 'DEPOT') {
+        settlement.buildings.depot += 1;
+      } else if (item.kind === 'ARCHIVE') {
+        settlement.buildings.archive += 1;
+      } else if (item.kind === 'INFIRMARY') {
+        settlement.buildings.infirmary += 1;
+      }
     }
   }
   if (work > 0 && settlement.jobs.builder > 0) warnings.push('BUILDERS_IDLE');

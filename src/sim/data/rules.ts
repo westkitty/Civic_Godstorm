@@ -125,16 +125,25 @@ export const ECONOMY_RULES = {
   famineGraceTurns: 2,
   /** M01 default: famine deaths per turn = ceil(unfed milli-population * 10%). */
   famineDeathPercent: 10,
+  granaryStorageBonus: 60,
+  depotStorageBonus: 60,
+  archiveKnowledgeYield: 2,
+  infirmaryHealthBonus: 250,
   /** M01 default: bounded build queue length per settlement. */
   maxQueueLength: 8,
 } as const;
 
-export type BuildKind = 'DWELLING' | 'FARM';
+export type BuildKind = 'DWELLING' | 'FARM' | 'GRANARY' | 'WORKSHOP' | 'DEPOT' | 'ARCHIVE' | 'INFIRMARY';
 
-/** Section 6.3 costs in whole units; work in whole work units. */
+/** Section 6.3/6.4 costs in whole units; work in whole work units. */
 export const BUILD_RULES: Readonly<Record<BuildKind, { readonly materials: Partial<Record<PhysicalResource, number>>; readonly work: number }>> = {
   DWELLING: { materials: { TIMBER: 12, STONE: 8 }, work: 10 },
   FARM: { materials: { TIMBER: 4 }, work: 4 },
+  GRANARY: { materials: { TIMBER: 10, STONE: 15 }, work: 12 },
+  WORKSHOP: { materials: { TIMBER: 16, STONE: 12 }, work: 16 },
+  DEPOT: { materials: { TIMBER: 14, STONE: 10 }, work: 12 },
+  ARCHIVE: { materials: { TIMBER: 12, STONE: 14 }, work: 14 },
+  INFIRMARY: { materials: { TIMBER: 10, STONE: 10 }, work: 12 },
 };
 
 /** God rules (master Sections 2.3, 4.5, 4.6, 16.1, 16.3, 16.4). */

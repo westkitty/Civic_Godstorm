@@ -69,6 +69,14 @@ export interface ConstructionItem {
 
 export type JobAllocation = Record<Job, number>;
 
+export interface SettlementBuildings {
+  granary: number;
+  workshop: number;
+  depot: number;
+  archive: number;
+  infirmary: number;
+}
+
 export interface SettlementState {
   readonly id: number;
   readonly ownerId: number;
@@ -77,6 +85,7 @@ export interface SettlementState {
   readonly originalCapitalOf: number | null;
   populationMilli: number;
   dwellings: number;
+  buildings: SettlementBuildings;
   hallIntegrity: number;
   farmSites: FarmSite[];
   /** Assigned milli-workers per job. */

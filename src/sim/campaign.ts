@@ -78,6 +78,7 @@ export function createCampaign(options: NewCampaignOptions): CampaignState {
         originalCapitalOf: civId,
         populationMilli: ECONOMY_RULES.startingPopulationUnits * 1000,
         dwellings: 0,
+        buildings: { granary: 0, workshop: 0, depot: 0, archive: 0, infirmary: 0 },
         hallIntegrity: 100,
         farmSites: startFarmCells(map, cell).map((farmCell) => ({ cell: farmCell })),
         // Section 16.5 guaranteed opening: two farmers, one materials worker, 750 milli builders.

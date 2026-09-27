@@ -116,17 +116,23 @@ function validateJobs(state: CampaignState, settlement: SettlementState, jobs: J
 
 function validateBuild(state: CampaignState, settlement: SettlementState, build: BuildKind, cell: number | null): ValidationResult {
   if (settlement.queue.length >= ECONOMY_RULES.maxQueueLength) return fail('CAPACITY_REACHED', 'build queue is full');
-  if (build === 'DWELLING') {
-    if (cell !== settlement.cell) return fail('UNSUPPORTED_STATE', 'DWELLING targets its own settlement cell');
-    const planned = settlement.dwellings + settlement.queue.filter((item) => item.kind === 'DWELLING').length;
-    if (planned >= ECONOMY_RULES.maxDistrictParcels) return fail('CAPACITY_REACHED', 'all six district parcels are used');
-  } else {
+  if (build === 'FARM') {
     if (cell === null || !neighbors(state.map, settlement.cell).includes(cell)) return fail('UNSUPPORTED_STATE', 'FARM must target an adjacent cell');
     if (isWater(state.map, cell)) return fail('WRONG_DOMAIN', 'FARM cannot be built on water');
     if ((state.map.fertility[cell] as number) < WORLD_RULES.minFarmFertility) return fail('PREREQUISITE_MISSING', 'fertility below 250');
     const taken = state.settlements.some((other) => other.cell === cell || other.farmSites.some((site) => site.cell === cell)
       || other.queue.some((item) => item.kind === 'FARM' && item.cell === cell));
     if (taken) return fail('CAPACITY_REACHED', 'cell already holds a settlement or farm');
+  } else {
+    if (cell !== settlement.cell) return fail('UNSUPPORTED_STATE', `${build} targets its own settlement cell`);
+    const districts = settlement.dwellings
+      + (settlement.buildings?.granary ?? 0)
+      + (settlement.buildings?.workshop ?? 0)
+      + (settlement.buildings?.depot ?? 0)
+      + (settlement.buildings?.archive ?? 0)
+      + (settlement.buildings?.infirmary ?? 0);
+    const planned = districts + settlement.queue.filter((item) => item.kind !== 'FARM').length;
+    if (planned >= ECONOMY_RULES.maxDistrictParcels) return fail('CAPACITY_REACHED', 'all six district parcels are used');
   }
   for (const [resource, amount] of Object.entries(BUILD_RULES[build].materials)) {
     const key = resource as PhysicalResource;

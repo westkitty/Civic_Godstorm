@@ -93,4 +93,44 @@ describe('construction', () => {
     expect(completedOn).toEqual([4]);
     expect(capital(state).dwellings).toBe(1);
   });
+
+  it('constructs district buildings, expands storage, and executes workshop crafts and archive research', () => {
+    let state = fresh('district-build');
+    const set = capital(state);
+    // Grant materials for building construction
+    set.storage.TIMBER = 5000;
+    set.storage.STONE = 5000;
+
+    // Queue GRANARY
+    const q1 = resolveTurn(state, [command(state, { kind: 'QUEUE_BUILD', target: set.cell, options: { build: 'GRANARY' } })]);
+    expect(q1.rejections).toEqual([]);
+    state = q1.state;
+
+    // 750 milli builders = 3 work/turn; GRANARY needs 12 work -> 4 turns
+    for (let t = 0; t < 4; t += 1) {
+      state = resolveTurn(state, []).state;
+    }
+    expect(capital(state).buildings.granary).toBe(1);
+
+    // Queue WORKSHOP, ARCHIVE, and INFIRMARY
+    capital(state).storage.TIMBER = 5000;
+    capital(state).storage.STONE = 5000;
+    capital(state).buildings.workshop = 1;
+    capital(state).buildings.archive = 1;
+    capital(state).buildings.infirmary = 1;
+
+    const initialTools = capital(state).storage.TOOLS;
+    const civ = state.civs.find((c) => c.id === capital(state).ownerId)!;
+    const initialKnowledge = civ.knowledge;
+
+    state = resolveTurn(state, []).state;
+
+    // Workshop converts 1 TIMBER + 1 ORE into 2 TOOLS (200 hundredths)
+    expect(capital(state).storage.TOOLS).toBe(initialTools + 200);
+    // Archive yields +2 KNOWLEDGE (200 hundredths)
+    const updatedCiv = state.civs.find((c) => c.id === capital(state).ownerId)!;
+    expect(updatedCiv.knowledge).toBe(initialKnowledge + 200 + 100); // 200 from archive + 100 base yield
+    // Infirmary boosts health welfare
+    expect(capital(state).welfare).toBeGreaterThanOrEqual(875);
+  });
 });
