@@ -5,6 +5,7 @@ import type { Command, ConsentScope } from '../sim/core/commands.ts';
 import { GOD_RULES } from '../sim/data/rules.ts';
 import { evaluateTransition, occupiedCells } from '../sim/gods/body.ts';
 import { apForFatigue, sizeRules, type FollowUp, type GodState, type RouteMode } from '../sim/gods/god.ts';
+import { ageBracketFor, calculateLongevitySupport, isAgingWarningActive, turnsUntilAncient } from '../sim/gods/lifecycle.ts';
 import { previewRoute, type RoutePlan, type RoutePreview } from '../sim/gods/planner.ts';
 import { observedKnowledge, type ObservationView } from '../sim/observation/observation.ts';
 import { offsetOfIndex } from '../sim/world/hex.ts';
@@ -167,10 +168,18 @@ export function describeGod(view: ObservationView, god: GodState): GodStatusText
     }
   } else if (order.kind === 'FEED') orderText = 'Feeding next turn';
   else if (order.kind === 'REST') orderText = 'Resting next turn';
-  if (god.status.kind === 'HALTED' && order.kind !== 'MOVE') orderText = `Halted: ${god.status.reason.replaceAll('_', ' ').toLowerCase()}`;
-  const danger = god.reserve < GOD_RULES.feedTurnsOfUpkeep * size.upkeep * 100
+  const bracket = ageBracketFor(god.age);
+  const warning = isAgingWarningActive(god.age);
+  const turnsToAncient = turnsUntilAncient(god.age);
+  const longevity = calculateLongevitySupport(view.ownSettlements, view.dims, god.anchor);
+  let danger = god.reserve < GOD_RULES.feedTurnsOfUpkeep * size.upkeep * 100
     ? `Nutrition runs out within two turns (${reserveTurns} turn(s) left). Order FEED on wild land.`
     : null;
+  if (!danger && warning) {
+    danger = `Aging warning: ${turnsToAncient} turn(s) until Ancient age. Longevity support is ${longevity} / 5 (5 required to prevent chronic decay).`;
+  } else if (!danger && bracket === 'ANCIENT' && longevity < 5) {
+    danger = `Ancient decay: losing ${5 - longevity} vital health/turn due to insufficient longevity support (${longevity}/5). Construct infirmaries or supply medicine.`;
+  }
   return {
     order: orderText,
     next,
@@ -178,7 +187,7 @@ export function describeGod(view: ObservationView, god: GodState): GodStatusText
     arrival,
     reserve: `${(god.reserve / 100).toFixed(0)} of ${size.reserve} nutrition (about ${reserveTurns} turn(s) of upkeep)`,
     fatigue: `${god.fatigue} / 100 (${apPerTurn} AP per turn)`,
-    health: `${god.vitalHealth} / ${size.health} vital; no serious wounds`,
+    health: `${god.vitalHealth} / ${size.health} vital (${bracket.toLowerCase()}, age ${god.age}); longevity ${longevity}/5`,
     danger,
   };
 }

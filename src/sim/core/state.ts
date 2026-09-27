@@ -116,7 +116,8 @@ export type HistoryEventType =
   | 'GOD_STRIKE'
   | 'GOD_ASSIST'
   | 'GOD_CULTIVATE'
-  | 'GOD_GUARD';
+  | 'GOD_GUARD'
+  | 'GOD_AGED';
 
 export interface HistoryEvent {
   readonly eventId: number;

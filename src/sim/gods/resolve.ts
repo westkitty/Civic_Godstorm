@@ -12,6 +12,7 @@ import { cellsWithin, distance } from '../world/hex.ts';
 import { evaluateTransition, occupiedCells, type TransitionVerdict } from './body.ts';
 import { consentCovers } from './commands.ts';
 import { apForFatigue, sizeRules, type GodState, type MoveOrder } from './god.ts';
+import { ageBracketFor, chronicIntegrityLoss } from './lifecycle.ts';
 
 interface TurnContext {
   apRemaining: number;
@@ -344,9 +345,37 @@ export function resolveGods(state: CampaignState): GodTurnSummary[] {
       }
     }
     god.fatigue = Math.max(0, Math.min(100, god.fatigue));
+    const prevBracket = ageBracketFor(god.age);
     god.age += 1;
-    // M02 boundary: the permanent-death transaction (remains, memorial, succession) is M05/M07 work;
-    // here a God reaching zero vital health only stops accepting living commands.
+    const currentBracket = ageBracketFor(god.age);
+
+    if (currentBracket !== prevBracket) {
+      state.history.push({
+        eventId: state.history.length + 1,
+        turn: state.turn,
+        impulse: 0,
+        type: 'GOD_AGED',
+        actorIds: [god.id],
+        locationIds: [god.anchor],
+        causeIds: [],
+        observerCivIds: [god.ownerId],
+        payload: {
+          godId: god.id,
+          age: god.age,
+          bracket: currentBracket,
+        },
+        schemaVersion: 1,
+      });
+    }
+
+    if (currentBracket === 'ANCIENT') {
+      const decay = chronicIntegrityLoss(state, god);
+      if (decay > 0) {
+        god.vitalHealth = Math.max(0, god.vitalHealth - decay);
+      }
+    }
+
+    // When a God reaches zero vital health, it stops accepting living commands (mortality transition).
     if (god.vitalHealth === 0) god.lifecycle = 'DEAD';
     return {
       godId: god.id,

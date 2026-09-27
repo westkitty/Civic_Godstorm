@@ -21,7 +21,7 @@
 | **B** | Civilization economy / settlement / 4X depth | 1 | **4** |
 | **C** | Two-way God ↔ civilization dependency | 1 | **2** |
 | **D** | Reactive ecology, terrain and infrastructure | 1 | **2** |
-| **E** | Godform, injury, aging, death and remains | 1 | 1 |
+| **E** | Godform, injury, aging, death and remains | 1 | **2** |
 | **F** | Diplomacy, territorial rights and information boundaries | 1 | 1 |
 | **G** | Warfare, logistics and strategic consequence | 0 | 0 |
 | **H** | AI parity and autonomous civilization behavior | 1 | 1 |
@@ -143,8 +143,31 @@
   - Vitest sim suite: 12 test files, 69/69 passed
   - `npm run build`: built in 342ms
   - Playwright E2E: 20/20 passed across desktop and mobile viewports
+- **Commit:** `6da256b`
+
+### `uplift(06)`: Continuous Aging & Lifecycle Progression
+- **Goal:** Implement the authoritative Section 4.7 continuous aging and lifecycle mechanics: age brackets (YOUNG 0–59, MATURE 60–159, ANCIENT 160+), 20-turn pre-Ancient UI warnings (140–159), longevity support calculations (capped at 5), and chronic integrity decay.
+- **Category:** Godform, injury, aging, death and remains (1 of 4).
+- **Scorecard Axes Advanced:** E (1 → 2: Godform, injury, aging, death and remains advanced to functional but shallow).
+- **Master-plan Requirements Advanced:** Sections 4.7, 16.1.
+- **Meaningful Result:**
+  - Created `src/sim/gods/lifecycle.ts` defining `AgeBracket` (`YOUNG`, `MATURE`, `ANCIENT`), `AGE_RULES`, `ageBracketFor`, `isAgingWarningActive`, and `turnsUntilAncient`.
+  - Implemented `calculateLongevitySupport` deriving civic medical care from completed settlement infirmaries (+1 each), proximity medical care (+1 when God is within 2 hexes of an infirmary), stored medicine stocks (+1 when civ holds >= 10 whole units of MEDICINE), and biomedical knowledge (`T-ECO-2`, `T-ANA-3`, `T-ECO-3`). Longevity support is capped at 5.
+  - Implemented deterministic chronic integrity decay: Ancient Gods suffer 5 vital health loss per turn unless arrested by longevity support (`Math.max(0, 5 - longevitySupport)`).
+  - Emits authoritative `GOD_AGED` historical event whenever a God crosses age bracket boundaries (at age 60 and 160).
+  - Updated `describeGod` in `src/ui/godView.ts` to surface age bracket, turns to Ancient, aging warnings, longevity rating, and chronic decay status.
+  - Retained complete determinism: golden vectors and 30-turn headless campaign hashes remain 100% identical.
+- **Validation:**
+  - `npm run typecheck`: clean
+  - `npm run lint`: clean (0 errors, 0 warnings)
+  - `tests/sim/lifecycle.test.ts`: 5/5 passed
+  - `tests/sim/selfcheck.test.ts`: passed (deterministic fixture intact)
+  - Vitest sim suite: 13 test files, 74/74 passed
+  - `npm run build`: built in 345ms
+  - Playwright E2E: 20/20 passed across desktop and mobile viewports
 - **Commit:** pending push
-- **Next Candidate:** Continuous Aging & Lifecycle Progression (God 2 of 4).
+- **Next Candidate:** Regional Anatomical Wounding & Scar History (God 3 of 4).
+
 
 
 
