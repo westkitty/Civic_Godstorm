@@ -6,8 +6,11 @@ import type { Command, ConsentScope, ValidationResult } from '../core/commands.t
 import type { CampaignState } from '../core/state.ts';
 import { GOD_RULES } from '../data/rules.ts';
 import { buildObservationView, observedKnowledge } from '../observation/observation.ts';
-import { apForFatigue, type GodState, type Stance } from './god.ts';
+import { apForFatigue, sizeRules, type GodState, type Stance } from './god.ts';
 import { planRoute, type RoutePlan } from './planner.ts';
+import { distance } from '../world/hex.ts';
+import { occupiedCells } from './body.ts';
+import { units } from '../core/quantity.ts';
 
 export type GodCommand = Extract<Command, { kind: `GOD_${string}` }>;
 
@@ -64,6 +67,43 @@ export function validateGodCommand(state: CampaignState, command: GodCommand): V
       return { ok: true };
     case 'GOD_STANCE':
       return STANCES.includes(command.options.stance) ? { ok: true } : fail('UNSUPPORTED_STATE', 'unknown stance');
+    case 'GOD_GUARD': {
+      if (apForFatigue(god.fatigue) < 2) return fail('INSUFFICIENT_AP', 'GUARD requires at least 2 AP');
+      if (command.options.targetSettlementId !== undefined) {
+        const target = state.settlements.find((s) => s.id === command.options.targetSettlementId);
+        if (!target || target.ownerId !== god.ownerId) return fail('UNSUPPORTED_STATE', 'target settlement must belong to this civilization');
+      }
+      return { ok: true };
+    }
+    case 'GOD_STRIKE': {
+      if (apForFatigue(god.fatigue) < 2) return fail('INSUFFICIENT_AP', 'STRIKE requires at least 2 AP');
+      const targetCell = command.options.targetCell;
+      if (targetCell < 0 || targetCell >= state.map.elevation.length) return fail('UNSUPPORTED_STATE', 'target cell outside map');
+      const cells = occupiedCells(state.map, god.maskName, god) ?? [];
+      const adjacent = cells.some((c) => distance(state.map, c, targetCell) <= 1);
+      if (!adjacent) return fail('UNSUPPORTED_STATE', 'strike target must be adjacent to the God');
+      if (god.reserve < units(sizeRules(god).upkeep)) return fail('INSUFFICIENT_STOCK', 'insufficient nutrition reserve for strike');
+      return { ok: true };
+    }
+    case 'GOD_CULTIVATE': {
+      if (apForFatigue(god.fatigue) < 2) return fail('INSUFFICIENT_AP', 'CULTIVATE requires at least 2 AP');
+      const targetCell = command.options.targetCell;
+      if (targetCell < 0 || targetCell >= state.map.elevation.length) return fail('UNSUPPORTED_STATE', 'target cell outside map');
+      const cells = occupiedCells(state.map, god.maskName, god) ?? [];
+      const inRange = cells.some((c) => distance(state.map, c, targetCell) <= 1);
+      if (!inRange) return fail('UNSUPPORTED_STATE', 'cultivation site must be at or adjacent to the God');
+      return { ok: true };
+    }
+    case 'GOD_ASSIST': {
+      if (apForFatigue(god.fatigue) < 2) return fail('INSUFFICIENT_AP', 'ASSIST requires at least 2 AP');
+      const settlement = state.settlements.find((s) => s.id === command.options.settlementId);
+      if (!settlement || settlement.ownerId !== god.ownerId) return fail('UNSUPPORTED_STATE', 'assisted settlement must belong to this civilization');
+      const cells = occupiedCells(state.map, god.maskName, god) ?? [];
+      const inRange = cells.some((c) => distance(state.map, c, settlement.cell) <= 3);
+      if (!inRange) return fail('BODY_BLOCKED', 'God is too far from settlement to assist (maximum 3 hexes)');
+      if (god.reserve < units(sizeRules(god).upkeep)) return fail('INSUFFICIENT_STOCK', 'insufficient nutrition reserve for assist');
+      return { ok: true };
+    }
   }
 }
 
@@ -101,6 +141,22 @@ export function applyGodCommand(state: CampaignState, command: GodCommand): void
       return;
     case 'GOD_STANCE':
       god.stance = command.options.stance;
+      return;
+    case 'GOD_GUARD':
+      god.order = { kind: 'GUARD', targetSettlementId: command.options.targetSettlementId };
+      god.status = { kind: 'ACTIVE' };
+      return;
+    case 'GOD_STRIKE':
+      god.order = { kind: 'STRIKE', targetCell: command.options.targetCell };
+      god.status = { kind: 'ACTIVE' };
+      return;
+    case 'GOD_CULTIVATE':
+      god.order = { kind: 'CULTIVATE', targetCell: command.options.targetCell, adaptation: command.options.adaptation };
+      god.status = { kind: 'ACTIVE' };
+      return;
+    case 'GOD_ASSIST':
+      god.order = { kind: 'ASSIST', settlementId: command.options.settlementId, service: command.options.service };
+      god.status = { kind: 'ACTIVE' };
       return;
   }
 }

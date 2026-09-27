@@ -34,7 +34,20 @@ export interface MoveOrder {
   stepApPaid: number;
 }
 
-export type GodOrder = { readonly kind: 'HOLD' } | { readonly kind: 'FEED' } | { readonly kind: 'REST' } | MoveOrder;
+export type GuardOrder = { readonly kind: 'GUARD'; readonly targetSettlementId?: number | undefined };
+export type StrikeOrder = { readonly kind: 'STRIKE'; readonly targetCell: number };
+export type CultivateOrder = { readonly kind: 'CULTIVATE'; readonly targetCell: number; readonly adaptation?: string | undefined };
+export type AssistOrder = { readonly kind: 'ASSIST'; readonly settlementId: number; readonly service: 'CONSTRUCTION' | 'PROTECTION' | 'ECOLOGY' };
+
+export type GodOrder =
+  | { readonly kind: 'HOLD' }
+  | { readonly kind: 'FEED' }
+  | { readonly kind: 'REST' }
+  | GuardOrder
+  | StrikeOrder
+  | CultivateOrder
+  | AssistOrder
+  | MoveOrder;
 
 export type OrderStatus =
   | { readonly kind: 'IDLE' }

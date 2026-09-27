@@ -69,7 +69,15 @@ export class GameSession {
 
   /** Adds a draft; a new God order for the same actor replaces the previous God order draft. */
   addDraft(command: Command): void {
-    const isOrder = (c: Command): boolean => c.kind === 'GOD_MOVE' || c.kind === 'GOD_FEED' || c.kind === 'GOD_REST' || c.kind === 'GOD_HOLD';
+    const isOrder = (c: Command): boolean =>
+      c.kind === 'GOD_MOVE' ||
+      c.kind === 'GOD_FEED' ||
+      c.kind === 'GOD_REST' ||
+      c.kind === 'GOD_HOLD' ||
+      c.kind === 'GOD_GUARD' ||
+      c.kind === 'GOD_STRIKE' ||
+      c.kind === 'GOD_CULTIVATE' ||
+      c.kind === 'GOD_ASSIST';
     this.drafts = this.drafts.filter((c) => !(c.actorId === command.actorId && (c.kind === command.kind || (isOrder(c) && isOrder(command)))));
     this.drafts.push(command);
     this.publish(this.snapshot.lastResolution);

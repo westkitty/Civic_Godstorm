@@ -8,7 +8,7 @@ import { canonicalize } from '../core/canonical.ts';
 import type { CampaignState, GodTurnSummary } from '../core/state.ts';
 import { GOD_RULES } from '../data/rules.ts';
 import { buildObservationView, observedKnowledge, truthKnowledge, updateObservation } from '../observation/observation.ts';
-import { distance } from '../world/hex.ts';
+import { cellsWithin, distance } from '../world/hex.ts';
 import { evaluateTransition, occupiedCells, type TransitionVerdict } from './body.ts';
 import { consentCovers } from './commands.ts';
 import { apForFatigue, sizeRules, type GodState, type MoveOrder } from './god.ts';
@@ -132,7 +132,7 @@ export function resolveGods(state: CampaignState): GodTurnSummary[] {
     const impulseAp = new Map(gods.map((g) => [g.id, Math.min(GOD_RULES.maxApPerImpulse, contexts.get(g.id)?.apRemaining ?? 0)]));
     const crossings = new Map(gods.map((g) => [g.id, 0]));
 
-    // One-shot FEED order executes at the first impulse with two AP.
+    // Static God orders execute at the first impulse with two AP.
     for (const god of gods) {
       const ctx = contexts.get(god.id) as TurnContext;
       if (god.order.kind === 'FEED' && !ctx.fed && (impulseAp.get(god.id) ?? 0) >= GOD_RULES.feedAp) {
@@ -140,6 +140,100 @@ export function resolveGods(state: CampaignState): GodTurnSummary[] {
         ctx.apRemaining -= GOD_RULES.feedAp;
         ctx.apSpent += GOD_RULES.feedAp;
         feed(state, god, ctx);
+        god.order = { kind: 'HOLD' };
+        god.status = { kind: 'COMPLETE', turn: state.turn + 1 };
+      } else if (god.order.kind === 'GUARD' && (impulseAp.get(god.id) ?? 0) >= 2 && ctx.apSpent === 0) {
+        impulseAp.set(god.id, (impulseAp.get(god.id) ?? 0) - 2);
+        ctx.apRemaining -= 2;
+        ctx.apSpent += 2;
+        god.status = { kind: 'ACTIVE' };
+        state.history.push({
+          eventId: state.history.length + 1,
+          turn: state.turn,
+          impulse,
+          type: 'GOD_GUARD',
+          actorIds: [god.id],
+          locationIds: [god.anchor],
+          causeIds: [],
+          observerCivIds: [god.ownerId],
+          payload: { godId: god.id, targetSettlementId: god.order.targetSettlementId ?? -1 },
+          schemaVersion: 1,
+        });
+      } else if (god.order.kind === 'STRIKE' && (impulseAp.get(god.id) ?? 0) >= 2 && ctx.apSpent === 0) {
+        const targetCell = god.order.targetCell;
+        impulseAp.set(god.id, (impulseAp.get(god.id) ?? 0) - 2);
+        ctx.apRemaining -= 2;
+        ctx.apSpent += 2;
+        god.fatigue = Math.min(100, god.fatigue + 20);
+        const size = sizeRules(god);
+        god.reserve = Math.max(0, god.reserve - size.upkeep * 100);
+        state.map.soilDisturbance[targetCell] = Math.min(1000, (state.map.soilDisturbance[targetCell] as number) + 300);
+        ctx.disturbed.add(targetCell);
+        state.history.push({
+          eventId: state.history.length + 1,
+          turn: state.turn,
+          impulse,
+          type: 'GOD_STRIKE',
+          actorIds: [god.id],
+          locationIds: [targetCell],
+          causeIds: [],
+          observerCivIds: [god.ownerId],
+          payload: { godId: god.id, targetCell },
+          schemaVersion: 1,
+        });
+        god.order = { kind: 'HOLD' };
+        god.status = { kind: 'COMPLETE', turn: state.turn + 1 };
+      } else if (god.order.kind === 'ASSIST' && (impulseAp.get(god.id) ?? 0) >= 2 && ctx.apSpent === 0) {
+        const { settlementId, service } = god.order;
+        impulseAp.set(god.id, (impulseAp.get(god.id) ?? 0) - 2);
+        ctx.apRemaining -= 2;
+        ctx.apSpent += 2;
+        const size = sizeRules(god);
+        god.reserve = Math.max(0, god.reserve - size.upkeep * 100);
+        const settlement = state.settlements.find((s) => s.id === settlementId);
+        if (settlement) {
+          if (service === 'CONSTRUCTION' && settlement.queue.length > 0) {
+            settlement.queue[0]!.workDone += 400; // 4 work units
+          } else if (service === 'PROTECTION') {
+            settlement.legitimacy = Math.min(1000, settlement.legitimacy + 100);
+          } else if (service === 'ECOLOGY') {
+            for (const n of cellsWithin(state.map, settlement.cell, 2)) {
+              state.map.biomass[n] = Math.min(state.map.biomassCapacity[n] as number, (state.map.biomass[n] as number) + 100);
+            }
+          }
+        }
+        state.history.push({
+          eventId: state.history.length + 1,
+          turn: state.turn,
+          impulse,
+          type: 'GOD_ASSIST',
+          actorIds: [god.id],
+          locationIds: settlement ? [settlement.cell] : [],
+          causeIds: [],
+          observerCivIds: [god.ownerId],
+          payload: { godId: god.id, settlementId, service },
+          schemaVersion: 1,
+        });
+        god.order = { kind: 'HOLD' };
+        god.status = { kind: 'COMPLETE', turn: state.turn + 1 };
+      } else if (god.order.kind === 'CULTIVATE' && (impulseAp.get(god.id) ?? 0) >= 2 && ctx.apSpent === 0) {
+        const { targetCell, adaptation } = god.order;
+        impulseAp.set(god.id, (impulseAp.get(god.id) ?? 0) - 2);
+        ctx.apRemaining -= 2;
+        ctx.apSpent += 2;
+        god.fatigue = Math.min(100, god.fatigue + 10);
+        state.history.push({
+          eventId: state.history.length + 1,
+          turn: state.turn,
+          impulse,
+          type: 'GOD_CULTIVATE',
+          actorIds: [god.id],
+          locationIds: [targetCell],
+          causeIds: [],
+          observerCivIds: [god.ownerId],
+          payload: { godId: god.id, targetCell, adaptation: adaptation ?? 'NONE' },
+          schemaVersion: 1,
+        });
         god.order = { kind: 'HOLD' };
         god.status = { kind: 'COMPLETE', turn: state.turn + 1 };
       }

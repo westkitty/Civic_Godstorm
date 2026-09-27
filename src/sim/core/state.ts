@@ -109,7 +109,14 @@ export interface SettlementState {
   legitimacy: number;
 }
 
-export type HistoryEventType = 'CITY_FOUNDED' | 'TECH_RESEARCHED' | 'POLICY_ADOPTED';
+export type HistoryEventType =
+  | 'CITY_FOUNDED'
+  | 'TECH_RESEARCHED'
+  | 'POLICY_ADOPTED'
+  | 'GOD_STRIKE'
+  | 'GOD_ASSIST'
+  | 'GOD_CULTIVATE'
+  | 'GOD_GUARD';
 
 export interface HistoryEvent {
   readonly eventId: number;

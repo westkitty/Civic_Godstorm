@@ -65,7 +65,11 @@ export type Command =
   | (CommandBase & { readonly kind: 'GOD_FEED'; readonly options: Record<string, never> })
   | (CommandBase & { readonly kind: 'GOD_REST'; readonly options: Record<string, never> })
   | (CommandBase & { readonly kind: 'GOD_HOLD'; readonly options: Record<string, never> })
-  | (CommandBase & { readonly kind: 'GOD_STANCE'; readonly options: { readonly stance: Stance } });
+  | (CommandBase & { readonly kind: 'GOD_STANCE'; readonly options: { readonly stance: Stance } })
+  | (CommandBase & { readonly kind: 'GOD_GUARD'; readonly options: { readonly targetSettlementId?: number } })
+  | (CommandBase & { readonly kind: 'GOD_STRIKE'; readonly options: { readonly targetCell: number } })
+  | (CommandBase & { readonly kind: 'GOD_CULTIVATE'; readonly options: { readonly targetCell: number; readonly adaptation?: string } })
+  | (CommandBase & { readonly kind: 'GOD_ASSIST'; readonly options: { readonly settlementId: number; readonly service: 'CONSTRUCTION' | 'PROTECTION' | 'ECOLOGY' } });
 
 export interface Rejection {
   readonly commandId: string;

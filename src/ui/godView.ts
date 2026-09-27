@@ -199,6 +199,14 @@ export function describeDraft(view: ObservationView, command: Command): string {
       return 'God holds position (itinerary cancelled)';
     case 'GOD_STANCE':
       return `God stance: ${command.options.stance.toLowerCase()}`;
+    case 'GOD_GUARD':
+      return 'God guards position and surrounding territory';
+    case 'GOD_STRIKE':
+      return `God strikes target cell ${command.options.targetCell}`;
+    case 'GOD_CULTIVATE':
+      return `God cultivates adaptation at cell ${command.options.targetCell}`;
+    case 'GOD_ASSIST':
+      return `God assists settlement with ${command.options.service.toLowerCase()} divine service`;
     default:
       return command.kind;
   }

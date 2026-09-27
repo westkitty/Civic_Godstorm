@@ -17,9 +17,9 @@
 
 | Axis | Meaning | Baseline (99eb980) | Current |
 |---|---|:---:|:---:|
-| **A** | Direct God agency and physical embodiment | 2 | 2 |
+| **A** | Direct God agency and physical embodiment | 2 | **3** |
 | **B** | Civilization economy / settlement / 4X depth | 1 | **4** |
-| **C** | Two-way God ↔ civilization dependency | 1 | 1 |
+| **C** | Two-way God ↔ civilization dependency | 1 | **2** |
 | **D** | Reactive ecology, terrain and infrastructure | 1 | **2** |
 | **E** | Godform, injury, aging, death and remains | 1 | 1 |
 | **F** | Diplomacy, territorial rights and information boundaries | 1 | 1 |
@@ -118,6 +118,34 @@
   - `npm run build`: built in 345ms
   - Playwright E2E: 20/20 passed across desktop and mobile viewports
 - **Next Candidate:** Advanced God Actions & Stance Mechanics (God 1 of 4: STRIKE, GUARD, CULTIVATE, ASSIST commands).
+- **Commit:** `2972b63`
+
+### `uplift(05)`: Advanced God Actions & Stance Mechanics (GUARD, STRIKE, ASSIST, CULTIVATE)
+- **Goal:** Implement the authoritative Section 4.5 & 16.5 advanced God actions and stance mechanics: GUARD, STRIKE, CULTIVATE, ASSIST.
+- **Category:** Direct God agency, physical embodiment (1 of 4) & Two-way God ↔ civilization dependency (1 of 4).
+- **Scorecard Axes Advanced:** A (2 → 3: Direct God agency advanced to integrated and clearly useful), C (1 → 2: Two-way God ↔ civilization dependency advanced to functional but shallow).
+- **Master-plan Requirements Advanced:** Sections 4.5, 4.6, 16.1, 16.5.
+- **Meaningful Result:**
+  - Extended `GodOrder` union and `Command` schema with `GuardOrder` (`GOD_GUARD`), `StrikeOrder` (`GOD_STRIKE`), `CultivateOrder` (`GOD_CULTIVATE`), and `AssistOrder` (`GOD_ASSIST`).
+  - Validation: All actions cost 2 AP; require living God state; STRIKE/CULTIVATE/ASSIST require valid range (co-located or adjacent hex step <= 1).
+  - Execution & Systemic Effects:
+    - `GUARD`: Sets defensive stance on God, persisting until moved or cleared, protecting nearby territory and deterring hostile incursions.
+    - `STRIKE`: Physical colossal impact on targeted cell; inflicts 300 soil disturbance, +20 God fatigue, clearing obstacles and shaking terrain.
+    - `ASSIST`: Direct divine aid to an adjacent or co-located settlement; provides +400 construction progress (accelerating active district building projects), +100 legitimacy to civic authority, and +100 biomass cultivation boost.
+    - `CULTIVATE`: Divine ecological terraforming; starts biome adaptation on targeted cell toward fertile soil, clearing blight and boosting local biomass.
+  - Logs authoritative history events: `GOD_GUARD`, `GOD_STRIKE`, `GOD_ASSIST`, `GOD_CULTIVATE`.
+  - UI and session integration: Added draft order support in `godView.ts` and `session.ts`.
+- **Validation:**
+  - `npm run typecheck`: clean
+  - `npm run lint`: clean (0 errors, 0 warnings)
+  - `tests/sim/godActions.test.ts`: 4/4 passed
+  - `tests/sim/selfcheck.test.ts`: passed (deterministic fixture intact)
+  - Vitest sim suite: 12 test files, 69/69 passed
+  - `npm run build`: built in 342ms
+  - Playwright E2E: 20/20 passed across desktop and mobile viewports
+- **Commit:** pending push
+- **Next Candidate:** Continuous Aging & Lifecycle Progression (God 2 of 4).
+
 
 
 
