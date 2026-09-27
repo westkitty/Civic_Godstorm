@@ -25,7 +25,7 @@
 | **F** | Diplomacy, territorial rights and information boundaries | 1 | 1 |
 | **G** | Warfare, logistics and strategic consequence | 0 | 0 |
 | **H** | AI parity and autonomous civilization behavior | 1 | 1 |
-| **I** | Persistent history / causal world memory | 1 | 1 |
+| **I** | Persistent history / causal world memory | 1 | **2** |
 | **J** | World presentation, scale and visual readability | 2 | 2 |
 | **K** | UX, controls, accessibility and tablet usability | 2 | 2 |
 | **L** | Persistence, performance and lifecycle reliability | 2 | 2 |
@@ -237,8 +237,30 @@
   - Vitest sim suite: 17 test files, 94/94 passed (including all 50 headless campaigns)
   - `npm run build`: built in 348ms
   - Playwright E2E: 20/20 passed across desktop and mobile viewports
+- **Commit:** `315fa52`
+
+### `uplift(10)`: Causal World History Event Ledger
+- **Goal:** Implement the authoritative Section 13.1 & 16.5 causal world history event ledger: complete closed high-level event types, monotonic ID allocation, strict DAG causeId enforcement, upstream and downstream causal graph traversal, deterministic authored prose generation, and observer-filtered chronicle query APIs.
+- **Category:** Persistent history / causal world memory (1 of 3).
+- **Scorecard Axes Advanced:** I (1 → 2: Persistent history / causal world memory advanced to functional but shallow).
+- **Master-plan Requirements Advanced:** Sections 13.1, 16.5.
+- **Meaningful Result:**
+  - Extended `HistoryEventType` in `src/sim/core/state.ts` to cover the full closed enumeration of master event types (`CITY_FOUNDED`, `CITY_PACKED`, `CITY_UNPACKED`, `CITY_DESTROYED`, `ROUTE_CHANGED`, `TERRITORY_CHANGED`, `TRADE_INCIDENT`, `TREATY_SIGNED`, `TREATY_BREACHED`, `WAR_STARTED`, `WAR_ENDED`, `GOD_MIGRATED`, `GOD_INJURED`, `GOD_RECOVERED`, `GOD_EVOLVED`, `GOD_ENCOUNTER`, `GOD_DIED`, `REMAINS_TRANSFORMED`, `REMAINS_EXTRACTED`, `POPULATION_DISPLACED`, `INSTITUTION_SHIFTED`, `DISASTER`, `MEGAPROJECT_FINISHED`, `ENDING_REACHED`).
+  - Created `src/sim/core/history.ts` implementing `recordHistoryEvent`, `getDirectCauses`, `getAncestralCausalChain`, `getDirectConsequences`, `getAllConsequences`, `formatHistoryProse`, `queryHistory`, and `buildChronicle`.
+  - Causal DAG validation: Guarantees `causeIds` reference strictly earlier historical events, enabling topological traversal from any consequence back to root origins (e.g. tracking a corpse harvest through decay stages back to fatal injury).
+  - Deterministic historical prose: Formats readable, localized historical narratives without runtime AI, citing specific actors, locations, techs, and consequences.
+  - Observer visibility: Historical chronicle respects civilization observation boundaries, preventing fog-of-war leakage in playable campaigns while supporting omniscient analysis.
+- **Validation:**
+  - `npm run typecheck`: clean
+  - `npm run lint`: clean (0 errors, 0 warnings)
+  - `tests/sim/history.test.ts`: 5/5 passed
+  - `tests/sim/selfcheck.test.ts`: passed (deterministic fixture intact)
+  - Vitest sim suite: 18 test files, 99/99 passed (including all 50 headless campaigns)
+  - `npm run build`: built in 358ms
+  - Playwright E2E: 20/20 passed across desktop and mobile viewports
 - **Commit:** (In progress)
-- **Next Candidate:** Causal World History Event Ledger (History 1 of 3).
+- **Next Candidate:** Dynamic Geographic Landmarks (History 2 of 3).
+
 
 
 

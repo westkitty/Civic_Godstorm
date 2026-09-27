@@ -112,6 +112,29 @@ export interface SettlementState {
 
 export type HistoryEventType =
   | 'CITY_FOUNDED'
+  | 'CITY_PACKED'
+  | 'CITY_UNPACKED'
+  | 'CITY_DESTROYED'
+  | 'ROUTE_CHANGED'
+  | 'TERRITORY_CHANGED'
+  | 'TRADE_INCIDENT'
+  | 'TREATY_SIGNED'
+  | 'TREATY_BREACHED'
+  | 'WAR_STARTED'
+  | 'WAR_ENDED'
+  | 'GOD_MIGRATED'
+  | 'GOD_INJURED'
+  | 'GOD_RECOVERED'
+  | 'GOD_EVOLVED'
+  | 'GOD_ENCOUNTER'
+  | 'GOD_DIED'
+  | 'REMAINS_TRANSFORMED'
+  | 'REMAINS_EXTRACTED'
+  | 'POPULATION_DISPLACED'
+  | 'INSTITUTION_SHIFTED'
+  | 'DISASTER'
+  | 'MEGAPROJECT_FINISHED'
+  | 'ENDING_REACHED'
   | 'TECH_RESEARCHED'
   | 'POLICY_ADOPTED'
   | 'GOD_STRIKE'
@@ -121,10 +144,8 @@ export type HistoryEventType =
   | 'GOD_AGED'
   | 'GOD_WOUNDED'
   | 'GOD_HEALED'
-  | 'GOD_DIED'
   | 'CORPSE_STAGE_CHANGED'
-  | 'CORPSE_HARVESTED'
-  | 'ROUTE_CHANGED';
+  | 'CORPSE_HARVESTED';
 
 export interface HistoryEvent {
   readonly eventId: number;
