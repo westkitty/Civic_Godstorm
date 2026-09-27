@@ -25,7 +25,7 @@
 | **F** | Diplomacy, territorial rights and information boundaries | 1 | 1 |
 | **G** | Warfare, logistics and strategic consequence | 0 | 0 |
 | **H** | AI parity and autonomous civilization behavior | 1 | 1 |
-| **I** | Persistent history / causal world memory | 1 | **2** |
+| **I** | Persistent history / causal world memory | 1 | **3** |
 | **J** | World presentation, scale and visual readability | 2 | 2 |
 | **K** | UX, controls, accessibility and tablet usability | 2 | 2 |
 | **L** | Persistence, performance and lifecycle reliability | 2 | 2 |
@@ -258,8 +258,36 @@
   - Vitest sim suite: 18 test files, 99/99 passed (including all 50 headless campaigns)
   - `npm run build`: built in 358ms
   - Playwright E2E: 20/20 passed across desktop and mobile viewports
+- **Commit:** `2742e34`
+
+### `uplift(11)`: Dynamic Geographic Landmarks & World Memory
+- **Goal:** Implement the authoritative Section 13.1, 14.3 & 16.5 dynamic geographic landmarks: persistent named landmarks derived from physical history, spatial proximity queries, civic reverence legitimacy bonuses, and Section 7.2 memorial pilgrimage economic revenues under `P-PILGRIMAGE`.
+- **Category:** Persistent history / causal world memory (2 of 3).
+- **Scorecard Axes Advanced:** I (2 → 3: Persistent history / causal world memory advanced to integrated and clearly useful).
+- **Master-plan Requirements Advanced:** Sections 7.2, 13.1, 14.3, 16.5.
+- **Meaningful Result:**
+  - Added `LandmarkKind` (`FOUNDING_HEARTH`, `DEATH_SITE`, `STRIKE_CRATER`, `SACRED_GROVE`, `SANCTUARY`, `ANCIENT_CROSSING`) and `Landmark` schema to `src/sim/core/state.ts` and `landmarks: Landmark[]` to `CampaignState`.
+  - Created `src/sim/world/landmarks.ts` implementing `createLandmark`, `getLandmarksNear`, `registerFoundingLandmark`, `registerDeathSiteLandmark`, `registerStrikeCraterLandmark`, `registerSacredGroveLandmark`, and `calculateLandmarkCivicBenefit`.
+  - Automatic historical site derivation:
+    - Settlement founding generates permanent `FOUNDING_HEARTH` landmarks.
+    - Colossal God mortality generates permanent `DEATH_SITE` landmarks at the fallen body's anchor.
+    - Colossal strikes on disturbed terrain generate `STRIKE_CRATER` landmarks.
+    - Divine ecological cultivation generates `SACRED_GROVE` landmarks.
+  - Civic reverence and pilgrimage revenues:
+    - Settlements near founding hearths or sanctuaries gain reverence legitimacy bonuses (+25).
+    - Under the Section 7.2 `P-PILGRIMAGE` cultural policy, visiting pilgrims to nearby death sites and sacred groves pay donations and tolls, contributing real coin revenue (+200 / +100 milli-coin) to local civic coffers.
+  - Deterministic golden vectors and selfcheck test fixtures updated and verified.
+- **Validation:**
+  - `npm run typecheck`: clean
+  - `npm run lint`: clean (0 errors, 0 warnings)
+  - `tests/sim/landmarks.test.ts`: 4/4 passed
+  - `tests/sim/selfcheck.test.ts`: passed with updated determinism hashes
+  - Vitest sim suite: 19 test files, 103/103 passed (including all 50 headless campaigns)
+  - `npm run build`: built in 357ms
+  - Playwright E2E: 20/20 passed across desktop and mobile viewports
 - **Commit:** (In progress)
-- **Next Candidate:** Dynamic Geographic Landmarks (History 2 of 3).
+- **Next Candidate:** Strategic Armies & Logistics (Warfare 1 of 3).
+
 
 
 

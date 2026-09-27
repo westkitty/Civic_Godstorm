@@ -16,6 +16,11 @@ import { ageBracketFor, chronicIntegrityLoss } from './lifecycle.ts';
 import { applyGodDeathShock, createCorpseFromGod } from './corpse.ts';
 import { applyMedicalCare, hasFeedingImpairment, progressWoundHealing } from './wounds.ts';
 import { applyColossalTrampling } from '../world/ecology.ts';
+import {
+  registerDeathSiteLandmark,
+  registerSacredGroveLandmark,
+  registerStrikeCraterLandmark,
+} from '../world/landmarks.ts';
 
 interface TurnContext {
   apRemaining: number;
@@ -178,8 +183,9 @@ export function resolveGods(state: CampaignState): GodTurnSummary[] {
         god.reserve = Math.max(0, god.reserve - size.upkeep * 100);
         state.map.soilDisturbance[targetCell] = Math.min(1000, (state.map.soilDisturbance[targetCell] as number) + 300);
         ctx.disturbed.add(targetCell);
+        const strikeEventId = state.history.length + 1;
         state.history.push({
-          eventId: state.history.length + 1,
+          eventId: strikeEventId,
           turn: state.turn,
           impulse,
           type: 'GOD_STRIKE',
@@ -190,6 +196,7 @@ export function resolveGods(state: CampaignState): GodTurnSummary[] {
           payload: { godId: god.id, targetCell },
           schemaVersion: 1,
         });
+        registerStrikeCraterLandmark(state, god, targetCell, strikeEventId);
         god.order = { kind: 'HOLD' };
         god.status = { kind: 'COMPLETE', turn: state.turn + 1 };
       } else if (god.order.kind === 'ASSIST' && (impulseAp.get(god.id) ?? 0) >= 2 && ctx.apSpent === 0) {
@@ -236,8 +243,9 @@ export function resolveGods(state: CampaignState): GodTurnSummary[] {
           state.map.biomassCapacity[targetCell] as number,
           (state.map.biomass[targetCell] as number) + 200,
         );
+        const cultivateEventId = state.history.length + 1;
         state.history.push({
-          eventId: state.history.length + 1,
+          eventId: cultivateEventId,
           turn: state.turn,
           impulse,
           type: 'GOD_CULTIVATE',
@@ -248,6 +256,7 @@ export function resolveGods(state: CampaignState): GodTurnSummary[] {
           payload: { godId: god.id, targetCell, adaptation: adaptation ?? 'NONE' },
           schemaVersion: 1,
         });
+        registerSacredGroveLandmark(state, god, targetCell, cultivateEventId);
         god.order = { kind: 'HOLD' };
         god.status = { kind: 'COMPLETE', turn: state.turn + 1 };
       }
@@ -416,8 +425,9 @@ export function resolveGods(state: CampaignState): GodTurnSummary[] {
       const corpse = createCorpseFromGod(state, god);
       state.corpses.push(corpse);
       applyGodDeathShock(state, god);
+      const deathEventId = state.history.length + 1;
       state.history.push({
-        eventId: state.history.length + 1,
+        eventId: deathEventId,
         turn: state.turn,
         impulse: 0,
         type: 'GOD_DIED',
@@ -434,6 +444,7 @@ export function resolveGods(state: CampaignState): GodTurnSummary[] {
         },
         schemaVersion: 1,
       });
+      registerDeathSiteLandmark(state, god, deathEventId);
     }
     return {
       godId: god.id,

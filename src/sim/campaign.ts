@@ -157,6 +157,7 @@ export function createCampaign(options: NewCampaignOptions): CampaignState {
       settlements,
       gods,
       corpses: [],
+      landmarks: [],
       observations: civs.map((civ) => emptyObservation(civ.id, map.width * map.height)),
       history,
       lastTurn: null,

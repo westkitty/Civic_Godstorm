@@ -9,6 +9,7 @@ import { checked, units } from '../core/quantity.ts';
 import type { CampaignState, SettlementState, SettlementTurnSummary } from '../core/state.ts';
 import { ECONOMY_RULES, PHYSICAL_RESOURCES, WORLD_RULES, type BuildKind, type PhysicalResource } from '../data/rules.ts';
 import { effectiveFertility, isCompacted } from '../world/ecology.ts';
+import { calculateLandmarkCivicBenefit } from '../world/landmarks.ts';
 
 const TRIM_ORDER = ['builder', 'quarry', 'forestry', 'farm'] as const;
 
@@ -174,6 +175,17 @@ export function runSettlementTurn(state: CampaignState, settlement: SettlementSt
   } else {
     settlement.hallIntegrity = Math.max(0, settlement.hallIntegrity - ECONOMY_RULES.unpaidIntegrityLoss);
     warnings.push('UPKEEP_UNPAID');
+  }
+
+  // Landmark reverence and pilgrimage benefits (Section 7.2)
+  if (state.landmarks) {
+    const benefit = calculateLandmarkCivicBenefit(state, settlement);
+    if (benefit.legitimacyBonus > 0) {
+      settlement.legitimacy = Math.min(1000, settlement.legitimacy + benefit.legitimacyBonus);
+    }
+    if (benefit.pilgrimageCoinMilli > 0) {
+      civ.coin += benefit.pilgrimageCoinMilli;
+    }
   }
 
   settlement.welfare = welfareOf(settlement, coverage);

@@ -8,6 +8,7 @@ import { units } from './quantity.ts';
 import type { CampaignState, JobAllocation, SettlementState } from './state.ts';
 import type { FollowUp, RouteMode, Stance } from '../gods/god.ts';
 import { applyGodCommand, isGodCommand, validateGodCommand } from '../gods/commands.ts';
+import { registerFoundingLandmark } from '../world/landmarks.ts';
 import {
   canResearchTech,
   POLICY_AXES,
@@ -365,8 +366,9 @@ export function applyCommand(state: CampaignState, command: Command): void {
       };
       state.settlements.push(newSettlement);
 
+      const eventId = state.history.length + 1;
       state.history.push({
-        eventId: state.history.length + 1,
+        eventId,
         turn: state.turn,
         impulse: 0,
         type: 'CITY_FOUNDED',
@@ -382,6 +384,7 @@ export function applyCommand(state: CampaignState, command: Command): void {
         },
         schemaVersion: 1,
       });
+      registerFoundingLandmark(state, newSettlement, eventId);
       return;
     }
     case 'RESEARCH_TECH': {

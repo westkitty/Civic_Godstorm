@@ -200,6 +200,26 @@ export interface GenerationRecord {
   readonly rejections: Record<string, number>;
 }
 
+export type LandmarkKind =
+  | 'DEATH_SITE'
+  | 'STRIKE_CRATER'
+  | 'SANCTUARY'
+  | 'FOUNDING_HEARTH'
+  | 'SACRED_GROVE'
+  | 'ANCIENT_CROSSING';
+
+export interface Landmark {
+  readonly id: number;
+  readonly cell: number;
+  readonly name: string;
+  readonly kind: LandmarkKind;
+  readonly turn: number;
+  readonly causeEventId: number;
+  readonly creatorCivId: number | null;
+  readonly description: string;
+  reverence: number;
+}
+
 export interface CampaignState {
   readonly schemaVersion: 1;
   readonly simulationVersion: string;
@@ -216,6 +236,7 @@ export interface CampaignState {
   settlements: SettlementState[];
   gods: GodState[];
   corpses: CorpseState[];
+  landmarks: Landmark[];
   observations: ObservationState[];
   history: HistoryEvent[];
   lastTurn: TurnSummary | null;
