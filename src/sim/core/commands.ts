@@ -2,7 +2,7 @@
 // this validator. Every rejection carries a stable code; nothing is silently remapped.
 
 import { BUILD_RULES, ECONOMY_RULES, JOBS, WORLD_RULES, type BuildKind, type PhysicalResource } from '../data/rules.ts';
-import { cellsWithin, neighbors } from '../world/hex.ts';
+import { cellsWithin, distance, neighbors } from '../world/hex.ts';
 import { isWater, isWoodland } from '../world/generate.ts';
 import { units } from './quantity.ts';
 import type { CampaignState, JobAllocation, SettlementState } from './state.ts';
@@ -45,6 +45,7 @@ export type Command =
   | (CommandBase & { readonly kind: 'SET_JOBS'; readonly options: JobAllocation })
   | (CommandBase & { readonly kind: 'QUEUE_BUILD'; readonly options: { readonly build: BuildKind } })
   | (CommandBase & { readonly kind: 'CANCEL_BUILD'; readonly options: { readonly itemId: number } })
+  | (CommandBase & { readonly kind: 'FOUND_SETTLEMENT'; readonly options: { readonly name?: string } })
   | (CommandBase & {
       readonly kind: 'GOD_MOVE';
       readonly options: { readonly waypoints: readonly number[]; readonly routeMode: RouteMode; readonly then: FollowUp };
@@ -153,6 +154,44 @@ function validateBuild(state: CampaignState, settlement: SettlementState, build:
   return OK;
 }
 
+function validateFoundSettlement(state: CampaignState, settlement: SettlementState, target: number | null): ValidationResult {
+  if (target === null || target < 0 || target >= state.map.elevation.length) {
+    return fail('UNSUPPORTED_STATE', 'FOUND_SETTLEMENT requires a valid target cell');
+  }
+  if (isWater(state.map, target)) {
+    return fail('WRONG_DOMAIN', 'settlement cannot be founded on water');
+  }
+  for (const other of state.settlements) {
+    if (distance(state.map, other.cell, target) < WORLD_RULES.minSettlementSpacing) {
+      return fail('BODY_BLOCKED', `settlement cores must be at least ${WORLD_RULES.minSettlementSpacing} steps apart`);
+    }
+  }
+  if (state.settlements.some((s) => s.farmSites.some((f) => f.cell === target))) {
+    return fail('CAPACITY_REACHED', 'target cell already holds a farm');
+  }
+  if (state.settlements.length >= ECONOMY_RULES.maxWorldSettlements) {
+    return fail('CAPACITY_REACHED', 'world settlement envelope reached (96)');
+  }
+  const civCount = state.settlements.filter((s) => s.ownerId === settlement.ownerId).length;
+  if (civCount >= ECONOMY_RULES.maxCivSettlements) {
+    return fail('CAPACITY_REACHED', 'civilization settlement limit reached (16)');
+  }
+  if (settlement.populationMilli < 2000) {
+    return fail('INSUFFICIENT_STOCK', 'settlement requires at least 2000 population to dispatch a founding party');
+  }
+  const cost = ECONOMY_RULES.foundingCost;
+  if (settlement.storage.FOOD < units(cost.food)) {
+    return fail('INSUFFICIENT_STOCK', `founding requires ${cost.food} FOOD rations`);
+  }
+  if (settlement.storage.TIMBER < units(cost.timber)) {
+    return fail('INSUFFICIENT_STOCK', `founding requires ${cost.timber} TIMBER`);
+  }
+  if (settlement.storage.STONE < units(cost.stone)) {
+    return fail('INSUFFICIENT_STOCK', `founding requires ${cost.stone} STONE`);
+  }
+  return OK;
+}
+
 export function validateCommand(state: CampaignState, command: Command): ValidationResult {
   if (command.expectedStateVersion !== state.turn || command.issuedForTurn !== state.turn + 1) {
     return fail('STALE_STATE', `command names state ${command.expectedStateVersion}/turn ${command.issuedForTurn}; current state ${state.turn}`);
@@ -170,6 +209,8 @@ export function validateCommand(state: CampaignState, command: Command): Validat
       return settlement.queue.some((item) => item.id === command.options.itemId)
         ? OK
         : fail('UNSUPPORTED_STATE', 'no such queued item');
+    case 'FOUND_SETTLEMENT':
+      return validateFoundSettlement(state, settlement, command.target);
   }
 }
 
@@ -211,6 +252,78 @@ export function applyCommand(state: CampaignState, command: Command): void {
           settlement.storage[key] += units(amount);
         }
       }
+      return;
+    }
+    case 'FOUND_SETTLEMENT': {
+      const targetCell = command.target as number;
+      const cost = ECONOMY_RULES.foundingCost;
+      settlement.populationMilli -= cost.populationMilli;
+      settlement.storage.FOOD -= units(cost.food);
+      settlement.storage.TIMBER -= units(cost.timber);
+      settlement.storage.STONE -= units(cost.stone);
+
+      // Trim any excess assigned jobs now that available labor dropped
+      let excess = Object.values(settlement.jobs).reduce((sum, value) => sum + value, 0) - laborMilli(settlement);
+      if (excess > 0) {
+        const TRIM_ORDER = ['builder', 'quarry', 'forestry', 'farm'] as const;
+        for (const job of TRIM_ORDER) {
+          if (excess <= 0) break;
+          const cut = Math.min(excess, settlement.jobs[job]);
+          settlement.jobs[job] -= cut;
+          excess -= cut;
+        }
+      }
+
+      const newId = state.nextEntityId++;
+      const civ = state.civs.find((c) => c.id === settlement.ownerId);
+      const name = command.options.name || `${civ ? civ.name : 'Civilization'} Colony ${newId}`;
+      const newSettlement: SettlementState = {
+        id: newId,
+        ownerId: settlement.ownerId,
+        cell: targetCell,
+        name,
+        originalCapitalOf: null,
+        populationMilli: cost.populationMilli,
+        dwellings: 0,
+        buildings: { granary: 0, workshop: 0, depot: 0, archive: 0, infirmary: 0 },
+        hallIntegrity: 100,
+        farmSites: [],
+        jobs: { farm: 0, forestry: 0, quarry: 0, builder: 0 },
+        storage: {
+          FOOD: units(cost.food),
+          TIMBER: 0,
+          STONE: 0,
+          ORE: 0,
+          TOOLS: 0,
+          MEDICINE: 0,
+          BIO: 0,
+        },
+        carry: {},
+        queue: [],
+        welfare: 700,
+        foodCoverage: 1000,
+        shortageTurns: 0,
+        legitimacy: ECONOMY_RULES.startingLegitimacy,
+      };
+      state.settlements.push(newSettlement);
+
+      state.history.push({
+        eventId: state.history.length + 1,
+        turn: state.turn,
+        impulse: 0,
+        type: 'CITY_FOUNDED',
+        actorIds: [settlement.id, newId],
+        locationIds: [targetCell],
+        causeIds: [],
+        observerCivIds: [settlement.ownerId],
+        payload: {
+          civId: settlement.ownerId,
+          parentSettlementId: settlement.id,
+          settlementId: newId,
+          cell: targetCell,
+        },
+        schemaVersion: 1,
+      });
       return;
     }
   }

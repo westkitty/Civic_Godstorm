@@ -129,6 +129,15 @@ export const ECONOMY_RULES = {
   depotStorageBonus: 60,
   archiveKnowledgeYield: 2,
   infirmaryHealthBonus: 250,
+  /** Section 16.5 settlement founding costs and constraints. */
+  foundingCost: {
+    populationMilli: 1000,
+    food: 8,
+    timber: 12,
+    stone: 8,
+  },
+  maxWorldSettlements: 96,
+  maxCivSettlements: 16,
   /** M01 default: bounded build queue length per settlement. */
   maxQueueLength: 8,
 } as const;

@@ -134,3 +134,133 @@ describe('construction', () => {
     expect(capital(state).welfare).toBeGreaterThanOrEqual(875);
   });
 });
+
+describe('settlement colonization and founding (Sections 6.1, 16.5)', () => {
+  it('rejects founding if target cell is too close, on water, or stock is insufficient', () => {
+    const state = fresh('founding-rejects');
+    const set = capital(state);
+
+    // 1. Target too close (adjacent cell, distance 1 < 3)
+    const adjCell = set.farmSites[0]?.cell ?? set.cell + 1;
+    const closeCmd = command(state, { kind: 'FOUND_SETTLEMENT', target: adjCell, options: {} });
+    const resClose = resolveTurn(state, [closeCmd]);
+    expect(resClose.rejections.length).toBeGreaterThan(0);
+    expect(resClose.rejections[0]?.code).toBe('BODY_BLOCKED');
+
+    // 2. Target on water
+    // Find a water cell
+    let waterCell = -1;
+    for (let c = 0; c < state.map.elevation.length; c += 1) {
+      if (state.map.elevation[c]! < 90) {
+        waterCell = c;
+        break;
+      }
+    }
+    expect(waterCell).toBeGreaterThanOrEqual(0);
+    const waterCmd = command(state, { kind: 'FOUND_SETTLEMENT', target: waterCell, options: {} });
+    const resWater = resolveTurn(state, [waterCmd]);
+    expect(resWater.rejections.length).toBeGreaterThan(0);
+    expect(resWater.rejections[0]?.code).toBe('WRONG_DOMAIN');
+
+    // 3. Insufficient stock (e.g. 0 TIMBER)
+    const lowStockState = fresh('low-stock');
+    capital(lowStockState).storage.TIMBER = 0;
+    // Find a valid distant land cell >= 3 distance away
+    let validCell = -1;
+    for (let c = 0; c < lowStockState.map.elevation.length; c += 1) {
+      if (lowStockState.map.elevation[c]! >= 90) {
+        const tooClose = lowStockState.settlements.some((s) => {
+          const dq = Math.abs(s.cell % lowStockState.map.width - c % lowStockState.map.width);
+          const dr = Math.abs(Math.floor(s.cell / lowStockState.map.width) - Math.floor(c / lowStockState.map.width));
+          return dq + dr < 5;
+        });
+        if (!tooClose) {
+          validCell = c;
+          break;
+        }
+      }
+    }
+    expect(validCell).toBeGreaterThanOrEqual(0);
+    const lowStockCmd = command(lowStockState, { kind: 'FOUND_SETTLEMENT', target: validCell, options: {} });
+    const resLow = resolveTurn(lowStockState, [lowStockCmd]);
+    expect(resLow.rejections.length).toBeGreaterThan(0);
+    expect(resLow.rejections[0]?.code).toBe('INSUFFICIENT_STOCK');
+  });
+
+  it('founds a new settlement, consumes costs, logs history, and supports colony growth', () => {
+    let state = fresh('founding-success');
+    const set = capital(state);
+    const initialPop = set.populationMilli;
+    const initialFood = set.storage.FOOD;
+    const initialTimber = set.storage.TIMBER;
+    const initialStone = set.storage.STONE;
+
+    // Find a valid target cell >= 4 steps away on land
+    let targetCell = -1;
+    for (let c = 0; c < state.map.elevation.length; c += 1) {
+      if (state.map.elevation[c]! >= 90) {
+        const distFromAll = state.settlements.every((s) => {
+          const dq = Math.abs((s.cell % state.map.width) - (c % state.map.width));
+          const dr = Math.abs(Math.floor(s.cell / state.map.width) - Math.floor(c / state.map.width));
+          return dq + dr >= 6;
+        });
+        if (distFromAll) {
+          targetCell = c;
+          break;
+        }
+      }
+    }
+    expect(targetCell).toBeGreaterThanOrEqual(0);
+
+    const foundCmd = command(state, {
+      kind: 'FOUND_SETTLEMENT',
+      target: targetCell,
+      options: { name: 'New Horizon' },
+    });
+
+    const turnResult = resolveTurn(state, [foundCmd]);
+    expect(turnResult.rejections).toEqual([]);
+    expect(turnResult.accepted).toContain(foundCmd.commandId);
+    state = turnResult.state;
+
+    // Verify parent deductions
+    const parent = state.settlements.find((s) => s.id === set.id)!;
+    const summaries = turnResult.state.lastTurn!.settlements;
+    const parentSummary = summaries.find((s) => s.settlementId === set.id)!;
+    expect(parent.populationMilli).toBe(initialPop - 1000 + parentSummary.births);
+    expect(parent.storage.FOOD).toBeLessThan(initialFood);
+    expect(parent.storage.TIMBER).toBeLessThan(initialTimber);
+    expect(parent.storage.STONE).toBe(initialStone - 800);
+
+    // Verify new settlement created
+    expect(state.settlements.length).toBe(3); // 2 original + 1 new
+    const colony = state.settlements.find((s) => s.name === 'New Horizon')!;
+    expect(colony).toBeDefined();
+    expect(colony.cell).toBe(targetCell);
+    expect(colony.ownerId).toBe(set.ownerId);
+    const colonySummary = summaries.find((s) => s.settlementId === colony.id)!;
+    expect(colony.populationMilli).toBe(1000 + colonySummary.births);
+    expect(colony.dwellings).toBe(0);
+    // Started with 800 FOOD rations; during turn 1 resolution: +200 base food - 200 consumed = 800
+    expect(colony.storage.FOOD).toBe(800);
+    expect(colony.foodCoverage).toBe(1000);
+    expect(colony.shortageTurns).toBe(0);
+
+    // Verify history event
+    const historyEvent = state.history.find(
+      (h) => h.type === 'CITY_FOUNDED' && h.payload.settlementId === colony.id,
+    );
+    expect(historyEvent).toBeDefined();
+    expect(historyEvent?.locationIds).toContain(targetCell);
+    expect(historyEvent?.actorIds).toEqual([parent.id, colony.id]);
+
+    // Advance 5 more turns to ensure multi-settlement simulation remains invariant-sound
+    for (let i = 0; i < 5; i += 1) {
+      state = resolveTurn(state, []).state;
+    }
+    const settledColony = state.settlements.find((s) => s.id === colony.id)!;
+    expect(settledColony.populationMilli).toBeGreaterThanOrEqual(1000);
+    expect(settledColony.storage.FOOD).toBeGreaterThan(0);
+  });
+});
+

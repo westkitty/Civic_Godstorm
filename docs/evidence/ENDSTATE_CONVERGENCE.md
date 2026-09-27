@@ -18,7 +18,7 @@
 | Axis | Meaning | Baseline (99eb980) | Current |
 |---|---|:---:|:---:|
 | **A** | Direct God agency and physical embodiment | 2 | 2 |
-| **B** | Civilization economy / settlement / 4X depth | 1 | 2 |
+| **B** | Civilization economy / settlement / 4X depth | 1 | **3** |
 | **C** | Two-way God ↔ civilization dependency | 1 | 1 |
 | **D** | Reactive ecology, terrain and infrastructure | 1 | **2** |
 | **E** | Godform, injury, aging, death and remains | 1 | 1 |
@@ -75,5 +75,28 @@
   - `npm run build`: built in 663ms
 - **Known Limitations:** Visual representation of roads in Three.js renderer is currently flat (addressed in Presentation iteration).
 - **Next Candidate:** Settlement colonization/founding (SETTLE command, pioneer cohorts, territory expansion).
+
+### `uplift(03)`: Settlement Colonization & Founding (FOUND_SETTLEMENT Command)
+- **Goal:** Enable civilization territorial expansion through pioneer colonization and founding new settlements.
+- **Category:** Civilization / economy / settlement / infrastructure / 4X (3 of 4).
+- **Scorecard Axes Advanced:** B (2 → 3: Civilization economy / settlement / 4X depth advanced to integrated and clearly useful).
+- **Master-plan Requirements Advanced:** Sections 6.1, 16.5.
+- **Meaningful Result:**
+  - Added `FOUND_SETTLEMENT` command to `Command` schema with stable validation and execution.
+  - Implemented Section 16.5 pioneer founding costs (1000 milli-pop, 8 FOOD rations for 4 turns, 12 TIMBER, 8 STONE).
+  - Enforced Section 16.5 topological constraints: settlement cores at least 3 wrapped hex steps apart (`BODY_BLOCKED`), land terrain (`WRONG_DOMAIN`), site capacity checks, world limit (96), and civ limit (16).
+  - Automatically balances/trims parent labor allocations when colonist population departs.
+  - Generates initial colony state with 1000 population, 4-turn food ration reserve, and registers authoritative `CITY_FOUNDED` historical record.
+  - Successfully validated multi-settlement turn resolution, observation sharing, and colonial population growth.
+- **Validation:**
+  - `npm run typecheck`: clean
+  - `npm run lint`: 0 warnings, 0 errors
+  - `tests/sim/economy.test.ts`: 7/7 passed (including rejection rules and multi-turn colony survival)
+  - `tests/sim/selfcheck.test.ts`: passed with updated determinism hashes
+  - Vitest sim suite: 10 files, 61/61 tests passed
+  - `npm run build`: built in 347ms
+  - Playwright E2E: 20/20 passed across desktop and mobile viewports
+- **Next Candidate:** Technology research DAG & policy adoption framework (Civ 4 of 4).
+
 
 

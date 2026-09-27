@@ -6,9 +6,9 @@
     "turns": 30
   },
   "simulationVersion": "cg-sim-m02.1",
-  "rulesHash": "806ac47501398ef017b035a7386220006d2330526635900af190284ffe260491",
+  "rulesHash": "bb7dcac6b28841d27684aa99175ec493a2dee025c4b5a8e0d7f78829b35dbc2f",
   "goldenVectorsPass": true,
-  "initialHash": "4a2bea202dc5cf8591e4b67e4c2942ebed2e8a5378e67e54ff0fd12648818a3b",
-  "finalHash": "a328e1e0ab92439013d96c9ae1bf4292e2419fb8927ba5c15f6541da1d6fd05b",
+  "initialHash": "dc67b74f5e3ec22eca8ed9dff7f17c80d67e24b12ea984ecdef8298a0a624155",
+  "finalHash": "69c0ba81d7a651a688f07a4f8157dc14fe34823e6c8384c30d1b79ce087e1b21",
   "turns": 30
 }
