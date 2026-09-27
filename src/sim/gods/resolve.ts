@@ -13,6 +13,7 @@ import { evaluateTransition, occupiedCells, type TransitionVerdict } from './bod
 import { consentCovers } from './commands.ts';
 import { apForFatigue, sizeRules, type GodState, type MoveOrder } from './god.ts';
 import { ageBracketFor, chronicIntegrityLoss } from './lifecycle.ts';
+import { applyGodDeathShock, createCorpseFromGod } from './corpse.ts';
 import { applyMedicalCare, hasFeedingImpairment, progressWoundHealing } from './wounds.ts';
 
 interface TurnContext {
@@ -401,8 +402,31 @@ export function resolveGods(state: CampaignState): GodTurnSummary[] {
       }
     }
 
-    // When a God reaches zero vital health, it stops accepting living commands (mortality transition).
-    if (god.vitalHealth === 0) god.lifecycle = 'DEAD';
+    // When a God reaches zero vital health, it transitions to permanent mortality (Sections 4.7, 10.1, 10.2).
+    if (god.vitalHealth === 0 && god.lifecycle === 'ALIVE') {
+      god.lifecycle = 'DEAD';
+      const corpse = createCorpseFromGod(state, god);
+      state.corpses.push(corpse);
+      applyGodDeathShock(state, god);
+      state.history.push({
+        eventId: state.history.length + 1,
+        turn: state.turn,
+        impulse: 0,
+        type: 'GOD_DIED',
+        actorIds: [god.id],
+        locationIds: [god.anchor],
+        causeIds: [],
+        observerCivIds: [god.ownerId],
+        payload: {
+          godId: god.id,
+          deathTurn: state.turn,
+          anchor: god.anchor,
+          tissue: Math.floor(corpse.tissueReserve / 100),
+          mineral: Math.floor(corpse.mineralReserve / 100),
+        },
+        schemaVersion: 1,
+      });
+    }
     return {
       godId: god.id,
       apSpent: ctx.apSpent,

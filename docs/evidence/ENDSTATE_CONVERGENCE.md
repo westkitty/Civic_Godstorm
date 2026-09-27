@@ -21,7 +21,7 @@
 | **B** | Civilization economy / settlement / 4X depth | 1 | **4** |
 | **C** | Two-way God ↔ civilization dependency | 1 | **2** |
 | **D** | Reactive ecology, terrain and infrastructure | 1 | **2** |
-| **E** | Godform, injury, aging, death and remains | 1 | **3** |
+| **E** | Godform, injury, aging, death and remains | 1 | **4** |
 | **F** | Diplomacy, territorial rights and information boundaries | 1 | 1 |
 | **G** | Warfare, logistics and strategic consequence | 0 | 0 |
 | **H** | AI parity and autonomous civilization behavior | 1 | 1 |
@@ -193,8 +193,30 @@
   - Vitest sim suite: 14 test files, 80/80 passed
   - `npm run build`: built in 615ms
   - Playwright E2E: 20/20 passed across desktop and mobile viewports
-- **Commit:** pending push
-- **Next Candidate:** Permanent Death & Corpse Geography (God 4 of 4).
+- **Commit:** `012f412`
+
+### `uplift(08)`: Permanent Death & Corpse Geography
+- **Goal:** Implement the authoritative Section 4.7 & 16.5 permanent God death, multi-turn anatomical corpse decay stages (RECENT, DECAY, OSSUARY, FOSSIL), civic shock, preservation rites, and post-mortem resource harvesting.
+- **Category:** Godform, injury, aging, death and remains (3 of 4 & 4 of 4).
+- **Scorecard Axes Advanced:** E (3 → 4: Godform, injury, aging, death and remains advanced to strong production-quality behavior).
+- **Master-plan Requirements Advanced:** Sections 4.7, 16.5.
+- **Meaningful Result:**
+  - Created `src/sim/gods/corpse.ts` implementing `CorpseStage` (`RECENT`, `DECAY`, `OSSUARY`, `FOSSIL`), `CorpseState` schema, `createCorpseFromGod`, `applyGodDeathShock`, `resolveCorpses`, and `harvestCorpse`.
+  - God mortality trigger: When `god.vitalHealth === 0`, marks `alive: false`, instantiates persistent anatomical corpse on the cell with tissue, mineral, and contamination stores based on `god.sizeMass`, applies civic death shock (-150 legitimacy, -50 welfare to owner settlements), and logs `GOD_DIED`.
+  - Natural corpse decay: Advances every 10 turns through stages (`RECENT` → `DECAY` → `OSSUARY` → `FOSSIL`). Settlements can preserve nearby corpses (preventing decay advance) by expending 2 MEDICINE and 2 COIN per turn in civic memorial rites.
+  - Post-mortem resource harvesting: Adjacent settlements can harvest BIO from `RECENT`/`DECAY` stages (accelerating decay by 1 turn per 5 BIO) and STONE/ORE from `OSSUARY`/`FOSSIL` stages, emitting `CORPSE_HARVESTED` events.
+  - Deterministic integration into authoritative `resolveTurn` and `CampaignState`.
+- **Validation:**
+  - `npm run typecheck`: clean
+  - `npm run lint`: clean (0 errors, 0 warnings)
+  - `tests/sim/corpse.test.ts`: 5/5 passed
+  - `tests/sim/selfcheck.test.ts`: passed with updated determinism hashes
+  - Vitest sim suite: 15 test files, 85/85 passed
+  - `npm run build`: built in 323ms
+  - Playwright E2E: 20/20 passed across desktop and mobile viewports
+- **Commit:** (In progress)
+- **Next Candidate:** Soil Degradation, Defoliation & Ecological Healing (Ecology 2 of 3).
+
 
 
 

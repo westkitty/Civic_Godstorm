@@ -6,6 +6,7 @@ import type { RngStreams } from './rng.ts';
 import type { Quantity } from './quantity.ts';
 import type { MapSizeName } from '../world/hex.ts';
 import type { GodState } from '../gods/god.ts';
+import type { CorpseState } from '../gods/corpse.ts';
 import type { PolicyAxis, PolicyChoice } from '../data/tech.ts';
 
 export interface MapState {
@@ -119,7 +120,10 @@ export type HistoryEventType =
   | 'GOD_GUARD'
   | 'GOD_AGED'
   | 'GOD_WOUNDED'
-  | 'GOD_HEALED';
+  | 'GOD_HEALED'
+  | 'GOD_DIED'
+  | 'CORPSE_STAGE_CHANGED'
+  | 'CORPSE_HARVESTED';
 
 export interface HistoryEvent {
   readonly eventId: number;
@@ -189,6 +193,7 @@ export interface CampaignState {
   civs: CivState[];
   settlements: SettlementState[];
   gods: GodState[];
+  corpses: CorpseState[];
   observations: ObservationState[];
   history: HistoryEvent[];
   lastTurn: TurnSummary | null;

@@ -4,6 +4,7 @@
 
 import { runSettlementTurn } from '../civ/economy.ts';
 import { resolveGods } from '../gods/resolve.ts';
+import { resolveCorpses } from '../gods/corpse.ts';
 import { updateAllObservations } from '../observation/observation.ts';
 import { BIOME_RULES, BIOMES, JOBS, PHYSICAL_RESOURCES, type Biome } from '../data/rules.ts';
 import { canonicalHash } from './canonical.ts';
@@ -101,6 +102,7 @@ export function resolveTurn(committed: CampaignState, commands: readonly Command
 
   // Step 4 and God upkeep of step 5: four impulses of God movement/actions, then needs.
   const gods = resolveGods(state);
+  resolveCorpses(state);
 
   // Step 5: production, consumption, population and construction, in settlement ID order.
   const summaries = [...state.settlements]
