@@ -9,6 +9,7 @@ import type { GodState } from '../gods/god.ts';
 import type { CorpseState } from '../gods/corpse.ts';
 import type { PolicyAxis, PolicyChoice } from '../data/tech.ts';
 import type { ArmyState } from '../military/army.ts';
+import type { DiplomaticRelation, Treaty } from '../diplomacy/treaty.ts';
 
 export interface MapState {
   readonly size: MapSizeName;
@@ -243,6 +244,8 @@ export interface CampaignState {
   corpses: CorpseState[];
   landmarks: Landmark[];
   armies: ArmyState[];
+  treaties: Treaty[];
+  diplomacy: DiplomaticRelation[];
   observations: ObservationState[];
   history: HistoryEvent[];
   lastTurn: TurnSummary | null;

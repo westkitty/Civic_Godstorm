@@ -142,6 +142,19 @@ export function createCampaign(options: NewCampaignOptions): CampaignState {
       continue;
     }
 
+    const diplomacy = [];
+    for (let i = 0; i < civs.length; i++) {
+      for (let j = i + 1; j < civs.length; j++) {
+        diplomacy.push({
+          civA: civs[i]!.id,
+          civB: civs[j]!.id,
+          trust: 0,
+          atWar: false,
+          contact: true,
+        });
+      }
+    }
+
     const state: CampaignState = {
       schemaVersion: 1,
       simulationVersion: SIMULATION_VERSION,
@@ -159,6 +172,8 @@ export function createCampaign(options: NewCampaignOptions): CampaignState {
       corpses: [],
       landmarks: [],
       armies: [],
+      treaties: [],
+      diplomacy,
       observations: civs.map((civ) => emptyObservation(civ.id, map.width * map.height)),
       history,
       lastTurn: null,

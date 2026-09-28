@@ -31,6 +31,14 @@ import {
   type CompanyType,
 } from '../military/army.ts';
 import { findPath, terrainStepCost } from '../world/path.ts';
+import {
+  adjustTrust,
+  CLAUSE_IDS,
+  getDiplomaticRelation,
+  validateCellPassage,
+  type Treaty,
+  type TreatyClause,
+} from '../diplomacy/treaty.ts';
 
 export const REJECTION_CODES = [
   'NOT_OWNER',
@@ -86,7 +94,20 @@ export type Command =
   | (CommandBase & { readonly kind: 'RECRUIT_COMPANY'; readonly options: { readonly companyType: CompanyType; readonly armyId?: number | undefined } })
   | (CommandBase & { readonly kind: 'ARMY_MOVE'; readonly options: { readonly armyId: number; readonly targetCell?: number | undefined; readonly path?: readonly number[] | undefined } })
   | (CommandBase & { readonly kind: 'ARMY_STANCE'; readonly options: { readonly armyId: number; readonly stance: ArmyStance } })
-  | (CommandBase & { readonly kind: 'DISBAND_ARMY'; readonly options: { readonly armyId: number } });
+  | (CommandBase & { readonly kind: 'DISBAND_ARMY'; readonly options: { readonly armyId: number } })
+  | (CommandBase & {
+      readonly kind: 'PROPOSE_TREATY';
+      readonly options: {
+        readonly recipientCivId: number;
+        readonly clauses: readonly TreatyClause[];
+        readonly durationTurns?: number | undefined;
+        readonly terminationNoticeTurns?: number | undefined;
+      };
+    })
+  | (CommandBase & { readonly kind: 'SIGN_TREATY'; readonly options: { readonly treatyId: number } })
+  | (CommandBase & { readonly kind: 'CANCEL_TREATY'; readonly options: { readonly treatyId: number; readonly reason?: string | undefined } })
+  | (CommandBase & { readonly kind: 'DECLARE_WAR'; readonly options: { readonly targetCivId: number } })
+  | (CommandBase & { readonly kind: 'MAKE_PEACE'; readonly options: { readonly targetCivId: number } });
 
 export interface Rejection {
   readonly commandId: string;
@@ -335,6 +356,10 @@ function validateArmyCommand(state: CampaignState, command: ArmyCommand): Valida
           if (cost === null) {
             return fail('BODY_BLOCKED', 'path crosses impassable terrain');
           }
+          const passage = validateCellPassage(state, command.civId, step, false);
+          if (!passage.ok) {
+            return fail('RIGHTS_REQUIRED', passage.reason ?? 'territorial passage rights required');
+          }
           totalAp += cost;
           current = step;
         }
@@ -351,7 +376,11 @@ function validateArmyCommand(state: CampaignState, command: ArmyCommand): Valida
           dims: state.map,
           from: army.cell,
           to: target,
-          stepCost: (f, t) => terrainStepCost(state.map, f, t),
+          stepCost: (f, t) => {
+            const passage = validateCellPassage(state, command.civId, t, false);
+            if (!passage.ok) return null;
+            return terrainStepCost(state.map, f, t);
+          },
           minStepCost: 1,
           maxExpansions: 1000,
         });
@@ -385,6 +414,98 @@ function validateArmyCommand(state: CampaignState, command: ArmyCommand): Valida
   }
 }
 
+function validateDiplomacyCommand(state: CampaignState, command: DiplomacyCommand): ValidationResult {
+  switch (command.kind) {
+    case 'PROPOSE_TREATY': {
+      const recipient = state.civs.find((c) => c.id === command.options.recipientCivId);
+      if (!recipient || recipient.id === command.civId) {
+        return fail('UNSUPPORTED_STATE', 'invalid treaty recipient');
+      }
+      if (command.options.clauses.length === 0) {
+        return fail('UNSUPPORTED_STATE', 'treaty must contain at least one clause');
+      }
+      for (const clause of command.options.clauses) {
+        if (!CLAUSE_IDS.includes(clause.id)) {
+          return fail('UNSUPPORTED_STATE', `unknown clause ${clause.id}`);
+        }
+      }
+      const existing = state.treaties.find(
+        (t) =>
+          t.status === 'ACTIVE' &&
+          ((t.proposerCivId === command.civId && t.recipientCivId === recipient.id) ||
+            (t.proposerCivId === recipient.id && t.recipientCivId === command.civId)),
+      );
+      if (existing) {
+        return fail('CAPACITY_REACHED', 'active treaty already exists between these civilizations');
+      }
+      return OK;
+    }
+    case 'SIGN_TREATY': {
+      const treaty = state.treaties.find((t) => t.id === command.options.treatyId);
+      if (!treaty) {
+        return fail('UNSUPPORTED_STATE', 'treaty not found');
+      }
+      if (treaty.status !== 'PROPOSED') {
+        return fail('UNSUPPORTED_STATE', 'treaty is not in proposed status');
+      }
+      if (treaty.recipientCivId !== command.civId) {
+        return fail('NOT_OWNER', 'only the recipient may sign this treaty');
+      }
+      return OK;
+    }
+    case 'CANCEL_TREATY': {
+      const treaty = state.treaties.find((t) => t.id === command.options.treatyId);
+      if (!treaty) {
+        return fail('UNSUPPORTED_STATE', 'treaty not found');
+      }
+      if (treaty.status !== 'ACTIVE' && treaty.status !== 'PROPOSED') {
+        return fail('UNSUPPORTED_STATE', 'treaty is not active or proposed');
+      }
+      if (treaty.proposerCivId !== command.civId && treaty.recipientCivId !== command.civId) {
+        return fail('NOT_OWNER', 'not a party to this treaty');
+      }
+      return OK;
+    }
+    case 'DECLARE_WAR': {
+      const target = state.civs.find((c) => c.id === command.options.targetCivId);
+      if (!target || target.id === command.civId) {
+        return fail('UNSUPPORTED_STATE', 'invalid target civilization for war');
+      }
+      const rel = getDiplomaticRelation(state, command.civId, target.id);
+      if (rel?.atWar) {
+        return fail('UNSUPPORTED_STATE', 'already at war');
+      }
+      return OK;
+    }
+    case 'MAKE_PEACE': {
+      const target = state.civs.find((c) => c.id === command.options.targetCivId);
+      if (!target || target.id === command.civId) {
+        return fail('UNSUPPORTED_STATE', 'invalid target civilization for peace');
+      }
+      const rel = getDiplomaticRelation(state, command.civId, target.id);
+      if (!rel?.atWar) {
+        return fail('UNSUPPORTED_STATE', 'not currently at war');
+      }
+      return OK;
+    }
+  }
+}
+
+export type DiplomacyCommand = Extract<
+  Command,
+  { kind: 'PROPOSE_TREATY' | 'SIGN_TREATY' | 'CANCEL_TREATY' | 'DECLARE_WAR' | 'MAKE_PEACE' }
+>;
+
+export function isDiplomacyCommand(command: Command): command is DiplomacyCommand {
+  return (
+    command.kind === 'PROPOSE_TREATY' ||
+    command.kind === 'SIGN_TREATY' ||
+    command.kind === 'CANCEL_TREATY' ||
+    command.kind === 'DECLARE_WAR' ||
+    command.kind === 'MAKE_PEACE'
+  );
+}
+
 export function validateCommand(state: CampaignState, command: Command): ValidationResult {
   if (command.expectedStateVersion !== state.turn || command.issuedForTurn !== state.turn + 1) {
     return fail('STALE_STATE', `command names state ${command.expectedStateVersion}/turn ${command.issuedForTurn}; current state ${state.turn}`);
@@ -392,6 +513,7 @@ export function validateCommand(state: CampaignState, command: Command): Validat
   if (!state.civs.some((civ) => civ.id === command.civId)) return fail('NOT_OWNER', 'unknown civilization');
   if (isGodCommand(command)) return validateGodCommand(state, command);
   if (isArmyCommand(command)) return validateArmyCommand(state, command);
+  if (isDiplomacyCommand(command)) return validateDiplomacyCommand(state, command);
   const settlement = state.settlements.find((s) => s.id === command.actorId);
   if (!settlement || settlement.ownerId !== command.civId) return fail('NOT_OWNER', 'actor is not owned by this civilization');
   switch (command.kind) {
@@ -571,6 +693,153 @@ function applyArmyCommand(state: CampaignState, command: ArmyCommand): void {
   }
 }
 
+function applyDiplomacyCommand(state: CampaignState, command: DiplomacyCommand): void {
+  switch (command.kind) {
+    case 'PROPOSE_TREATY': {
+      const treatyId = state.nextEntityId++;
+      const eventId = state.history.length + 1;
+      const newTreaty: Treaty = {
+        id: treatyId,
+        proposerCivId: command.civId,
+        recipientCivId: command.options.recipientCivId,
+        clauses: [...command.options.clauses],
+        startTurn: state.turn,
+        endTurn: command.options.durationTurns ? state.turn + command.options.durationTurns : null,
+        terminationNoticeTurns: command.options.terminationNoticeTurns ?? 1,
+        status: 'PROPOSED',
+        causeEventId: eventId,
+      };
+      state.treaties.push(newTreaty);
+
+      // Auto-sign if recipient is AI and not at war
+      const recipientCiv = state.civs.find((c) => c.id === command.options.recipientCivId);
+      const rel = getDiplomaticRelation(state, command.civId, command.options.recipientCivId);
+      if (recipientCiv?.controller === 'AI' && (!rel || !rel.atWar)) {
+        newTreaty.status = 'ACTIVE';
+        adjustTrust(state, command.civId, command.options.recipientCivId, 100);
+        state.history.push({
+          eventId,
+          turn: state.turn,
+          impulse: 0,
+          type: 'TREATY_SIGNED',
+          actorIds: [command.civId, command.options.recipientCivId],
+          locationIds: [],
+          causeIds: [],
+          observerCivIds: [command.civId, command.options.recipientCivId],
+          payload: {
+            treatyId,
+            proposerCivId: command.civId,
+            recipientCivId: command.options.recipientCivId,
+          },
+          schemaVersion: 1,
+        });
+      }
+      return;
+    }
+    case 'SIGN_TREATY': {
+      const treaty = state.treaties.find((t) => t.id === command.options.treatyId)!;
+      treaty.status = 'ACTIVE';
+      adjustTrust(state, treaty.proposerCivId, treaty.recipientCivId, 100);
+      state.history.push({
+        eventId: state.history.length + 1,
+        turn: state.turn,
+        impulse: 0,
+        type: 'TREATY_SIGNED',
+        actorIds: [treaty.proposerCivId, treaty.recipientCivId],
+        locationIds: [],
+        causeIds: [treaty.causeEventId],
+        observerCivIds: [treaty.proposerCivId, treaty.recipientCivId],
+        payload: {
+          treatyId: treaty.id,
+          proposerCivId: treaty.proposerCivId,
+          recipientCivId: treaty.recipientCivId,
+        },
+        schemaVersion: 1,
+      });
+      return;
+    }
+    case 'CANCEL_TREATY': {
+      const treaty = state.treaties.find((t) => t.id === command.options.treatyId)!;
+      const wasActive = treaty.status === 'ACTIVE';
+      treaty.status = 'TERMINATED';
+      if (wasActive) {
+        adjustTrust(state, treaty.proposerCivId, treaty.recipientCivId, -150);
+        state.history.push({
+          eventId: state.history.length + 1,
+          turn: state.turn,
+          impulse: 0,
+          type: 'TREATY_BREACHED',
+          actorIds: [command.civId],
+          locationIds: [],
+          causeIds: [treaty.causeEventId],
+          observerCivIds: [treaty.proposerCivId, treaty.recipientCivId],
+          payload: {
+            treatyId: treaty.id,
+            cancelledBy: command.civId,
+          },
+          schemaVersion: 1,
+        });
+      }
+      return;
+    }
+    case 'DECLARE_WAR': {
+      const rel = getDiplomaticRelation(state, command.civId, command.options.targetCivId);
+      if (rel) {
+        rel.atWar = true;
+      }
+      adjustTrust(state, command.civId, command.options.targetCivId, -800);
+      for (const t of state.treaties) {
+        if (
+          t.status === 'ACTIVE' &&
+          ((t.proposerCivId === command.civId && t.recipientCivId === command.options.targetCivId) ||
+            (t.proposerCivId === command.options.targetCivId && t.recipientCivId === command.civId))
+        ) {
+          t.status = 'BREACHED';
+        }
+      }
+      state.history.push({
+        eventId: state.history.length + 1,
+        turn: state.turn,
+        impulse: 0,
+        type: 'WAR_STARTED',
+        actorIds: [command.civId, command.options.targetCivId],
+        locationIds: [],
+        causeIds: [],
+        observerCivIds: [command.civId, command.options.targetCivId],
+        payload: {
+          aggressorCivId: command.civId,
+          defenderCivId: command.options.targetCivId,
+        },
+        schemaVersion: 1,
+      });
+      return;
+    }
+    case 'MAKE_PEACE': {
+      const rel = getDiplomaticRelation(state, command.civId, command.options.targetCivId);
+      if (rel) {
+        rel.atWar = false;
+      }
+      adjustTrust(state, command.civId, command.options.targetCivId, 300);
+      state.history.push({
+        eventId: state.history.length + 1,
+        turn: state.turn,
+        impulse: 0,
+        type: 'WAR_ENDED',
+        actorIds: [command.civId, command.options.targetCivId],
+        locationIds: [],
+        causeIds: [],
+        observerCivIds: [command.civId, command.options.targetCivId],
+        payload: {
+          civA: command.civId,
+          civB: command.options.targetCivId,
+        },
+        schemaVersion: 1,
+      });
+      return;
+    }
+  }
+}
+
 /** Applies an already validated command to mutable (cloned) state. */
 export function applyCommand(state: CampaignState, command: Command): void {
   if (isGodCommand(command)) {
@@ -579,6 +848,10 @@ export function applyCommand(state: CampaignState, command: Command): void {
   }
   if (isArmyCommand(command)) {
     applyArmyCommand(state, command);
+    return;
+  }
+  if (isDiplomacyCommand(command)) {
+    applyDiplomacyCommand(state, command);
     return;
   }
   const settlement = state.settlements.find((s) => s.id === command.actorId) as SettlementState;

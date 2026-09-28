@@ -22,7 +22,7 @@
 | **C** | Two-way God ↔ civilization dependency | 1 | **2** |
 | **D** | Reactive ecology, terrain and infrastructure | 1 | **3** |
 | **E** | Godform, injury, aging, death and remains | 1 | **4** |
-| **F** | Diplomacy, territorial rights and information boundaries | 1 | 1 |
+| **F** | Diplomacy, territorial rights and information boundaries | 1 | **2** |
 | **G** | Warfare, logistics and strategic consequence | 0 | **2** |
 | **H** | AI parity and autonomous civilization behavior | 1 | 1 |
 | **I** | Persistent history / causal world memory | 1 | **3** |
@@ -316,15 +316,28 @@
   - `npm run build`: built in 342ms
   - Playwright E2E: 20/20 passed across desktop and narrow viewports (`chrome-desktop`, `chrome-narrow`)
 - **Commit:** `1b115db`
-- **Next Candidate:** Treaties, Border Easements & Migration Corridors (Diplomacy 1 of 3).
 
-
-
-
-
-
-
-
-
-
-
+### `uplift(13)`: Treaties, Border Easements & Migration Corridors (Diplomacy 1 of 3)
+- **Goal:** Implement master Section 9.1 and 9.2 bilateral treaties, territorial border recognition, transit easements (`D-PASSAGE`, `D-BORDER`, `D-GOD-CORRIDOR`), research sharing (`D-RESEARCH`), and war/peace state transitions.
+- **Category:** Diplomacy / territorial rights / information boundaries (1 of 3).
+- **Scorecard Axes Advanced:** F (1 → 2).
+- **Master-plan Requirements Advanced:** Sections 9.1, 9.2, 16.5.
+- **Meaningful Result:**
+  - Created `src/sim/diplomacy/treaty.ts` defining `Treaty`, `TreatyClause`, `ClauseId` (16 typed clauses including `D-BORDER`, `D-PASSAGE`, `D-GOD-CORRIDOR`, `D-RESEARCH`, `D-NONAGGRESSION`), `DiplomaticRelation`, trust adjustments (-1000..1000), passage verification (`validateCellPassage`), and per-turn treaty resolution (`resolveDiplomacyTurn`).
+  - Extended `CampaignState` with `treaties: Treaty[]` and `diplomacy: DiplomaticRelation[]`.
+  - Added diplomacy commands: `PROPOSE_TREATY`, `SIGN_TREATY`, `CANCEL_TREATY`, `DECLARE_WAR`, `MAKE_PEACE` in `src/sim/core/commands.ts`.
+  - Enforced territorial movement permissions on `ARMY_MOVE` with `validateCellPassage`.
+  - Wire treaty expiration and per-turn benefits (+1 KNOWLEDGE/turn for `D-RESEARCH` parties) into turn resolution step 5d.
+  - Initialized pairwise diplomatic relations between all starting civilizations in `src/sim/campaign.ts`.
+  - Added invariants in `src/sim/core/turn.ts` for trust clamping and valid treaty parties.
+  - Golden vectors updated in `tests/fixtures/selfcheck.json`.
+- **Validation:**
+  - `npm run typecheck`: clean
+  - `npm run lint`: clean (0 errors, 0 warnings)
+  - `tests/sim/diplomacy.test.ts`: 7/7 passed
+  - `tests/sim/selfcheck.test.ts`: passed with updated determinism hashes
+  - Vitest sim suite: 21 test files, 118/118 passed (including all 50 headless campaigns)
+  - Vitest unit suite: 7 test files, 47/47 passed
+  - `npm run build`: built in 347ms
+  - Playwright E2E: 20/20 passed across desktop and narrow viewports
+- **Next Candidate:** Strategic AI Planner for Civilization & God (Axis H: 1 → 2).

@@ -13,6 +13,7 @@ import type { CampaignState } from './state.ts';
 import { TECH_BY_ID, type PolicyAxis } from '../data/tech.ts';
 import { regenerateEcologyWithSoil } from '../world/ecology.ts';
 import { resolveArmiesTurn } from '../military/army.ts';
+import { resolveDiplomacyTurn, TREATY_STATUSES } from '../diplomacy/treaty.ts';
 
 export interface TurnResult {
   readonly state: CampaignState;
@@ -69,6 +70,18 @@ export function assertInvariants(state: CampaignState): void {
       if (company.cohesion < 0 || company.cohesion > 100) problems.push(`army ${army.id} company cohesion ${company.cohesion}`);
       if (company.equipment < 0 || company.equipment > 1000) problems.push(`army ${army.id} company equipment ${company.equipment}`);
       if (company.populationMilli < 0) problems.push(`army ${army.id} company pop ${company.populationMilli}`);
+    }
+  }
+  for (const rel of state.diplomacy) {
+    if (rel.trust < -1000 || rel.trust > 1000) problems.push(`diplomacy trust ${rel.trust}`);
+    if (!state.civs.some((c) => c.id === rel.civA) || !state.civs.some((c) => c.id === rel.civB)) {
+      problems.push(`diplomacy party invalid ${rel.civA}:${rel.civB}`);
+    }
+  }
+  for (const treaty of state.treaties) {
+    if (!TREATY_STATUSES.includes(treaty.status)) problems.push(`treaty ${treaty.id} status ${treaty.status}`);
+    if (!state.civs.some((c) => c.id === treaty.proposerCivId) || !state.civs.some((c) => c.id === treaty.recipientCivId)) {
+      problems.push(`treaty ${treaty.id} party invalid`);
     }
   }
   const { map } = state;
@@ -158,6 +171,9 @@ export function resolveTurn(committed: CampaignState, commands: readonly Command
 
   // Step 5c: strategic armies logistics, supplies and maintenance.
   resolveArmiesTurn(state);
+
+  // Step 5d: diplomacy, treaties and research exchange.
+  resolveDiplomacyTurn(state);
 
   // Step 6: observations, then commit.
   updateAllObservations(state);
